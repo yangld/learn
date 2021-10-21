@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "task/download/支持根据文件magic,验证文件内容.md",
+            "file": "task/download/安全上传文件.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "task/download/支持根据文件magic,验证文件内容.md",
+                "file": "task/download/安全上传文件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +88,7 @@
   },
   "active": "f0eff84fa46cb026",
   "lastOpenFiles": [
-    "task/download/支持根据文件magic,验证文件内容.md",
+    "task/download/安全上传文件.md",
     "obsidian/入门.md",
     "未命名.md",
     "README.md"
