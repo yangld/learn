@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "task/picc策略更新/未命名 1.md",
+            "file": "替换策略的默认策略项.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "task/picc策略更新/未命名 1.md",
+                "file": "替换策略的默认策略项.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,6 +87,7 @@
   },
   "active": "f0eff84fa46cb026",
   "lastOpenFiles": [
+    "替换策略的默认策略项.md",
     "task/picc策略更新/未命名 1.md",
     "task/picc策略更新/备份数据库数据.md",
     "task/download/安全上传文件.md",
