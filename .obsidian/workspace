@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "49f89efb06fba851",
+        "id": "f1f30a95e234894a",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -96,22 +96,23 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "49f89efb06fba851",
+  "active": "f1f30a95e234894a",
   "lastOpenFiles": [
     "未命名.md",
-    "task/picc策略更新/备份数据库数据.md",
-    "2021-10-01.md",
+    "2021-10-25.md",
+    "task/picc策略更新/未命名看板.md",
     "task/picc策略更新/替换策略的默认策略项.md",
     "task/picc策略更新/更新策略内容.md",
     "task/picc策略更新/更新策略.md",
     "task/picc策略更新/登录.md",
-    "task/picc策略更新/all.md",
+    "task/picc策略更新/备份数据库数据.md",
     "task/download/安全上传文件.md",
     "obsidian/入门.md"
   ]
