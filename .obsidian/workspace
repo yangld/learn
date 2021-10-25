@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "9010c71758a10fe5",
+        "id": "569fb3feb830f06f",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -69,7 +69,7 @@
               "type": "backlink",
               "state": {
                 "file": "思考/Obsidian使用/模板的使用.md",
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -113,7 +113,7 @@
               "type": "outgoing-link",
               "state": {
                 "file": "思考/Obsidian使用/模板的使用.md",
-                "linksCollapsed": false,
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -125,17 +125,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "9010c71758a10fe5",
+  "active": "569fb3feb830f06f",
   "lastOpenFiles": [
     "思考/Obsidian使用/模板的使用.md",
-    "思考/Obsidian使用/Obsidian使用.md",
-    "思考/Obsidian使用/未命名.md",
-    "模板/测试模板 1.md",
-    "模板/测试模板.md",
-    "kankan.md",
-    "task/未命名.md",
-    "task/task.md",
-    "task/picc策略更新/all.md",
-    "obsidian/obsidian.md"
+    "模板/日期TAG.md",
+    "思考/Obsidian使用/例子/工作日志20211025.md",
+    "2021-11-01.md",
+    "2021-11.md",
+    "2021-10-26.md",
+    "2021-10-25.md",
+    "2021-10.md",
+    "思考/Obsidian使用/例子/工作日志20211102.md",
+    "44 周- 2021.md"
   ]
 }

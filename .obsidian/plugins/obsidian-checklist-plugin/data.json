@@ -5,6 +5,8 @@
   "sortDirection": "old->new",
   "ignoreFiles": "",
   "includeFiles": "",
-  "lookAndFeel": "compact",
-  "_collapsedSections": []
+  "lookAndFeel": "classic",
+  "_collapsedSections": [
+    "#todo/Obsidian模板"
+  ]
 }
