@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "f0eff84fa46cb026",
+        "id": "49f89efb06fba851",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "task/picc策略更新/all.md",
-            "mode": "preview"
+            "file": "未命名.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "task/picc策略更新/all.md",
+                "file": "未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -78,24 +78,41 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "f7a967e306ff5348",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "d7d30112c1199a6a",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "f0eff84fa46cb026",
+  "active": "49f89efb06fba851",
   "lastOpenFiles": [
-    "task/picc策略更新/all.md",
+    "未命名.md",
+    "task/picc策略更新/备份数据库数据.md",
+    "2021-10-01.md",
+    "task/picc策略更新/替换策略的默认策略项.md",
     "task/picc策略更新/更新策略内容.md",
     "task/picc策略更新/更新策略.md",
     "task/picc策略更新/登录.md",
-    "task/picc策略更新/替换策略的默认策略项.md",
-    "task/picc策略更新/备份数据库数据.md",
+    "task/picc策略更新/all.md",
     "task/download/安全上传文件.md",
-    "未命名.md",
-    "obsidian/入门.md",
-    "README.md"
+    "obsidian/入门.md"
   ]
 }
