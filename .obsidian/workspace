@@ -80,23 +80,23 @@
             }
           },
           {
-            "id": "f7a967e306ff5348",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "d7d30112c1199a6a",
             "type": "leaf",
             "state": {
               "type": "todo",
               "state": {}
             }
+          },
+          {
+            "id": "1dcbda5fe932fb68",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
