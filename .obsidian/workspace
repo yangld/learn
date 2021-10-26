@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "思考/Obsidian使用/模板的使用.md",
+            "file": "工作日志/原型说明.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "思考/Obsidian使用/模板的使用.md",
+                "file": "工作日志/原型说明.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "思考/Obsidian使用/模板的使用.md",
+                "file": "工作日志/原型说明.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -127,15 +127,15 @@
   },
   "active": "56b81511e5f285ff",
   "lastOpenFiles": [
-    "思考/Obsidian使用/模板的使用.md",
-    "思考/Obsidian使用/Obsidian使用.md",
-    "输入/Git及分支.md",
-    "输入/输入.md",
-    "未命名.md",
-    "模板的使用.md",
-    "未命名 1.md",
+    "工作日志/原型说明.md",
+    "工作日志/2021-10-26.md",
+    "obsidian/未命名.md",
+    "obsidian/obsidian.md",
+    "task/download/download.md",
+    "task/picc策略更新/all.md",
+    "task/未命名.md",
+    "task/task.md",
     "模板/日期TAG.md",
-    "思考/Obsidian使用/例子/工作日志20211025.md",
-    "2021-11-01.md"
+    "思考/Obsidian使用/模板的使用.md"
   ]
 }
