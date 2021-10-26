@@ -32,7 +32,8 @@
                   "type": "markdown",
                   "state": {
                     "file": "3工作日志/2021-10-26.md",
-                    "mode": "source"
+                    "mode": "preview",
+                    "backlinks": true
                   }
                 }
               },
@@ -188,14 +189,14 @@
   "active": "0ac70095c4098d40",
   "lastOpenFiles": [
     "3工作日志/2021-10-26.md",
+    "思考/Obsidian使用/例子/工作日志20211026.md",
+    "3工作日志/双因素认证.md",
     "3工作日志/原型说明.md",
     "3工作日志/看板.md",
     "3工作日志/权限列表.md",
     "3工作日志/项目.md",
     "1附件/1.png",
     "1附件/Pasted image 20211026155319.png",
-    "3工作日志/双因素认证.md",
-    "4Obsidian/1卡片.md",
-    "2模板/卡片模板.md"
+    "4Obsidian/1卡片.md"
   ]
 }
