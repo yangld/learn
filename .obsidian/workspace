@@ -44,7 +44,7 @@
                   "type": "markdown",
                   "state": {
                     "file": "3工作日志/原型说明.md",
-                    "mode": "source"
+                    "mode": "preview"
                   }
                 }
               },
@@ -188,8 +188,8 @@
   "active": "0ac70095c4098d40",
   "lastOpenFiles": [
     "3工作日志/2021-10-26.md",
-    "3工作日志/项目.md",
     "3工作日志/原型说明.md",
+    "3工作日志/项目.md",
     "4Obsidian/1卡片.md",
     "3工作日志/看板.md",
     "2模板/卡片模板.md",
