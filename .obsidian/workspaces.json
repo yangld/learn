@@ -1,0 +1,194 @@
+{
+  "workspaces": {
+    "布局1": {
+      "main": {
+        "id": "23f66df6a9ecee8e",
+        "type": "split",
+        "children": [
+          {
+            "id": "5178d273a1ba8e5a",
+            "type": "split",
+            "children": [
+              {
+                "id": "ca58c6734ab0f470",
+                "type": "leaf",
+                "dimension": 19.305019305019304,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "3工作日志/项目.md",
+                    "mode": "preview"
+                  }
+                }
+              },
+              {
+                "id": "44c7b65ab846494b",
+                "type": "split",
+                "dimension": 80.6949806949807,
+                "children": [
+                  {
+                    "id": "0ac70095c4098d40",
+                    "type": "leaf",
+                    "dimension": 29.615384615384617,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "3工作日志/2021-10-26.md",
+                        "mode": "source"
+                      }
+                    }
+                  },
+                  {
+                    "id": "e0bd1c64c640f141",
+                    "type": "leaf",
+                    "dimension": 51.53846153846153,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "3工作日志/原型说明.md",
+                        "mode": "source"
+                      }
+                    }
+                  },
+                  {
+                    "id": "ccc2c4dc4a1db4d4",
+                    "type": "leaf",
+                    "dimension": 18.846153846153847,
+                    "state": {
+                      "type": "kanban",
+                      "state": {
+                        "file": "3工作日志/看板.md"
+                      }
+                    }
+                  }
+                ],
+                "direction": "vertical"
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "9727861d579d737a",
+        "type": "split",
+        "children": [
+          {
+            "id": "968cd024bb524cd5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "86ed5741d814bd70",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "dcb6acad20cd3778",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "right": {
+        "id": "78a86d7ecd781271",
+        "type": "split",
+        "children": [
+          {
+            "id": "8afd4d2d7314c19a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "21a98d76ee44ae54",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "3工作日志/2021-10-26.md",
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "d7d30112c1199a6a",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {}
+                }
+              },
+              {
+                "id": "1dcbda5fe932fb68",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "8173d6ed32716e47",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "7effc2bbe041d359",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "3工作日志/2021-10-26.md",
+                    "linksCollapsed": true,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "d0dfbbe203294a48",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 5
+          }
+        ],
+        "direction": "horizontal",
+        "width": 408,
+        "collapsed": true
+      },
+      "active": "0ac70095c4098d40"
+    }
+  },
+  "active": "布局1"
+}

@@ -10,5 +10,7 @@
   "folder-note-plugin",
   "note-folder-autorename",
   "dataview",
-  "obsidian-timelines"
+  "obsidian-timelines",
+  "table-editor-obsidian",
+  "tag-wrangler"
 ]
