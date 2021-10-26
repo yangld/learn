@@ -27,32 +27,31 @@
               {
                 "id": "0ac70095c4098d40",
                 "type": "leaf",
-                "dimension": 29.61538461538462,
+                "dimension": 29.871794871794872,
                 "state": {
                   "type": "markdown",
                   "state": {
                     "file": "3工作日志/2021-10-26.md",
-                    "mode": "source",
-                    "backlinks": true
+                    "mode": "source"
                   }
                 }
               },
               {
                 "id": "e0bd1c64c640f141",
                 "type": "leaf",
-                "dimension": 51.53846153846153,
+                "dimension": 49.294871794871796,
                 "state": {
                   "type": "markdown",
                   "state": {
                     "file": "3工作日志/原型说明.md",
-                    "mode": "preview"
+                    "mode": "source"
                   }
                 }
               },
               {
                 "id": "ccc2c4dc4a1db4d4",
                 "type": "leaf",
-                "dimension": 18.846153846153847,
+                "dimension": 20.833333333333336,
                 "state": {
                   "type": "kanban",
                   "state": {
@@ -189,14 +188,14 @@
   "active": "0ac70095c4098d40",
   "lastOpenFiles": [
     "3工作日志/2021-10-26.md",
-    "3工作日志/双因素认证.md",
     "3工作日志/原型说明.md",
-    "3工作日志/项目.md",
-    "4Obsidian/1卡片.md",
     "3工作日志/看板.md",
-    "2模板/卡片模板.md",
-    "2模板/日期TAG.md",
-    "2模板/当前时间.md",
-    "2模板/测试模板.md"
+    "3工作日志/权限列表.md",
+    "3工作日志/项目.md",
+    "1附件/1.png",
+    "1附件/Pasted image 20211026155319.png",
+    "3工作日志/双因素认证.md",
+    "4Obsidian/1卡片.md",
+    "2模板/卡片模板.md"
   ]
 }

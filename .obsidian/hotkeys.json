@@ -9,5 +9,27 @@
       ],
       "key": "T"
     }
+  ],
+  "workspaces:load": [
+    {
+      "modifiers": [
+        "Alt",
+        "Ctrl",
+        "Mod",
+        "Shift"
+      ],
+      "key": "W"
+    }
+  ],
+  "backlink:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Ctrl",
+        "Mod",
+        "Shift"
+      ],
+      "key": "L"
+    }
   ]
 }
