@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "工作日志/原型说明.md",
+            "file": "工作日志/2021-10-26.md",
             "mode": "source"
           }
         }
@@ -48,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作日志/原型说明.md",
+                "file": "工作日志/2021-10-26.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,30 +113,29 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作日志/原型说明.md",
+                "file": "工作日志/2021-10-26.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 408
   },
   "active": "56b81511e5f285ff",
   "lastOpenFiles": [
-    "工作日志/原型说明.md",
     "工作日志/2021-10-26.md",
+    "工作日志/2021.md",
+    "工作日志/原型说明.md",
+    "kanban/工作内容.md",
     "obsidian/未命名.md",
     "obsidian/obsidian.md",
     "task/download/download.md",
     "task/picc策略更新/all.md",
     "task/未命名.md",
-    "task/task.md",
-    "模板/日期TAG.md",
-    "思考/Obsidian使用/模板的使用.md"
+    "task/task.md"
   ]
 }
