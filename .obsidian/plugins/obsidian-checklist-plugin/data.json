@@ -1,6 +1,6 @@
 {
   "todoPageName": "todo",
-  "showChecked": true,
+  "showChecked": false,
   "groupBy": "tag",
   "sortDirection": "old->new",
   "ignoreFiles": "",
