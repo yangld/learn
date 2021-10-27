@@ -4,67 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5178d273a1ba8e5a",
-        "type": "split",
-        "children": [
-          {
-            "id": "ca58c6734ab0f470",
-            "type": "leaf",
-            "dimension": 19.305019305019304,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3工作日志/项目.md",
-                "mode": "preview"
-              }
-            }
-          },
-          {
-            "id": "44c7b65ab846494b",
-            "type": "split",
-            "dimension": 80.6949806949807,
-            "children": [
-              {
-                "id": "0ac70095c4098d40",
-                "type": "leaf",
-                "dimension": 29.871794871794872,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "3工作日志/2021-10-26.md",
-                    "mode": "preview",
-                    "backlinks": true
-                  }
-                }
-              },
-              {
-                "id": "e0bd1c64c640f141",
-                "type": "leaf",
-                "dimension": 49.294871794871796,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "3工作日志/原型说明.md",
-                    "mode": "source"
-                  }
-                }
-              },
-              {
-                "id": "ccc2c4dc4a1db4d4",
-                "type": "leaf",
-                "dimension": 20.833333333333336,
-                "state": {
-                  "type": "kanban",
-                  "state": {
-                    "file": "3工作日志/看板.md"
-                  }
-                }
-              }
-            ],
-            "direction": "vertical"
+        "id": "ff9cfc331da284d0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "3工作日志/3工作日志.md",
+            "mode": "preview",
+            "backlinks": true
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -120,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/2021-10-26.md",
+                "file": "3工作日志/3工作日志.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/2021-10-26.md",
+                "file": "3工作日志/3工作日志.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -186,17 +135,17 @@
     "width": 408,
     "collapsed": true
   },
-  "active": "0ac70095c4098d40",
+  "active": "ff9cfc331da284d0",
   "lastOpenFiles": [
+    "3工作日志/3工作日志.md",
+    "things/pen.md",
+    "3工作日志/工作内容/工作内容.md",
     "3工作日志/2021-10-26.md",
+    "4Obsidian/1卡片.md",
     "思考/Obsidian使用/例子/工作日志20211026.md",
-    "3工作日志/双因素认证.md",
-    "3工作日志/原型说明.md",
-    "3工作日志/看板.md",
-    "3工作日志/权限列表.md",
-    "3工作日志/项目.md",
-    "1附件/1.png",
-    "1附件/Pasted image 20211026155319.png",
-    "4Obsidian/1卡片.md"
+    "3工作日志/工作内容/双因素认证.md",
+    "3工作日志/工作内容/权限列表.md",
+    "3工作日志/工作内容/原型说明.md",
+    "3工作日志/原型设计.md"
   ]
 }
