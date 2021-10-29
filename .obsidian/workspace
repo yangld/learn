@@ -10,17 +10,17 @@
           "type": "markdown",
           "state": {
             "file": "3工作日志/2021-10-29.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       },
       {
-        "id": "ba6b71b6e9507405",
+        "id": "9956d7305b901316",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3工作日志/军委项目新需求会议纪要.md",
+            "file": "3工作日志/2021-10-28.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/军委项目新需求会议纪要.md",
+                "file": "3工作日志/2021-10-28.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/军委项目新需求会议纪要.md",
+                "file": "3工作日志/2021-10-28.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -138,14 +138,15 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 214
+    "width": 283
   },
-  "active": "ba6b71b6e9507405",
+  "active": "9956d7305b901316",
   "lastOpenFiles": [
+    "3工作日志/2021-10-28.md",
     "3工作日志/军委项目新需求会议纪要.md",
     "3工作日志/2021-10-29.md",
     "3工作日志/工作内容/权限列表.md",
@@ -153,7 +154,6 @@
     "3工作日志/WechatIMG169.png.md",
     "3工作日志/工作看板.md",
     "4思考/Table的使用.md",
-    "3工作日志/2021-10-28.md",
     "3工作日志/2021-10-27.md",
     "3工作日志/download支持文件内容,验证文件格式.md"
   ]
