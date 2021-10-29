@@ -4,5 +4,11 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "1附件",
   "showLineNumber": true,
-  "trashOption": "local"
+  "trashOption": "local",
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }

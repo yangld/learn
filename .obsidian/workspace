@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3工作日志/2021-10-28.md",
+            "file": "3工作日志/2021-10-29.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/2021-10-28.md",
+                "file": "3工作日志/2021-10-29.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/2021-10-28.md",
+                "file": "3工作日志/2021-10-29.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -135,6 +135,8 @@
   },
   "active": "3a955a9bf266ffa1",
   "lastOpenFiles": [
+    "3工作日志/2021-10-29.md",
+    "4思考/Table的使用.md",
     "3工作日志/2021-10-28.md",
     "3工作日志/工作看板.md",
     "3工作日志/2021-10-27.md",
@@ -142,8 +144,6 @@
     "3工作日志/bug 23642.md",
     "3工作日志/联通二期测试用例评审会.md",
     "3工作日志/2021-10-26.md",
-    "3工作日志/3工作日志.md",
-    "4思考/看板的正确使用.md",
-    "4思考/111.md"
+    "3工作日志/3工作日志.md"
   ]
 }
