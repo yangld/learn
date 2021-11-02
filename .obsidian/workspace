@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "a9210ed0b3564bd3",
+        "id": "bae09f71ce79979e",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -15,7 +15,7 @@
         }
       },
       {
-        "id": "bae09f71ce79979e",
+        "id": "6e3410ce5d9fca1f",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -145,9 +145,10 @@
     "width": 283,
     "collapsed": true
   },
-  "active": "a9210ed0b3564bd3",
+  "active": "bae09f71ce79979e",
   "lastOpenFiles": [
     "3工作日志/2021-11-02.md",
+    "4思考/未命名.md",
     "3工作日志/权限管理会议纪要.md",
     "3工作日志/2021-11-01.md",
     "3工作日志/CB讨论会.md",
@@ -155,7 +156,6 @@
     "3工作日志/军委项目新需求会议纪要.md",
     "3工作日志/2021-10-29.md",
     "3工作日志/2021-10-28.md",
-    "3工作日志/工作内容/权限列表.md",
-    "3工作日志/2021-10-26.md"
+    "3工作日志/工作内容/权限列表.md"
   ]
 }
