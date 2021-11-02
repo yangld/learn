@@ -9,8 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3工作日志/CB讨论会.md",
+            "file": "3工作日志/2021-11-02.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "1777d911a0a71188",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "3工作日志/2021-11-01.md",
+            "mode": "preview"
           }
         }
       }
@@ -52,8 +63,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -69,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/CB讨论会.md",
+                "file": "3工作日志/2021-11-02.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/CB讨论会.md",
+                "file": "3工作日志/2021-11-02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -128,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -137,15 +147,15 @@
   },
   "active": "a9210ed0b3564bd3",
   "lastOpenFiles": [
-    "3工作日志/CB讨论会.md",
+    "3工作日志/2021-11-02.md",
     "3工作日志/2021-11-01.md",
+    "3工作日志/CB讨论会.md",
     "3工作日志/2021-10.md",
     "3工作日志/军委项目新需求会议纪要.md",
     "3工作日志/2021-10-29.md",
     "3工作日志/2021-10-28.md",
     "3工作日志/工作内容/权限列表.md",
     "3工作日志/2021-10-26.md",
-    "3工作日志/WechatIMG169.png.md",
-    "3工作日志/工作看板.md"
+    "3工作日志/WechatIMG169.png.md"
   ]
 }
