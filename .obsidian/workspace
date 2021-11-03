@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3工作日志/2021-11-02.md",
+            "file": "3工作日志/2021-11-03.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "6e3410ce5d9fca1f",
+        "id": "c84dc685dcfda451",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3工作日志/2021-11-02.md",
+            "file": "3工作日志/2021-11-03.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/2021-11-02.md",
+                "file": "3工作日志/2021-11-03.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/2021-11-02.md",
+                "file": "3工作日志/2021-11-03.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -147,15 +147,15 @@
   },
   "active": "bae09f71ce79979e",
   "lastOpenFiles": [
+    "3工作日志/2021-11-03.md",
     "3工作日志/2021-11-02.md",
+    "3工作日志/军委项目新需求会议纪要.md",
     "4思考/未命名.md",
     "3工作日志/权限管理会议纪要.md",
     "3工作日志/2021-11-01.md",
     "3工作日志/CB讨论会.md",
     "3工作日志/2021-10.md",
-    "3工作日志/军委项目新需求会议纪要.md",
     "3工作日志/2021-10-29.md",
-    "3工作日志/2021-10-28.md",
-    "3工作日志/工作内容/权限列表.md"
+    "3工作日志/2021-10-28.md"
   ]
 }
