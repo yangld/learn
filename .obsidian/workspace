@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3工作日志/2021-11-04.md",
+            "file": "3工作日志/2021-11-05.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/2021-11-04.md",
+                "file": "3工作日志/2021-11-05.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/2021-11-04.md",
+                "file": "3工作日志/2021-11-05.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -136,6 +136,7 @@
   },
   "active": "0279227fefe676bf",
   "lastOpenFiles": [
+    "3工作日志/2021-11-05.md",
     "3工作日志/2021-11-04.md",
     "3工作日志/2021-11-03.md",
     "3工作日志/发布的含义.md",
@@ -144,7 +145,6 @@
     "4思考/未命名.md",
     "3工作日志/权限管理会议纪要.md",
     "3工作日志/2021-11-01.md",
-    "3工作日志/CB讨论会.md",
-    "3工作日志/2021-10.md"
+    "3工作日志/CB讨论会.md"
   ]
 }
