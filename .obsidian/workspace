@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3工作日志/2021-11-08.md",
+            "file": "3工作日志/运维监控会议.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/2021-11-08.md",
+                "file": "3工作日志/运维监控会议.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/2021-11-08.md",
+                "file": "3工作日志/运维监控会议.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -135,6 +135,8 @@
   },
   "active": "891480eeabc11fcd",
   "lastOpenFiles": [
+    "3工作日志/运维监控会议.md",
+    "3工作日志/2021-11-09.md",
     "3工作日志/2021-11-08.md",
     "plo.md",
     "Day Planners/Day Planner-20211105.md",
@@ -142,8 +144,6 @@
     "Day Planners/未命名思维导图.md",
     "3工作日志/3工作日志.md",
     "Day Planners/Day Planner-20211108.md",
-    "Day Planners/Day Planner-20211107.md",
-    "Day Planners/Day Planner-20211106.md",
-    "3工作日志/工作内容/工作内容.md"
+    "Day Planners/Day Planner-20211107.md"
   ]
 }
