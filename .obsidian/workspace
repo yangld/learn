@@ -13,28 +13,6 @@
             "mode": "source"
           }
         }
-      },
-      {
-        "id": "95202361eebd661b",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "3工作日志/应用使用统计分析.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "bb36f913890ac960",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "3工作日志/运维监控会议.md",
-            "mode": "source"
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -153,7 +131,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283
+    "width": 283,
+    "collapsed": true
   },
   "active": "891480eeabc11fcd",
   "lastOpenFiles": [
