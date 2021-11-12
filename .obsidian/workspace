@@ -4,15 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "891480eeabc11fcd",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "3工作日志/2021-11-12.md",
-            "mode": "source"
+        "id": "2ee3050456708326",
+        "type": "split",
+        "children": [
+          {
+            "id": "891480eeabc11fcd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3工作日志/2021-11-12.md",
+                "mode": "source"
+              }
+            },
+            "group": "da44899fdea8fe12"
+          },
+          {
+            "id": "922086307fa3d100",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3工作日志/2021-11-12.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            },
+            "group": "da44899fdea8fe12"
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -136,13 +162,13 @@
   "active": "891480eeabc11fcd",
   "lastOpenFiles": [
     "3工作日志/2021-11-12.md",
+    "1附件/资料.md",
     "3工作日志/太古可乐需求.md",
     "3工作日志/2021-11-10.md",
     "3工作日志/应用使用统计分析.md",
     "3工作日志/2021-11-09.md",
     "3工作日志/运维监控会议.md",
     "3工作日志/2021-11-08.md",
-    "1附件/资料.md",
     "3工作日志/2021-10-29.md",
     "3工作日志/2021-10-28.md"
   ]
