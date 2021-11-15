@@ -128,6 +128,20 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "573afa57e6b06932",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d044d5ded97b9b76",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
