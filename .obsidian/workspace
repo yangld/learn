@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Day Planners/Day Planner-20211115.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -61,7 +61,6 @@
       {
         "id": "8afd4d2d7314c19a",
         "type": "tabs",
-        "dimension": 30.55028462998102,
         "children": [
           {
             "id": "21a98d76ee44ae54",
@@ -129,21 +128,6 @@
           }
         ],
         "currentTab": 2
-      },
-      {
-        "id": "48c1f62fce5572f7",
-        "type": "tabs",
-        "dimension": 69.44971537001898,
-        "children": [
-          {
-            "id": "a88ba8481aa62351",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
-              "state": {}
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
