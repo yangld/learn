@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3工作日志/2021-11-12.md",
+            "file": "3工作日志/2021-10-26.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#todo/工作内容",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/2021-11-12.md",
+                "file": "3工作日志/2021-10-26.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/2021-11-12.md",
+                "file": "3工作日志/2021-10-26.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -135,15 +135,15 @@
   },
   "active": "891480eeabc11fcd",
   "lastOpenFiles": [
+    "3工作日志/2021-10-26.md",
+    "3工作日志/44 周- 2021.md",
+    "1附件/架构师必备，带你弄清混乱的JAVA日志体系！(1).pdf",
     "3工作日志/2021-11-12.md",
-    "3工作日志/军委项目新需求会议纪要.md",
-    "3工作日志/太古可乐需求.md",
-    "3工作日志/2021-11-08.md",
     "3工作日志/2021-11-10.md",
-    "3工作日志/应用使用统计分析.md",
-    "1附件/资料.md",
     "3工作日志/2021-11-09.md",
-    "3工作日志/运维监控会议.md",
-    "3工作日志/2021-10-29.md"
+    "3工作日志/2021-11-08.md",
+    "3工作日志/2021-11-05.md",
+    "3工作日志/2021-10-27.md",
+    "4思考/工作安排.md"
   ]
 }
