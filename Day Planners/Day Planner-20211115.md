@@ -3,13 +3,13 @@
 gantt
     dateFormat  HH-mm
     axisFormat %H:%M
-    %% Current Time: 下午12:06:57
+    %% Current Time: 下午1:59:15
     section Tasks
     Setup for work     :09-30, 15mm
     Review notes from yesterday     :09-45, 45mm
     Create new notes for #35;article review     :10-30, 60mm
     Reading     :12-00, 25mm
-    Reading     :12-30, 90mm
+    Walk     :12-30, 90mm
     Review notes and update daily note [[20201103]]     :15-00, 45mm
     Walk     :15-45, 45mm
     Reading     :16-30, 50mm
@@ -48,7 +48,7 @@ A section of the day dedicated to reading:
   - [ ] Article 2
   - [ ] Article notes review
 - [ ] 12:25 BREAK
-- [ ] 12:30 Reading
+- [ ] 12:30 Walk
 - [ ] 14:00 BREAK
 
 ### Afternoon Review
