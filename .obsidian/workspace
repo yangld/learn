@@ -21,11 +21,14 @@
             }
           },
           {
-            "id": "20d295a9f09e37ba",
+            "id": "f33d51eed19f45ea",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Day Planners/Day Planner-20211107.md",
+                "mode": "source"
+              }
             }
           },
           {
@@ -124,38 +127,8 @@
               "type": "calendar",
               "state": {}
             }
-          },
-          {
-            "id": "f60d2fa662e552c1",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Day Planners/Day Planner-20211115.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "da6926c2fdbb3beb",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Day Planners/Day Planner-20211115.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "faa8ee4a10162d26",
@@ -175,17 +148,17 @@
     "direction": "horizontal",
     "width": 306
   },
-  "active": "14bdbbbc1a5453e4",
+  "active": "f33d51eed19f45ea",
   "lastOpenFiles": [
+    "Day Planners/Day Planner-20211107.md",
     "Day Planners/Day Planner-20211115.md",
-    "4思考/看板的正确使用.md",
-    "1附件/png/1.png",
-    "Day Planners/各省应用下载及使用的数据.md",
-    "3工作日志/2021-11-15.md",
-    "3工作日志/3工作日志.md",
+    "Day Planners/Day Planner-20211106.md",
+    "Day Planners/Day Planner-20211114.md",
+    "Day Planners/Day Planner-20211111.md",
+    "Day Planners/Day Planner-20211108.md",
     "Day Planners/Day Planner-20211105.md",
-    "3工作日志/军委项目新需求会议纪要.md",
-    "3工作日志/工作看板.md",
-    "cmd.md"
+    "Day Planners/Day Planner-20211104.md",
+    "Day Planners/未命名思维导图.md",
+    "Day Planners/各省应用下载及使用的数据.md"
   ]
 }
