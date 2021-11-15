@@ -2,7 +2,12 @@
   "customFolder": "Day Planners",
   "mode": 0,
   "mermaid": true,
-  "notesToDates": [],
+  "notesToDates": [
+    {
+      "notePath": "3工作日志/2021-11-15.md",
+      "date": "Mon Nov 15 2021"
+    }
+  ],
   "completePastItems": false,
   "circularProgress": false,
   "nowAndNextInStatusBar": true,
