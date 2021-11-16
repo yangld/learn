@@ -3,7 +3,7 @@
 gantt
     dateFormat  HH-mm
     axisFormat %H:%M
-    %% Current Time: 下午12:02:15
+    %% Current Time: 下午2:25:07
     section Tasks
     [[应用使用它统计]]mdm首页面板, 应用排名,增加时间筛选     :10-00, 48mm
     [[应用使用它统计]]mdm应用统计, 增加时间筛选     :10-48, 48mm
