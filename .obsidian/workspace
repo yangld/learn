@@ -8,27 +8,28 @@
         "type": "split",
         "children": [
           {
-            "id": "14bdbbbc1a5453e4",
+            "id": "7d7964af6bd8e326",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day Planners/Day Planner-20211115.md",
+                "file": "Day Planners/Day Planner-20211116.md",
                 "mode": "preview"
               },
               "pinned": true
             }
           },
           {
-            "id": "f33d51eed19f45ea",
+            "id": "38d8fea2853812fe",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "markdown",
+              "type": "mindmapview",
               "state": {
-                "file": "Day Planners/Day Planner-20211107.md",
-                "mode": "source"
-              }
+                "file": "Day Planners/未命名思维导图.md"
+              },
+              "pinned": true
             }
           },
           {
@@ -72,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#姜睿",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -99,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264
+    "width": 364
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -128,7 +129,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "faa8ee4a10162d26",
@@ -148,17 +150,17 @@
     "direction": "horizontal",
     "width": 306
   },
-  "active": "f33d51eed19f45ea",
+  "active": "7d7964af6bd8e326",
   "lastOpenFiles": [
-    "Day Planners/Day Planner-20211107.md",
-    "Day Planners/Day Planner-20211115.md",
-    "Day Planners/Day Planner-20211106.md",
-    "Day Planners/Day Planner-20211114.md",
-    "Day Planners/Day Planner-20211111.md",
-    "Day Planners/Day Planner-20211108.md",
-    "Day Planners/Day Planner-20211105.md",
-    "Day Planners/Day Planner-20211104.md",
+    "Day Planners/Day Planner-20211116.md",
     "Day Planners/未命名思维导图.md",
-    "Day Planners/各省应用下载及使用的数据.md"
+    "3工作日志/2021-11-15.md",
+    "Day Planners/Day Planner-20211115.md",
+    "3工作日志/2021-11-12.md",
+    "2模板/当前日期.md",
+    "2模板/当前时间.md",
+    "Day Planners/Day Planner-20211114.md",
+    "Day Planners/Day Planner-20211113.md",
+    "Day Planners/Day Planner-20211112.md"
   ]
 }

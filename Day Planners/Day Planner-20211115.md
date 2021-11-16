@@ -3,7 +3,7 @@
 gantt
     dateFormat  HH-mm
     axisFormat %H:%M
-    %% Current Time: 下午7:02:02
+    %% Current Time: 下午9:32:19
     section Tasks
     Obsidian Day Planner学习     :09-00, 30mm
     发送周报     :09-30, 10mm
