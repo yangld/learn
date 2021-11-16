@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d996e242f002a636",
+        "id": "e6c858f0f0de6d20",
         "type": "split",
         "children": [
           {
-            "id": "7d7964af6bd8e326",
+            "id": "f08ca71b91601357",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -21,7 +21,7 @@
             }
           },
           {
-            "id": "38d8fea2853812fe",
+            "id": "4d3c72a88bcb5488",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -40,7 +40,7 @@
               "type": "markdown",
               "state": {
                 "file": "3工作日志/2021-11-15.md",
-                "mode": "source"
+                "mode": "preview"
               },
               "pinned": true
             }
@@ -100,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258
+    "width": 255
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -128,6 +128,35 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "aac6213aaac80414",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3工作日志/2021-11-15.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "571b5599b834cf8f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3工作日志/2021-11-15.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -150,11 +179,11 @@
     "direction": "horizontal",
     "width": 306
   },
-  "active": "38d8fea2853812fe",
+  "active": "a60c59d394fcb3d3",
   "lastOpenFiles": [
+    "3工作日志/2021-11-15.md",
     "Day Planners/未命名思维导图.md",
     "Day Planners/Day Planner-20211116.md",
-    "3工作日志/2021-11-15.md",
     "Day Planners/Day Planner-20211115.md",
     "3工作日志/2021-11-12.md",
     "2模板/当前日期.md",
