@@ -40,7 +40,7 @@
               "type": "markdown",
               "state": {
                 "file": "3工作日志/2021-11-15.md",
-                "mode": "preview"
+                "mode": "source"
               },
               "pinned": true
             }
@@ -100,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 364
+    "width": 258
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -150,12 +150,12 @@
     "direction": "horizontal",
     "width": 306
   },
-  "active": "7d7964af6bd8e326",
+  "active": "38d8fea2853812fe",
   "lastOpenFiles": [
-    "Day Planners/Day Planner-20211116.md",
     "Day Planners/未命名思维导图.md",
-    "Day Planners/Day Planner-20211115.md",
     "3工作日志/2021-11-15.md",
+    "Day Planners/Day Planner-20211116.md",
+    "Day Planners/Day Planner-20211115.md",
     "3工作日志/2021-11-12.md",
     "2模板/当前日期.md",
     "2模板/当前时间.md",
