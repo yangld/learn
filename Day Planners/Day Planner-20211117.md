@@ -3,7 +3,7 @@
 gantt
     dateFormat  HH-mm
     axisFormat %H:%M
-    %% Current Time: 下午5:02:36
+    %% Current Time: 下午6:02:22
     section Tasks
     OBsidian 学习     :09-50, 10mm
     开会讨论集中管控对接的web的相关问题     :10-00, 85mm
@@ -60,7 +60,7 @@ gantt
 	- 23861 -----------------
 	- 23853 暂未实现
 	- 23858, 23857
-	- 23850 去掉Ip列, 同23838
+	- 23850 已修改
 	- 23848
 	- 23843 确定原因???
 	- 23839 
