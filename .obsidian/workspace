@@ -15,7 +15,7 @@
               "type": "markdown",
               "state": {
                 "file": "Day Planners/Day Planner-20211117.md",
-                "mode": "source"
+                "mode": "preview"
               },
               "pinned": true
             }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#doing",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -70,8 +70,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "4854812aaeb35f53",
@@ -143,13 +142,13 @@
   "lastOpenFiles": [
     "Day Planners/Day Planner-20211117.md",
     "3工作日志/2021-11-15.md",
-    "Day Planners/各省应用下载及使用的数据.md",
-    "Day Planners/未命名思维导图.md",
-    "Day Planners/Day Planner-20211116.md",
-    "Day Planners/Day Planner-20211115.md",
-    "3工作日志/2021-11-12.md",
     "2模板/当前日期.md",
     "2模板/当前时间.md",
-    "Day Planners/Day Planner-20211114.md"
+    "2模板/日期TAG.md",
+    "知识管理/Template/HHMM.md",
+    "Day Planners/应用使用它统计.md",
+    "2模板/当前时间-HHMM.md",
+    "2模板/2模板.md",
+    "Day Planners/各省应用下载及使用的数据.md"
   ]
 }

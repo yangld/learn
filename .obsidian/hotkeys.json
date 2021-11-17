@@ -49,5 +49,13 @@
       "key": "ArrowRight"
     }
   ],
-  "app:delete-file": []
+  "app:delete-file": [],
+  "templater-obsidian:知识管理/Template/HHMM.md": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "H"
+    }
+  ]
 }
