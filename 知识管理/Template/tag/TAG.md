@@ -27,3 +27,4 @@
 #process/doing 
 #process/done
 
+#thinking
