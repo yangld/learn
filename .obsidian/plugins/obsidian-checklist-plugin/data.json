@@ -1,8 +1,8 @@
 {
-  "todoPageName": "todo",
+  "todoPageName": "process",
   "showChecked": false,
   "groupBy": "tag",
-  "sortDirection": "old->new",
+  "sortDirection": "new->old",
   "ignoreFiles": "",
   "includeFiles": "",
   "lookAndFeel": "classic",
@@ -15,6 +15,9 @@
     "#todo/20211118/20211116",
     "#todo/20211118/20211117",
     "#todo/工作内容2",
-    "#todo/工作内容"
+    "#todo/工作内容",
+    "#process/todo/工作内容",
+    "#process/todo/工作内容2",
+    "#process/todo/思考"
   ]
 }

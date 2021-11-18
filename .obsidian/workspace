@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#branch/706版",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -78,25 +78,12 @@
               "state": {}
             }
           }
-        ]
-      },
-      {
-        "id": "4854812aaeb35f53",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d7d30112c1199a6a",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 255
+    "width": 325
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -124,9 +111,45 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "efdbd6e3a653671f",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "320369ca7320df6b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Day Planners/Day Planner-20211118.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "467315e69dbb81c1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Day Planners/Day Planner-20211118.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "faa8ee4a10162d26",
@@ -149,14 +172,14 @@
   "active": "84ec331764338492",
   "lastOpenFiles": [
     "Day Planners/Day Planner-20211118.md",
+    "知识管理/Template/tag/TAG.md",
+    "3工作日志/2021-10-26.md",
+    "3工作日志/2021-10-28.md",
     "3工作日志/2021-11-15.md",
-    "3工作日志/原型设计.md",
-    "aa/aa.md",
-    "Day Planners/应用使用它统计.md",
-    "Day Planners/各省应用下载及使用的数据.md",
-    "Day Planners/46-2120211119.md",
-    "3工作日志/3工作日志.md",
-    "知识管理/Template/日记模板-DayPlanner.md",
-    "3工作日志/2021-11-16.md"
+    "知识管理/Template/卡片模板.md",
+    "2模板/2模板.md",
+    "知识管理/Template/common/当前日期.md",
+    "知识管理/Template/common/当前时间-HHMM.md",
+    "知识管理/Template/common/当前时间.md"
   ]
 }

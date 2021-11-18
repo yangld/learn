@@ -13,5 +13,6 @@
   },
   "foldHeading": true,
   "foldIndent": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "emacsyKeys": false
 }
