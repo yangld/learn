@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "思考/事件通知.md",
+                "file": "知识管理/Template/tag/template.md",
                 "mode": "source"
               }
             }
@@ -72,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#thinking/事件通知",
+                "query": "tag:#process/doing",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -94,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 178
+    "width": 343
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "思考/事件通知.md",
+                "file": "知识管理/Template/tag/template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "思考/事件通知.md",
+                "file": "知识管理/Template/tag/template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,15 +182,15 @@
   },
   "active": "9d2adfb359079bfa",
   "lastOpenFiles": [
+    "知识管理/Template/tag/template.md",
+    "思考/用Obsidian代替应用管理.md",
+    "3工作日志/2021-10-28.md",
     "思考/事件通知.md",
     "Day Planners/Day Planner-20211118.md",
-    "知识管理/Template/tag/TAG.md",
     "3工作日志/2021-11-15.md",
     "知识管理/Template/tag/new.md",
     "3工作日志/2021-10-26.md",
-    "3工作日志/2021-10-28.md",
     "知识管理/Template/卡片模板.md",
-    "2模板/2模板.md",
-    "知识管理/Template/common/当前日期.md"
+    "2模板/2模板.md"
   ]
 }
