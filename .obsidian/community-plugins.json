@@ -1,24 +1,10 @@
 [
   "obsidian-git",
   "obsidian-kanban",
-  "obsidian-outliner",
-  "obsidian-mind-map",
-  "sliding-panes-obsidian",
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-checklist-plugin",
   "calendar",
-  "folder-note-plugin",
-  "note-folder-autorename",
-  "dataview",
-  "obsidian-timelines",
   "table-editor-obsidian",
-  "tag-wrangler",
-  "obsidian-admonition",
   "obsidian-day-planner",
-  "obsidian-enhancing-mindmap",
-  "obsidian-plotly",
-  "nldates-obsidian",
-  "obsidian-style-settings",
-  "obsidian-charts",
-  "templater-obsidian"
+  "nldates-obsidian"
 ]

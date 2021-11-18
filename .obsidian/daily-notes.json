@@ -1,4 +1,6 @@
 {
-  "folder": "3工作日志",
-  "autorun": false
+  "folder": "Day Planners",
+  "autorun": false,
+  "template": "知识管理/Template/日记模板-DayPlanner",
+  "format": "W-YYYMMDD"
 }

@@ -8,13 +8,13 @@
         "type": "split",
         "children": [
           {
-            "id": "1f50c32e24a0e069",
+            "id": "84ec331764338492",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day Planners/Day Planner-20211117.md",
+                "file": "Day Planners/Day Planner-20211118.md",
                 "mode": "preview"
               },
               "pinned": true
@@ -68,6 +68,14 @@
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
+            }
+          },
+          {
+            "id": "849f8599666b02a3",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
             }
           }
         ]
@@ -138,17 +146,17 @@
     "direction": "horizontal",
     "width": 306
   },
-  "active": "1f50c32e24a0e069",
+  "active": "84ec331764338492",
   "lastOpenFiles": [
-    "Day Planners/Day Planner-20211117.md",
-    "知识管理/InBox/接口文档/接口文档.md",
+    "Day Planners/Day Planner-20211118.md",
     "3工作日志/2021-11-15.md",
-    "2模板/当前日期.md",
-    "2模板/当前时间.md",
-    "2模板/日期TAG.md",
-    "知识管理/Template/HHMM.md",
+    "3工作日志/原型设计.md",
+    "aa/aa.md",
     "Day Planners/应用使用它统计.md",
-    "2模板/当前时间-HHMM.md",
-    "2模板/2模板.md"
+    "Day Planners/各省应用下载及使用的数据.md",
+    "Day Planners/46-2120211119.md",
+    "3工作日志/3工作日志.md",
+    "知识管理/Template/日记模板-DayPlanner.md",
+    "3工作日志/2021-11-16.md"
   ]
 }
