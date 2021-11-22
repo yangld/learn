@@ -4,48 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e6c858f0f0de6d20",
-        "type": "split",
-        "children": [
-          {
-            "id": "84ec331764338492",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Day Planners/Day Planner-20211118.md",
-                "mode": "preview"
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "a60c59d394fcb3d3",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3工作日志/2021-11-15.md",
-                "mode": "preview"
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "9d2adfb359079bfa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识管理/Template/tag/template.md",
-                "mode": "source"
-              }
-            }
+        "id": "a317b3d159c5dd01",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Day Planners/Day Planner-20211122.md",
+            "mode": "preview"
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -89,8 +56,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -122,52 +88,16 @@
               "type": "calendar",
               "state": {}
             }
-          },
-          {
-            "id": "efdbd6e3a653671f",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
-          },
-          {
-            "id": "320369ca7320df6b",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "3工作日志/2021-11-15.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "467315e69dbb81c1",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "3工作日志/2021-11-15.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
-        "id": "faa8ee4a10162d26",
+        "id": "f13c7da68fb02288",
         "type": "tabs",
         "children": [
           {
-            "id": "bd559d0cd0c7875e",
+            "id": "bc164a98be8d2008",
             "type": "leaf",
             "state": {
               "type": "timeline",
@@ -180,17 +110,17 @@
     "direction": "horizontal",
     "width": 306
   },
-  "active": "a60c59d394fcb3d3",
+  "active": "a317b3d159c5dd01",
   "lastOpenFiles": [
-    "3工作日志/2021-11-15.md",
-    "知识管理/Template/tag/template.md",
-    "思考/用Obsidian代替应用管理.md",
-    "3工作日志/2021-10-28.md",
-    "思考/事件通知.md",
+    "Day Planners/Day Planner-20211122.md",
     "Day Planners/Day Planner-20211118.md",
-    "知识管理/Template/tag/new.md",
-    "3工作日志/2021-10-26.md",
-    "知识管理/Template/卡片模板.md",
-    "2模板/2模板.md"
+    "Day Planners/Day Planner-20211123.md",
+    "Day Planners/Day Planner-2120211122.md",
+    "Day Planners/22上午2021 P2021/11/22上午nn0r-2120211122.md",
+    "Day Planners/47-2120211122.md",
+    "Day Planners/各省应用下载及使用的数据.md",
+    "Day Planners/Day Planner-20211117.md",
+    "Day Planners/Day Planner-20211116.md",
+    "Day Planners/Day Planner-20211115.md"
   ]
 }
