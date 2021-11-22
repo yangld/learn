@@ -72,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#process/doing",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "知识管理/Template/tag/template.md",
+                "file": "3工作日志/2021-11-15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "知识管理/Template/tag/template.md",
+                "file": "3工作日志/2021-11-15.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,14 +180,14 @@
     "direction": "horizontal",
     "width": 306
   },
-  "active": "9d2adfb359079bfa",
+  "active": "a60c59d394fcb3d3",
   "lastOpenFiles": [
+    "3工作日志/2021-11-15.md",
     "知识管理/Template/tag/template.md",
     "思考/用Obsidian代替应用管理.md",
     "3工作日志/2021-10-28.md",
     "思考/事件通知.md",
     "Day Planners/Day Planner-20211118.md",
-    "3工作日志/2021-11-15.md",
     "知识管理/Template/tag/new.md",
     "3工作日志/2021-10-26.md",
     "知识管理/Template/卡片模板.md",
