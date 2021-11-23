@@ -1,16 +1,16 @@
 {
   "main": {
-    "id": "23f66df6a9ecee8e",
+    "id": "93732cfe6c601d08",
     "type": "split",
     "children": [
       {
-        "id": "a317b3d159c5dd01",
+        "id": "93812166f711c23b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Day Planners/Day Planner-20211124.md",
-            "mode": "preview"
+            "file": "Day Planners/Day Planner-20211123.md",
+            "mode": "source"
           }
         }
       }
@@ -88,6 +88,43 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "8be7619e11614384",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "03d2645a00c80f80",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Day Planners/Day Planner-20211123.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d3835e6061629070",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Day Planners/Day Planner-20211123.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -110,17 +147,17 @@
     "direction": "horizontal",
     "width": 306
   },
-  "active": "a317b3d159c5dd01",
+  "active": "93812166f711c23b",
   "lastOpenFiles": [
-    "Day Planners/Day Planner-20211124.md",
     "Day Planners/Day Planner-20211123.md",
+    "Day Planners/Day Planner-2021112333.md",
+    "Day Planners/Day Planner-20211124.md",
+    "Day Planners/Day Planner-20211125.md",
     "知识管理/Template/日记模板-DayPlanner.md",
     "Day Planners/Day Planner-20211122.md",
     "Day Planners/Day Planner-20211118.md",
     "Day Planners/Day Planner-2120211122.md",
     "Day Planners/22上午2021 P2021/11/22上午nn0r-2120211122.md",
-    "Day Planners/47-2120211122.md",
-    "Day Planners/各省应用下载及使用的数据.md",
-    "Day Planners/Day Planner-20211117.md"
+    "Day Planners/47-2120211122.md"
   ]
 }
