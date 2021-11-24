@@ -3,7 +3,7 @@
 gantt
     dateFormat  HH-mm
     axisFormat %H:%M
-    %% Current Time: 下午2:45:37
+    %% Current Time: 下午3:45:40
     section Tasks
     OBsidian 学习     :09-30, 30mm
     自注册原型设计     :10-00, 60mm
@@ -29,7 +29,7 @@ gantt
 - [x] 12:00 BREAK
 
 ## 下午安排
-- [ ] 13:30 自注册原型设计
+- [x] 13:30 自注册原型设计
 - 4600, 对应的登录页面关闭, 4605对应的登录页面修改名称 #process/todo 
 - 自注册原型, 老侯在设计, 有点复杂
 - 706导出数据, 如何实现![[2381637717271_.pic.jpg]], 
