@@ -40,3 +40,55 @@ gantt
 - 实现角度, 考虑
 	- 对比图, 有坑, 数据量太大了, 
 	- 用户数* 应用数 * 天数
+
+```chart
+type: line
+labels: [2021-11-20,2021-11-21,2021-11-22,2021-11-23,2021-11-24]
+series:
+  - title: 时长
+    data: [10.21,11.22,12.23,10.11,10.22]
+tension: 0.2
+width: 80%
+labelColors: false
+fill: false
+beginAtZero: false
+```
+
+```chart
+type: bar
+labels: [360浏览器,QQ,微信,淘宝,京东]
+series:
+  - title: 使用时长(小时)
+    data: [10.21,11.22,12.23, 5.22,6.33]
+tension: 0.2
+width: 80%
+labelColors: false
+fill: false
+beginAtZero: false
+```
+
+```chart
+type: bar
+labels: [360浏览器,QQ,微信,淘宝,京东]
+series:
+  - title: 使用次数
+    data: [500,654,788,121,300]
+tension: 0.2
+width: 80%
+labelColors: false
+fill: false
+beginAtZero: false
+```
+
+```chart
+type: bar
+labels: [360浏览器,QQ,微信,淘宝,京东]
+series:
+  - title: 使用流量(M)
+    data: [100,321,456,200,50]
+tension: 0.2
+width: 80%
+labelColors: false
+fill: false
+beginAtZero: false
+```
