@@ -3,7 +3,7 @@
 gantt
     dateFormat  HH-mm
     axisFormat %H:%M
-    %% Current Time: 下午5:28:27
+    %% Current Time: 下午7:22:04
     section Tasks
     OBsidian 学习     :09-30, 30mm
     bug修改     :10-00, 120mm
@@ -21,5 +21,5 @@ gantt
 
 ## 下午安排
 - [x] 13:30 自注册原型设计
-- [ ] 15:30 其它1
-- [ ] 19:00 END
+- [x] 15:30 其它1
+- [x] 19:00 END
