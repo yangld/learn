@@ -92,3 +92,43 @@ labelColors: false
 fill: false
 beginAtZero: false
 ```
+
+
+```chart
+type: bar
+labels: [张胜男,李圣杰,王文英,邓毅名,马晓峰]
+series:
+  - title: 使用时长(小时)
+    data: [10.21,11.22,12.23, 5.22,6.33]
+tension: 0.2
+width: 80%
+labelColors: false
+fill: false
+beginAtZero: false
+```
+
+```chart
+type: bar
+labels: [张胜男,李圣杰,王文英,邓毅名,马晓峰]
+series:
+  - title: 使用次数
+    data: [500,654,788,121,300]
+tension: 0.2
+width: 80%
+labelColors: false
+fill: false
+beginAtZero: false
+```
+
+```chart
+type: bar
+labels: [张胜男,李圣杰,王文英,邓毅名,马晓峰]
+series:
+  - title: 使用流量(M)
+    data: [100,321,456,200,50]
+tension: 0.2
+width: 80%
+labelColors: false
+fill: false
+beginAtZero: false
+```
