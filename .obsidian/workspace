@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Day Planners/Day Planner-20211124.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -94,6 +94,14 @@
             "type": "leaf",
             "state": {
               "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "836a94a32171b8d6",
+            "type": "leaf",
+            "state": {
+              "type": "RSS_FEED",
               "state": {}
             }
           }
