@@ -15,8 +15,8 @@
       "sortOrder": "ALPHABET_NORMAL"
     }
   ],
-  "saveLocation": "default",
-  "saveLocationFolder": "",
+  "saveLocation": "custom",
+  "saveLocationFolder": "RSS",
   "items": [
     {
       "title": "知乎每日精选",
@@ -50,9 +50,9 @@
           "pubDate": "Wed, 24 Nov 2021 11:30:20 +0800",
           "folder": "RSS/知乎精选",
           "feed": "知乎精选",
-          "read": false,
+          "read": true,
           "favorite": false,
-          "created": false,
+          "created": true,
           "tags": []
         },
         {
@@ -65,9 +65,9 @@
           "pubDate": "Mon, 22 Nov 2021 16:08:39 +0800",
           "folder": "RSS/知乎精选",
           "feed": "知乎精选",
-          "read": false,
+          "read": true,
           "favorite": false,
-          "created": false,
+          "created": true,
           "tags": []
         },
         {
