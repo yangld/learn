@@ -4,27 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "c32df1aa5fa2ef74",
+        "id": "9d48da1179082a19",
         "type": "split",
         "children": [
-          {
-            "id": "e6601a8c849734a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Day Planners/Day Planner-20211126.md",
-                "mode": "preview"
-              }
-            }
-          },
           {
             "id": "c8482a492e3143ff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day Planners/Obsidian学习总结.md",
+                "file": "obsidian/学习技巧.md",
+                "mode": "preview"
+              }
+            }
+          },
+          {
+            "id": "f7d28fc1eb951abc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian/学习技巧.md",
                 "mode": "source"
               }
             }
@@ -71,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#process/todo/obsidian",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -88,11 +88,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 204
+    "width": 238
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -117,9 +118,26 @@
               "type": "RSS_FEED",
               "state": {}
             }
+          },
+          {
+            "id": "b3685ac91b3efb6e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "obsidian/学习技巧.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "f13c7da68fb02288",
@@ -144,24 +162,24 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 294,
-    "collapsed": true
+    "width": 294
   },
-  "active": "c8482a492e3143ff",
+  "active": "f7d28fc1eb951abc",
   "lastOpenFiles": [
+    "obsidian/学习技巧.md",
     "Day Planners/Obsidian学习总结.md",
+    "8知识管理/InBox/test.md",
     "Day Planners/Day Planner-20211126.md",
     "Day Planners/日期TAG2.md",
     "Day Planners/未命名思维导图.md",
     "待办事项/Obsidian学习.md",
     "Day Planners/Day Planner-20211125.md",
     "Day Planners/2021.11.26.md",
-    "Excalidraw/Drawing 2021-11-24 12.03.15.excalidraw.md",
-    "RSS/我就像这孤岛.md",
-    "RSS/猪拱菌.md"
+    "Excalidraw/Drawing 2021-11-24 12.03.15.excalidraw.md"
   ]
 }
