@@ -17,7 +17,8 @@
   "obsidian-tracker",
   "leader-hotkeys-obsidian",
   "obsidian-charts",
-  "rss-reader",
   "obsidian-icon-folder",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "templater-obsidian",
+  "rss-reader"
 ]
