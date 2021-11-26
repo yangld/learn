@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "4095f4739c46323a",
+        "id": "4bf5e1a635e5ac21",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "RSS/猪拱菌.md",
-            "mode": "preview"
+            "file": "Day Planners/Day Planner-20211126.md",
+            "mode": "source"
           }
         }
       }
@@ -60,7 +60,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343
+    "width": 507
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -98,7 +98,36 @@
             }
           },
           {
-            "id": "836a94a32171b8d6",
+            "id": "368e46b9f6364beb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Day Planners/Day Planner-20211126.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7d50e8ace842b4a9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Day Planners/Day Planner-20211126.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4eeee2f57f4cb98f",
             "type": "leaf",
             "state": {
               "type": "RSS_FEED",
@@ -106,7 +135,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       },
       {
         "id": "f13c7da68fb02288",
@@ -126,17 +155,17 @@
     "direction": "horizontal",
     "width": 491
   },
-  "active": "4095f4739c46323a",
+  "active": "4bf5e1a635e5ac21",
   "lastOpenFiles": [
+    "Day Planners/Day Planner-20211126.md",
+    "Excalidraw/Drawing 2021-11-24 12.03.15.excalidraw.md",
+    "RSS/我就像这孤岛.md",
     "RSS/猪拱菌.md",
     "RSS/物理世界.md",
     "Day Planners/Day Planner-20211124.md",
     "Day Planners/Day Planner-20211125.md",
-    "Excalidraw/Drawing 2021-11-24 12.03.15.excalidraw.md",
     "4思考/未命名.md",
     "Day Planners/Day Planner-20211123.md",
-    "Day Planners/Day Planner-20211122.md",
-    "Day Planners/Drawing 2021-11-23 15.54.26.excalidraw.md",
-    "Day Planners/Day Planner-2021112333.md"
+    "Day Planners/Day Planner-20211122.md"
   ]
 }
