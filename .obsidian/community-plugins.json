@@ -22,5 +22,6 @@
   "templater-obsidian",
   "rss-reader",
   "convert-url-to-iframe",
-  "obsidian-advanced-new-file"
+  "obsidian-advanced-new-file",
+  "tag-page-preview"
 ]

@@ -11859,3 +11859,6 @@ body.background-settings-body-style-blur .workspace-split.mod-vertical > * > .wo
   height: 100%;
 }
 
+.markdown-preview-view .tag {
+	    display: none;
+}

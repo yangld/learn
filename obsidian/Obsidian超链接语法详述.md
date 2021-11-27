@@ -1,8 +1,10 @@
 ##  Obsidian超链接语法详述
-### 总结
+### 总结 #thinking/obsidian/总结
 1. 是否显示内容, 使用 ! 表示
 2. [] 内部用于显示, () 内部为真正的内容
-3. 本地文件用`[[]]`引用, 可以在内部取别名,
+3. 本地文件用`[[]]`引用, 可以在内部取别名,  用 | 区分
+4. 本地文件如果是笔记, 则可以使用 # 来获取块数据
+
 ### 摘要
 - 插入和展示网络图片
 	- 语法: `![#name](#url)`
@@ -36,7 +38,7 @@
 	- 1. `[系统文件](file:////Users/yanglidong/git/learn/1附件/png)`
 		- [系统文件](file:////Users/yanglidong/git/learn/1附件/png)
 
-
-
 ### 参考
-- [Obsidian超链接语法详述](http://jackiegeek.gitee.io/obsidian-chinese-help/08%20%E6%96%87%E7%AB%A0/obsidian%E8%B6%85%E9%93%BE%E6%8E%A5%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%BF%B0/)
+- [Obsidian超链接语法详述](http://jackiegeek.gitee.io/obsidian-chinese-help/08%20%E6%96%87%E7%AB%A0/obsidian%E8%B6%85%E9%93%BE%E6%8E%A5%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%BF%B0/) #thinking/obsidian/url 
+- 上面链接的附近链接可以用于学习其它 #thinking/obsidian/todo  
+

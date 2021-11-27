@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian/学习技巧.md",
-                "mode": "preview"
+                "file": "Day Planners/Obsidian学习总结.md",
+                "mode": "source"
               }
             }
           },
@@ -24,8 +24,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian/学习技巧.md",
-                "mode": "source"
+                "file": "obsidian/Obsidian超链接语法详述.md",
+                "mode": "preview"
               }
             }
           }
@@ -71,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#process/todo/obsidian",
+                "query": "tag:#thinking/obsidian/todo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -120,18 +120,30 @@
             }
           },
           {
-            "id": "b3685ac91b3efb6e",
+            "id": "5a5c1950140c4a90",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian/学习技巧.md",
+                "file": "Day Planners/Obsidian学习总结.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9479c1fcb9600ab2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Day Planners/Obsidian学习总结.md",
+                "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
@@ -169,10 +181,10 @@
     "direction": "horizontal",
     "width": 294
   },
-  "active": "f7d28fc1eb951abc",
+  "active": "c8482a492e3143ff",
   "lastOpenFiles": [
-    "obsidian/学习技巧.md",
     "Day Planners/Obsidian学习总结.md",
+    "obsidian/Obsidian超链接语法详述.md",
     "8知识管理/InBox/test.md",
     "Day Planners/Day Planner-20211126.md",
     "Day Planners/日期TAG2.md",
