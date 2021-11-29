@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "8知识管理/Knowledge/删除命令.md",
+            "file": "obsidian/Obsidian超链接语法详述.md",
             "mode": "source"
           }
         }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#todo/linux",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8知识管理/Knowledge/删除命令.md",
+                "file": "obsidian/Obsidian超链接语法详述.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "8知识管理/Knowledge/删除命令.md",
+                "file": "obsidian/Obsidian超链接语法详述.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,9 +173,9 @@
   },
   "active": "cdee80e052fa66ea",
   "lastOpenFiles": [
+    "obsidian/Obsidian超链接语法详述.md",
     "8知识管理/Knowledge/删除命令.md",
     "Day Planners/Day Planner-20211129.md",
-    "obsidian/Obsidian超链接语法详述.md",
     "Day Planners/Day Planner-20211128.md",
     "Day Planners/Day Planner-20211127.md",
     "Day Planners/Day Planner-20211126.md",
