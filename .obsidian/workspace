@@ -4,33 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9d48da1179082a19",
-        "type": "split",
-        "children": [
-          {
-            "id": "c8482a492e3143ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Day Planners/Obsidian学习总结.md",
-                "mode": "source"
-              }
-            }
-          },
-          {
-            "id": "f7d28fc1eb951abc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian/Obsidian超链接语法详述.md",
-                "mode": "preview"
-              }
-            }
+        "id": "c8482a492e3143ff",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Day Planners/Day Planner-20211129.md",
+            "mode": "source"
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -88,8 +70,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -125,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/Obsidian学习总结.md",
+                "file": "Day Planners/Day Planner-20211129.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/Obsidian学习总结.md",
+                "file": "Day Planners/Day Planner-20211129.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,6 +164,7 @@
   },
   "active": "c8482a492e3143ff",
   "lastOpenFiles": [
+    "Day Planners/Day Planner-20211129.md",
     "Day Planners/Obsidian学习总结.md",
     "obsidian/Obsidian超链接语法详述.md",
     "8知识管理/InBox/test.md",
@@ -191,7 +173,6 @@
     "Day Planners/未命名思维导图.md",
     "待办事项/Obsidian学习.md",
     "Day Planners/Day Planner-20211125.md",
-    "Day Planners/2021.11.26.md",
-    "Excalidraw/Drawing 2021-11-24 12.03.15.excalidraw.md"
+    "Day Planners/2021.11.26.md"
   ]
 }

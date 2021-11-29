@@ -1,12 +1,13 @@
 - 查找Obsidian信息, 精读
 	- 收集网址, 摘要,  总结
 - 阅读Obsidian帮助文档, 精读
-	- [[Obsidian超链接语法详述]]
+	- ![[Obsidian超链接语法详述]]
 	- 生成样例, 摘要, 总结
 - 查找优秀的Obsidian使用模板, 确定如何实现
 	- 截图保存, 生成待办任务
 	- [ ] 创建笔记到指定目录下 #process/todo/obsidian  
 	- [x] 如何不展示tag, 且能对信息分组 [已解决](https://forum.obsidian.md/t/hide-tags-in-preview-mode/7684)
+	- [ ] evernote to markdown
 - 自己开发一个Obsidian插件
 	- 查看已有插件, 列出其优点, 缺点
 	- 确定功能列表
