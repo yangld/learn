@@ -3,7 +3,7 @@
 gantt
     dateFormat  HH-mm
     axisFormat %H:%M
-    %% Current Time: 下午11:58:36
+    %% Current Time: 上午5:57:45
     section Tasks
     OBsidian 学习     :09-30, 30mm
     bug修改     :10-00, 120mm
@@ -15,15 +15,11 @@ gantt
 ```
 
 ## 上午安排
-- [x] 09:30 OBsidian 学习
-- [x] 10:00 bug修改
-- [x] 12:00 BREAK
+- [ ] 09:30 OBsidian 学习
+- [ ] 10:00 bug修改
+- [ ] 12:00 BREAK
 
 ## 下午安排
-- [x] 13:30 自注册原型设计
-- [x] 15:30 其它1
-- [x] 19:00 END
-
-#todo/link #java8 #时间函数
-[计算时间差](https://www.cnblogs.com/jpfss/p/11214676.html)
-[stream](https://www.cnblogs.com/yimiyan/p/5992440.html)
+- [ ] 13:30 自注册原型设计
+- [ ] 15:30 其它1
+- [ ] 19:00 END
