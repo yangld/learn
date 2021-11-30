@@ -7,8 +7,11 @@
         "id": "286f8faa059bf6c2",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "evernote/参考/Elasticsearch 的坑爹事——记录一次mapping field修改过程 - 大熊先生_互联网后端技术 - 博客园.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -58,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#1楼",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -75,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -103,6 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "evernote/参考/Elasticsearch 的坑爹事——记录一次mapping field修改过程 - 大熊先生_互联网后端技术 - 博客园.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,13 +124,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "evernote/参考/Elasticsearch 的坑爹事——记录一次mapping field修改过程 - 大熊先生_互联网后端技术 - 博客园.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "fba0dbb6f344144e",
+            "id": "dc14190b3fde7f5c",
             "type": "leaf",
             "state": {
               "type": "RSS_FEED",
@@ -167,6 +173,8 @@
   },
   "active": "286f8faa059bf6c2",
   "lastOpenFiles": [
+    "evernote/参考/Elasticsearch 的坑爹事——记录一次mapping field修改过程 - 大熊先生_互联网后端技术 - 博客园.md",
+    "evernote/参考/show engine innodb status解读 - zengkefu - 博客园.md",
     "8知识管理/Attachments/(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客.md",
     "evernote/参考/【Kafka踩坑系列之一】消费者拉不出数据_weixin_30407099的博客-CSDN博客.md",
     "Day Planners/Day Planner-20211130.md",
@@ -174,8 +182,6 @@
     "obsidian/Obsidian超链接语法详述.md",
     "Day Planners/Day Planner-20211129.md",
     "Day Planners/Day Planner-20211128.md",
-    "Day Planners/Day Planner-20211127.md",
-    "Day Planners/Day Planner-20211126.md",
-    "Day Planners/Day Planner-20211125.md"
+    "Day Planners/Day Planner-20211127.md"
   ]
 }
