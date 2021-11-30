@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "8知识管理/Knowledge/删除命令.md",
+            "file": "8知识管理/Attachments/(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客.md",
             "mode": "preview"
           }
         }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#todo/linux/rm",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -107,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8知识管理/Knowledge/删除命令.md",
+                "file": "8知识管理/Attachments/(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "8知识管理/Knowledge/删除命令.md",
+                "file": "8知识管理/Attachments/(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,6 +172,7 @@
   },
   "active": "cdee80e052fa66ea",
   "lastOpenFiles": [
+    "8知识管理/Attachments/(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客.md",
     "8知识管理/Knowledge/删除命令.md",
     "obsidian/Obsidian超链接语法详述.md",
     "Day Planners/Day Planner-20211129.md",
@@ -181,7 +181,6 @@
     "Day Planners/Day Planner-20211126.md",
     "Day Planners/Day Planner-20211125.md",
     "Day Planners/Day Planner-20211124.md",
-    "Day Planners/Day Planner-20211123.md",
-    "Day Planners/Obsidian学习总结.md"
+    "Day Planners/Day Planner-20211123.md"
   ]
 }
