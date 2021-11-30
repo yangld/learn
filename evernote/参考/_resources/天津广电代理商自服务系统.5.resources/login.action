@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+<head>
+
+<link href="/tianjindealer_web/css/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/tianjindealer_web/js/MD5.js"></script>
+<script type="text/javascript" src="/tianjindealer_web/js/base.js"></script>
+<title>天津广电代理商自服务系统</title>
+<script>
+
+	
+</script>
+</head>
+
+<body>
+
+<div id="container">
+  <div id="header_index">
+  <div id="logo"><img src=/tianjindealer_web/images/logo.jpg /></div>
+  </div>
+  <div id="mainContent_index">
+    <div id="logoin_index" align="center">
+    
+   		<form id="login" name="loginform" action="/tianjindealer_web/public/login.action" method="post"> 
+ 
+    	<span id="errorSpan">	<ul id="login_" class="errorText">
+            <li><span>登录失败，详情请查看日志</span></li>	</ul>
+</span>
+	    <table width="225" border="0" cellpadding="0" cellspacing="0">
+		  <tr >
+		    <td width="59" height="32" class="text_logoin">用户名：</td>
+		    <td width="161" align="left"><label>
+		      <input name="loginDto.code" type="text" id="loginDto.code" style="width: 155px;" />
+		    </label></td>
+		  </tr>
+		  <tr>
+		    <td height="32" class="text_logoin">密 码：</td>
+		    <td align="left"><input name="loginDto.password" type="password" id="loginDto.password" style="width: 155px;" /></td>
+		  </tr>
+		  <tr>
+		    <td height="32" class="text_logoin">验证码：</td>
+		    <td align="left"><input style="vertical-align: middle;" name="loginDto.verifyCode" type="text" id="loginDto.verifyCode" size="10" />
+		    	<img id="verifyImage" style="vertical-align: middle;" src="/tianjindealer_web/public/verifyImage.action" /> 
+		     </td>
+		  </tr>
+		  <tr>
+		    <td height="65">&nbsp;</td>
+		    <td align="left"><input type="image" onclick="return login_validate()" src="/tianjindealer_web/images/logoin.jpg"/></td>
+		  </tr>
+		</table>
+		</form>
+
+
+
+
+    </div>
+  </div>
+  <div class="text_foot" id="footer">Copyright ©  天津广电 All rights reserved.</div>
+</div>
+
+</body>
+</html>
