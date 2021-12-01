@@ -10,6 +10,17 @@
           "type": "empty",
           "state": {}
         }
+      },
+      {
+        "id": "3d207217cd48a5fe",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Day Planners/Day Planner-20211201.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -58,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#5楼",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -104,6 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Day Planners/Day Planner-20211201.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,6 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Day Planners/Day Planner-20211201.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,10 +179,10 @@
     "direction": "horizontal",
     "width": 294
   },
-  "active": "84bc412a8900e5da",
+  "active": "3d207217cd48a5fe",
   "lastOpenFiles": [
-    "RSS/ 理想中的办公协作是怎样的？ .md",
     "Day Planners/Day Planner-20211201.md",
+    "RSS/ 理想中的办公协作是怎样的？ .md",
     "evernote/参考/Elasticsearch 的坑爹事——记录一次mapping field修改过程 - 大熊先生_互联网后端技术 - 博客园.md",
     "evernote/参考/show engine innodb status解读 - zengkefu - 博客园.md",
     "8知识管理/Attachments/(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客.md",
