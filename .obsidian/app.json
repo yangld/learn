@@ -15,5 +15,6 @@
   "foldIndent": true,
   "showUnsupportedFiles": true,
   "emacsyKeys": false,
-  "communityPluginSortOrder": "releaseReverse"
+  "communityPluginSortOrder": "releaseReverse",
+  "defaultViewMode": "preview"
 }
