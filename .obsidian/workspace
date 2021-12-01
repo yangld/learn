@@ -4,12 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "84bc412a8900e5da",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
-        }
+        "id": "a392136909e43775",
+        "type": "split",
+        "children": [
+          {
+            "id": "84bc412a8900e5da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "8知识管理/Knowledge/今日收集.md",
+                "mode": "preview"
+              }
+            }
+          },
+          {
+            "id": "f0744a4e4d34d20a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "8知识管理/Knowledge/今日收集.md",
+                "mode": "source"
+              }
+            }
+          }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -75,8 +96,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -104,6 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "8知识管理/Knowledge/今日收集.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,6 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "8知识管理/Knowledge/今日收集.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,8 +188,9 @@
     "direction": "horizontal",
     "width": 294
   },
-  "active": "84bc412a8900e5da",
+  "active": "f0744a4e4d34d20a",
   "lastOpenFiles": [
+    "8知识管理/Knowledge/今日收集.md",
     "Day Planners/Day Planner-20211201.md",
     "RSS/ 理想中的办公协作是怎样的？ .md",
     "evernote/参考/Elasticsearch 的坑爹事——记录一次mapping field修改过程 - 大熊先生_互联网后端技术 - 博客园.md",
@@ -176,7 +199,6 @@
     "evernote/参考/【Kafka踩坑系列之一】消费者拉不出数据_weixin_30407099的博客-CSDN博客.md",
     "Day Planners/Day Planner-20211130.md",
     "8知识管理/Knowledge/删除命令.md",
-    "obsidian/Obsidian超链接语法详述.md",
-    "Day Planners/Day Planner-20211129.md"
+    "obsidian/Obsidian超链接语法详述.md"
   ]
 }
