@@ -10,17 +10,6 @@
           "type": "empty",
           "state": {}
         }
-      },
-      {
-        "id": "3d207217cd48a5fe",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Day Planners/Day Planner-20211201.md",
-            "mode": "source"
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -115,7 +104,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/Day Planner-20211201.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +120,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/Day Planner-20211201.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +166,7 @@
     "direction": "horizontal",
     "width": 294
   },
-  "active": "3d207217cd48a5fe",
+  "active": "84bc412a8900e5da",
   "lastOpenFiles": [
     "Day Planners/Day Planner-20211201.md",
     "RSS/ 理想中的办公协作是怎样的？ .md",

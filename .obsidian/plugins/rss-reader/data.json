@@ -157,10 +157,12 @@
           "language": "zh",
           "folder": "少数派",
           "feed": "少数派",
-          "read": false,
+          "read": true,
           "favorite": false,
           "created": false,
-          "tags": [],
+          "tags": [
+            "todo/read"
+          ],
           "hash": "094225adde44d00a9de8bdc7beb5aa1c"
         },
         {
