@@ -40,15 +40,7 @@
       "key": "O"
     }
   ],
-  "workspace:split-vertical": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "ArrowRight"
-    }
-  ],
+  "workspace:split-vertical": [],
   "app:delete-file": [],
   "templater-obsidian:知识管理/Template/HHMM.md": [
     {
