@@ -4,35 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "dcac37f21e780f51",
-        "type": "split",
-        "children": [
-          {
-            "id": "b7dc290f968e89b2",
-            "type": "leaf",
-            "dimension": 65.79457364341084,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "11网址收藏/1.md",
-                "mode": "preview"
-              }
-            }
-          },
-          {
-            "id": "eb9f07626dbba6e8",
-            "type": "leaf",
-            "dimension": 34.20542635658915,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "11网址收藏/1.md",
-                "mode": "source"
-              }
-            }
+        "id": "0496d01c82a5a18d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "9常用网址/禅道.md",
+            "mode": "preview"
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -102,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238
+    "width": 238,
+    "collapsed": true
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -126,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "11网址收藏/1.md",
+                "file": "9常用网址/禅道.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "11网址收藏/1.md",
+                "file": "9常用网址/禅道.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,19 +169,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294
+    "width": 294,
+    "collapsed": true
   },
-  "active": "b7dc290f968e89b2",
+  "active": "0496d01c82a5a18d",
   "lastOpenFiles": [
+    "9常用网址/禅道.md",
+    "10常用文件/一所进丰台机房表格.md",
+    "11网址收藏/dataview的使用的摘要.md",
+    "11网址收藏/dataview的使用.md",
+    "Day Planners/Day Planner-20211202.md",
     "11网址收藏/1.md",
     "8知识管理/Knowledge/今日收集.md",
-    "10常用文件/一所进丰台机房表格.md",
-    "9常用网址/禅道.md",
     "evernote/参考/[Linux]Mac OSX 命令行下控制 Wifi命令 - cn_wk的专栏 - CSDN博客.2.md",
     "Day Planners/Day Planner-20211201.md",
-    "RSS/ 理想中的办公协作是怎样的？ .md",
-    "evernote/参考/Elasticsearch 的坑爹事——记录一次mapping field修改过程 - 大熊先生_互联网后端技术 - 博客园.md",
-    "evernote/参考/show engine innodb status解读 - zengkefu - 博客园.md",
-    "8知识管理/Attachments/(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客.md"
+    "RSS/ 理想中的办公协作是怎样的？ .md"
   ]
 }
