@@ -16,6 +16,7 @@ gantt
 
 ## 上午安排
 - [x] 09:30 OBsidian 学习
+
 - [x] 10:00 bug修改
 - [x] 12:00 BREAK
 
