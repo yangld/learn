@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "待办事项/原型.md",
+            "file": "待办事项/权限管理.md",
             "mode": "source"
           }
         }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "待办事项/原型.md",
+                "file": "待办事项/权限管理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "待办事项/原型.md",
+                "file": "待办事项/权限管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,6 +175,8 @@
   },
   "active": "e27aa86f6c98b993",
   "lastOpenFiles": [
+    "待办事项/权限管理.md",
+    "Day Planners/Day Planner-20211207.md",
     "待办事项/原型.md",
     "Day Planners/Day Planner-20211202.md",
     "9常用网址/禅道.md",
@@ -182,8 +184,6 @@
     "11网址收藏/dataview的使用的摘要.md",
     "11网址收藏/dataview的使用.md",
     "11网址收藏/1.md",
-    "8知识管理/Knowledge/今日收集.md",
-    "evernote/参考/[Linux]Mac OSX 命令行下控制 Wifi命令 - cn_wk的专栏 - CSDN博客.2.md",
-    "Day Planners/Day Planner-20211201.md"
+    "8知识管理/Knowledge/今日收集.md"
   ]
 }
