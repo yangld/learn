@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "待办事项/权限管理.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -92,7 +92,7 @@
       {
         "id": "8afd4d2d7314c19a",
         "type": "tabs",
-        "dimension": 18.281535648994517,
+        "dimension": 64.34108527131784,
         "children": [
           {
             "id": "abdb51846b47bdd7",
@@ -145,7 +145,7 @@
       {
         "id": "f13c7da68fb02288",
         "type": "tabs",
-        "dimension": 81.71846435100548,
+        "dimension": 35.65891472868217,
         "children": [
           {
             "id": "bc164a98be8d2008",
@@ -171,7 +171,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 866
+    "width": 605
   },
   "active": "e27aa86f6c98b993",
   "lastOpenFiles": [
