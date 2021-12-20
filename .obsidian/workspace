@@ -10,6 +10,17 @@
           "type": "markdown",
           "state": {
             "file": "12时间轴/2时间轴-Line/1权限管理.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "ebf7f9c96e0a834e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "12时间轴/2时间轴-Line/1权限管理.md",
             "mode": "source"
           }
         }
@@ -131,7 +142,7 @@
             }
           },
           {
-            "id": "dc14190b3fde7f5c",
+            "id": "bc6e9ce4f382cd56",
             "type": "leaf",
             "state": {
               "type": "RSS_FEED",
@@ -139,7 +150,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "f13c7da68fb02288",
@@ -173,17 +184,17 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "e27aa86f6c98b993",
+  "active": "ebf7f9c96e0a834e",
   "lastOpenFiles": [
     "12时间轴/2时间轴-Line/1权限管理.md",
+    "Day Planners/Day Planner-20211220.md",
     "12时间轴/1资料-Input/1权限管理输入.md",
+    "obsidian/Obsidian超链接语法详述.md",
+    "Day Planners/Day Planner-20211126.md",
     "Day Planners/Day Planner-20211204.md",
     "Day Planners/未命名 2.md",
     "Day Planners/未命名 1.md",
     "Day Planners/未命名.md",
-    "Day Planners/Day Planner-20211217.md",
-    "Day Planners/Day Planner-20211210.md",
-    "3工作日志/2021-11-09.md",
-    "3工作日志/2021-11-10.md"
+    "Day Planners/Day Planner-20211217.md"
   ]
 }
