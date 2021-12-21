@@ -7,10 +7,9 @@
         "id": "ebf7f9c96e0a834e",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "kanban",
           "state": {
-            "file": "obsidian/Obsidian超链接语法详述.md",
-            "mode": "preview"
+            "file": "13看板/常用网址看板.md"
           }
         }
       }
@@ -107,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian/Obsidian超链接语法详述.md",
+                "file": "13看板/常用网址看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian/Obsidian超链接语法详述.md",
+                "file": "13看板/常用网址看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,10 +174,10 @@
   },
   "active": "ebf7f9c96e0a834e",
   "lastOpenFiles": [
-    "obsidian/Obsidian超链接语法详述.md",
-    "13看板/BUG看板.md",
     "13看板/常用网址看板.md",
     "Day Planners/Day Planner-20211221.md",
+    "obsidian/Obsidian超链接语法详述.md",
+    "13看板/BUG看板.md",
     "13看板/现场看板.md",
     "13看板/项目看板.md",
     "8知识管理/InBox/接口文档/接口文档.md",
