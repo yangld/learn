@@ -12,7 +12,7 @@
   "circularProgress": true,
   "nowAndNextInStatusBar": true,
   "showTaskNotification": true,
-  "timelineZoomLevel": 1,
+  "timelineZoomLevel": 2,
   "timelineIcon": "calendar-with-checkmark",
   "breakLabel": "BREAK",
   "endLabel": "END"
