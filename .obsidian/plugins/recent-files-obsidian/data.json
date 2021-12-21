@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "项目看板",
-      "path": "13看板/项目看板.md"
+      "basename": "常用网址看板",
+      "path": "13看板/常用网址看板.md"
+    },
+    {
+      "basename": "Day Planner-20211221",
+      "path": "Day Planners/Day Planner-20211221.md"
     },
     {
       "basename": "现场看板",
       "path": "13看板/现场看板.md"
+    },
+    {
+      "basename": "项目看板",
+      "path": "13看板/项目看板.md"
+    },
+    {
+      "basename": "BUG看板",
+      "path": "13看板/BUG看板.md"
+    },
+    {
+      "basename": "Obsidian超链接语法详述",
+      "path": "obsidian/Obsidian超链接语法详述.md"
     },
     {
       "basename": "接口文档",
@@ -23,10 +39,6 @@
     {
       "basename": "1权限管理输入",
       "path": "12时间轴/1资料-Input/1权限管理输入.md"
-    },
-    {
-      "basename": "Obsidian超链接语法详述",
-      "path": "obsidian/Obsidian超链接语法详述.md"
     },
     {
       "basename": "Day Planner-20211126",
