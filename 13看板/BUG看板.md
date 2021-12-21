@@ -12,13 +12,11 @@ kanban-plugin: basic
 
 ## 应用审核
 
-- [ ] [24217](http://192.168.11.34/index.php?m=bug&f=view&bugID=24217)
 - [ ] [24216](http://192.168.11.34/index.php?m=bug&f=view&bugID=24216)
 
 
 ## 服务监控
 
-- [ ] [23797](http://192.168.11.34/index.php?m=bug&f=view&bugID=23797)
 
 
 ## 非紧急
@@ -29,6 +27,8 @@ kanban-plugin: basic
 ## 已完成
 
 **完成**
+- [x] [23797](http://192.168.11.34/index.php?m=bug&f=view&bugID=23797)
+- [x] [24217](http://192.168.11.34/index.php?m=bug&f=view&bugID=24217)
 
 
 

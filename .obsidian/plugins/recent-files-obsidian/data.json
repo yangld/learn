@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "BUG看板",
+      "path": "13看板/BUG看板.md"
+    },
+    {
       "basename": "常用网址看板",
       "path": "13看板/常用网址看板.md"
     },
@@ -15,10 +19,6 @@
     {
       "basename": "项目看板",
       "path": "13看板/项目看板.md"
-    },
-    {
-      "basename": "BUG看板",
-      "path": "13看板/BUG看板.md"
     },
     {
       "basename": "Obsidian超链接语法详述",
