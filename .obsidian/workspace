@@ -27,6 +27,19 @@
           },
           "pinned": true
         }
+      },
+      {
+        "id": "213b6c67a50c1dbd",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Day Planners/Day Planner-20211222.md",
+            "mode": "preview"
+          },
+          "pinned": true
+        }
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238
+    "width": 238,
+    "collapsed": true
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -190,6 +204,7 @@
   "active": "4b36b84914233b71",
   "lastOpenFiles": [
     "13看板/常用网址看板.md",
+    "Day Planners/Day Planner-20211222.md",
     "14TODO/权限管理.md",
     "Day Planners/Day Planner-20211221.md",
     "obsidian/Obsidian超链接语法详述.md",
@@ -197,7 +212,6 @@
     "13看板/现场看板.md",
     "13看板/项目看板.md",
     "8知识管理/InBox/接口文档/接口文档.md",
-    "Day Planners/Day Planner-20211220.md",
-    "12时间轴/2时间轴-Line/1权限管理.md"
+    "Day Planners/Day Planner-20211220.md"
   ]
 }
