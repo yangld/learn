@@ -6,11 +6,26 @@
       {
         "id": "ebf7f9c96e0a834e",
         "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "14TODO/权限管理.md",
+            "mode": "preview"
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "4b36b84914233b71",
+        "type": "leaf",
+        "pinned": true,
         "state": {
           "type": "kanban",
           "state": {
             "file": "13看板/常用网址看板.md"
-          }
+          },
+          "pinned": true
         }
       }
     ],
@@ -172,9 +187,10 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "ebf7f9c96e0a834e",
+  "active": "4b36b84914233b71",
   "lastOpenFiles": [
     "13看板/常用网址看板.md",
+    "14TODO/权限管理.md",
     "Day Planners/Day Planner-20211221.md",
     "obsidian/Obsidian超链接语法详述.md",
     "13看板/BUG看板.md",
@@ -182,7 +198,6 @@
     "13看板/项目看板.md",
     "8知识管理/InBox/接口文档/接口文档.md",
     "Day Planners/Day Planner-20211220.md",
-    "12时间轴/2时间轴-Line/1权限管理.md",
-    "12时间轴/1资料-Input/1权限管理输入.md"
+    "12时间轴/2时间轴-Line/1权限管理.md"
   ]
 }
