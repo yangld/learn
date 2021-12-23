@@ -1,3 +1,4 @@
+## ER图
 ```mermaid
 erDiagram
 	TENANT			||--o{ FUNCTIONID			: ont-to-many
@@ -26,6 +27,7 @@ erDiagram
         string code
         string name
         string type
+		long   seq
     }
     RIGHT_RELATION {
         string id
