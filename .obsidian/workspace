@@ -4,17 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "ebf7f9c96e0a834e",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "14TODO/权限管理.md",
-            "mode": "preview"
+        "id": "791e3f61332f0ce9",
+        "type": "split",
+        "children": [
+          {
+            "id": "ebf7f9c96e0a834e",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "14TODO/权限管理.md",
+                "mode": "preview"
+              },
+              "pinned": true
+            }
           },
-          "pinned": true
-        }
+          {
+            "id": "e7160064060e00fe",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "14TODO/权限管理.md",
+                "mode": "source"
+              },
+              "pinned": true
+            }
+          }
+        ],
+        "direction": "horizontal"
       },
       {
         "id": "4b36b84914233b71",
@@ -23,20 +43,19 @@
         "state": {
           "type": "kanban",
           "state": {
-            "file": "13看板/常用网址看板.md"
+            "file": "13看板/文件看板.md"
           },
           "pinned": true
         }
       },
       {
-        "id": "213b6c67a50c1dbd",
+        "id": "bd5807223e68bcea",
         "type": "leaf",
         "pinned": true,
         "state": {
-          "type": "markdown",
+          "type": "kanban",
           "state": {
-            "file": "Day Planners/Day Planner-20211222.md",
-            "mode": "preview"
+            "file": "13看板/常用网址看板.md"
           },
           "pinned": true
         }
@@ -109,7 +128,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238
+    "width": 238,
+    "collapsed": true
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -134,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "14TODO/权限管理.md",
+                "file": "13看板/文件看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "14TODO/权限管理.md",
+                "file": "13看板/文件看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,17 +220,17 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "ebf7f9c96e0a834e",
+  "active": "4b36b84914233b71",
   "lastOpenFiles": [
+    "13看板/文件看板.md",
     "14TODO/权限管理.md",
     "13看板/常用网址看板.md",
+    "Day Planners/Day Planner-20211223.md",
     "Day Planners/Day Planner-20211222.md",
     "Day Planners/Day Planner-20211221.md",
     "obsidian/Obsidian超链接语法详述.md",
     "13看板/BUG看板.md",
     "13看板/现场看板.md",
-    "13看板/项目看板.md",
-    "8知识管理/InBox/接口文档/接口文档.md",
-    "Day Planners/Day Planner-20211220.md"
+    "13看板/项目看板.md"
   ]
 }
