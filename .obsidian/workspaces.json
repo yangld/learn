@@ -1,71 +1,50 @@
 {
   "workspaces": {
-    "布局1": {
+    "权限管理": {
       "main": {
-        "id": "23f66df6a9ecee8e",
+        "id": "cddff17849a5d7d1",
         "type": "split",
         "children": [
           {
-            "id": "5178d273a1ba8e5a",
-            "type": "split",
-            "children": [
-              {
-                "id": "ca58c6734ab0f470",
-                "type": "leaf",
-                "dimension": 19.305019305019304,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "3工作日志/项目.md",
-                    "mode": "preview"
-                  }
-                }
+            "id": "4b36b84914233b71",
+            "type": "leaf",
+            "dimension": 17.4364896073903,
+            "pinned": true,
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "13看板/文件看板.md"
               },
-              {
-                "id": "44c7b65ab846494b",
-                "type": "split",
-                "dimension": 80.6949806949807,
-                "children": [
-                  {
-                    "id": "0ac70095c4098d40",
-                    "type": "leaf",
-                    "dimension": 29.615384615384617,
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "3工作日志/2021-10-26.md",
-                        "mode": "source"
-                      }
-                    }
-                  },
-                  {
-                    "id": "e0bd1c64c640f141",
-                    "type": "leaf",
-                    "dimension": 51.53846153846153,
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "3工作日志/原型说明.md",
-                        "mode": "source"
-                      }
-                    }
-                  },
-                  {
-                    "id": "ccc2c4dc4a1db4d4",
-                    "type": "leaf",
-                    "dimension": 18.846153846153847,
-                    "state": {
-                      "type": "kanban",
-                      "state": {
-                        "file": "3工作日志/看板.md"
-                      }
-                    }
-                  }
-                ],
-                "direction": "vertical"
-              }
-            ],
-            "direction": "horizontal"
+              "pinned": true
+            }
+          },
+          {
+            "id": "ebf7f9c96e0a834e",
+            "type": "leaf",
+            "dimension": 34.815242494226325,
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "14TODO/权限管理.md",
+                "mode": "preview"
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "a6e6914266cb3ba8",
+            "type": "leaf",
+            "dimension": 47.748267898383375,
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "待办事项/权限管理图形.md",
+                "mode": "preview"
+              },
+              "pinned": true
+            }
           }
         ],
         "direction": "vertical"
@@ -74,6 +53,28 @@
         "id": "9727861d579d737a",
         "type": "split",
         "children": [
+          {
+            "id": "2ce27328076af62b",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e6ad8e990ed40990",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "47b82e46d090a9f8",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {}
+                }
+              }
+            ]
+          },
           {
             "id": "968cd024bb524cd5",
             "type": "tabs",
@@ -95,17 +96,26 @@
                     "query": "",
                     "matchingCase": false,
                     "explainSearch": false,
-                    "collapseAll": false,
+                    "collapseAll": true,
                     "extraContext": false,
                     "sortOrder": "alphabetical"
                   }
+                }
+              },
+              {
+                "id": "849f8599666b02a3",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
                 }
               }
             ]
           }
         ],
         "direction": "horizontal",
-        "width": 300
+        "width": 238,
+        "collapsed": true
       },
       "right": {
         "id": "78a86d7ecd781271",
@@ -114,15 +124,24 @@
           {
             "id": "8afd4d2d7314c19a",
             "type": "tabs",
+            "dimension": 64.34108527131784,
             "children": [
               {
-                "id": "21a98d76ee44ae54",
+                "id": "abdb51846b47bdd7",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {}
+                }
+              },
+              {
+                "id": "5a5c1950140c4a90",
                 "type": "leaf",
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "3工作日志/2021-10-26.md",
-                    "collapseAll": true,
+                    "file": "14TODO/权限管理.md",
+                    "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
                     "showSearch": false,
@@ -133,18 +152,38 @@
                 }
               },
               {
-                "id": "d7d30112c1199a6a",
+                "id": "9479c1fcb9600ab2",
                 "type": "leaf",
                 "state": {
-                  "type": "todo",
-                  "state": {}
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "14TODO/权限管理.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
                 }
               },
               {
-                "id": "1dcbda5fe932fb68",
+                "id": "bc6e9ce4f382cd56",
                 "type": "leaf",
                 "state": {
-                  "type": "calendar",
+                  "type": "RSS_FEED",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 2
+          },
+          {
+            "id": "f13c7da68fb02288",
+            "type": "tabs",
+            "dimension": 35.65891472868217,
+            "children": [
+              {
+                "id": "bc164a98be8d2008",
+                "type": "leaf",
+                "state": {
+                  "type": "timeline",
                   "state": {}
                 }
               },
@@ -158,37 +197,17 @@
                     "useHierarchy": true
                   }
                 }
-              },
-              {
-                "id": "7effc2bbe041d359",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "3工作日志/2021-10-26.md",
-                    "linksCollapsed": true,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "d0dfbbe203294a48",
-                "type": "leaf",
-                "state": {
-                  "type": "advanced-tables-toolbar",
-                  "state": {}
-                }
               }
             ],
-            "currentTab": 5
+            "currentTab": 1
           }
         ],
         "direction": "horizontal",
-        "width": 408,
+        "width": 605,
         "collapsed": true
       },
-      "active": "0ac70095c4098d40"
+      "active": "ebf7f9c96e0a834e"
     }
   },
-  "active": "布局1"
+  "active": "权限管理"
 }
