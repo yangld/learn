@@ -1,3 +1,4 @@
 {
-  "show-view-as-markdown": false
+  "show-view-as-markdown": false,
+  "lane-width": 100
 }

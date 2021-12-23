@@ -1,6 +1,6 @@
 {
   "workspaces": {
-    "权限管理1": {
+    "权限管理": {
       "main": {
         "id": "cddff17849a5d7d1",
         "type": "split",
@@ -8,12 +8,12 @@
           {
             "id": "141cd199d51efbed",
             "type": "split",
-            "dimension": 34.75750577367205,
+            "dimension": 51.58526135389889,
             "children": [
               {
                 "id": "4b36b84914233b71",
                 "type": "leaf",
-                "dimension": 23.227611940298505,
+                "dimension": 23.22761194029851,
                 "pinned": true,
                 "state": {
                   "type": "kanban",
@@ -41,9 +41,9 @@
             "direction": "horizontal"
           },
           {
-            "id": "f9155cd336df4293",
+            "id": "033dd2bc85ae2ddd",
             "type": "split",
-            "dimension": 65.24249422632793,
+            "dimension": 48.414738646101114,
             "children": [
               {
                 "id": "a6e6914266cb3ba8",
@@ -59,14 +59,16 @@
                 }
               },
               {
-                "id": "10bbca3451d7b8a6",
+                "id": "97b0881f85e9a329",
                 "type": "leaf",
+                "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "待办事项/权限管理图形.md",
-                    "mode": "source"
-                  }
+                    "file": "待办事项/权限管理类图.md",
+                    "mode": "preview"
+                  },
+                  "pinned": true
                 }
               }
             ],
@@ -166,7 +168,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "待办事项/权限管理图形.md",
+                    "file": "待办事项/权限管理类图.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -183,7 +185,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "待办事项/权限管理图形.md",
+                    "file": "待办事项/权限管理类图.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -232,8 +234,223 @@
         "width": 605,
         "collapsed": true
       },
-      "active": "a6e6914266cb3ba8"
+      "active": "97b0881f85e9a329"
+    },
+    "常用信息": {
+      "main": {
+        "id": "cddff17849a5d7d1",
+        "type": "split",
+        "children": [
+          {
+            "id": "141cd199d51efbed",
+            "type": "split",
+            "dimension": 66.51270207852194,
+            "children": [
+              {
+                "id": "4b36b84914233b71",
+                "type": "leaf",
+                "dimension": 24.862888482632542,
+                "pinned": true,
+                "state": {
+                  "type": "kanban",
+                  "state": {
+                    "file": "13看板/文件看板.md"
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "ebf7f9c96e0a834e",
+                "type": "leaf",
+                "dimension": 75.13711151736746,
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "14TODO/TODO.md",
+                    "mode": "source"
+                  },
+                  "pinned": true
+                }
+              }
+            ],
+            "direction": "horizontal"
+          },
+          {
+            "id": "315d87e5d12ff1aa",
+            "type": "leaf",
+            "dimension": 33.48729792147806,
+            "pinned": true,
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "13看板/常用网址看板.md"
+              },
+              "pinned": true
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "9727861d579d737a",
+        "type": "split",
+        "children": [
+          {
+            "id": "2ce27328076af62b",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e6ad8e990ed40990",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "47b82e46d090a9f8",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {}
+                }
+              }
+            ]
+          },
+          {
+            "id": "968cd024bb524cd5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "86ed5741d814bd70",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "dcb6acad20cd3778",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "849f8599666b02a3",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 238,
+        "collapsed": true
+      },
+      "right": {
+        "id": "78a86d7ecd781271",
+        "type": "split",
+        "children": [
+          {
+            "id": "8afd4d2d7314c19a",
+            "type": "tabs",
+            "dimension": 64.34108527131784,
+            "children": [
+              {
+                "id": "abdb51846b47bdd7",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {}
+                }
+              },
+              {
+                "id": "5a5c1950140c4a90",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "14TODO/TODO.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "9479c1fcb9600ab2",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "14TODO/TODO.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "bc6e9ce4f382cd56",
+                "type": "leaf",
+                "state": {
+                  "type": "RSS_FEED",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 2
+          },
+          {
+            "id": "f13c7da68fb02288",
+            "type": "tabs",
+            "dimension": 35.65891472868217,
+            "children": [
+              {
+                "id": "bc164a98be8d2008",
+                "type": "leaf",
+                "state": {
+                  "type": "timeline",
+                  "state": {}
+                }
+              },
+              {
+                "id": "8173d6ed32716e47",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 605,
+        "collapsed": true
+      },
+      "active": "ebf7f9c96e0a834e"
     }
   },
-  "active": "权限管理1"
+  "active": "常用信息"
 }
