@@ -48,6 +48,7 @@ server {
   # http://localhost/api8/xxx -> http://localhost:8080/haha//xxx，请注意这里的双斜杠。
 }
 ```
+## 思考
 
 | proxy_pass         | 路径变化                 | 说明 |
 | ------------------ | ------------------------ | ---- |
