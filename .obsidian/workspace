@@ -4,39 +4,57 @@
     "type": "split",
     "children": [
       {
-        "id": "4b36b84914233b71",
-        "type": "leaf",
-        "dimension": 17.4364896073903,
-        "pinned": true,
-        "state": {
-          "type": "kanban",
-          "state": {
-            "file": "13看板/文件看板.md"
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "ebf7f9c96e0a834e",
-        "type": "leaf",
-        "dimension": 34.815242494226325,
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "14TODO/权限管理.md",
-            "mode": "preview"
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "f9155cd336df4293",
+        "id": "141cd199d51efbed",
         "type": "split",
-        "dimension": 47.748267898383375,
+        "dimension": 56.043956043956044,
+        "children": [
+          {
+            "id": "4b36b84914233b71",
+            "type": "leaf",
+            "dimension": 23.227611940298505,
+            "pinned": true,
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "13看板/文件看板.md"
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "f3f2831869f6b7c1",
+            "type": "leaf",
+            "dimension": 76.77238805970148,
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "13看板/常用网址看板.md"
+              }
+            }
+          }
+        ],
+        "direction": "horizontal"
+      },
+      {
+        "id": "51e5844f6bfc87df",
+        "type": "split",
+        "dimension": 43.956043956043956,
         "children": [
           {
             "id": "a6e6914266cb3ba8",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "待办事项/权限管理类图.md",
+                "mode": "preview"
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "eb372aa63be71be8",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -49,14 +67,16 @@
             }
           },
           {
-            "id": "10bbca3451d7b8a6",
+            "id": "ebf7f9c96e0a834e",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "待办事项/权限管理图形.md",
-                "mode": "source"
-              }
+                "file": "14TODO/权限管理.md",
+                "mode": "preview"
+              },
+              "pinned": true
             }
           }
         ],
@@ -130,8 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238,
-    "collapsed": true
+    "width": 238
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -222,17 +241,17 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "10bbca3451d7b8a6",
+  "active": "eb372aa63be71be8",
   "lastOpenFiles": [
     "待办事项/权限管理图形.md",
+    "13看板/常用网址看板.md",
+    "待办事项/权限管理类图.md",
+    "Day Planners/Day Planner-20211223.md",
     "14TODO/权限管理.md",
     "13看板/文件看板.md",
-    "Day Planners/Day Planner-20211223.md",
-    "13看板/常用网址看板.md",
     "Day Planners/Day Planner-20211222.md",
     "Day Planners/Day Planner-20211221.md",
     "obsidian/Obsidian超链接语法详述.md",
-    "13看板/BUG看板.md",
-    "13看板/现场看板.md"
+    "13看板/BUG看板.md"
   ]
 }
