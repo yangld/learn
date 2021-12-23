@@ -11,7 +11,7 @@
           {
             "id": "4b36b84914233b71",
             "type": "leaf",
-            "dimension": 24.862888482632542,
+            "dimension": 39.82430453879942,
             "pinned": true,
             "state": {
               "type": "kanban",
@@ -24,13 +24,13 @@
           {
             "id": "ebf7f9c96e0a834e",
             "type": "leaf",
-            "dimension": 75.13711151736746,
+            "dimension": 60.17569546120058,
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "14TODO/TODO.md",
-                "mode": "source"
+                "mode": "preview"
               },
               "pinned": true
             }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "13看板/常用网址看板.md",
+                "file": "14TODO/TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "13看板/常用网址看板.md",
+                "file": "14TODO/TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,9 +175,17 @@
               "type": "RSS_FEED",
               "state": {}
             }
+          },
+          {
+            "id": "7e476de5fea821bd",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       },
       {
         "id": "f13c7da68fb02288",
@@ -211,17 +219,17 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "315d87e5d12ff1aa",
+  "active": "ebf7f9c96e0a834e",
   "lastOpenFiles": [
-    "13看板/常用网址看板.md",
     "14TODO/TODO.md",
+    "14TODO/nginx斜杠.md",
+    "13看板/常用网址看板.md",
     "13看板/文件看板.md",
     "14TODO/权限管理.md",
     "待办事项/权限管理图形.md",
     "待办事项/权限管理类图.md",
     "Day Planners/Day Planner-20211223.md",
     "Day Planners/Day Planner-20211222.md",
-    "Day Planners/Day Planner-20211221.md",
-    "obsidian/Obsidian超链接语法详述.md"
+    "Day Planners/Day Planner-20211221.md"
   ]
 }
