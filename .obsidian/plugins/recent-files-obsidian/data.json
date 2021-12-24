@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "常用网址看板",
+      "path": "13看板/常用网址看板.md"
+    },
+    {
+      "basename": "TODO",
+      "path": "14TODO/TODO.md"
+    },
+    {
       "basename": "权限管理",
       "path": "14TODO/权限管理.md"
     },
@@ -17,20 +25,12 @@
       "path": "13看板/权限文件看板.md"
     },
     {
-      "basename": "TODO",
-      "path": "14TODO/TODO.md"
-    },
-    {
       "basename": "nginx斜杠",
       "path": "14TODO/nginx斜杠.md"
     },
     {
       "basename": "一所进丰台机房表格",
       "path": "10常用文件/一所进丰台机房表格.md"
-    },
-    {
-      "basename": "常用网址看板",
-      "path": "13看板/常用网址看板.md"
     },
     {
       "basename": "文件看板",
