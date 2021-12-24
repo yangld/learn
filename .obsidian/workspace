@@ -4,52 +4,80 @@
     "type": "split",
     "children": [
       {
-        "id": "141cd199d51efbed",
+        "id": "705e27ecb59fd223",
         "type": "split",
-        "dimension": 66.51270207852194,
         "children": [
           {
-            "id": "4b36b84914233b71",
+            "id": "d45e1e82777b381e",
             "type": "leaf",
-            "dimension": 50.34199726402189,
-            "pinned": true,
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "13看板/文件看板.md"
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "ebf7f9c96e0a834e",
-            "type": "leaf",
-            "dimension": 49.658002735978116,
+            "dimension": 18.281535648994517,
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "14TODO/TODO.md",
-                "mode": "source"
+                "file": "14TODO/权限管理.md",
+                "mode": "preview"
               },
               "pinned": true
             }
+          },
+          {
+            "id": "e24cfef271aa58e6",
+            "type": "split",
+            "dimension": 81.71846435100548,
+            "children": [
+              {
+                "id": "a6e6914266cb3ba8",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "待办事项/权限管理ER图.md",
+                    "mode": "preview"
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "713a86463816758c",
+                "type": "split",
+                "children": [
+                  {
+                    "id": "e5aed6e7519841bc",
+                    "type": "leaf",
+                    "dimension": 74.60850111856823,
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "待办事项/权限管理类图.md",
+                        "mode": "source"
+                      },
+                      "pinned": true
+                    }
+                  },
+                  {
+                    "id": "a4b10db57d6b68fa",
+                    "type": "leaf",
+                    "dimension": 25.39149888143176,
+                    "pinned": true,
+                    "state": {
+                      "type": "kanban",
+                      "state": {
+                        "file": "13看板/权限文件看板.md"
+                      },
+                      "pinned": true
+                    }
+                  }
+                ],
+                "direction": "horizontal"
+              }
+            ],
+            "direction": "vertical"
           }
         ],
         "direction": "horizontal"
-      },
-      {
-        "id": "315d87e5d12ff1aa",
-        "type": "leaf",
-        "dimension": 33.48729792147806,
-        "pinned": true,
-        "state": {
-          "type": "kanban",
-          "state": {
-            "file": "13看板/常用网址看板.md"
-          },
-          "pinned": true
-        }
       }
     ],
     "direction": "vertical"
@@ -145,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "14TODO/TODO.md",
+                "file": "待办事项/权限管理类图.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "14TODO/TODO.md",
+                "file": "待办事项/权限管理类图.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,17 +239,17 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "ebf7f9c96e0a834e",
+  "active": "e5aed6e7519841bc",
   "lastOpenFiles": [
+    "待办事项/权限管理类图.md",
+    "待办事项/权限管理ER图.md",
     "14TODO/TODO.md",
-    "14TODO/nginx斜杠.md",
+    "13看板/常用网址看板.md",
     "13看板/文件看板.md",
+    "14TODO/nginx斜杠.md",
     "10常用文件/一所进丰台机房表格.md",
     "13看板/权限文件看板.md",
-    "待办事项/权限管理ER图.md",
-    "待办事项/权限管理类图.md",
     "14TODO/权限管理.md",
-    "待办事项/权限管理.md",
-    "13看板/常用网址看板.md"
+    "待办事项/权限管理.md"
   ]
 }

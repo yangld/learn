@@ -7,7 +7,7 @@ erDiagram
     SERVICE     	||--|{ FUNCTION     		: ont-to-many
 	SERVICE     	||--|{ RIGHT_RELATION     	: ont-to-many
     FUNCTION    	||--|{ RIGHT_RELATION       : one-to-many
-    ROLE        	||--|{ RIGHT_RELATION   	: one-to-many
+    ROLE        	}|--|{ RIGHT   				: many-to-many
     RIGHT_RELATION  }o--|| RIGHT        		: one-to-many
     FUNCTIONID {
         string id
@@ -20,7 +20,7 @@ erDiagram
         string service_id
     }
     RIGHT {
-        string id
+        long id
         string module
         string category
         string menu
@@ -33,10 +33,10 @@ erDiagram
         string id
 		string type
         string type_id
-        string right_id
+        long right_id
     }
     ROLE {
-        string id
+        long id
     }
 ```
 

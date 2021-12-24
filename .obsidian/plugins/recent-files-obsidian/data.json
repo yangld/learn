@@ -1,16 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "权限管理类图",
+      "path": "待办事项/权限管理类图.md"
+    },
+    {
+      "basename": "权限管理ER图",
+      "path": "待办事项/权限管理ER图.md"
+    },
+    {
       "basename": "TODO",
       "path": "14TODO/TODO.md"
     },
     {
-      "basename": "nginx斜杠",
-      "path": "14TODO/nginx斜杠.md"
+      "basename": "常用网址看板",
+      "path": "13看板/常用网址看板.md"
     },
     {
       "basename": "文件看板",
       "path": "13看板/文件看板.md"
+    },
+    {
+      "basename": "nginx斜杠",
+      "path": "14TODO/nginx斜杠.md"
     },
     {
       "basename": "一所进丰台机房表格",
@@ -21,24 +33,12 @@
       "path": "13看板/权限文件看板.md"
     },
     {
-      "basename": "权限管理ER图",
-      "path": "待办事项/权限管理ER图.md"
-    },
-    {
-      "basename": "权限管理类图",
-      "path": "待办事项/权限管理类图.md"
-    },
-    {
       "basename": "权限管理",
       "path": "14TODO/权限管理.md"
     },
     {
       "basename": "权限管理",
       "path": "待办事项/权限管理.md"
-    },
-    {
-      "basename": "常用网址看板",
-      "path": "13看板/常用网址看板.md"
     },
     {
       "basename": "Day Planner-20211223",
