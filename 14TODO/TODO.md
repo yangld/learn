@@ -6,10 +6,3 @@
 - [ ] nginx如何打印proxy_pass路径
 
 
-
-
-
-
-
-
-![[nginx斜杠#思考]]

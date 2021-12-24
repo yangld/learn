@@ -263,7 +263,7 @@
                       {
                         "id": "e5aed6e7519841bc",
                         "type": "leaf",
-                        "dimension": 77.62863534675614,
+                        "dimension": 74.60850111856824,
                         "pinned": true,
                         "state": {
                           "type": "markdown",
@@ -275,14 +275,14 @@
                         }
                       },
                       {
-                        "id": "e201160db7e99ece",
+                        "id": "a4b10db57d6b68fa",
                         "type": "leaf",
-                        "dimension": 22.371364653243848,
+                        "dimension": 25.39149888143177,
                         "pinned": true,
                         "state": {
                           "type": "kanban",
                           "state": {
-                            "file": "13看板/文件看板.md"
+                            "file": "13看板/权限文件看板.md"
                           },
                           "pinned": true
                         }
@@ -459,5 +459,5 @@
       "active": "e5aed6e7519841bc"
     }
   },
-  "active": "权限管理"
+  "active": "常用信息"
 }
