@@ -4,11 +4,11 @@ erDiagram
 	TENANT			||--o{ FUNCTIONID			: ont-to-many
 	TENANT			||--o{ SERVICE				: ont-to-many
     FUNCTIONID  	||--|{ RIGHT_RELATION       : one-to-many
-    SERVICE     	||--|{ FUNCTION     		: ont-to-many
+    SERVICE     	||--o{ FUNCTION     		: ont-to-many
 	SERVICE     	||--|{ RIGHT_RELATION     	: ont-to-many
     FUNCTION    	||--|{ RIGHT_RELATION       : one-to-many
     ROLE        	}|--|{ RIGHT   				: many-to-many
-    RIGHT_RELATION  }o--|| RIGHT        		: one-to-many
+    RIGHT_RELATION  ||--|| RIGHT        		: one-to-one
     FUNCTIONID {
         string id
 		string code
@@ -19,7 +19,7 @@ erDiagram
     }
     FUNCTION {
         string id
-        string service_id
+		string code
     }
     RIGHT {
         long id
@@ -39,6 +39,7 @@ erDiagram
     }
     ROLE {
         long id
+		string tennant_id
     }
 ```
 
