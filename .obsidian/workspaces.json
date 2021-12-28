@@ -457,6 +457,204 @@
         "collapsed": true
       },
       "active": "e5aed6e7519841bc"
+    },
+    "dataview": {
+      "main": {
+        "id": "cddff17849a5d7d1",
+        "type": "split",
+        "children": [
+          {
+            "id": "572d2f7def6c6d8c",
+            "type": "split",
+            "children": [
+              {
+                "id": "d45e1e82777b381e",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "5Obsidian/dataview-test.md",
+                    "mode": "preview"
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "c2750a0d2a4fdfa7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "5Obsidian/dataview-test.md",
+                    "mode": "source"
+                  }
+                }
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "9727861d579d737a",
+        "type": "split",
+        "children": [
+          {
+            "id": "2ce27328076af62b",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e6ad8e990ed40990",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "47b82e46d090a9f8",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {}
+                }
+              }
+            ]
+          },
+          {
+            "id": "968cd024bb524cd5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "86ed5741d814bd70",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "dcb6acad20cd3778",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "849f8599666b02a3",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 238,
+        "collapsed": true
+      },
+      "right": {
+        "id": "78a86d7ecd781271",
+        "type": "split",
+        "children": [
+          {
+            "id": "8afd4d2d7314c19a",
+            "type": "tabs",
+            "dimension": 64.34108527131784,
+            "children": [
+              {
+                "id": "abdb51846b47bdd7",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {}
+                }
+              },
+              {
+                "id": "5a5c1950140c4a90",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "5Obsidian/dataview-test.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "9479c1fcb9600ab2",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "5Obsidian/dataview-test.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "bc6e9ce4f382cd56",
+                "type": "leaf",
+                "state": {
+                  "type": "RSS_FEED",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 2
+          },
+          {
+            "id": "f13c7da68fb02288",
+            "type": "tabs",
+            "dimension": 35.65891472868217,
+            "children": [
+              {
+                "id": "bc164a98be8d2008",
+                "type": "leaf",
+                "state": {
+                  "type": "timeline",
+                  "state": {}
+                }
+              },
+              {
+                "id": "8173d6ed32716e47",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 605,
+        "collapsed": true
+      },
+      "active": "c2750a0d2a4fdfa7"
     }
   },
   "active": "权限管理"

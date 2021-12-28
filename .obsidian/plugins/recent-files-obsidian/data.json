@@ -1,12 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "权限管理",
-      "path": "14TODO/权限管理.md"
+      "basename": "权限文件看板",
+      "path": "13看板/权限文件看板.md"
+    },
+    {
+      "basename": "权限管理ER图",
+      "path": "待办事项/权限管理ER图.md"
     },
     {
       "basename": "权限管理类图",
       "path": "待办事项/权限管理类图.md"
+    },
+    {
+      "basename": "dataview-test",
+      "path": "5Obsidian/dataview-test.md"
+    },
+    {
+      "basename": "权限管理",
+      "path": "待办事项/权限管理.md"
+    },
+    {
+      "basename": "原型",
+      "path": "待办事项/原型.md"
+    },
+    {
+      "basename": "Day Planner-20211130",
+      "path": "Day Planners/Day Planner-20211130.md"
+    },
+    {
+      "basename": "删除命令",
+      "path": "8知识管理/Knowledge/删除命令.md"
+    },
+    {
+      "basename": "权限管理",
+      "path": "14TODO/权限管理.md"
+    },
+    {
+      "basename": "Day Planner-20211228",
+      "path": "Day Planners/Day Planner-20211228.md"
     },
     {
       "basename": "TODO",
@@ -15,14 +47,6 @@
     {
       "basename": "常用网址看板",
       "path": "13看板/常用网址看板.md"
-    },
-    {
-      "basename": "权限管理ER图",
-      "path": "待办事项/权限管理ER图.md"
-    },
-    {
-      "basename": "权限文件看板",
-      "path": "13看板/权限文件看板.md"
     },
     {
       "basename": "nginx斜杠",
@@ -35,10 +59,6 @@
     {
       "basename": "文件看板",
       "path": "13看板/文件看板.md"
-    },
-    {
-      "basename": "权限管理",
-      "path": "待办事项/权限管理.md"
     },
     {
       "basename": "Day Planner-20211223",
@@ -133,10 +153,6 @@
       "path": "Day Planners/Day Planner-20211207.md"
     },
     {
-      "basename": "原型",
-      "path": "待办事项/原型.md"
-    },
-    {
       "basename": "Day Planner-20211202",
       "path": "Day Planners/Day Planner-20211202.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客",
       "path": "8知识管理/Attachments/(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客.md"
-    },
-    {
-      "basename": "【Kafka踩坑系列之一】消费者拉不出数据_weixin_30407099的博客-CSDN博客",
-      "path": "evernote/参考/【Kafka踩坑系列之一】消费者拉不出数据_weixin_30407099的博客-CSDN博客.md"
-    },
-    {
-      "basename": "Day Planner-20211130",
-      "path": "Day Planners/Day Planner-20211130.md"
-    },
-    {
-      "basename": "删除命令",
-      "path": "8知识管理/Knowledge/删除命令.md"
-    },
-    {
-      "basename": "Day Planner-20211129",
-      "path": "Day Planners/Day Planner-20211129.md"
     }
   ],
   "omittedPaths": [],
