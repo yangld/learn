@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Day Planner-20211230",
+      "path": "Day Planners/Day Planner-20211230.md"
+    },
+    {
       "basename": "权限管理ER图",
       "path": "待办事项/权限管理ER图.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "show engine innodb status解读 - zengkefu - 博客园",
       "path": "evernote/参考/show engine innodb status解读 - zengkefu - 博客园.md"
-    },
-    {
-      "basename": "(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客",
-      "path": "8知识管理/Attachments/(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客.md"
     }
   ],
   "omittedPaths": [],
