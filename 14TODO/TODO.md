@@ -2,9 +2,19 @@
 - [x] 修改uniauth为http,修改端口为9500, 部署后验证bug
 - [x] 访问uniAuth的端口也需要修改, 路径需要修改
 - [x] 修改权限管理的设计, 生成样例, 发送给老侯, 姜睿, 张乐, 用于确认
-- [ ] 权限管理继续开发
-- [ ] nginx如何打印proxy_pass路径
-- [ ] bug 24399 24393
+- [ ] 权限管理继续开发 #task
+- [x] nginx如何打印proxy_pass路径
+- [ ] bug 24399 24393 #bug
+- [ ] dataview 显示任务 #tool
+- [ ] 验证应用统计导出的文件名是否正确 #bug
+- [ ] 增加请销假的消息通知的模板 #原型
+- [ ] 百分位数整理 #知识
 - [ ] 
+
+---
+time-played: All the time.
+length: 2000h
+ratin: 9.5
+- - - 
 
 

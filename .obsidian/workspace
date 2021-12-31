@@ -4,88 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "705e27ecb59fd223",
+        "id": "572d2f7def6c6d8c",
         "type": "split",
         "children": [
           {
             "id": "d45e1e82777b381e",
             "type": "leaf",
-            "dimension": 18.281535648994517,
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "14TODO/权限管理.md",
+                "file": "5Obsidian/dataview-test.md",
                 "mode": "preview"
               },
               "pinned": true
             }
           },
           {
-            "id": "e24cfef271aa58e6",
-            "type": "split",
-            "dimension": 81.71846435100548,
-            "children": [
-              {
-                "id": "a6e6914266cb3ba8",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "待办事项/权限管理ER图.md",
-                    "mode": "preview"
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "ef61eb93eeca5c62",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Day Planners/Day Planner-20211230.md",
-                    "mode": "source"
-                  }
-                }
-              },
-              {
-                "id": "713a86463816758c",
-                "type": "split",
-                "children": [
-                  {
-                    "id": "e5aed6e7519841bc",
-                    "type": "leaf",
-                    "dimension": 74.60850111856824,
-                    "pinned": true,
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "待办事项/权限管理类图.md",
-                        "mode": "preview"
-                      },
-                      "pinned": true
-                    }
-                  },
-                  {
-                    "id": "a4b10db57d6b68fa",
-                    "type": "leaf",
-                    "dimension": 25.391498881431765,
-                    "pinned": true,
-                    "state": {
-                      "type": "kanban",
-                      "state": {
-                        "file": "13看板/权限文件看板.md"
-                      },
-                      "pinned": true
-                    }
-                  }
-                ],
-                "direction": "horizontal"
+            "id": "c2750a0d2a4fdfa7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5Obsidian/dataview-test.md",
+                "mode": "source"
               }
-            ],
-            "direction": "vertical"
+            }
           }
         ],
         "direction": "horizontal"
@@ -184,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/Day Planner-20211230.md",
+                "file": "5Obsidian/dataview-test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/Day Planner-20211230.md",
+                "file": "5Obsidian/dataview-test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -250,17 +194,17 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "ef61eb93eeca5c62",
+  "active": "d45e1e82777b381e",
   "lastOpenFiles": [
-    "Day Planners/Day Planner-20211230.md",
+    "5Obsidian/dataview-test.md",
+    "待办事项/权限管理类图.md",
+    "14TODO/TODO.md",
+    "1附件/资料.md",
+    "14TODO/未命名.md",
     "待办事项/权限管理ER图.md",
     "13看板/权限文件看板.md",
-    "待办事项/权限管理类图.md",
-    "5Obsidian/dataview-test.md",
+    "Day Planners/Day Planner-20211230.md",
     "待办事项/权限管理.md",
-    "待办事项/原型.md",
-    "Day Planners/Day Planner-20211130.md",
-    "8知识管理/Knowledge/删除命令.md",
-    "14TODO/权限管理.md"
+    "待办事项/原型.md"
   ]
 }

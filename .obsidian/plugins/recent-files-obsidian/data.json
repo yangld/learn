@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Day Planner-20211230",
-      "path": "Day Planners/Day Planner-20211230.md"
+      "basename": "dataview-test",
+      "path": "5Obsidian/dataview-test.md"
+    },
+    {
+      "basename": "权限管理类图",
+      "path": "待办事项/权限管理类图.md"
+    },
+    {
+      "basename": "TODO",
+      "path": "14TODO/TODO.md"
+    },
+    {
+      "basename": "资料",
+      "path": "1附件/资料.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "14TODO/未命名.md"
     },
     {
       "basename": "权限管理ER图",
@@ -13,12 +29,8 @@
       "path": "13看板/权限文件看板.md"
     },
     {
-      "basename": "权限管理类图",
-      "path": "待办事项/权限管理类图.md"
-    },
-    {
-      "basename": "dataview-test",
-      "path": "5Obsidian/dataview-test.md"
+      "basename": "Day Planner-20211230",
+      "path": "Day Planners/Day Planner-20211230.md"
     },
     {
       "basename": "权限管理",
@@ -43,10 +55,6 @@
     {
       "basename": "Day Planner-20211228",
       "path": "Day Planners/Day Planner-20211228.md"
-    },
-    {
-      "basename": "TODO",
-      "path": "14TODO/TODO.md"
     },
     {
       "basename": "常用网址看板",
@@ -191,14 +199,6 @@
     {
       "basename": " 理想中的办公协作是怎样的？ ",
       "path": "RSS/ 理想中的办公协作是怎样的？ .md"
-    },
-    {
-      "basename": "Elasticsearch 的坑爹事——记录一次mapping field修改过程 - 大熊先生_互联网后端技术 - 博客园",
-      "path": "evernote/参考/Elasticsearch 的坑爹事——记录一次mapping field修改过程 - 大熊先生_互联网后端技术 - 博客园.md"
-    },
-    {
-      "basename": "show engine innodb status解读 - zengkefu - 博客园",
-      "path": "evernote/参考/show engine innodb status解读 - zengkefu - 博客园.md"
     }
   ],
   "omittedPaths": [],
