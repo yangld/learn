@@ -5,8 +5,9 @@
 - [x]  nginx如何打印proxy_pass路径
 ## 未完成
 ### 紧急 重要
-- [ ] 军委项目, 应用使用统计数据生成
+- [x] 军委项目, 应用使用统计数据生成
 ### 紧急 不重要
+- [ ] excel数值格式问题,先让用户手动操作改格式, 后续再代码修改格式[excel文本转数值](https://zh-cn.extendoffice.com/excel/formulas/excel-convert-text-to-number.html)
 - [ ] 权限数据的生成
 - [ ] 增加请销假的消息通知的模板 #原型
 - [ ] 增加审核通知功能
@@ -17,6 +18,8 @@
 ### 不紧急 不重要
 - [ ] dataview 显示任务 #tool
 - [ ] 百分位数整理 #知识
+- [x] windows虚拟机,图标显示问题
+	- 重启后恢复
 
 
 
