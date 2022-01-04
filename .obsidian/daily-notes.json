@@ -1,6 +1,6 @@
 {
   "folder": "Day Planners",
-  "autorun": true,
+  "autorun": false,
   "template": "知识管理/Template/日记模板-DayPlanner",
   "format": "[Day Planner-]YYYYMMDD"
 }

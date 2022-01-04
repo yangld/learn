@@ -6,7 +6,7 @@
       {
         "id": "141cd199d51efbed",
         "type": "split",
-        "dimension": 66.51270207852194,
+        "dimension": 72.57505773672055,
         "children": [
           {
             "id": "4b36b84914233b71",
@@ -41,7 +41,7 @@
       {
         "id": "315d87e5d12ff1aa",
         "type": "leaf",
-        "dimension": 33.48729792147806,
+        "dimension": 27.424942263279444,
         "pinned": true,
         "state": {
           "type": "kanban",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "14TODO/TODO.md",
+                "file": "13看板/常用网址看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "14TODO/TODO.md",
+                "file": "13看板/常用网址看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,8 +211,10 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "ebf7f9c96e0a834e",
+  "active": "315d87e5d12ff1aa",
   "lastOpenFiles": [
+    "13看板/常用网址看板.md",
+    "Day Planners/Day Planner-20220104.md",
     "14TODO/TODO.md",
     "13看板/文件看板.md",
     "5Obsidian/dataview-test.md",
@@ -220,8 +222,6 @@
     "1附件/资料.md",
     "14TODO/未命名.md",
     "待办事项/权限管理ER图.md",
-    "13看板/权限文件看板.md",
-    "Day Planners/Day Planner-20211230.md",
-    "待办事项/权限管理.md"
+    "13看板/权限文件看板.md"
   ]
 }

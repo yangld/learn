@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "常用网址看板",
+      "path": "13看板/常用网址看板.md"
+    },
+    {
+      "basename": "Day Planner-20220104",
+      "path": "Day Planners/Day Planner-20220104.md"
+    },
+    {
       "basename": "TODO",
       "path": "14TODO/TODO.md"
     },
@@ -59,10 +67,6 @@
     {
       "basename": "Day Planner-20211228",
       "path": "Day Planners/Day Planner-20211228.md"
-    },
-    {
-      "basename": "常用网址看板",
-      "path": "13看板/常用网址看板.md"
     },
     {
       "basename": "nginx斜杠",
@@ -195,10 +199,6 @@
     {
       "basename": "Day Planner-20211201",
       "path": "Day Planners/Day Planner-20211201.md"
-    },
-    {
-      "basename": " 理想中的办公协作是怎样的？ ",
-      "path": "RSS/ 理想中的办公协作是怎样的？ .md"
     }
   ],
   "omittedPaths": [],
