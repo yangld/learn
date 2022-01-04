@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "权限文件看板",
-      "path": "13看板/权限文件看板.md"
-    },
-    {
       "basename": "权限管理类图",
       "path": "待办事项/权限管理类图.md"
+    },
+    {
+      "basename": "权限管理ER图",
+      "path": "待办事项/权限管理ER图.md"
+    },
+    {
+      "basename": "权限文件看板",
+      "path": "13看板/权限文件看板.md"
     },
     {
       "basename": "TODO",
@@ -35,10 +39,6 @@
     {
       "basename": "未命名",
       "path": "14TODO/未命名.md"
-    },
-    {
-      "basename": "权限管理ER图",
-      "path": "待办事项/权限管理ER图.md"
     },
     {
       "basename": "Day Planner-20211230",
