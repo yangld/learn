@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "待办事项/权限管理类图.md",
+                "file": "13看板/权限文件看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "待办事项/权限管理类图.md",
+                "file": "13看板/权限文件看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -237,8 +237,9 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "e5aed6e7519841bc",
+  "active": "a4b10db57d6b68fa",
   "lastOpenFiles": [
+    "13看板/权限文件看板.md",
     "待办事项/权限管理类图.md",
     "14TODO/TODO.md",
     "13看板/常用网址看板.md",
@@ -247,7 +248,6 @@
     "5Obsidian/dataview-test.md",
     "1附件/资料.md",
     "14TODO/未命名.md",
-    "待办事项/权限管理ER图.md",
-    "13看板/权限文件看板.md"
+    "待办事项/权限管理ER图.md"
   ]
 }
