@@ -10,6 +10,7 @@
 ### 紧急 不重要
 - [ ] excel数值格式问题,先让用户手动操作改格式, 后续再代码修改格式[excel文本转数值](https://zh-cn.extendoffice.com/excel/formulas/excel-convert-text-to-number.html)
 - [ ] 权限数据的生成
+- [ ] 军委项目, 用户活跃增加手机号和组织信息
 - [ ] 增加请销假的消息通知的模板 #原型
 - [ ] 增加审核通知功能
 - [ ] bug 24399 24393 #bug
