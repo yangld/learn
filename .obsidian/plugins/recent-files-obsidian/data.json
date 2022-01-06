@@ -1,24 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "常用网址看板",
-      "path": "13看板/常用网址看板.md"
+      "basename": "权限文件看板",
+      "path": "13看板/权限文件看板.md"
     },
     {
-      "basename": "TODO",
-      "path": "14TODO/TODO.md"
-    },
-    {
-      "basename": "权限管理ER图",
-      "path": "待办事项/权限管理ER图.md"
+      "basename": "权限管理",
+      "path": "14TODO/权限管理.md"
     },
     {
       "basename": "权限管理类图",
       "path": "待办事项/权限管理类图.md"
     },
     {
-      "basename": "权限文件看板",
-      "path": "13看板/权限文件看板.md"
+      "basename": "TODO",
+      "path": "14TODO/TODO.md"
+    },
+    {
+      "basename": "常用网址看板",
+      "path": "13看板/常用网址看板.md"
+    },
+    {
+      "basename": "权限管理ER图",
+      "path": "待办事项/权限管理ER图.md"
     },
     {
       "basename": "Day Planner-20220104",
@@ -59,10 +63,6 @@
     {
       "basename": "删除命令",
       "path": "8知识管理/Knowledge/删除命令.md"
-    },
-    {
-      "basename": "权限管理",
-      "path": "14TODO/权限管理.md"
     },
     {
       "basename": "Day Planner-20211228",
