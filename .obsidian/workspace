@@ -4,8 +4,44 @@
     "type": "split",
     "children": [
       {
+        "id": "141cd199d51efbed",
+        "type": "split",
+        "dimension": 66.51270207852194,
+        "children": [
+          {
+            "id": "4b36b84914233b71",
+            "type": "leaf",
+            "dimension": 24.862888482632542,
+            "pinned": true,
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "13看板/文件看板.md"
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "ebf7f9c96e0a834e",
+            "type": "leaf",
+            "dimension": 75.13711151736746,
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "14TODO/TODO.md",
+                "mode": "preview"
+              },
+              "pinned": true
+            }
+          }
+        ],
+        "direction": "horizontal"
+      },
+      {
         "id": "315d87e5d12ff1aa",
         "type": "leaf",
+        "dimension": 33.48729792147806,
         "pinned": true,
         "state": {
           "type": "kanban",
@@ -13,17 +49,6 @@
             "file": "13看板/常用网址看板.md"
           },
           "pinned": true
-        }
-      },
-      {
-        "id": "eb48b28b47326aa0",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Day Planners/Day Planner-20211203.md",
-            "mode": "source"
-          }
         }
       }
     ],
@@ -94,7 +119,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238
+    "width": 238,
+    "collapsed": true
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -119,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/Day Planner-20211203.md",
+                "file": "13看板/常用网址看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/Day Planner-20211203.md",
+                "file": "13看板/常用网址看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,13 +211,13 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "eb48b28b47326aa0",
+  "active": "315d87e5d12ff1aa",
   "lastOpenFiles": [
+    "13看板/常用网址看板.md",
+    "14TODO/TODO.md",
     "Day Planners/Day Planner-20211203.md",
     "Day Planners/Day Planner-20211202.md",
     "Day Planners/Day Planner-20211201.md",
-    "13看板/常用网址看板.md",
-    "14TODO/TODO.md",
     "Day Planners/Day Planner-20211207.md",
     "Day Planners/Day Planner-20211209.md",
     "14TODO/权限管理.md",
