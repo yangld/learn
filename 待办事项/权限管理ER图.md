@@ -1,14 +1,42 @@
 ## ER图
 ```mermaid
 erDiagram
-	TENANT			||--o{ FUNCTIONID			: ont-to-many
-	TENANT			||--o{ SERVICE				: ont-to-many
-    FUNCTIONID  	||--|{ RIGHT_RELATION       : one-to-many
-    SERVICE     	||--o{ FUNCTION     		: ont-to-many
-	SERVICE     	||--|{ RIGHT_RELATION     	: ont-to-many
-    FUNCTION    	||--|{ RIGHT_RELATION       : one-to-many
-    ROLE        	}|--|{ RIGHT   				: many-to-many
-    RIGHT_RELATION  ||--|| RIGHT        		: one-to-one
+	TENANT					||--o{ FUNCTIONID			: ont-to-many
+	TENANT					||--o{ SERVICE				: ont-to-many
+    FUNCTIONID  			||--|{ RIGHT_RELATION       : one-to-many
+    SERVICE     			||--o{ FUNCTION     		: ont-to-many
+	SERVICE     			||--|{ RIGHT_RELATION     	: ont-to-many
+    FUNCTION    			||--|{ RIGHT_RELATION       : one-to-many
+	ADMIN        			}|--|{ ROLE   				: many-to-many
+	ROLE        			}|--|{ RIGHT   				: many-to-many
+	ADMIN        			}o--|| MDM_USER   			: one-to-one
+	MDM_USER    			}|--|| UNI_AUTH_AUTHORIZATION      	: many-to-one
+	UNI_AUTH_AUTHORIZATION 	}|--|| UNI_AUTH_APP      : many-to-one
+    RIGHT_RELATION  		||--|| RIGHT        		: one-to-one
+	UNI_AUTH_APP    		}|--|| SERVICE_CODE_PACKAGE_MAP     : many-to-one
+	
+	
+	SERVICE_CODE_PACKAGE_MAP ||--|{ RIGHT_RELATION      : one-to-many
+	UNI_AUTH_AUTHORIZATION {
+	    string user_id
+        string app_id
+    }
+	MDM_USER {
+	    string id
+        string account
+    }
+	UNI_AUTH_APP {
+	    string id
+        string app_package
+    }
+	SERVICE_CODE_PACKAGE_MAP {
+        string code
+		string package_name
+    } 
+	ADMIN {
+        string id
+		string user_account
+    } 
     FUNCTIONID {
         string id
 		string code
