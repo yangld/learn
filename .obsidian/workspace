@@ -4,35 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "f7f6ecc782462daa",
+        "id": "141cd199d51efbed",
         "type": "split",
+        "dimension": 66.51270207852194,
         "children": [
           {
-            "id": "a6e6914266cb3ba8",
+            "id": "4b36b84914233b71",
             "type": "leaf",
+            "dimension": 24.862888482632542,
             "pinned": true,
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "待办事项/权限管理ER图.md",
-                "mode": "preview"
+                "file": "13看板/文件看板.md"
               },
               "pinned": true
             }
           },
           {
-            "id": "aa879d507b7cbc6c",
+            "id": "ebf7f9c96e0a834e",
             "type": "leaf",
+            "dimension": 75.13711151736746,
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "待办事项/权限管理ER图.md",
+                "file": "14TODO/TODO.md",
                 "mode": "source"
-              }
+              },
+              "pinned": true
             }
           }
         ],
         "direction": "horizontal"
+      },
+      {
+        "id": "315d87e5d12ff1aa",
+        "type": "leaf",
+        "dimension": 33.48729792147806,
+        "pinned": true,
+        "state": {
+          "type": "kanban",
+          "state": {
+            "file": "13看板/常用网址看板.md"
+          },
+          "pinned": true
+        }
       }
     ],
     "direction": "vertical"
@@ -128,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "待办事项/权限管理ER图.md",
+                "file": "13看板/常用网址看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "待办事项/权限管理ER图.md",
+                "file": "13看板/常用网址看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,17 +211,17 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "aa879d507b7cbc6c",
+  "active": "315d87e5d12ff1aa",
   "lastOpenFiles": [
-    "待办事项/权限管理ER图.md",
-    "14TODO/权限管理.md",
-    "待办事项/权限管理类图.md",
-    "14TODO/TODO.md",
     "13看板/常用网址看板.md",
+    "14TODO/TODO.md",
+    "待办事项/权限管理ER图.md",
+    "待办事项/权限管理类图.md",
+    "13看板/权限文件看板.md",
+    "14TODO/权限管理.md",
     "Day Planners/Day Planner-20211203.md",
     "Day Planners/Day Planner-20211202.md",
     "Day Planners/Day Planner-20211201.md",
-    "Day Planners/Day Planner-20211207.md",
-    "Day Planners/Day Planner-20211209.md"
+    "Day Planners/Day Planner-20211207.md"
   ]
 }
