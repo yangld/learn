@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "常用网址看板",
-      "path": "13看板/常用网址看板.md"
+      "basename": "权限原型-web",
+      "path": "待办事项/权限原型-web.md"
     },
     {
       "basename": "TODO",
       "path": "14TODO/TODO.md"
+    },
+    {
+      "basename": "常用网址看板",
+      "path": "13看板/常用网址看板.md"
     },
     {
       "basename": "权限管理ER图",
@@ -195,10 +199,6 @@
     {
       "basename": "1",
       "path": "11网址收藏/1.md"
-    },
-    {
-      "basename": "今日收集",
-      "path": "8知识管理/Knowledge/今日收集.md"
     }
   ],
   "omittedPaths": [],
