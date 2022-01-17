@@ -101,17 +101,18 @@ erDiagram
 		1. fine_auth_perm >> fine_auth_perm_relation >> service_info >> service_code_pac_map >> uni_auth_app
 		2. fine_auth_perm >> fine_auth_perm_relation >> org_config(func_ids)  >> uni_auth_app 
 4.  增加服务,功能时
-	1.   如果需要权限控制, 参考2
+	1.  如果需要权限控制, 参考2
 5.   删除服务,功能时
-	1. 也需要删除对应的信息 
+		1.    也需要删除对应的信息 
 6.   创建系统管理员
-	1.   uasadmin, opadmin, cdsadmin等系统管理员
-	2.   手动创建管理员,角色,及管理员角色关系, 角色权限关系
+		1.   uasadmin, opadmin, cdsadmin等系统管理员
+		2.   手动创建管理员,角色,及管理员角色关系, 角色权限关系
 7.   创建普通角色和管理员
-	1.   web端返回, 租户管理员对应的权限列表
-	2.   选择权限, 设置角色名称, 保存
-	3.   选择用户, 选择角色, 生成管理员, 保存
+		1.   web端返回, 租户管理员对应的权限列表
+		2.   选择权限, 设置角色名称, 保存
+		3.   选择用户, 选择角色, 生成管理员, 保存
 8.   老用户管理员生成
-	1.   mdm_user >> uni_auth_authorization >> uni_auth_app >> service_code_pac_map >> fine_auth_perm_relation >> fine_auth_perm
-	2.   根据上面找到的权限
+		1.   mdm_user >> uni_auth_authorization >> uni_auth_app >> service_code_pac_map >> fine_auth_perm_relation >> fine_auth_perm
+		2.   根据上面找到的权限, 生成角色, 绑定权限
+		3.   生成管理员, 绑定角色
 
