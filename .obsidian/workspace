@@ -4,14 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "ebf7f9c96e0a834e",
+        "id": "141cd199d51efbed",
+        "type": "split",
+        "dimension": 66.51270207852194,
+        "children": [
+          {
+            "id": "4b36b84914233b71",
+            "type": "leaf",
+            "dimension": 24.862888482632542,
+            "pinned": true,
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "13看板/文件看板.md"
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "ebf7f9c96e0a834e",
+            "type": "leaf",
+            "dimension": 75.13711151736746,
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "14TODO/TODO.md",
+                "mode": "preview"
+              },
+              "pinned": true
+            }
+          }
+        ],
+        "direction": "horizontal"
+      },
+      {
+        "id": "315d87e5d12ff1aa",
         "type": "leaf",
+        "dimension": 33.48729792147806,
         "pinned": true,
         "state": {
-          "type": "markdown",
+          "type": "kanban",
           "state": {
-            "file": "14TODO/TODO.md",
-            "mode": "source"
+            "file": "13看板/常用网址看板.md"
           },
           "pinned": true
         }
