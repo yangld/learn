@@ -9,6 +9,10 @@
       "path": "13看板/常用网址看板.md"
     },
     {
+      "basename": "文件看板",
+      "path": "13看板/文件看板.md"
+    },
+    {
       "basename": "权限管理ER图",
       "path": "待办事项/权限管理ER图.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "权限原型-web",
       "path": "待办事项/权限原型-web.md"
-    },
-    {
-      "basename": "文件看板",
-      "path": "13看板/文件看板.md"
     },
     {
       "basename": "权限文件看板",

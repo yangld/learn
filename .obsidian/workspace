@@ -30,7 +30,7 @@
               "type": "markdown",
               "state": {
                 "file": "14TODO/TODO.md",
-                "mode": "source"
+                "mode": "preview"
               },
               "pinned": true
             }
@@ -62,14 +62,6 @@
         "id": "2ce27328076af62b",
         "type": "tabs",
         "children": [
-          {
-            "id": "e6ad8e990ed40990",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
           {
             "id": "47b82e46d090a9f8",
             "type": "leaf",
@@ -132,14 +124,6 @@
         "dimension": 64.34108527131784,
         "children": [
           {
-            "id": "abdb51846b47bdd7",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
-          },
-          {
             "id": "5a5c1950140c4a90",
             "type": "leaf",
             "state": {
@@ -169,7 +153,23 @@
             }
           },
           {
-            "id": "bc6e9ce4f382cd56",
+            "id": "071740078f8f8fe6",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "b0a9333bee9e3f87",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "6c9bd832614b2c72",
             "type": "leaf",
             "state": {
               "type": "RSS_FEED",
@@ -177,21 +177,13 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "f13c7da68fb02288",
         "type": "tabs",
         "dimension": 35.65891472868217,
         "children": [
-          {
-            "id": "bc164a98be8d2008",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
-              "state": {}
-            }
-          },
           {
             "id": "8173d6ed32716e47",
             "type": "leaf",
@@ -203,8 +195,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -215,10 +206,10 @@
   "lastOpenFiles": [
     "14TODO/TODO.md",
     "13看板/常用网址看板.md",
+    "13看板/文件看板.md",
     "待办事项/权限管理ER图.md",
     "待办事项/权限管理类图.md",
     "待办事项/权限原型-web.md",
-    "13看板/文件看板.md",
     "13看板/权限文件看板.md",
     "14TODO/权限管理.md",
     "Day Planners/Day Planner-20211203.md",
