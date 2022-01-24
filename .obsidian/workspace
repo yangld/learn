@@ -4,39 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "141cd199d51efbed",
-        "type": "split",
+        "id": "ebf7f9c96e0a834e",
+        "type": "leaf",
         "dimension": 66.51270207852194,
-        "children": [
-          {
-            "id": "4b36b84914233b71",
-            "type": "leaf",
-            "dimension": 24.862888482632542,
-            "pinned": true,
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "13看板/文件看板.md"
-              },
-              "pinned": true
-            }
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "14TODO/TODO.md",
+            "mode": "source"
           },
-          {
-            "id": "ebf7f9c96e0a834e",
-            "type": "leaf",
-            "dimension": 75.13711151736746,
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "14TODO/TODO.md",
-                "mode": "preview"
-              },
-              "pinned": true
-            }
-          }
-        ],
-        "direction": "horizontal"
+          "pinned": true
+        }
       },
       {
         "id": "315d87e5d12ff1aa",
