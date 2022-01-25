@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "arthas",
+      "path": "8知识管理/Navigation/学习/arthas.md"
+    },
+    {
       "basename": "TODO",
       "path": "14TODO/TODO.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "dataview的使用",
       "path": "11网址收藏/dataview的使用.md"
-    },
-    {
-      "basename": "1",
-      "path": "11网址收藏/1.md"
     }
   ],
   "omittedPaths": [],
