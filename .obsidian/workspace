@@ -6,13 +6,13 @@
       {
         "id": "ebf7f9c96e0a834e",
         "type": "leaf",
-        "dimension": 66.51270207852194,
+        "dimension": 73.72979214780601,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
             "file": "14TODO/TODO.md",
-            "mode": "source"
+            "mode": "preview"
           },
           "pinned": true
         }
@@ -20,7 +20,7 @@
       {
         "id": "315d87e5d12ff1aa",
         "type": "leaf",
-        "dimension": 33.48729792147806,
+        "dimension": 26.270207852193995,
         "pinned": true,
         "state": {
           "type": "kanban",
