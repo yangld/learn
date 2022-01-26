@@ -99,5 +99,14 @@
       ],
       "key": "ArrowRight"
     }
+  ],
+  "maximise-active-pane-obsidian:maximise-active-pane": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "Z"
+    }
   ]
 }
