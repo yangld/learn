@@ -9,30 +9,62 @@
         "dimension": 66.51270207852194,
         "children": [
           {
-            "id": "4b36b84914233b71",
+            "id": "b3554fa7367eba03",
+            "type": "split",
+            "dimension": 22.76119402985075,
+            "children": [
+              {
+                "id": "4b36b84914233b71",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "kanban",
+                  "state": {
+                    "file": "13看板/文件看板.md"
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "161f70f775b9e97d",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1附件/附件目录.md",
+                    "mode": "source"
+                  },
+                  "pinned": true
+                }
+              }
+            ],
+            "direction": "vertical"
+          },
+          {
+            "id": "ebf7f9c96e0a834e",
             "type": "leaf",
-            "dimension": 24.862888482632542,
+            "dimension": 38.61940298507463,
             "pinned": true,
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "13看板/文件看板.md"
+                "file": "1.md",
+                "mode": "source"
               },
               "pinned": true
             }
           },
           {
-            "id": "ebf7f9c96e0a834e",
+            "id": "dda0eb84379d0d4a",
             "type": "leaf",
-            "dimension": 75.13711151736746,
-            "pinned": true,
+            "dimension": 38.61940298507463,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "14TODO/TODO.md",
-                "mode": "preview"
-              },
-              "pinned": true
+                "file": "1.md",
+                "mode": "source"
+              }
             }
           }
         ],
@@ -145,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "14TODO/TODO.md",
+                "file": "1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +194,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "14TODO/TODO.md",
+                "file": "1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,17 +243,17 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "ebf7f9c96e0a834e",
+  "active": "dda0eb84379d0d4a",
   "lastOpenFiles": [
+    "1.md",
     "14TODO/TODO.md",
+    "1附件/附件目录.md",
+    "5Obsidian/dataview-test.md",
+    "Day Planners/Day Planner-20220128.md",
     "8知识管理/Navigation/学习/arthas-热部署.md",
     "8知识管理/Navigation/学习/arthas-tt.md",
     "待办事项/权限管理类图.md",
     "13看板/权限文件看板.md",
-    "13看板/常用网址看板.md",
-    "13看板/文件看板.md",
-    "待办事项/权限管理ER图.md",
-    "待办事项/权限原型-web.md",
-    "14TODO/权限管理.md"
+    "13看板/常用网址看板.md"
   ]
 }

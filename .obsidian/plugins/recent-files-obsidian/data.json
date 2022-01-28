@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "1",
+      "path": "1.md"
+    },
+    {
       "basename": "TODO",
       "path": "14TODO/TODO.md"
+    },
+    {
+      "basename": "附件目录",
+      "path": "1附件/附件目录.md"
+    },
+    {
+      "basename": "dataview-test",
+      "path": "5Obsidian/dataview-test.md"
+    },
+    {
+      "basename": "Day Planner-20220128",
+      "path": "Day Planners/Day Planner-20220128.md"
     },
     {
       "basename": "arthas-热部署",
@@ -63,14 +79,6 @@
     {
       "basename": "Day Planner-20220104",
       "path": "Day Planners/Day Planner-20220104.md"
-    },
-    {
-      "basename": "dataview-test",
-      "path": "5Obsidian/dataview-test.md"
-    },
-    {
-      "basename": "资料",
-      "path": "1附件/资料.md"
     },
     {
       "basename": "未命名",
@@ -191,14 +199,6 @@
     {
       "basename": "2021-11-12",
       "path": "3工作日志/2021-11-12.md"
-    },
-    {
-      "basename": "禅道",
-      "path": "9常用网址/禅道.md"
-    },
-    {
-      "basename": "dataview的使用的摘要",
-      "path": "11网址收藏/dataview的使用的摘要.md"
     }
   ],
   "omittedPaths": [],

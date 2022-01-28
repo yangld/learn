@@ -11,22 +11,42 @@
             "dimension": 66.51270207852194,
             "children": [
               {
-                "id": "4b36b84914233b71",
-                "type": "leaf",
-                "dimension": 24.862888482632542,
-                "pinned": true,
-                "state": {
-                  "type": "kanban",
-                  "state": {
-                    "file": "13看板/文件看板.md"
+                "id": "b3554fa7367eba03",
+                "type": "split",
+                "dimension": 22.761194029850746,
+                "children": [
+                  {
+                    "id": "4b36b84914233b71",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "kanban",
+                      "state": {
+                        "file": "13看板/文件看板.md"
+                      },
+                      "pinned": true
+                    }
                   },
-                  "pinned": true
-                }
+                  {
+                    "id": "161f70f775b9e97d",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "1附件/附件目录.md",
+                        "mode": "source"
+                      },
+                      "pinned": true
+                    }
+                  }
+                ],
+                "direction": "vertical"
               },
               {
                 "id": "ebf7f9c96e0a834e",
                 "type": "leaf",
-                "dimension": 75.13711151736746,
+                "dimension": 77.23880597014924,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -147,7 +167,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "14TODO/TODO.md",
+                    "file": "1附件/附件目录.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -164,7 +184,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "14TODO/TODO.md",
+                    "file": "1附件/附件目录.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -213,7 +233,7 @@
         "width": 605,
         "collapsed": true
       },
-      "active": "ebf7f9c96e0a834e"
+      "active": "161f70f775b9e97d"
     },
     "dataview": {
       "main": {
