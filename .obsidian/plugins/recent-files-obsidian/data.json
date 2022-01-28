@@ -5,8 +5,12 @@
       "path": "14TODO/TODO.md"
     },
     {
-      "basename": "arthas",
-      "path": "8知识管理/Navigation/学习/arthas.md"
+      "basename": "arthas-热部署",
+      "path": "8知识管理/Navigation/学习/arthas-热部署.md"
+    },
+    {
+      "basename": "arthas-tt",
+      "path": "8知识管理/Navigation/学习/arthas-tt.md"
     },
     {
       "basename": "权限管理类图",
@@ -195,10 +199,6 @@
     {
       "basename": "dataview的使用的摘要",
       "path": "11网址收藏/dataview的使用的摘要.md"
-    },
-    {
-      "basename": "dataview的使用",
-      "path": "11网址收藏/dataview的使用.md"
     }
   ],
   "omittedPaths": [],
