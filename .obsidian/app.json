@@ -16,5 +16,6 @@
   "showUnsupportedFiles": true,
   "emacsyKeys": false,
   "communityPluginSortOrder": "releaseReverse",
-  "defaultViewMode": "preview"
+  "defaultViewMode": "preview",
+  "legacyEditor": false
 }

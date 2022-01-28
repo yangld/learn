@@ -497,6 +497,345 @@ var require_tslib = __commonJS({
   }
 });
 
+// node_modules/ts-md5/dist/md5.js
+var require_md5 = __commonJS({
+  "node_modules/ts-md5/dist/md5.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var Md54 = function() {
+      function Md55() {
+        this._state = new Int32Array(4);
+        this._buffer = new ArrayBuffer(68);
+        this._buffer8 = new Uint8Array(this._buffer, 0, 68);
+        this._buffer32 = new Uint32Array(this._buffer, 0, 17);
+        this.start();
+      }
+      Md55.hashStr = function(str, raw) {
+        if (raw === void 0) {
+          raw = false;
+        }
+        return this.onePassHasher.start().appendStr(str).end(raw);
+      };
+      Md55.hashAsciiStr = function(str, raw) {
+        if (raw === void 0) {
+          raw = false;
+        }
+        return this.onePassHasher.start().appendAsciiStr(str).end(raw);
+      };
+      Md55._hex = function(x) {
+        var hc = Md55.hexChars;
+        var ho = Md55.hexOut;
+        var n;
+        var offset2;
+        var j;
+        var i;
+        for (i = 0; i < 4; i += 1) {
+          offset2 = i * 8;
+          n = x[i];
+          for (j = 0; j < 8; j += 2) {
+            ho[offset2 + 1 + j] = hc.charAt(n & 15);
+            n >>>= 4;
+            ho[offset2 + 0 + j] = hc.charAt(n & 15);
+            n >>>= 4;
+          }
+        }
+        return ho.join("");
+      };
+      Md55._md5cycle = function(x, k) {
+        var a = x[0];
+        var b = x[1];
+        var c = x[2];
+        var d = x[3];
+        a += (b & c | ~b & d) + k[0] - 680876936 | 0;
+        a = (a << 7 | a >>> 25) + b | 0;
+        d += (a & b | ~a & c) + k[1] - 389564586 | 0;
+        d = (d << 12 | d >>> 20) + a | 0;
+        c += (d & a | ~d & b) + k[2] + 606105819 | 0;
+        c = (c << 17 | c >>> 15) + d | 0;
+        b += (c & d | ~c & a) + k[3] - 1044525330 | 0;
+        b = (b << 22 | b >>> 10) + c | 0;
+        a += (b & c | ~b & d) + k[4] - 176418897 | 0;
+        a = (a << 7 | a >>> 25) + b | 0;
+        d += (a & b | ~a & c) + k[5] + 1200080426 | 0;
+        d = (d << 12 | d >>> 20) + a | 0;
+        c += (d & a | ~d & b) + k[6] - 1473231341 | 0;
+        c = (c << 17 | c >>> 15) + d | 0;
+        b += (c & d | ~c & a) + k[7] - 45705983 | 0;
+        b = (b << 22 | b >>> 10) + c | 0;
+        a += (b & c | ~b & d) + k[8] + 1770035416 | 0;
+        a = (a << 7 | a >>> 25) + b | 0;
+        d += (a & b | ~a & c) + k[9] - 1958414417 | 0;
+        d = (d << 12 | d >>> 20) + a | 0;
+        c += (d & a | ~d & b) + k[10] - 42063 | 0;
+        c = (c << 17 | c >>> 15) + d | 0;
+        b += (c & d | ~c & a) + k[11] - 1990404162 | 0;
+        b = (b << 22 | b >>> 10) + c | 0;
+        a += (b & c | ~b & d) + k[12] + 1804603682 | 0;
+        a = (a << 7 | a >>> 25) + b | 0;
+        d += (a & b | ~a & c) + k[13] - 40341101 | 0;
+        d = (d << 12 | d >>> 20) + a | 0;
+        c += (d & a | ~d & b) + k[14] - 1502002290 | 0;
+        c = (c << 17 | c >>> 15) + d | 0;
+        b += (c & d | ~c & a) + k[15] + 1236535329 | 0;
+        b = (b << 22 | b >>> 10) + c | 0;
+        a += (b & d | c & ~d) + k[1] - 165796510 | 0;
+        a = (a << 5 | a >>> 27) + b | 0;
+        d += (a & c | b & ~c) + k[6] - 1069501632 | 0;
+        d = (d << 9 | d >>> 23) + a | 0;
+        c += (d & b | a & ~b) + k[11] + 643717713 | 0;
+        c = (c << 14 | c >>> 18) + d | 0;
+        b += (c & a | d & ~a) + k[0] - 373897302 | 0;
+        b = (b << 20 | b >>> 12) + c | 0;
+        a += (b & d | c & ~d) + k[5] - 701558691 | 0;
+        a = (a << 5 | a >>> 27) + b | 0;
+        d += (a & c | b & ~c) + k[10] + 38016083 | 0;
+        d = (d << 9 | d >>> 23) + a | 0;
+        c += (d & b | a & ~b) + k[15] - 660478335 | 0;
+        c = (c << 14 | c >>> 18) + d | 0;
+        b += (c & a | d & ~a) + k[4] - 405537848 | 0;
+        b = (b << 20 | b >>> 12) + c | 0;
+        a += (b & d | c & ~d) + k[9] + 568446438 | 0;
+        a = (a << 5 | a >>> 27) + b | 0;
+        d += (a & c | b & ~c) + k[14] - 1019803690 | 0;
+        d = (d << 9 | d >>> 23) + a | 0;
+        c += (d & b | a & ~b) + k[3] - 187363961 | 0;
+        c = (c << 14 | c >>> 18) + d | 0;
+        b += (c & a | d & ~a) + k[8] + 1163531501 | 0;
+        b = (b << 20 | b >>> 12) + c | 0;
+        a += (b & d | c & ~d) + k[13] - 1444681467 | 0;
+        a = (a << 5 | a >>> 27) + b | 0;
+        d += (a & c | b & ~c) + k[2] - 51403784 | 0;
+        d = (d << 9 | d >>> 23) + a | 0;
+        c += (d & b | a & ~b) + k[7] + 1735328473 | 0;
+        c = (c << 14 | c >>> 18) + d | 0;
+        b += (c & a | d & ~a) + k[12] - 1926607734 | 0;
+        b = (b << 20 | b >>> 12) + c | 0;
+        a += (b ^ c ^ d) + k[5] - 378558 | 0;
+        a = (a << 4 | a >>> 28) + b | 0;
+        d += (a ^ b ^ c) + k[8] - 2022574463 | 0;
+        d = (d << 11 | d >>> 21) + a | 0;
+        c += (d ^ a ^ b) + k[11] + 1839030562 | 0;
+        c = (c << 16 | c >>> 16) + d | 0;
+        b += (c ^ d ^ a) + k[14] - 35309556 | 0;
+        b = (b << 23 | b >>> 9) + c | 0;
+        a += (b ^ c ^ d) + k[1] - 1530992060 | 0;
+        a = (a << 4 | a >>> 28) + b | 0;
+        d += (a ^ b ^ c) + k[4] + 1272893353 | 0;
+        d = (d << 11 | d >>> 21) + a | 0;
+        c += (d ^ a ^ b) + k[7] - 155497632 | 0;
+        c = (c << 16 | c >>> 16) + d | 0;
+        b += (c ^ d ^ a) + k[10] - 1094730640 | 0;
+        b = (b << 23 | b >>> 9) + c | 0;
+        a += (b ^ c ^ d) + k[13] + 681279174 | 0;
+        a = (a << 4 | a >>> 28) + b | 0;
+        d += (a ^ b ^ c) + k[0] - 358537222 | 0;
+        d = (d << 11 | d >>> 21) + a | 0;
+        c += (d ^ a ^ b) + k[3] - 722521979 | 0;
+        c = (c << 16 | c >>> 16) + d | 0;
+        b += (c ^ d ^ a) + k[6] + 76029189 | 0;
+        b = (b << 23 | b >>> 9) + c | 0;
+        a += (b ^ c ^ d) + k[9] - 640364487 | 0;
+        a = (a << 4 | a >>> 28) + b | 0;
+        d += (a ^ b ^ c) + k[12] - 421815835 | 0;
+        d = (d << 11 | d >>> 21) + a | 0;
+        c += (d ^ a ^ b) + k[15] + 530742520 | 0;
+        c = (c << 16 | c >>> 16) + d | 0;
+        b += (c ^ d ^ a) + k[2] - 995338651 | 0;
+        b = (b << 23 | b >>> 9) + c | 0;
+        a += (c ^ (b | ~d)) + k[0] - 198630844 | 0;
+        a = (a << 6 | a >>> 26) + b | 0;
+        d += (b ^ (a | ~c)) + k[7] + 1126891415 | 0;
+        d = (d << 10 | d >>> 22) + a | 0;
+        c += (a ^ (d | ~b)) + k[14] - 1416354905 | 0;
+        c = (c << 15 | c >>> 17) + d | 0;
+        b += (d ^ (c | ~a)) + k[5] - 57434055 | 0;
+        b = (b << 21 | b >>> 11) + c | 0;
+        a += (c ^ (b | ~d)) + k[12] + 1700485571 | 0;
+        a = (a << 6 | a >>> 26) + b | 0;
+        d += (b ^ (a | ~c)) + k[3] - 1894986606 | 0;
+        d = (d << 10 | d >>> 22) + a | 0;
+        c += (a ^ (d | ~b)) + k[10] - 1051523 | 0;
+        c = (c << 15 | c >>> 17) + d | 0;
+        b += (d ^ (c | ~a)) + k[1] - 2054922799 | 0;
+        b = (b << 21 | b >>> 11) + c | 0;
+        a += (c ^ (b | ~d)) + k[8] + 1873313359 | 0;
+        a = (a << 6 | a >>> 26) + b | 0;
+        d += (b ^ (a | ~c)) + k[15] - 30611744 | 0;
+        d = (d << 10 | d >>> 22) + a | 0;
+        c += (a ^ (d | ~b)) + k[6] - 1560198380 | 0;
+        c = (c << 15 | c >>> 17) + d | 0;
+        b += (d ^ (c | ~a)) + k[13] + 1309151649 | 0;
+        b = (b << 21 | b >>> 11) + c | 0;
+        a += (c ^ (b | ~d)) + k[4] - 145523070 | 0;
+        a = (a << 6 | a >>> 26) + b | 0;
+        d += (b ^ (a | ~c)) + k[11] - 1120210379 | 0;
+        d = (d << 10 | d >>> 22) + a | 0;
+        c += (a ^ (d | ~b)) + k[2] + 718787259 | 0;
+        c = (c << 15 | c >>> 17) + d | 0;
+        b += (d ^ (c | ~a)) + k[9] - 343485551 | 0;
+        b = (b << 21 | b >>> 11) + c | 0;
+        x[0] = a + x[0] | 0;
+        x[1] = b + x[1] | 0;
+        x[2] = c + x[2] | 0;
+        x[3] = d + x[3] | 0;
+      };
+      Md55.prototype.start = function() {
+        this._dataLength = 0;
+        this._bufferLength = 0;
+        this._state.set(Md55.stateIdentity);
+        return this;
+      };
+      Md55.prototype.appendStr = function(str) {
+        var buf8 = this._buffer8;
+        var buf32 = this._buffer32;
+        var bufLen = this._bufferLength;
+        var code;
+        var i;
+        for (i = 0; i < str.length; i += 1) {
+          code = str.charCodeAt(i);
+          if (code < 128) {
+            buf8[bufLen++] = code;
+          } else if (code < 2048) {
+            buf8[bufLen++] = (code >>> 6) + 192;
+            buf8[bufLen++] = code & 63 | 128;
+          } else if (code < 55296 || code > 56319) {
+            buf8[bufLen++] = (code >>> 12) + 224;
+            buf8[bufLen++] = code >>> 6 & 63 | 128;
+            buf8[bufLen++] = code & 63 | 128;
+          } else {
+            code = (code - 55296) * 1024 + (str.charCodeAt(++i) - 56320) + 65536;
+            if (code > 1114111) {
+              throw new Error("Unicode standard supports code points up to U+10FFFF");
+            }
+            buf8[bufLen++] = (code >>> 18) + 240;
+            buf8[bufLen++] = code >>> 12 & 63 | 128;
+            buf8[bufLen++] = code >>> 6 & 63 | 128;
+            buf8[bufLen++] = code & 63 | 128;
+          }
+          if (bufLen >= 64) {
+            this._dataLength += 64;
+            Md55._md5cycle(this._state, buf32);
+            bufLen -= 64;
+            buf32[0] = buf32[16];
+          }
+        }
+        this._bufferLength = bufLen;
+        return this;
+      };
+      Md55.prototype.appendAsciiStr = function(str) {
+        var buf8 = this._buffer8;
+        var buf32 = this._buffer32;
+        var bufLen = this._bufferLength;
+        var i;
+        var j = 0;
+        for (; ; ) {
+          i = Math.min(str.length - j, 64 - bufLen);
+          while (i--) {
+            buf8[bufLen++] = str.charCodeAt(j++);
+          }
+          if (bufLen < 64) {
+            break;
+          }
+          this._dataLength += 64;
+          Md55._md5cycle(this._state, buf32);
+          bufLen = 0;
+        }
+        this._bufferLength = bufLen;
+        return this;
+      };
+      Md55.prototype.appendByteArray = function(input) {
+        var buf8 = this._buffer8;
+        var buf32 = this._buffer32;
+        var bufLen = this._bufferLength;
+        var i;
+        var j = 0;
+        for (; ; ) {
+          i = Math.min(input.length - j, 64 - bufLen);
+          while (i--) {
+            buf8[bufLen++] = input[j++];
+          }
+          if (bufLen < 64) {
+            break;
+          }
+          this._dataLength += 64;
+          Md55._md5cycle(this._state, buf32);
+          bufLen = 0;
+        }
+        this._bufferLength = bufLen;
+        return this;
+      };
+      Md55.prototype.getState = function() {
+        var self2 = this;
+        var s = self2._state;
+        return {
+          buffer: String.fromCharCode.apply(null, self2._buffer8),
+          buflen: self2._bufferLength,
+          length: self2._dataLength,
+          state: [s[0], s[1], s[2], s[3]]
+        };
+      };
+      Md55.prototype.setState = function(state) {
+        var buf = state.buffer;
+        var x = state.state;
+        var s = this._state;
+        var i;
+        this._dataLength = state.length;
+        this._bufferLength = state.buflen;
+        s[0] = x[0];
+        s[1] = x[1];
+        s[2] = x[2];
+        s[3] = x[3];
+        for (i = 0; i < buf.length; i += 1) {
+          this._buffer8[i] = buf.charCodeAt(i);
+        }
+      };
+      Md55.prototype.end = function(raw) {
+        if (raw === void 0) {
+          raw = false;
+        }
+        var bufLen = this._bufferLength;
+        var buf8 = this._buffer8;
+        var buf32 = this._buffer32;
+        var i = (bufLen >> 2) + 1;
+        var dataBitsLen;
+        this._dataLength += bufLen;
+        buf8[bufLen] = 128;
+        buf8[bufLen + 1] = buf8[bufLen + 2] = buf8[bufLen + 3] = 0;
+        buf32.set(Md55.buffer32Identity.subarray(i), i);
+        if (bufLen > 55) {
+          Md55._md5cycle(this._state, buf32);
+          buf32.set(Md55.buffer32Identity);
+        }
+        dataBitsLen = this._dataLength * 8;
+        if (dataBitsLen <= 4294967295) {
+          buf32[14] = dataBitsLen;
+        } else {
+          var matches = dataBitsLen.toString(16).match(/(.*?)(.{0,8})$/);
+          if (matches === null) {
+            return;
+          }
+          var lo = parseInt(matches[2], 16);
+          var hi = parseInt(matches[1], 16) || 0;
+          buf32[14] = lo;
+          buf32[15] = hi;
+        }
+        Md55._md5cycle(this._state, buf32);
+        return raw ? this._state : Md55._hex(this._state);
+      };
+      Md55.stateIdentity = new Int32Array([1732584193, -271733879, -1732584194, 271733878]);
+      Md55.buffer32Identity = new Int32Array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+      Md55.hexChars = "0123456789abcdef";
+      Md55.hexOut = [];
+      Md55.onePassHasher = new Md55();
+      return Md55;
+    }();
+    exports.Md5 = Md54;
+    if (Md54.hashStr("hello") !== "5d41402abc4b2a76b9719d911017c592") {
+      console.error("Md5 self test failed.");
+    }
+  }
+});
+
 // node_modules/feather-icons/dist/feather.js
 var require_feather = __commonJS({
   "node_modules/feather-icons/dist/feather.js"(exports, module2) {
@@ -1762,8 +2101,8 @@ var require_feather = __commonJS({
           function _interopRequireDefault(obj) {
             return obj && obj.__esModule ? obj : { default: obj };
           }
-          function _classCallCheck(instance6, Constructor) {
-            if (!(instance6 instanceof Constructor)) {
+          function _classCallCheck(instance9, Constructor) {
+            if (!(instance9 instanceof Constructor)) {
               throw new TypeError("Cannot call a class as a function");
             }
           }
@@ -1915,345 +2254,6 @@ var require_feather = __commonJS({
         }
       });
     });
-  }
-});
-
-// node_modules/ts-md5/dist/md5.js
-var require_md5 = __commonJS({
-  "node_modules/ts-md5/dist/md5.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    var Md54 = function() {
-      function Md55() {
-        this._state = new Int32Array(4);
-        this._buffer = new ArrayBuffer(68);
-        this._buffer8 = new Uint8Array(this._buffer, 0, 68);
-        this._buffer32 = new Uint32Array(this._buffer, 0, 17);
-        this.start();
-      }
-      Md55.hashStr = function(str, raw) {
-        if (raw === void 0) {
-          raw = false;
-        }
-        return this.onePassHasher.start().appendStr(str).end(raw);
-      };
-      Md55.hashAsciiStr = function(str, raw) {
-        if (raw === void 0) {
-          raw = false;
-        }
-        return this.onePassHasher.start().appendAsciiStr(str).end(raw);
-      };
-      Md55._hex = function(x) {
-        var hc = Md55.hexChars;
-        var ho = Md55.hexOut;
-        var n;
-        var offset2;
-        var j;
-        var i;
-        for (i = 0; i < 4; i += 1) {
-          offset2 = i * 8;
-          n = x[i];
-          for (j = 0; j < 8; j += 2) {
-            ho[offset2 + 1 + j] = hc.charAt(n & 15);
-            n >>>= 4;
-            ho[offset2 + 0 + j] = hc.charAt(n & 15);
-            n >>>= 4;
-          }
-        }
-        return ho.join("");
-      };
-      Md55._md5cycle = function(x, k) {
-        var a = x[0];
-        var b = x[1];
-        var c = x[2];
-        var d = x[3];
-        a += (b & c | ~b & d) + k[0] - 680876936 | 0;
-        a = (a << 7 | a >>> 25) + b | 0;
-        d += (a & b | ~a & c) + k[1] - 389564586 | 0;
-        d = (d << 12 | d >>> 20) + a | 0;
-        c += (d & a | ~d & b) + k[2] + 606105819 | 0;
-        c = (c << 17 | c >>> 15) + d | 0;
-        b += (c & d | ~c & a) + k[3] - 1044525330 | 0;
-        b = (b << 22 | b >>> 10) + c | 0;
-        a += (b & c | ~b & d) + k[4] - 176418897 | 0;
-        a = (a << 7 | a >>> 25) + b | 0;
-        d += (a & b | ~a & c) + k[5] + 1200080426 | 0;
-        d = (d << 12 | d >>> 20) + a | 0;
-        c += (d & a | ~d & b) + k[6] - 1473231341 | 0;
-        c = (c << 17 | c >>> 15) + d | 0;
-        b += (c & d | ~c & a) + k[7] - 45705983 | 0;
-        b = (b << 22 | b >>> 10) + c | 0;
-        a += (b & c | ~b & d) + k[8] + 1770035416 | 0;
-        a = (a << 7 | a >>> 25) + b | 0;
-        d += (a & b | ~a & c) + k[9] - 1958414417 | 0;
-        d = (d << 12 | d >>> 20) + a | 0;
-        c += (d & a | ~d & b) + k[10] - 42063 | 0;
-        c = (c << 17 | c >>> 15) + d | 0;
-        b += (c & d | ~c & a) + k[11] - 1990404162 | 0;
-        b = (b << 22 | b >>> 10) + c | 0;
-        a += (b & c | ~b & d) + k[12] + 1804603682 | 0;
-        a = (a << 7 | a >>> 25) + b | 0;
-        d += (a & b | ~a & c) + k[13] - 40341101 | 0;
-        d = (d << 12 | d >>> 20) + a | 0;
-        c += (d & a | ~d & b) + k[14] - 1502002290 | 0;
-        c = (c << 17 | c >>> 15) + d | 0;
-        b += (c & d | ~c & a) + k[15] + 1236535329 | 0;
-        b = (b << 22 | b >>> 10) + c | 0;
-        a += (b & d | c & ~d) + k[1] - 165796510 | 0;
-        a = (a << 5 | a >>> 27) + b | 0;
-        d += (a & c | b & ~c) + k[6] - 1069501632 | 0;
-        d = (d << 9 | d >>> 23) + a | 0;
-        c += (d & b | a & ~b) + k[11] + 643717713 | 0;
-        c = (c << 14 | c >>> 18) + d | 0;
-        b += (c & a | d & ~a) + k[0] - 373897302 | 0;
-        b = (b << 20 | b >>> 12) + c | 0;
-        a += (b & d | c & ~d) + k[5] - 701558691 | 0;
-        a = (a << 5 | a >>> 27) + b | 0;
-        d += (a & c | b & ~c) + k[10] + 38016083 | 0;
-        d = (d << 9 | d >>> 23) + a | 0;
-        c += (d & b | a & ~b) + k[15] - 660478335 | 0;
-        c = (c << 14 | c >>> 18) + d | 0;
-        b += (c & a | d & ~a) + k[4] - 405537848 | 0;
-        b = (b << 20 | b >>> 12) + c | 0;
-        a += (b & d | c & ~d) + k[9] + 568446438 | 0;
-        a = (a << 5 | a >>> 27) + b | 0;
-        d += (a & c | b & ~c) + k[14] - 1019803690 | 0;
-        d = (d << 9 | d >>> 23) + a | 0;
-        c += (d & b | a & ~b) + k[3] - 187363961 | 0;
-        c = (c << 14 | c >>> 18) + d | 0;
-        b += (c & a | d & ~a) + k[8] + 1163531501 | 0;
-        b = (b << 20 | b >>> 12) + c | 0;
-        a += (b & d | c & ~d) + k[13] - 1444681467 | 0;
-        a = (a << 5 | a >>> 27) + b | 0;
-        d += (a & c | b & ~c) + k[2] - 51403784 | 0;
-        d = (d << 9 | d >>> 23) + a | 0;
-        c += (d & b | a & ~b) + k[7] + 1735328473 | 0;
-        c = (c << 14 | c >>> 18) + d | 0;
-        b += (c & a | d & ~a) + k[12] - 1926607734 | 0;
-        b = (b << 20 | b >>> 12) + c | 0;
-        a += (b ^ c ^ d) + k[5] - 378558 | 0;
-        a = (a << 4 | a >>> 28) + b | 0;
-        d += (a ^ b ^ c) + k[8] - 2022574463 | 0;
-        d = (d << 11 | d >>> 21) + a | 0;
-        c += (d ^ a ^ b) + k[11] + 1839030562 | 0;
-        c = (c << 16 | c >>> 16) + d | 0;
-        b += (c ^ d ^ a) + k[14] - 35309556 | 0;
-        b = (b << 23 | b >>> 9) + c | 0;
-        a += (b ^ c ^ d) + k[1] - 1530992060 | 0;
-        a = (a << 4 | a >>> 28) + b | 0;
-        d += (a ^ b ^ c) + k[4] + 1272893353 | 0;
-        d = (d << 11 | d >>> 21) + a | 0;
-        c += (d ^ a ^ b) + k[7] - 155497632 | 0;
-        c = (c << 16 | c >>> 16) + d | 0;
-        b += (c ^ d ^ a) + k[10] - 1094730640 | 0;
-        b = (b << 23 | b >>> 9) + c | 0;
-        a += (b ^ c ^ d) + k[13] + 681279174 | 0;
-        a = (a << 4 | a >>> 28) + b | 0;
-        d += (a ^ b ^ c) + k[0] - 358537222 | 0;
-        d = (d << 11 | d >>> 21) + a | 0;
-        c += (d ^ a ^ b) + k[3] - 722521979 | 0;
-        c = (c << 16 | c >>> 16) + d | 0;
-        b += (c ^ d ^ a) + k[6] + 76029189 | 0;
-        b = (b << 23 | b >>> 9) + c | 0;
-        a += (b ^ c ^ d) + k[9] - 640364487 | 0;
-        a = (a << 4 | a >>> 28) + b | 0;
-        d += (a ^ b ^ c) + k[12] - 421815835 | 0;
-        d = (d << 11 | d >>> 21) + a | 0;
-        c += (d ^ a ^ b) + k[15] + 530742520 | 0;
-        c = (c << 16 | c >>> 16) + d | 0;
-        b += (c ^ d ^ a) + k[2] - 995338651 | 0;
-        b = (b << 23 | b >>> 9) + c | 0;
-        a += (c ^ (b | ~d)) + k[0] - 198630844 | 0;
-        a = (a << 6 | a >>> 26) + b | 0;
-        d += (b ^ (a | ~c)) + k[7] + 1126891415 | 0;
-        d = (d << 10 | d >>> 22) + a | 0;
-        c += (a ^ (d | ~b)) + k[14] - 1416354905 | 0;
-        c = (c << 15 | c >>> 17) + d | 0;
-        b += (d ^ (c | ~a)) + k[5] - 57434055 | 0;
-        b = (b << 21 | b >>> 11) + c | 0;
-        a += (c ^ (b | ~d)) + k[12] + 1700485571 | 0;
-        a = (a << 6 | a >>> 26) + b | 0;
-        d += (b ^ (a | ~c)) + k[3] - 1894986606 | 0;
-        d = (d << 10 | d >>> 22) + a | 0;
-        c += (a ^ (d | ~b)) + k[10] - 1051523 | 0;
-        c = (c << 15 | c >>> 17) + d | 0;
-        b += (d ^ (c | ~a)) + k[1] - 2054922799 | 0;
-        b = (b << 21 | b >>> 11) + c | 0;
-        a += (c ^ (b | ~d)) + k[8] + 1873313359 | 0;
-        a = (a << 6 | a >>> 26) + b | 0;
-        d += (b ^ (a | ~c)) + k[15] - 30611744 | 0;
-        d = (d << 10 | d >>> 22) + a | 0;
-        c += (a ^ (d | ~b)) + k[6] - 1560198380 | 0;
-        c = (c << 15 | c >>> 17) + d | 0;
-        b += (d ^ (c | ~a)) + k[13] + 1309151649 | 0;
-        b = (b << 21 | b >>> 11) + c | 0;
-        a += (c ^ (b | ~d)) + k[4] - 145523070 | 0;
-        a = (a << 6 | a >>> 26) + b | 0;
-        d += (b ^ (a | ~c)) + k[11] - 1120210379 | 0;
-        d = (d << 10 | d >>> 22) + a | 0;
-        c += (a ^ (d | ~b)) + k[2] + 718787259 | 0;
-        c = (c << 15 | c >>> 17) + d | 0;
-        b += (d ^ (c | ~a)) + k[9] - 343485551 | 0;
-        b = (b << 21 | b >>> 11) + c | 0;
-        x[0] = a + x[0] | 0;
-        x[1] = b + x[1] | 0;
-        x[2] = c + x[2] | 0;
-        x[3] = d + x[3] | 0;
-      };
-      Md55.prototype.start = function() {
-        this._dataLength = 0;
-        this._bufferLength = 0;
-        this._state.set(Md55.stateIdentity);
-        return this;
-      };
-      Md55.prototype.appendStr = function(str) {
-        var buf8 = this._buffer8;
-        var buf32 = this._buffer32;
-        var bufLen = this._bufferLength;
-        var code;
-        var i;
-        for (i = 0; i < str.length; i += 1) {
-          code = str.charCodeAt(i);
-          if (code < 128) {
-            buf8[bufLen++] = code;
-          } else if (code < 2048) {
-            buf8[bufLen++] = (code >>> 6) + 192;
-            buf8[bufLen++] = code & 63 | 128;
-          } else if (code < 55296 || code > 56319) {
-            buf8[bufLen++] = (code >>> 12) + 224;
-            buf8[bufLen++] = code >>> 6 & 63 | 128;
-            buf8[bufLen++] = code & 63 | 128;
-          } else {
-            code = (code - 55296) * 1024 + (str.charCodeAt(++i) - 56320) + 65536;
-            if (code > 1114111) {
-              throw new Error("Unicode standard supports code points up to U+10FFFF");
-            }
-            buf8[bufLen++] = (code >>> 18) + 240;
-            buf8[bufLen++] = code >>> 12 & 63 | 128;
-            buf8[bufLen++] = code >>> 6 & 63 | 128;
-            buf8[bufLen++] = code & 63 | 128;
-          }
-          if (bufLen >= 64) {
-            this._dataLength += 64;
-            Md55._md5cycle(this._state, buf32);
-            bufLen -= 64;
-            buf32[0] = buf32[16];
-          }
-        }
-        this._bufferLength = bufLen;
-        return this;
-      };
-      Md55.prototype.appendAsciiStr = function(str) {
-        var buf8 = this._buffer8;
-        var buf32 = this._buffer32;
-        var bufLen = this._bufferLength;
-        var i;
-        var j = 0;
-        for (; ; ) {
-          i = Math.min(str.length - j, 64 - bufLen);
-          while (i--) {
-            buf8[bufLen++] = str.charCodeAt(j++);
-          }
-          if (bufLen < 64) {
-            break;
-          }
-          this._dataLength += 64;
-          Md55._md5cycle(this._state, buf32);
-          bufLen = 0;
-        }
-        this._bufferLength = bufLen;
-        return this;
-      };
-      Md55.prototype.appendByteArray = function(input) {
-        var buf8 = this._buffer8;
-        var buf32 = this._buffer32;
-        var bufLen = this._bufferLength;
-        var i;
-        var j = 0;
-        for (; ; ) {
-          i = Math.min(input.length - j, 64 - bufLen);
-          while (i--) {
-            buf8[bufLen++] = input[j++];
-          }
-          if (bufLen < 64) {
-            break;
-          }
-          this._dataLength += 64;
-          Md55._md5cycle(this._state, buf32);
-          bufLen = 0;
-        }
-        this._bufferLength = bufLen;
-        return this;
-      };
-      Md55.prototype.getState = function() {
-        var self2 = this;
-        var s = self2._state;
-        return {
-          buffer: String.fromCharCode.apply(null, self2._buffer8),
-          buflen: self2._bufferLength,
-          length: self2._dataLength,
-          state: [s[0], s[1], s[2], s[3]]
-        };
-      };
-      Md55.prototype.setState = function(state) {
-        var buf = state.buffer;
-        var x = state.state;
-        var s = this._state;
-        var i;
-        this._dataLength = state.length;
-        this._bufferLength = state.buflen;
-        s[0] = x[0];
-        s[1] = x[1];
-        s[2] = x[2];
-        s[3] = x[3];
-        for (i = 0; i < buf.length; i += 1) {
-          this._buffer8[i] = buf.charCodeAt(i);
-        }
-      };
-      Md55.prototype.end = function(raw) {
-        if (raw === void 0) {
-          raw = false;
-        }
-        var bufLen = this._bufferLength;
-        var buf8 = this._buffer8;
-        var buf32 = this._buffer32;
-        var i = (bufLen >> 2) + 1;
-        var dataBitsLen;
-        this._dataLength += bufLen;
-        buf8[bufLen] = 128;
-        buf8[bufLen + 1] = buf8[bufLen + 2] = buf8[bufLen + 3] = 0;
-        buf32.set(Md55.buffer32Identity.subarray(i), i);
-        if (bufLen > 55) {
-          Md55._md5cycle(this._state, buf32);
-          buf32.set(Md55.buffer32Identity);
-        }
-        dataBitsLen = this._dataLength * 8;
-        if (dataBitsLen <= 4294967295) {
-          buf32[14] = dataBitsLen;
-        } else {
-          var matches = dataBitsLen.toString(16).match(/(.*?)(.{0,8})$/);
-          if (matches === null) {
-            return;
-          }
-          var lo = parseInt(matches[2], 16);
-          var hi = parseInt(matches[1], 16) || 0;
-          buf32[14] = lo;
-          buf32[15] = hi;
-        }
-        Md55._md5cycle(this._state, buf32);
-        return raw ? this._state : Md55._hex(this._state);
-      };
-      Md55.stateIdentity = new Int32Array([1732584193, -271733879, -1732584194, 271733878]);
-      Md55.buffer32Identity = new Int32Array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
-      Md55.hexChars = "0123456789abcdef";
-      Md55.hexOut = [];
-      Md55.onePassHasher = new Md55();
-      return Md55;
-    }();
-    exports.Md5 = Md54;
-    if (Md54.hashStr("hello") !== "5d41402abc4b2a76b9719d911017c592") {
-      console.error("Md5 self test failed.");
-    }
   }
 });
 
@@ -5794,7 +5794,7 @@ var require_lodash5 = __commonJS({
 __export(exports, {
   default: () => RssReaderPlugin
 });
-var import_obsidian25 = __toModule(require("obsidian"));
+var import_obsidian28 = __toModule(require("obsidian"));
 
 // src/settings/settings.ts
 var DEFAULT_SETTINGS = Object.freeze({
@@ -5807,14 +5807,18 @@ var DEFAULT_SETTINGS = Object.freeze({
     filterTags: [],
     filterFolders: [],
     filterFeeds: [],
+    ignoreTags: [],
+    ignoreFeeds: [],
+    ignoreFolders: [],
     favorites: true,
     sortOrder: "ALPHABET_NORMAL"
   }],
   saveLocation: "default",
+  displayStyle: "cards",
   saveLocationFolder: "",
   items: [],
   dateFormat: "YYYY-MM-DDTHH:mm:SS",
-  template: "---\nlink: {{link}}\nauthor: {{author}}\npublished: {{published}}\ntags: [{{tags:,}}]\n---\n{{title}}\n{{content}}",
+  template: "---\nlink: {{link}}\nauthor: {{author}}\npublished: {{published}}\ntags: [{{tags:,}}]\n---\n# Highlights\n{{highlights}}\n\n---\n# {{title}}\n{{content}}",
   pasteTemplate: "## {{title}}\n{{content}}",
   askForFilename: true,
   defaultFilename: "{{title}}",
@@ -5831,11 +5835,16 @@ var DEFAULT_SETTINGS = Object.freeze({
     previous: "ArrowLeft",
     next: "ArrowRight"
   },
-  folded: []
+  folded: [],
+  renamedText: {
+    filtered_folders: "",
+    folders: "",
+    no_folder: ""
+  }
 });
 
 // src/view/ViewLoader.ts
-var import_obsidian14 = __toModule(require("obsidian"));
+var import_obsidian16 = __toModule(require("obsidian"));
 
 // node_modules/svelte/internal/index.mjs
 function noop() {
@@ -5884,6 +5893,7 @@ function component_subscribe(component, store, callback) {
 function action_destroyer(action_result) {
   return action_result && is_function(action_result.destroy) ? action_result.destroy : noop;
 }
+var tasks = new Set();
 var is_hydrating = false;
 function start_hydrating() {
   is_hydrating = true;
@@ -5937,8 +5947,13 @@ function set_data(text2, data) {
     text2.data = data;
 }
 function set_style(node, key, value, important) {
-  node.style.setProperty(key, value, important ? "important" : "");
+  if (value === null) {
+    node.style.removeProperty(key);
+  } else {
+    node.style.setProperty(key, value, important ? "important" : "");
+  }
 }
+var managed_styles = new Map();
 var current_component;
 function set_current_component(component) {
   current_component = component;
@@ -5958,20 +5973,20 @@ function schedule_update() {
 function add_render_callback(fn2) {
   render_callbacks.push(fn2);
 }
-var flushing = false;
-var seen_callbacks = /* @__PURE__ */ new Set();
+var seen_callbacks = new Set();
+var flushidx = 0;
 function flush() {
-  if (flushing)
-    return;
-  flushing = true;
+  const saved_component = current_component;
   do {
-    for (let i = 0; i < dirty_components.length; i += 1) {
-      const component = dirty_components[i];
+    while (flushidx < dirty_components.length) {
+      const component = dirty_components[flushidx];
+      flushidx++;
       set_current_component(component);
       update(component.$$);
     }
     set_current_component(null);
     dirty_components.length = 0;
+    flushidx = 0;
     while (binding_callbacks.length)
       binding_callbacks.pop()();
     for (let i = 0; i < render_callbacks.length; i += 1) {
@@ -5987,8 +6002,8 @@ function flush() {
     flush_callbacks.pop()();
   }
   update_scheduled = false;
-  flushing = false;
   seen_callbacks.clear();
+  set_current_component(saved_component);
 }
 function update($$) {
   if ($$.fragment !== null) {
@@ -6000,7 +6015,7 @@ function update($$) {
     $$.after_update.forEach(add_render_callback);
   }
 }
-var outroing = /* @__PURE__ */ new Set();
+var outroing = new Set();
 var outros;
 function group_outros() {
   outros = {
@@ -6038,6 +6053,32 @@ function transition_out(block, local, detach2, callback) {
   }
 }
 var globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
+var boolean_attributes = new Set([
+  "allowfullscreen",
+  "allowpaymentrequest",
+  "async",
+  "autofocus",
+  "autoplay",
+  "checked",
+  "controls",
+  "default",
+  "defer",
+  "disabled",
+  "formnovalidate",
+  "hidden",
+  "ismap",
+  "loop",
+  "multiple",
+  "muted",
+  "nomodule",
+  "novalidate",
+  "open",
+  "playsinline",
+  "readonly",
+  "required",
+  "reversed",
+  "selected"
+]);
 function create_component(block) {
   block && block.c();
 }
@@ -6074,7 +6115,7 @@ function make_dirty(component, i) {
   }
   component.$$.dirty[i / 31 | 0] |= 1 << i % 31;
 }
-function init(component, options, instance6, create_fragment6, not_equal, props, append_styles, dirty = [-1]) {
+function init(component, options, instance9, create_fragment9, not_equal, props, append_styles, dirty = [-1]) {
   const parent_component = current_component;
   set_current_component(component);
   const $$ = component.$$ = {
@@ -6097,7 +6138,7 @@ function init(component, options, instance6, create_fragment6, not_equal, props,
   };
   append_styles && append_styles($$.root);
   let ready = false;
-  $$.ctx = instance6 ? instance6(component, options.props || {}, (i, ret, ...rest) => {
+  $$.ctx = instance9 ? instance9(component, options.props || {}, (i, ret, ...rest) => {
     const value = rest.length ? rest[0] : ret;
     if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
       if (!$$.skip_bound && $$.bound[i])
@@ -6110,7 +6151,7 @@ function init(component, options, instance6, create_fragment6, not_equal, props,
   $$.update();
   ready = true;
   run_all($$.before_update);
-  $$.fragment = create_fragment6 ? create_fragment6($$.ctx) : false;
+  $$.fragment = create_fragment9 ? create_fragment9($$.ctx) : false;
   if (options.target) {
     if (options.hydrate) {
       start_hydrating();
@@ -6226,7 +6267,7 @@ var {
 var subscriber_queue = [];
 function writable(value, start2 = noop) {
   let stop;
-  const subscribers = /* @__PURE__ */ new Set();
+  const subscribers = new Set();
   function set(new_value) {
     if (safe_not_equal(value, new_value)) {
       value = new_value;
@@ -6364,18 +6405,294 @@ var IconComponent = class extends SvelteComponent {
 };
 var IconComponent_default = IconComponent;
 
+// src/parser/rssParser.ts
+var import_obsidian2 = __toModule(require("obsidian"));
+var import_ts_md5 = __toModule(require_md5());
+function getElementByName(element2, name) {
+  let value;
+  if (typeof element2.getElementsByTagName !== "function" && typeof element2.getElementsByTagNameNS !== "function") {
+    return;
+  }
+  if (name.contains(":")) {
+    const [namespace, tag] = name.split(":");
+    const namespaceUri = element2.lookupNamespaceURI(namespace);
+    const byNamespace = element2.getElementsByTagNameNS(namespaceUri, tag);
+    if (byNamespace.length > 0) {
+      value = byNamespace[0].childNodes[0];
+    } else {
+      const tmp = element2.getElementsByTagName(name);
+      if (tmp.length > 0) {
+        if (tmp[0].childNodes.length === 0) {
+          value = tmp[0];
+        } else {
+          const node = tmp[0].childNodes[0];
+          if (node !== void 0) {
+            value = node;
+          }
+        }
+      }
+    }
+  } else if (name.contains(".")) {
+    const [prefix, tag] = name.split(".");
+    if (element2.getElementsByTagName(prefix).length > 0) {
+      const nodes = Array.from(element2.getElementsByTagName(prefix)[0].childNodes);
+      nodes.forEach((node) => {
+        if (node.nodeName == tag) {
+          value = node;
+        }
+      });
+    }
+  } else if (element2.getElementsByTagName(name).length > 0) {
+    if (element2.getElementsByTagName(name)[0].childNodes.length == 0) {
+      value = element2.getElementsByTagName(name)[0];
+    } else {
+      const node = element2.getElementsByTagName(name)[0].childNodes[0];
+      if (node !== void 0)
+        value = node;
+    }
+  }
+  return value;
+}
+function getContent(element2, names) {
+  let value;
+  for (const name of names) {
+    if (name.contains("#")) {
+      const [elementName, attr2] = name.split("#");
+      const data = getElementByName(element2, elementName);
+      if (data) {
+        if (data.nodeName === elementName) {
+          const tmp = data.getAttr(attr2);
+          if (tmp.length > 0) {
+            value = tmp;
+          }
+        }
+      }
+    } else {
+      const data = getElementByName(element2, name);
+      if (data) {
+        if (data.nodeValue && data.nodeValue.length > 0) {
+          value = data.nodeValue;
+        } else if (data.innerHTML && data.innerHTML.length > 0) {
+          value = data.innerHTML;
+        }
+      }
+    }
+  }
+  if (value === void 0) {
+    return "";
+  }
+  return value;
+}
+function buildItem(element2) {
+  return {
+    title: getContent(element2, ["title"]),
+    description: getContent(element2, ["content", "content:encoded", "itunes:summary", "description", "summary", "media:description"]),
+    content: getContent(element2, ["itunes:summary", "description", "summary", "media:description", "content", "content:encoded", "ns0:encoded"]),
+    category: getContent(element2, ["category"]),
+    link: getContent(element2, ["link", "link#href"]),
+    creator: getContent(element2, ["creator", "dc:creator", "author", "author.name"]),
+    pubDate: getContent(element2, ["pubDate", "published", "updated", "dc:date"]),
+    enclosure: getContent(element2, ["enclosure#url", "yt:videoId"]),
+    enclosureType: getContent(element2, ["enclosure#type"]),
+    image: getContent(element2, ["enclosure#url", "media:content#url", "itunes:image#href", "media:thumbnail#url"]),
+    id: getContent(element2, ["id"]),
+    language: null,
+    folder: null,
+    feed: null,
+    read: null,
+    favorite: null,
+    created: null,
+    tags: [],
+    hash: null,
+    highlights: []
+  };
+}
+function getAllItems(doc) {
+  const items = [];
+  if (doc.getElementsByTagName("item")) {
+    for (const elementsByTagNameKey in doc.getElementsByTagName("item")) {
+      const entry = doc.getElementsByTagName("item")[elementsByTagNameKey];
+      items.push(entry);
+    }
+  }
+  if (doc.getElementsByTagName("entry")) {
+    for (const elementsByTagNameKey in doc.getElementsByTagName("entry")) {
+      const entry = doc.getElementsByTagName("entry")[elementsByTagNameKey];
+      items.push(entry);
+    }
+  }
+  return items;
+}
+function getFeedItems(feed) {
+  return __async(this, null, function* () {
+    let data;
+    try {
+      const rawData = yield (0, import_obsidian2.request)({ url: feed.url });
+      data = new window.DOMParser().parseFromString(rawData, "text/xml");
+    } catch (e) {
+      console.error(e);
+      return Promise.resolve(void 0);
+    }
+    const items = [];
+    const rawItems = getAllItems(data);
+    const language = getContent(data, ["language"]).substr(0, 2);
+    rawItems.forEach((rawItem) => {
+      const item = buildItem(rawItem);
+      if (item.title !== void 0 && item.title.length !== 0) {
+        item.folder = feed.folder;
+        item.feed = feed.name;
+        item.read = false;
+        item.favorite = false;
+        item.created = false;
+        item.language = language;
+        item.hash = new import_ts_md5.Md5().appendStr(item.title).appendStr(item.folder).appendStr(item.link).end();
+        if (!item.image && feed.url.contains("youtube.com/feeds")) {
+          item.image = "https://i3.ytimg.com/vi/" + item.id.split(":")[2] + "/hqdefault.jpg";
+        }
+        items.push(item);
+      }
+    });
+    const image = getContent(data, ["image", "image.url", "icon"]);
+    const content = {
+      title: getContent(data, ["title"]),
+      subtitle: getContent(data, ["subtitle"]),
+      link: getContent(data, ["link"]),
+      image: image ? image.replace(/^\/|\/$/g, "") : null,
+      description: getContent(data, ["description"]),
+      items,
+      folder: feed.folder,
+      name: feed.name,
+      language,
+      hash: ""
+    };
+    return Promise.resolve(content);
+  });
+}
+
+// src/consts.ts
+var VIEW_ID = "RSS_FEED";
+var FILE_NAME_REGEX = /["\/<>:|?]/gm;
+var TAG_REGEX = /([\p{Letter}\p{Emoji_Presentation}\p{Number}\/_-]+)/u;
+var NUMBER_REGEX = /^[0-9]*$/gm;
+function sanitizeHTMLToDom(html) {
+  return window.DOMPurify.sanitize(html, {
+    ALLOW_UNKNOWN_PROTOCOLS: true,
+    RETURN_DOM_FRAGMENT: true,
+    RETURN_DOM_IMPORT: true,
+    FORBID_TAGS: ["style"],
+    ADD_TAGS: ["iframe"],
+    ADD_ATTR: ["frameborder", "allowfullscreen", "allow", "aria-label-position"]
+  });
+}
+function isValidHttpUrl(string) {
+  let url;
+  try {
+    url = new URL(string);
+  } catch (_) {
+    return false;
+  }
+  return url.protocol === "http:" || url.protocol === "https:";
+}
+
+// src/view/HtmlTooltip.svelte
+function create_if_block2(ctx) {
+  let p;
+  let html_action;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      p = element("p");
+      attr(p, "class", "tooltiptext");
+    },
+    m(target, anchor) {
+      insert(target, p, anchor);
+      if (!mounted) {
+        dispose = action_destroyer(html_action = ctx[1].call(null, p, ctx[0]));
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if (html_action && is_function(html_action.update) && dirty & 1)
+        html_action.update.call(null, ctx2[0]);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(p);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_fragment2(ctx) {
+  let if_block_anchor;
+  let if_block = ctx[0].length > 0 && create_if_block2(ctx);
+  return {
+    c() {
+      if (if_block)
+        if_block.c();
+      if_block_anchor = empty();
+    },
+    m(target, anchor) {
+      if (if_block)
+        if_block.m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+    },
+    p(ctx2, [dirty]) {
+      if (ctx2[0].length > 0) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block2(ctx2);
+          if_block.c();
+          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (if_block)
+        if_block.d(detaching);
+      if (detaching)
+        detach(if_block_anchor);
+    }
+  };
+}
+function instance2($$self, $$props, $$invalidate) {
+  let { content = "" } = $$props;
+  const html = (node, content2) => {
+    node.append(sanitizeHTMLToDom(content2));
+  };
+  $$self.$$set = ($$props2) => {
+    if ("content" in $$props2)
+      $$invalidate(0, content = $$props2.content);
+  };
+  return [content, html];
+}
+var HtmlTooltip = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance2, create_fragment2, safe_not_equal, { content: 0 });
+  }
+};
+var HtmlTooltip_default = HtmlTooltip;
+
 // src/modals/ItemModal.ts
-var import_obsidian9 = __toModule(require("obsidian"));
+var import_obsidian10 = __toModule(require("obsidian"));
 
 // src/functions.ts
-var import_obsidian5 = __toModule(require("obsidian"));
+var import_obsidian6 = __toModule(require("obsidian"));
 
 // src/modals/TextInputPrompt.ts
-var import_obsidian3 = __toModule(require("obsidian"));
+var import_obsidian4 = __toModule(require("obsidian"));
 
 // src/modals/BaseModal.ts
-var import_obsidian2 = __toModule(require("obsidian"));
-var BaseModal = class extends import_obsidian2.Modal {
+var import_obsidian3 = __toModule(require("obsidian"));
+var BaseModal = class extends import_obsidian3.Modal {
   setValidationError(input, message) {
     input.inputEl.addClass("is-invalid");
     if (message) {
@@ -6507,7 +6824,7 @@ var en_default = {
   syntax_reference: "Syntax Reference",
   syntax_looks: "Your current syntax looks like this: ",
   ask_filename: "Ask for filename",
-  ask_filename_help: "Disable to use title as filename(with invalid symbols removed)",
+  ask_filename_help: "Disable to apply the template below automatically(with invalid symbols removed)",
   refresh_time: "Refresh time",
   refresh_time_help: "How often should the feeds be refreshed, in minutes, use 0 to disable",
   specify_positive_number: "please specify a positive number",
@@ -6545,7 +6862,31 @@ var en_default = {
   from_archive: "Get old articles from archive.org",
   reading_archive: "Reading data from archive",
   scanning_duplicates: "Scanning for duplicates",
-  do_not_close: "Please do not close this window"
+  do_not_close: "Please do not close this window",
+  display_style: "Display Style",
+  list: "List",
+  cards: "Cards",
+  customize_terms: "Customize Terms",
+  content: "Content",
+  highlight: "Highlight",
+  highlight_remove: "remove highlight",
+  filter_folder_ignore_help: "ignore the following folders",
+  filter_feed_ignore_help: "ignore the following feeds",
+  filter_tags_ignore_help: "ignore the following tags",
+  loading: "Loading",
+  article_title: "Title",
+  article_link: "Link to article",
+  article_author: "Author of article",
+  article_published: "Date published",
+  article_description: "Short article description",
+  article_content: "article content",
+  article_tags: "Tags split by comma",
+  article_media: "Link to video/audio file",
+  feed_folder: "Folder of feed",
+  feed_title: "Title of feed",
+  highlights: "Highlights",
+  note_created: "Note creation date",
+  filename: "Filename"
 };
 
 // src/l10n/locales/de.ts
@@ -6650,7 +6991,7 @@ var de_default = {
   syntax_reference: "Syntax Referenz",
   syntax_looks: "So wird es aussehen: ",
   ask_filename: "Nach Dateiname fragen",
-  ask_filename_help: "Deaktivieren um Titel als Dateinamen zu verwenden(ohne ung\xFCltige Zeichen)",
+  ask_filename_help: "Deaktivieren um die Vorlage automatisch anzuwenden(ohne ung\xFCltige Zeichen)",
   refresh_time: "Aktualisierungsintervall",
   refresh_time_help: "Wie h\xE4ufig soll auf neue Eintr\xE4ge \xFCberpr\xFCft werden(in Minuten), 0 zu deaktivieren",
   specify_positive_number: "Bitte eine positive Zahl angeben",
@@ -6688,16 +7029,195 @@ var de_default = {
   from_archive: "Alte Artikel von archive.org lesen",
   reading_archive: "Daten werden aus Archiv geladen",
   scanning_duplicates: "Entferne Duplikate",
-  do_not_close: "Bitte dieses Fenster nicht schliesen"
+  do_not_close: "Bitte dieses Fenster nicht schliesen",
+  display_style: "Anzeige",
+  list: "List",
+  cards: "Karten",
+  customize_terms: "Begriffe anpassen",
+  content: "Inhalt",
+  highlight: "Markieren",
+  highlight_remove: "Markierung entfernen",
+  filter_folder_ignore_help: "diese Ordner ignorieren",
+  filter_feed_ignore_help: "diese Feeds ignorieren",
+  filter_tags_ignore_help: "diese Tags ignorieren",
+  loading: "L\xE4dt",
+  article_title: "Titel",
+  article_link: "Link zum Artikel",
+  article_author: "Autor",
+  article_published: "Ver\xF6ffentlichungsdatum",
+  article_description: "Kurze Beschreibung des Artikels",
+  article_content: "Inhalt des Artikels",
+  article_tags: "Tags getrennt durch Komma",
+  article_media: "Link zu Video/Audio Datei",
+  feed_folder: "Ordner des Feeds",
+  feed_title: "Feed Titel",
+  highlights: "Highlights",
+  note_created: "Erstelldatum der Notiz",
+  filename: "Dateiname"
+};
+
+// src/l10n/locales/zh.ts
+var zh_default = {
+  RSS_Reader: "RSS Reader",
+  RSS_Feeds: "\u8BA2\u9605\u6E90",
+  open: "\u6253\u5F00",
+  refresh_feeds: "\u66F4\u65B0\u8BA2\u9605",
+  create_all: "\u521B\u5EFA\u5168\u90E8",
+  mark_all_as_read: "\u5168\u90E8\u6807\u8BB0\u4E3A\u5DF2\u8BFB",
+  add_tags_to_all: "\u4E3A\u6240\u6709\u6761\u76EE\u6DFB\u52A0\u6807\u7B7E",
+  filtered_folders: "\u7B5B\u9009\u5206\u7C7B",
+  folders: "\u5206\u7C7B",
+  folder: "\u5206\u7C7B",
+  feeds: "\u8BA2\u9605\u6E90",
+  create_note: "\u65B0\u5EFA\u7B14\u8BB0",
+  paste_to_note: "\u7C98\u8D34\u5230\u5F53\u524D\u7B14\u8BB0",
+  copy_to_clipboard: "\u590D\u5236\u5230\u526A\u5207\u677F",
+  open_browser: "\u7528\u6D4F\u89C8\u5668\u6253\u5F00",
+  edit_tags: "\u7F16\u8F91\u6807\u7B7E",
+  mark_as_read: "\u6807\u8BB0\u4E3A\u5DF2\u8BFB",
+  mark_as_unread: "\u6807\u8BB0\u4E3A\u672A\u8BFB",
+  mark_as_favorite: "\u6DFB\u52A0\u5230\u6536\u85CF\u5939",
+  remove_from_favorites: "\u4ECE\u6536\u85CF\u5939\u4E2D\u5220\u9664",
+  read_article_tts: "\u8BED\u97F3(TTS)\u9605\u8BFB\u6587\u7AE0",
+  next: "\u4E0B\u4E00\u7BC7",
+  previous: "\u4E0A\u4E00\u7BC7",
+  mark_as_read_unread: "\u6807\u8BB0\u4E3A\u5DF2\u8BFB/\u672A\u8BFB",
+  mark_as_favorite_remove: "\u6DFB\u52A0\u5230\u6536\u85CF\u5939/\u4ECE\u6536\u85CF\u5939\u4E2D\u5220\u9664",
+  marked_as_read: "\u5DF2\u6807\u8BB0\u4E3A\u5DF2\u8BFB",
+  marked_as_unread: "\u5DF2\u6807\u8BB0\u4E3A\u672A\u8BFB",
+  removed_from_favorites: "\u5DF2\u4ECE\u6536\u85CF\u5939\u4E2D\u5220\u9664",
+  added_to_favorites: "\u5DF2\u6DFB\u52A0\u5230\u6536\u85CF\u5939",
+  read: "\u5DF2\u8BFB",
+  unread: "\u672A\u8BFB",
+  favorites: "\u6536\u85CF\u5939",
+  favorite: "\u6536\u85CF",
+  tags: "\u6807\u7B7E",
+  tag: "\u6807\u7B7E",
+  save: "\u4FDD\u5B58",
+  cancel: "\u53D6\u6D88",
+  delete: "\u5220\u9664",
+  edit: "\u7F16\u8F91",
+  reset: "\u6062\u590D\u9ED8\u8BA4\u503C",
+  fix_errors: "\u8BF7\u5728\u4FDD\u5B58\u524D\u4FEE\u590D\u9519\u8BEF\u3002",
+  add_new: "\u6DFB\u52A0",
+  add_new_feed: "\u6DFB\u52A0\u65B0\u8BA2\u9605\u6E90",
+  feed_already_configured: "\u60A8\u5DF2\u7ECF\u6DFB\u52A0\u4E86\u8BE5 URL \u5730\u5740\u7684\u8BA2\u9605\u6E90",
+  no_folder: "\u672A\u5206\u7C7B",
+  name: "\u540D\u79F0",
+  name_help: "\u8BBE\u7F6E\u8BA2\u9605\u6E90\u540D\u79F0",
+  url_help: "\u8F93\u5165\u8BA2\u9605\u6E90\u7684 URL \u5730\u5740",
+  folder_help: "\u8BBE\u7F6E\u8BA2\u9605\u6E90\u5206\u7C7B",
+  invalid_name: "\u8BF7\u8F93\u5165\u8BA2\u9605\u6E90\u540D\u79F0",
+  invalid_url: "\u8BF7\u8F93\u5165\u6709\u6548\u7684\u8BA2\u9605\u6E90 URL \u5730\u5740",
+  invalid_feed: "\u6B64\u8BA2\u9605\u6E90\u6CA1\u6709\u4EFB\u4F55\u5185\u5BB9",
+  filter_tags: "\u5DF2\u6253\u6807\u7B7E\u7684\u6587\u7AE0",
+  filter_unread: "\u5168\u90E8\u672A\u8BFB\u6587\u7AE0(\u6765\u81EA\u5206\u7C7B)",
+  filter_read: "\u5168\u90E8\u5DF2\u8BFB\u6587\u7AE0(\u6765\u81EA\u5206\u7C7B)",
+  filter_favorites: "\u6536\u85CF\u5939(\u6765\u81EA\u5206\u7C7B)",
+  sort_date_newest: "\u53D1\u5E03\u65E5\u671F (\u65B0 \u2192 \u65E7)",
+  sort_date_oldest: "\u53D1\u5E03\u65E5\u671F (\u65E7 to \u65B0)",
+  sort_alphabet_normal: "\u540D\u79F0 (A \u2192 Z)",
+  sort_alphabet_inverted: "\u540D\u79F0 (Z \u2192 A)",
+  sort: "\u6392\u5E8F",
+  filter_name_help: "\u8BBE\u7F6E\u7B5B\u9009\u5668\u540D\u79F0",
+  filter_type: "\u7C7B\u578B",
+  filter_type_help: "\u7B5B\u9009\u5668\u7C7B\u578B",
+  filter: "\u7B5B\u9009\u5668",
+  filter_help: "\u8981\u7B5B\u9009\u7684\u5206\u7C7B/\u6807\u7B7E,",
+  only_favorites: "\u4EC5\u663E\u793A\u5DF2\u6536\u85CF",
+  show_read: "\u663E\u793A\u5DF2\u8BFB",
+  show_unread: "\u663E\u793A\u672A\u8BFB",
+  filter_folder_help: "\u4EC5\u663E\u793A\u4EE5\u4E0B\u5206\u7C7B\u4E2D\u7684\u6587\u7AE0",
+  filter_feed_help: "\u4EC5\u663E\u793A\u4EE5\u4E0B\u8BA2\u9605\u6E90\u4E2D\u7684\u6587\u7AE0",
+  filter_tags_help: "\u4EC5\u663E\u793A\u4EE5\u4E0B\u6807\u7B7E\u4E2D\u7684\u6587\u7AE0",
+  from_folders: "\u6765\u81EA\u5206\u7C7B: ",
+  from_feeds: "\u6765\u81EA\u8BA2\u9605\u6E90: ",
+  with_tags: "\u6765\u81EA\u6807\u7B7E: ",
+  invalid_tag: "\u6B64\u6807\u7B7E\u65E0\u6548",
+  note_exists: "\u5DF2\u5B58\u5728\u540C\u540D\u7B14\u8BB0",
+  invalid_filename: "\u6587\u4EF6\u540D\u65E0\u6548",
+  specify_name: "\u8BF7\u8F93\u5165\u6587\u4EF6\u540D",
+  cannot_contain: "\u4E0D\u80FD\u5305\u542B: ",
+  created_note: "\u5DF2\u5C06\u8BE5\u6587\u7AE0\u590D\u5236\u4E3A\u7B14\u8BB0",
+  inserted_article: "\u5DF2\u5C06\u8BE5\u6587\u7AE0\u590D\u5236\u5230\u5F53\u524D\u7B14\u8BB0",
+  no_file_active: "\u6CA1\u6709\u6587\u4EF6\u5904\u4E8E\u6D3B\u52A8\u72B6\u6001",
+  settings: "\u8BBE\u7F6E",
+  file_creation: "\u65B0\u5EFA\u7B14\u8BB0",
+  template_new: "\u7B14\u8BB0\u6A21\u677F",
+  template_new_help: "\u4F7F\u7528\u8BA2\u9605\u6587\u7AE0\u521B\u5EFA\u7B14\u8BB0\u65F6\uFF0C\u4F1A\u6839\u636E\u5DF2\u8BBE\u7F6E\u7684\u6A21\u677F\u53D8\u91CF\u8FDB\u884C\u5904\u7406\u3002",
+  template_paste: "\u590D\u5236/\u7C98\u8D34\u6A21\u677F",
+  template_paste_help: "\u5C06\u8BA2\u9605\u6587\u7AE0\u590D\u5236/\u7C98\u8D34\u4E3A\u7B14\u8BB0\u65F6\uFF0C\u4F1A\u6839\u636E\u5DF2\u8BBE\u7F6E\u7684\u6A21\u677F\u53D8\u91CF\u8FDB\u884C\u5904\u7406\u3002",
+  available_variables: "\u53EF\u7528\u6A21\u677F\u53D8\u91CF: ",
+  file_location: "\u4FDD\u5B58\u4F4D\u7F6E",
+  file_location_help: "\u8BF7\u9009\u62E9\u8981\u4FDD\u5B58\u65B0\u5EFA\u7B14\u8BB0\u7684\u4F4D\u7F6E",
+  file_location_default: "\u9ED8\u8BA4\u76EE\u5F55",
+  file_location_custom: "\u81EA\u5B9A\u4E49\u76EE\u5F55",
+  file_location_folder: "\u8BF7\u9009\u62E9\u8981\u4FDD\u5B58\u65B0\u5EFA\u7B14\u8BB0\u7684\u76EE\u5F55",
+  file_location_folder_help: "\u65B0\u521B\u5EFA\u7684\u7B14\u8BB0\u5C06\u4FDD\u5B58\u5728\u8BE5\u76EE\u5F55\u4E2D",
+  date_format: "\u65E5\u671F\u683C\u5F0F",
+  syntax_reference: "\u65E5\u671F\u683C\u5F0F\u8BED\u6CD5\u53C2\u8003",
+  syntax_looks: "\u5F53\u524D\u65E5\u671F\u683C\u5F0F: ",
+  ask_filename: "\u786E\u8BA4\u6587\u4EF6\u540D",
+  ask_filename_help: "\u7981\u7528\u5219\u81EA\u52A8\u4F7F\u7528\u4E0B\u9762\u7684\u6587\u4EF6\u540D\u6A21\u677F\u521B\u5EFA\u6587\u4EF6\uFF08\u81EA\u52A8\u5220\u9664\u65E0\u6548\u7684\u6587\u4EF6\u540D\u5B57\u7B26\uFF09",
+  refresh_time: "\u66F4\u65B0\u9891\u7387",
+  refresh_time_help: "\u591A\u4E45\u66F4\u65B0\u4E00\u6B21\u8BA2\u9605\u6E90\uFF08\u5355\u4F4D: \u5206\u949F\uFF09\uFF0C\u8BBE\u7F6E\u4E3A0\u5219\u7981\u7528\u3002",
+  specify_positive_number: "\u8BF7\u8F93\u5165\u6B63\u6570",
+  multi_device_usage: "\u591A\u8BBE\u5907\u4F7F\u7528",
+  multi_device_usage_help: "\u540C\u65F6\u4F7F\u7528\u591A\u4E2A\u8BBE\u5907\u65F6\u4FDD\u6301\u6587\u7AE0\u72B6\u6001\u540C\u6B65\n(\u9700\u8981\u91CD\u65B0\u542F\u52A8\u624D\u80FD\u751F\u6548)",
+  add_new_filter: "\u6DFB\u52A0\u65B0\u7B5B\u9009\u5668",
+  filter_exists: "\u5DF2\u5B58\u5728\u540C\u540D\u7B5B\u9009\u5668",
+  hotkeys: "\u5FEB\u6377\u952E",
+  hotkeys_reading: "\u9605\u8BFB\u6587\u7AE0\u65F6",
+  press_key: "\u6309\u4E0B\u5FEB\u6377\u952E",
+  customize_hotkey: "\u5206\u914D\u5FEB\u6377\u952E",
+  refreshed_feeds: "\u5DF2\u66F4\u65B0 RSS \u8BA2\u9605\u6E90",
+  import: "\u5BFC\u5165",
+  import_opml: "\u901A\u8FC7 OPML \u5BFC\u5165",
+  imported_x_feeds: "\u5DF2\u5BFC\u5165 %1 \u6761\u8BA2\u9605\u6E90",
+  choose_file: "\u9009\u62E9\u6587\u4EF6",
+  choose_file_help: "\u8BF7\u9009\u62E9\u8981\u5BFC\u5165\u7684\u6587\u4EF6",
+  export_opml: "\u5BFC\u51FA OPML \u6587\u4EF6",
+  default_filename: "\u6587\u4EF6\u540D\u6A21\u677F",
+  default_filename_help: "\u4E0A\u9762\u521B\u5EFA\u7B14\u8BB0\u7684\u6240\u6709\u6A21\u677F\u53D8\u91CF\u90FD\u53EF\u7528",
+  cleanup: "\u6E05\u9664\u6587\u7AE0",
+  cleanup_help: "\u6E05\u9664\u7B26\u5408\u4EE5\u4E0B\u89C4\u5219\u7684\u6587\u7AE0",
+  cleanup_help2: "\u6CE8\u610F\uFF0C\u8BA2\u9605\u6E90\u4E2D\u4ECD\u5B58\u5728\u7684\u6587\u7AE0\u5C06\u5728\u4E0B\u6B21\u5237\u65B0\u65F6\u91CD\u65B0\u51FA\u73B0",
+  perform_cleanup: "\u6E05\u9664\u6587\u7AE0",
+  all: "\u5168\u90E8",
+  from_feed: "\u6765\u81EA\u8BA2\u9605\u6E90",
+  older_than: "\u591A\u5C11\u5929\u4E4B\u524D\u53D1\u5E03\u7684\u6587\u7AE0",
+  older_than_help: "\u5982\u679C\u6CA1\u6709\u7B26\u5408\u7684\u6587\u7AE0\uFF0C\u5219\u5FFD\u7565\u8BE5\u6761\u89C4\u5219\uFF08\u4E3A\u7A7A\u5219\u4FDD\u7559\u6240\u6709\u65E5\u671F\u7684\u6587\u7AE0\uFF09",
+  advanced: "\u9AD8\u7EA7\u8BBE\u7F6E",
+  remove_wrong_feed: "\u6E05\u9664\u6240\u6709\u4E0D\u6B63\u786E\u8BA2\u9605\u6E90\u4E2D\u7684\u6587\u7AE0",
+  remove_wrong_feed_help: "\u8FD9\u53EF\u80FD\u662F\u7531\u4E8E0.8\u4E4B\u524D\u7248\u672C\u4E2D\u7684\u9519\u8BEF\u9020\u6210\u7684",
+  scanning_items: "\u626B\u63CF\u6587\u7AE0 (%1 / %2))",
+  created_export: "\u5DF2\u5728\u7B14\u8BB0\u4ED3\u5E93\u6839\u76EE\u5F55\u521B\u5EFA OPML \u6587\u4EF6",
+  add: "\u6DFB\u52A0",
+  from_archive: "\u4ECE\u4E92\u8054\u7F51\u6863\u6848\u9986(archive.org)\u83B7\u53D6\u65E7\u6587\u7AE0",
+  reading_archive: "\u6B63\u5728\u4ECE\u5B58\u6863\u4E2D\u8BFB\u53D6\u6570\u636E",
+  scanning_duplicates: "\u626B\u63CF\u91CD\u590D\u6587\u7AE0",
+  do_not_close: "\u8BF7\u52FF\u5173\u95ED\u6B64\u7A97\u53E3",
+  display_style: "\u663E\u793A\u98CE\u683C",
+  list: "\u5217\u8868",
+  cards: "\u5361\u7247",
+  customize_terms: "\u81EA\u5B9A\u4E49\u672F\u8BED",
+  content: "\u5185\u5BB9\u8BBE\u7F6E",
+  highlight: "\u9AD8\u4EAE",
+  highlight_remove: "\u5220\u9664\u9AD8\u4EAE",
+  filter_folder_ignore_help: "\u5FFD\u7565\u4EE5\u4E0B\u5206\u7C7B",
+  filter_feed_ignore_help: "\u5FFD\u7565\u4EE5\u4E0B\u8BA2\u9605\u6E90",
+  filter_tags_ignore_help: "\u5FFD\u7565\u4EE5\u4E0B\u6807\u7B7E",
+  loading: "\u6B63\u5728\u52A0\u8F7D"
 };
 
 // src/l10n/locale.ts
-var locale = window.moment.locale;
+var locale = window.moment.locale();
 var localeMap = {
   en: en_default,
-  de: de_default
+  de: de_default,
+  "zh-cn": zh_default
 };
-var userLocale = localeMap[locale()];
+var userLocale = localeMap[locale];
 function t(str, ...inserts) {
   var _a;
   let localeStr = (_a = userLocale && userLocale[str]) != null ? _a : en_default[str];
@@ -6726,14 +7246,14 @@ var TextInputPrompt = class extends BaseModal {
   }
   createForm() {
     const div = this.contentEl.createDiv();
-    const text2 = new import_obsidian3.Setting(div).setName(this.promptText).setDesc(this.hint).addText((textComponent) => {
+    const text2 = new import_obsidian4.Setting(div).setName(this.promptText).setDesc(this.hint).addText((textComponent) => {
       textComponent.setValue(this.defaultValue).setPlaceholder(this.placeholder).onChange(() => {
         this.removeValidationError(textComponent);
       }).inputEl.setAttribute("size", "50");
       this.textComponent = textComponent;
     });
     text2.controlEl.addClass("rss-setting-input");
-    new import_obsidian3.Setting(div).addButton((b) => {
+    new import_obsidian4.Setting(div).addButton((b) => {
       b.setButtonText(this.buttonText).onClick(() => __async(this, null, function* () {
         this.resolve(this.textComponent);
       }));
@@ -6748,45 +7268,20 @@ var TextInputPrompt = class extends BaseModal {
   }
 };
 
-// src/consts.ts
-var VIEW_ID = "RSS_FEED";
-var FILE_NAME_REGEX = /["\/<>:|?]/gm;
-var TAG_REGEX = /([\p{Letter}\p{Emoji_Presentation}\p{Number}\/_-]+)/u;
-var NUMBER_REGEX = /^[0-9]*$/gm;
-function sanitizeHTMLToDom(html) {
-  return window.DOMPurify.sanitize(html, {
-    ALLOW_UNKNOWN_PROTOCOLS: true,
-    RETURN_DOM_FRAGMENT: true,
-    RETURN_DOM_IMPORT: true,
-    FORBID_TAGS: ["style"],
-    ADD_TAGS: ["iframe"],
-    ADD_ATTR: ["frameborder", "allowfullscreen", "allow", "aria-label-position"]
-  });
-}
-function isValidHttpUrl(string) {
-  let url;
-  try {
-    url = new URL(string);
-  } catch (_) {
-    return false;
-  }
-  return url.protocol === "http:" || url.protocol === "https:";
-}
-
 // node_modules/obsidian-community-lib/dist/utils.js
 var feather = __toModule(require_feather());
-var import_obsidian4 = __toModule(require("obsidian"));
+var import_obsidian5 = __toModule(require("obsidian"));
 function addFeatherIcon(name, attr2 = { viewBox: "0 0 24 24", width: "100", height: "100" }) {
   if (feather.icons[name]) {
     const iconName = `feather-${name}`;
-    (0, import_obsidian4.addIcon)(iconName, feather.icons[name].toSvg(attr2));
+    (0, import_obsidian5.addIcon)(iconName, feather.icons[name].toSvg(attr2));
     return iconName;
   } else {
     throw Error(`This Icon (${name}) doesn't exist in the Feather Library.`);
   }
 }
-function copy(content, success = () => new import_obsidian4.Notice("Copied to clipboard"), failure = (reason) => {
-  new import_obsidian4.Notice("Could not copy to clipboard");
+function copy(content, success = () => new import_obsidian5.Notice("Copied to clipboard"), failure = (reason) => {
+  new import_obsidian5.Notice("Could not copy to clipboard");
   console.log({ reason });
 }) {
   return __async(this, null, function* () {
@@ -6803,7 +7298,7 @@ function createNewNote(plugin, item) {
     if (plugin.settings.saveLocation === "custom") {
       dir = plugin.settings.saveLocationFolder;
     }
-    let filename = applyTemplate(item, plugin.settings.defaultFilename, plugin.settings);
+    let filename = applyTemplate(plugin, item, plugin.settings.defaultFilename);
     filename = filename.replace(/[\/\\:]/g, " ");
     if (plugin.settings.askForFilename) {
       const inputPrompt = new TextInputPrompt(plugin.app, t("specify_name"), t("cannot_contain") + ' * " \\ / < > : | ?', filename, filename);
@@ -6813,7 +7308,7 @@ function createNewNote(plugin, item) {
           inputPrompt.setValidationError(text2, t("invalid_filename"));
           return;
         }
-        const filePath = (0, import_obsidian5.normalizePath)([dir, `${value}.md`].join("/"));
+        const filePath = (0, import_obsidian6.normalizePath)([dir, `${value}.md`].join("/"));
         if (isInVault(plugin.app, filePath, "")) {
           inputPrompt.setValidationError(text2, t("note_exists"));
           return;
@@ -6823,7 +7318,7 @@ function createNewNote(plugin, item) {
       }));
     } else {
       const replacedTitle = filename.replace(FILE_NAME_REGEX, "");
-      const filePath = (0, import_obsidian5.normalizePath)([dir, `${replacedTitle}.md`].join("/"));
+      const filePath = (0, import_obsidian6.normalizePath)([dir, `${replacedTitle}.md`].join("/"));
       yield createNewFile(plugin, item, filePath, item.title);
     }
   });
@@ -6831,10 +7326,10 @@ function createNewNote(plugin, item) {
 function createNewFile(plugin, item, path, title) {
   return __async(this, null, function* () {
     if (isInVault(plugin.app, path, "")) {
-      new import_obsidian5.Notice(t("note_exists"));
+      new import_obsidian6.Notice(t("note_exists"));
       return;
     }
-    const appliedTemplate = applyTemplate(item, plugin.settings.template, plugin.settings, title);
+    const appliedTemplate = applyTemplate(plugin, item, plugin.settings.template, title);
     const file = yield plugin.app.vault.create(path, appliedTemplate);
     yield plugin.app.workspace.activeLeaf.openFile(file, {
       state: { mode: "edit" }
@@ -6844,19 +7339,19 @@ function createNewFile(plugin, item, path, title) {
     yield plugin.writeFeedContent(() => {
       return items;
     });
-    new import_obsidian5.Notice(t("created_note"));
+    new import_obsidian6.Notice(t("created_note"));
   });
 }
 function pasteToNote(plugin, item) {
   return __async(this, null, function* () {
     const file = plugin.app.workspace.getActiveFile();
     if (file === null) {
-      new import_obsidian5.Notice(t("no_file_active"));
+      new import_obsidian6.Notice(t("no_file_active"));
       return;
     }
-    const view = plugin.app.workspace.getActiveViewOfType(import_obsidian5.MarkdownView);
+    const view = plugin.app.workspace.getActiveViewOfType(import_obsidian6.MarkdownView);
     if (view) {
-      const appliedTemplate = applyTemplate(item, plugin.settings.pasteTemplate, plugin.settings);
+      const appliedTemplate = applyTemplate(plugin, item, plugin.settings.pasteTemplate);
       const editor = view.editor;
       editor.replaceRange(appliedTemplate, editor.getCursor());
       item.created = true;
@@ -6864,17 +7359,17 @@ function pasteToNote(plugin, item) {
       yield plugin.writeFeedContent(() => {
         return items;
       });
-      new import_obsidian5.Notice(t("RSS_Reader") + t("inserted_article"));
+      new import_obsidian6.Notice(t("RSS_Reader") + t("inserted_article"));
     }
   });
 }
-function applyTemplate(item, template, settings, filename) {
+function applyTemplate(plugin, item, template, filename) {
   let result = template.replace(/{{title}}/g, item.title);
   result = result.replace(/{{link}}/g, item.link);
   result = result.replace(/{{author}}/g, item.creator);
-  result = result.replace(/{{published}}/g, (0, import_obsidian5.moment)(item.pubDate).format(settings.dateFormat));
-  result = result.replace(/{{created}}/g, (0, import_obsidian5.moment)().format(settings.dateFormat));
-  result = result.replace(/{{date}}/g, (0, import_obsidian5.moment)().format(settings.dateFormat));
+  result = result.replace(/{{published}}/g, (0, import_obsidian6.moment)(item.pubDate).format(plugin.settings.dateFormat));
+  result = result.replace(/{{created}}/g, (0, import_obsidian6.moment)().format(plugin.settings.dateFormat));
+  result = result.replace(/{{date}}/g, (0, import_obsidian6.moment)().format(plugin.settings.dateFormat));
   result = result.replace(/{{feed}}/g, item.feed);
   result = result.replace(/{{folder}}/g, item.folder);
   result = result.replace(/{{description}}/g, item.description);
@@ -6882,12 +7377,12 @@ function applyTemplate(item, template, settings, filename) {
   result = result.replace(/({{published:).*(}})/g, function(k) {
     const value = k.split(":")[1];
     const format2 = value.substring(0, value.indexOf("}"));
-    return (0, import_obsidian5.moment)(item.pubDate).format(format2);
+    return (0, import_obsidian6.moment)(item.pubDate).format(format2);
   });
   result = result.replace(/({{created:).*(}})/g, function(k) {
     const value = k.split(":")[1];
     const format2 = value.substring(0, value.indexOf("}"));
-    return (0, import_obsidian5.moment)().format(format2);
+    return (0, import_obsidian6.moment)().format(format2);
   });
   result = result.replace(/({{tags:).*(}})/g, function(k) {
     const value = k.split(":")[1];
@@ -6899,30 +7394,90 @@ function applyTemplate(item, template, settings, filename) {
     const separator = value.substring(0, value.indexOf("}"));
     return item.tags.map((i) => "#" + i).join(separator);
   });
-  result = result.replace(/{{tags}}/, item.tags.join(", "));
-  result = result.replace(/{{#tags}}/, item.tags.map((i) => "#" + i).join(", "));
+  result = result.replace(/{{tags}}/g, item.tags.join(", "));
+  result = result.replace(/{{#tags}}/g, item.tags.map((i) => "#" + i).join(", "));
+  result = result.replace(/{{highlights}}/g, item.highlights.map((value) => {
+    return "- " + rssToMd(plugin, removeFormatting(value).replace(/^(-+)/, ""));
+  }).join("\n"));
+  result = result.replace(/({{highlights:)[\s\S][^}]*(}})/g, function(k) {
+    const value = k.split(/(:[\s\S]?)/);
+    const tmp = value.slice(1).join("");
+    const template2 = tmp.substring(1, tmp.indexOf("}"));
+    return item.highlights.map((i) => {
+      return template2.replace(/%%highlight%%/g, rssToMd(plugin, removeFormatting(i)).replace(/^(-+)/, ""));
+    }).join("");
+  });
   if (filename) {
     result = result.replace(/{{filename}}/g, filename);
   }
-  let content = (0, import_obsidian5.htmlToMarkdown)(item.content);
+  let content = rssToMd(plugin, item.content);
+  item.highlights.forEach((highlight) => {
+    const mdHighlight = (0, import_obsidian6.htmlToMarkdown)(highlight);
+    content = content.replace(mdHighlight, "==" + mdHighlight + "==");
+  });
   content = content.replace(/\$/g, "$$$");
   result = result.replace(/{{content}}/g, content);
   return result;
+}
+function removeFormatting(html) {
+  const doc = new DOMParser().parseFromString(html, "text/html");
+  const elements = doc.querySelectorAll("html body a");
+  for (let i = 0; i < elements.length; i++) {
+    const el = elements.item(i);
+    if (el.dataset) {
+      Object.keys(el.dataset).forEach((key) => {
+        delete el.dataset[key];
+      });
+    }
+  }
+  const objects = doc.querySelectorAll("object");
+  for (let i = 0; i < objects.length; i++) {
+    const object = objects.item(i);
+    object.remove();
+  }
+  return doc.documentElement.innerHTML;
 }
 function openInBrowser(item) {
   if (typeof item.link === "string") {
     window.open(item.link, "_blank");
   }
 }
+function rssToMd(plugin, content) {
+  let markdown = (0, import_obsidian6.htmlToMarkdown)(content);
+  if (plugin.app.plugins.plugins["dataview"]) {
+    const {
+      inlineQueryPrefix,
+      inlineJsQueryPrefix
+    } = plugin.app.plugins.plugins.dataview.api.settings;
+    markdown = markdown.replace(RegExp(`\`${escapeRegExp(inlineQueryPrefix)}.*\``, "g"), "<pre>$&</pre>");
+    markdown = markdown.replace(RegExp(`\`${escapeRegExp(inlineJsQueryPrefix)}.*\``, "g"), "<pre>$&</pre>");
+  }
+  if (plugin.app.plugins.plugins["templater-obsidian"]) {
+    markdown = markdown.replace(/<%([\s\S]*?)%>/g, "```javascript\n$&\n```");
+  }
+  if (import_obsidian6.MarkdownPreviewRenderer.codeBlockPostProcessors) {
+    const codeblockProcessors = Object.keys(import_obsidian6.MarkdownPreviewRenderer.codeBlockPostProcessors);
+    for (const codeblockProcessor of codeblockProcessors) {
+      const regex = RegExp("^```" + codeblockProcessor + "[\\s\\S]*?```$", "gm");
+      markdown = markdown.replace(regex, "<pre>$&</pre>");
+    }
+  } else {
+    markdown = markdown.replace(/^```.*\n([\s\S]*?)```$/gm, "<pre>$&</pre>");
+  }
+  return markdown;
+}
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
 
 // src/actions/Action.ts
-var import_obsidian8 = __toModule(require("obsidian"));
+var import_obsidian9 = __toModule(require("obsidian"));
 
 // src/modals/TagModal.ts
-var import_obsidian7 = __toModule(require("obsidian"));
+var import_obsidian8 = __toModule(require("obsidian"));
 
 // src/settings/suggest.ts
-var import_obsidian6 = __toModule(require("obsidian"));
+var import_obsidian7 = __toModule(require("obsidian"));
 
 // node_modules/@popperjs/core/lib/enums.js
 var top = "top";
@@ -7061,6 +7616,11 @@ function getBasePlacement(placement) {
   return placement.split("-")[0];
 }
 
+// node_modules/@popperjs/core/lib/utils/math.js
+var max = Math.max;
+var min = Math.min;
+var round = Math.round;
+
 // node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js
 function getBoundingClientRect(element2, includeScale) {
   if (includeScale === void 0) {
@@ -7069,6 +7629,16 @@ function getBoundingClientRect(element2, includeScale) {
   var rect = element2.getBoundingClientRect();
   var scaleX = 1;
   var scaleY = 1;
+  if (isHTMLElement(element2) && includeScale) {
+    var offsetHeight = element2.offsetHeight;
+    var offsetWidth = element2.offsetWidth;
+    if (offsetWidth > 0) {
+      scaleX = round(rect.width) / offsetWidth || 1;
+    }
+    if (offsetHeight > 0) {
+      scaleY = round(rect.height) / offsetHeight || 1;
+    }
+  }
   return {
     width: rect.width / scaleX,
     height: rect.height / scaleY,
@@ -7184,14 +7754,13 @@ function getMainAxisFromPlacement(placement) {
   return ["top", "bottom"].indexOf(placement) >= 0 ? "x" : "y";
 }
 
-// node_modules/@popperjs/core/lib/utils/math.js
-var max = Math.max;
-var min = Math.min;
-var round = Math.round;
-
 // node_modules/@popperjs/core/lib/utils/within.js
 function within(min2, value, max2) {
   return max(min2, min(value, max2));
+}
+function withinMaxClamp(min2, value, max2) {
+  var v = within(min2, value, max2);
+  return v > max2 ? max2 : v;
 }
 
 // node_modules/@popperjs/core/lib/utils/getFreshSideObject.js
@@ -7304,14 +7873,23 @@ function roundOffsetsByDPR(_ref) {
   var win = window;
   var dpr = win.devicePixelRatio || 1;
   return {
-    x: round(round(x * dpr) / dpr) || 0,
-    y: round(round(y * dpr) / dpr) || 0
+    x: round(x * dpr) / dpr || 0,
+    y: round(y * dpr) / dpr || 0
   };
 }
 function mapToStyles(_ref2) {
   var _Object$assign2;
-  var popper2 = _ref2.popper, popperRect = _ref2.popperRect, placement = _ref2.placement, variation = _ref2.variation, offsets = _ref2.offsets, position = _ref2.position, gpuAcceleration = _ref2.gpuAcceleration, adaptive = _ref2.adaptive, roundOffsets = _ref2.roundOffsets;
-  var _ref3 = roundOffsets === true ? roundOffsetsByDPR(offsets) : typeof roundOffsets === "function" ? roundOffsets(offsets) : offsets, _ref3$x = _ref3.x, x = _ref3$x === void 0 ? 0 : _ref3$x, _ref3$y = _ref3.y, y = _ref3$y === void 0 ? 0 : _ref3$y;
+  var popper2 = _ref2.popper, popperRect = _ref2.popperRect, placement = _ref2.placement, variation = _ref2.variation, offsets = _ref2.offsets, position = _ref2.position, gpuAcceleration = _ref2.gpuAcceleration, adaptive = _ref2.adaptive, roundOffsets = _ref2.roundOffsets, isFixed = _ref2.isFixed;
+  var _offsets$x = offsets.x, x = _offsets$x === void 0 ? 0 : _offsets$x, _offsets$y = offsets.y, y = _offsets$y === void 0 ? 0 : _offsets$y;
+  var _ref3 = typeof roundOffsets === "function" ? roundOffsets({
+    x,
+    y
+  }) : {
+    x,
+    y
+  };
+  x = _ref3.x;
+  y = _ref3.y;
   var hasX = offsets.hasOwnProperty("x");
   var hasY = offsets.hasOwnProperty("y");
   var sideX = left;
@@ -7331,26 +7909,37 @@ function mapToStyles(_ref2) {
     offsetParent = offsetParent;
     if (placement === top || (placement === left || placement === right) && variation === end) {
       sideY = bottom;
-      y -= offsetParent[heightProp] - popperRect.height;
+      var offsetY = isFixed && win.visualViewport ? win.visualViewport.height : offsetParent[heightProp];
+      y -= offsetY - popperRect.height;
       y *= gpuAcceleration ? 1 : -1;
     }
     if (placement === left || (placement === top || placement === bottom) && variation === end) {
       sideX = right;
-      x -= offsetParent[widthProp] - popperRect.width;
+      var offsetX = isFixed && win.visualViewport ? win.visualViewport.width : offsetParent[widthProp];
+      x -= offsetX - popperRect.width;
       x *= gpuAcceleration ? 1 : -1;
     }
   }
   var commonStyles = Object.assign({
     position
   }, adaptive && unsetSides);
+  var _ref4 = roundOffsets === true ? roundOffsetsByDPR({
+    x,
+    y
+  }) : {
+    x,
+    y
+  };
+  x = _ref4.x;
+  y = _ref4.y;
   if (gpuAcceleration) {
     var _Object$assign;
     return Object.assign({}, commonStyles, (_Object$assign = {}, _Object$assign[sideY] = hasY ? "0" : "", _Object$assign[sideX] = hasX ? "0" : "", _Object$assign.transform = (win.devicePixelRatio || 1) <= 1 ? "translate(" + x + "px, " + y + "px)" : "translate3d(" + x + "px, " + y + "px, 0)", _Object$assign));
   }
   return Object.assign({}, commonStyles, (_Object$assign2 = {}, _Object$assign2[sideY] = hasY ? y + "px" : "", _Object$assign2[sideX] = hasX ? x + "px" : "", _Object$assign2.transform = "", _Object$assign2));
 }
-function computeStyles(_ref4) {
-  var state = _ref4.state, options = _ref4.options;
+function computeStyles(_ref5) {
+  var state = _ref5.state, options = _ref5.options;
   var _options$gpuAccelerat = options.gpuAcceleration, gpuAcceleration = _options$gpuAccelerat === void 0 ? true : _options$gpuAccelerat, _options$adaptive = options.adaptive, adaptive = _options$adaptive === void 0 ? true : _options$adaptive, _options$roundOffsets = options.roundOffsets, roundOffsets = _options$roundOffsets === void 0 ? true : _options$roundOffsets;
   if (true) {
     var transitionProperty = getComputedStyle2(state.elements.popper).transitionProperty || "";
@@ -7365,7 +7954,8 @@ function computeStyles(_ref4) {
     variation: getVariation(state.placement),
     popper: state.elements.popper,
     popperRect: state.rects.popper,
-    gpuAcceleration
+    gpuAcceleration,
+    isFixed: state.options.strategy === "fixed"
   };
   if (state.modifiersData.popperOffsets != null) {
     state.styles.popper = Object.assign({}, state.styles.popper, mapToStyles(Object.assign({}, commonStyles, {
@@ -7400,26 +7990,26 @@ var passive = {
   passive: true
 };
 function effect3(_ref) {
-  var state = _ref.state, instance6 = _ref.instance, options = _ref.options;
+  var state = _ref.state, instance9 = _ref.instance, options = _ref.options;
   var _options$scroll = options.scroll, scroll = _options$scroll === void 0 ? true : _options$scroll, _options$resize = options.resize, resize = _options$resize === void 0 ? true : _options$resize;
   var window2 = getWindow(state.elements.popper);
   var scrollParents = [].concat(state.scrollParents.reference, state.scrollParents.popper);
   if (scroll) {
     scrollParents.forEach(function(scrollParent) {
-      scrollParent.addEventListener("scroll", instance6.update, passive);
+      scrollParent.addEventListener("scroll", instance9.update, passive);
     });
   }
   if (resize) {
-    window2.addEventListener("resize", instance6.update, passive);
+    window2.addEventListener("resize", instance9.update, passive);
   }
   return function() {
     if (scroll) {
       scrollParents.forEach(function(scrollParent) {
-        scrollParent.removeEventListener("scroll", instance6.update, passive);
+        scrollParent.removeEventListener("scroll", instance9.update, passive);
       });
     }
     if (resize) {
-      window2.removeEventListener("resize", instance6.update, passive);
+      window2.removeEventListener("resize", instance9.update, passive);
     }
   };
 }
@@ -7574,7 +8164,7 @@ function getInnerBoundingClientRect(element2) {
   return rect;
 }
 function getClientRectFromMixedType(element2, clippingParent) {
-  return clippingParent === viewport ? rectToClientRect(getViewportRect(element2)) : isHTMLElement(clippingParent) ? getInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element2)));
+  return clippingParent === viewport ? rectToClientRect(getViewportRect(element2)) : isElement(clippingParent) ? getInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element2)));
 }
 function getClippingParents(element2) {
   var clippingParents2 = listScrollParents(getParentNode(element2));
@@ -7762,7 +8352,7 @@ function flip(_ref) {
   }, []);
   var referenceRect = state.rects.reference;
   var popperRect = state.rects.popper;
-  var checksMap = /* @__PURE__ */ new Map();
+  var checksMap = new Map();
   var makeFallbackChecks = true;
   var firstFittingPlacement = placements2[0];
   for (var i = 0; i < placements2.length; i++) {
@@ -7975,6 +8565,14 @@ function preventOverflow(_ref) {
   var tetherOffsetValue = typeof tetherOffset === "function" ? tetherOffset(Object.assign({}, state.rects, {
     placement: state.placement
   })) : tetherOffset;
+  var normalizedTetherOffsetValue = typeof tetherOffsetValue === "number" ? {
+    mainAxis: tetherOffsetValue,
+    altAxis: tetherOffsetValue
+  } : Object.assign({
+    mainAxis: 0,
+    altAxis: 0
+  }, tetherOffsetValue);
+  var offsetModifierState = state.modifiersData.offset ? state.modifiersData.offset[state.placement] : null;
   var data = {
     x: 0,
     y: 0
@@ -7982,13 +8580,14 @@ function preventOverflow(_ref) {
   if (!popperOffsets2) {
     return;
   }
-  if (checkMainAxis || checkAltAxis) {
+  if (checkMainAxis) {
+    var _offsetModifierState$;
     var mainSide = mainAxis === "y" ? top : left;
     var altSide = mainAxis === "y" ? bottom : right;
     var len = mainAxis === "y" ? "height" : "width";
     var offset2 = popperOffsets2[mainAxis];
-    var min2 = popperOffsets2[mainAxis] + overflow[mainSide];
-    var max2 = popperOffsets2[mainAxis] - overflow[altSide];
+    var min2 = offset2 + overflow[mainSide];
+    var max2 = offset2 - overflow[altSide];
     var additive = tether ? -popperRect[len] / 2 : 0;
     var minLen = variation === start ? referenceRect[len] : popperRect[len];
     var maxLen = variation === start ? -popperRect[len] : -referenceRect[len];
@@ -8001,28 +8600,32 @@ function preventOverflow(_ref) {
     var arrowPaddingMin = arrowPaddingObject[mainSide];
     var arrowPaddingMax = arrowPaddingObject[altSide];
     var arrowLen = within(0, referenceRect[len], arrowRect[len]);
-    var minOffset = isBasePlacement ? referenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - tetherOffsetValue : minLen - arrowLen - arrowPaddingMin - tetherOffsetValue;
-    var maxOffset = isBasePlacement ? -referenceRect[len] / 2 + additive + arrowLen + arrowPaddingMax + tetherOffsetValue : maxLen + arrowLen + arrowPaddingMax + tetherOffsetValue;
+    var minOffset = isBasePlacement ? referenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis : minLen - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis;
+    var maxOffset = isBasePlacement ? -referenceRect[len] / 2 + additive + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis : maxLen + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis;
     var arrowOffsetParent = state.elements.arrow && getOffsetParent(state.elements.arrow);
     var clientOffset = arrowOffsetParent ? mainAxis === "y" ? arrowOffsetParent.clientTop || 0 : arrowOffsetParent.clientLeft || 0 : 0;
-    var offsetModifierValue = state.modifiersData.offset ? state.modifiersData.offset[state.placement][mainAxis] : 0;
-    var tetherMin = popperOffsets2[mainAxis] + minOffset - offsetModifierValue - clientOffset;
-    var tetherMax = popperOffsets2[mainAxis] + maxOffset - offsetModifierValue;
-    if (checkMainAxis) {
-      var preventedOffset = within(tether ? min(min2, tetherMin) : min2, offset2, tether ? max(max2, tetherMax) : max2);
-      popperOffsets2[mainAxis] = preventedOffset;
-      data[mainAxis] = preventedOffset - offset2;
-    }
-    if (checkAltAxis) {
-      var _mainSide = mainAxis === "x" ? top : left;
-      var _altSide = mainAxis === "x" ? bottom : right;
-      var _offset = popperOffsets2[altAxis];
-      var _min = _offset + overflow[_mainSide];
-      var _max = _offset - overflow[_altSide];
-      var _preventedOffset = within(tether ? min(_min, tetherMin) : _min, _offset, tether ? max(_max, tetherMax) : _max);
-      popperOffsets2[altAxis] = _preventedOffset;
-      data[altAxis] = _preventedOffset - _offset;
-    }
+    var offsetModifierValue = (_offsetModifierState$ = offsetModifierState == null ? void 0 : offsetModifierState[mainAxis]) != null ? _offsetModifierState$ : 0;
+    var tetherMin = offset2 + minOffset - offsetModifierValue - clientOffset;
+    var tetherMax = offset2 + maxOffset - offsetModifierValue;
+    var preventedOffset = within(tether ? min(min2, tetherMin) : min2, offset2, tether ? max(max2, tetherMax) : max2);
+    popperOffsets2[mainAxis] = preventedOffset;
+    data[mainAxis] = preventedOffset - offset2;
+  }
+  if (checkAltAxis) {
+    var _offsetModifierState$2;
+    var _mainSide = mainAxis === "x" ? top : left;
+    var _altSide = mainAxis === "x" ? bottom : right;
+    var _offset = popperOffsets2[altAxis];
+    var _len = altAxis === "y" ? "height" : "width";
+    var _min = _offset + overflow[_mainSide];
+    var _max = _offset - overflow[_altSide];
+    var isOriginSide = [top, left].indexOf(basePlacement) !== -1;
+    var _offsetModifierValue = (_offsetModifierState$2 = offsetModifierState == null ? void 0 : offsetModifierState[altAxis]) != null ? _offsetModifierState$2 : 0;
+    var _tetherMin = isOriginSide ? _min : _offset - referenceRect[_len] - popperRect[_len] - _offsetModifierValue + normalizedTetherOffsetValue.altAxis;
+    var _tetherMax = isOriginSide ? _offset + referenceRect[_len] + popperRect[_len] - _offsetModifierValue - normalizedTetherOffsetValue.altAxis : _max;
+    var _preventedOffset = tether && isOriginSide ? withinMaxClamp(_tetherMin, _offset, _tetherMax) : within(tether ? _tetherMin : _min, _offset, tether ? _tetherMax : _max);
+    popperOffsets2[altAxis] = _preventedOffset;
+    data[altAxis] = _preventedOffset - _offset;
   }
   state.modifiersData[name] = data;
 }
@@ -8054,8 +8657,8 @@ function getNodeScroll(node) {
 // node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js
 function isElementScaled(element2) {
   var rect = element2.getBoundingClientRect();
-  var scaleX = rect.width / element2.offsetWidth || 1;
-  var scaleY = rect.height / element2.offsetHeight || 1;
+  var scaleX = round(rect.width) / element2.offsetWidth || 1;
+  var scaleY = round(rect.height) / element2.offsetHeight || 1;
   return scaleX !== 1 || scaleY !== 1;
 }
 function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
@@ -8096,8 +8699,8 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
 
 // node_modules/@popperjs/core/lib/utils/orderModifiers.js
 function order(modifiers) {
-  var map = /* @__PURE__ */ new Map();
-  var visited = /* @__PURE__ */ new Set();
+  var map = new Map();
+  var visited = new Set();
   var result = [];
   modifiers.forEach(function(modifier) {
     map.set(modifier.name, modifier);
@@ -8223,7 +8826,7 @@ function validateModifiers(modifiers) {
 
 // node_modules/@popperjs/core/lib/utils/uniqueBy.js
 function uniqueBy(arr, fn2) {
-  var identifiers = /* @__PURE__ */ new Set();
+  var identifiers = new Set();
   return arr.filter(function(item) {
     var identifier = fn2(item);
     if (!identifiers.has(identifier)) {
@@ -8287,7 +8890,7 @@ function popperGenerator(generatorOptions) {
     };
     var effectCleanupFns = [];
     var isDestroyed = false;
-    var instance6 = {
+    var instance9 = {
       state,
       setOptions: function setOptions(setOptionsAction) {
         var options2 = typeof setOptionsAction === "function" ? setOptionsAction(state.options) : setOptionsAction;
@@ -8324,7 +8927,7 @@ function popperGenerator(generatorOptions) {
           }
         }
         runModifierEffects();
-        return instance6.update();
+        return instance9.update();
       },
       forceUpdate: function forceUpdate() {
         if (isDestroyed) {
@@ -8366,14 +8969,14 @@ function popperGenerator(generatorOptions) {
               state,
               options: _options,
               name,
-              instance: instance6
+              instance: instance9
             }) || state;
           }
         }
       },
       update: debounce(function() {
         return new Promise(function(resolve) {
-          instance6.forceUpdate();
+          instance9.forceUpdate();
           resolve(state);
         });
       }),
@@ -8386,9 +8989,9 @@ function popperGenerator(generatorOptions) {
       if (true) {
         console.error(INVALID_ELEMENT_ERROR);
       }
-      return instance6;
+      return instance9;
     }
-    instance6.setOptions(options).then(function(state2) {
+    instance9.setOptions(options).then(function(state2) {
       if (!isDestroyed && options.onFirstUpdate) {
         options.onFirstUpdate(state2);
       }
@@ -8400,7 +9003,7 @@ function popperGenerator(generatorOptions) {
           var cleanupFn = effect4({
             state,
             name,
-            instance: instance6,
+            instance: instance9,
             options: options2
           });
           var noopFn = function noopFn2() {
@@ -8415,7 +9018,7 @@ function popperGenerator(generatorOptions) {
       });
       effectCleanupFns = [];
     }
-    return instance6;
+    return instance9;
   };
 }
 
@@ -8498,7 +9101,7 @@ var TextInputSuggest = class {
   constructor(app, inputEl) {
     this.app = app;
     this.inputEl = inputEl;
-    this.scope = new import_obsidian6.Scope();
+    this.scope = new import_obsidian7.Scope();
     this.suggestEl = createDiv("suggestion-container");
     const suggestion = this.suggestEl.createDiv("suggestion");
     this.suggest = new Suggest(this, suggestion, this.scope);
@@ -8533,13 +9136,13 @@ var TextInputSuggest = class {
         {
           name: "sameWidth",
           enabled: true,
-          fn: ({ state, instance: instance6 }) => {
+          fn: ({ state, instance: instance9 }) => {
             const targetWidth = `${state.rects.reference.width}px`;
             if (state.styles.popper.width === targetWidth) {
               return;
             }
             state.styles.popper.width = targetWidth;
-            instance6.update();
+            instance9.update();
           },
           phase: "beforeWrite",
           requires: ["computeStyles"]
@@ -8589,7 +9192,7 @@ var TagModal = class extends BaseModal {
     contentEl.createEl("h1", { text: t("edit_tags") });
     const tagDiv = contentEl.createDiv("tags");
     for (const tag in this.tags) {
-      new import_obsidian7.Setting(tagDiv).addSearch((search) => __async(this, null, function* () {
+      new import_obsidian8.Setting(tagDiv).addSearch((search) => __async(this, null, function* () {
         new ArraySuggest(this.app, search.inputEl, get_store_value(tagsStore));
         search.setValue(this.tags[tag]).onChange((value) => __async(this, null, function* () {
           this.removeValidationError(search);
@@ -8609,7 +9212,7 @@ var TagModal = class extends BaseModal {
     }
     let tagValue = "";
     let tagComponent;
-    const newTag = new import_obsidian7.Setting(tagDiv).addSearch((search) => __async(this, null, function* () {
+    const newTag = new import_obsidian8.Setting(tagDiv).addSearch((search) => __async(this, null, function* () {
       tagComponent = search;
       new ArraySuggest(this.app, search.inputEl, get_store_value(tagsStore));
       search.onChange((value) => __async(this, null, function* () {
@@ -8631,7 +9234,7 @@ var TagModal = class extends BaseModal {
     });
     newTag.controlEl.addClass("rss-setting-input");
     const buttonEl = contentEl.createSpan("actionButtons");
-    new import_obsidian7.Setting(buttonEl).addExtraButton((btn) => btn.setTooltip(t("save")).setIcon("checkmark").onClick(() => __async(this, null, function* () {
+    new import_obsidian8.Setting(buttonEl).addExtraButton((btn) => btn.setTooltip(t("save")).setIcon("checkmark").onClick(() => __async(this, null, function* () {
       this.close();
     })));
   }
@@ -8661,8 +9264,8 @@ Action.CREATE_NOTE = new _Action(t("create_note"), "create-new", (plugin, item) 
 Action.PASTE = new _Action(t("paste_to_note"), "paste", (plugin, item) => {
   return pasteToNote(plugin, item);
 });
-Action.COPY = new _Action(t("copy_to_clipboard"), "feather-clipboard", (_, item) => {
-  return copy((0, import_obsidian8.htmlToMarkdown)(item.content));
+Action.COPY = new _Action(t("copy_to_clipboard"), "documents", (_, item) => {
+  return copy((0, import_obsidian9.htmlToMarkdown)(item.content));
 });
 Action.OPEN = new _Action(t("open_browser"), "open-elsewhere-glyph", (_, item) => {
   openInBrowser(item);
@@ -8683,10 +9286,10 @@ Action.TAGS = new _Action(t("edit_tags"), "tag-glyph", (plugin, item) => {
 Action.READ = new _Action(t("mark_as_read_unread"), "feather-eye", (plugin, item) => __async(_Action, null, function* () {
   if (item.read) {
     item.read = false;
-    new import_obsidian8.Notice(t("marked_as_unread"));
+    new import_obsidian9.Notice(t("marked_as_unread"));
   } else {
     item.read = true;
-    new import_obsidian8.Notice(t("marked_as_read"));
+    new import_obsidian9.Notice(t("marked_as_read"));
   }
   const items = plugin.settings.items;
   yield plugin.writeFeedContent(() => {
@@ -8697,10 +9300,10 @@ Action.READ = new _Action(t("mark_as_read_unread"), "feather-eye", (plugin, item
 Action.FAVORITE = new _Action(t("mark_as_favorite_remove"), "star", (plugin, item) => __async(_Action, null, function* () {
   if (item.favorite) {
     item.favorite = false;
-    new import_obsidian8.Notice(t("removed_from_favorites"));
+    new import_obsidian9.Notice(t("removed_from_favorites"));
   } else {
     item.favorite = true;
-    new import_obsidian8.Notice(t("added_to_favorites"));
+    new import_obsidian9.Notice(t("added_to_favorites"));
   }
   const items = plugin.settings.items;
   yield plugin.writeFeedContent(() => {
@@ -8711,7 +9314,7 @@ Action.FAVORITE = new _Action(t("mark_as_favorite_remove"), "star", (plugin, ite
 Action.actions = Array.of(_Action.FAVORITE, _Action.READ, _Action.TAGS, _Action.CREATE_NOTE, _Action.PASTE, _Action.COPY, _Action.OPEN);
 
 // src/modals/ItemModal.ts
-var ItemModal = class extends import_obsidian9.Modal {
+var ItemModal = class extends import_obsidian10.Modal {
   constructor(plugin, item, items, save = true) {
     super(plugin.app);
     this.plugin = plugin;
@@ -8724,6 +9327,9 @@ var ItemModal = class extends import_obsidian9.Modal {
       this.plugin.writeFeedContent(() => {
         return feedContents;
       });
+      if (!this.plugin.settings) {
+        return;
+      }
       if (this.plugin.settings.hotkeys.read) {
         this.scope.register([], this.plugin.settings.hotkeys.read, () => {
           this.markAsRead();
@@ -8781,7 +9387,7 @@ var ItemModal = class extends import_obsidian9.Modal {
           }
           return;
         }
-        const content = (0, import_obsidian9.htmlToMarkdown)(this.item.content);
+        const content = (0, import_obsidian10.htmlToMarkdown)(this.item.content);
         tts.say(this.item.title, content, this.item.language);
       });
     }
@@ -8824,6 +9430,7 @@ var ItemModal = class extends import_obsidian9.Modal {
   }
   display() {
     return __async(this, null, function* () {
+      this.modalEl.addClass("rss-modal");
       const { contentEl } = this;
       contentEl.empty();
       contentEl.style.height = "100%";
@@ -8831,12 +9438,12 @@ var ItemModal = class extends import_obsidian9.Modal {
       const topButtons = contentEl.createDiv("topButtons");
       let actions = Array.of(Action.CREATE_NOTE, Action.PASTE, Action.COPY, Action.OPEN);
       if (this.save) {
-        this.readButton = new import_obsidian9.ButtonComponent(topButtons).setIcon(this.item.read ? "feather-eye-off" : "feather-eye").setTooltip(this.item.read ? t("mark_as_unread") : t("mark_as_read")).onClick(() => __async(this, null, function* () {
+        this.readButton = new import_obsidian10.ButtonComponent(topButtons).setIcon(this.item.read ? "feather-eye-off" : "feather-eye").setTooltip(this.item.read ? t("mark_as_unread") : t("mark_as_read")).onClick(() => __async(this, null, function* () {
           yield this.markAsRead();
         }));
         this.readButton.buttonEl.setAttribute("tabindex", "-1");
         this.readButton.buttonEl.addClass("rss-button");
-        this.favoriteButton = new import_obsidian9.ButtonComponent(topButtons).setIcon(this.item.favorite ? "star-glyph" : "star").setTooltip(this.item.favorite ? t("remove_from_favorites") : t("mark_as_favorite")).onClick(() => __async(this, null, function* () {
+        this.favoriteButton = new import_obsidian10.ButtonComponent(topButtons).setIcon(this.item.favorite ? "star-glyph" : "star").setTooltip(this.item.favorite ? t("remove_from_favorites") : t("mark_as_favorite")).onClick(() => __async(this, null, function* () {
           yield this.markAsFavorite();
         }));
         this.favoriteButton.buttonEl.setAttribute("tabindex", "-1");
@@ -8844,30 +9451,32 @@ var ItemModal = class extends import_obsidian9.Modal {
         actions = Array.of(Action.TAGS, ...actions);
       }
       actions.forEach((action) => {
-        const button = new import_obsidian9.ButtonComponent(topButtons).setIcon(action.icon).setTooltip(action.name).onClick(() => __async(this, null, function* () {
+        const button = new import_obsidian10.ButtonComponent(topButtons).setIcon(action.icon).setTooltip(action.name).onClick(() => __async(this, null, function* () {
           yield action.processor(this.plugin, this.item);
         }));
         button.buttonEl.setAttribute("tabindex", "-1");
         button.buttonEl.addClass("rss-button");
       });
       if (this.app.plugins.plugins["obsidian-tts"]) {
-        const ttsButton = new import_obsidian9.ButtonComponent(topButtons).setIcon("feather-headphones").setTooltip(t("read_article_tts")).onClick(() => __async(this, null, function* () {
-          const content2 = (0, import_obsidian9.htmlToMarkdown)(this.item.content);
+        const ttsButton = new import_obsidian10.ButtonComponent(topButtons).setIcon("feather-headphones").setTooltip(t("read_article_tts")).onClick(() => __async(this, null, function* () {
+          const content2 = (0, import_obsidian10.htmlToMarkdown)(this.item.content);
           yield this.app.plugins.plugins["obsidian-tts"].ttsService.say(this.item.title, content2, this.item.language);
         }));
         ttsButton.buttonEl.addClass("rss-button");
       }
-      const prevButton = new import_obsidian9.ButtonComponent(topButtons).setIcon("left-arrow-with-tail").setTooltip(t("previous")).onClick(() => {
+      const prevButton = new import_obsidian10.ButtonComponent(topButtons).setIcon("left-arrow-with-tail").setTooltip(t("previous")).onClick(() => {
         this.previous();
       });
       prevButton.buttonEl.addClass("rss-button");
-      const nextButton = new import_obsidian9.ButtonComponent(topButtons).setIcon("right-arrow-with-tail").setTooltip(t("next")).onClick(() => {
+      const nextButton = new import_obsidian10.ButtonComponent(topButtons).setIcon("right-arrow-with-tail").setTooltip(t("next")).onClick(() => {
         this.next();
       });
       nextButton.buttonEl.addClass("rss-button");
       const title = contentEl.createEl("h1", "rss-title");
+      title.addClass("rss-selectable");
       title.setText(this.item.title);
       const subtitle = contentEl.createEl("h3", "rss-subtitle");
+      subtitle.addClass("rss-selectable");
       if (this.item.creator) {
         subtitle.appendText(this.item.creator);
       }
@@ -8881,7 +9490,7 @@ var ItemModal = class extends import_obsidian9.Modal {
         tagA.addClass("tag", "rss-tag");
       });
       const content = contentEl.createDiv("rss-content");
-      content.addClass("scrollable-content");
+      content.addClass("rss-scrollable-content", "rss-selectable");
       if (this.item.enclosure) {
         if (this.item.enclosureType.toLowerCase().contains("audio")) {
           const audio = content.createEl("audio", { attr: { controls: "controls" } });
@@ -8895,7 +9504,7 @@ var ItemModal = class extends import_obsidian9.Modal {
           content.createEl("iframe", {
             attr: {
               type: "text/html",
-              src: "http://www.youtube.com/embed/" + this.item.enclosure,
+              src: "https://www.youtube.com/embed/" + this.item.enclosure,
               width: "100%",
               height: "100%",
               allowFullscreen: "true"
@@ -8904,430 +9513,116 @@ var ItemModal = class extends import_obsidian9.Modal {
         }
       }
       if (this.item.content) {
-        yield import_obsidian9.MarkdownRenderer.renderMarkdown((0, import_obsidian9.htmlToMarkdown)(this.item.content), content, "", this.plugin);
+        const markdown = "---\n----" + rssToMd(this.plugin, this.item.content);
+        yield import_obsidian10.MarkdownRenderer.renderMarkdown(markdown, content, "", this.plugin);
+        this.item.highlights.forEach((highlight) => {
+          if (content.innerHTML.includes(highlight)) {
+            const newNode = contentEl.createEl("mark");
+            newNode.innerHTML = highlight;
+            content.innerHTML = content.innerHTML.replace(highlight, newNode.outerHTML);
+            newNode.remove();
+          } else {
+            console.log("Highlight not included");
+            console.log(highlight);
+          }
+        });
+        content.addEventListener("contextmenu", (event) => {
+          event.preventDefault();
+          const selection = document.getSelection();
+          const range = selection.getRangeAt(0);
+          const div = contentEl.createDiv();
+          const htmlContent = range.cloneContents();
+          const html = htmlContent.cloneNode(true);
+          div.appendChild(html);
+          const selected = div.innerHTML;
+          div.remove();
+          const menu = new import_obsidian10.Menu(this.app);
+          let previousHighlight;
+          if (this.item.highlights.includes(range.startContainer.parentElement.innerHTML)) {
+            previousHighlight = range.startContainer.parentElement;
+          }
+          if (this.item.highlights.includes(range.startContainer.parentElement.parentElement.innerHTML)) {
+            previousHighlight = range.startContainer.parentElement.parentElement;
+          }
+          if (previousHighlight) {
+            menu.addItem((item) => {
+              item.setIcon("highlight-glyph").setTitle(t("highlight_remove")).onClick(() => __async(this, null, function* () {
+                const replacement = contentEl.createSpan();
+                replacement.innerHTML = previousHighlight.innerHTML;
+                previousHighlight.replaceWith(replacement);
+                this.item.highlights.remove(previousHighlight.innerHTML);
+                const feedContents = this.plugin.settings.items;
+                yield this.plugin.writeFeedContent(() => {
+                  return feedContents;
+                });
+              }));
+            });
+          } else if (!this.item.highlights.includes(selected) && selected.length > 0) {
+            menu.addItem((item) => {
+              item.setIcon("highlight-glyph").setTitle(t("highlight")).onClick(() => __async(this, null, function* () {
+                const newNode = contentEl.createEl("mark");
+                newNode.innerHTML = selected;
+                range.deleteContents();
+                range.insertNode(newNode);
+                this.item.highlights.push(selected);
+                const feedContents = this.plugin.settings.items;
+                yield this.plugin.writeFeedContent(() => {
+                  return feedContents;
+                });
+                this.removeDanglingElements(contentEl);
+                this.removeDanglingElements(contentEl);
+              }));
+            });
+          }
+          if (selected.length > 0) {
+            menu.addItem((item) => {
+              item.setIcon("documents").setTitle(t("copy_to_clipboard")).onClick(() => __async(this, null, function* () {
+                yield copy(selection.toString());
+              }));
+            });
+            if (this.app.plugins.plugins["obsidian-tts"]) {
+              menu.addItem((item) => {
+                item.setIcon("feather-headphones").setTitle(t("read_article_tts")).onClick(() => {
+                  const tts = this.app.plugins.plugins["obsidian-tts"].ttsService;
+                  tts.say("", selection.toString());
+                });
+              });
+            }
+          }
+          menu.showAtMouseEvent(event);
+        });
       }
     });
   }
   onClose() {
-    const { contentEl } = this;
-    contentEl.empty();
+    return __async(this, null, function* () {
+      const { contentEl } = this;
+      contentEl.empty();
+      const feedContents = this.plugin.settings.items;
+      yield this.plugin.writeFeedContent(() => {
+        return feedContents;
+      });
+    });
   }
   onOpen() {
     return __async(this, null, function* () {
       yield this.display();
     });
   }
+  removeDanglingElements(el) {
+    const lists = el.querySelectorAll("li, a, div, p, span");
+    for (let i = 0; i < lists.length; i++) {
+      const listEL = lists.item(i);
+      if (listEL.innerHTML === "") {
+        listEL.remove();
+      }
+    }
+  }
 };
 
-// src/parser/rssParser.ts
-var import_obsidian10 = __toModule(require("obsidian"));
-var import_ts_md5 = __toModule(require_md5());
-function getElementByName(element2, name) {
-  let value;
-  if (typeof element2.getElementsByTagName !== "function") {
-    return;
-  }
-  if (name.contains(":")) {
-    const [namespace, tag] = name.split(":");
-    const namespaceUri = element2.lookupNamespaceURI(namespace);
-    if (element2.getElementsByTagNameNS(namespaceUri, tag).length > 0) {
-      value = element2.getElementsByTagNameNS(namespaceUri, tag)[0].childNodes[0];
-    }
-  } else if (name.contains(".")) {
-    const [prefix, tag] = name.split(".");
-    if (element2.getElementsByTagName(prefix).length > 0) {
-      const nodes = Array.from(element2.getElementsByTagName(prefix)[0].childNodes);
-      nodes.forEach((node) => {
-        if (node.nodeName == tag) {
-          value = node;
-        }
-      });
-    }
-  } else {
-    if (element2.getElementsByTagName(name).length > 0) {
-      if (element2.getElementsByTagName(name)[0].childNodes.length == 0) {
-        value = element2.getElementsByTagName(name)[0];
-      } else {
-        const node = element2.getElementsByTagName(name)[0].childNodes[0];
-        if (node !== void 0)
-          value = node;
-      }
-    }
-  }
-  return value;
-}
-function getContent(element2, names) {
-  let value;
-  names.forEach((name) => {
-    if (name.contains("#")) {
-      const [elementName, attr2] = name.split("#");
-      const data2 = getElementByName(element2, elementName);
-      if (data2) {
-        if (data2.nodeName === elementName) {
-          const tmp = data2.getAttr(attr2);
-          if (tmp.length > 0) {
-            value = tmp;
-          }
-        }
-      }
-    }
-    const data = getElementByName(element2, name);
-    if (data) {
-      if (data.nodeValue && data.nodeValue.length > 0) {
-        value = data.nodeValue;
-      }
-      if (data.innerHTML && data.innerHTML.length > 0) {
-        value = data.innerHTML;
-      }
-    }
-  });
-  if (value === void 0) {
-    return "";
-  }
-  return value;
-}
-function buildItem(element2) {
-  return {
-    title: getContent(element2, ["title"]),
-    description: getContent(element2, ["description"]),
-    content: getContent(element2, ["itunes:summary", "description", "summary", "media:description", "content", "content:encoded"]),
-    category: getContent(element2, ["category"]),
-    link: getContent(element2, ["link", "link#href"]),
-    creator: getContent(element2, ["creator", "dc:creator", "author", "author.name"]),
-    pubDate: getContent(element2, ["pubDate", "published", "updated", "dc:date"]),
-    enclosure: getContent(element2, ["enclosure#url", "yt:videoId"]),
-    enclosureType: getContent(element2, ["enclosure#type"]),
-    image: getContent(element2, ["itunes:image#href"]),
-    id: getContent(element2, ["id"]),
-    language: null,
-    folder: null,
-    feed: null,
-    read: null,
-    favorite: null,
-    created: null,
-    tags: [],
-    hash: null
-  };
-}
-function getAllItems(doc) {
-  const items = [];
-  if (doc.getElementsByTagName("item")) {
-    for (const elementsByTagNameKey in doc.getElementsByTagName("item")) {
-      const entry = doc.getElementsByTagName("item")[elementsByTagNameKey];
-      items.push(entry);
-    }
-  }
-  if (doc.getElementsByTagName("entry")) {
-    for (const elementsByTagNameKey in doc.getElementsByTagName("entry")) {
-      const entry = doc.getElementsByTagName("entry")[elementsByTagNameKey];
-      items.push(entry);
-    }
-  }
-  return items;
-}
-function getFeedItems(feed) {
-  return __async(this, null, function* () {
-    const rawData = yield (0, import_obsidian10.request)({ url: feed.url });
-    const data = new window.DOMParser().parseFromString(rawData, "text/xml");
-    const items = [];
-    const rawItems = getAllItems(data);
-    const language = getContent(data, ["language"]).substr(0, 2);
-    rawItems.forEach((rawItem) => {
-      const item = buildItem(rawItem);
-      if (item.title !== void 0 && item.title.length !== 0) {
-        item.folder = feed.folder;
-        item.feed = feed.name;
-        item.read = false;
-        item.favorite = false;
-        item.created = false;
-        item.language = language;
-        item.hash = new import_ts_md5.Md5().appendStr(item.title).appendStr(item.folder).appendStr(item.link).end();
-        items.push(item);
-      }
-    });
-    const image = getContent(data, ["image", "image.url", "icon"]);
-    const content = {
-      title: getContent(data, ["title"]),
-      subtitle: getContent(data, ["subtitle"]),
-      link: getContent(data, ["link"]),
-      image: image ? image.replace(/^\/|\/$/g, "") : null,
-      description: getContent(data, ["description"]),
-      items,
-      folder: feed.folder,
-      name: feed.name,
-      language,
-      hash: ""
-    };
-    return Promise.resolve(content);
-  });
-}
-
-// src/view/ItemView.svelte
+// src/view/ItemTitle.svelte
 var import_obsidian11 = __toModule(require("obsidian"));
-
-// src/view/HtmlTooltip.svelte
-function create_if_block2(ctx) {
-  let p;
-  let html_action;
-  let mounted;
-  let dispose;
-  return {
-    c() {
-      p = element("p");
-      attr(p, "class", "tooltiptext");
-    },
-    m(target, anchor) {
-      insert(target, p, anchor);
-      if (!mounted) {
-        dispose = action_destroyer(html_action = ctx[1].call(null, p, ctx[0]));
-        mounted = true;
-      }
-    },
-    p(ctx2, dirty) {
-      if (html_action && is_function(html_action.update) && dirty & 1)
-        html_action.update.call(null, ctx2[0]);
-    },
-    d(detaching) {
-      if (detaching)
-        detach(p);
-      mounted = false;
-      dispose();
-    }
-  };
-}
-function create_fragment2(ctx) {
-  let if_block_anchor;
-  let if_block = ctx[0].length > 0 && create_if_block2(ctx);
-  return {
-    c() {
-      if (if_block)
-        if_block.c();
-      if_block_anchor = empty();
-    },
-    m(target, anchor) {
-      if (if_block)
-        if_block.m(target, anchor);
-      insert(target, if_block_anchor, anchor);
-    },
-    p(ctx2, [dirty]) {
-      if (ctx2[0].length > 0) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
-        } else {
-          if_block = create_if_block2(ctx2);
-          if_block.c();
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
-        }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
-      }
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (if_block)
-        if_block.d(detaching);
-      if (detaching)
-        detach(if_block_anchor);
-    }
-  };
-}
-function instance2($$self, $$props, $$invalidate) {
-  let { content = "" } = $$props;
-  const html = (node, content2) => {
-    node.append(sanitizeHTMLToDom(content2));
-  };
-  $$self.$$set = ($$props2) => {
-    if ("content" in $$props2)
-      $$invalidate(0, content = $$props2.content);
-  };
-  return [content, html];
-}
-var HtmlTooltip = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance2, create_fragment2, safe_not_equal, { content: 0 });
-  }
-};
-var HtmlTooltip_default = HtmlTooltip;
-
-// src/view/ItemView.svelte
-function get_each_context(ctx, list, i) {
-  const child_ctx = ctx.slice();
-  child_ctx[7] = list[i];
-  return child_ctx;
-}
-function create_if_block3(ctx) {
-  let div;
-  let t0;
-  let t1;
-  let a;
-  let t2_value = ctx[1].title + "";
-  let t2;
-  let t3;
-  let t4;
-  let div_class_value;
-  let current;
-  let mounted;
-  let dispose;
-  let if_block0 = ctx[1].favorite && create_if_block_5(ctx);
-  let if_block1 = ctx[1].created && create_if_block_4(ctx);
-  let if_block2 = ctx[1].tags.length > 0 && create_if_block_3(ctx);
-  let if_block3 = ctx[3] && create_if_block_1(ctx);
-  return {
-    c() {
-      div = element("div");
-      if (if_block0)
-        if_block0.c();
-      t0 = space();
-      if (if_block1)
-        if_block1.c();
-      t1 = space();
-      a = element("a");
-      t2 = text(t2_value);
-      t3 = space();
-      if (if_block2)
-        if_block2.c();
-      t4 = space();
-      if (if_block3)
-        if_block3.c();
-      attr(a, "href", "/");
-      attr(div, "class", div_class_value = "is-clickable rss-tooltip rss-feed-item " + (ctx[1].read ? "rss-read" : "rss-not-read"));
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      if (if_block0)
-        if_block0.m(div, null);
-      append(div, t0);
-      if (if_block1)
-        if_block1.m(div, null);
-      append(div, t1);
-      append(div, a);
-      append(a, t2);
-      append(div, t3);
-      if (if_block2)
-        if_block2.m(div, null);
-      append(div, t4);
-      if (if_block3)
-        if_block3.m(div, null);
-      current = true;
-      if (!mounted) {
-        dispose = [
-          listen(a, "click", ctx[6]),
-          listen(a, "contextmenu", ctx[5]),
-          listen(a, "mouseover", ctx[4]),
-          listen(a, "mouseleave", ctx[4]),
-          listen(a, "focus", ctx[4])
-        ];
-        mounted = true;
-      }
-    },
-    p(ctx2, dirty) {
-      if (ctx2[1].favorite) {
-        if (if_block0) {
-          if (dirty & 2) {
-            transition_in(if_block0, 1);
-          }
-        } else {
-          if_block0 = create_if_block_5(ctx2);
-          if_block0.c();
-          transition_in(if_block0, 1);
-          if_block0.m(div, t0);
-        }
-      } else if (if_block0) {
-        group_outros();
-        transition_out(if_block0, 1, 1, () => {
-          if_block0 = null;
-        });
-        check_outros();
-      }
-      if (ctx2[1].created) {
-        if (if_block1) {
-          if (dirty & 2) {
-            transition_in(if_block1, 1);
-          }
-        } else {
-          if_block1 = create_if_block_4(ctx2);
-          if_block1.c();
-          transition_in(if_block1, 1);
-          if_block1.m(div, t1);
-        }
-      } else if (if_block1) {
-        group_outros();
-        transition_out(if_block1, 1, 1, () => {
-          if_block1 = null;
-        });
-        check_outros();
-      }
-      if ((!current || dirty & 2) && t2_value !== (t2_value = ctx2[1].title + ""))
-        set_data(t2, t2_value);
-      if (ctx2[1].tags.length > 0) {
-        if (if_block2) {
-          if_block2.p(ctx2, dirty);
-        } else {
-          if_block2 = create_if_block_3(ctx2);
-          if_block2.c();
-          if_block2.m(div, t4);
-        }
-      } else if (if_block2) {
-        if_block2.d(1);
-        if_block2 = null;
-      }
-      if (ctx2[3]) {
-        if (if_block3) {
-          if_block3.p(ctx2, dirty);
-          if (dirty & 8) {
-            transition_in(if_block3, 1);
-          }
-        } else {
-          if_block3 = create_if_block_1(ctx2);
-          if_block3.c();
-          transition_in(if_block3, 1);
-          if_block3.m(div, null);
-        }
-      } else if (if_block3) {
-        group_outros();
-        transition_out(if_block3, 1, 1, () => {
-          if_block3 = null;
-        });
-        check_outros();
-      }
-      if (!current || dirty & 2 && div_class_value !== (div_class_value = "is-clickable rss-tooltip rss-feed-item " + (ctx2[1].read ? "rss-read" : "rss-not-read"))) {
-        attr(div, "class", div_class_value);
-      }
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(if_block0);
-      transition_in(if_block1);
-      transition_in(if_block3);
-      current = true;
-    },
-    o(local) {
-      transition_out(if_block0);
-      transition_out(if_block1);
-      transition_out(if_block3);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching)
-        detach(div);
-      if (if_block0)
-        if_block0.d();
-      if (if_block1)
-        if_block1.d();
-      if (if_block2)
-        if_block2.d();
-      if (if_block3)
-        if_block3.d();
-      mounted = false;
-      run_all(dispose);
-    }
-  };
-}
-function create_if_block_5(ctx) {
+function create_if_block_1(ctx) {
   let iconcomponent;
   let current;
   iconcomponent = new IconComponent_default({ props: { iconName: "star" } });
@@ -9354,7 +9649,7 @@ function create_if_block_5(ctx) {
     }
   };
 }
-function create_if_block_4(ctx) {
+function create_if_block3(ctx) {
   let iconcomponent;
   let current;
   iconcomponent = new IconComponent_default({ props: { iconName: "document" } });
@@ -9381,7 +9676,745 @@ function create_if_block_4(ctx) {
     }
   };
 }
-function create_if_block_3(ctx) {
+function create_fragment3(ctx) {
+  let t0;
+  let t1;
+  let a;
+  let t2_value = ctx[1].title + "";
+  let t2;
+  let current;
+  let mounted;
+  let dispose;
+  let if_block0 = ctx[1].favorite && create_if_block_1(ctx);
+  let if_block1 = ctx[1].created && create_if_block3(ctx);
+  return {
+    c() {
+      if (if_block0)
+        if_block0.c();
+      t0 = space();
+      if (if_block1)
+        if_block1.c();
+      t1 = space();
+      a = element("a");
+      t2 = text(t2_value);
+    },
+    m(target, anchor) {
+      if (if_block0)
+        if_block0.m(target, anchor);
+      insert(target, t0, anchor);
+      if (if_block1)
+        if_block1.m(target, anchor);
+      insert(target, t1, anchor);
+      insert(target, a, anchor);
+      append(a, t2);
+      current = true;
+      if (!mounted) {
+        dispose = [
+          listen(a, "click", ctx[4]),
+          listen(a, "contextmenu", ctx[3])
+        ];
+        mounted = true;
+      }
+    },
+    p(ctx2, [dirty]) {
+      if (ctx2[1].favorite) {
+        if (if_block0) {
+          if (dirty & 2) {
+            transition_in(if_block0, 1);
+          }
+        } else {
+          if_block0 = create_if_block_1(ctx2);
+          if_block0.c();
+          transition_in(if_block0, 1);
+          if_block0.m(t0.parentNode, t0);
+        }
+      } else if (if_block0) {
+        group_outros();
+        transition_out(if_block0, 1, 1, () => {
+          if_block0 = null;
+        });
+        check_outros();
+      }
+      if (ctx2[1].created) {
+        if (if_block1) {
+          if (dirty & 2) {
+            transition_in(if_block1, 1);
+          }
+        } else {
+          if_block1 = create_if_block3(ctx2);
+          if_block1.c();
+          transition_in(if_block1, 1);
+          if_block1.m(t1.parentNode, t1);
+        }
+      } else if (if_block1) {
+        group_outros();
+        transition_out(if_block1, 1, 1, () => {
+          if_block1 = null;
+        });
+        check_outros();
+      }
+      if ((!current || dirty & 2) && t2_value !== (t2_value = ctx2[1].title + ""))
+        set_data(t2, t2_value);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(if_block0);
+      transition_in(if_block1);
+      current = true;
+    },
+    o(local) {
+      transition_out(if_block0);
+      transition_out(if_block1);
+      current = false;
+    },
+    d(detaching) {
+      if (if_block0)
+        if_block0.d(detaching);
+      if (detaching)
+        detach(t0);
+      if (if_block1)
+        if_block1.d(detaching);
+      if (detaching)
+        detach(t1);
+      if (detaching)
+        detach(a);
+      mounted = false;
+      run_all(dispose);
+    }
+  };
+}
+function instance3($$self, $$props, $$invalidate) {
+  let { plugin = null } = $$props;
+  let { item = null } = $$props;
+  let { items = null } = $$props;
+  function openMenu(e) {
+    return __awaiter(this, void 0, void 0, function* () {
+      if (e.ctrlKey && e.altKey) {
+        openInBrowser(item);
+        return;
+      }
+      if (e.ctrlKey) {
+        yield createNewNote(plugin, item);
+        return;
+      }
+      if (e.altKey) {
+        yield pasteToNote(plugin, item);
+        return;
+      }
+      const menu = new import_obsidian11.Menu(plugin.app);
+      Action.actions.forEach((action) => {
+        menu.addItem((menuItem) => {
+          menuItem.setIcon(action.icon).setTitle(action.name).onClick(() => __awaiter(this, void 0, void 0, function* () {
+            yield action.processor(plugin, item);
+          }));
+        });
+      });
+      menu.showAtPosition({ x: e.x, y: e.y });
+    });
+  }
+  const click_handler = () => {
+    new ItemModal(plugin, item, items).open();
+  };
+  $$self.$$set = ($$props2) => {
+    if ("plugin" in $$props2)
+      $$invalidate(0, plugin = $$props2.plugin);
+    if ("item" in $$props2)
+      $$invalidate(1, item = $$props2.item);
+    if ("items" in $$props2)
+      $$invalidate(2, items = $$props2.items);
+  };
+  return [plugin, item, items, openMenu, click_handler];
+}
+var ItemTitle = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance3, create_fragment3, safe_not_equal, { plugin: 0, item: 1, items: 2 });
+  }
+};
+var ItemTitle_default = ItemTitle;
+
+// src/view/MarkdownContent.svelte
+var import_obsidian12 = __toModule(require("obsidian"));
+function create_if_block4(ctx) {
+  let p;
+  let html_action;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      p = element("p");
+    },
+    m(target, anchor) {
+      insert(target, p, anchor);
+      if (!mounted) {
+        dispose = action_destroyer(html_action = ctx[1].call(null, p, ctx[0]));
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if (html_action && is_function(html_action.update) && dirty & 1)
+        html_action.update.call(null, ctx2[0]);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(p);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_fragment4(ctx) {
+  let if_block_anchor;
+  let if_block = ctx[0].length > 0 && create_if_block4(ctx);
+  return {
+    c() {
+      if (if_block)
+        if_block.c();
+      if_block_anchor = empty();
+    },
+    m(target, anchor) {
+      if (if_block)
+        if_block.m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+    },
+    p(ctx2, [dirty]) {
+      if (ctx2[0].length > 0) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block4(ctx2);
+          if_block.c();
+          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (if_block)
+        if_block.d(detaching);
+      if (detaching)
+        detach(if_block_anchor);
+    }
+  };
+}
+function instance4($$self, $$props, $$invalidate) {
+  let { content = "" } = $$props;
+  let { plugin } = $$props;
+  const html = (node, content2) => {
+    import_obsidian12.MarkdownRenderer.renderMarkdown((0, import_obsidian12.htmlToMarkdown)(content2), node, "", plugin);
+  };
+  $$self.$$set = ($$props2) => {
+    if ("content" in $$props2)
+      $$invalidate(0, content = $$props2.content);
+    if ("plugin" in $$props2)
+      $$invalidate(2, plugin = $$props2.plugin);
+  };
+  return [content, html, plugin];
+}
+var MarkdownContent = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance4, create_fragment4, safe_not_equal, { content: 0, plugin: 2 });
+  }
+};
+var MarkdownContent_default = MarkdownContent;
+
+// src/view/ItemView.svelte
+function get_each_context_1(ctx, list, i) {
+  const child_ctx = ctx.slice();
+  child_ctx[6] = list[i];
+  return child_ctx;
+}
+function get_each_context(ctx, list, i) {
+  const child_ctx = ctx.slice();
+  child_ctx[6] = list[i];
+  return child_ctx;
+}
+function create_if_block5(ctx) {
+  let div;
+  let current_block_type_index;
+  let if_block;
+  let div_class_value;
+  let current;
+  const if_block_creators = [create_if_block_12, create_if_block_5];
+  const if_blocks = [];
+  function select_block_type(ctx2, dirty) {
+    if (ctx2[4].displayStyle === "list")
+      return 0;
+    if (ctx2[4].displayStyle === "cards")
+      return 1;
+    return -1;
+  }
+  if (~(current_block_type_index = select_block_type(ctx, -1))) {
+    if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+  }
+  return {
+    c() {
+      div = element("div");
+      if (if_block)
+        if_block.c();
+      attr(div, "class", div_class_value = "is-clickable rss-tooltip rss-feed-item " + (ctx[1].read ? "rss-read" : "rss-not-read"));
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      if (~current_block_type_index) {
+        if_blocks[current_block_type_index].m(div, null);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      let previous_block_index = current_block_type_index;
+      current_block_type_index = select_block_type(ctx2, dirty);
+      if (current_block_type_index === previous_block_index) {
+        if (~current_block_type_index) {
+          if_blocks[current_block_type_index].p(ctx2, dirty);
+        }
+      } else {
+        if (if_block) {
+          group_outros();
+          transition_out(if_blocks[previous_block_index], 1, 1, () => {
+            if_blocks[previous_block_index] = null;
+          });
+          check_outros();
+        }
+        if (~current_block_type_index) {
+          if_block = if_blocks[current_block_type_index];
+          if (!if_block) {
+            if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx2);
+            if_block.c();
+          } else {
+            if_block.p(ctx2, dirty);
+          }
+          transition_in(if_block, 1);
+          if_block.m(div, null);
+        } else {
+          if_block = null;
+        }
+      }
+      if (!current || dirty & 2 && div_class_value !== (div_class_value = "is-clickable rss-tooltip rss-feed-item " + (ctx2[1].read ? "rss-read" : "rss-not-read"))) {
+        attr(div, "class", div_class_value);
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(if_block);
+      current = true;
+    },
+    o(local) {
+      transition_out(if_block);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      if (~current_block_type_index) {
+        if_blocks[current_block_type_index].d();
+      }
+    }
+  };
+}
+function create_if_block_5(ctx) {
+  let div3;
+  let span;
+  let itemtitle;
+  let t0;
+  let t1;
+  let div2;
+  let div0;
+  let show_if = ctx[1].image && !ctx[1].image.includes(".mp3");
+  let t2;
+  let div1;
+  let current;
+  itemtitle = new ItemTitle_default({
+    props: {
+      plugin: ctx[0],
+      item: ctx[1],
+      items: ctx[2]
+    }
+  });
+  itemtitle.$on("mouseover", ctx[5]);
+  itemtitle.$on("mouseleave", ctx[5]);
+  itemtitle.$on("focus", ctx[5]);
+  let if_block0 = ctx[1].tags.length > 0 && create_if_block_8(ctx);
+  let if_block1 = show_if && create_if_block_7(ctx);
+  let if_block2 = ctx[1].description && create_if_block_6(ctx);
+  return {
+    c() {
+      div3 = element("div");
+      span = element("span");
+      create_component(itemtitle.$$.fragment);
+      t0 = space();
+      if (if_block0)
+        if_block0.c();
+      t1 = space();
+      div2 = element("div");
+      div0 = element("div");
+      if (if_block1)
+        if_block1.c();
+      t2 = space();
+      div1 = element("div");
+      if (if_block2)
+        if_block2.c();
+      attr(span, "class", "rss-item-title");
+      attr(div0, "class", "rss-item-image");
+      attr(div1, "class", "rss-item-text");
+      attr(div2, "class", "rss-card-items");
+      attr(div3, "class", "rss-card is-clickable");
+    },
+    m(target, anchor) {
+      insert(target, div3, anchor);
+      append(div3, span);
+      mount_component(itemtitle, span, null);
+      append(span, t0);
+      if (if_block0)
+        if_block0.m(span, null);
+      append(div3, t1);
+      append(div3, div2);
+      append(div2, div0);
+      if (if_block1)
+        if_block1.m(div0, null);
+      append(div2, t2);
+      append(div2, div1);
+      if (if_block2)
+        if_block2.m(div1, null);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const itemtitle_changes = {};
+      if (dirty & 1)
+        itemtitle_changes.plugin = ctx2[0];
+      if (dirty & 2)
+        itemtitle_changes.item = ctx2[1];
+      if (dirty & 4)
+        itemtitle_changes.items = ctx2[2];
+      itemtitle.$set(itemtitle_changes);
+      if (ctx2[1].tags.length > 0) {
+        if (if_block0) {
+          if_block0.p(ctx2, dirty);
+        } else {
+          if_block0 = create_if_block_8(ctx2);
+          if_block0.c();
+          if_block0.m(span, null);
+        }
+      } else if (if_block0) {
+        if_block0.d(1);
+        if_block0 = null;
+      }
+      if (dirty & 2)
+        show_if = ctx2[1].image && !ctx2[1].image.includes(".mp3");
+      if (show_if) {
+        if (if_block1) {
+          if_block1.p(ctx2, dirty);
+        } else {
+          if_block1 = create_if_block_7(ctx2);
+          if_block1.c();
+          if_block1.m(div0, null);
+        }
+      } else if (if_block1) {
+        if_block1.d(1);
+        if_block1 = null;
+      }
+      if (ctx2[1].description) {
+        if (if_block2) {
+          if_block2.p(ctx2, dirty);
+          if (dirty & 2) {
+            transition_in(if_block2, 1);
+          }
+        } else {
+          if_block2 = create_if_block_6(ctx2);
+          if_block2.c();
+          transition_in(if_block2, 1);
+          if_block2.m(div1, null);
+        }
+      } else if (if_block2) {
+        group_outros();
+        transition_out(if_block2, 1, 1, () => {
+          if_block2 = null;
+        });
+        check_outros();
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(itemtitle.$$.fragment, local);
+      transition_in(if_block2);
+      current = true;
+    },
+    o(local) {
+      transition_out(itemtitle.$$.fragment, local);
+      transition_out(if_block2);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div3);
+      destroy_component(itemtitle);
+      if (if_block0)
+        if_block0.d();
+      if (if_block1)
+        if_block1.d();
+      if (if_block2)
+        if_block2.d();
+    }
+  };
+}
+function create_if_block_12(ctx) {
+  let itemtitle;
+  let t0;
+  let t1;
+  let if_block1_anchor;
+  let current;
+  itemtitle = new ItemTitle_default({
+    props: {
+      plugin: ctx[0],
+      item: ctx[1],
+      items: ctx[2]
+    }
+  });
+  itemtitle.$on("mouseover", ctx[5]);
+  itemtitle.$on("mouseleave", ctx[5]);
+  itemtitle.$on("focus", ctx[5]);
+  let if_block0 = ctx[1].tags.length > 0 && create_if_block_4(ctx);
+  let if_block1 = ctx[3] && create_if_block_2(ctx);
+  return {
+    c() {
+      create_component(itemtitle.$$.fragment);
+      t0 = space();
+      if (if_block0)
+        if_block0.c();
+      t1 = space();
+      if (if_block1)
+        if_block1.c();
+      if_block1_anchor = empty();
+    },
+    m(target, anchor) {
+      mount_component(itemtitle, target, anchor);
+      insert(target, t0, anchor);
+      if (if_block0)
+        if_block0.m(target, anchor);
+      insert(target, t1, anchor);
+      if (if_block1)
+        if_block1.m(target, anchor);
+      insert(target, if_block1_anchor, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const itemtitle_changes = {};
+      if (dirty & 1)
+        itemtitle_changes.plugin = ctx2[0];
+      if (dirty & 2)
+        itemtitle_changes.item = ctx2[1];
+      if (dirty & 4)
+        itemtitle_changes.items = ctx2[2];
+      itemtitle.$set(itemtitle_changes);
+      if (ctx2[1].tags.length > 0) {
+        if (if_block0) {
+          if_block0.p(ctx2, dirty);
+        } else {
+          if_block0 = create_if_block_4(ctx2);
+          if_block0.c();
+          if_block0.m(t1.parentNode, t1);
+        }
+      } else if (if_block0) {
+        if_block0.d(1);
+        if_block0 = null;
+      }
+      if (ctx2[3]) {
+        if (if_block1) {
+          if_block1.p(ctx2, dirty);
+          if (dirty & 8) {
+            transition_in(if_block1, 1);
+          }
+        } else {
+          if_block1 = create_if_block_2(ctx2);
+          if_block1.c();
+          transition_in(if_block1, 1);
+          if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
+        }
+      } else if (if_block1) {
+        group_outros();
+        transition_out(if_block1, 1, 1, () => {
+          if_block1 = null;
+        });
+        check_outros();
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(itemtitle.$$.fragment, local);
+      transition_in(if_block1);
+      current = true;
+    },
+    o(local) {
+      transition_out(itemtitle.$$.fragment, local);
+      transition_out(if_block1);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(itemtitle, detaching);
+      if (detaching)
+        detach(t0);
+      if (if_block0)
+        if_block0.d(detaching);
+      if (detaching)
+        detach(t1);
+      if (if_block1)
+        if_block1.d(detaching);
+      if (detaching)
+        detach(if_block1_anchor);
+    }
+  };
+}
+function create_if_block_8(ctx) {
+  let span;
+  let each_value_1 = ctx[1].tags;
+  let each_blocks = [];
+  for (let i = 0; i < each_value_1.length; i += 1) {
+    each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+  }
+  return {
+    c() {
+      span = element("span");
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+    },
+    m(target, anchor) {
+      insert(target, span, anchor);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].m(span, null);
+      }
+    },
+    p(ctx2, dirty) {
+      if (dirty & 2) {
+        each_value_1 = ctx2[1].tags;
+        let i;
+        for (i = 0; i < each_value_1.length; i += 1) {
+          const child_ctx = get_each_context_1(ctx2, each_value_1, i);
+          if (each_blocks[i]) {
+            each_blocks[i].p(child_ctx, dirty);
+          } else {
+            each_blocks[i] = create_each_block_1(child_ctx);
+            each_blocks[i].c();
+            each_blocks[i].m(span, null);
+          }
+        }
+        for (; i < each_blocks.length; i += 1) {
+          each_blocks[i].d(1);
+        }
+        each_blocks.length = each_value_1.length;
+      }
+    },
+    d(detaching) {
+      if (detaching)
+        detach(span);
+      destroy_each(each_blocks, detaching);
+    }
+  };
+}
+function create_each_block_1(ctx) {
+  let t0;
+  let a;
+  let t1_value = ctx[6] + "";
+  let t1;
+  let a_href_value;
+  return {
+    c() {
+      t0 = text("\xA0");
+      a = element("a");
+      t1 = text(t1_value);
+      attr(a, "class", "tag rss-tag");
+      attr(a, "href", a_href_value = "#" + ctx[6]);
+    },
+    m(target, anchor) {
+      insert(target, t0, anchor);
+      insert(target, a, anchor);
+      append(a, t1);
+    },
+    p(ctx2, dirty) {
+      if (dirty & 2 && t1_value !== (t1_value = ctx2[6] + ""))
+        set_data(t1, t1_value);
+      if (dirty & 2 && a_href_value !== (a_href_value = "#" + ctx2[6])) {
+        attr(a, "href", a_href_value);
+      }
+    },
+    d(detaching) {
+      if (detaching)
+        detach(t0);
+      if (detaching)
+        detach(a);
+    }
+  };
+}
+function create_if_block_7(ctx) {
+  let img;
+  let img_src_value;
+  return {
+    c() {
+      img = element("img");
+      if (!src_url_equal(img.src, img_src_value = ctx[1].image))
+        attr(img, "src", img_src_value);
+      attr(img, "width", "250em");
+      attr(img, "alt", "Article");
+    },
+    m(target, anchor) {
+      insert(target, img, anchor);
+    },
+    p(ctx2, dirty) {
+      if (dirty & 2 && !src_url_equal(img.src, img_src_value = ctx2[1].image)) {
+        attr(img, "src", img_src_value);
+      }
+    },
+    d(detaching) {
+      if (detaching)
+        detach(img);
+    }
+  };
+}
+function create_if_block_6(ctx) {
+  let markdowncontent;
+  let current;
+  markdowncontent = new MarkdownContent_default({
+    props: { content: ctx[1].description }
+  });
+  return {
+    c() {
+      create_component(markdowncontent.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(markdowncontent, target, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const markdowncontent_changes = {};
+      if (dirty & 2)
+        markdowncontent_changes.content = ctx2[1].description;
+      markdowncontent.$set(markdowncontent_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(markdowncontent.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(markdowncontent.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(markdowncontent, detaching);
+    }
+  };
+}
+function create_if_block_4(ctx) {
   let span;
   let each_value = ctx[1].tags;
   let each_blocks = [];
@@ -9431,7 +10464,7 @@ function create_if_block_3(ctx) {
 function create_each_block(ctx) {
   let t0;
   let a;
-  let t1_value = ctx[7] + "";
+  let t1_value = ctx[6] + "";
   let t1;
   let a_href_value;
   return {
@@ -9440,7 +10473,7 @@ function create_each_block(ctx) {
       a = element("a");
       t1 = text(t1_value);
       attr(a, "class", "tag rss-tag");
-      attr(a, "href", a_href_value = "#" + ctx[7]);
+      attr(a, "href", a_href_value = "#" + ctx[6]);
     },
     m(target, anchor) {
       insert(target, t0, anchor);
@@ -9448,9 +10481,9 @@ function create_each_block(ctx) {
       append(a, t1);
     },
     p(ctx2, dirty) {
-      if (dirty & 2 && t1_value !== (t1_value = ctx2[7] + ""))
+      if (dirty & 2 && t1_value !== (t1_value = ctx2[6] + ""))
         set_data(t1, t1_value);
-      if (dirty & 2 && a_href_value !== (a_href_value = "#" + ctx2[7])) {
+      if (dirty & 2 && a_href_value !== (a_href_value = "#" + ctx2[6])) {
         attr(a, "href", a_href_value);
       }
     },
@@ -9462,10 +10495,10 @@ function create_each_block(ctx) {
     }
   };
 }
-function create_if_block_1(ctx) {
+function create_if_block_2(ctx) {
   let if_block_anchor;
   let current;
-  let if_block = ctx[1].description !== ctx[1].content && create_if_block_2(ctx);
+  let if_block = ctx[1].description !== ctx[1].content && create_if_block_3(ctx);
   return {
     c() {
       if (if_block)
@@ -9486,7 +10519,7 @@ function create_if_block_1(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block_2(ctx2);
+          if_block = create_if_block_3(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -9517,7 +10550,7 @@ function create_if_block_1(ctx) {
     }
   };
 }
-function create_if_block_2(ctx) {
+function create_if_block_3(ctx) {
   let htmltooltip;
   let current;
   htmltooltip = new HtmlTooltip_default({
@@ -9552,10 +10585,10 @@ function create_if_block_2(ctx) {
     }
   };
 }
-function create_fragment3(ctx) {
+function create_fragment5(ctx) {
   let if_block_anchor;
   let current;
-  let if_block = ctx[1] && create_if_block3(ctx);
+  let if_block = ctx[1] && create_if_block5(ctx);
   return {
     c() {
       if (if_block)
@@ -9576,7 +10609,7 @@ function create_fragment3(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block3(ctx2);
+          if_block = create_if_block5(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -9607,7 +10640,9 @@ function create_fragment3(ctx) {
     }
   };
 }
-function instance3($$self, $$props, $$invalidate) {
+function instance5($$self, $$props, $$invalidate) {
+  let $settingsStore;
+  component_subscribe($$self, settingsStore, ($$value) => $$invalidate(4, $settingsStore = $$value));
   let { plugin = null } = $$props;
   let { item = null } = $$props;
   let { items = null } = $$props;
@@ -9615,34 +10650,6 @@ function instance3($$self, $$props, $$invalidate) {
   function toggleHover() {
     $$invalidate(3, hover = !hover);
   }
-  function openMenu(e) {
-    return __awaiter(this, void 0, void 0, function* () {
-      if (e.ctrlKey && e.altKey) {
-        openInBrowser(item);
-        return;
-      }
-      if (e.ctrlKey) {
-        yield createNewNote(plugin, item);
-        return;
-      }
-      if (e.altKey) {
-        yield pasteToNote(plugin, item);
-        return;
-      }
-      const menu = new import_obsidian11.Menu(plugin.app);
-      Action.actions.forEach((action) => {
-        menu.addItem((menuItem) => {
-          menuItem.setIcon(action.icon).setTitle(action.name).onClick(() => __awaiter(this, void 0, void 0, function* () {
-            yield action.processor(plugin, item);
-          }));
-        });
-      });
-      menu.showAtPosition({ x: e.x, y: e.y });
-    });
-  }
-  const click_handler = () => {
-    new ItemModal(plugin, item, items).open();
-  };
   $$self.$$set = ($$props2) => {
     if ("plugin" in $$props2)
       $$invalidate(0, plugin = $$props2.plugin);
@@ -9651,18 +10658,18 @@ function instance3($$self, $$props, $$invalidate) {
     if ("items" in $$props2)
       $$invalidate(2, items = $$props2.items);
   };
-  return [plugin, item, items, hover, toggleHover, openMenu, click_handler];
+  return [plugin, item, items, hover, $settingsStore, toggleHover];
 }
 var ItemView = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance3, create_fragment3, safe_not_equal, { plugin: 0, item: 1, items: 2 });
+    init(this, options, instance5, create_fragment5, safe_not_equal, { plugin: 0, item: 1, items: 2 });
   }
 };
 var ItemView_default = ItemView;
 
 // src/view/FeedView.svelte
-var import_obsidian12 = __toModule(require("obsidian"));
+var import_obsidian13 = __toModule(require("obsidian"));
 function get_each_context2(ctx, list, i) {
   const child_ctx = ctx.slice();
   child_ctx[6] = list[i];
@@ -9690,7 +10697,9 @@ function create_else_block(ctx) {
   const if_block_creators = [create_if_block_32, create_else_block_1];
   const if_blocks = [];
   function select_block_type_1(ctx2, dirty) {
-    if (show_if_1 == null || dirty & 5)
+    if (dirty & 5)
+      show_if_1 = null;
+    if (show_if_1 == null)
       show_if_1 = !!ctx2[2].contains(ctx2[0].name);
     if (show_if_1)
       return 0;
@@ -9699,7 +10708,7 @@ function create_else_block(ctx) {
   current_block_type_index = select_block_type_1(ctx, -1);
   if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
   let if_block1 = ctx[0].image && create_if_block_22(ctx);
-  let if_block2 = show_if && create_if_block_12(ctx);
+  let if_block2 = show_if && create_if_block_13(ctx);
   return {
     c() {
       div3 = element("div");
@@ -9790,7 +10799,7 @@ function create_else_block(ctx) {
             transition_in(if_block2, 1);
           }
         } else {
-          if_block2 = create_if_block_12(ctx2);
+          if_block2 = create_if_block_13(ctx2);
           if_block2.c();
           transition_in(if_block2, 1);
           if_block2.m(div2, null);
@@ -9828,7 +10837,7 @@ function create_else_block(ctx) {
     }
   };
 }
-function create_if_block4(ctx) {
+function create_if_block6(ctx) {
   let p;
   return {
     c() {
@@ -9934,7 +10943,7 @@ function create_if_block_22(ctx) {
     }
   };
 }
-function create_if_block_12(ctx) {
+function create_if_block_13(ctx) {
   let div;
   let current;
   let each_value = ctx[0].items;
@@ -10061,12 +11070,12 @@ function create_each_block2(ctx) {
     }
   };
 }
-function create_fragment4(ctx) {
+function create_fragment6(ctx) {
   let current_block_type_index;
   let if_block;
   let if_block_anchor;
   let current;
-  const if_block_creators = [create_if_block4, create_else_block];
+  const if_block_creators = [create_if_block6, create_else_block];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (!ctx2[0])
@@ -10124,7 +11133,7 @@ function create_fragment4(ctx) {
     }
   };
 }
-function instance4($$self, $$props, $$invalidate) {
+function instance6($$self, $$props, $$invalidate) {
   let { feed = null } = $$props;
   let { plugin } = $$props;
   let folded = [];
@@ -10143,7 +11152,7 @@ function instance4($$self, $$props, $$invalidate) {
   }
   function openMenu(e) {
     return __awaiter(this, void 0, void 0, function* () {
-      const menu = new import_obsidian12.Menu(plugin.app);
+      const menu = new import_obsidian13.Menu(plugin.app);
       menu.addItem((menuItem) => {
         menuItem.setIcon("create-new").setTitle(t("create_all")).onClick(() => __awaiter(this, void 0, void 0, function* () {
           for (let item of feed.items) {
@@ -10192,41 +11201,98 @@ function instance4($$self, $$props, $$invalidate) {
 var FeedView = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance4, create_fragment4, safe_not_equal, { feed: 0, plugin: 1 });
+    init(this, options, instance6, create_fragment6, safe_not_equal, { feed: 0, plugin: 1 });
   }
 };
 var FeedView_default = FeedView;
 
 // src/view/FolderView.svelte
-var import_obsidian13 = __toModule(require("obsidian"));
+var import_obsidian15 = __toModule(require("obsidian"));
+
+// src/view/TopRowButtons.svelte
+var import_obsidian14 = __toModule(require("obsidian"));
+function create_fragment7(ctx) {
+  let span;
+  let buttons_action;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      span = element("span");
+    },
+    m(target, anchor) {
+      insert(target, span, anchor);
+      if (!mounted) {
+        dispose = action_destroyer(buttons_action = ctx[1].call(null, span, ctx[0]));
+        mounted = true;
+      }
+    },
+    p(ctx2, [dirty]) {
+      if (buttons_action && is_function(buttons_action.update) && dirty & 1)
+        buttons_action.update.call(null, ctx2[0]);
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching)
+        detach(span);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function instance7($$self, $$props, $$invalidate) {
+  let { plugin } = $$props;
+  const buttons = (node, plugin2) => {
+    new import_obsidian14.Setting(node).addExtraButton((button) => {
+      button.setIcon("sync").setTooltip(t("refresh_feeds")).onClick(() => __awaiter(void 0, void 0, void 0, function* () {
+        yield plugin2.updateFeeds();
+      }));
+    });
+  };
+  $$self.$$set = ($$props2) => {
+    if ("plugin" in $$props2)
+      $$invalidate(0, plugin = $$props2.plugin);
+  };
+  return [plugin, buttons];
+}
+var TopRowButtons = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance7, create_fragment7, safe_not_equal, { plugin: 0 });
+  }
+};
+var TopRowButtons_default = TopRowButtons;
+
+// src/view/FolderView.svelte
 function get_each_context3(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[13] = list[i];
+  child_ctx[15] = list[i];
   return child_ctx;
 }
-function get_each_context_1(ctx, list, i) {
+function get_each_context_12(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[16] = list[i];
+  child_ctx[18] = list[i];
   return child_ctx;
 }
 function get_each_context_2(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[13] = list[i];
+  child_ctx[15] = list[i];
   return child_ctx;
 }
 function get_each_context_3(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[21] = list[i];
+  child_ctx[23] = list[i];
   return child_ctx;
 }
 function get_each_context_4(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[24] = list[i];
+  child_ctx[26] = list[i];
   return child_ctx;
 }
 function get_each_context_5(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[24] = list[i];
+  child_ctx[26] = list[i];
   return child_ctx;
 }
 function create_else_block2(ctx) {
@@ -10234,9 +11300,9 @@ function create_else_block2(ctx) {
   let t0;
   let t1;
   let current;
-  let if_block0 = ctx[3] && create_if_block_7(ctx);
-  let if_block1 = !ctx[2] && create_if_block_6(ctx);
-  let if_block2 = ctx[2] && create_if_block_18(ctx);
+  let if_block0 = ctx[3] && create_if_block_9(ctx);
+  let if_block1 = !ctx[2] && create_if_block_82(ctx);
+  let if_block2 = ctx[2] && create_if_block_110(ctx);
   return {
     c() {
       div = element("div");
@@ -10248,6 +11314,7 @@ function create_else_block2(ctx) {
       t1 = space();
       if (if_block2)
         if_block2.c();
+      attr(div, "class", "rss-view");
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -10269,7 +11336,7 @@ function create_else_block2(ctx) {
             transition_in(if_block0, 1);
           }
         } else {
-          if_block0 = create_if_block_7(ctx2);
+          if_block0 = create_if_block_9(ctx2);
           if_block0.c();
           transition_in(if_block0, 1);
           if_block0.m(div, t0);
@@ -10283,8 +11350,9 @@ function create_else_block2(ctx) {
       }
       if (!ctx2[2]) {
         if (if_block1) {
+          if_block1.p(ctx2, dirty);
         } else {
-          if_block1 = create_if_block_6(ctx2);
+          if_block1 = create_if_block_82(ctx2);
           if_block1.c();
           if_block1.m(div, t1);
         }
@@ -10299,7 +11367,7 @@ function create_else_block2(ctx) {
             transition_in(if_block2, 1);
           }
         } else {
-          if_block2 = create_if_block_18(ctx2);
+          if_block2 = create_if_block_110(ctx2);
           if_block2.c();
           transition_in(if_block2, 1);
           if_block2.m(div, null);
@@ -10336,44 +11404,45 @@ function create_else_block2(ctx) {
     }
   };
 }
-function create_if_block5(ctx) {
-  let p;
+function create_if_block7(ctx) {
+  let h1;
   return {
     c() {
-      p = element("p");
-      p.textContent = "Loading";
+      h1 = element("h1");
+      h1.textContent = `${t("loading")}`;
     },
     m(target, anchor) {
-      insert(target, p, anchor);
+      insert(target, h1, anchor);
     },
     p: noop,
     i: noop,
     o: noop,
     d(detaching) {
       if (detaching)
-        detach(p);
+        detach(h1);
     }
   };
 }
-function create_if_block_7(ctx) {
-  let div2;
+function create_if_block_9(ctx) {
   let div1;
+  let div0;
   let span;
   let show_if_1;
   let current_block_type_index;
   let if_block0;
   let t0;
-  let div0;
-  let div1_class_value;
-  let t2;
+  let div0_class_value;
+  let t1;
   let show_if = !ctx[1].contains("rss-filters");
   let current;
   let mounted;
   let dispose;
-  const if_block_creators = [create_if_block_17, create_else_block_5];
+  const if_block_creators = [create_if_block_20, create_else_block_8];
   const if_blocks = [];
   function select_block_type_1(ctx2, dirty) {
-    if (show_if_1 == null || dirty & 2)
+    if (dirty & 2)
+      show_if_1 = null;
+    if (show_if_1 == null)
       show_if_1 = !!ctx2[1].contains("rss-filters");
     if (show_if_1)
       return 0;
@@ -10381,36 +11450,42 @@ function create_if_block_7(ctx) {
   }
   current_block_type_index = select_block_type_1(ctx, -1);
   if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-  let if_block1 = show_if && create_if_block_8(ctx);
+  function select_block_type_2(ctx2, dirty) {
+    if (ctx2[4].renamedText.filtered_folders !== "")
+      return create_if_block_19;
+    return create_else_block_7;
+  }
+  let current_block_type = select_block_type_2(ctx, -1);
+  let if_block1 = current_block_type(ctx);
+  let if_block2 = show_if && create_if_block_10(ctx);
   return {
     c() {
-      div2 = element("div");
       div1 = element("div");
+      div0 = element("div");
       span = element("span");
       if_block0.c();
       t0 = space();
-      div0 = element("div");
-      div0.textContent = `${t("filtered_folders")}`;
-      t2 = space();
-      if (if_block1)
-        if_block1.c();
+      if_block1.c();
+      t1 = space();
+      if (if_block2)
+        if_block2.c();
       attr(span, "class", "tree-item-self is-clickable");
-      attr(div1, "class", div1_class_value = "" + ((ctx[1].contains("rss-filters") ? "is-collapsed" : "") + " tree-item is-clickable"));
-      attr(div2, "class", "rss-filtered-folders");
+      attr(div0, "class", div0_class_value = "" + ((ctx[1].contains("rss-filters") ? "is-collapsed" : "") + " tree-item is-clickable"));
+      attr(div1, "class", "rss-filtered-folders");
     },
     m(target, anchor) {
-      insert(target, div2, anchor);
-      append(div2, div1);
-      append(div1, span);
+      insert(target, div1, anchor);
+      append(div1, div0);
+      append(div0, span);
       if_blocks[current_block_type_index].m(span, null);
       append(span, t0);
-      append(span, div0);
-      append(div2, t2);
-      if (if_block1)
-        if_block1.m(div2, null);
+      if_block1.m(span, null);
+      append(div1, t1);
+      if (if_block2)
+        if_block2.m(div1, null);
       current = true;
       if (!mounted) {
-        dispose = listen(div1, "click", ctx[6]);
+        dispose = listen(div0, "click", ctx[8]);
         mounted = true;
       }
     },
@@ -10432,27 +11507,37 @@ function create_if_block_7(ctx) {
         transition_in(if_block0, 1);
         if_block0.m(span, t0);
       }
-      if (!current || dirty & 2 && div1_class_value !== (div1_class_value = "" + ((ctx2[1].contains("rss-filters") ? "is-collapsed" : "") + " tree-item is-clickable"))) {
-        attr(div1, "class", div1_class_value);
+      if (current_block_type === (current_block_type = select_block_type_2(ctx2, dirty)) && if_block1) {
+        if_block1.p(ctx2, dirty);
+      } else {
+        if_block1.d(1);
+        if_block1 = current_block_type(ctx2);
+        if (if_block1) {
+          if_block1.c();
+          if_block1.m(span, null);
+        }
+      }
+      if (!current || dirty & 2 && div0_class_value !== (div0_class_value = "" + ((ctx2[1].contains("rss-filters") ? "is-collapsed" : "") + " tree-item is-clickable"))) {
+        attr(div0, "class", div0_class_value);
       }
       if (dirty & 2)
         show_if = !ctx2[1].contains("rss-filters");
       if (show_if) {
-        if (if_block1) {
-          if_block1.p(ctx2, dirty);
+        if (if_block2) {
+          if_block2.p(ctx2, dirty);
           if (dirty & 2) {
-            transition_in(if_block1, 1);
+            transition_in(if_block2, 1);
           }
         } else {
-          if_block1 = create_if_block_8(ctx2);
-          if_block1.c();
-          transition_in(if_block1, 1);
-          if_block1.m(div2, null);
+          if_block2 = create_if_block_10(ctx2);
+          if_block2.c();
+          transition_in(if_block2, 1);
+          if_block2.m(div1, null);
         }
-      } else if (if_block1) {
+      } else if (if_block2) {
         group_outros();
-        transition_out(if_block1, 1, 1, () => {
-          if_block1 = null;
+        transition_out(if_block2, 1, 1, () => {
+          if_block2 = null;
         });
         check_outros();
       }
@@ -10461,26 +11546,27 @@ function create_if_block_7(ctx) {
       if (current)
         return;
       transition_in(if_block0);
-      transition_in(if_block1);
+      transition_in(if_block2);
       current = true;
     },
     o(local) {
       transition_out(if_block0);
-      transition_out(if_block1);
+      transition_out(if_block2);
       current = false;
     },
     d(detaching) {
       if (detaching)
-        detach(div2);
+        detach(div1);
       if_blocks[current_block_type_index].d();
-      if (if_block1)
-        if_block1.d();
+      if_block1.d();
+      if (if_block2)
+        if_block2.d();
       mounted = false;
       dispose();
     }
   };
 }
-function create_else_block_5(ctx) {
+function create_else_block_8(ctx) {
   let iconcomponent;
   let current;
   iconcomponent = new IconComponent_default({
@@ -10509,7 +11595,7 @@ function create_else_block_5(ctx) {
     }
   };
 }
-function create_if_block_17(ctx) {
+function create_if_block_20(ctx) {
   let iconcomponent;
   let current;
   iconcomponent = new IconComponent_default({
@@ -10538,7 +11624,47 @@ function create_if_block_17(ctx) {
     }
   };
 }
-function create_if_block_8(ctx) {
+function create_else_block_7(ctx) {
+  let span;
+  return {
+    c() {
+      span = element("span");
+      span.textContent = `${t("filtered_folders")}`;
+    },
+    m(target, anchor) {
+      insert(target, span, anchor);
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching)
+        detach(span);
+    }
+  };
+}
+function create_if_block_19(ctx) {
+  let span;
+  let t_1_value = ctx[4].renamedText.filtered_folders + "";
+  let t_1;
+  return {
+    c() {
+      span = element("span");
+      t_1 = text(t_1_value);
+    },
+    m(target, anchor) {
+      insert(target, span, anchor);
+      append(span, t_1);
+    },
+    p(ctx2, dirty) {
+      if (dirty & 16 && t_1_value !== (t_1_value = ctx2[4].renamedText.filtered_folders + ""))
+        set_data(t_1, t_1_value);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(span);
+    }
+  };
+}
+function create_if_block_10(ctx) {
   let span;
   let current;
   let each_value_2 = buildTreeStructure(ctx[3]);
@@ -10564,7 +11690,7 @@ function create_if_block_8(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty & 27) {
+      if (dirty & 171) {
         each_value_2 = buildTreeStructure(ctx2[3]);
         let i;
         for (i = 0; i < each_value_2.length; i += 1) {
@@ -10608,7 +11734,7 @@ function create_if_block_8(ctx) {
     }
   };
 }
-function create_else_block_4(ctx) {
+function create_else_block_6(ctx) {
   let iconcomponent;
   let current;
   iconcomponent = new IconComponent_default({
@@ -10637,7 +11763,7 @@ function create_else_block_4(ctx) {
     }
   };
 }
-function create_if_block_16(ctx) {
+function create_if_block_18(ctx) {
   let iconcomponent;
   let current;
   iconcomponent = new IconComponent_default({
@@ -10666,11 +11792,11 @@ function create_if_block_16(ctx) {
     }
   };
 }
-function create_if_block_14(ctx) {
-  let show_if = !ctx[1].contains("rss-filters-" + ctx[13].name);
+function create_if_block_16(ctx) {
+  let show_if = !ctx[1].contains("rss-filters-" + ctx[15].name);
   let if_block_anchor;
   let current;
-  let if_block = show_if && create_if_block_15(ctx);
+  let if_block = show_if && create_if_block_17(ctx);
   return {
     c() {
       if (if_block)
@@ -10685,7 +11811,7 @@ function create_if_block_14(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 10)
-        show_if = !ctx2[1].contains("rss-filters-" + ctx2[13].name);
+        show_if = !ctx2[1].contains("rss-filters-" + ctx2[15].name);
       if (show_if) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -10693,7 +11819,7 @@ function create_if_block_14(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block_15(ctx2);
+          if_block = create_if_block_17(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -10724,10 +11850,10 @@ function create_if_block_14(ctx) {
     }
   };
 }
-function create_if_block_15(ctx) {
+function create_if_block_17(ctx) {
   let div;
   let current;
-  let each_value_5 = ctx[13].filter.items.items;
+  let each_value_5 = ctx[15].filter.items.items;
   let each_blocks = [];
   for (let i = 0; i < each_value_5.length; i += 1) {
     each_blocks[i] = create_each_block_5(get_each_context_5(ctx, each_value_5, i));
@@ -10752,7 +11878,7 @@ function create_if_block_15(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 9) {
-        each_value_5 = ctx2[13].filter.items.items;
+        each_value_5 = ctx2[15].filter.items.items;
         let i;
         for (i = 0; i < each_value_5.length; i += 1) {
           const child_ctx = get_each_context_5(ctx2, each_value_5, i);
@@ -10803,9 +11929,9 @@ function create_each_block_5(ctx) {
   let current;
   itemview = new ItemView_default({
     props: {
-      item: ctx[24],
+      item: ctx[26],
       plugin: ctx[0],
-      items: ctx[13].filter.items.items
+      items: ctx[15].filter.items.items
     }
   });
   return {
@@ -10827,11 +11953,11 @@ function create_each_block_5(ctx) {
     p(ctx2, dirty) {
       const itemview_changes = {};
       if (dirty & 8)
-        itemview_changes.item = ctx2[24];
+        itemview_changes.item = ctx2[26];
       if (dirty & 1)
         itemview_changes.plugin = ctx2[0];
       if (dirty & 8)
-        itemview_changes.items = ctx2[13].filter.items.items;
+        itemview_changes.items = ctx2[15].filter.items.items;
       itemview.$set(itemview_changes);
     },
     i(local) {
@@ -10851,11 +11977,11 @@ function create_each_block_5(ctx) {
     }
   };
 }
-function create_if_block_9(ctx) {
-  let show_if = !ctx[1].contains("rss-filters-" + ctx[13].name);
+function create_if_block_11(ctx) {
+  let show_if = !ctx[1].contains("rss-filters-" + ctx[15].name);
   let if_block_anchor;
   let current;
-  let if_block = show_if && create_if_block_10(ctx);
+  let if_block = show_if && create_if_block_122(ctx);
   return {
     c() {
       if (if_block)
@@ -10870,7 +11996,7 @@ function create_if_block_9(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 10)
-        show_if = !ctx2[1].contains("rss-filters-" + ctx2[13].name);
+        show_if = !ctx2[1].contains("rss-filters-" + ctx2[15].name);
       if (show_if) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -10878,7 +12004,7 @@ function create_if_block_9(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block_10(ctx2);
+          if_block = create_if_block_122(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -10909,10 +12035,10 @@ function create_if_block_9(ctx) {
     }
   };
 }
-function create_if_block_10(ctx) {
+function create_if_block_122(ctx) {
   let each_1_anchor;
   let current;
-  let each_value_3 = ctx[13].children;
+  let each_value_3 = ctx[15].children;
   let each_blocks = [];
   for (let i = 0; i < each_value_3.length; i += 1) {
     each_blocks[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
@@ -10935,8 +12061,8 @@ function create_if_block_10(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty & 27) {
-        each_value_3 = ctx2[13].children;
+      if (dirty & 43) {
+        each_value_3 = ctx2[15].children;
         let i;
         for (i = 0; i < each_value_3.length; i += 1) {
           const child_ctx = get_each_context_3(ctx2, each_value_3, i);
@@ -10979,7 +12105,7 @@ function create_if_block_10(ctx) {
     }
   };
 }
-function create_else_block_3(ctx) {
+function create_else_block_5(ctx) {
   let iconcomponent;
   let current;
   iconcomponent = new IconComponent_default({
@@ -11008,7 +12134,7 @@ function create_else_block_3(ctx) {
     }
   };
 }
-function create_if_block_13(ctx) {
+function create_if_block_15(ctx) {
   let iconcomponent;
   let current;
   iconcomponent = new IconComponent_default({
@@ -11037,11 +12163,11 @@ function create_if_block_13(ctx) {
     }
   };
 }
-function create_if_block_11(ctx) {
-  let show_if = !ctx[1].contains("rss-filters-" + ctx[21].filter.filter.name);
+function create_if_block_132(ctx) {
+  let show_if = !ctx[1].contains("rss-filters-" + ctx[23].filter.filter.name);
   let if_block_anchor;
   let current;
-  let if_block = show_if && create_if_block_122(ctx);
+  let if_block = show_if && create_if_block_14(ctx);
   return {
     c() {
       if (if_block)
@@ -11056,7 +12182,7 @@ function create_if_block_11(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 10)
-        show_if = !ctx2[1].contains("rss-filters-" + ctx2[21].filter.filter.name);
+        show_if = !ctx2[1].contains("rss-filters-" + ctx2[23].filter.filter.name);
       if (show_if) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -11064,7 +12190,7 @@ function create_if_block_11(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block_122(ctx2);
+          if_block = create_if_block_14(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -11095,10 +12221,10 @@ function create_if_block_11(ctx) {
     }
   };
 }
-function create_if_block_122(ctx) {
+function create_if_block_14(ctx) {
   let div;
   let current;
-  let each_value_4 = ctx[21].filter.items.items;
+  let each_value_4 = ctx[23].filter.items.items;
   let each_blocks = [];
   for (let i = 0; i < each_value_4.length; i += 1) {
     each_blocks[i] = create_each_block_4(get_each_context_4(ctx, each_value_4, i));
@@ -11123,7 +12249,7 @@ function create_if_block_122(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 9) {
-        each_value_4 = ctx2[21].filter.items.items;
+        each_value_4 = ctx2[23].filter.items.items;
         let i;
         for (i = 0; i < each_value_4.length; i += 1) {
           const child_ctx = get_each_context_4(ctx2, each_value_4, i);
@@ -11174,9 +12300,9 @@ function create_each_block_4(ctx) {
   let current;
   itemview = new ItemView_default({
     props: {
-      item: ctx[24],
+      item: ctx[26],
       plugin: ctx[0],
-      items: ctx[21].filter.items.items
+      items: ctx[23].filter.items.items
     }
   });
   return {
@@ -11198,11 +12324,11 @@ function create_each_block_4(ctx) {
     p(ctx2, dirty) {
       const itemview_changes = {};
       if (dirty & 8)
-        itemview_changes.item = ctx2[24];
+        itemview_changes.item = ctx2[26];
       if (dirty & 1)
         itemview_changes.plugin = ctx2[0];
       if (dirty & 8)
-        itemview_changes.items = ctx2[21].filter.items.items;
+        itemview_changes.items = ctx2[23].filter.items.items;
       itemview.$set(itemview_changes);
     },
     i(local) {
@@ -11230,7 +12356,7 @@ function create_each_block_3(ctx) {
   let if_block0;
   let t0;
   let span;
-  let t1_value = ctx[21].name + "";
+  let t1_value = ctx[23].name + "";
   let t1;
   let div0_class_value;
   let t2;
@@ -11238,21 +12364,23 @@ function create_each_block_3(ctx) {
   let current;
   let mounted;
   let dispose;
-  const if_block_creators = [create_if_block_13, create_else_block_3];
+  const if_block_creators = [create_if_block_15, create_else_block_5];
   const if_blocks = [];
-  function select_block_type_3(ctx2, dirty) {
-    if (show_if == null || dirty & 10)
-      show_if = !!ctx2[1].contains("rss-filters-" + ctx2[21].filter.filter.name);
+  function select_block_type_4(ctx2, dirty) {
+    if (dirty & 10)
+      show_if = null;
+    if (show_if == null)
+      show_if = !!ctx2[1].contains("rss-filters-" + ctx2[23].filter.filter.name);
     if (show_if)
       return 0;
     return 1;
   }
-  current_block_type_index = select_block_type_3(ctx, -1);
+  current_block_type_index = select_block_type_4(ctx, -1);
   if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
   function click_handler_2() {
-    return ctx[8](ctx[21]);
+    return ctx[11](ctx[23]);
   }
-  let if_block1 = ctx[21].filter !== void 0 && create_if_block_11(ctx);
+  let if_block1 = ctx[23].filter !== void 0 && create_if_block_132(ctx);
   return {
     c() {
       div1 = element("div");
@@ -11265,7 +12393,7 @@ function create_each_block_3(ctx) {
       if (if_block1)
         if_block1.c();
       t3 = space();
-      attr(div0, "class", div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[21].filter.filter.name) ? "is-collapsed" : "") + " tree-item-self is-clickable"));
+      attr(div0, "class", div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[23].filter.filter.name) ? "is-collapsed" : "") + " tree-item-self is-clickable"));
       attr(div1, "class", "tree-item-children");
     },
     m(target, anchor) {
@@ -11288,7 +12416,7 @@ function create_each_block_3(ctx) {
     p(new_ctx, dirty) {
       ctx = new_ctx;
       let previous_block_index = current_block_type_index;
-      current_block_type_index = select_block_type_3(ctx, dirty);
+      current_block_type_index = select_block_type_4(ctx, dirty);
       if (current_block_type_index !== previous_block_index) {
         group_outros();
         transition_out(if_blocks[previous_block_index], 1, 1, () => {
@@ -11304,19 +12432,19 @@ function create_each_block_3(ctx) {
         transition_in(if_block0, 1);
         if_block0.m(div0, t0);
       }
-      if ((!current || dirty & 8) && t1_value !== (t1_value = ctx[21].name + ""))
+      if ((!current || dirty & 8) && t1_value !== (t1_value = ctx[23].name + ""))
         set_data(t1, t1_value);
-      if (!current || dirty & 10 && div0_class_value !== (div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[21].filter.filter.name) ? "is-collapsed" : "") + " tree-item-self is-clickable"))) {
+      if (!current || dirty & 10 && div0_class_value !== (div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[23].filter.filter.name) ? "is-collapsed" : "") + " tree-item-self is-clickable"))) {
         attr(div0, "class", div0_class_value);
       }
-      if (ctx[21].filter !== void 0) {
+      if (ctx[23].filter !== void 0) {
         if (if_block1) {
           if_block1.p(ctx, dirty);
           if (dirty & 8) {
             transition_in(if_block1, 1);
           }
         } else {
-          if_block1 = create_if_block_11(ctx);
+          if_block1 = create_if_block_132(ctx);
           if_block1.c();
           transition_in(if_block1, 1);
           if_block1.m(div1, t3);
@@ -11361,7 +12489,7 @@ function create_each_block_2(ctx) {
   let if_block0;
   let t0;
   let span0;
-  let t1_value = ctx[13].name + "";
+  let t1_value = ctx[15].name + "";
   let t1;
   let div0_class_value;
   let t2;
@@ -11370,22 +12498,27 @@ function create_each_block_2(ctx) {
   let current;
   let mounted;
   let dispose;
-  const if_block_creators = [create_if_block_16, create_else_block_4];
+  const if_block_creators = [create_if_block_18, create_else_block_6];
   const if_blocks = [];
-  function select_block_type_2(ctx2, dirty) {
-    if (show_if == null || dirty & 10)
-      show_if = !!ctx2[1].contains("rss-filters-" + ctx2[13].name);
+  function select_block_type_3(ctx2, dirty) {
+    if (dirty & 10)
+      show_if = null;
+    if (show_if == null)
+      show_if = !!ctx2[1].contains("rss-filters-" + ctx2[15].name);
     if (show_if)
       return 0;
     return 1;
   }
-  current_block_type_index = select_block_type_2(ctx, -1);
+  current_block_type_index = select_block_type_3(ctx, -1);
   if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-  function click_handler_1() {
-    return ctx[7](ctx[13]);
+  function contextmenu_handler(...args) {
+    return ctx[9](ctx[15], ...args);
   }
-  let if_block1 = ctx[13].filter !== void 0 && create_if_block_14(ctx);
-  let if_block2 = ctx[13].children && create_if_block_9(ctx);
+  function click_handler_1() {
+    return ctx[10](ctx[15]);
+  }
+  let if_block1 = ctx[15].filter !== void 0 && create_if_block_16(ctx);
+  let if_block2 = ctx[15].children && create_if_block_11(ctx);
   return {
     c() {
       div1 = element("div");
@@ -11403,7 +12536,7 @@ function create_each_block_2(ctx) {
         if_block2.c();
       t4 = space();
       attr(span1, "class", "tree-item-self is-clickable");
-      attr(div0, "class", div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[13].name) ? "is-collapsed" : "") + " tree-item is-clickable"));
+      attr(div0, "class", div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[15].name) ? "is-collapsed" : "") + " tree-item is-clickable"));
       attr(div1, "class", "tree-item-children");
     },
     m(target, anchor) {
@@ -11423,14 +12556,17 @@ function create_each_block_2(ctx) {
       append(div1, t4);
       current = true;
       if (!mounted) {
-        dispose = listen(div0, "click", click_handler_1);
+        dispose = [
+          listen(span1, "contextmenu", contextmenu_handler),
+          listen(div0, "click", click_handler_1)
+        ];
         mounted = true;
       }
     },
     p(new_ctx, dirty) {
       ctx = new_ctx;
       let previous_block_index = current_block_type_index;
-      current_block_type_index = select_block_type_2(ctx, dirty);
+      current_block_type_index = select_block_type_3(ctx, dirty);
       if (current_block_type_index !== previous_block_index) {
         group_outros();
         transition_out(if_blocks[previous_block_index], 1, 1, () => {
@@ -11446,19 +12582,19 @@ function create_each_block_2(ctx) {
         transition_in(if_block0, 1);
         if_block0.m(span1, t0);
       }
-      if ((!current || dirty & 8) && t1_value !== (t1_value = ctx[13].name + ""))
+      if ((!current || dirty & 8) && t1_value !== (t1_value = ctx[15].name + ""))
         set_data(t1, t1_value);
-      if (!current || dirty & 10 && div0_class_value !== (div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[13].name) ? "is-collapsed" : "") + " tree-item is-clickable"))) {
+      if (!current || dirty & 10 && div0_class_value !== (div0_class_value = "" + ((ctx[1].contains("rss-filters-" + ctx[15].name) ? "is-collapsed" : "") + " tree-item is-clickable"))) {
         attr(div0, "class", div0_class_value);
       }
-      if (ctx[13].filter !== void 0) {
+      if (ctx[15].filter !== void 0) {
         if (if_block1) {
           if_block1.p(ctx, dirty);
           if (dirty & 8) {
             transition_in(if_block1, 1);
           }
         } else {
-          if_block1 = create_if_block_14(ctx);
+          if_block1 = create_if_block_16(ctx);
           if_block1.c();
           transition_in(if_block1, 1);
           if_block1.m(div1, t3);
@@ -11470,14 +12606,14 @@ function create_each_block_2(ctx) {
         });
         check_outros();
       }
-      if (ctx[13].children) {
+      if (ctx[15].children) {
         if (if_block2) {
           if_block2.p(ctx, dirty);
           if (dirty & 8) {
             transition_in(if_block2, 1);
           }
         } else {
-          if_block2 = create_if_block_9(ctx);
+          if_block2 = create_if_block_11(ctx);
           if_block2.c();
           transition_in(if_block2, 1);
           if_block2.m(div1, t4);
@@ -11513,88 +12649,96 @@ function create_each_block_2(ctx) {
       if (if_block2)
         if_block2.d();
       mounted = false;
-      dispose();
+      run_all(dispose);
     }
   };
 }
-function create_if_block_6(ctx) {
+function create_if_block_82(ctx) {
   let h1;
   return {
     c() {
       h1 = element("h1");
-      h1.textContent = "No feeds configured";
+      h1.textContent = `${t("loading")}`;
     },
     m(target, anchor) {
       insert(target, h1, anchor);
     },
+    p: noop,
     d(detaching) {
       if (detaching)
         detach(h1);
     }
   };
 }
-function create_if_block_18(ctx) {
+function create_if_block_110(ctx) {
   let div1;
   let div0;
-  let span1;
+  let span;
   let show_if_1;
   let current_block_type_index;
   let if_block0;
   let t0;
-  let span0;
   let div0_class_value;
-  let t2;
+  let t1;
   let show_if = !ctx[1].contains("rss-folders");
   let current;
   let mounted;
   let dispose;
-  const if_block_creators = [create_if_block_52, create_else_block_2];
+  const if_block_creators = [create_if_block_72, create_else_block_4];
   const if_blocks = [];
-  function select_block_type_4(ctx2, dirty) {
-    if (show_if_1 == null || dirty & 2)
+  function select_block_type_5(ctx2, dirty) {
+    if (dirty & 2)
+      show_if_1 = null;
+    if (show_if_1 == null)
       show_if_1 = !!ctx2[1].contains("rss-folders");
     if (show_if_1)
       return 0;
     return 1;
   }
-  current_block_type_index = select_block_type_4(ctx, -1);
+  current_block_type_index = select_block_type_5(ctx, -1);
   if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-  let if_block1 = show_if && create_if_block_23(ctx);
+  function select_block_type_6(ctx2, dirty) {
+    if (ctx2[4].renamedText.folders !== "")
+      return create_if_block_62;
+    return create_else_block_3;
+  }
+  let current_block_type = select_block_type_6(ctx, -1);
+  let if_block1 = current_block_type(ctx);
+  let if_block2 = show_if && create_if_block_23(ctx);
   return {
     c() {
       div1 = element("div");
       div0 = element("div");
-      span1 = element("span");
+      span = element("span");
       if_block0.c();
       t0 = space();
-      span0 = element("span");
-      span0.textContent = `${t("folders")}`;
-      t2 = space();
-      if (if_block1)
-        if_block1.c();
-      attr(span1, "class", "tree-item-self is-clickable");
+      if_block1.c();
+      t1 = space();
+      if (if_block2)
+        if_block2.c();
+      attr(span, "class", "tree-item-self is-clickable");
       attr(div0, "class", div0_class_value = "" + ((ctx[1].contains("rss-folders") ? "is-collapsed" : "") + " tree-item is-clickable"));
       attr(div1, "class", "rss-feeds-folders");
     },
     m(target, anchor) {
       insert(target, div1, anchor);
       append(div1, div0);
-      append(div0, span1);
-      if_blocks[current_block_type_index].m(span1, null);
-      append(span1, t0);
-      append(span1, span0);
-      append(div1, t2);
-      if (if_block1)
-        if_block1.m(div1, null);
+      append(div0, span);
+      if_blocks[current_block_type_index].m(span, null);
+      append(span, t0);
+      if_block1.m(span, null);
+      append(div1, t1);
+      if (if_block2)
+        if_block2.m(div1, null);
       current = true;
       if (!mounted) {
-        dispose = listen(div0, "click", ctx[9]);
+        dispose = listen(div0, "click", ctx[12]);
         mounted = true;
       }
     },
     p(ctx2, dirty) {
       let previous_block_index = current_block_type_index;
-      current_block_type_index = select_block_type_4(ctx2, dirty);
+      current_block_type_index = select_block_type_5(ctx2, dirty);
       if (current_block_type_index !== previous_block_index) {
         group_outros();
         transition_out(if_blocks[previous_block_index], 1, 1, () => {
@@ -11608,7 +12752,17 @@ function create_if_block_18(ctx) {
         } else {
         }
         transition_in(if_block0, 1);
-        if_block0.m(span1, t0);
+        if_block0.m(span, t0);
+      }
+      if (current_block_type === (current_block_type = select_block_type_6(ctx2, dirty)) && if_block1) {
+        if_block1.p(ctx2, dirty);
+      } else {
+        if_block1.d(1);
+        if_block1 = current_block_type(ctx2);
+        if (if_block1) {
+          if_block1.c();
+          if_block1.m(span, null);
+        }
       }
       if (!current || dirty & 2 && div0_class_value !== (div0_class_value = "" + ((ctx2[1].contains("rss-folders") ? "is-collapsed" : "") + " tree-item is-clickable"))) {
         attr(div0, "class", div0_class_value);
@@ -11616,21 +12770,21 @@ function create_if_block_18(ctx) {
       if (dirty & 2)
         show_if = !ctx2[1].contains("rss-folders");
       if (show_if) {
-        if (if_block1) {
-          if_block1.p(ctx2, dirty);
+        if (if_block2) {
+          if_block2.p(ctx2, dirty);
           if (dirty & 2) {
-            transition_in(if_block1, 1);
+            transition_in(if_block2, 1);
           }
         } else {
-          if_block1 = create_if_block_23(ctx2);
-          if_block1.c();
-          transition_in(if_block1, 1);
-          if_block1.m(div1, null);
+          if_block2 = create_if_block_23(ctx2);
+          if_block2.c();
+          transition_in(if_block2, 1);
+          if_block2.m(div1, null);
         }
-      } else if (if_block1) {
+      } else if (if_block2) {
         group_outros();
-        transition_out(if_block1, 1, 1, () => {
-          if_block1 = null;
+        transition_out(if_block2, 1, 1, () => {
+          if_block2 = null;
         });
         check_outros();
       }
@@ -11639,22 +12793,192 @@ function create_if_block_18(ctx) {
       if (current)
         return;
       transition_in(if_block0);
-      transition_in(if_block1);
+      transition_in(if_block2);
       current = true;
     },
     o(local) {
       transition_out(if_block0);
-      transition_out(if_block1);
+      transition_out(if_block2);
       current = false;
     },
     d(detaching) {
       if (detaching)
         detach(div1);
       if_blocks[current_block_type_index].d();
-      if (if_block1)
-        if_block1.d();
+      if_block1.d();
+      if (if_block2)
+        if_block2.d();
       mounted = false;
       dispose();
+    }
+  };
+}
+function create_else_block_4(ctx) {
+  let iconcomponent;
+  let current;
+  iconcomponent = new IconComponent_default({
+    props: { iconName: "down-chevron-glyph" }
+  });
+  return {
+    c() {
+      create_component(iconcomponent.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(iconcomponent, target, anchor);
+      current = true;
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(iconcomponent.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(iconcomponent.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(iconcomponent, detaching);
+    }
+  };
+}
+function create_if_block_72(ctx) {
+  let iconcomponent;
+  let current;
+  iconcomponent = new IconComponent_default({
+    props: { iconName: "right-chevron-glyph" }
+  });
+  return {
+    c() {
+      create_component(iconcomponent.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(iconcomponent, target, anchor);
+      current = true;
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(iconcomponent.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(iconcomponent.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(iconcomponent, detaching);
+    }
+  };
+}
+function create_else_block_3(ctx) {
+  let span;
+  return {
+    c() {
+      span = element("span");
+      span.textContent = `${t("folders")}`;
+    },
+    m(target, anchor) {
+      insert(target, span, anchor);
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching)
+        detach(span);
+    }
+  };
+}
+function create_if_block_62(ctx) {
+  let span;
+  let t_1_value = ctx[4].renamedText.folders + "";
+  let t_1;
+  return {
+    c() {
+      span = element("span");
+      t_1 = text(t_1_value);
+    },
+    m(target, anchor) {
+      insert(target, span, anchor);
+      append(span, t_1);
+    },
+    p(ctx2, dirty) {
+      if (dirty & 16 && t_1_value !== (t_1_value = ctx2[4].renamedText.folders + ""))
+        set_data(t_1, t_1_value);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(span);
+    }
+  };
+}
+function create_if_block_23(ctx) {
+  let div;
+  let current;
+  let each_value = Object.keys(ctx[2]);
+  let each_blocks = [];
+  for (let i = 0; i < each_value.length; i += 1) {
+    each_blocks[i] = create_each_block3(get_each_context3(ctx, each_value, i));
+  }
+  const out = (i) => transition_out(each_blocks[i], 1, 1, () => {
+    each_blocks[i] = null;
+  });
+  return {
+    c() {
+      div = element("div");
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+      attr(div, "class", "tree-item-children");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].m(div, null);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (dirty & 119) {
+        each_value = Object.keys(ctx2[2]);
+        let i;
+        for (i = 0; i < each_value.length; i += 1) {
+          const child_ctx = get_each_context3(ctx2, each_value, i);
+          if (each_blocks[i]) {
+            each_blocks[i].p(child_ctx, dirty);
+            transition_in(each_blocks[i], 1);
+          } else {
+            each_blocks[i] = create_each_block3(child_ctx);
+            each_blocks[i].c();
+            transition_in(each_blocks[i], 1);
+            each_blocks[i].m(div, null);
+          }
+        }
+        group_outros();
+        for (i = each_value.length; i < each_blocks.length; i += 1) {
+          out(i);
+        }
+        check_outros();
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      for (let i = 0; i < each_value.length; i += 1) {
+        transition_in(each_blocks[i]);
+      }
+      current = true;
+    },
+    o(local) {
+      each_blocks = each_blocks.filter(Boolean);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        transition_out(each_blocks[i]);
+      }
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      destroy_each(each_blocks, detaching);
     }
   };
 }
@@ -11716,142 +13040,59 @@ function create_if_block_52(ctx) {
     }
   };
 }
-function create_if_block_23(ctx) {
-  let div;
-  let current;
-  let each_value = Object.keys(ctx[2]);
-  let each_blocks = [];
-  for (let i = 0; i < each_value.length; i += 1) {
-    each_blocks[i] = create_each_block3(get_each_context3(ctx, each_value, i));
-  }
-  const out = (i) => transition_out(each_blocks[i], 1, 1, () => {
-    each_blocks[i] = null;
-  });
+function create_else_block_12(ctx) {
+  let span;
+  let t_1_value = (ctx[4].renamedText.no_folder !== "" ? ctx[4].renamedText.no_folder : t("no_folder")) + "";
+  let t_1;
   return {
     c() {
-      div = element("div");
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].c();
-      }
-      attr(div, "class", "tree-item-children");
+      span = element("span");
+      t_1 = text(t_1_value);
     },
     m(target, anchor) {
-      insert(target, div, anchor);
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].m(div, null);
-      }
-      current = true;
+      insert(target, span, anchor);
+      append(span, t_1);
     },
     p(ctx2, dirty) {
-      if (dirty & 55) {
-        each_value = Object.keys(ctx2[2]);
-        let i;
-        for (i = 0; i < each_value.length; i += 1) {
-          const child_ctx = get_each_context3(ctx2, each_value, i);
-          if (each_blocks[i]) {
-            each_blocks[i].p(child_ctx, dirty);
-            transition_in(each_blocks[i], 1);
-          } else {
-            each_blocks[i] = create_each_block3(child_ctx);
-            each_blocks[i].c();
-            transition_in(each_blocks[i], 1);
-            each_blocks[i].m(div, null);
-          }
-        }
-        group_outros();
-        for (i = each_value.length; i < each_blocks.length; i += 1) {
-          out(i);
-        }
-        check_outros();
-      }
-    },
-    i(local) {
-      if (current)
-        return;
-      for (let i = 0; i < each_value.length; i += 1) {
-        transition_in(each_blocks[i]);
-      }
-      current = true;
-    },
-    o(local) {
-      each_blocks = each_blocks.filter(Boolean);
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        transition_out(each_blocks[i]);
-      }
-      current = false;
+      if (dirty & 16 && t_1_value !== (t_1_value = (ctx2[4].renamedText.no_folder !== "" ? ctx2[4].renamedText.no_folder : t("no_folder")) + ""))
+        set_data(t_1, t_1_value);
     },
     d(detaching) {
       if (detaching)
-        detach(div);
-      destroy_each(each_blocks, detaching);
-    }
-  };
-}
-function create_else_block_12(ctx) {
-  let iconcomponent;
-  let current;
-  iconcomponent = new IconComponent_default({
-    props: { iconName: "down-chevron-glyph" }
-  });
-  return {
-    c() {
-      create_component(iconcomponent.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(iconcomponent, target, anchor);
-      current = true;
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(iconcomponent.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(iconcomponent.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(iconcomponent, detaching);
+        detach(span);
     }
   };
 }
 function create_if_block_42(ctx) {
-  let iconcomponent;
-  let current;
-  iconcomponent = new IconComponent_default({
-    props: { iconName: "right-chevron-glyph" }
-  });
+  let span;
+  let t_1_value = ctx[15] + "";
+  let t_1;
   return {
     c() {
-      create_component(iconcomponent.$$.fragment);
+      span = element("span");
+      t_1 = text(t_1_value);
     },
     m(target, anchor) {
-      mount_component(iconcomponent, target, anchor);
-      current = true;
+      insert(target, span, anchor);
+      append(span, t_1);
     },
-    i(local) {
-      if (current)
-        return;
-      transition_in(iconcomponent.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(iconcomponent.$$.fragment, local);
-      current = false;
+    p(ctx2, dirty) {
+      if (dirty & 4 && t_1_value !== (t_1_value = ctx2[15] + ""))
+        set_data(t_1, t_1_value);
     },
     d(detaching) {
-      destroy_component(iconcomponent, detaching);
+      if (detaching)
+        detach(span);
     }
   };
 }
 function create_if_block_33(ctx) {
   let each_1_anchor;
   let current;
-  let each_value_1 = ctx[2][ctx[13]];
+  let each_value_1 = ctx[2][ctx[15]];
   let each_blocks = [];
   for (let i = 0; i < each_value_1.length; i += 1) {
-    each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+    each_blocks[i] = create_each_block_12(get_each_context_12(ctx, each_value_1, i));
   }
   const out = (i) => transition_out(each_blocks[i], 1, 1, () => {
     each_blocks[i] = null;
@@ -11872,15 +13113,15 @@ function create_if_block_33(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & 5) {
-        each_value_1 = ctx2[2][ctx2[13]];
+        each_value_1 = ctx2[2][ctx2[15]];
         let i;
         for (i = 0; i < each_value_1.length; i += 1) {
-          const child_ctx = get_each_context_1(ctx2, each_value_1, i);
+          const child_ctx = get_each_context_12(ctx2, each_value_1, i);
           if (each_blocks[i]) {
             each_blocks[i].p(child_ctx, dirty);
             transition_in(each_blocks[i], 1);
           } else {
-            each_blocks[i] = create_each_block_1(child_ctx);
+            each_blocks[i] = create_each_block_12(child_ctx);
             each_blocks[i].c();
             transition_in(each_blocks[i], 1);
             each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
@@ -11915,12 +13156,12 @@ function create_if_block_33(ctx) {
     }
   };
 }
-function create_each_block_1(ctx) {
+function create_each_block_12(ctx) {
   let feedview;
   let current;
   feedview = new FeedView_default({
     props: {
-      feed: ctx[16],
+      feed: ctx[18],
       plugin: ctx[0]
     }
   });
@@ -11935,7 +13176,7 @@ function create_each_block_1(ctx) {
     p(ctx2, dirty) {
       const feedview_changes = {};
       if (dirty & 4)
-        feedview_changes.feed = ctx2[16];
+        feedview_changes.feed = ctx2[18];
       if (dirty & 1)
         feedview_changes.plugin = ctx2[0];
       feedview.$set(feedview_changes);
@@ -11957,74 +13198,78 @@ function create_each_block_1(ctx) {
 }
 function create_each_block3(ctx) {
   let div1;
-  let span1;
+  let span;
   let show_if_1;
   let current_block_type_index;
   let if_block0;
   let t0;
-  let span0;
-  let t1_value = (ctx[13] ? ctx[13] : t("no_folder")) + "";
+  let span_class_value;
   let t1;
-  let span1_class_value;
-  let t2;
   let div0;
-  let show_if = !ctx[1].contains(ctx[13]);
-  let t3;
+  let show_if = !ctx[1].contains(ctx[15]);
+  let t2;
   let current;
   let mounted;
   let dispose;
-  const if_block_creators = [create_if_block_42, create_else_block_12];
+  const if_block_creators = [create_if_block_52, create_else_block_2];
   const if_blocks = [];
-  function select_block_type_5(ctx2, dirty) {
-    if (show_if_1 == null || dirty & 6)
-      show_if_1 = !!ctx2[1].contains(ctx2[13]);
+  function select_block_type_7(ctx2, dirty) {
+    if (dirty & 6)
+      show_if_1 = null;
+    if (show_if_1 == null)
+      show_if_1 = !!ctx2[1].contains(ctx2[15]);
     if (show_if_1)
       return 0;
     return 1;
   }
-  current_block_type_index = select_block_type_5(ctx, -1);
+  current_block_type_index = select_block_type_7(ctx, -1);
   if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+  function select_block_type_8(ctx2, dirty) {
+    if (ctx2[15])
+      return create_if_block_42;
+    return create_else_block_12;
+  }
+  let current_block_type = select_block_type_8(ctx, -1);
+  let if_block1 = current_block_type(ctx);
   function click_handler_4() {
-    return ctx[10](ctx[13]);
+    return ctx[13](ctx[15]);
   }
-  function contextmenu_handler(...args) {
-    return ctx[11](ctx[13], ...args);
+  function contextmenu_handler_1(...args) {
+    return ctx[14](ctx[15], ...args);
   }
-  let if_block1 = show_if && create_if_block_33(ctx);
+  let if_block2 = show_if && create_if_block_33(ctx);
   return {
     c() {
       div1 = element("div");
-      span1 = element("span");
+      span = element("span");
       if_block0.c();
       t0 = space();
-      span0 = element("span");
-      t1 = text(t1_value);
-      t2 = space();
+      if_block1.c();
+      t1 = space();
       div0 = element("div");
-      if (if_block1)
-        if_block1.c();
-      t3 = space();
-      attr(span1, "class", span1_class_value = "" + ((ctx[1].contains(ctx[13]) ? "is-collapsed" : "") + " tree-item-self is-clickable"));
+      if (if_block2)
+        if_block2.c();
+      t2 = space();
+      attr(span, "class", span_class_value = "" + ((ctx[1].contains(ctx[15]) ? "is-collapsed" : "") + " tree-item-self is-clickable"));
       attr(div0, "class", "tree-item-children");
       attr(div1, "class", "rss-folder tree-item");
     },
     m(target, anchor) {
       insert(target, div1, anchor);
-      append(div1, span1);
-      if_blocks[current_block_type_index].m(span1, null);
-      append(span1, t0);
-      append(span1, span0);
-      append(span0, t1);
-      append(div1, t2);
+      append(div1, span);
+      if_blocks[current_block_type_index].m(span, null);
+      append(span, t0);
+      if_block1.m(span, null);
+      append(div1, t1);
       append(div1, div0);
-      if (if_block1)
-        if_block1.m(div0, null);
-      append(div1, t3);
+      if (if_block2)
+        if_block2.m(div0, null);
+      append(div1, t2);
       current = true;
       if (!mounted) {
         dispose = [
-          listen(span1, "click", click_handler_4),
-          listen(span1, "contextmenu", contextmenu_handler)
+          listen(span, "click", click_handler_4),
+          listen(span, "contextmenu", contextmenu_handler_1)
         ];
         mounted = true;
       }
@@ -12032,7 +13277,7 @@ function create_each_block3(ctx) {
     p(new_ctx, dirty) {
       ctx = new_ctx;
       let previous_block_index = current_block_type_index;
-      current_block_type_index = select_block_type_5(ctx, dirty);
+      current_block_type_index = select_block_type_7(ctx, dirty);
       if (current_block_type_index !== previous_block_index) {
         group_outros();
         transition_out(if_blocks[previous_block_index], 1, 1, () => {
@@ -12046,31 +13291,39 @@ function create_each_block3(ctx) {
         } else {
         }
         transition_in(if_block0, 1);
-        if_block0.m(span1, t0);
+        if_block0.m(span, t0);
       }
-      if ((!current || dirty & 4) && t1_value !== (t1_value = (ctx[13] ? ctx[13] : t("no_folder")) + ""))
-        set_data(t1, t1_value);
-      if (!current || dirty & 6 && span1_class_value !== (span1_class_value = "" + ((ctx[1].contains(ctx[13]) ? "is-collapsed" : "") + " tree-item-self is-clickable"))) {
-        attr(span1, "class", span1_class_value);
+      if (current_block_type === (current_block_type = select_block_type_8(ctx, dirty)) && if_block1) {
+        if_block1.p(ctx, dirty);
+      } else {
+        if_block1.d(1);
+        if_block1 = current_block_type(ctx);
+        if (if_block1) {
+          if_block1.c();
+          if_block1.m(span, null);
+        }
+      }
+      if (!current || dirty & 6 && span_class_value !== (span_class_value = "" + ((ctx[1].contains(ctx[15]) ? "is-collapsed" : "") + " tree-item-self is-clickable"))) {
+        attr(span, "class", span_class_value);
       }
       if (dirty & 6)
-        show_if = !ctx[1].contains(ctx[13]);
+        show_if = !ctx[1].contains(ctx[15]);
       if (show_if) {
-        if (if_block1) {
-          if_block1.p(ctx, dirty);
+        if (if_block2) {
+          if_block2.p(ctx, dirty);
           if (dirty & 6) {
-            transition_in(if_block1, 1);
+            transition_in(if_block2, 1);
           }
         } else {
-          if_block1 = create_if_block_33(ctx);
-          if_block1.c();
-          transition_in(if_block1, 1);
-          if_block1.m(div0, null);
+          if_block2 = create_if_block_33(ctx);
+          if_block2.c();
+          transition_in(if_block2, 1);
+          if_block2.m(div0, null);
         }
-      } else if (if_block1) {
+      } else if (if_block2) {
         group_outros();
-        transition_out(if_block1, 1, 1, () => {
-          if_block1 = null;
+        transition_out(if_block2, 1, 1, () => {
+          if_block2 = null;
         });
         check_outros();
       }
@@ -12079,31 +13332,35 @@ function create_each_block3(ctx) {
       if (current)
         return;
       transition_in(if_block0);
-      transition_in(if_block1);
+      transition_in(if_block2);
       current = true;
     },
     o(local) {
       transition_out(if_block0);
-      transition_out(if_block1);
+      transition_out(if_block2);
       current = false;
     },
     d(detaching) {
       if (detaching)
         detach(div1);
       if_blocks[current_block_type_index].d();
-      if (if_block1)
-        if_block1.d();
+      if_block1.d();
+      if (if_block2)
+        if_block2.d();
       mounted = false;
       run_all(dispose);
     }
   };
 }
-function create_fragment5(ctx) {
+function create_fragment8(ctx) {
+  let toprowbuttons;
+  let t_1;
   let current_block_type_index;
   let if_block;
   let if_block_anchor;
   let current;
-  const if_block_creators = [create_if_block5, create_else_block2];
+  toprowbuttons = new TopRowButtons_default({ props: { plugin: ctx[0] } });
+  const if_block_creators = [create_if_block7, create_else_block2];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (!ctx2[1])
@@ -12114,15 +13371,23 @@ function create_fragment5(ctx) {
   if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
   return {
     c() {
+      create_component(toprowbuttons.$$.fragment);
+      t_1 = space();
       if_block.c();
       if_block_anchor = empty();
     },
     m(target, anchor) {
+      mount_component(toprowbuttons, target, anchor);
+      insert(target, t_1, anchor);
       if_blocks[current_block_type_index].m(target, anchor);
       insert(target, if_block_anchor, anchor);
       current = true;
     },
     p(ctx2, [dirty]) {
+      const toprowbuttons_changes = {};
+      if (dirty & 1)
+        toprowbuttons_changes.plugin = ctx2[0];
+      toprowbuttons.$set(toprowbuttons_changes);
       let previous_block_index = current_block_type_index;
       current_block_type_index = select_block_type(ctx2, dirty);
       if (current_block_type_index === previous_block_index) {
@@ -12147,14 +13412,19 @@ function create_fragment5(ctx) {
     i(local) {
       if (current)
         return;
+      transition_in(toprowbuttons.$$.fragment, local);
       transition_in(if_block);
       current = true;
     },
     o(local) {
+      transition_out(toprowbuttons.$$.fragment, local);
       transition_out(if_block);
       current = false;
     },
     d(detaching) {
+      destroy_component(toprowbuttons, detaching);
+      if (detaching)
+        detach(t_1);
       if_blocks[current_block_type_index].d(detaching);
       if (detaching)
         detach(if_block_anchor);
@@ -12165,7 +13435,7 @@ function buildTreeStructure(filteredContent) {
   let result = [];
   let level = { result };
   filteredContent.forEach((filter) => {
-    filter.filter.name.split("/").reduce((r, name, i, a) => {
+    filter.filter.name.split("/").reduce((r, name) => {
       if (!r[name]) {
         r[name] = { result: [] };
         if (filter.filter.name.endsWith(name)) {
@@ -12179,11 +13449,13 @@ function buildTreeStructure(filteredContent) {
   });
   return result;
 }
-function instance5($$self, $$props, $$invalidate) {
+function instance8($$self, $$props, $$invalidate) {
   let $sortedFeedsStore;
   let $filteredItemsStore;
+  let $settingsStore;
   component_subscribe($$self, sortedFeedsStore, ($$value) => $$invalidate(2, $sortedFeedsStore = $$value));
   component_subscribe($$self, filteredItemsStore, ($$value) => $$invalidate(3, $filteredItemsStore = $$value));
+  component_subscribe($$self, settingsStore, ($$value) => $$invalidate(4, $settingsStore = $$value));
   let { plugin } = $$props;
   let folded = [];
   foldedState.subscribe((value) => {
@@ -12212,7 +13484,7 @@ function instance5($$self, $$props, $$invalidate) {
   }
   function openMenu(e, feedItems) {
     return __awaiter(this, void 0, void 0, function* () {
-      const menu = new import_obsidian13.Menu(plugin.app);
+      const menu = new import_obsidian15.Menu(plugin.app);
       menu.addItem((menuItem) => {
         menuItem.setIcon("create-new").setTitle(t("create_all")).onClick(() => __awaiter(this, void 0, void 0, function* () {
           for (const item of feedItems) {
@@ -12235,11 +13507,12 @@ function instance5($$self, $$props, $$invalidate) {
     });
   }
   const click_handler = () => toggleFold("rss-filters");
+  const contextmenu_handler = (folder, e) => openMenu(e, folder.filter.items.items);
   const click_handler_1 = (folder) => toggleFold("rss-filters-" + folder.name);
   const click_handler_2 = (child) => toggleFold("rss-filters-" + child.filter.filter.name);
   const click_handler_3 = () => toggleFold("rss-folders");
   const click_handler_4 = (folder) => toggleFold(folder);
-  const contextmenu_handler = (folder, e) => openMenuForFolder(e, folder);
+  const contextmenu_handler_1 = (folder, e) => openMenuForFolder(e, folder);
   $$self.$$set = ($$props2) => {
     if ("plugin" in $$props2)
       $$invalidate(0, plugin = $$props2.plugin);
@@ -12249,26 +13522,29 @@ function instance5($$self, $$props, $$invalidate) {
     folded,
     $sortedFeedsStore,
     $filteredItemsStore,
+    $settingsStore,
     toggleFold,
     openMenuForFolder,
+    openMenu,
     click_handler,
+    contextmenu_handler,
     click_handler_1,
     click_handler_2,
     click_handler_3,
     click_handler_4,
-    contextmenu_handler
+    contextmenu_handler_1
   ];
 }
 var FolderView = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance5, create_fragment5, safe_not_equal, { plugin: 0 });
+    init(this, options, instance8, create_fragment8, safe_not_equal, { plugin: 0 });
   }
 };
 var FolderView_default = FolderView;
 
 // src/view/ViewLoader.ts
-var ViewLoader = class extends import_obsidian14.ItemView {
+var ViewLoader = class extends import_obsidian16.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.plugin = plugin;
@@ -12307,28 +13583,40 @@ var import_lodash8 = __toModule(require_lodash3());
 var import_lodash9 = __toModule(require_lodash4());
 
 // src/modals/FilteredFolderModal.ts
-var import_obsidian15 = __toModule(require("obsidian"));
-var SortOrder = /* @__PURE__ */ ((SortOrder2) => {
+var import_obsidian17 = __toModule(require("obsidian"));
+var FilterType;
+(function(FilterType2) {
+  FilterType2[FilterType2["UNREAD"] = 0] = "UNREAD";
+  FilterType2[FilterType2["READ"] = 1] = "READ";
+  FilterType2[FilterType2["FAVORITES"] = 2] = "FAVORITES";
+})(FilterType || (FilterType = {}));
+var SortOrder;
+(function(SortOrder2) {
   SortOrder2[SortOrder2["DATE_NEWEST"] = 0] = "DATE_NEWEST";
   SortOrder2[SortOrder2["DATE_OLDEST"] = 1] = "DATE_OLDEST";
   SortOrder2[SortOrder2["ALPHABET_NORMAL"] = 2] = "ALPHABET_NORMAL";
   SortOrder2[SortOrder2["ALPHABET_INVERTED"] = 3] = "ALPHABET_INVERTED";
-  return SortOrder2;
-})(SortOrder || {});
+})(SortOrder || (SortOrder = {}));
 var FilteredFolderModal = class extends BaseModal {
   constructor(plugin, folder) {
     super(plugin.app);
-    this.filterFolders = [];
     this.filterTags = [];
+    this.ignoreTags = [];
+    this.filterFolders = [];
+    this.ignoreFolders = [];
     this.filterFeeds = [];
+    this.ignoreFeeds = [];
     this.saved = false;
     this.plugin = plugin;
     if (folder) {
       this.name = folder.name;
       this.sortOrder = folder.sortOrder;
       this.filterTags = folder.filterTags;
+      this.ignoreTags = folder.ignoreTags;
       this.filterFolders = folder.filterFolders;
+      this.ignoreFolders = folder.ignoreFolders;
       this.filterFeeds = folder.filterFeeds;
+      this.ignoreFeeds = folder.ignoreFeeds;
       this.read = folder.read;
       this.unread = folder.unread;
       this.favorites = folder.favorites;
@@ -12339,7 +13627,7 @@ var FilteredFolderModal = class extends BaseModal {
       const { contentEl } = this;
       contentEl.empty();
       let nameText;
-      const name = new import_obsidian15.Setting(contentEl).setName(t("name")).setDesc(t("filter_name_help")).addText((text2) => {
+      const name = new import_obsidian17.Setting(contentEl).setName(t("name")).setDesc(t("filter_name_help")).addText((text2) => {
         nameText = text2;
         text2.setValue(this.name).onChange((value) => {
           this.removeValidationError(text2);
@@ -12347,22 +13635,22 @@ var FilteredFolderModal = class extends BaseModal {
         });
       });
       name.controlEl.addClass("rss-setting-input");
-      new import_obsidian15.Setting(contentEl).setName(t("only_favorites")).addToggle((toggle) => {
+      new import_obsidian17.Setting(contentEl).setName(t("only_favorites")).addToggle((toggle) => {
         toggle.setValue(this.favorites).onChange((value) => {
           this.favorites = value;
         });
       });
-      new import_obsidian15.Setting(contentEl).setName(t("show_read")).addToggle((toggle) => {
+      new import_obsidian17.Setting(contentEl).setName(t("show_read")).addToggle((toggle) => {
         toggle.setValue(this.read).onChange((value) => {
           this.read = value;
         });
       });
-      new import_obsidian15.Setting(contentEl).setName(t("show_unread")).addToggle((toggle) => {
+      new import_obsidian17.Setting(contentEl).setName(t("show_unread")).addToggle((toggle) => {
         toggle.setValue(this.unread).onChange((value) => {
           this.unread = value;
         });
       });
-      const sorting = new import_obsidian15.Setting(contentEl).setName(t("sort")).addDropdown((dropdown) => {
+      const sorting = new import_obsidian17.Setting(contentEl).setName(t("sort")).addDropdown((dropdown) => {
         for (const order2 in SortOrder) {
           if (order2.length > 1) {
             dropdown.addOption(order2, t("sort_" + order2.toLowerCase()));
@@ -12377,7 +13665,7 @@ var FilteredFolderModal = class extends BaseModal {
       foldersDiv.createEl("h2", { text: t("folders") });
       foldersDiv.createEl("p", { text: t("filter_folder_help") });
       for (const folder in this.filterFolders) {
-        new import_obsidian15.Setting(foldersDiv).addSearch((search) => __async(this, null, function* () {
+        new import_obsidian17.Setting(foldersDiv).addSearch((search) => __async(this, null, function* () {
           new ArraySuggest(this.app, search.inputEl, get_store_value(folderStore));
           search.setValue(this.filterFolders[folder]).onChange((value) => __async(this, null, function* () {
             this.removeValidationError(search);
@@ -12392,7 +13680,7 @@ var FilteredFolderModal = class extends BaseModal {
         });
       }
       let folderValue = "";
-      const newFolder = new import_obsidian15.Setting(foldersDiv).addSearch((search) => __async(this, null, function* () {
+      const newFolder = new import_obsidian17.Setting(foldersDiv).addSearch((search) => __async(this, null, function* () {
         new ArraySuggest(this.app, search.inputEl, get_store_value(folderStore));
         search.onChange((value) => __async(this, null, function* () {
           folderValue = value;
@@ -12404,6 +13692,35 @@ var FilteredFolderModal = class extends BaseModal {
         });
       });
       newFolder.controlEl.addClass("rss-setting-input");
+      foldersDiv.createEl("p", { text: t("filter_folder_ignore_help") });
+      for (const folder in this.ignoreFolders) {
+        new import_obsidian17.Setting(foldersDiv).addSearch((search) => __async(this, null, function* () {
+          new ArraySuggest(this.app, search.inputEl, get_store_value(folderStore));
+          search.setValue(this.ignoreFolders[folder]).onChange((value) => __async(this, null, function* () {
+            this.removeValidationError(search);
+            this.ignoreFolders = this.ignoreFolders.filter((e) => e !== this.ignoreFolders[folder]);
+            this.ignoreFolders.push(value);
+          }));
+        })).addExtraButton((button) => {
+          button.setTooltip(t("delete")).setIcon("feather-trash").onClick(() => {
+            this.ignoreFolders = this.ignoreFolders.filter((e) => e !== this.ignoreFolders[folder]);
+            this.display();
+          });
+        });
+      }
+      let folderIgnoreValue = "";
+      const newIgnoreFolder = new import_obsidian17.Setting(foldersDiv).addSearch((search) => __async(this, null, function* () {
+        new ArraySuggest(this.app, search.inputEl, get_store_value(folderStore));
+        search.onChange((value) => __async(this, null, function* () {
+          folderIgnoreValue = value;
+        }));
+      })).addExtraButton((button) => {
+        button.setTooltip(t("add")).setIcon("feather-plus").onClick(() => {
+          this.ignoreFolders.push(folderIgnoreValue);
+          this.display();
+        });
+      });
+      newIgnoreFolder.controlEl.addClass("rss-setting-input");
       const feedsDiv = contentEl.createDiv("feeds");
       feedsDiv.createEl("h2", { text: t("feeds") });
       feedsDiv.createEl("p", { text: t("filter_feed_help") });
@@ -12413,7 +13730,7 @@ var FilteredFolderModal = class extends BaseModal {
         return this.filterFolders.contains(feed.folder);
       }).map((feed) => feed.name);
       for (const feed in this.filterFeeds) {
-        new import_obsidian15.Setting(feedsDiv).addSearch((search) => __async(this, null, function* () {
+        new import_obsidian17.Setting(feedsDiv).addSearch((search) => __async(this, null, function* () {
           new ArraySuggest(this.app, search.inputEl, new Set(feeds));
           search.setValue(this.filterFeeds[feed]).onChange((value) => __async(this, null, function* () {
             this.removeValidationError(search);
@@ -12428,7 +13745,7 @@ var FilteredFolderModal = class extends BaseModal {
         });
       }
       let feedValue = "";
-      const newFeed = new import_obsidian15.Setting(feedsDiv).addSearch((search) => __async(this, null, function* () {
+      const newFeed = new import_obsidian17.Setting(feedsDiv).addSearch((search) => __async(this, null, function* () {
         new ArraySuggest(this.app, search.inputEl, new Set(feeds));
         search.onChange((value) => __async(this, null, function* () {
           feedValue = value;
@@ -12440,11 +13757,40 @@ var FilteredFolderModal = class extends BaseModal {
         });
       });
       newFeed.controlEl.addClass("rss-setting-input");
+      feedsDiv.createEl("p", { text: t("filter_feed_ignore_help") });
+      for (const folder in this.ignoreFeeds) {
+        new import_obsidian17.Setting(feedsDiv).addSearch((search) => __async(this, null, function* () {
+          new ArraySuggest(this.app, search.inputEl, new Set(feeds));
+          search.setValue(this.ignoreFeeds[folder]).onChange((value) => __async(this, null, function* () {
+            this.removeValidationError(search);
+            this.ignoreFeeds = this.ignoreFeeds.filter((e) => e !== this.ignoreFeeds[folder]);
+            this.ignoreFeeds.push(value);
+          }));
+        })).addExtraButton((button) => {
+          button.setTooltip(t("delete")).setIcon("feather-trash").onClick(() => {
+            this.ignoreFeeds = this.ignoreFeeds.filter((e) => e !== this.ignoreFeeds[folder]);
+            this.display();
+          });
+        });
+      }
+      let feedIgnoreValue = "";
+      const newIgnoreFeed = new import_obsidian17.Setting(feedsDiv).addSearch((search) => __async(this, null, function* () {
+        new ArraySuggest(this.app, search.inputEl, new Set(feeds));
+        search.onChange((value) => __async(this, null, function* () {
+          feedIgnoreValue = value;
+        }));
+      })).addExtraButton((button) => {
+        button.setTooltip(t("add")).setIcon("feather-plus").onClick(() => {
+          this.ignoreFeeds.push(feedIgnoreValue);
+          this.display();
+        });
+      });
+      newIgnoreFeed.controlEl.addClass("rss-setting-input");
       const tagDiv = contentEl.createDiv("tags");
       tagDiv.createEl("h2", { text: t("tags") });
       tagDiv.createEl("p", { text: t("filter_tags_help") });
       for (const tag in this.filterTags) {
-        new import_obsidian15.Setting(tagDiv).addSearch((search) => __async(this, null, function* () {
+        new import_obsidian17.Setting(tagDiv).addSearch((search) => __async(this, null, function* () {
           new ArraySuggest(this.app, search.inputEl, get_store_value(tagsStore));
           search.setValue(this.filterTags[tag]).onChange((value) => __async(this, null, function* () {
             this.removeValidationError(search);
@@ -12464,7 +13810,7 @@ var FilteredFolderModal = class extends BaseModal {
       }
       let tagValue = "";
       let tagComponent;
-      const newTag = new import_obsidian15.Setting(tagDiv).addSearch((search) => __async(this, null, function* () {
+      const newTag = new import_obsidian17.Setting(tagDiv).addSearch((search) => __async(this, null, function* () {
         tagComponent = search;
         new ArraySuggest(this.app, search.inputEl, get_store_value(tagsStore));
         search.onChange((value) => __async(this, null, function* () {
@@ -12485,8 +13831,51 @@ var FilteredFolderModal = class extends BaseModal {
         });
       });
       newTag.controlEl.addClass("rss-setting-input");
+      tagDiv.createEl("p", { text: t("filter_tags_ignore_help") });
+      for (const tag in this.ignoreTags) {
+        new import_obsidian17.Setting(tagDiv).addSearch((search) => __async(this, null, function* () {
+          new ArraySuggest(this.app, search.inputEl, get_store_value(tagsStore));
+          search.setValue(this.ignoreTags[tag]).onChange((value) => __async(this, null, function* () {
+            this.removeValidationError(search);
+            if (!value.match(TAG_REGEX) || value.match(NUMBER_REGEX) || value.contains(" ") || value.contains("#")) {
+              this.setValidationError(search, t("invalid_tag"));
+              return;
+            }
+            this.ignoreTags = this.ignoreTags.filter((e) => e !== this.ignoreTags[tag]);
+            this.ignoreTags.push(value);
+          }));
+        })).addExtraButton((button) => {
+          button.setTooltip(t("delete")).setIcon("feather-trash").onClick(() => {
+            this.ignoreTags = this.ignoreTags.filter((e) => e !== this.ignoreTags[tag]);
+            this.display();
+          });
+        });
+      }
+      let ignoreTagValue = "";
+      let ignoreTagComponent;
+      const newTagIgnore = new import_obsidian17.Setting(tagDiv).addSearch((search) => __async(this, null, function* () {
+        ignoreTagComponent = search;
+        new ArraySuggest(this.app, search.inputEl, get_store_value(tagsStore));
+        search.onChange((value) => __async(this, null, function* () {
+          if (!value.match(TAG_REGEX) || value.match(NUMBER_REGEX) || value.contains(" ") || value.contains("#")) {
+            this.setValidationError(search, t("invalid_tag"));
+            return;
+          }
+          ignoreTagValue = value;
+        }));
+      })).addExtraButton((button) => {
+        button.setTooltip(t("add")).setIcon("feather-plus").onClick(() => {
+          if (!ignoreTagValue.match(TAG_REGEX) || ignoreTagValue.match(NUMBER_REGEX) || ignoreTagValue.contains(" ") || ignoreTagValue.contains("#")) {
+            this.setValidationError(ignoreTagComponent, t("invalid_tag"));
+            return;
+          }
+          this.ignoreTags.push(ignoreTagValue);
+          this.display();
+        });
+      });
+      newTagIgnore.controlEl.addClass("rss-setting-input");
       const footerEl = contentEl.createDiv();
-      const footerButtons = new import_obsidian15.Setting(footerEl);
+      const footerButtons = new import_obsidian17.Setting(footerEl);
       footerButtons.addButton((b) => {
         b.setTooltip(t("save")).setIcon("checkmark").onClick(() => __async(this, null, function* () {
           let error = false;
@@ -12495,7 +13884,7 @@ var FilteredFolderModal = class extends BaseModal {
             error = true;
           }
           if (error) {
-            new import_obsidian15.Notice(t("fix_errors"));
+            new import_obsidian17.Notice(t("fix_errors"));
             return;
           }
           this.saved = true;
@@ -12523,17 +13912,17 @@ var FilteredFolderModal = class extends BaseModal {
 var import_ts_md53 = __toModule(require_md5());
 
 // src/settings/SettingsTab.ts
-var import_obsidian23 = __toModule(require("obsidian"));
+var import_obsidian26 = __toModule(require("obsidian"));
 
 // src/settings/FolderSuggestor.ts
-var import_obsidian16 = __toModule(require("obsidian"));
+var import_obsidian18 = __toModule(require("obsidian"));
 var FolderSuggest = class extends TextInputSuggest {
   getSuggestions(inputStr) {
     const abstractFiles = this.app.vault.getAllLoadedFiles();
     const folders = [];
     const lowerCaseInputStr = inputStr.toLowerCase();
     abstractFiles.forEach((folder) => {
-      if (folder instanceof import_obsidian16.TFolder && folder.path.toLowerCase().contains(lowerCaseInputStr)) {
+      if (folder instanceof import_obsidian18.TFolder && folder.path.toLowerCase().contains(lowerCaseInputStr)) {
         folders.push(folder);
       }
     });
@@ -12552,10 +13941,10 @@ var FolderSuggest = class extends TextInputSuggest {
 // src/settings/FeedSettings.ts
 var import_lodash4 = __toModule(require_lodash5());
 var import_lodash5 = __toModule(require_lodash());
-var import_obsidian21 = __toModule(require("obsidian"));
+var import_obsidian23 = __toModule(require("obsidian"));
 
 // src/modals/FeedModal.ts
-var import_obsidian17 = __toModule(require("obsidian"));
+var import_obsidian19 = __toModule(require("obsidian"));
 
 // src/view/FeedFolderSuggest.ts
 var FeedFolderSuggest = class extends TextInputSuggest {
@@ -12590,7 +13979,7 @@ var FeedModal = class extends BaseModal {
       const { contentEl } = this;
       contentEl.empty();
       let nameText;
-      const name = new import_obsidian17.Setting(contentEl).setName(t("name")).setDesc(t("name_help")).addText((text2) => {
+      const name = new import_obsidian19.Setting(contentEl).setName(t("name")).setDesc(t("name_help")).addText((text2) => {
         nameText = text2;
         text2.setValue(this.name).onChange((value) => {
           this.removeValidationError(text2);
@@ -12599,7 +13988,7 @@ var FeedModal = class extends BaseModal {
       });
       name.controlEl.addClass("rss-setting-input");
       let urlText;
-      const url = new import_obsidian17.Setting(contentEl).setName("URL").setDesc(t("url_help")).addText((text2) => {
+      const url = new import_obsidian19.Setting(contentEl).setName("URL").setDesc(t("url_help")).addText((text2) => {
         urlText = text2;
         text2.setValue(this.url).onChange((value) => __async(this, null, function* () {
           this.removeValidationError(text2);
@@ -12607,14 +13996,14 @@ var FeedModal = class extends BaseModal {
         }));
       });
       url.controlEl.addClass("rss-setting-input");
-      new import_obsidian17.Setting(contentEl).setName(t("folder")).setDesc(t("folder_help")).addSearch((search) => __async(this, null, function* () {
+      new import_obsidian19.Setting(contentEl).setName(t("folder")).setDesc(t("folder_help")).addSearch((search) => __async(this, null, function* () {
         new FeedFolderSuggest(this.app, search.inputEl);
         search.setValue(this.folder).setPlaceholder(t("no_folder")).onChange((value) => __async(this, null, function* () {
           this.folder = value;
         }));
       }));
       const footerEl = contentEl.createDiv();
-      const footerButtons = new import_obsidian17.Setting(footerEl);
+      const footerButtons = new import_obsidian19.Setting(footerEl);
       footerButtons.addButton((b) => {
         b.setTooltip(t("save")).setIcon("checkmark").onClick(() => __async(this, null, function* () {
           let error = false;
@@ -12637,7 +14026,7 @@ var FeedModal = class extends BaseModal {
             }
           }
           if (error) {
-            new import_obsidian17.Notice(t("fix_errors"));
+            new import_obsidian19.Notice(t("fix_errors"));
             return;
           }
           this.saved = true;
@@ -12662,7 +14051,7 @@ var FeedModal = class extends BaseModal {
 };
 
 // src/modals/ImportModal.ts
-var import_obsidian18 = __toModule(require("obsidian"));
+var import_obsidian20 = __toModule(require("obsidian"));
 
 // src/parser/opmlParser.ts
 function loadFeedsFromString(importData) {
@@ -12695,7 +14084,7 @@ function loadFeedsFromString(importData) {
 }
 
 // src/modals/ImportModal.ts
-var ImportModal = class extends import_obsidian18.Modal {
+var ImportModal = class extends import_obsidian20.Modal {
   constructor(plugin) {
     super(plugin.app);
     this.importData = "";
@@ -12703,7 +14092,7 @@ var ImportModal = class extends import_obsidian18.Modal {
   }
   onOpen() {
     return __async(this, null, function* () {
-      const setting = new import_obsidian18.Setting(this.contentEl).setName(t("choose_file")).setDesc(t("choose_file_help"));
+      const setting = new import_obsidian20.Setting(this.contentEl).setName(t("choose_file")).setDesc(t("choose_file_help"));
       const input = setting.controlEl.createEl("input", {
         attr: {
           type: "file",
@@ -12723,15 +14112,15 @@ var ImportModal = class extends import_obsidian18.Modal {
           reader.readAsText(file);
         }
       });
-      new import_obsidian18.Setting(this.contentEl).addButton((button) => {
+      new import_obsidian20.Setting(this.contentEl).addButton((button) => {
         button.setIcon("import-glyph").setTooltip(t("import")).onClick(() => __async(this, null, function* () {
           if (this.importData) {
             const feeds = yield loadFeedsFromString(this.importData);
             yield this.plugin.writeFeeds(() => this.plugin.settings.feeds.concat(feeds));
-            new import_obsidian18.Notice(t("imported_x_feeds", String(feeds.length)));
+            new import_obsidian20.Notice(t("imported_x_feeds", String(feeds.length)));
             this.close();
           } else {
-            new import_obsidian18.Notice(t("fix_errors"));
+            new import_obsidian20.Notice(t("fix_errors"));
           }
         }));
       }).addExtraButton((button) => {
@@ -12747,7 +14136,7 @@ var ImportModal = class extends import_obsidian18.Modal {
 var import_ts_md52 = __toModule(require_md5());
 
 // src/modals/CleanupModal.ts
-var import_obsidian19 = __toModule(require("obsidian"));
+var import_obsidian21 = __toModule(require("obsidian"));
 var import_lodash = __toModule(require_lodash5());
 var import_lodash2 = __toModule(require_lodash());
 var CleanupModal = class extends BaseModal {
@@ -12764,22 +14153,22 @@ var CleanupModal = class extends BaseModal {
       contentEl.createEl("h1", { text: t("cleanup") });
       contentEl.createEl("p", { text: t("cleanup_help") });
       contentEl.createEl("p", { text: t("cleanup_help2") });
-      new import_obsidian19.Setting(contentEl).setName(t("unread")).addToggle((toggle) => {
+      new import_obsidian21.Setting(contentEl).setName(t("unread")).addToggle((toggle) => {
         toggle.onChange((value) => {
           this.unread = value;
         });
       });
-      new import_obsidian19.Setting(contentEl).setName(t("read")).addToggle((toggle) => {
+      new import_obsidian21.Setting(contentEl).setName(t("read")).addToggle((toggle) => {
         toggle.onChange((value) => {
           this.read = value;
         });
       });
-      new import_obsidian19.Setting(contentEl).setName(t("favorite")).addToggle((toggle) => {
+      new import_obsidian21.Setting(contentEl).setName(t("favorite")).addToggle((toggle) => {
         toggle.onChange((value) => {
           this.favorite = value;
         });
       });
-      new import_obsidian19.Setting(contentEl).setName(t("tag")).addSearch((search) => {
+      new import_obsidian21.Setting(contentEl).setName(t("tag")).addSearch((search) => {
         const tags = [];
         for (const feed of this.plugin.settings.items) {
           for (const item of feed.items) {
@@ -12793,7 +14182,7 @@ var CleanupModal = class extends BaseModal {
         }));
       });
       let older_than_setting;
-      new import_obsidian19.Setting(contentEl).setName(t("older_than")).setDesc(t("older_than_help")).addText((text2) => {
+      new import_obsidian21.Setting(contentEl).setName(t("older_than")).setDesc(t("older_than_help")).addText((text2) => {
         older_than_setting = text2;
         text2.setPlaceholder("5").onChange((value) => {
           this.removeValidationError(text2);
@@ -12803,7 +14192,7 @@ var CleanupModal = class extends BaseModal {
         });
       }).controlEl.addClass("rss-setting-input");
       older_than_setting.inputEl.setAttr("onkeypress", "return event.charCode >= 48 && event.charCode <= 57");
-      new import_obsidian19.Setting(contentEl).setName(t("from_feed")).addDropdown((dropdown) => {
+      new import_obsidian21.Setting(contentEl).setName(t("from_feed")).addDropdown((dropdown) => {
         dropdown.addOption("all-option-id", t("all"));
         const sorted = (0, import_lodash.default)((0, import_lodash2.default)(this.plugin.settings.feeds, "folder"), function(o) {
           return o[0].folder;
@@ -12823,26 +14212,26 @@ var CleanupModal = class extends BaseModal {
       const summary = details.createEl("summary");
       summary.setText(t("advanced"));
       const advanced = details.createDiv("advanced");
-      new import_obsidian19.Setting(advanced).setName(t("remove_wrong_feed")).setDesc(t("remove_wrong_feed_help")).addToggle((toggle) => {
+      new import_obsidian21.Setting(advanced).setName(t("remove_wrong_feed")).setDesc(t("remove_wrong_feed_help")).addToggle((toggle) => {
         toggle.onChange((value) => {
           this.wrong_feed = value;
         });
       });
-      new import_obsidian19.Setting(contentEl).addButton((button) => {
+      new import_obsidian21.Setting(contentEl).addButton((button) => {
         button.setIcon("feather-trash").setTooltip(t("perform_cleanup")).onClick(() => __async(this, null, function* () {
           let items = this.plugin.settings.items;
-          let date = (0, import_obsidian19.moment)();
+          let date = (0, import_obsidian21.moment)();
           if (this.older_than) {
-            date = (0, import_obsidian19.moment)().subtract(this.older_than, "days");
+            date = (0, import_obsidian21.moment)().subtract(this.older_than, "days");
           }
           let count = 0;
           const itemsCount = items.reduce((count2, current) => count2 + current.items.length, 0);
-          const notice = new import_obsidian19.Notice(t("scanning_items", "0", itemsCount.toString()));
+          const notice = new import_obsidian21.Notice(t("scanning_items", "0", itemsCount.toString()));
           for (const feed of items) {
             for (const item of feed.items) {
               if (item !== void 0) {
                 let toRemove = 0;
-                if (item.pubDate === void 0 || (0, import_obsidian19.moment)(item.pubDate).isBefore(date)) {
+                if (item.pubDate === void 0 || (0, import_obsidian21.moment)(item.pubDate).isBefore(date)) {
                   if (this.feed === "all-option-id" || this.feed === item.folder + "-" + item.feed) {
                     if (this.read && item.read || !this.read && !item.read || this.read && !item.read) {
                       toRemove++;
@@ -12926,8 +14315,8 @@ function generateOPML(feeds) {
 }
 
 // src/modals/MessageModal.ts
-var import_obsidian20 = __toModule(require("obsidian"));
-var MessageModal = class extends import_obsidian20.Modal {
+var import_obsidian22 = __toModule(require("obsidian"));
+var MessageModal = class extends import_obsidian22.Modal {
   constructor(plugin, message) {
     super(plugin.app);
     this.message = message;
@@ -12951,19 +14340,19 @@ var MessageModal = class extends import_obsidian20.Modal {
 function displayFeedSettings(plugin, container) {
   container.empty();
   container.createEl("h3", { text: t("feeds") });
-  new import_obsidian21.Setting(container).setName(t("add_new")).setDesc(t("add_new_feed")).addButton((button) => {
+  new import_obsidian23.Setting(container).setName(t("add_new")).setDesc(t("add_new_feed")).addButton((button) => {
     return button.setTooltip(t("add_new_feed")).setIcon("feather-plus").onClick(() => __async(this, null, function* () {
       const modal = new FeedModal(plugin);
       modal.onClose = () => __async(this, null, function* () {
         if (modal.saved) {
           if (plugin.settings.feeds.some((item) => item.url === modal.url)) {
-            new import_obsidian21.Notice(t("feed_already_configured"));
+            new import_obsidian23.Notice(t("feed_already_configured"));
             return;
           }
           yield plugin.writeFeeds(() => plugin.settings.feeds.concat({
             name: modal.name,
             url: modal.url,
-            folder: modal.folder
+            folder: modal.folder ? modal.folder : ""
           }));
           displayFeedSettings(plugin, container);
         }
@@ -12984,7 +14373,7 @@ function displayFeedSettings(plugin, container) {
         plugin.app.vault.adapter.remove("rss-feeds-export.opml");
       }
       plugin.app.vault.create("rss-feeds-export.opml", generateOPML(plugin.settings.feeds));
-      new import_obsidian21.Notice(t("created_export"));
+      new import_obsidian23.Notice(t("created_export"));
     });
   })).addExtraButton((button) => __async(this, null, function* () {
     button.setTooltip(t("perform_cleanup")).setIcon("feather-trash").onClick(() => {
@@ -13002,7 +14391,7 @@ function displayFeedList(plugin, container, disabled = false) {
   for (const [, feeds] of Object.entries(sorted)) {
     for (const id in feeds) {
       const feed = feeds[id];
-      const setting = new import_obsidian21.Setting(container);
+      const setting = new import_obsidian23.Setting(container);
       setting.setName((feed.folder ? feed.folder : t("no_folder")) + " - " + feed.name);
       setting.setDesc(feed.url);
       setting.addExtraButton((b) => {
@@ -13013,17 +14402,22 @@ function displayFeedList(plugin, container, disabled = false) {
             if (modal.saved) {
               const feeds2 = plugin.settings.feeds;
               feeds2.remove(oldFeed);
-              feeds2.push({ name: modal.name, url: modal.url, folder: modal.folder });
-              const items = plugin.settings.items;
-              items.filter((content) => {
+              feeds2.push({
+                name: modal.name,
+                url: modal.url,
+                folder: modal.folder ? modal.folder : ""
+              });
+              let items = plugin.settings.items;
+              items = items.filter((content) => {
                 return content.name === oldFeed.name && content.folder === oldFeed.folder;
-              }).forEach((content) => {
+              });
+              items.forEach((content) => {
                 content.name = modal.name;
                 content.folder = modal.folder;
                 content.hash = new import_ts_md52.Md5().appendStr(modal.name).appendStr(modal.folder).end();
                 content.items.forEach((item) => {
                   item.feed = modal.name;
-                  item.folder = modal.folder;
+                  item.folder = modal.folder ? modal.folder : "";
                   item.hash = new import_ts_md52.Md5().appendStr(item.title).appendStr(item.folder).appendStr(item.link).end();
                 });
               });
@@ -13041,7 +14435,7 @@ function displayFeedList(plugin, container, disabled = false) {
           const modal = new MessageModal(plugin, t("reading_archive"));
           modal.open();
           displayFeedList(plugin, container, true);
-          const timemap = yield (0, import_obsidian21.request)({
+          const timemap = yield (0, import_obsidian23.request)({
             method: "GET",
             url: "https://web.archive.org/web/timemap/link/" + feed.url
           });
@@ -13064,7 +14458,7 @@ function displayFeedList(plugin, container, disabled = false) {
             for (const content of items) {
               if (feed2.folder === content.folder && feed2.name === content.name) {
                 const sortedItems = content.items.sort((a, b) => {
-                  return (0, import_obsidian21.moment)(b.pubDate).diff((0, import_obsidian21.moment)(a.pubDate));
+                  return (0, import_obsidian23.moment)(b.pubDate).diff((0, import_obsidian23.moment)(a.pubDate));
                 });
                 for (const item of sortedItems) {
                   const filter = feed2.items.filter((filterItem) => {
@@ -13102,12 +14496,12 @@ function displayFeedList(plugin, container, disabled = false) {
 }
 
 // src/settings/HotkeySettings.ts
-var import_obsidian22 = __toModule(require("obsidian"));
+var import_obsidian24 = __toModule(require("obsidian"));
 function displayHotkeys(plugin, containerEl) {
   containerEl.empty();
   containerEl.createEl("h2", { text: t("hotkeys") });
   containerEl.createEl("h3", { text: t("hotkeys_reading") });
-  new import_obsidian22.Setting(containerEl).setName(t("create_note")).addButton((button) => {
+  new import_obsidian24.Setting(containerEl).setName(t("create_note")).addButton((button) => {
     button.setButtonText(plugin.settings.hotkeys.create).setTooltip(t("customize_hotkey")).onClick(() => {
       button.setButtonText(t("press_key"));
       const listener = (e) => __async(this, null, function* () {
@@ -13122,7 +14516,7 @@ function displayHotkeys(plugin, containerEl) {
       window.addEventListener("keyup", listener);
     });
   });
-  new import_obsidian22.Setting(containerEl).setName(t("paste_to_note")).addButton((button) => {
+  new import_obsidian24.Setting(containerEl).setName(t("paste_to_note")).addButton((button) => {
     button.setButtonText(plugin.settings.hotkeys.paste).setTooltip(t("customize_hotkey")).onClick(() => {
       button.setButtonText(t("press_key"));
       const listener = (e) => __async(this, null, function* () {
@@ -13137,7 +14531,7 @@ function displayHotkeys(plugin, containerEl) {
       window.addEventListener("keyup", listener);
     });
   });
-  new import_obsidian22.Setting(containerEl).setName(t("open_browser")).addButton((button) => {
+  new import_obsidian24.Setting(containerEl).setName(t("open_browser")).addButton((button) => {
     button.setButtonText(plugin.settings.hotkeys.open).setTooltip(t("customize_hotkey")).onClick(() => {
       button.setButtonText(t("press_key"));
       const listener = (e) => __async(this, null, function* () {
@@ -13152,7 +14546,7 @@ function displayHotkeys(plugin, containerEl) {
       window.addEventListener("keyup", listener);
     });
   });
-  new import_obsidian22.Setting(containerEl).setName(t("copy_to_clipboard")).addButton((button) => {
+  new import_obsidian24.Setting(containerEl).setName(t("copy_to_clipboard")).addButton((button) => {
     button.setButtonText(plugin.settings.hotkeys.copy).setTooltip(t("customize_hotkey")).onClick(() => {
       button.setButtonText(t("press_key"));
       const listener = (e) => __async(this, null, function* () {
@@ -13167,7 +14561,7 @@ function displayHotkeys(plugin, containerEl) {
       window.addEventListener("keyup", listener);
     });
   });
-  new import_obsidian22.Setting(containerEl).setName(t("mark_as_favorite_remove")).addButton((button) => {
+  new import_obsidian24.Setting(containerEl).setName(t("mark_as_favorite_remove")).addButton((button) => {
     button.setButtonText(plugin.settings.hotkeys.favorite).setTooltip(t("customize_hotkey")).onClick(() => {
       button.setButtonText(t("press_key"));
       const listener = (e) => __async(this, null, function* () {
@@ -13182,7 +14576,7 @@ function displayHotkeys(plugin, containerEl) {
       window.addEventListener("keyup", listener);
     });
   });
-  new import_obsidian22.Setting(containerEl).setName(t("mark_as_read_unread")).addButton((button) => {
+  new import_obsidian24.Setting(containerEl).setName(t("mark_as_read_unread")).addButton((button) => {
     button.setButtonText(plugin.settings.hotkeys.read).setTooltip(t("customize_hotkey")).onClick(() => {
       button.setButtonText(t("press_key"));
       const listener = (e) => __async(this, null, function* () {
@@ -13197,7 +14591,7 @@ function displayHotkeys(plugin, containerEl) {
       window.addEventListener("keyup", listener);
     });
   });
-  new import_obsidian22.Setting(containerEl).setName(t("edit_tags")).addButton((button) => {
+  new import_obsidian24.Setting(containerEl).setName(t("edit_tags")).addButton((button) => {
     button.setButtonText(plugin.settings.hotkeys.tags).setTooltip(t("customize_hotkey")).onClick(() => {
       button.setButtonText(t("press_key"));
       const listener = (e) => __async(this, null, function* () {
@@ -13212,7 +14606,7 @@ function displayHotkeys(plugin, containerEl) {
       window.addEventListener("keyup", listener);
     });
   });
-  new import_obsidian22.Setting(containerEl).setName(t("next")).addButton((button) => {
+  new import_obsidian24.Setting(containerEl).setName(t("next")).addButton((button) => {
     button.setButtonText(plugin.settings.hotkeys.next).setTooltip(t("customize_hotkey")).onClick(() => {
       button.setButtonText(t("press_key"));
       const listener = (e) => __async(this, null, function* () {
@@ -13227,7 +14621,7 @@ function displayHotkeys(plugin, containerEl) {
       window.addEventListener("keyup", listener);
     });
   });
-  new import_obsidian22.Setting(containerEl).setName(t("previous")).addButton((button) => {
+  new import_obsidian24.Setting(containerEl).setName(t("previous")).addButton((button) => {
     button.setButtonText(plugin.settings.hotkeys.previous).setTooltip(t("customize_hotkey")).onClick(() => {
       button.setButtonText(t("press_key"));
       const listener = (e) => __async(this, null, function* () {
@@ -13243,7 +14637,7 @@ function displayHotkeys(plugin, containerEl) {
     });
   });
   if (plugin.app.plugins.plugins["obsidian-tts"]) {
-    new import_obsidian22.Setting(containerEl).setName(t("read_article_tts")).setTooltip(t("customize_hotkey")).addButton((button) => {
+    new import_obsidian24.Setting(containerEl).setName(t("read_article_tts")).setTooltip(t("customize_hotkey")).addButton((button) => {
       button.setButtonText(plugin.settings.hotkeys.tts).onClick(() => {
         button.setButtonText(t("press_key"));
         const listener = (e) => __async(this, null, function* () {
@@ -13261,8 +14655,110 @@ function displayHotkeys(plugin, containerEl) {
   }
 }
 
+// src/settings/FilterSettings.ts
+var import_obsidian25 = __toModule(require("obsidian"));
+function displayFilterSettings(plugin, containerEl) {
+  containerEl.empty();
+  containerEl.createEl("hr", { attr: { style: "border-top: 5px solid var(--background-modifier-border);" } });
+  containerEl.createEl("h3", { text: t("filtered_folders") });
+  new import_obsidian25.Setting(containerEl).setName(t("add_new")).setDesc(t("add_new_filter")).addButton((button) => {
+    return button.setTooltip(t("add_new_filter")).setIcon("feather-plus").onClick(() => __async(this, null, function* () {
+      const modal = new FilteredFolderModal(plugin);
+      modal.onClose = () => __async(this, null, function* () {
+        if (modal.saved) {
+          if (plugin.settings.filtered.some((folder) => folder.name === modal.name)) {
+            new import_obsidian25.Notice(t("filter_exists"));
+            return;
+          }
+          yield plugin.writeFiltered(() => plugin.settings.filtered.concat({
+            name: modal.name,
+            sortOrder: modal.sortOrder,
+            filterFeeds: modal.filterFeeds,
+            filterFolders: modal.filterFolders,
+            filterTags: modal.filterTags,
+            favorites: modal.favorites,
+            ignoreFolders: modal.ignoreFolders,
+            ignoreFeeds: modal.ignoreFeeds,
+            ignoreTags: modal.ignoreTags,
+            read: modal.read,
+            unread: modal.unread
+          }));
+          displayFilterSettings(plugin, containerEl);
+        }
+      });
+      modal.open();
+    }));
+  });
+  const filterContainer = containerEl.createDiv("filter-container");
+  const filtersDiv = filterContainer.createDiv("filters");
+  for (const id in plugin.settings.filtered.sort((a, b) => a.name.localeCompare(b.name))) {
+    const filter = plugin.settings.filtered[id];
+    if (filter === void 0) {
+      continue;
+    }
+    const setting = new import_obsidian25.Setting(filtersDiv);
+    setting.setName(filter.name);
+    const description = [];
+    if (filter.read)
+      description.push(t("read"));
+    if (filter.unread)
+      description.push(t("unread"));
+    if (filter.favorites)
+      description.push(t("favorites"));
+    let message = "";
+    if (filter.filterFolders !== void 0 && filter.filterFolders.length > 0) {
+      const folders = filter.filterFolders.join(",");
+      message += "; " + t("from_folders") + folders;
+    }
+    if (filter.filterFeeds.length > 0) {
+      const feeds = filter.filterFeeds.join(",");
+      message += "; " + t("from_feeds") + feeds;
+    }
+    if (filter.filterTags.length > 0) {
+      const tags = filter.filterTags.join(",");
+      message += "; " + t("with_tags") + tags;
+    }
+    setting.setDesc(description.join(",") + message);
+    setting.addExtraButton((b) => {
+      b.setIcon("feather-edit").setTooltip(t("edit")).onClick(() => {
+        const modal = new FilteredFolderModal(plugin, filter);
+        const oldFilter = filter;
+        modal.onClose = () => __async(this, null, function* () {
+          if (modal.saved) {
+            const filters = plugin.settings.filtered;
+            filters.remove(oldFilter);
+            filters.push({
+              name: modal.name,
+              sortOrder: modal.sortOrder,
+              filterFeeds: modal.filterFeeds,
+              filterFolders: modal.filterFolders,
+              filterTags: modal.filterTags,
+              ignoreFolders: modal.ignoreFolders,
+              ignoreFeeds: modal.ignoreFeeds,
+              ignoreTags: modal.ignoreTags,
+              favorites: modal.favorites,
+              read: modal.read,
+              unread: modal.unread
+            });
+            yield plugin.writeFiltered(() => filters);
+            displayFilterSettings(plugin, containerEl);
+          }
+        });
+        modal.open();
+      });
+    }).addExtraButton((b) => {
+      b.setIcon("feather-trash").setTooltip(t("delete")).onClick(() => __async(this, null, function* () {
+        const filters = plugin.settings.filtered;
+        filters.remove(filter);
+        yield plugin.writeFiltered(() => filters);
+        displayFilterSettings(plugin, containerEl);
+      }));
+    });
+  }
+}
+
 // src/settings/SettingsTab.ts
-var RSSReaderSettingsTab = class extends import_obsidian23.PluginSettingTab {
+var RSSReaderSettingsTab = class extends import_obsidian26.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -13273,8 +14769,8 @@ var RSSReaderSettingsTab = class extends import_obsidian23.PluginSettingTab {
     containerEl.createEl("h2", { text: t("RSS_Reader") + " " + t("settings") });
     containerEl.createEl("h3", { text: t("file_creation") });
     const templateDesc = new DocumentFragment();
-    templateDesc.createDiv().innerHTML = t("template_new_help") + "<br>" + t("available_variables") + `<br><strong>{{title}}</strong> \u2192 Title <br><strong>{{link}}</strong> \u2192 Link to article<br><strong>{{author}}</strong> \u2192 Author of article<br><strong>{{published}}</strong> \u2192 Date published<br><strong>{{created}}</strong> \u2192 Note creation date<br><strong>{{description}}</strong> \u2192 Short article description<br><strong>{{content}}</strong> \u2192 article content<br><strong>{{folder}}</strong> \u2192 Folder of feed<br><strong>{{feed}}</strong> \u2192 Title of feed<br><strong>{{filename}}</strong> \u2192 Filename<br><strong>{{tags}}</strong> \u2192 Tags split by comma<br><strong>{{media}}</strong> \u2192 Link to video/audio file`;
-    new import_obsidian23.Setting(containerEl).setName(t("template_new")).setDesc(templateDesc).addTextArea((textArea) => {
+    templateDesc.createDiv().innerHTML = t("template_new_help") + "<br>" + t("available_variables") + `<br><strong>{{title}}</strong> \u2192 ${t("article_title")}<br><strong>{{link}}</strong> \u2192 ${t("article_link")}<br><strong>{{author}}</strong> \u2192 ${t("article_author")}<br><strong>{{published}}</strong> \u2192 ${t("article_published")}<br><strong>{{created}}</strong> \u2192 ${t("note_created")}<br><strong>{{description}}</strong> \u2192 ${t("article_description")}<br><strong>{{content}}</strong> \u2192 ${t("article_content")}<br><strong>{{folder}}</strong> \u2192 ${t("feed_folder")}<br><strong>{{feed}}</strong> \u2192 ${t("feed_title")}<br><strong>{{filename}}</strong> \u2192 ${t("filename")}<br><strong>{{tags}}</strong> \u2192 ${t("article_tags")}<br><strong>{{media}}</strong> \u2192 ${t("article_media")}<br><strong>{{highlights}}</strong> \u2192 ${t("highlights")}`;
+    new import_obsidian26.Setting(containerEl).setName(t("template_new")).setDesc(templateDesc).addTextArea((textArea) => {
       textArea.setValue(this.plugin.settings.template).setPlaceholder(DEFAULT_SETTINGS.template).onChange((value) => __async(this, null, function* () {
         yield this.plugin.writeSettings(() => ({
           template: value
@@ -13284,8 +14780,8 @@ var RSSReaderSettingsTab = class extends import_obsidian23.PluginSettingTab {
       textArea.inputEl.setAttr("cols", 50);
     });
     const pasteTemplateDesc = new DocumentFragment();
-    pasteTemplateDesc.createDiv().innerHTML = t("template_new_help") + "<br>" + t("available_variables") + `<br><strong>{{title}}</strong> \u2192 Title <br><strong>{{link}}</strong> \u2192 Link to article<br><strong>{{author}}</strong> \u2192 Author of article<br><strong>{{published}}</strong> \u2192 Date published<br><strong>{{created}}</strong> \u2192 Note creation date<br><strong>{{description}}</strong> \u2192 Short article description<br><strong>{{content}}</strong> \u2192 article content<br><strong>{{folder}}</strong> \u2192 Folder of feed<br><strong>{{feed}}</strong> \u2192 Title of feed<br><strong>{{tags}}</strong> \u2192 Tags split by comma<br><strong>{{media}}</strong> \u2192 Link to video/audio file`;
-    new import_obsidian23.Setting(containerEl).setName(t("template_paste")).setDesc(pasteTemplateDesc).addTextArea((textArea) => {
+    pasteTemplateDesc.createDiv().innerHTML = t("template_new_help") + "<br>" + t("available_variables") + `<br><strong>{{title}}</strong> \u2192 ${t("article_title")}<br><strong>{{link}}</strong> \u2192 ${t("article_link")}<br><strong>{{author}}</strong> \u2192 ${t("article_author")}<br><strong>{{published}}</strong> \u2192 ${t("article_published")}<br><strong>{{created}}</strong> \u2192 ${t("note_created")}<br><strong>{{description}}</strong> \u2192 ${t("article_description")}<br><strong>{{content}}</strong> \u2192 ${t("article_content")}<br><strong>{{folder}}</strong> \u2192 ${t("feed_folder")}<br><strong>{{feed}}</strong> \u2192 ${t("feed_title")}<br><strong>{{tags}}</strong> \u2192 ${t("article_tags")}<br><strong>{{media}}</strong> \u2192 ${t("article_media")}<br><strong>{{highlights}}</strong> \u2192 ${t("highlights")}`;
+    new import_obsidian26.Setting(containerEl).setName(t("template_paste")).setDesc(pasteTemplateDesc).addTextArea((textArea) => {
       textArea.setValue(this.plugin.settings.pasteTemplate).setPlaceholder(DEFAULT_SETTINGS.pasteTemplate).onChange((value) => __async(this, null, function* () {
         yield this.plugin.writeSettings(() => ({
           pasteTemplate: value
@@ -13294,14 +14790,14 @@ var RSSReaderSettingsTab = class extends import_obsidian23.PluginSettingTab {
       textArea.inputEl.setAttr("rows", 15);
       textArea.inputEl.setAttr("cols", 50);
     });
-    new import_obsidian23.Setting(containerEl).setName(t("file_location")).setDesc(t("file_location_help")).addDropdown((dropdown) => __async(this, null, function* () {
+    new import_obsidian26.Setting(containerEl).setName(t("file_location")).setDesc(t("file_location_help")).addDropdown((dropdown) => __async(this, null, function* () {
       dropdown.addOption("default", t("file_location_default")).addOption("custom", t("file_location_custom")).setValue(this.plugin.settings.saveLocation).onChange((value) => __async(this, null, function* () {
         yield this.plugin.writeSettings(() => ({ saveLocation: value }));
         this.display();
       }));
     }));
     if (this.plugin.settings.saveLocation == "custom") {
-      new import_obsidian23.Setting(containerEl).setName(t("file_location_folder")).setDesc(t("file_location_folder_help")).addSearch((search) => __async(this, null, function* () {
+      new import_obsidian26.Setting(containerEl).setName(t("file_location_folder")).setDesc(t("file_location_folder_help")).addSearch((search) => __async(this, null, function* () {
         new FolderSuggest(this.app, search.inputEl);
         search.setValue(this.plugin.settings.saveLocationFolder).setPlaceholder(DEFAULT_SETTINGS.saveLocationFolder).onChange((value) => __async(this, null, function* () {
           yield this.plugin.writeSettings(() => ({ saveLocationFolder: value }));
@@ -13309,7 +14805,7 @@ var RSSReaderSettingsTab = class extends import_obsidian23.PluginSettingTab {
       }));
     }
     let dateFormatSampleEl;
-    const dateFormat = new import_obsidian23.Setting(containerEl).setName(t("date_format")).addMomentFormat((format2) => {
+    const dateFormat = new import_obsidian26.Setting(containerEl).setName(t("date_format")).addMomentFormat((format2) => {
       dateFormatSampleEl = format2.setDefaultFormat(DEFAULT_SETTINGS.dateFormat).setPlaceholder(DEFAULT_SETTINGS.dateFormat).setValue(this.plugin.settings.dateFormat).onChange((value) => __async(this, null, function* () {
         yield this.plugin.writeSettings(() => ({ dateFormat: value }));
       }));
@@ -13329,34 +14825,34 @@ var RSSReaderSettingsTab = class extends import_obsidian23.PluginSettingTab {
         this.display();
       }));
     });
-    new import_obsidian23.Setting(containerEl).setName(t("ask_filename")).setDesc(t("ask_filename_help")).addToggle((toggle) => {
+    new import_obsidian26.Setting(containerEl).setName(t("ask_filename")).setDesc(t("ask_filename_help")).addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.askForFilename).onChange((value) => __async(this, null, function* () {
         yield this.plugin.writeSettings(() => ({
           askForFilename: value
         }));
       }));
     });
-    new import_obsidian23.Setting(containerEl).setName(t("default_filename")).setDesc(t("default_filename_help")).addText((text3) => {
+    new import_obsidian26.Setting(containerEl).setName(t("default_filename")).setDesc(t("default_filename_help")).addText((text3) => {
       text3.setPlaceholder(DEFAULT_SETTINGS.defaultFilename).setValue(this.plugin.settings.defaultFilename).onChange((value) => __async(this, null, function* () {
         if (value.length > 0) {
           yield this.plugin.writeSettings(() => ({
             defaultFilename: value
           }));
         } else {
-          new import_obsidian23.Notice(t("fix_errors"));
+          new import_obsidian26.Notice(t("fix_errors"));
         }
       }));
     });
     containerEl.createEl("hr", { attr: { style: "border-top: 5px solid var(--background-modifier-border);" } });
     containerEl.createEl("h3", { text: "Misc" });
-    const refresh = new import_obsidian23.Setting(containerEl).setName(t("refresh_time")).setDesc(t("refresh_time_help")).addText((text3) => {
+    const refresh = new import_obsidian26.Setting(containerEl).setName(t("refresh_time")).setDesc(t("refresh_time_help")).addText((text3) => {
       text3.setPlaceholder(String(DEFAULT_SETTINGS.updateTime)).setValue(String(this.plugin.settings.updateTime)).onChange((value) => __async(this, null, function* () {
         if (value.length === 0) {
-          new import_obsidian23.Notice(t("specify_positive_number"));
+          new import_obsidian26.Notice(t("specify_positive_number"));
           return;
         }
         if (Number(value) < 0) {
-          new import_obsidian23.Notice(t("specify_positive_number"));
+          new import_obsidian26.Notice(t("specify_positive_number"));
           return;
         }
         yield this.plugin.writeSettings(() => ({ updateTime: Number(value) }));
@@ -13373,115 +14869,69 @@ var RSSReaderSettingsTab = class extends import_obsidian23.PluginSettingTab {
         this.display();
       }));
     });
-    new import_obsidian23.Setting(containerEl).setName(t("multi_device_usage")).setDesc(t("multi_device_usage_help")).addToggle((toggle) => {
+    new import_obsidian26.Setting(containerEl).setName(t("multi_device_usage")).setDesc(t("multi_device_usage_help")).addToggle((toggle) => {
       return toggle.setValue(this.plugin.settings.autoSync).onChange((value) => __async(this, null, function* () {
         yield this.plugin.writeSettings(() => ({
           autoSync: value
         }));
       }));
     });
-    containerEl.createEl("hr", { attr: { style: "border-top: 5px solid var(--background-modifier-border);" } });
-    containerEl.createEl("h3", { text: t("filtered_folders") });
-    new import_obsidian23.Setting(containerEl).setName(t("add_new")).setDesc(t("add_new_filter")).addButton((button) => {
-      return button.setTooltip(t("add_new_filter")).setIcon("feather-plus").onClick(() => __async(this, null, function* () {
-        const modal = new FilteredFolderModal(this.plugin);
-        modal.onClose = () => __async(this, null, function* () {
-          if (modal.saved) {
-            if (this.plugin.settings.filtered.some((folder) => folder.name === modal.name)) {
-              new import_obsidian23.Notice(t("filter_exists"));
-              return;
-            }
-            yield this.plugin.writeFiltered(() => this.plugin.settings.filtered.concat({
-              name: modal.name,
-              sortOrder: modal.sortOrder,
-              filterFeeds: modal.filterFeeds,
-              filterFolders: modal.filterFolders,
-              filterTags: modal.filterTags,
-              favorites: modal.favorites,
-              read: modal.read,
-              unread: modal.unread
-            }));
-            this.display();
-          }
-        });
-        modal.open();
+    new import_obsidian26.Setting(containerEl).setName(t("display_style")).addDropdown((dropdown) => {
+      return dropdown.addOption("list", t("list")).addOption("cards", t("cards")).setValue(this.plugin.settings.displayStyle).onChange((value) => __async(this, null, function* () {
+        yield this.plugin.writeSettings(() => ({
+          displayStyle: value
+        }));
       }));
     });
+    containerEl.createEl("h2", { text: t("content") });
     const filterContainer = containerEl.createDiv("filter-container");
-    const filtersDiv = filterContainer.createDiv("filters");
-    for (const id in this.plugin.settings.filtered.sort((a, b) => a.name.localeCompare(b.name))) {
-      const filter = this.plugin.settings.filtered[id];
-      if (filter === void 0) {
-        continue;
-      }
-      const setting = new import_obsidian23.Setting(filtersDiv);
-      setting.setName(filter.name);
-      const description = [];
-      if (filter.read)
-        description.push(t("read"));
-      if (filter.unread)
-        description.push(t("unread"));
-      if (filter.favorites)
-        description.push(t("favorites"));
-      let message = "";
-      if (filter.filterFolders !== void 0 && filter.filterFolders.length > 0) {
-        const folders = filter.filterFolders.join(",");
-        message += "; " + t("from_folders") + folders;
-      }
-      if (filter.filterFeeds.length > 0) {
-        const feeds = filter.filterFeeds.join(",");
-        message += "; " + t("from_feeds") + feeds;
-      }
-      if (filter.filterTags.length > 0) {
-        const tags = filter.filterTags.join(",");
-        message += "; " + t("with_tags") + tags;
-      }
-      setting.setDesc(description.join(",") + message);
-      setting.addExtraButton((b) => {
-        b.setIcon("feather-edit").setTooltip(t("edit")).onClick(() => {
-          const modal = new FilteredFolderModal(this.plugin, filter);
-          const oldFilter = filter;
-          modal.onClose = () => __async(this, null, function* () {
-            if (modal.saved) {
-              const filters = this.plugin.settings.filtered;
-              filters.remove(oldFilter);
-              filters.push({
-                name: modal.name,
-                sortOrder: modal.sortOrder,
-                filterFeeds: modal.filterFeeds,
-                filterFolders: modal.filterFolders,
-                filterTags: modal.filterTags,
-                favorites: modal.favorites,
-                read: modal.read,
-                unread: modal.unread
-              });
-              yield this.plugin.writeFiltered(() => filters);
-              this.display();
-            }
-          });
-          modal.open();
-        });
-      }).addExtraButton((b) => {
-        b.setIcon("feather-trash").setTooltip(t("delete")).onClick(() => __async(this, null, function* () {
-          const filters = this.plugin.settings.filtered;
-          filters.remove(filter);
-          yield this.plugin.writeFiltered(() => filters);
-          this.display();
-        }));
-      });
-    }
-    containerEl.createEl("hr", { attr: { style: "border-top: 5px solid var(--background-modifier-border);" } });
+    displayFilterSettings(this.plugin, filterContainer);
     const feedsContainer = containerEl.createDiv("feed-container");
     displayFeedSettings(this.plugin, feedsContainer);
     containerEl.createEl("hr", { attr: { style: "border-top: 5px solid var(--background-modifier-border);" } });
     const hotkeyContainer = containerEl.createDiv("hotkey-container");
     displayHotkeys(this.plugin, hotkeyContainer);
+    containerEl.createEl("hr", { attr: { style: "border-top: 5px solid var(--background-modifier-border);" } });
+    const details = containerEl.createEl("details");
+    const summary = details.createEl("summary");
+    summary.setText(t("advanced"));
+    const advanced = details.createDiv("advanced");
+    advanced.createEl("h3", { text: t("customize_terms") });
+    advanced.createSpan({ text: "Change a few selected terms here. You can help translating the plugin " });
+    advanced.createEl("a", { text: "here", href: "https://github.com/joethei/obsidian-rss/tree/master/src/l10n" });
+    new import_obsidian26.Setting(advanced).setName(t("folders")).addText((text3) => {
+      text3.setPlaceholder(t("folders")).setValue(this.plugin.settings.renamedText.folders).onChange((value) => __async(this, null, function* () {
+        yield this.plugin.writeSettings(() => ({
+          renamedText: __spreadProps(__spreadValues({}, this.plugin.settings.renamedText), {
+            folders: value
+          })
+        }));
+      }));
+    });
+    new import_obsidian26.Setting(advanced).setName(t("filtered_folders")).addText((text3) => {
+      text3.setPlaceholder(t("filtered_folders")).setValue(this.plugin.settings.renamedText.filtered_folders).onChange((value) => __async(this, null, function* () {
+        yield this.plugin.writeSettings(() => ({
+          renamedText: __spreadProps(__spreadValues({}, this.plugin.settings.renamedText), {
+            filtered_folders: value
+          })
+        }));
+      }));
+    });
+    new import_obsidian26.Setting(advanced).setName(t("no_folder")).addText((text3) => {
+      text3.setPlaceholder(t("no_folder")).setValue(this.plugin.settings.renamedText.no_folder).onChange((value) => __async(this, null, function* () {
+        yield this.plugin.writeSettings(() => ({
+          renamedText: __spreadProps(__spreadValues({}, this.plugin.settings.renamedText), {
+            no_folder: value
+          })
+        }));
+      }));
+    });
   }
 };
 
 // src/modals/ArticleSuggestModal.ts
-var import_obsidian24 = __toModule(require("obsidian"));
-var ArticleSuggestModal = class extends import_obsidian24.SuggestModal {
+var import_obsidian27 = __toModule(require("obsidian"));
+var ArticleSuggestModal = class extends import_obsidian27.SuggestModal {
   constructor(plugin, items) {
     super(plugin.app);
     this.plugin = plugin;
@@ -13501,21 +14951,19 @@ var ArticleSuggestModal = class extends import_obsidian24.SuggestModal {
   }
   renderSuggestion(item, el) {
     el.createEl("div", { text: item.title });
-    el.createEl("small", { text: (0, import_obsidian24.moment)(item.pubDate).format(this.plugin.settings.dateFormat) + " " + item.creator });
+    el.createEl("small", { text: (0, import_obsidian27.moment)(item.pubDate).format(this.plugin.settings.dateFormat) + " " + item.creator });
   }
 };
 
 // src/main.ts
-var RssReaderPlugin = class extends import_obsidian25.Plugin {
+var RssReaderPlugin = class extends import_obsidian28.Plugin {
   onload() {
     return __async(this, null, function* () {
       console.log("loading plugin rss reader");
-      new import_obsidian25.Notice(t("RSS_Reader") + ": Please check your settings, the default value for the date format had an error, the correct format for minutes is mm not MM", 1e5);
       addFeatherIcon("rss");
       addFeatherIcon("eye");
       addFeatherIcon("eye-off");
       addFeatherIcon("star");
-      addFeatherIcon("clipboard");
       addFeatherIcon("headphones");
       addFeatherIcon("upload");
       addFeatherIcon("trash");
@@ -13620,7 +15068,7 @@ var RssReaderPlugin = class extends import_obsidian25.Plugin {
             if (item !== void 0)
               folders.push(item.folder);
           }
-          folderStore.update(() => new Set(folders.filter((folder) => folder.length > 0)));
+          folderStore.update(() => new Set(folders.filter((folder) => folder !== void 0 && folder.length > 0)));
           this.filterItems(items);
         });
       }));
@@ -13631,9 +15079,19 @@ var RssReaderPlugin = class extends import_obsidian25.Plugin {
     for (const filter of this.settings.filtered) {
       const sortOrder = SortOrder[filter.sortOrder];
       let filteredItems;
-      filteredItems = items.filter((item) => {
-        return item.read === filter.read || item.read !== filter.unread;
-      });
+      if (filter.read && filter.unread) {
+        filteredItems = items.filter((item) => {
+          return item.read === filter.read || item.read !== filter.unread;
+        });
+      } else if (filter.read) {
+        filteredItems = items.filter((item) => {
+          return item.read;
+        });
+      } else if (filter.unread) {
+        filteredItems = items.filter((item) => {
+          return !item.read;
+        });
+      }
       if (filter.favorites) {
         filteredItems = filteredItems.filter((item) => {
           return item.favorite === filter.favorites;
@@ -13641,18 +15099,37 @@ var RssReaderPlugin = class extends import_obsidian25.Plugin {
       }
       if (filter.filterFolders.length > 0) {
         filteredItems = filteredItems.filter((item) => {
-          filter.filterFolders.includes(item.folder);
+          return filter.filterFolders.includes(item.folder);
+        });
+      }
+      if (filter.ignoreFolders.length > 0) {
+        filteredItems = filteredItems.filter((item) => {
+          return !filter.ignoreFolders.includes(item.folder);
         });
       }
       if (filter.filterFeeds.length > 0) {
         filteredItems = filteredItems.filter((item) => {
-          filter.filterFeeds.includes(item.feed);
+          return filter.filterFeeds.includes(item.feed);
+        });
+      }
+      if (filter.ignoreFeeds.length > 0) {
+        filteredItems = filteredItems.filter((item) => {
+          return !filter.ignoreFeeds.includes(item.feed);
         });
       }
       if (filter.filterTags.length > 0) {
         filteredItems = filteredItems.filter((item) => {
           for (const tag of filter.filterTags) {
             if (!item.tags.contains(tag))
+              return false;
+          }
+          return true;
+        });
+      }
+      if (filter.ignoreTags.length > 0) {
+        filteredItems = filteredItems.filter((item) => {
+          for (const tag of filter.ignoreTags) {
+            if (item.tags.contains(tag))
               return false;
           }
           return true;
@@ -13682,6 +15159,7 @@ var RssReaderPlugin = class extends import_obsidian25.Plugin {
   }
   updateFeeds() {
     return __async(this, null, function* () {
+      console.log("updating feeds");
       function mergeArrayById(array1, array2) {
         const mergedObjectMap = (0, import_lodash8.default)(array1, "hash");
         const finalArray = [];
@@ -13701,12 +15179,13 @@ var RssReaderPlugin = class extends import_obsidian25.Plugin {
       let result = [];
       for (const feed of this.settings.feeds) {
         const items2 = yield getFeedItems(feed);
-        result.push(items2);
+        if (items2)
+          result.push(items2);
       }
       const items = this.settings.items;
       for (const feed of items) {
         if (feed.hash === void 0 || feed.hash === "") {
-          feed.hash = new import_ts_md53.Md5().appendStr(feed.name).appendStr(feed.folder).end();
+          feed.hash = new import_ts_md53.Md5().appendStr(feed.name).appendStr(feed.folder ? feed.folder : "no-folder").end();
         }
         for (const item of feed.items) {
           if (item.folder !== feed.folder || item.feed !== feed.name) {
@@ -13718,7 +15197,7 @@ var RssReaderPlugin = class extends import_obsidian25.Plugin {
         }
       }
       result = (0, import_lodash7.default)(result, items, customizer);
-      new import_obsidian25.Notice(t("refreshed_feeds"));
+      new import_obsidian28.Notice(t("refreshed_feeds"));
       yield this.writeFeedContent(() => result);
     });
   }
@@ -13738,16 +15217,36 @@ var RssReaderPlugin = class extends import_obsidian25.Plugin {
   }
   migrateData() {
     return __async(this, null, function* () {
-      console.log("migrating");
       const configPath = this.app.vault.configDir + "/plugins/rss-reader/data.json";
       const config = JSON.parse(yield this.app.vault.adapter.read(configPath));
-      console.log(config);
+      for (const feed of config.feeds) {
+        if (feed.folder === void 0) {
+          feed.folder = "";
+        }
+      }
+      for (const feed of config.items) {
+        if (feed.folder === void 0) {
+          feed.folder = "";
+        }
+      }
+      yield this.app.vault.adapter.write(configPath, JSON.stringify(config));
       if (config.filtered.length === 0)
         return;
-      console.log(config.filtered[0]);
+      if (config.filtered[0].ignoreFolders === void 0) {
+        new import_obsidian28.Notice("RSS Reader: migrating data");
+        console.log("RSS Reader: adding ignored fields to filters");
+        for (const filter of config.filtered) {
+          filter.ignoreTags = [];
+          filter.ignoreFolders = [];
+          filter.ignoreFeeds = [];
+        }
+        yield this.app.vault.adapter.write(configPath, JSON.stringify(config));
+        yield this.loadSettings();
+        new import_obsidian28.Notice("RSS Reader: data has been migrated");
+      }
       if (config.filtered[0].filterType === void 0)
         return;
-      new import_obsidian25.Notice("RSS Reader: migrating data");
+      new import_obsidian28.Notice("RSS Reader: migrating data");
       for (const filter of config.filtered) {
         const newFilter = {
           filterFolders: [],
@@ -13757,7 +15256,10 @@ var RssReaderPlugin = class extends import_obsidian25.Plugin {
           read: false,
           unread: false,
           sortOrder: filter.sortOrder,
-          name: filter.name
+          name: filter.name,
+          ignoreFolders: [],
+          ignoreFeeds: [],
+          ignoreTags: []
         };
         if (filter.filterType === "FAVORITES")
           newFilter.favorites = true;
@@ -13781,10 +15283,10 @@ var RssReaderPlugin = class extends import_obsidian25.Plugin {
       }
       yield this.app.vault.adapter.write(configPath, JSON.stringify(config));
       yield this.loadSettings();
-      new import_obsidian25.Notice("RSS Reader: data has been migrated");
+      new import_obsidian28.Notice("RSS Reader: data has been migrated");
       if (config.read === void 0)
         return;
-      new import_obsidian25.Notice("RSS Reader: migrating data");
+      new import_obsidian28.Notice("RSS Reader: migrating data");
       for (const content of Object.values(config.items)) {
         for (const item of content.items) {
           if (config.read.items.some((readItem) => {
@@ -13805,23 +15307,33 @@ var RssReaderPlugin = class extends import_obsidian25.Plugin {
       delete config.favorites;
       yield this.app.vault.adapter.write(configPath, JSON.stringify(config));
       yield this.loadSettings();
-      new import_obsidian25.Notice("RSS Reader: data has been migrated");
+      new import_obsidian28.Notice("RSS Reader: data has been migrated");
     });
   }
   loadSettings() {
     return __async(this, null, function* () {
       const configPath = this.app.vault.configDir + "/plugins/rss-reader/data.json";
+      let file;
       try {
-        JSON.parse(yield this.app.vault.adapter.read(configPath));
+        file = yield this.app.vault.adapter.read(configPath);
       } catch (e) {
-        console.log("RSS Reader: could not parse json, check if the plugins data.json is valid.");
         console.error(e);
-        new import_obsidian25.Notice(t("RSS_Reader") + " could not parse plugin data. If this message keeps showing up, check the console");
-        return Promise.resolve();
+      }
+      if (file !== void 0) {
+        try {
+          JSON.parse(file);
+        } catch (e) {
+          console.log("RSS Reader: could not parse json, check if the plugins data.json is valid.");
+          console.error(e);
+          new import_obsidian28.Notice(t("RSS_Reader") + " could not parse plugin data. If this message keeps showing up, check the console");
+          return Promise.resolve();
+        }
       }
       const data = yield this.loadData();
       this.settings = Object.assign({}, DEFAULT_SETTINGS, data);
-      this.settings.hotkeys = Object.assign({}, DEFAULT_SETTINGS.hotkeys, data.hotkeys);
+      if (data !== void 0 && data !== null) {
+        this.settings.hotkeys = Object.assign({}, DEFAULT_SETTINGS.hotkeys, data.hotkeys);
+      }
       settingsStore.set(this.settings);
       configuredFeedsStore.set(this.settings.feeds);
       feedsStore.set(this.settings.items);
