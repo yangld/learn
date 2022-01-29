@@ -164,7 +164,6 @@
   "file-explorer:move-file": [
     {
       "modifiers": [
-        "Alt",
         "Mod"
       ],
       "key": "M"
@@ -229,5 +228,10 @@
       ],
       "key": "'"
     }
-  ]
+  ],
+  "table-editor-obsidian:table-control-bar": [],
+  "Enhanced editing:add-daima": [],
+  "Enhanced editing:text-background5": [],
+  "Enhanced editing:del-lines": [],
+  "Enhanced editing:common-text": []
 }

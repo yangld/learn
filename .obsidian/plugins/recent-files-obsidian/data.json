@@ -1,200 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "DataView测试",
-      "path": "5Obsidian/DataView测试.md"
-    },
-    {
-      "basename": "幻灯片测试",
-      "path": "5Obsidian/幻灯片测试.md"
-    },
-    {
       "basename": "Task测试数据",
       "path": "14TODO/Task测试数据.md"
     },
     {
-      "basename": "DataView测试任务生成",
-      "path": "5Obsidian/DataView测试任务生成.md"
-    },
-    {
-      "basename": "入门",
-      "path": "5Obsidian/入门.md"
+      "basename": "DataView测试",
+      "path": "5Obsidian/DataView测试.md"
     },
     {
       "basename": "斜杠命令测试",
       "path": "5Obsidian/斜杠命令测试.md"
     },
     {
-      "basename": "附件目录",
-      "path": "1附件/附件目录.md"
-    },
-    {
       "basename": "权限管理类图",
       "path": "待办事项/权限管理类图.md"
-    },
-    {
-      "basename": "常用网址看板",
-      "path": "13看板/常用网址看板.md"
-    },
-    {
-      "basename": "文件看板",
-      "path": "13看板/文件看板.md"
-    },
-    {
-      "basename": "Day Planner-20220128",
-      "path": "Day Planners/Day Planner-20220128.md"
-    },
-    {
-      "basename": "[Linux]Mac OSX 命令行下控制 Wifi命令 - cn_wk的专栏 - CSDN博客",
-      "path": "evernote/参考/[Linux]Mac OSX 命令行下控制 Wifi命令 - cn_wk的专栏 - CSDN博客.md"
-    },
-    {
-      "basename": "202201281801",
-      "path": "202201281801.md"
-    },
-    {
-      "basename": "202201281800",
-      "path": "202201281800.md"
-    },
-    {
-      "basename": "权限管理",
-      "path": "待办事项/权限管理.md"
-    },
-    {
-      "basename": "开发工具 _ 你真的会用jupyter吗？ _ 平凡而诗意",
-      "path": "evernote/参考/开发工具 _ 你真的会用jupyter吗？ _ 平凡而诗意.md"
-    },
-    {
-      "basename": "详述 JedisCommands 接口中的方法说明 - 云+社区 - 腾讯云",
-      "path": "evernote/参考/详述 JedisCommands 接口中的方法说明 - 云+社区 - 腾讯云.md"
-    },
-    {
-      "basename": "1",
-      "path": "1.md"
-    },
-    {
-      "basename": "arthas-热部署",
-      "path": "8知识管理/Navigation/学习/arthas-热部署.md"
-    },
-    {
-      "basename": "arthas-tt",
-      "path": "8知识管理/Navigation/学习/arthas-tt.md"
-    },
-    {
-      "basename": "权限文件看板",
-      "path": "13看板/权限文件看板.md"
     },
     {
       "basename": "权限管理ER图",
       "path": "待办事项/权限管理ER图.md"
     },
     {
-      "basename": "权限原型-web",
-      "path": "待办事项/权限原型-web.md"
+      "basename": "权限文件看板",
+      "path": "13看板/权限文件看板.md"
     },
     {
       "basename": "权限管理",
       "path": "14TODO/权限管理.md"
     },
     {
-      "basename": "Day Planner-20211203",
-      "path": "Day Planners/Day Planner-20211203.md"
-    },
-    {
-      "basename": "Day Planner-20211202",
-      "path": "Day Planners/Day Planner-20211202.md"
-    },
-    {
-      "basename": "Day Planner-20211201",
-      "path": "Day Planners/Day Planner-20211201.md"
-    },
-    {
-      "basename": "Day Planner-20211207",
-      "path": "Day Planners/Day Planner-20211207.md"
-    },
-    {
-      "basename": "Day Planner-20211209",
-      "path": "Day Planners/Day Planner-20211209.md"
-    },
-    {
-      "basename": "Day Planner-20220104",
-      "path": "Day Planners/Day Planner-20220104.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "14TODO/未命名.md"
-    },
-    {
-      "basename": "Day Planner-20211230",
-      "path": "Day Planners/Day Planner-20211230.md"
-    },
-    {
-      "basename": "原型",
-      "path": "待办事项/原型.md"
-    },
-    {
-      "basename": "Day Planner-20211130",
-      "path": "Day Planners/Day Planner-20211130.md"
-    },
-    {
-      "basename": "删除命令",
-      "path": "8知识管理/Knowledge/删除命令.md"
-    },
-    {
-      "basename": "Day Planner-20211228",
-      "path": "Day Planners/Day Planner-20211228.md"
-    },
-    {
-      "basename": "nginx斜杠",
-      "path": "14TODO/nginx斜杠.md"
-    },
-    {
-      "basename": "一所进丰台机房表格",
-      "path": "10常用文件/一所进丰台机房表格.md"
-    },
-    {
-      "basename": "Day Planner-20211223",
-      "path": "Day Planners/Day Planner-20211223.md"
-    },
-    {
-      "basename": "Day Planner-20211222",
-      "path": "Day Planners/Day Planner-20211222.md"
-    },
-    {
-      "basename": "Day Planner-20211221",
-      "path": "Day Planners/Day Planner-20211221.md"
-    },
-    {
       "basename": "Obsidian超链接语法详述",
       "path": "obsidian/Obsidian超链接语法详述.md"
     },
     {
-      "basename": "BUG看板",
-      "path": "13看板/BUG看板.md"
+      "basename": "1",
+      "path": "1.md"
     },
     {
-      "basename": "现场看板",
-      "path": "13看板/现场看板.md"
-    },
-    {
-      "basename": "项目看板",
-      "path": "13看板/项目看板.md"
-    },
-    {
-      "basename": "接口文档",
-      "path": "8知识管理/InBox/接口文档/接口文档.md"
-    },
-    {
-      "basename": "Day Planner-20211220",
-      "path": "Day Planners/Day Planner-20211220.md"
-    },
-    {
-      "basename": "1权限管理",
-      "path": "12时间轴/2时间轴-Line/1权限管理.md"
-    },
-    {
-      "basename": "1权限管理输入",
-      "path": "12时间轴/1资料-Input/1权限管理输入.md"
+      "basename": "CMenu测试",
+      "path": "5Obsidian/CMenu测试.md"
     }
   ],
   "omittedPaths": [],

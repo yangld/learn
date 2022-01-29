@@ -36,8 +36,7 @@
                       "state": {
                         "file": "1附件/附件目录.md",
                         "mode": "source",
-                        "backlinks": false,
-                        "source": false
+                        "backlinks": false
                       },
                       "pinned": true
                     }
@@ -54,9 +53,8 @@
                   "type": "markdown",
                   "state": {
                     "file": "14TODO/Task测试数据.md",
-                    "mode": "preview",
-                    "backlinks": false,
-                    "source": true
+                    "mode": "source",
+                    "backlinks": false
                   },
                   "pinned": true
                 }
@@ -135,173 +133,27 @@
       "right": {
         "id": "78a86d7ecd781271",
         "type": "split",
-        "children": [],
+        "children": [
+          {
+            "id": "3872b057ab5695a3",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "fd79110d047db657",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
         "direction": "horizontal",
         "width": 605,
         "collapsed": true
       },
       "active": "6b22aef35b5bf82f"
-    },
-    "dataview": {
-      "main": {
-        "id": "cddff17849a5d7d1",
-        "type": "split",
-        "children": [
-          {
-            "id": "572d2f7def6c6d8c",
-            "type": "split",
-            "children": [
-              {
-                "id": "cbe0792d9e51f5e0",
-                "type": "split",
-                "dimension": 70.54491899852724,
-                "children": [
-                  {
-                    "id": "a0a39cfbbee52336",
-                    "type": "leaf",
-                    "pinned": true,
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "5Obsidian/DataView测试.md",
-                        "mode": "preview",
-                        "backlinks": false,
-                        "source": true
-                      },
-                      "pinned": true
-                    }
-                  },
-                  {
-                    "id": "690fc44e16b1d5c7",
-                    "type": "leaf",
-                    "pinned": true,
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "5Obsidian/DataView测试.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": true
-                      },
-                      "pinned": true
-                    }
-                  }
-                ],
-                "direction": "horizontal"
-              },
-              {
-                "id": "d01d83c58413cb3c",
-                "type": "split",
-                "dimension": 29.455081001472756,
-                "children": [
-                  {
-                    "id": "be642989a3f3943b",
-                    "type": "leaf",
-                    "pinned": true,
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "5Obsidian/幻灯片测试.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": true
-                      },
-                      "pinned": true
-                    }
-                  },
-                  {
-                    "id": "c379281ea1803779",
-                    "type": "leaf",
-                    "pinned": true,
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "5Obsidian/斜杠命令测试.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": true
-                      },
-                      "pinned": true
-                    }
-                  }
-                ],
-                "direction": "vertical"
-              }
-            ],
-            "direction": "horizontal"
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "9727861d579d737a",
-        "type": "split",
-        "children": [
-          {
-            "id": "968cd024bb524cd5",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "849f8599666b02a3",
-                "type": "leaf",
-                "state": {
-                  "type": "starred",
-                  "state": {}
-                }
-              },
-              {
-                "id": "47b82e46d090a9f8",
-                "type": "leaf",
-                "state": {
-                  "type": "recent-files",
-                  "state": {}
-                }
-              },
-              {
-                "id": "8173d6ed32716e47",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "frequency",
-                    "useHierarchy": true
-                  }
-                }
-              },
-              {
-                "id": "2d2439608829bc3e",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "5Obsidian/DataView测试.md"
-                  }
-                }
-              },
-              {
-                "id": "8ab0aefc46604c25",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {}
-                }
-              }
-            ],
-            "currentTab": 4
-          }
-        ],
-        "direction": "horizontal",
-        "width": 238
-      },
-      "right": {
-        "id": "78a86d7ecd781271",
-        "type": "split",
-        "children": [],
-        "direction": "horizontal",
-        "width": 334,
-        "collapsed": true
-      },
-      "active": "690fc44e16b1d5c7"
     },
     "权限管理": {
       "main": {
@@ -326,8 +178,7 @@
                       "state": {
                         "file": "14TODO/权限管理.md",
                         "mode": "preview",
-                        "backlinks": false,
-                        "source": false
+                        "backlinks": false
                       },
                       "pinned": true
                     }
@@ -361,8 +212,7 @@
                       "state": {
                         "file": "待办事项/权限管理ER图.md",
                         "mode": "preview",
-                        "backlinks": false,
-                        "source": false
+                        "backlinks": false
                       },
                       "pinned": true
                     }
@@ -376,8 +226,7 @@
                       "state": {
                         "file": "待办事项/权限管理类图.md",
                         "mode": "preview",
-                        "backlinks": false,
-                        "source": false
+                        "backlinks": false
                       },
                       "pinned": true
                     }
@@ -512,6 +361,16 @@
                   "type": "RSS_FEED",
                   "state": {}
                 }
+              },
+              {
+                "id": "112a56dfd46a92ff",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "待办事项/权限管理类图.md"
+                  }
+                }
               }
             ],
             "currentTab": 2
@@ -549,7 +408,202 @@
         "collapsed": true
       },
       "active": "e5aed6e7519841bc"
+    },
+    "Obsidian功能测试": {
+      "main": {
+        "id": "cddff17849a5d7d1",
+        "type": "split",
+        "children": [
+          {
+            "id": "572d2f7def6c6d8c",
+            "type": "split",
+            "children": [
+              {
+                "id": "cbe0792d9e51f5e0",
+                "type": "split",
+                "dimension": 80.62015503875969,
+                "children": [
+                  {
+                    "id": "a0a39cfbbee52336",
+                    "type": "leaf",
+                    "dimension": 72.52747252747253,
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "5Obsidian/DataView测试.md",
+                        "mode": "preview",
+                        "backlinks": false
+                      },
+                      "pinned": true
+                    }
+                  },
+                  {
+                    "id": "99312dce114942b2",
+                    "type": "split",
+                    "dimension": 27.47252747252747,
+                    "children": [
+                      {
+                        "id": "690fc44e16b1d5c7",
+                        "type": "leaf",
+                        "pinned": true,
+                        "state": {
+                          "type": "markdown",
+                          "state": {
+                            "file": "5Obsidian/DataView测试.md",
+                            "mode": "source",
+                            "backlinks": false
+                          },
+                          "pinned": true
+                        }
+                      },
+                      {
+                        "id": "fa6d4ac863159b47",
+                        "type": "leaf",
+                        "pinned": true,
+                        "state": {
+                          "type": "markdown",
+                          "state": {
+                            "file": "5Obsidian/CMenu测试.md",
+                            "mode": "preview",
+                            "backlinks": false
+                          },
+                          "pinned": true
+                        }
+                      }
+                    ],
+                    "direction": "vertical"
+                  }
+                ],
+                "direction": "horizontal"
+              },
+              {
+                "id": "d01d83c58413cb3c",
+                "type": "split",
+                "dimension": 19.379844961240313,
+                "children": [
+                  {
+                    "id": "be642989a3f3943b",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "5Obsidian/幻灯片测试.md",
+                        "mode": "source",
+                        "backlinks": false
+                      },
+                      "pinned": true
+                    }
+                  },
+                  {
+                    "id": "c379281ea1803779",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "5Obsidian/斜杠命令测试.md",
+                        "mode": "source",
+                        "backlinks": false
+                      },
+                      "pinned": true
+                    }
+                  }
+                ],
+                "direction": "vertical"
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "9727861d579d737a",
+        "type": "split",
+        "children": [
+          {
+            "id": "968cd024bb524cd5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "849f8599666b02a3",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              },
+              {
+                "id": "47b82e46d090a9f8",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {}
+                }
+              },
+              {
+                "id": "8173d6ed32716e47",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "2d2439608829bc3e",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "5Obsidian/DataView测试.md"
+                  }
+                }
+              },
+              {
+                "id": "8ab0aefc46604c25",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "horizontal",
+        "width": 238
+      },
+      "right": {
+        "id": "78a86d7ecd781271",
+        "type": "split",
+        "children": [
+          {
+            "id": "76ce5867cdbbb2c5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "9893854fb6e5282a",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 334,
+        "collapsed": true
+      },
+      "active": "a0a39cfbbee52336"
     }
   },
-  "active": "dataview"
+  "active": "常用信息"
 }

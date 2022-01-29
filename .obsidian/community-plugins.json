@@ -13,5 +13,8 @@
   "obsidian-checklist-plugin",
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-emoji-toolbar",
-  "dataview"
+  "dataview",
+  "cmenu-plugin",
+  "Enhanced editing",
+  "maximise-active-pane-obsidian"
 ]

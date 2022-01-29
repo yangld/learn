@@ -4,87 +4,74 @@
     "type": "split",
     "children": [
       {
-        "id": "572d2f7def6c6d8c",
+        "id": "141cd199d51efbed",
         "type": "split",
+        "dimension": 66.51270207852194,
         "children": [
           {
-            "id": "cbe0792d9e51f5e0",
+            "id": "b3554fa7367eba03",
             "type": "split",
-            "dimension": 70.54491899852724,
+            "dimension": 25.74626865671642,
             "children": [
               {
-                "id": "a0a39cfbbee52336",
+                "id": "4b36b84914233b71",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
-                  "type": "markdown",
+                  "type": "kanban",
                   "state": {
-                    "file": "5Obsidian/DataView测试.md",
-                    "mode": "preview",
-                    "backlinks": false,
-                    "source": true
+                    "file": "13看板/文件看板.md"
                   },
                   "pinned": true
                 }
               },
               {
-                "id": "690fc44e16b1d5c7",
+                "id": "161f70f775b9e97d",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "5Obsidian/DataView测试.md",
+                    "file": "1附件/附件目录.md",
                     "mode": "source",
-                    "backlinks": false,
-                    "source": true
-                  },
-                  "pinned": true
-                }
-              }
-            ],
-            "direction": "horizontal"
-          },
-          {
-            "id": "d01d83c58413cb3c",
-            "type": "split",
-            "dimension": 29.455081001472752,
-            "children": [
-              {
-                "id": "be642989a3f3943b",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "5Obsidian/幻灯片测试.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": true
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "c379281ea1803779",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "5Obsidian/斜杠命令测试.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": true
+                    "backlinks": false
                   },
                   "pinned": true
                 }
               }
             ],
             "direction": "vertical"
+          },
+          {
+            "id": "6b22aef35b5bf82f",
+            "type": "leaf",
+            "dimension": 74.25373134328358,
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "14TODO/Task测试数据.md",
+                "mode": "preview",
+                "backlinks": false
+              },
+              "pinned": true
+            }
           }
         ],
         "direction": "horizontal"
+      },
+      {
+        "id": "315d87e5d12ff1aa",
+        "type": "leaf",
+        "dimension": 33.48729792147806,
+        "pinned": true,
+        "state": {
+          "type": "kanban",
+          "state": {
+            "file": "13看板/常用网址看板.md"
+          },
+          "pinned": true
+        }
       }
     ],
     "direction": "vertical"
@@ -125,49 +112,56 @@
             }
           },
           {
-            "id": "2d2439608829bc3e",
+            "id": "91e3a962b8c16b84",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "5Obsidian/DataView测试.md"
+                "file": "14TODO/Task测试数据.md"
               }
-            }
-          },
-          {
-            "id": "8ab0aefc46604c25",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 238
+    "width": 224
   },
   "right": {
     "id": "78a86d7ecd781271",
     "type": "split",
-    "children": [],
+    "children": [
+      {
+        "id": "3872b057ab5695a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd79110d047db657",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
     "direction": "horizontal",
-    "width": 334,
+    "width": 605,
     "collapsed": true
   },
-  "active": "690fc44e16b1d5c7",
+  "active": "6b22aef35b5bf82f",
   "lastOpenFiles": [
-    "5Obsidian/DataView测试.md",
-    "5Obsidian/幻灯片测试.md",
     "14TODO/Task测试数据.md",
-    "5Obsidian/DataView测试任务生成.md",
-    "5Obsidian/入门.md",
+    "5Obsidian/DataView测试.md",
     "5Obsidian/斜杠命令测试.md",
-    "5Obsidian/111.md",
-    "5Obsidian/1卡片.md",
-    "5Obsidian/未命名 1.md",
-    "14TODO/TODO.md"
+    "待办事项/权限管理类图.md",
+    "待办事项/权限管理ER图.md",
+    "13看板/权限文件看板.md",
+    "14TODO/权限管理.md",
+    "obsidian/Obsidian超链接语法详述.md",
+    "1.md",
+    "202201281800.md"
   ]
 }
