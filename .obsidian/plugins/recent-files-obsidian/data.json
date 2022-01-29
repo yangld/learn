@@ -1,32 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "TODO 1",
+      "path": "14TODO/TODO 1.md"
+    },
+    {
+      "basename": "DataView测试",
+      "path": "5Obsidian/DataView测试.md"
+    },
+    {
       "basename": "TODO",
       "path": "14TODO/TODO.md"
-    },
-    {
-      "basename": "aaa",
-      "path": "5Obsidian/aaa.md"
-    },
-    {
-      "basename": "权限管理类图",
-      "path": "待办事项/权限管理类图.md"
-    },
-    {
-      "basename": "dataview-test",
-      "path": "5Obsidian/dataview-test.md"
-    },
-    {
-      "basename": "未命名 1",
-      "path": "5Obsidian/未命名 1.md"
     },
     {
       "basename": "附件目录",
       "path": "1附件/附件目录.md"
     },
     {
+      "basename": "幻灯片测试",
+      "path": "5Obsidian/幻灯片测试.md"
+    },
+    {
+      "basename": "斜杠命令测试",
+      "path": "5Obsidian/斜杠命令测试.md"
+    },
+    {
+      "basename": "权限管理类图",
+      "path": "待办事项/权限管理类图.md"
+    },
+    {
+      "basename": "常用网址看板",
+      "path": "13看板/常用网址看板.md"
+    },
+    {
       "basename": "文件看板",
       "path": "13看板/文件看板.md"
+    },
+    {
+      "basename": "未命名 1",
+      "path": "5Obsidian/未命名 1.md"
     },
     {
       "basename": "Day Planner-20220128",
@@ -59,10 +71,6 @@
     {
       "basename": "1",
       "path": "1.md"
-    },
-    {
-      "basename": "常用网址看板",
-      "path": "13看板/常用网址看板.md"
     },
     {
       "basename": "arthas-热部署",
@@ -191,14 +199,6 @@
     {
       "basename": "Day Planner-20211126",
       "path": "Day Planners/Day Planner-20211126.md"
-    },
-    {
-      "basename": "Day Planner-20211204",
-      "path": "Day Planners/Day Planner-20211204.md"
-    },
-    {
-      "basename": "未命名 2",
-      "path": "Day Planners/未命名 2.md"
     }
   ],
   "omittedPaths": [],

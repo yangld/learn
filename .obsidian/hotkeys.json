@@ -40,7 +40,15 @@
       "key": "O"
     }
   ],
-  "workspace:split-vertical": [],
+  "workspace:split-vertical": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "5"
+    }
+  ],
   "app:delete-file": [],
   "templater-obsidian:知识管理/Template/HHMM.md": [
     {
@@ -65,7 +73,7 @@
         "Alt",
         "Mod"
       ],
-      "key": "K"
+      "key": "P"
     }
   ],
   "editor:focus-left": [
@@ -151,6 +159,75 @@
         "Mod"
       ],
       "key": "N"
+    }
+  ],
+  "file-explorer:move-file": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ],
+  "global-search:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "outline:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ],
+  "tag-pane:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "starred:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "X"
+    }
+  ],
+  "starred:star-current-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "X"
+    }
+  ],
+  "markdown-prettifier:markdown-prettifier-run": [],
+  "workspace:edit-file-title": [],
+  "editor:insert-link": [],
+  "app:open-help": [],
+  "editor:toggle-checklist-status": [],
+  "editor:toggle-bold": [],
+  "markdown-prettifier:markdown-prettifier-update-fields": [],
+  "workspace:split-horizontal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "'"
     }
   ]
 }
