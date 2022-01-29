@@ -5,12 +5,16 @@
       "path": "5Obsidian/DataView测试.md"
     },
     {
-      "basename": "DataView测试任务生成",
-      "path": "5Obsidian/DataView测试任务生成.md"
+      "basename": "幻灯片测试",
+      "path": "5Obsidian/幻灯片测试.md"
     },
     {
       "basename": "Task测试数据",
       "path": "14TODO/Task测试数据.md"
+    },
+    {
+      "basename": "DataView测试任务生成",
+      "path": "5Obsidian/DataView测试任务生成.md"
     },
     {
       "basename": "入门",
@@ -19,10 +23,6 @@
     {
       "basename": "斜杠命令测试",
       "path": "5Obsidian/斜杠命令测试.md"
-    },
-    {
-      "basename": "幻灯片测试",
-      "path": "5Obsidian/幻灯片测试.md"
     },
     {
       "basename": "附件目录",

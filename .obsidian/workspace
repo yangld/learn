@@ -4,71 +4,87 @@
     "type": "split",
     "children": [
       {
-        "id": "141cd199d51efbed",
+        "id": "572d2f7def6c6d8c",
         "type": "split",
-        "dimension": 66.51270207852194,
         "children": [
           {
-            "id": "b3554fa7367eba03",
+            "id": "cbe0792d9e51f5e0",
             "type": "split",
-            "dimension": 27.23880597014925,
+            "dimension": 70.54491899852724,
             "children": [
               {
-                "id": "4b36b84914233b71",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "kanban",
-                  "state": {
-                    "file": "13看板/文件看板.md"
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "161f70f775b9e97d",
+                "id": "a0a39cfbbee52336",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "1附件/附件目录.md",
+                    "file": "5Obsidian/DataView测试.md",
+                    "mode": "preview",
+                    "backlinks": false,
+                    "source": true
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "690fc44e16b1d5c7",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "5Obsidian/DataView测试.md",
                     "mode": "source",
                     "backlinks": false,
-                    "source": false
+                    "source": true
+                  },
+                  "pinned": true
+                }
+              }
+            ],
+            "direction": "horizontal"
+          },
+          {
+            "id": "d01d83c58413cb3c",
+            "type": "split",
+            "dimension": 29.455081001472752,
+            "children": [
+              {
+                "id": "be642989a3f3943b",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "5Obsidian/幻灯片测试.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": true
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "c379281ea1803779",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "5Obsidian/斜杠命令测试.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": true
                   },
                   "pinned": true
                 }
               }
             ],
             "direction": "vertical"
-          },
-          {
-            "id": "ebf7f9c96e0a834e",
-            "type": "leaf",
-            "dimension": 72.76119402985074,
-            "pinned": true,
-            "state": {
-              "type": "empty",
-              "state": {},
-              "pinned": true
-            }
           }
         ],
         "direction": "horizontal"
-      },
-      {
-        "id": "315d87e5d12ff1aa",
-        "type": "leaf",
-        "dimension": 33.48729792147806,
-        "pinned": true,
-        "state": {
-          "type": "kanban",
-          "state": {
-            "file": "13看板/常用网址看板.md"
-          },
-          "pinned": true
-        }
       }
     ],
     "direction": "vertical"
@@ -109,36 +125,46 @@
             }
           },
           {
-            "id": "91e3a962b8c16b84",
+            "id": "2d2439608829bc3e",
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {
+                "file": "5Obsidian/DataView测试.md"
+              }
+            }
+          },
+          {
+            "id": "8ab0aefc46604c25",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
               "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 224
+    "width": 238
   },
   "right": {
     "id": "78a86d7ecd781271",
     "type": "split",
     "children": [],
     "direction": "horizontal",
-    "width": 605,
+    "width": 334,
     "collapsed": true
   },
-  "active": "ebf7f9c96e0a834e",
+  "active": "690fc44e16b1d5c7",
   "lastOpenFiles": [
     "5Obsidian/DataView测试.md",
-    "5Obsidian/DataView测试任务生成.md",
+    "5Obsidian/幻灯片测试.md",
     "14TODO/Task测试数据.md",
+    "5Obsidian/DataView测试任务生成.md",
     "5Obsidian/入门.md",
     "5Obsidian/斜杠命令测试.md",
-    "5Obsidian/幻灯片测试.md",
     "5Obsidian/111.md",
     "5Obsidian/1卡片.md",
     "5Obsidian/未命名 1.md",
