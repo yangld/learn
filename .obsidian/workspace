@@ -45,7 +45,7 @@
           {
             "id": "6b22aef35b5bf82f",
             "type": "leaf",
-            "dimension": 74.25373134328358,
+            "dimension": 1.1602145522388059,
             "pinned": true,
             "state": {
               "type": "markdown",
@@ -55,6 +55,84 @@
                 "backlinks": false
               },
               "pinned": true
+            }
+          },
+          {
+            "id": "deedcaee8143b250",
+            "type": "leaf",
+            "dimension": 1.1602145522388059,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.md",
+                "mode": "preview",
+                "backlinks": false
+              }
+            }
+          },
+          {
+            "id": "109aa4db5ced63c9",
+            "type": "leaf",
+            "dimension": 2.3204291044776117,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.md",
+                "mode": "preview",
+                "backlinks": false
+              }
+            }
+          },
+          {
+            "id": "6063d4c89e5b0217",
+            "type": "leaf",
+            "dimension": 4.6408582089552235,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.md",
+                "mode": "preview",
+                "backlinks": false
+              }
+            }
+          },
+          {
+            "id": "7f5d05508045e17a",
+            "type": "leaf",
+            "dimension": 9.281716417910447,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.md",
+                "mode": "preview",
+                "backlinks": false
+              }
+            }
+          },
+          {
+            "id": "4b5c5d224e38f838",
+            "type": "leaf",
+            "dimension": 18.563432835820894,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.md",
+                "mode": "preview",
+                "backlinks": false
+              }
+            }
+          },
+          {
+            "id": "4267744e27f74afe",
+            "type": "leaf",
+            "dimension": 37.12686567164179,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1.md",
+                "mode": "preview",
+                "backlinks": false
+              }
             }
           }
         ],
@@ -117,12 +195,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "14TODO/Task测试数据.md"
+                "file": "1.md"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -151,8 +229,9 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "6b22aef35b5bf82f",
+  "active": "deedcaee8143b250",
   "lastOpenFiles": [
+    "1.md",
     "14TODO/Task测试数据.md",
     "5Obsidian/DataView测试.md",
     "5Obsidian/斜杠命令测试.md",
@@ -161,7 +240,6 @@
     "13看板/权限文件看板.md",
     "14TODO/权限管理.md",
     "obsidian/Obsidian超链接语法详述.md",
-    "1.md",
     "202201281800.md"
   ]
 }

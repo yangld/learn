@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "1",
+      "path": "1.md"
+    },
+    {
       "basename": "Task测试数据",
       "path": "14TODO/Task测试数据.md"
     },
@@ -31,10 +35,6 @@
     {
       "basename": "Obsidian超链接语法详述",
       "path": "obsidian/Obsidian超链接语法详述.md"
-    },
-    {
-      "basename": "1",
-      "path": "1.md"
     },
     {
       "basename": "CMenu测试",
