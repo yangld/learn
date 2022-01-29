@@ -1,19 +1,8 @@
-## TAG测试
-
+## 任务列表生成
 ```dataview
-table length
-from "14TODO"
+task from #task
 ```
 
+---
 
 
-```dataview
-task from #task 
-```
-
-## 文件夹列表测试
-```dataview
-table time-played
-from "3工作日志"
-sort time-played desc
-```

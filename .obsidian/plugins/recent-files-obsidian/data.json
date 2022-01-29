@@ -1,28 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "TODO 1",
-      "path": "14TODO/TODO 1.md"
-    },
-    {
       "basename": "DataView测试",
       "path": "5Obsidian/DataView测试.md"
     },
     {
-      "basename": "TODO",
-      "path": "14TODO/TODO.md"
+      "basename": "DataView测试任务生成",
+      "path": "5Obsidian/DataView测试任务生成.md"
     },
     {
-      "basename": "附件目录",
-      "path": "1附件/附件目录.md"
+      "basename": "Task测试数据",
+      "path": "14TODO/Task测试数据.md"
+    },
+    {
+      "basename": "入门",
+      "path": "5Obsidian/入门.md"
+    },
+    {
+      "basename": "斜杠命令测试",
+      "path": "5Obsidian/斜杠命令测试.md"
     },
     {
       "basename": "幻灯片测试",
       "path": "5Obsidian/幻灯片测试.md"
     },
     {
-      "basename": "斜杠命令测试",
-      "path": "5Obsidian/斜杠命令测试.md"
+      "basename": "附件目录",
+      "path": "1附件/附件目录.md"
     },
     {
       "basename": "权限管理类图",
@@ -35,10 +39,6 @@
     {
       "basename": "文件看板",
       "path": "13看板/文件看板.md"
-    },
-    {
-      "basename": "未命名 1",
-      "path": "5Obsidian/未命名 1.md"
     },
     {
       "basename": "Day Planner-20220128",
@@ -195,10 +195,6 @@
     {
       "basename": "1权限管理输入",
       "path": "12时间轴/1资料-Input/1权限管理输入.md"
-    },
-    {
-      "basename": "Day Planner-20211126",
-      "path": "Day Planners/Day Planner-20211126.md"
     }
   ],
   "omittedPaths": [],

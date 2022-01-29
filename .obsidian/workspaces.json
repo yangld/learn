@@ -152,25 +152,47 @@
             "type": "split",
             "children": [
               {
-                "id": "d45e1e82777b381e",
-                "type": "leaf",
-                "dimension": 81.34328358208955,
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "5Obsidian/DataView测试.md",
-                    "mode": "preview",
-                    "backlinks": false,
-                    "source": false
+                "id": "cbe0792d9e51f5e0",
+                "type": "split",
+                "dimension": 70.54491899852724,
+                "children": [
+                  {
+                    "id": "a0a39cfbbee52336",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "5Obsidian/DataView测试.md",
+                        "mode": "preview",
+                        "backlinks": false,
+                        "source": true
+                      },
+                      "pinned": true
+                    }
                   },
-                  "pinned": true
-                }
+                  {
+                    "id": "690fc44e16b1d5c7",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "5Obsidian/DataView测试.md",
+                        "mode": "source",
+                        "backlinks": false,
+                        "source": true
+                      },
+                      "pinned": true
+                    }
+                  }
+                ],
+                "direction": "horizontal"
               },
               {
                 "id": "d01d83c58413cb3c",
                 "type": "split",
-                "dimension": 18.65671641791045,
+                "dimension": 29.455081001472756,
                 "children": [
                   {
                     "id": "be642989a3f3943b",
@@ -182,7 +204,7 @@
                         "file": "5Obsidian/幻灯片测试.md",
                         "mode": "source",
                         "backlinks": false,
-                        "source": false
+                        "source": true
                       },
                       "pinned": true
                     }
@@ -197,7 +219,7 @@
                         "file": "5Obsidian/斜杠命令测试.md",
                         "mode": "source",
                         "backlinks": false,
-                        "source": false
+                        "source": true
                       },
                       "pinned": true
                     }
@@ -255,9 +277,17 @@
                     "file": "5Obsidian/DataView测试.md"
                   }
                 }
+              },
+              {
+                "id": "8ab0aefc46604c25",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
               }
             ],
-            "currentTab": 3
+            "currentTab": 4
           }
         ],
         "direction": "horizontal",
@@ -271,7 +301,7 @@
         "width": 334,
         "collapsed": true
       },
-      "active": "d45e1e82777b381e"
+      "active": "690fc44e16b1d5c7"
     },
     "权限管理": {
       "main": {
@@ -521,5 +551,5 @@
       "active": "e5aed6e7519841bc"
     }
   },
-  "active": "dataview"
+  "active": "常用信息"
 }
