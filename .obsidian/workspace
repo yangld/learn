@@ -198,6 +198,14 @@
                 "file": "1.md"
               }
             }
+          },
+          {
+            "id": "ee3559f1835c825c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
           }
         ],
         "currentTab": 1
@@ -219,6 +227,14 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "8897f7ff85b909b9",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
               "state": {}
             }
           }
