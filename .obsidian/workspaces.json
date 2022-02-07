@@ -8,7 +8,6 @@
           {
             "id": "141cd199d51efbed",
             "type": "split",
-            "dimension": 66.51270207852194,
             "children": [
               {
                 "id": "b3554fa7367eba03",
@@ -61,19 +60,6 @@
               }
             ],
             "direction": "horizontal"
-          },
-          {
-            "id": "315d87e5d12ff1aa",
-            "type": "leaf",
-            "dimension": 33.48729792147806,
-            "pinned": true,
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "13看板/常用网址看板.md"
-              },
-              "pinned": true
-            }
           }
         ],
         "direction": "vertical"
@@ -135,23 +121,26 @@
         "type": "split",
         "children": [
           {
-            "id": "3872b057ab5695a3",
+            "id": "addbd5ad863b241b",
             "type": "tabs",
             "children": [
               {
-                "id": "fd79110d047db657",
+                "id": "315d87e5d12ff1aa",
                 "type": "leaf",
+                "pinned": true,
                 "state": {
-                  "type": "advanced-tables-toolbar",
-                  "state": {}
+                  "type": "kanban",
+                  "state": {
+                    "file": "13看板/常用网址看板.md"
+                  },
+                  "pinned": true
                 }
               }
             ]
           }
         ],
         "direction": "horizontal",
-        "width": 605,
-        "collapsed": true
+        "width": 451
       },
       "active": "6b22aef35b5bf82f"
     },
@@ -605,5 +594,5 @@
       "active": "a0a39cfbbee52336"
     }
   },
-  "active": "常用信息"
+  "active": "Obsidian功能测试"
 }

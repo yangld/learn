@@ -233,5 +233,15 @@
   "Enhanced editing:add-daima": [],
   "Enhanced editing:text-background5": [],
   "Enhanced editing:del-lines": [],
-  "Enhanced editing:common-text": []
+  "Enhanced editing:common-text": [],
+  "quick-explorer:browse-current": [],
+  "quick-explorer:browse-vault": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "G"
+    }
+  ]
 }
