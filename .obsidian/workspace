@@ -4,36 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "705e27ecb59fd223",
+        "id": "141cd199d51efbed",
         "type": "split",
+        "dimension": 66.51270207852194,
         "children": [
           {
-            "id": "c65e6d4c7bcfbc9c",
+            "id": "b3554fa7367eba03",
             "type": "split",
-            "dimension": 28.100775193798448,
+            "dimension": 25.74626865671642,
             "children": [
               {
-                "id": "d45e1e82777b381e",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "14TODO/权限管理.md",
-                    "mode": "preview",
-                    "backlinks": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "a4b10db57d6b68fa",
+                "id": "4b36b84914233b71",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
                   "type": "kanban",
                   "state": {
-                    "file": "13看板/权限文件看板.md"
+                    "file": "13看板/文件看板.md"
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "161f70f775b9e97d",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1附件/附件目录.md",
+                    "mode": "source",
+                    "backlinks": false
                   },
                   "pinned": true
                 }
@@ -42,43 +43,35 @@
             "direction": "vertical"
           },
           {
-            "id": "e24cfef271aa58e6",
-            "type": "split",
-            "dimension": 71.89922480620154,
-            "children": [
-              {
-                "id": "a6e6914266cb3ba8",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "待办事项/权限管理ER图.md",
-                    "mode": "preview",
-                    "backlinks": false
-                  },
-                  "pinned": true
-                }
+            "id": "6b22aef35b5bf82f",
+            "type": "leaf",
+            "dimension": 74.25373134328358,
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "14TODO/Task测试数据.md",
+                "mode": "source",
+                "backlinks": false
               },
-              {
-                "id": "e5aed6e7519841bc",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "待办事项/权限管理类图.md",
-                    "mode": "preview",
-                    "backlinks": false
-                  },
-                  "pinned": true
-                }
-              }
-            ],
-            "direction": "vertical"
+              "pinned": true
+            }
           }
         ],
         "direction": "horizontal"
+      },
+      {
+        "id": "315d87e5d12ff1aa",
+        "type": "leaf",
+        "dimension": 33.48729792147806,
+        "pinned": true,
+        "state": {
+          "type": "kanban",
+          "state": {
+            "file": "13看板/常用网址看板.md"
+          },
+          "pinned": true
+        }
       }
     ],
     "direction": "vertical"
@@ -88,14 +81,14 @@
     "type": "split",
     "children": [
       {
-        "id": "2ce27328076af62b",
+        "id": "968cd024bb524cd5",
         "type": "tabs",
         "children": [
           {
-            "id": "e6ad8e990ed40990",
+            "id": "849f8599666b02a3",
             "type": "leaf",
             "state": {
-              "type": "calendar",
+              "type": "starred",
               "state": {}
             }
           },
@@ -104,130 +97,6 @@
             "type": "leaf",
             "state": {
               "type": "recent-files",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
-        "id": "968cd024bb524cd5",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "86ed5741d814bd70",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "dcb6acad20cd3778",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": true,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "849f8599666b02a3",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 238,
-    "collapsed": true
-  },
-  "right": {
-    "id": "78a86d7ecd781271",
-    "type": "split",
-    "children": [
-      {
-        "id": "8afd4d2d7314c19a",
-        "type": "tabs",
-        "dimension": 64.34108527131784,
-        "children": [
-          {
-            "id": "abdb51846b47bdd7",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
-          },
-          {
-            "id": "5a5c1950140c4a90",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "待办事项/权限管理类图.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "9479c1fcb9600ab2",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "待办事项/权限管理类图.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "bc6e9ce4f382cd56",
-            "type": "leaf",
-            "state": {
-              "type": "RSS_FEED",
-              "state": {}
-            }
-          },
-          {
-            "id": "112a56dfd46a92ff",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "待办事项/权限管理类图.md"
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "f13c7da68fb02288",
-        "type": "tabs",
-        "dimension": 35.65891472868217,
-        "children": [
-          {
-            "id": "bc164a98be8d2008",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
               "state": {}
             }
           },
@@ -241,22 +110,54 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "91e3a962b8c16b84",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "13看板/常用网址看板.md"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 224
+  },
+  "right": {
+    "id": "78a86d7ecd781271",
+    "type": "split",
+    "children": [
+      {
+        "id": "3872b057ab5695a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd79110d047db657",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 605,
     "collapsed": true
   },
-  "active": "e5aed6e7519841bc",
+  "active": "315d87e5d12ff1aa",
   "lastOpenFiles": [
+    "13看板/常用网址看板.md",
+    "14TODO/Task测试数据.md",
     "待办事项/权限管理类图.md",
     "13看板/权限文件看板.md",
-    "14TODO/Task测试数据.md",
     "1附件/附件目录.md",
-    "13看板/常用网址看板.md",
     "1.md",
     "5Obsidian/DataView测试.md",
     "5Obsidian/斜杠命令测试.md",
