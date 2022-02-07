@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "1",
-      "path": "1.md"
+      "basename": "权限管理类图",
+      "path": "待办事项/权限管理类图.md"
+    },
+    {
+      "basename": "权限文件看板",
+      "path": "13看板/权限文件看板.md"
     },
     {
       "basename": "Task测试数据",
       "path": "14TODO/Task测试数据.md"
+    },
+    {
+      "basename": "附件目录",
+      "path": "1附件/附件目录.md"
+    },
+    {
+      "basename": "常用网址看板",
+      "path": "13看板/常用网址看板.md"
+    },
+    {
+      "basename": "1",
+      "path": "1.md"
     },
     {
       "basename": "DataView测试",
@@ -17,16 +33,8 @@
       "path": "5Obsidian/斜杠命令测试.md"
     },
     {
-      "basename": "权限管理类图",
-      "path": "待办事项/权限管理类图.md"
-    },
-    {
       "basename": "权限管理ER图",
       "path": "待办事项/权限管理ER图.md"
-    },
-    {
-      "basename": "权限文件看板",
-      "path": "13看板/权限文件看板.md"
     },
     {
       "basename": "权限管理",
