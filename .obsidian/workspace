@@ -33,7 +33,7 @@
                   "type": "markdown",
                   "state": {
                     "file": "1附件/附件目录.md",
-                    "mode": "source",
+                    "mode": "preview",
                     "backlinks": false
                   },
                   "pinned": true
@@ -51,7 +51,7 @@
               "type": "markdown",
               "state": {
                 "file": "14TODO/Task测试数据.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": false
               },
               "pinned": true
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "13看板/常用网址看板.md"
+                "file": "1附件/附件目录.md"
               }
             }
           }
@@ -151,13 +151,13 @@
     "width": 605,
     "collapsed": true
   },
-  "active": "315d87e5d12ff1aa",
+  "active": "161f70f775b9e97d",
   "lastOpenFiles": [
-    "13看板/常用网址看板.md",
+    "1附件/附件目录.md",
     "14TODO/Task测试数据.md",
+    "13看板/常用网址看板.md",
     "待办事项/权限管理类图.md",
     "13看板/权限文件看板.md",
-    "1附件/附件目录.md",
     "1.md",
     "5Obsidian/DataView测试.md",
     "5Obsidian/斜杠命令测试.md",
