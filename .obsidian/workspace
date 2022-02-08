@@ -4,16 +4,79 @@
     "type": "split",
     "children": [
       {
-        "id": "3292c767a3b76f39",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "6TASK/权限管理/权限管理ER图.md",
-            "mode": "preview",
-            "backlinks": false
+        "id": "141cd199d51efbed",
+        "type": "split",
+        "children": [
+          {
+            "id": "b3554fa7367eba03",
+            "type": "split",
+            "dimension": 25.74626865671642,
+            "children": [
+              {
+                "id": "4b36b84914233b71",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "kanban",
+                  "state": {
+                    "file": "0看板/文件看板.md"
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "161f70f775b9e97d",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1附件/附件目录.md",
+                    "mode": "source",
+                    "backlinks": false
+                  },
+                  "pinned": true
+                }
+              }
+            ],
+            "direction": "vertical"
+          },
+          {
+            "id": "abe7807c25fb72fe",
+            "type": "split",
+            "dimension": 74.25373134328358,
+            "children": [
+              {
+                "id": "6b22aef35b5bf82f",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "2TODO/Task测试数据.md",
+                    "mode": "preview",
+                    "backlinks": false
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "315d87e5d12ff1aa",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "kanban",
+                  "state": {
+                    "file": "0看板/常用网址看板.md"
+                  },
+                  "pinned": true
+                }
+              }
+            ],
+            "direction": "vertical"
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -61,7 +124,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -89,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6TASK/权限管理/权限管理ER图.md"
+                "file": "2TODO/Task测试数据.md"
               }
             }
           },
@@ -109,19 +173,19 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 183
   },
-  "active": "3292c767a3b76f39",
+  "active": "6b22aef35b5bf82f",
   "lastOpenFiles": [
+    "2TODO/Task测试数据.md",
+    "1附件/附件目录.md",
     "6TASK/权限管理/权限管理ER图.md",
     "0看板/常用网址看板.md",
-    "2TODO/Task测试数据.md",
     "0看板/文件看板.md",
-    "1附件/附件目录.md",
     "5Obsidian/obsidian.md",
     "5Obsidian/入门.md",
     "8知识管理/Template/日记模板-DayPlanner.md",
