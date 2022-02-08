@@ -61,6 +61,18 @@
                 }
               },
               {
+                "id": "bc3c8a7e4b9015fb",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "6TASK/权限管理/权限管理ER图.md",
+                    "mode": "preview",
+                    "backlinks": false
+                  }
+                }
+              },
+              {
                 "id": "315d87e5d12ff1aa",
                 "type": "leaf",
                 "pinned": true,
@@ -153,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2TODO/Task测试数据.md"
+                "file": "6TASK/权限管理/权限管理ER图.md"
               }
             }
           },
@@ -179,11 +191,11 @@
     "direction": "horizontal",
     "width": 183
   },
-  "active": "6b22aef35b5bf82f",
+  "active": "bc3c8a7e4b9015fb",
   "lastOpenFiles": [
+    "6TASK/权限管理/权限管理ER图.md",
     "2TODO/Task测试数据.md",
     "1附件/附件目录.md",
-    "6TASK/权限管理/权限管理ER图.md",
     "0看板/常用网址看板.md",
     "0看板/文件看板.md",
     "5Obsidian/obsidian.md",
