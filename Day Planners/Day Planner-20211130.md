@@ -24,6 +24,6 @@ gantt
 - [x] 15:30 其它1
 - [x] 19:00 END
 
-#link #java8 #时间函数
+#link #java8 #laji/1
 [计算时间差](https://www.cnblogs.com/jpfss/p/11214676.html)
 [stream](https://www.cnblogs.com/yimiyan/p/5992440.html)

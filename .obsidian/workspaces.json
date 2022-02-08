@@ -44,19 +44,38 @@
                 "direction": "vertical"
               },
               {
-                "id": "6b22aef35b5bf82f",
-                "type": "leaf",
+                "id": "abe7807c25fb72fe",
+                "type": "split",
                 "dimension": 74.25373134328358,
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "14TODO/Task测试数据.md",
-                    "mode": "source",
-                    "backlinks": false
+                "children": [
+                  {
+                    "id": "6b22aef35b5bf82f",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "14TODO/Task测试数据.md",
+                        "mode": "preview",
+                        "backlinks": false
+                      },
+                      "pinned": true
+                    }
                   },
-                  "pinned": true
-                }
+                  {
+                    "id": "315d87e5d12ff1aa",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "kanban",
+                      "state": {
+                        "file": "13看板/常用网址看板.md"
+                      },
+                      "pinned": true
+                    }
+                  }
+                ],
+                "direction": "vertical"
               }
             ],
             "direction": "horizontal"
@@ -95,7 +114,7 @@
                   "type": "tag",
                   "state": {
                     "sortOrder": "frequency",
-                    "useHierarchy": true
+                    "useHierarchy": false
                   }
                 }
               },
@@ -110,7 +129,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 2
           }
         ],
         "direction": "horizontal",
@@ -119,28 +138,10 @@
       "right": {
         "id": "78a86d7ecd781271",
         "type": "split",
-        "children": [
-          {
-            "id": "addbd5ad863b241b",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "315d87e5d12ff1aa",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "kanban",
-                  "state": {
-                    "file": "13看板/常用网址看板.md"
-                  },
-                  "pinned": true
-                }
-              }
-            ]
-          }
-        ],
+        "children": [],
         "direction": "horizontal",
-        "width": 451
+        "width": 451,
+        "collapsed": true
       },
       "active": "6b22aef35b5bf82f"
     },
@@ -415,12 +416,12 @@
                   {
                     "id": "a0a39cfbbee52336",
                     "type": "leaf",
-                    "dimension": 72.52747252747253,
+                    "dimension": 56.89655172413793,
                     "pinned": true,
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "5Obsidian/DataView测试.md",
+                        "file": "4思考/Obsidian使用/admonition测试.md",
                         "mode": "preview",
                         "backlinks": false
                       },
@@ -430,7 +431,7 @@
                   {
                     "id": "99312dce114942b2",
                     "type": "split",
-                    "dimension": 27.47252747252747,
+                    "dimension": 43.10344827586207,
                     "children": [
                       {
                         "id": "690fc44e16b1d5c7",
@@ -454,7 +455,7 @@
                           "type": "markdown",
                           "state": {
                             "file": "5Obsidian/CMenu测试.md",
-                            "mode": "preview",
+                            "mode": "source",
                             "backlinks": false
                           },
                           "pinned": true
@@ -549,7 +550,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "5Obsidian/DataView测试.md"
+                    "file": "4思考/Obsidian使用/admonition测试.md"
                   }
                 }
               },
@@ -566,27 +567,12 @@
           }
         ],
         "direction": "horizontal",
-        "width": 238
+        "width": 270
       },
       "right": {
         "id": "78a86d7ecd781271",
         "type": "split",
-        "children": [
-          {
-            "id": "76ce5867cdbbb2c5",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "9893854fb6e5282a",
-                "type": "leaf",
-                "state": {
-                  "type": "todo",
-                  "state": {}
-                }
-              }
-            ]
-          }
-        ],
+        "children": [],
         "direction": "horizontal",
         "width": 334,
         "collapsed": true
@@ -594,5 +580,5 @@
       "active": "a0a39cfbbee52336"
     }
   },
-  "active": "Obsidian功能测试"
+  "active": "常用信息"
 }

@@ -123,61 +123,61 @@ posted @ 2014-05-11 22:17  [大熊先生|互联网后端技术](https://www.cnb
 
 评论列表
 
-[#1楼](https://www.cnblogs.com/Creator/p/3722408.html#2943291) \[楼主\] 2014-05-21 12:13 [大熊先生|互联网后端技术](https://www.cnblogs.com/Creator/)
+[#laji/1](https://www.cnblogs.com/Creator/p/3722408.html#2943291) \[楼主\] 2014-05-21 12:13 [大熊先生|互联网后端技术](https://www.cnblogs.com/Creator/)
 			
 再补充一个坑爹的case
 如果你之前没有设置\_ttl ,现在PUT mapping设置一下，只会对新数据进行过期，老的数据是不会应用这个规则的
 [[# | 支持(0)]] [[# | 反对(0)]]
 
-[#2楼](https://www.cnblogs.com/Creator/p/3722408.html#2947016) \[楼主\] 2014-05-24 10:14 [大熊先生|互联网后端技术](https://www.cnblogs.com/Creator/)
+[#laji/1](https://www.cnblogs.com/Creator/p/3722408.html#2947016) \[楼主\] 2014-05-24 10:14 [大熊先生|互联网后端技术](https://www.cnblogs.com/Creator/)
 			
 再补充一种方法 不过未经试验 谨慎使用
 "ignore\_malformed": true,
 <https://groups.google.com/forum/#!topic/elasticsearch/itYOhO1dIEw>
 [[# | 支持(0)]] [[# | 反对(0)]]
 
-[#3楼](https://www.cnblogs.com/Creator/p/3722408.html#3012239) 2014-08-20 13:58 [规格严格-功夫到家](https://www.cnblogs.com/diyunpeng/)
+[#laji/1](https://www.cnblogs.com/Creator/p/3722408.html#3012239) 2014-08-20 13:58 [规格严格-功夫到家](https://www.cnblogs.com/diyunpeng/)
 			
 写的很好啊。~
 [[# | 支持(0)]] [[# | 反对(0)]]
 
-[#4楼](https://www.cnblogs.com/Creator/p/3722408.html#3079375) 2014-12-05 17:42 [Galen\_Z](https://www.cnblogs.com/Galen-Z/)
+[#laji/1](https://www.cnblogs.com/Creator/p/3722408.html#3079375) 2014-12-05 17:42 [Galen\_Z](https://www.cnblogs.com/Galen-Z/)
 			
 我想说的是，我也遇到了和你类似的情况，比如有一个字段是一个URI，es自动以/ 这个字符把整个URI给拆分成一个一个的小节，后来去修改mapping，无果，网上查，也是说没办法改，只能建立一个新的mapping，然后将数据迁移进去。
 [[# | 支持(0)]] [[# | 反对(0)]]
 
-[#5楼](https://www.cnblogs.com/Creator/p/3722408.html#3079378) 2014-12-05 17:44 [Galen\_Z](https://www.cnblogs.com/Galen-Z/)
+[#laji/1](https://www.cnblogs.com/Creator/p/3722408.html#3079378) 2014-12-05 17:44 [Galen\_Z](https://www.cnblogs.com/Galen-Z/)
 			
 我个人觉得ES这个地方做得真的有点不 太灵活。
 [[# | 支持(0)]] [[# | 反对(0)]]
 
-[#6楼](https://www.cnblogs.com/Creator/p/3722408.html#3119418) 2015-01-30 10:11 [游子善心](https://www.cnblogs.com/zhouyou/)
+[#laji/1](https://www.cnblogs.com/Creator/p/3722408.html#3119418) 2015-01-30 10:11 [游子善心](https://www.cnblogs.com/zhouyou/)
 			
 [@](https://www.cnblogs.com/Creator/p/3722408.html#3079375) Galen\_Z
 兄弟 你好。我想问下，由于建Mapping的时候，不小心设定了不分词，几亿的数据已经导入了，现在需要修改怎么办了？新建一个maping 两个mapping之间能否数据转移？
 [[# | 支持(4)]] [[# | 反对(0)]]
 
-[#7楼](https://www.cnblogs.com/Creator/p/3722408.html#3160917) 2015-04-12 15:26 [tgis](https://www.cnblogs.com/tgis/)
+[#laji/1](https://www.cnblogs.com/Creator/p/3722408.html#3160917) 2015-04-12 15:26 [tgis](https://www.cnblogs.com/tgis/)
 			
 使用之前要详细阅读手册，一知半解就动手，必然会反反复复。如果你自己考虑一下如何实现一个搜索引擎就不会这么吐糟了。
 [[# | 支持(3)]] [[# | 反对(1)]]
 
-[#8楼](https://www.cnblogs.com/Creator/p/3722408.html#3337324) 2015-12-29 17:46 [高少](https://home.cnblogs.com/u/675943/)
+[#laji/1](https://www.cnblogs.com/Creator/p/3722408.html#3337324) 2015-12-29 17:46 [高少](https://home.cnblogs.com/u/675943/)
 			
 感谢大熊,很实用!
 [[# | 支持(0)]] [[# | 反对(0)]]
 
-[#9楼](https://www.cnblogs.com/Creator/p/3722408.html#3516359) 2016-09-21 18:20 [天涯逐梦](https://www.cnblogs.com/huanxiyun/)
+[#laji/1](https://www.cnblogs.com/Creator/p/3722408.html#3516359) 2016-09-21 18:20 [天涯逐梦](https://www.cnblogs.com/huanxiyun/)
 			
 新建索引之前，不是导过数据了嘛，为什么还有追数据这一说法
 [[# | 支持(0)]] [[# | 反对(0)]]
 
-[#10楼](https://www.cnblogs.com/Creator/p/3722408.html#3528378) 2016-10-11 17:28 [angelmom](https://home.cnblogs.com/u/801996/)
+[#laji/1](https://www.cnblogs.com/Creator/p/3722408.html#3528378) 2016-10-11 17:28 [angelmom](https://home.cnblogs.com/u/801996/)
 			
 我想说，楼主，你索引的分片分布我看的也是醉了
 [[# | 支持(0)]] [[# | 反对(0)]]
 
-[#11楼](https://www.cnblogs.com/Creator/p/3722408.html#3982196) 2018-05-25 16:00 [wonderomg](https://www.cnblogs.com/liuzhilong/)
+[#laji/1](https://www.cnblogs.com/Creator/p/3722408.html#3982196) 2018-05-25 16:00 [wonderomg](https://www.cnblogs.com/liuzhilong/)
 			
 确实，创建索引的时候一定要设置好别名，才能不停服平滑地切换索引
 curl -XPOST localhost:9200/\_aliases -d '

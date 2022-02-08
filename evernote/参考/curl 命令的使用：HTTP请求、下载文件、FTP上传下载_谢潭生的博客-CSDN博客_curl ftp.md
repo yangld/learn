@@ -447,7 +447,7 @@ curl 执行 FTP 命令格式:
 
 #### [c++中_使用_Lib_Curl_解析_http__请求_数据](https://blog.csdn.net/wangzhun0129/article/details/41787669)
 
-[lib_curl_.lib（或lib_curl_.so，unix下面尽量实时编译，并且要注意系统版本（32  or 64））是跨平台解析_http__请求_数据的动态库，_使用_起来非常方便。     以在Windows下_使用_为例。     在_使用_前，要将lib_curl_库相关的头_文件_添加至附加包含目录。     引用相关库：              #pragma comment(lib,"ws...](https://blog.csdn.net/wangzhun0129/article/details/41787669)
+[lib_curl_.lib（或lib_curl_.so，unix下面尽量实时编译，并且要注意系统版本（32  or 64））是跨平台解析_http__请求_数据的动态库，_使用_起来非常方便。     以在Windows下_使用_为例。     在_使用_前，要将lib_curl_库相关的头_文件_添加至附加包含目录。     引用相关库：              #laji/1 comment(lib,"ws...](https://blog.csdn.net/wangzhun0129/article/details/41787669)
 
 [bsr1983的专栏](https://blog.csdn.net/bsr1983)
 

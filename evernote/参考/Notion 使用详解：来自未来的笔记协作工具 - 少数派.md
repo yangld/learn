@@ -318,7 +318,7 @@ Notion 的导入支持 5 种基础格式： TXT、Markdown、CSV（Excel）、Wo
 ![edc058beeff72c9920aa27847bb0f384.gif](https://cdn.sspai.com/2018/12/26/edc058beeff72c9920aa27847bb0f384.gif)
 将 PDF 作为附件导入
 
-导入之后也先别急着高兴，Notion 尽可能地对多种格式进行了兼容，但对 Markdown 和 Word 格式仍然有一定的要求，主要表现为「Markdown 的双回车换行」和「Word 大纲级别」等要求，一级标题会变成 #，二级和更高的标题级别都会变成 ##。
+导入之后也先别急着高兴，Notion 尽可能地对多种格式进行了兼容，但对 Markdown 和 Word 格式仍然有一定的要求，主要表现为「Markdown 的双回车换行」和「Word 大纲级别」等要求，一级标题会变成 #laji/1 ##。
 
 如果你的文档格式一团糟，Notion 是无法识别的。如果遇到了这种问题，可以通过转换工具格式化一下，用更标准的 Markdown 导入。
 

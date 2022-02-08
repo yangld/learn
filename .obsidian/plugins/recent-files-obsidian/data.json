@@ -1,8 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "文件看板",
+      "path": "13看板/文件看板.md"
+    },
+    {
+      "basename": "附件目录",
+      "path": "1附件/附件目录.md"
+    },
+    {
+      "basename": "，二级和更高的标题级别都会变成",
+      "path": "13看板/，二级和更高的标题级别都会变成.md"
+    },
+    {
+      "basename": "Task测试数据",
+      "path": "14TODO/Task测试数据.md"
+    },
+    {
+      "basename": "权限管理类图",
+      "path": "待办事项/权限管理类图.md"
+    },
+    {
       "basename": "admonition测试",
       "path": "4思考/Obsidian使用/admonition测试.md"
+    },
+    {
+      "basename": "斜杠命令测试",
+      "path": "5Obsidian/斜杠命令测试.md"
     },
     {
       "basename": "CMenu测试",
@@ -21,24 +45,8 @@
       "path": "Day Planners/Day Planner-20211115.md"
     },
     {
-      "basename": "附件目录",
-      "path": "1附件/附件目录.md"
-    },
-    {
-      "basename": "Task测试数据",
-      "path": "14TODO/Task测试数据.md"
-    },
-    {
-      "basename": "权限管理类图",
-      "path": "待办事项/权限管理类图.md"
-    },
-    {
       "basename": "常用网址看板",
       "path": "13看板/常用网址看板.md"
-    },
-    {
-      "basename": "文件看板",
-      "path": "13看板/文件看板.md"
     },
     {
       "basename": "权限文件看板",
@@ -47,10 +55,6 @@
     {
       "basename": "1",
       "path": "1.md"
-    },
-    {
-      "basename": "斜杠命令测试",
-      "path": "5Obsidian/斜杠命令测试.md"
     },
     {
       "basename": "权限管理ER图",

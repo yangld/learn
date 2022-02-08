@@ -242,7 +242,7 @@ vlock                           要下载的软件名称
 
 #### [Linux文件操作高频使用命令](https://blog.csdn.net/gexiaoyizhimei/article/details/100122368)
 
-[文章目录0.新建操作：1.查看操作2.删除操作3.复制操作4.移动操作：5.重命名操作：6.解压压缩操作0.新建操作：mkdir abc #新建一个文件夹touch abc.sh #新建一个文件1.查...](https://blog.csdn.net/gexiaoyizhimei/article/details/100122368) 博文 [来自： 不能如期而至的专栏](https://blog.csdn.net/gexiaoyizhimei)
+[文章目录0.新建操作：1.查看操作2.删除操作3.复制操作4.移动操作：5.重命名操作：6.解压压缩操作0.新建操作：mkdir abc #laji/1 abc.sh #laji/1.查...](https://blog.csdn.net/gexiaoyizhimei/article/details/100122368) 博文 [来自： 不能如期而至的专栏](https://blog.csdn.net/gexiaoyizhimei)
 
 #### [程序员实用工具网站](https://blog.csdn.net/m0_38106923/article/details/100130354)
 
@@ -540,7 +540,7 @@ vlock                           要下载的软件名称
 
 1024勋章
 
-#1024程序员节#活动勋章，当日发布原创博客即可获得
+#1024程序员节#laji/1
 
 ![[./_resources/yum只下载不安装_-_勿念勿扰,相安静好_-_CSDN博客.resources/qixiebiaobing-1.png]]
 
