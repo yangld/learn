@@ -1,9 +1,12 @@
 {
   "todoPageName": "process",
   "showChecked": false,
+  "autoRefresh": true,
+  "subGroups": false,
   "groupBy": "tag",
-  "sortDirection": "new->old",
-  "ignoreFiles": "",
+  "sortDirectionItems": "new->old",
+  "sortDirectionGroups": "new->old",
+  "sortDirectionSubGroups": "new->old",
   "includeFiles": "",
   "lookAndFeel": "classic",
   "_collapsedSections": [
@@ -19,5 +22,8 @@
     "#process/todo/工作内容",
     "#process/todo/工作内容2",
     "#process/todo/思考"
-  ]
+  ],
+  "_hiddenTags": [],
+  "sortDirection": "new->old",
+  "ignoreFiles": ""
 }

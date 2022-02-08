@@ -18,7 +18,10 @@
   "Enhanced editing",
   "maximise-active-pane-obsidian",
   "quick-explorer",
-  "longform",
   "obsidian-map-view",
-  "obsidian-admonition"
+  "obsidian-admonition",
+  "obsidian-mind-map",
+  "url-into-selection",
+  "obsidian-pandoc",
+  "obsidian-copy-block-link"
 ]

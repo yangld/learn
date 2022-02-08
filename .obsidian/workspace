@@ -54,10 +54,22 @@
                       "type": "markdown",
                       "state": {
                         "file": "5Obsidian/CMenu测试.md",
-                        "mode": "preview",
+                        "mode": "source",
                         "backlinks": false
                       },
                       "pinned": true
+                    }
+                  },
+                  {
+                    "id": "be59324e71211e9e",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Day Planners/Obsidian学习总结.md",
+                        "mode": "preview",
+                        "backlinks": false
+                      }
                     }
                   }
                 ],
@@ -149,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5Obsidian/CMenu测试.md"
+                "file": "4思考/Obsidian使用/admonition测试.md"
               }
             }
           },
@@ -160,21 +172,13 @@
               "type": "file-explorer",
               "state": {}
             }
-          },
-          {
-            "id": "1edaf9c4c2629a20",
-            "type": "leaf",
-            "state": {
-              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
-              "state": {}
-            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 238
+    "width": 270
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -199,17 +203,17 @@
     "width": 334,
     "collapsed": true
   },
-  "active": "fa6d4ac863159b47",
+  "active": "a0a39cfbbee52336",
   "lastOpenFiles": [
-    "5Obsidian/CMenu测试.md",
     "4思考/Obsidian使用/admonition测试.md",
+    "5Obsidian/CMenu测试.md",
     "5Obsidian/DataView测试.md",
+    "Day Planners/Obsidian学习总结.md",
+    "Day Planners/Day Planner-20211115.md",
     "1附件/附件目录.md",
     "14TODO/Task测试数据.md",
     "待办事项/权限管理类图.md",
     "13看板/常用网址看板.md",
-    "13看板/文件看板.md",
-    "13看板/权限文件看板.md",
-    "1.md"
+    "13看板/文件看板.md"
   ]
 }
