@@ -1,24 +1,96 @@
 {
   "recentFiles": [
     {
-      "basename": "文件看板",
-      "path": "13看板/文件看板.md"
-    },
-    {
       "basename": "附件目录",
       "path": "1附件/附件目录.md"
     },
     {
-      "basename": "，二级和更高的标题级别都会变成",
-      "path": "13看板/，二级和更高的标题级别都会变成.md"
+      "basename": "常用网址看板",
+      "path": "0看板/常用网址看板.md"
     },
     {
       "basename": "Task测试数据",
-      "path": "14TODO/Task测试数据.md"
+      "path": "2TODO/Task测试数据.md"
+    },
+    {
+      "basename": "入门",
+      "path": "5Obsidian/入门.md"
+    },
+    {
+      "basename": "日记模板-DayPlanner",
+      "path": "8知识管理/Template/日记模板-DayPlanner.md"
+    },
+    {
+      "basename": "删除命令",
+      "path": "8知识管理/Knowledge/删除命令.md"
+    },
+    {
+      "basename": "今日收集",
+      "path": "8知识管理/Knowledge/今日收集.md"
+    },
+    {
+      "basename": "(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客",
+      "path": "8知识管理/Attachments/(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客.md"
+    },
+    {
+      "basename": "新老应用发布合并",
+      "path": "6TASK/联通版本/新老应用发布合并.md"
+    },
+    {
+      "basename": "download",
+      "path": "6TASK/download/download.md"
+    },
+    {
+      "basename": "安全上传文件",
+      "path": "6TASK/download/安全上传文件.md"
+    },
+    {
+      "basename": "权限管理",
+      "path": "6TASK/权限管理/权限管理.md"
     },
     {
       "basename": "权限管理类图",
-      "path": "待办事项/权限管理类图.md"
+      "path": "6TASK/权限管理/权限管理类图.md"
+    },
+    {
+      "basename": "权限管理ER图",
+      "path": "6TASK/权限管理/权限管理ER图.md"
+    },
+    {
+      "basename": "权限原型-web",
+      "path": "6TASK/权限管理/权限原型-web.md"
+    },
+    {
+      "basename": "原型",
+      "path": "6TASK/权限管理/原型.md"
+    },
+    {
+      "basename": "Obsidian超链接语法详述",
+      "path": "8知识管理/obsidian/Obsidian超链接语法详述.md"
+    },
+    {
+      "basename": "用Obsidian代替应用管理",
+      "path": "4思考/用Obsidian代替应用管理.md"
+    },
+    {
+      "basename": "事件通知",
+      "path": "4思考/事件通知.md"
+    },
+    {
+      "basename": "1权限管理",
+      "path": "7时间轴/2时间轴-Line/1权限管理.md"
+    },
+    {
+      "basename": "1权限管理输入",
+      "path": "7时间轴/1资料-Input/1权限管理输入.md"
+    },
+    {
+      "basename": "文件看板",
+      "path": "0看板/文件看板.md"
+    },
+    {
+      "basename": "Day Planner-20211130",
+      "path": "3工作日志/Day Planners/Day Planner-20211130.md"
     },
     {
       "basename": "admonition测试",
@@ -38,35 +110,19 @@
     },
     {
       "basename": "Obsidian学习总结",
-      "path": "Day Planners/Obsidian学习总结.md"
+      "path": "3工作日志/Day Planners/Obsidian学习总结.md"
     },
     {
       "basename": "Day Planner-20211115",
-      "path": "Day Planners/Day Planner-20211115.md"
-    },
-    {
-      "basename": "常用网址看板",
-      "path": "13看板/常用网址看板.md"
+      "path": "3工作日志/Day Planners/Day Planner-20211115.md"
     },
     {
       "basename": "权限文件看板",
-      "path": "13看板/权限文件看板.md"
-    },
-    {
-      "basename": "1",
-      "path": "1.md"
-    },
-    {
-      "basename": "权限管理ER图",
-      "path": "待办事项/权限管理ER图.md"
+      "path": "0看板/权限文件看板.md"
     },
     {
       "basename": "权限管理",
-      "path": "14TODO/权限管理.md"
-    },
-    {
-      "basename": "Obsidian超链接语法详述",
-      "path": "obsidian/Obsidian超链接语法详述.md"
+      "path": "2TODO/权限管理.md"
     }
   ],
   "omittedPaths": [],

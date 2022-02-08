@@ -19,7 +19,7 @@
                 "state": {
                   "type": "kanban",
                   "state": {
-                    "file": "13看板/文件看板.md"
+                    "file": "0看板/文件看板.md"
                   },
                   "pinned": true
                 }
@@ -53,7 +53,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "14TODO/Task测试数据.md",
+                    "file": "2TODO/Task测试数据.md",
                     "mode": "preview",
                     "backlinks": false
                   },
@@ -67,7 +67,7 @@
                 "state": {
                   "type": "kanban",
                   "state": {
-                    "file": "13看板/常用网址看板.md"
+                    "file": "0看板/常用网址看板.md"
                   },
                   "pinned": true
                 }
@@ -117,12 +117,43 @@
             }
           },
           {
+            "id": "e6e0436766609b88",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 224
+  },
+  "right": {
+    "id": "78a86d7ecd781271",
+    "type": "split",
+    "children": [
+      {
+        "id": "a502404372a6b27d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1361677e996858c9",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
             "id": "91e3a962b8c16b84",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "13看板/文件看板.md"
+                "file": "1附件/附件目录.md"
               }
             }
           },
@@ -132,36 +163,33 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#person/胡建民"
+                "query": "tag:#task",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 224
+    "width": 183
   },
-  "right": {
-    "id": "78a86d7ecd781271",
-    "type": "split",
-    "children": [],
-    "direction": "horizontal",
-    "width": 451,
-    "collapsed": true
-  },
-  "active": "4b36b84914233b71",
+  "active": "161f70f775b9e97d",
   "lastOpenFiles": [
-    "13看板/文件看板.md",
     "1附件/附件目录.md",
-    "13看板/，二级和更高的标题级别都会变成.md",
-    "14TODO/Task测试数据.md",
-    "待办事项/权限管理类图.md",
-    "4思考/Obsidian使用/admonition测试.md",
-    "5Obsidian/斜杠命令测试.md",
-    "5Obsidian/CMenu测试.md",
-    "5Obsidian/DataView测试.md",
-    "Day Planners/Obsidian学习总结.md"
+    "0看板/常用网址看板.md",
+    "2TODO/Task测试数据.md",
+    "5Obsidian/obsidian.md",
+    "5Obsidian/入门.md",
+    "8知识管理/Template/日记模板-DayPlanner.md",
+    "8知识管理/Knowledge/删除命令.md",
+    "8知识管理/Knowledge/今日收集.md",
+    "8知识管理/InBox/接口文档/接口文档.md",
+    "8知识管理/InBox/test.md"
   ]
 }
