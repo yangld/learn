@@ -8,50 +8,32 @@
         "type": "split",
         "children": [
           {
-            "id": "b3554fa7367eba03",
-            "type": "split",
-            "dimension": 25.74626865671642,
-            "children": [
-              {
-                "id": "4b36b84914233b71",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "kanban",
-                  "state": {
-                    "file": "0看板/文件看板.md"
-                  },
-                  "pinned": true
-                }
+            "id": "161f70f775b9e97d",
+            "type": "leaf",
+            "dimension": 12.87313432835821,
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1附件/附件目录.md",
+                "mode": "source",
+                "backlinks": false
               },
-              {
-                "id": "0e9a7cd08d9d23a1",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "8知识管理/Navigation/学习/arthas-tt.md",
-                    "mode": "preview",
-                    "backlinks": false
-                  }
-                }
-              },
-              {
-                "id": "161f70f775b9e97d",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1附件/附件目录.md",
-                    "mode": "source",
-                    "backlinks": false
-                  },
-                  "pinned": true
-                }
+              "pinned": true
+            }
+          },
+          {
+            "id": "1a6320ccc3de4c7a",
+            "type": "leaf",
+            "dimension": 12.87313432835821,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "8知识管理/中国人的人文精神.md",
+                "mode": "source",
+                "backlinks": false
               }
-            ],
-            "direction": "vertical"
+            }
           },
           {
             "id": "abe7807c25fb72fe",
@@ -165,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "8知识管理/Navigation/学习/arthas-tt.md"
+                "file": "8知识管理/中国人的人文精神.md"
               }
             }
           },
@@ -191,17 +173,17 @@
     "direction": "horizontal",
     "width": 183
   },
-  "active": "0e9a7cd08d9d23a1",
+  "active": "1a6320ccc3de4c7a",
   "lastOpenFiles": [
-    "8知识管理/Navigation/学习/arthas-tt.md",
-    "0看板/文件看板.md",
+    "8知识管理/中国人的人文精神.md",
     "1附件/附件目录.md",
+    "0看板/文件看板.md",
+    "8知识管理/Navigation/学习/arthas-tt.md",
     "6TASK/权限管理/权限管理ER图.md",
     "2TODO/Task测试数据.md",
     "0看板/常用网址看板.md",
     "5Obsidian/obsidian.md",
     "5Obsidian/入门.md",
-    "8知识管理/Template/日记模板-DayPlanner.md",
-    "8知识管理/Knowledge/删除命令.md"
+    "8知识管理/Template/日记模板-DayPlanner.md"
   ]
 }
