@@ -63405,6 +63405,31 @@ var NimblePicker = /*#__PURE__*/function (_React$PureComponent) {
         }
       }
 
+      if (emojis) {
+        var emojiIndex = 0;
+        var emoji = emojis[emojiIndex];
+        var emojiToPreview = (0, utils.getSanitizedData)(emoji, this.state.skin, this.props.set, this.props.data);
+        var preview = this.preview;
+
+        if (!preview) {
+          return;
+        }
+
+        var emojiData = this.CUSTOM.filter(function (customEmoji) {
+          return customEmoji.id === emojiToPreview.id;
+        })[0];
+
+        for (var key in emojiData) {
+          if (emojiData.hasOwnProperty(key)) {
+            emoji[key] = emojiData[key];
+          }
+        }
+
+        this.setState({
+          emoji: emojiToPreview
+        });
+      }
+
       this.forceUpdate();
 
       if (this.scroll) {
@@ -63487,7 +63512,6 @@ var NimblePicker = /*#__PURE__*/function (_React$PureComponent) {
 
         case 'ArrowDown':
           var activeCategory = this.anchors.state.selected;
-          console.log(activeCategory);
           var activeCategoryIndex = this.categories.findIndex(function (_ref3) {
             var name = _ref3.name;
             return name === activeCategory;
