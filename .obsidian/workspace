@@ -25,6 +25,18 @@
                 }
               },
               {
+                "id": "0e9a7cd08d9d23a1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "8知识管理/Navigation/学习/arthas-tt.md",
+                    "mode": "preview",
+                    "backlinks": false
+                  }
+                }
+              },
+              {
                 "id": "161f70f775b9e97d",
                 "type": "leaf",
                 "pinned": true,
@@ -153,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0看板/文件看板.md"
+                "file": "8知识管理/Navigation/学习/arthas-tt.md"
               }
             }
           },
@@ -179,8 +191,9 @@
     "direction": "horizontal",
     "width": 183
   },
-  "active": "4b36b84914233b71",
+  "active": "0e9a7cd08d9d23a1",
   "lastOpenFiles": [
+    "8知识管理/Navigation/学习/arthas-tt.md",
     "0看板/文件看板.md",
     "1附件/附件目录.md",
     "6TASK/权限管理/权限管理ER图.md",
@@ -189,7 +202,6 @@
     "5Obsidian/obsidian.md",
     "5Obsidian/入门.md",
     "8知识管理/Template/日记模板-DayPlanner.md",
-    "8知识管理/Knowledge/删除命令.md",
-    "8知识管理/Knowledge/今日收集.md"
+    "8知识管理/Knowledge/删除命令.md"
   ]
 }
