@@ -4,110 +4,70 @@
     "type": "split",
     "children": [
       {
-        "id": "572d2f7def6c6d8c",
+        "id": "141cd199d51efbed",
         "type": "split",
         "children": [
           {
-            "id": "cbe0792d9e51f5e0",
+            "id": "b3554fa7367eba03",
             "type": "split",
-            "dimension": 80.62015503875969,
+            "dimension": 25.74626865671642,
             "children": [
               {
-                "id": "a0a39cfbbee52336",
+                "id": "4b36b84914233b71",
                 "type": "leaf",
-                "dimension": 28.448275862068964,
                 "pinned": true,
                 "state": {
-                  "type": "markdown",
+                  "type": "kanban",
                   "state": {
-                    "file": "4思考/Obsidian使用/admonition测试.md",
-                    "mode": "preview",
-                    "backlinks": false
+                    "file": "0看板/文件看板.md"
                   },
                   "pinned": true
                 }
               },
               {
-                "id": "db42bc3ba744eccd",
+                "id": "161f70f775b9e97d",
                 "type": "leaf",
-                "dimension": 28.448275862068964,
+                "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "6TASK/军委现场日志20210209.md",
-                    "mode": "preview",
+                    "file": "1附件/附件目录.md",
+                    "mode": "source",
                     "backlinks": false
-                  }
-                }
-              },
-              {
-                "id": "99312dce114942b2",
-                "type": "split",
-                "dimension": 43.10344827586207,
-                "children": [
-                  {
-                    "id": "690fc44e16b1d5c7",
-                    "type": "leaf",
-                    "pinned": true,
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "5Obsidian/DataView测试.md",
-                        "mode": "source",
-                        "backlinks": false
-                      },
-                      "pinned": true
-                    }
                   },
-                  {
-                    "id": "fa6d4ac863159b47",
-                    "type": "leaf",
-                    "pinned": true,
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "5Obsidian/CMenu测试.md",
-                        "mode": "source",
-                        "backlinks": false
-                      },
-                      "pinned": true
-                    }
-                  }
-                ],
-                "direction": "vertical"
+                  "pinned": true
+                }
               }
             ],
-            "direction": "horizontal"
+            "direction": "vertical"
           },
           {
-            "id": "d01d83c58413cb3c",
+            "id": "abe7807c25fb72fe",
             "type": "split",
-            "dimension": 19.379844961240313,
+            "dimension": 74.25373134328358,
             "children": [
               {
-                "id": "be642989a3f3943b",
+                "id": "6b22aef35b5bf82f",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "5Obsidian/幻灯片测试.md",
-                    "mode": "source",
+                    "file": "2TODO/Task测试数据.md",
+                    "mode": "preview",
                     "backlinks": false
                   },
                   "pinned": true
                 }
               },
               {
-                "id": "c379281ea1803779",
+                "id": "315d87e5d12ff1aa",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
-                  "type": "markdown",
+                  "type": "kanban",
                   "state": {
-                    "file": "5Obsidian/斜杠命令测试.md",
-                    "mode": "source",
-                    "backlinks": false
+                    "file": "0看板/常用网址看板.md"
                   },
                   "pinned": true
                 }
@@ -157,17 +117,7 @@
             }
           },
           {
-            "id": "2d2439608829bc3e",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "6TASK/军委现场日志20210209.md"
-              }
-            }
-          },
-          {
-            "id": "8ab0aefc46604c25",
+            "id": "e6e0436766609b88",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -175,25 +125,65 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 270
+    "width": 224
   },
   "right": {
     "id": "78a86d7ecd781271",
     "type": "split",
-    "children": [],
+    "children": [
+      {
+        "id": "a502404372a6b27d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1361677e996858c9",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "91e3a962b8c16b84",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1附件/附件目录.md"
+              }
+            }
+          },
+          {
+            "id": "479f1ac54f6e31fe",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#task",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
     "direction": "horizontal",
-    "width": 334,
-    "collapsed": true
+    "width": 183
   },
-  "active": "db42bc3ba744eccd",
+  "active": "161f70f775b9e97d",
   "lastOpenFiles": [
+    "1附件/附件目录.md",
     "6TASK/军委现场日志20210209.md",
     "4思考/Obsidian使用/admonition测试.md",
-    "1附件/附件目录.md",
     "0看板/常用网址看板.md",
     "2TODO/Task测试数据.md",
     "0看板/文件看板.md",
