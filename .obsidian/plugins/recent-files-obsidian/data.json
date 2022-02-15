@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "文件看板",
+      "path": "0看板/文件看板.md"
+    },
+    {
       "basename": "Task测试数据",
       "path": "2TODO/Task测试数据.md"
     },
@@ -23,10 +27,6 @@
     {
       "basename": "admonition测试",
       "path": "4思考/Obsidian使用/admonition测试.md"
-    },
-    {
-      "basename": "文件看板",
-      "path": "0看板/文件看板.md"
     },
     {
       "basename": "联通225升级流程",
