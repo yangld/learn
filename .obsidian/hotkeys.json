@@ -121,7 +121,9 @@
     {
       "modifiers": [
         "Alt",
-        "Mod"
+        "Ctrl",
+        "Mod",
+        "Shift"
       ],
       "key": "L"
     }

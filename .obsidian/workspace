@@ -4,49 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "b3554fa7367eba03",
+        "id": "093d6bb862ad6c64",
         "type": "split",
         "children": [
           {
-            "id": "4b36b84914233b71",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "0看板/文件看板.md"
-              },
-              "pinned": true
-            }
-          },
-          {
             "id": "1caba70d65e36602",
             "type": "leaf",
+            "dimension": 18.975332068311197,
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "6TASK/联通版本/新老应用发布合并.md",
                 "mode": "source",
                 "backlinks": false
-              }
-            }
-          },
-          {
-            "id": "161f70f775b9e97d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1附件/附件目录.md",
-                "mode": "source",
-                "backlinks": false
               },
               "pinned": true
             }
+          },
+          {
+            "id": "ba1bb4803a11bab1",
+            "type": "leaf",
+            "dimension": 81.02466793168881,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6TASK/联通版本/new.md",
+                "mode": "preview",
+                "backlinks": false
+              }
+            }
           }
         ],
-        "direction": "vertical"
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -123,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6TASK/联通版本/新老应用发布合并.md"
+                "file": "6TASK/联通版本/new.md"
               }
             }
           },
@@ -149,17 +139,17 @@
     "direction": "horizontal",
     "width": 183
   },
-  "active": "1caba70d65e36602",
+  "active": "ba1bb4803a11bab1",
   "lastOpenFiles": [
+    "6TASK/联通版本/new.md",
     "6TASK/联通版本/新老应用发布合并.md",
-    "0看板/常用网址看板.md",
-    "2TODO/Task测试数据.md",
     "0看板/文件看板.md",
-    "1附件/联通225升级流程.pdf",
+    "2TODO/Task测试数据.md",
     "1附件/附件目录.md",
+    "0看板/常用网址看板.md",
+    "1附件/联通225升级流程.pdf",
     "6TASK/军委现场日志20210209.md",
     "4思考/Obsidian使用/admonition测试.md",
-    "8知识管理/中国人的人文精神.md",
-    "8知识管理/Navigation/学习/arthas-tt.md"
+    "8知识管理/中国人的人文精神.md"
   ]
 }

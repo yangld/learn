@@ -155,7 +155,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "1附件/附件目录.md"
+                    "file": "0看板/文件看板.md"
                   }
                 }
               },
@@ -181,7 +181,7 @@
         "direction": "horizontal",
         "width": 183
       },
-      "active": "161f70f775b9e97d"
+      "active": "4b36b84914233b71"
     },
     "Obsidian功能测试": {
       "main": {
@@ -362,7 +362,150 @@
         "collapsed": true
       },
       "active": "a0a39cfbbee52336"
+    },
+    "联通升级": {
+      "main": {
+        "id": "cddff17849a5d7d1",
+        "type": "split",
+        "children": [
+          {
+            "id": "093d6bb862ad6c64",
+            "type": "split",
+            "children": [
+              {
+                "id": "1caba70d65e36602",
+                "type": "leaf",
+                "dimension": 18.975332068311197,
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "6TASK/联通版本/新老应用发布合并.md",
+                    "mode": "source",
+                    "backlinks": false
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "ba1bb4803a11bab1",
+                "type": "leaf",
+                "dimension": 81.02466793168881,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "6TASK/联通版本/new.md",
+                    "mode": "preview",
+                    "backlinks": false
+                  }
+                }
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "9727861d579d737a",
+        "type": "split",
+        "children": [
+          {
+            "id": "968cd024bb524cd5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "849f8599666b02a3",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              },
+              {
+                "id": "47b82e46d090a9f8",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {}
+                }
+              },
+              {
+                "id": "8173d6ed32716e47",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "e6e0436766609b88",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 3
+          }
+        ],
+        "direction": "horizontal",
+        "width": 224
+      },
+      "right": {
+        "id": "78a86d7ecd781271",
+        "type": "split",
+        "children": [
+          {
+            "id": "a502404372a6b27d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1361677e996858c9",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {}
+                }
+              },
+              {
+                "id": "91e3a962b8c16b84",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "6TASK/联通版本/new.md"
+                  }
+                }
+              },
+              {
+                "id": "479f1ac54f6e31fe",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#task",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 183
+      },
+      "active": "ba1bb4803a11bab1"
     }
   },
-  "active": "常用信息"
+  "active": "联通升级"
 }
