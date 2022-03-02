@@ -4,6 +4,11 @@
       "type": "file",
       "title": "常用网址看板",
       "path": "0看板/常用网址看板.md"
+    },
+    {
+      "type": "file",
+      "title": "权限管理",
+      "path": "6TASK/权限管理/权限管理.md"
     }
   ]
 }

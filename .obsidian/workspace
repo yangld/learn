@@ -29,7 +29,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6TASK/CB同步管理/接口变更引起的原型修改说明.md",
+                "file": "6TASK/CB同步管理/联通反馈的CB问题.md",
                 "mode": "source",
                 "backlinks": false
               }
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6TASK/CB同步管理/接口变更引起的原型修改说明.md"
+                "file": "6TASK/CB同步管理/联通反馈的CB问题.md"
               }
             }
           },
@@ -141,6 +141,8 @@
   },
   "active": "ba1bb4803a11bab1",
   "lastOpenFiles": [
+    "6TASK/CB同步管理/联通反馈的CB问题.md",
+    "6TASK/权限管理/权限管理.md",
     "6TASK/CB同步管理/接口变更引起的原型修改说明.md",
     "6TASK/联通版本/新老应用发布合并.md",
     "6TASK/联通版本/new.md",
@@ -148,8 +150,6 @@
     "0看板/常用网址看板.md",
     "2TODO/Task测试数据.md",
     "1附件/附件目录.md",
-    "1附件/联通225升级流程.pdf",
-    "6TASK/军委现场日志20210209.md",
-    "4思考/Obsidian使用/admonition测试.md"
+    "1附件/联通225升级流程.pdf"
   ]
 }
