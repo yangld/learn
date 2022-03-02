@@ -29,8 +29,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6TASK/联通版本/new.md",
-                "mode": "preview",
+                "file": "6TASK/CB同步管理/接口变更引起的原型修改说明.md",
+                "mode": "source",
                 "backlinks": false
               }
             }
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6TASK/联通版本/新老应用发布合并.md"
+                "file": "6TASK/CB同步管理/接口变更引起的原型修改说明.md"
               }
             }
           },
@@ -139,8 +139,9 @@
     "direction": "horizontal",
     "width": 183
   },
-  "active": "1caba70d65e36602",
+  "active": "ba1bb4803a11bab1",
   "lastOpenFiles": [
+    "6TASK/CB同步管理/接口变更引起的原型修改说明.md",
     "6TASK/联通版本/新老应用发布合并.md",
     "6TASK/联通版本/new.md",
     "0看板/文件看板.md",
@@ -149,7 +150,6 @@
     "1附件/附件目录.md",
     "1附件/联通225升级流程.pdf",
     "6TASK/军委现场日志20210209.md",
-    "4思考/Obsidian使用/admonition测试.md",
-    "8知识管理/中国人的人文精神.md"
+    "4思考/Obsidian使用/admonition测试.md"
   ]
 }
