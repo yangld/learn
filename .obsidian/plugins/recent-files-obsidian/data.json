@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "服务网关",
+      "path": "6TASK/服务网关/服务网关.md"
+    },
+    {
+      "basename": "new",
+      "path": "6TASK/联通版本/new.md"
+    },
+    {
       "basename": "新老应用发布合并",
       "path": "6TASK/联通版本/新老应用发布合并.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "接口变更引起的原型修改说明",
       "path": "6TASK/CB同步管理/接口变更引起的原型修改说明.md"
-    },
-    {
-      "basename": "new",
-      "path": "6TASK/联通版本/new.md"
     },
     {
       "basename": "文件看板",
