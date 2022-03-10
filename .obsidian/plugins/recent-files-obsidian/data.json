@@ -5,6 +5,10 @@
       "path": "8知识管理/Navigation/学习/arthas-dashboard.md"
     },
     {
+      "basename": "新老应用发布合并",
+      "path": "6TASK/联通版本/新老应用发布合并.md"
+    },
+    {
       "basename": "arthas-tt",
       "path": "8知识管理/Navigation/学习/arthas-tt.md"
     },
@@ -23,10 +27,6 @@
     {
       "basename": "new",
       "path": "6TASK/联通版本/new.md"
-    },
-    {
-      "basename": "新老应用发布合并",
-      "path": "6TASK/联通版本/新老应用发布合并.md"
     },
     {
       "basename": "权限管理",
