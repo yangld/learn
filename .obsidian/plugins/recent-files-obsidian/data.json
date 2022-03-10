@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "arthas-dashboard",
+      "path": "8知识管理/Navigation/学习/arthas-dashboard.md"
+    },
+    {
+      "basename": "arthas-tt",
+      "path": "8知识管理/Navigation/学习/arthas-tt.md"
+    },
+    {
       "basename": "接口变更引起的原型修改说明",
       "path": "6TASK/CB同步管理/接口变更引起的原型修改说明.md"
     },
@@ -55,10 +63,6 @@
     {
       "basename": "中国人的人文精神",
       "path": "8知识管理/中国人的人文精神.md"
-    },
-    {
-      "basename": "arthas-tt",
-      "path": "8知识管理/Navigation/学习/arthas-tt.md"
     },
     {
       "basename": "权限管理ER图",
