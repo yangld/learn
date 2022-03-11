@@ -37,4 +37,4 @@ mysql> use ass_base;
 group_id 不能随便改变传递
 ## 结论
 appmanage 使用ass_app_manage  这个group
-market使用ass_market  这个group
+需要使用depmon数据库的ass_sync_app_download_install
