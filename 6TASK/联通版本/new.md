@@ -38,3 +38,87 @@ group_id 不能随便改变传递
 ## 结论
 appmanage 使用ass_app_manage  这个group
 需要使用depmon数据库的ass_sync_app_download_install
+
+
+--- 
+
+select distinct object_id, sm.`code` from uni_auth_authorization u , uni_auth_app a, service_code_package_map sm
+
+where u.app_id = a.id and a.app_package = sm.package_name and u.app_type_code='web' and authorize_user_org_name not like '%\_0\_%';
+
+
+select distinct  a.app_package from uni_auth_authorization u , uni_auth_app a
+
+where u.app_id = a.id  and u.app_type_code='web' and authorize_user_org_name not like '%\_0\_%';
+
+
+--- 
+
+
+SELECT DISTINCT
+	108,
+	u.com_id,
+	u.op_tenant_id,
+	concat( u.NAME, '角色' ) role_name,
+	0,
+	'test',
+	o2.id create_user_org_id,
+	substring( o2.NAME, 12 ) create_user_org_name,
+	u.create_user_id create_user_id,
+	u2.NAME creaet_user_name,
+	now() create_time,
+	now() update_time 
+FROM
+	mdm_user u,
+	uni_auth_authorization a,
+	mdm_org o,
+	mdm_org o2,
+	mdm_user u2 
+WHERE
+	u.org_code = o.id 
+	AND u.id = a.object_id 
+	AND a.app_type_code = 'web' 
+	AND authorize_user_org_name NOT LIKE '%_0__%' 
+	AND a.manage_org_id = o2.id 
+	AND u.create_user_id = u2.id 
+	AND u.create_user_id IS NOT NULL;
+--- 
+
+--- 
+	
+SELECT DISTINCT
+	u.com_id,
+	u.op_tenant_id,
+	u.id user_id,
+ 	u.account,
+ 	u.NAME user_name,
+ 	u.mobile_phone,
+	o.id user_org_id,
+	substring( o.NAME, 12 ) user_org_name,
+	o2.id manage_org_id,
+	substring( o2.NAME, 12 ) manage_org_name,
+	u.create_user_id create_user_id,
+	u2.name,
+	now() create_time,
+	now() update_time,
+	0 can_edit 
+FROM
+	mdm_user u,
+	uni_auth_authorization a,
+	mdm_org o,
+	mdm_org o2, 
+	mdm_user u2
+WHERE
+	u.org_code = o.id 
+	AND u.id = a.object_id 
+	AND a.app_type_code = 'web' 
+	AND authorize_user_org_name NOT LIKE '%_0__%' 
+	AND a.manage_org_id = o2.id 
+	and u.create_user_id = u2.id
+	and u.create_user_id is not null;
+	
+	
+	-- 0c8b2dd0db474dc78419ae95b071f9d5
+
+
+---
