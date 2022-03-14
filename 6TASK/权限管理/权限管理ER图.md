@@ -28,6 +28,13 @@ erDiagram
 	    string user_id
         string app_id
     }
+	UNI_AUTH_AUTHORIZATION_LOG {
+	    string user_id
+        string app_id
+    }
+	MDM_ADMIN {
+	    string account
+    }
 	MDM_USER {
 	    string id
         string account
