@@ -29,7 +29,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4思考/架构.md",
+                "file": "4思考/证书.md",
                 "mode": "source",
                 "backlinks": false
               }
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4思考/架构.md"
+                "file": "4思考/证书.md"
               }
             }
           },
@@ -141,6 +141,7 @@
   },
   "active": "ba1bb4803a11bab1",
   "lastOpenFiles": [
+    "4思考/证书.md",
     "4思考/架构.md",
     "6TASK/联通版本/new.md",
     "6TASK/联通版本/新老应用发布合并.md",
@@ -149,7 +150,6 @@
     "8知识管理/Navigation/学习/arthas-tt.md",
     "6TASK/CB同步管理/接口变更引起的原型修改说明.md",
     "6TASK/CB同步管理/联通反馈的CB问题.md",
-    "6TASK/服务网关/服务网关.md",
-    "6TASK/权限管理/权限管理.md"
+    "6TASK/服务网关/服务网关.md"
   ]
 }
