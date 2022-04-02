@@ -23,7 +23,6 @@ erDiagram
 	Policy {
 	    string id
 		string name
-        string app_id
 		string userPolicy
 		string devicePolicy
 		string appPolicy
@@ -84,14 +83,16 @@ erDiagram
 	Resource {
         string id
 		string name
-		string policyId
+		string policyStat
     } 
 	
 	DeviceInfo {
-        long id
+        string id
         string deviceUuid
 		string userId
 		string orgId
+		string status
+		string magStatus
     }
 	
 	Listener {
@@ -129,6 +130,8 @@ erDiagram
 		string syncObject
 		string syncType
 		string syncInterval
+		string configContent
+		string syncStatus
     }
 	
 	Snapshot {
