@@ -4,32 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "093d6bb862ad6c64",
+        "id": "3723425dfed797a4",
         "type": "split",
         "children": [
           {
-            "id": "1caba70d65e36602",
+            "id": "ba1bb4803a11bab1",
             "type": "leaf",
-            "dimension": 18.975332068311197,
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6TASK/联通版本/新老应用发布合并.md",
-                "mode": "source",
+                "file": "6TASK/联通版本/Mag类图.md",
+                "mode": "preview",
                 "backlinks": false
-              },
-              "pinned": true
+              }
             }
           },
           {
-            "id": "ba1bb4803a11bab1",
+            "id": "124eb93108dc284a",
             "type": "leaf",
-            "dimension": 81.02466793168881,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4思考/证书.md",
+                "file": "6TASK/联通版本/Mag类图.md",
                 "mode": "source",
                 "backlinks": false
               }
@@ -113,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4思考/证书.md"
+                "file": "6TASK/联通版本/Mag类图.md"
               }
             }
           },
@@ -137,19 +133,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 183
+    "width": 183,
+    "collapsed": true
   },
-  "active": "ba1bb4803a11bab1",
+  "active": "124eb93108dc284a",
   "lastOpenFiles": [
+    "6TASK/联通版本/Mag类图.md",
+    "6TASK/权限管理/权限管理ER图.md",
+    "6TASK/权限管理/权限管理类图.md",
+    "6TASK/权限管理/权限管理.md",
+    "6TASK/联通版本/new.md",
+    "8知识管理/InBox/evernote/参考/_resources/Tomcat架构和类加载启动过程___Ling's_blog.resources/类加载思维导图.jpg",
     "4思考/证书.md",
     "4思考/架构.md",
-    "6TASK/联通版本/new.md",
     "6TASK/联通版本/新老应用发布合并.md",
-    "6TASK/权限管理/权限管理ER图.md",
-    "8知识管理/Navigation/学习/arthas-dashboard.md",
-    "8知识管理/Navigation/学习/arthas-tt.md",
-    "6TASK/CB同步管理/接口变更引起的原型修改说明.md",
-    "6TASK/CB同步管理/联通反馈的CB问题.md",
-    "6TASK/服务网关/服务网关.md"
+    "8知识管理/Navigation/学习/arthas-dashboard.md"
   ]
 }

@@ -9,6 +9,11 @@
       "type": "file",
       "title": "权限管理",
       "path": "6TASK/权限管理/权限管理.md"
+    },
+    {
+      "type": "file",
+      "title": "Mag类图",
+      "path": "6TASK/联通版本/Mag类图.md"
     }
   ]
 }
