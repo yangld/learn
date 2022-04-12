@@ -14,18 +14,6 @@
             "backlinks": false
           }
         }
-      },
-      {
-        "id": "67258036b48f75a2",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "6TASK/联通版本/Mag类图.md",
-            "mode": "source",
-            "backlinks": false
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -129,7 +117,7 @@
     "width": 183,
     "collapsed": true
   },
-  "active": "67258036b48f75a2",
+  "active": "ba1bb4803a11bab1",
   "lastOpenFiles": [
     "6TASK/联通版本/Mag类图.md",
     "6TASK/权限管理/权限管理ER图.md",
