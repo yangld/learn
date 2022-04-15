@@ -1,0 +1,7 @@
+{
+  "ribbonButtonAction": "open",
+  "DEVONlinkIconColor": "DEVONthink-logo-blue",
+  "maximumRelatedItemsSetting": 10,
+  "relatedItemsPrefixSetting": "- ",
+  "linkTypeSetting": "devonthinkURL"
+}
