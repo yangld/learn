@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "6TASK/联通版本/铁路公安服务网关开发计划.md",
-            "mode": "preview",
+            "mode": "source",
             "backlinks": false
           }
         }
@@ -66,7 +66,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 524
+    "width": 524,
+    "collapsed": true
   },
   "right": {
     "id": "78a86d7ecd781271",
