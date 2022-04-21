@@ -1,24 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "Envoy学习",
-      "path": "6TASK/联通版本/Envoy学习.md"
+      "basename": "服务网关设计",
+      "path": "1附件/服务网关设计.pdf"
     },
     {
-      "basename": "铁路公安服务网关开发计划",
-      "path": "6TASK/联通版本/铁路公安服务网关开发计划.md"
+      "basename": "新老应用发布合并",
+      "path": "6TASK/联通版本/新老应用发布合并.md"
     },
     {
-      "basename": "query",
-      "path": "edqls/query.md"
+      "basename": "WechatIMG169",
+      "path": "1附件/WechatIMG169.png"
+    },
+    {
+      "basename": "Chart Fri Nov 26 2021",
+      "path": "1附件/Chart Fri Nov 26 2021.jpeg"
+    },
+    {
+      "basename": "大都会保险-医疗险-杨立东",
+      "path": "1附件/大都会保险-医疗险-杨立东.pdf"
     },
     {
       "basename": "问题列表",
       "path": "6TASK/联通版本/问题列表.md"
     },
     {
-      "basename": "新老应用发布合并",
-      "path": "6TASK/联通版本/新老应用发布合并.md"
+      "basename": "铁路公安服务网关开发计划",
+      "path": "6TASK/联通版本/铁路公安服务网关开发计划.md"
+    },
+    {
+      "basename": "Envoy学习",
+      "path": "6TASK/联通版本/Envoy学习.md"
+    },
+    {
+      "basename": "query",
+      "path": "edqls/query.md"
     },
     {
       "basename": "tets",
@@ -27,10 +43,6 @@
     {
       "basename": "Mysql-SSL总结",
       "path": "6TASK/联通版本/Mysql-SSL总结.md"
-    },
-    {
-      "basename": "WechatIMG169",
-      "path": "1附件/WechatIMG169.png"
     },
     {
       "basename": "Mag类图",
@@ -187,18 +199,6 @@
     {
       "basename": "DataView测试",
       "path": "5Obsidian/DataView测试.md"
-    },
-    {
-      "basename": "Obsidian学习总结",
-      "path": "3工作日志/Day Planners/Obsidian学习总结.md"
-    },
-    {
-      "basename": "Day Planner-20211115",
-      "path": "3工作日志/Day Planners/Day Planner-20211115.md"
-    },
-    {
-      "basename": "权限文件看板",
-      "path": "0看板/权限文件看板.md"
     }
   ],
   "omittedPaths": [],

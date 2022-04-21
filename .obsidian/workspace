@@ -4,14 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "ba1bb4803a11bab1",
+        "id": "067929753aa7469c",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "pdf",
           "state": {
-            "file": "6TASK/联通版本/Envoy学习.md",
-            "mode": "source",
-            "backlinks": false
+            "file": "1附件/服务网关设计.pdf"
           }
         }
       }
@@ -66,8 +64,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 524,
-    "collapsed": true
+    "width": 524
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -91,7 +88,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6TASK/联通版本/Envoy学习.md"
+                "file": "1附件/服务网关设计.pdf"
               }
             }
           },
@@ -118,17 +115,17 @@
     "width": 183,
     "collapsed": true
   },
-  "active": "ba1bb4803a11bab1",
+  "active": "067929753aa7469c",
   "lastOpenFiles": [
-    "6TASK/联通版本/Envoy学习.md",
-    "6TASK/联通版本/铁路公安服务网关开发计划.md",
-    "edqls/query.md",
-    "6TASK/联通版本/问题列表.md",
+    "1附件/服务网关设计.pdf",
     "6TASK/联通版本/新老应用发布合并.md",
-    "6TASK/联通版本/tets.md",
-    "6TASK/联通版本/Mysql-SSL总结.md",
     "1附件/WechatIMG169.png",
-    "6TASK/联通版本/Mag类图.md",
-    "6TASK/权限管理/权限管理ER图.md"
+    "1附件/Chart Fri Nov 26 2021.jpeg",
+    "1附件/大都会保险-医疗险-杨立东.pdf",
+    "6TASK/联通版本/问题列表.md",
+    "6TASK/联通版本/铁路公安服务网关开发计划.md",
+    "6TASK/联通版本/Envoy学习.md",
+    "edqls/query.md",
+    "6TASK/联通版本/tets.md"
   ]
 }
