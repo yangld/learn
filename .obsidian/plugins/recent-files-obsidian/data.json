@@ -1,12 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "服务网关设计",
-      "path": "1附件/服务网关设计.pdf"
+      "basename": "new",
+      "path": "6TASK/联通版本/new.md"
+    },
+    {
+      "basename": "Mysql-SSL总结",
+      "path": "6TASK/联通版本/Mysql-SSL总结.md"
+    },
+    {
+      "basename": "Mag类图",
+      "path": "6TASK/联通版本/Mag类图.md"
+    },
+    {
+      "basename": "Envoy学习",
+      "path": "6TASK/联通版本/Envoy学习.md"
     },
     {
       "basename": "新老应用发布合并",
       "path": "6TASK/联通版本/新老应用发布合并.md"
+    },
+    {
+      "basename": "问题列表",
+      "path": "6TASK/联通版本/问题列表.md"
+    },
+    {
+      "basename": "铁路公安服务网关开发计划",
+      "path": "6TASK/联通版本/铁路公安服务网关开发计划.md"
+    },
+    {
+      "basename": "服务网关",
+      "path": "6TASK/服务网关/服务网关.md"
+    },
+    {
+      "basename": "服务网关设计",
+      "path": "1附件/服务网关设计.pdf"
     },
     {
       "basename": "WechatIMG169",
@@ -21,32 +49,8 @@
       "path": "1附件/大都会保险-医疗险-杨立东.pdf"
     },
     {
-      "basename": "问题列表",
-      "path": "6TASK/联通版本/问题列表.md"
-    },
-    {
-      "basename": "铁路公安服务网关开发计划",
-      "path": "6TASK/联通版本/铁路公安服务网关开发计划.md"
-    },
-    {
-      "basename": "Envoy学习",
-      "path": "6TASK/联通版本/Envoy学习.md"
-    },
-    {
       "basename": "query",
       "path": "edqls/query.md"
-    },
-    {
-      "basename": "tets",
-      "path": "6TASK/联通版本/tets.md"
-    },
-    {
-      "basename": "Mysql-SSL总结",
-      "path": "6TASK/联通版本/Mysql-SSL总结.md"
-    },
-    {
-      "basename": "Mag类图",
-      "path": "6TASK/联通版本/Mag类图.md"
     },
     {
       "basename": "权限管理ER图",
@@ -59,10 +63,6 @@
     {
       "basename": "权限管理",
       "path": "6TASK/权限管理/权限管理.md"
-    },
-    {
-      "basename": "new",
-      "path": "6TASK/联通版本/new.md"
     },
     {
       "basename": "类加载思维导图",
@@ -93,10 +93,6 @@
       "path": "6TASK/CB同步管理/联通反馈的CB问题.md"
     },
     {
-      "basename": "服务网关",
-      "path": "6TASK/服务网关/服务网关.md"
-    },
-    {
       "basename": "文件看板",
       "path": "0看板/文件看板.md"
     },
@@ -115,10 +111,6 @@
     {
       "basename": "联通225升级流程",
       "path": "1附件/联通225升级流程.pdf"
-    },
-    {
-      "basename": "军委现场日志20210209",
-      "path": "6TASK/军委现场日志20210209.md"
     },
     {
       "basename": "admonition测试",
@@ -195,10 +187,6 @@
     {
       "basename": "CMenu测试",
       "path": "5Obsidian/CMenu测试.md"
-    },
-    {
-      "basename": "DataView测试",
-      "path": "5Obsidian/DataView测试.md"
     }
   ],
   "omittedPaths": [],

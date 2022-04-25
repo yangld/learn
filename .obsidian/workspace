@@ -7,10 +7,8 @@
         "id": "067929753aa7469c",
         "type": "leaf",
         "state": {
-          "type": "pdf",
-          "state": {
-            "file": "1附件/服务网关设计.pdf"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -87,9 +85,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "1附件/服务网关设计.pdf"
-              }
+              "state": {}
             }
           },
           {
@@ -117,15 +113,15 @@
   },
   "active": "067929753aa7469c",
   "lastOpenFiles": [
-    "1附件/服务网关设计.pdf",
+    "6TASK/联通版本/111.md",
+    "6TASK/军委现场日志20210209.md",
+    "6TASK/联通版本/new.md",
+    "6TASK/联通版本/Mysql-SSL总结.md",
+    "6TASK/联通版本/Mag类图.md",
+    "6TASK/联通版本/Envoy学习.md",
     "6TASK/联通版本/新老应用发布合并.md",
-    "1附件/WechatIMG169.png",
-    "1附件/Chart Fri Nov 26 2021.jpeg",
-    "1附件/大都会保险-医疗险-杨立东.pdf",
     "6TASK/联通版本/问题列表.md",
     "6TASK/联通版本/铁路公安服务网关开发计划.md",
-    "6TASK/联通版本/Envoy学习.md",
-    "edqls/query.md",
-    "6TASK/联通版本/tets.md"
+    "6TASK/服务网关/服务网关.md"
   ]
 }
