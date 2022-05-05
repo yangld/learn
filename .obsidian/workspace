@@ -7,8 +7,12 @@
         "id": "067929753aa7469c",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "铁路网关问题列表.md",
+            "mode": "source",
+            "backlinks": false
+          }
         }
       }
     ],
@@ -85,7 +89,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "铁路网关问题列表.md"
+              }
             }
           },
           {
@@ -113,6 +119,7 @@
   },
   "active": "067929753aa7469c",
   "lastOpenFiles": [
+    "铁路网关问题列表.md",
     "6TASK/联通版本/111.md",
     "6TASK/军委现场日志20210209.md",
     "6TASK/联通版本/new.md",
@@ -121,7 +128,6 @@
     "6TASK/联通版本/Envoy学习.md",
     "6TASK/联通版本/新老应用发布合并.md",
     "6TASK/联通版本/问题列表.md",
-    "6TASK/联通版本/铁路公安服务网关开发计划.md",
-    "6TASK/服务网关/服务网关.md"
+    "6TASK/联通版本/铁路公安服务网关开发计划.md"
   ]
 }
