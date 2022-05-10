@@ -1,7 +1,7 @@
-1. 注册需要进行证书认证的接口
-/mdm/v1/ios_mdm_client/ios/enroll2
-/mdm/v1/ios_mdm_client/ios/profile
-/mdm/v1/ios_mdm_client/devices_client/ios/checkin
-/mdm/v1/ios_mdm_client/devices_client/server
-/mdm/v1/devices_client/ios_server 
-/mdm/v1/devices_client/ios/update_token 
+
+获取challenge: 	/ios/enroll2
+获取配置文件:   	 /ios/profile
+更新设备信息：	   /devices_client/ios/checkin
+- pushmagic， token， iosUuid，设备状态
+获取命令: 			  /devices_client/server
+
