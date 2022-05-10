@@ -44,3 +44,22 @@
     filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg)
         saturate(0.3) brightness(0.7);
 }
+
+.newPresetDialogGrid {
+	display: grid;
+	grid-row-gap: 10px;
+}
+
+.newPresetDialogLine {
+	display: inline-block;
+}
+
+.clusterPreviewIcon {
+	margin-left: 0 !important;
+	margin-top: 0 !important;
+	position: relative !important;
+}
+
+.clusterPreviewContainer {
+	display: inline-flex;
+}

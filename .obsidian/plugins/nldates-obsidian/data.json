@@ -5,8 +5,8 @@
   "format": "YYYY.MM.DD",
   "timeFormat": "HH:mm",
   "separator": " ",
-  "weekStart": "Monday",
+  "weekStart": "sunday",
   "modalToggleTime": false,
-  "modalToggleLink": false,
+  "modalToggleLink": true,
   "modalMomentFormat": "YYYY-MM-DD HH:mm"
 }
