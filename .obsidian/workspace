@@ -7,9 +7,11 @@
         "id": "067929753aa7469c",
         "type": "leaf",
         "state": {
-          "type": "pdf",
+          "type": "markdown",
           "state": {
-            "file": "1附件/CB对接设计.pdf"
+            "file": "1附件/铁路公安机构人员同步接口文档 V1.2.md",
+            "mode": "source",
+            "backlinks": false
           }
         }
       }
@@ -80,7 +82,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1附件/CB对接设计.pdf"
+                "file": "1附件/铁路公安机构人员同步接口文档 V1.2.md"
               }
             }
           },
@@ -117,8 +119,8 @@
   },
   "active": "067929753aa7469c",
   "lastOpenFiles": [
-    "1附件/CB对接设计.pdf",
     "1附件/铁路公安机构人员同步接口文档 V1.2.md",
+    "1附件/CB对接设计.pdf",
     "2TODO/nginx斜杠.md",
     "1附件/铁路公安机构人员同步接口文档 V1.2 2.md",
     "1附件/IOS接口整理.md",
