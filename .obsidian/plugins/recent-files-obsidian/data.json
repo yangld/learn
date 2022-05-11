@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "铁路公安机构人员同步接口文档 V1.2 2",
-      "path": "1附件/铁路公安机构人员同步接口文档 V1.2 2.md"
+      "basename": "nginx斜杠",
+      "path": "2TODO/nginx斜杠.md"
     },
     {
       "basename": "铁路公安机构人员同步接口文档 V1.2",
       "path": "1附件/铁路公安机构人员同步接口文档 V1.2.md"
+    },
+    {
+      "basename": "铁路公安机构人员同步接口文档 V1.2 2",
+      "path": "1附件/铁路公安机构人员同步接口文档 V1.2 2.md"
     },
     {
       "basename": "IOS接口整理",
@@ -195,10 +199,6 @@
     {
       "basename": "用Obsidian代替应用管理",
       "path": "4思考/用Obsidian代替应用管理.md"
-    },
-    {
-      "basename": "事件通知",
-      "path": "4思考/事件通知.md"
     }
   ],
   "omittedPaths": [],
