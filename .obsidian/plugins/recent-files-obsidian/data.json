@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "elasticdump安装导入导出",
+      "path": "1附件/elasticdump安装导入导出.md"
+    },
+    {
       "basename": "联通二期验收报告",
       "path": "1附件/联通二期验收报告.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "今日收集",
       "path": "8知识管理/Knowledge/今日收集.md"
-    },
-    {
-      "basename": "(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客",
-      "path": "8知识管理/Attachments/(1条消息) 解决Python通过pip安装报错：（有图）Could not install packages due to an EnvironmentError_ HTTPSConnectionPool_HWP-CSDN博客.md"
     }
   ],
   "omittedPaths": [],
