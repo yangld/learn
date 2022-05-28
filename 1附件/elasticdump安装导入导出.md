@@ -18,3 +18,5 @@ elasticdump --input=http://20.153.10.31:9200/pekall-dev-app-log-2022-05 --output
 
 4. 导入
 elasticdump --input=202204.json --output=http://20.153.10.31:9200/pekall-test-2022-05 --type=data
+
+
