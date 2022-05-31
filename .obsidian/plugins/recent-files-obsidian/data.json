@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "未命名 2",
+      "path": "2TODO/未命名 2.md"
+    },
+    {
+      "basename": "未命名 1",
+      "path": "2TODO/未命名 1.md"
+    },
+    {
       "basename": "Task测试数据",
       "path": "2TODO/Task测试数据.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "中国人的人文精神",
       "path": "8知识管理/中国人的人文精神.md"
-    },
-    {
-      "basename": "入门",
-      "path": "5Obsidian/入门.md"
-    },
-    {
-      "basename": "日记模板-DayPlanner",
-      "path": "8知识管理/Template/日记模板-DayPlanner.md"
     }
   ],
   "omittedPaths": [],
