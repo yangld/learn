@@ -12,14 +12,14 @@
 ### 紧急 重要
 - [x] 军委项目, 应用使用统计数据生成
 ### 紧急 不重要
-- [x] excel数值格式问题,先让用户手动操作改格式, 后续再代码修改格式[excel文本转数值](https://zh-cn.extendoffice.com/excel/formulas/excel-convert-text-to-number.html)
+- [X] excel数值格式问题,先让用户手动操作改格式, 后续再代码修改格式[excel文本转数值](https://zh-cn.extendoffice.com/excel/formulas/excel-convert-text-to-number.html)
 - [x] 权限数据的生成
 - [x] 军委项目, 用户活跃增加手机号和组织信息
 - [x] 增加请销假的消息通知的模板 #原型
 - [x] bug 24399 24393 `24399` 24508 #evernote
 
 ### 不紧急 重要
-- [x] 验证应用统计导出的文件名是否正确 #evernote 
+- [ ] 验证应用统计导出的文件名是否正确 #evernote 
 - [x] 权限管理继续开发 
 ### 不紧急 不重要
 - [x] windows虚拟机,图标显示问题

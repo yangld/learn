@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Task测试数据",
+      "path": "2TODO/Task测试数据.md"
+    },
+    {
+      "basename": "nginx斜杠",
+      "path": "2TODO/nginx斜杠.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "2TODO/未命名.md"
+    },
+    {
+      "basename": "权限管理",
+      "path": "2TODO/权限管理.md"
+    },
+    {
       "basename": "elasticdump安装导入导出",
       "path": "1附件/elasticdump安装导入导出.md"
     },
@@ -35,10 +51,6 @@
     {
       "basename": "CB对接设计",
       "path": "1附件/CB对接设计.pdf"
-    },
-    {
-      "basename": "nginx斜杠",
-      "path": "2TODO/nginx斜杠.md"
     },
     {
       "basename": "铁路公安机构人员同步接口文档 V1.2 2",
@@ -165,10 +177,6 @@
       "path": "0看板/常用网址看板.md"
     },
     {
-      "basename": "Task测试数据",
-      "path": "2TODO/Task测试数据.md"
-    },
-    {
       "basename": "附件目录",
       "path": "1附件/附件目录.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "日记模板-DayPlanner",
       "path": "8知识管理/Template/日记模板-DayPlanner.md"
-    },
-    {
-      "basename": "删除命令",
-      "path": "8知识管理/Knowledge/删除命令.md"
-    },
-    {
-      "basename": "今日收集",
-      "path": "8知识管理/Knowledge/今日收集.md"
     }
   ],
   "omittedPaths": [],
