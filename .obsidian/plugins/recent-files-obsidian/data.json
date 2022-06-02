@@ -5,6 +5,10 @@
       "path": "2TODO/新需求.md"
     },
     {
+      "basename": "城市无障碍",
+      "path": "2TODO/城市无障碍.md"
+    },
+    {
       "basename": "未命名 1",
       "path": "2TODO/未命名 1.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "admonition测试",
       "path": "4思考/Obsidian使用/admonition测试.md"
-    },
-    {
-      "basename": "中国人的人文精神",
-      "path": "8知识管理/中国人的人文精神.md"
     }
   ],
   "omittedPaths": [],

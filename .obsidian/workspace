@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "2TODO/新需求.md",
-            "mode": "source",
+            "mode": "preview",
             "backlinks": false
           }
         }
@@ -127,6 +127,7 @@
   "active": "67ca25b7b3694d84",
   "lastOpenFiles": [
     "2TODO/新需求.md",
+    "2TODO/城市无障碍.md",
     "2TODO/未命名 1.md",
     "2TODO/Task测试数据.md",
     "2TODO/nginx斜杠.md",
@@ -134,7 +135,6 @@
     "2TODO/权限管理.md",
     "1附件/elasticdump安装导入导出.md",
     "1附件/联通二期验收报告.md",
-    "6TASK/权限管理/权限管理ER图.md",
-    "1附件/2022-05-23.md"
+    "6TASK/权限管理/权限管理ER图.md"
   ]
 }
