@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "2TODO/新需求.md",
-            "mode": "source",
+            "mode": "preview",
             "backlinks": false
           }
         }
@@ -66,8 +66,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308,
-    "collapsed": true
+    "width": 308
   },
   "right": {
     "id": "78a86d7ecd781271",
