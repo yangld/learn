@@ -7,9 +7,11 @@
         "id": "67ca25b7b3694d84",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "1附件/1871636515282_.pic_hd.jpg"
+            "file": "1附件/新需求.md",
+            "mode": "source",
+            "backlinks": false
           }
         }
       }
@@ -80,7 +82,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1附件/1871636515282_.pic_hd.jpg"
+                "file": "1附件/新需求.md"
               }
             }
           },
@@ -125,6 +127,7 @@
   },
   "active": "67ca25b7b3694d84",
   "lastOpenFiles": [
+    "1附件/新需求.md",
     "1附件/1871636515282_.pic_hd.jpg",
     "1附件/2381637717271_.pic.jpg",
     "1附件/3671635488268_.pic_hd.jpg",
@@ -133,7 +136,6 @@
     "1附件/43261655095502_.pic.jpg",
     "1附件/Chart Fri Nov 26 2021.jpeg",
     "1附件/Chart Fri Nov 26 2021.png",
-    "1附件/Chart Fri Nov 26 2021 1.png",
-    "1附件/Pasted image 20211026155319.png"
+    "1附件/Chart Fri Nov 26 2021 1.png"
   ]
 }

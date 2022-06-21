@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "新需求",
+      "path": "1附件/新需求.md"
+    },
+    {
       "basename": "1871636515282_.pic_hd",
       "path": "1附件/1871636515282_.pic_hd.jpg"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "query",
       "path": "edqls/query.md"
-    },
-    {
-      "basename": "权限管理类图",
-      "path": "6TASK/权限管理/权限管理类图.md"
     }
   ],
   "omittedPaths": [],
