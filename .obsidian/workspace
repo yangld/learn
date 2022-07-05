@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "67ca25b7b3694d84",
+        "id": "fe29874c425bfa2b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "6TASK/工作号码/工作号码ER图.md",
-            "mode": "source",
+            "mode": "preview",
             "backlinks": false
           }
         }
@@ -125,7 +125,7 @@
     "width": 183,
     "collapsed": true
   },
-  "active": "67ca25b7b3694d84",
+  "active": "fe29874c425bfa2b",
   "lastOpenFiles": [
     "6TASK/工作号码/工作号码ER图.md",
     "6TASK/权限管理/权限管理ER图.md",
