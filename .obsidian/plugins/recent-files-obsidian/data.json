@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "电话白名单",
+      "path": "1附件/电话白名单.md"
+    },
+    {
       "basename": "联通环境download文件清理",
       "path": "1附件/联通环境download文件清理.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "服务网关设计",
       "path": "1附件/服务网关设计.pdf"
-    },
-    {
-      "basename": "大都会保险-医疗险-杨立东",
-      "path": "1附件/大都会保险-医疗险-杨立东.pdf"
     }
   ],
   "omittedPaths": [],
