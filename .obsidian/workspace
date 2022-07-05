@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1附件/电话白名单.md",
+            "file": "6TASK/工作号码/工作号码ER图.md",
             "mode": "source",
             "backlinks": false
           }
@@ -82,7 +82,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1附件/电话白名单.md"
+                "file": "6TASK/工作号码/工作号码ER图.md"
               }
             }
           },
@@ -127,15 +127,15 @@
   },
   "active": "67ca25b7b3694d84",
   "lastOpenFiles": [
+    "6TASK/工作号码/工作号码ER图.md",
+    "6TASK/权限管理/权限管理ER图.md",
+    "6TASK/权限管理/权限管理类图.md",
     "1附件/电话白名单.md",
     "1附件/联通环境download文件清理.md",
     "1附件/新需求.md",
     "1附件/1871636515282_.pic_hd.jpg",
     "1附件/2381637717271_.pic.jpg",
     "1附件/3671635488268_.pic_hd.jpg",
-    "1附件/4471642729689_.pic_hd.jpg",
-    "1附件/9551642991974_.pic_hd.jpg",
-    "1附件/43261655095502_.pic.jpg",
-    "1附件/Chart Fri Nov 26 2021.jpeg"
+    "1附件/4471642729689_.pic_hd.jpg"
   ]
 }
