@@ -4,35 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "93735ab16be9afae",
-        "type": "split",
-        "children": [
-          {
-            "id": "fe29874c425bfa2b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6TASK/工作号码/工作号码ER图.md",
-                "mode": "source",
-                "backlinks": false
-              }
-            }
-          },
-          {
-            "id": "5be9aafa292a27dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6TASK/工作号码/工作号码ER图.md",
-                "mode": "source",
-                "backlinks": false
-              }
-            }
+        "id": "5be9aafa292a27dd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "6TASK/工作号码/工作号码ER图.md",
+            "mode": "source",
+            "backlinks": false
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -145,7 +126,7 @@
     "width": 183,
     "collapsed": true
   },
-  "active": "fe29874c425bfa2b",
+  "active": "5be9aafa292a27dd",
   "lastOpenFiles": [
     "6TASK/工作号码/工作号码ER图.md",
     "6TASK/权限管理/权限管理ER图.md",
