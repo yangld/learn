@@ -29,6 +29,11 @@
       "type": "file",
       "title": "联通环境download文件清理",
       "path": "1附件/联通环境download文件清理.md"
+    },
+    {
+      "type": "file",
+      "title": "工作号码ER图",
+      "path": "6TASK/工作号码/工作号码ER图.md"
     }
   ]
 }

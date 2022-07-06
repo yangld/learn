@@ -30,10 +30,7 @@ erDiagram
 ```
 
 ## 说明
-1. 数据的变化对设备的影响
-2. web端操作的变化对数据的影响
-3. 模型-ER-接口-交互-已有模型的影响
-4. web接口
+1. 接口
 	1. 获取蓝牙白名单组分页信息
 		1. BluetoothWhiteGroupInfo
 	2. 获取蓝牙白名单组信息
@@ -61,32 +58,32 @@ erDiagram
 	11. 获取蓝牙白名单汇总分页信息
 		1. BluetoothWhiteTotalInfo
 	12. 检查导入文件
-		1. BluetoothWhiteGroupInfo， BluetoothWhiteInfo
+		1. BluetoothWhiteGroupInfo,BluetoothWhiteInfo
 	13. 批量导入
-		1. 	BluetoothWhiteGroupInfo， BluetoothWhiteInfo
+		1. 	BluetoothWhiteGroupInfo,BluetoothWhiteInfo
 		2. 分发设备
-	14. 
-5. 相关接口
-	1. 安卓策略
-		2. editPolicy-->newPolicyService.editPolicy-->updatePolicyRelations-->updateBluetoothWhitePolicy
-		3. addPolicy-->newPolicyService.addPolicy-->updatePolicyRelations-->updateBluetoothWhitePolicy
-	2. 蓝牙白名单组
-		1. deleteBluetoothWhiteGroupInfos-->deleteBluetoothWhiteGroups-->
-			1. bluetoothWhiteGroupInfoManager.getBluetoothWhiteGroupInfosByIds
-			2. bluetoothWhiteGroupPolicyManager.getPolicyIdsByBluetoothWhiteGroupId
-		2. getBluetoothWhiteGroupInfo-->bluetoothWhiteGroupInfoManager.getR
-		3. addBluetoothWhiteGroupInfo-->bluetoothWhiteGroupInfoManager.saveW
-		4. updateBluetoothWhiteGroupInfo-->bluetoothWhiteGroupInfoManager.saveW
-		5. addBluetoothWhiteInfo-->bluetoothWhiteGroupInfoManager.getR
-		6. updateBluetoothWhiteInfo-->bluetoothWhiteGroupInfoManager.getR
-		7. deleteBluetoothWhiteInfos-->bluetoothWhiteGroupInfoManager.getR
-		8. uploadFile-->bluetoothWhiteGroupInfoManager.getR
-		9. addBatch-->bluetoothWhiteGroupInfoManager.getR
-		10. addRestfulApiLog-->mdmActionHistoryService.logOperationRecord
-		11. deleteBluetoothWhiteGroupInfos-->bluetoothWhiteService.deleteBluetoothWhiteGroups-->bluetoothWhiteGroupInfoManager.getBluetoothWhiteGroupInfosByIds
-	3. 蓝牙白名单
-		5. addBatch-->dispatchDevices-->bluetoothWhiteGroupPolicyManager.getPolicyIdsByBluetoothWhiteGroupId
-		6. deleteBluetoothWhiteInfos-->dispatchDevices-->bluetoothWhiteGroupPolicyManager.getPolicyIdsByBluetoothWhiteGroupId
-		7. updateBluetoothWhiteInfo-->dispatchDevices-->bluetoothWhiteGroupPolicyManager.getPolicyIdsByBluetoothWhiteGroupId
-		8. addBluetoothWhiteInfo-->dispatchDevices-->bluetoothWhiteGroupPolicyManager.getPolicyIdsByBluetoothWhiteGroupId
+	14. ActionHistoryAop
+		1. 记录日志
+		2. BluetoothWhiteLogger
+		3. BluetoothWhiteGroupVo
+		4. BluetoothWhiteClientVo
+	15. 获取蓝牙白名单分页信息
+		1. MdmDeviceInfo   ， BluetoothWhiteInfo
+	16. 添加策略
+		1. MdmNewPolicyTemplate， BluetoothWhiteGroupPolicy
+		2. updateBluetoothWhitePolicy
+	17. 修改策略
+		1. MdmNewPolicyTemplate， BluetoothWhiteGroupPolicy
+		2. updateBluetoothWhitePolicy
+	18. 命令
+		1. NewUpdateBluetoothWhiteCommand
+2. 新增功能对现有模型的影响
+	1. 策略内容和策略表中都增加是否开启亲情号码字段
+		1. 新增和修改策略
+	2. 新增工作号码组策略，记录策略和工作号码组的关系
+		1. 新增和修改策略
+	3. 新增工作号码组
+	4. 新增工作号码
 
+3. web端操作的变化对数据的影响
+4. 模型-ER-接口-交互-已有模型的影响
