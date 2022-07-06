@@ -1,10 +1,16 @@
 ## ER图
 ```mermaid
 erDiagram
-	MdmPolicyTemplate		||--|{ MdmDeviceInfo		: ont-to-many
-	MdmPolicyTemplate		||--|{ BluetoothWhiteGroupPolicy		: ont-to-many
-	BluetoothWhiteGroupPolicy		}|--|| BluetoothWhiteGroupInfo		: many-to-one
-    BluetoothWhiteGroupInfo 			||--|{ BluetoothWhiteInfo	: ont-to-many 
+	MdmPolicyTemplate	||--|{ MdmDeviceInfo		    : ont-to-many
+	MdmPolicyTemplate	||--|{ BluetoothWhiteGroupPolicy: ont-to-many
+	BluetoothWhiteGroupPolicy}|--|| BluetoothWhiteGroupInfo: many-to-one
+    BluetoothWhiteGroupInfo ||--|{ BluetoothWhiteInfo	: ont-to-many
+	
+	MdmPolicyTemplate	||--|{ WorkTelWhiteGroupPolicy: ont-to-many
+	WorkTelWhiteGroupPolicy}|--|| WorkTelWhiteGroupInfo: many-to-one
+    WorkTelWhiteGroupInfo ||--|{ WorkTelWhiteInfo	: ont-to-many
+	
+	MdmPolicyTemplate	||--|{ FamTelWhiteGroupPolicy: ont-to-many
 	
 	MdmPolicyTemplate {
 		string controlGroupId
@@ -26,6 +32,29 @@ erDiagram
 	    string groupId
 		string name
 		string mac
+    }
+	
+	WorkTelWhiteGroupPolicy {
+	    string whiteGroupId
+	    string policyId
+        string policyGroupId
+		string id
+    }
+	WorkTelWhiteGroupInfo {
+        string name
+		string description
+    }
+	WorkTelWhiteInfo {
+	    string groupId
+		string linkman
+		string tel
+    }
+	
+	FamTelWhiteGroupPolicy {
+	    boolean useFamTel
+	    string policyId
+        string policyGroupId
+		string id
     }
 ```
 
@@ -94,8 +123,7 @@ erDiagram
 	6. 工作号码
 		1. 扫帚形查询，当选择机构后，不查询扫帚把
 3. 计划
-	1. 修改原有代码，增加白名单类型，修改后，蓝牙白名单正常可用
-	2. 编写新的controller接口，支持工作号码和亲情号码的接口
+	1. 编写新的controller接口，支持工作号码和亲情号码的接口
 	3. 修改plist，支持添加和编辑策略
 	4. 增加亲情号码和工作号码的命令
 	5. 增加获取亲情号码和工作号码的接口
@@ -104,6 +132,5 @@ erDiagram
 	1. 是否需要创建者？
 	2. 工作号码列表搜索条件是否需要联系人和电话号码？
 	3. 不选择机构的时候， 需要查询上级的工作号码组，当选择机构的时候，如何处理？
-5. 问题列表
-	1. 
+
 
