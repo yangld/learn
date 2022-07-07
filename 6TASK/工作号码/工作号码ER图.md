@@ -4,19 +4,22 @@
 ## ER图
 ```mermaid
 erDiagram
-	MdmPolicyTemplate	||--|{ 	MdmDeviceInfo	: one-to-many
-	MdmDeviceInfo		||--|{ 	MdmUser			: many-to-one
-	MdmUser				||--|{ 	FamTelWhiteInfo	: one-to-many
+	MdmPolicyTemplate		||--|{ 	MdmDeviceInfo	: one-to-many
+	MdmDeviceInfo			||--|{ 	MdmUser			: many-to-one
+	MdmUser					||--|{ 	FamTelWhiteInfo	: one-to-many
 	
 	MdmPolicyTemplate	||--|{ 	BluetoothWhiteGroupPolicy:one-to-many
 	BluetoothWhiteGroupPolicy}|--||BluetoothWhiteGroupInfo: many-to-one
     BluetoothWhiteGroupInfo ||--|{ BluetoothWhiteInfo	: one-to-many
+
+	MdmPolicyTemplate		||--|{ WorkTelWhiteGroupPolicy: one-to-many
+	WorkTelWhiteGroupPolicy	}|--|| WorkTelWhiteGroupInfo: many-to-one
+    WorkTelWhiteGroupInfo 	||--|{ WorkTelWhiteInfo	: one-to-many
 	
-	MdmPolicyTemplate	||--|{ WorkTelWhiteGroupPolicy: one-to-many
-	WorkTelWhiteGroupPolicy}|--|| WorkTelWhiteGroupInfo: many-to-one
-    WorkTelWhiteGroupInfo ||--|{ WorkTelWhiteInfo	: one-to-many
+	WorkTelWhiteGroupInfo 	||--|{ WorkTelWhiteTotalInfo: one-to-many
+	WorkTelWhiteInfo 		||--|| WorkTelWhiteTotalInfo: one-to-one
 	
-	MdmPolicyTemplate	||--|{ FamTelWhiteGroupPolicy: one-to-many
+	MdmPolicyTemplate		||--|{ FamTelWhiteGroupPolicy: one-to-many
 	
 	MdmPolicyTemplate {
 		string controlGroupId
