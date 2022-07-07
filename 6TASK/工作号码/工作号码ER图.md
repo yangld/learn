@@ -4,16 +4,19 @@
 ## ER图
 ```mermaid
 erDiagram
-	MdmPolicyTemplate	||--|{ MdmDeviceInfo		    : ont-to-many
-	MdmPolicyTemplate	||--|{ BluetoothWhiteGroupPolicy: ont-to-many
-	BluetoothWhiteGroupPolicy}|--|| BluetoothWhiteGroupInfo: many-to-one
-    BluetoothWhiteGroupInfo ||--|{ BluetoothWhiteInfo	: ont-to-many
+	MdmPolicyTemplate	||--|{ 	MdmDeviceInfo	: one-to-many
+	MdmDeviceInfo		||--|{ 	MdmUser			: many-to-one
+	MdmUser				||--|{ 	FamTelWhiteInfo	: one-to-many
 	
-	MdmPolicyTemplate	||--|{ WorkTelWhiteGroupPolicy: ont-to-many
+	MdmPolicyTemplate	||--|{ 	BluetoothWhiteGroupPolicy:one-to-many
+	BluetoothWhiteGroupPolicy}|--||BluetoothWhiteGroupInfo: many-to-one
+    BluetoothWhiteGroupInfo ||--|{ BluetoothWhiteInfo	: one-to-many
+	
+	MdmPolicyTemplate	||--|{ WorkTelWhiteGroupPolicy: one-to-many
 	WorkTelWhiteGroupPolicy}|--|| WorkTelWhiteGroupInfo: many-to-one
-    WorkTelWhiteGroupInfo ||--|{ WorkTelWhiteInfo	: ont-to-many
+    WorkTelWhiteGroupInfo ||--|{ WorkTelWhiteInfo	: one-to-many
 	
-	MdmPolicyTemplate	||--|{ FamTelWhiteGroupPolicy: ont-to-many
+	MdmPolicyTemplate	||--|{ FamTelWhiteGroupPolicy: one-to-many
 	
 	MdmPolicyTemplate {
 		string controlGroupId
@@ -52,6 +55,13 @@ erDiagram
 		string linkman
 		string tel
     }
+	
+	FamTelWhiteInfo {
+	    string userId
+		string linkman
+		string tel
+    }
+	
 	
 	FamTelWhiteGroupPolicy {
 	    boolean useFamTel
