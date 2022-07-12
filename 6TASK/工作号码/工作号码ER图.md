@@ -21,6 +21,9 @@ erDiagram
 	
 	MdmPolicyTemplate		||--|{ FamTelWhiteGroupPolicy: one-to-many
 	
+	MdmUser 				||--|{ FamTelWhiteTotalInfo: one-to-many
+	FamTelWhiteInfo 		||--|| FamTelWhiteTotalInfo: one-to-one
+	
 	MdmPolicyTemplate {
 		string controlGroupId
 		string policyTemplateId
