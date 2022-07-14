@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "6TASK/工作号码/门禁管理.md",
-            "mode": "source",
+            "file": "6TASK/工作号码/工作号码ER图.md",
+            "mode": "preview",
             "backlinks": false
           }
         }
@@ -83,7 +83,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6TASK/工作号码/门禁管理.md"
+                "file": "6TASK/工作号码/工作号码ER图.md"
               }
             }
           },
@@ -128,8 +128,8 @@
   },
   "active": "5be9aafa292a27dd",
   "lastOpenFiles": [
-    "6TASK/工作号码/门禁管理.md",
     "6TASK/工作号码/工作号码ER图.md",
+    "6TASK/工作号码/门禁管理.md",
     "6TASK/权限管理/权限管理ER图.md",
     "6TASK/权限管理/权限管理类图.md",
     "1附件/电话白名单.md",
