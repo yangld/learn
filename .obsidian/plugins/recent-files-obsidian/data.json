@@ -5,6 +5,10 @@
       "path": "6TASK/工作号码/工作号码ER图.md"
     },
     {
+      "basename": "download数据库合并",
+      "path": "6TASK/工作号码/download数据库合并.md"
+    },
+    {
       "basename": "门禁管理",
       "path": "6TASK/工作号码/门禁管理.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "新老应用发布合并",
       "path": "6TASK/联通版本/新老应用发布合并.md"
-    },
-    {
-      "basename": "问题列表",
-      "path": "6TASK/联通版本/问题列表.md"
     }
   ],
   "omittedPaths": [],
