@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "6TASK/工作号码/工作号码ER图.md",
-            "mode": "preview",
+            "file": "6TASK/工作号码/门禁.md",
+            "mode": "source",
             "backlinks": false
           }
         }
@@ -66,8 +66,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100,
-    "collapsed": true
+    "width": 407
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -83,7 +82,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6TASK/工作号码/工作号码ER图.md"
+                "file": "6TASK/工作号码/门禁.md"
               }
             }
           },
@@ -117,17 +116,26 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "b223959069b88e68",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 183,
+    "width": 616,
     "collapsed": true
   },
   "active": "5be9aafa292a27dd",
   "lastOpenFiles": [
+    "6TASK/工作号码/门禁.md",
     "6TASK/工作号码/工作号码ER图.md",
     "6TASK/工作号码/download数据库合并.md",
     "6TASK/工作号码/门禁管理.md",
@@ -136,7 +144,6 @@
     "1附件/电话白名单.md",
     "1附件/联通环境download文件清理.md",
     "1附件/新需求.md",
-    "1附件/1871636515282_.pic_hd.jpg",
-    "1附件/2381637717271_.pic.jpg"
+    "1附件/1871636515282_.pic_hd.jpg"
   ]
 }
