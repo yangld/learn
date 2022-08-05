@@ -17,6 +17,6 @@
   "emacsyKeys": false,
   "communityPluginSortOrder": "releaseReverse",
   "defaultViewMode": "preview",
-  "legacyEditor": true,
+  "legacyEditor": false,
   "livePreview": true
 }

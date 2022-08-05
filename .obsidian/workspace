@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "5be9aafa292a27dd",
+        "id": "5204f8cb757206ed",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "6TASK/工作号码/门禁.md",
-            "mode": "preview",
-            "backlinks": false
+            "file": "6TASK/工作号码/报表导出整理.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -60,14 +60,21 @@
               "type": "file-explorer",
               "state": {}
             }
+          },
+          {
+            "id": "e3976e2e869547b8",
+            "type": "leaf",
+            "state": {
+              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+              "state": {}
+            }
           }
         ],
         "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 407,
-    "collapsed": true
+    "width": 407
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -83,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6TASK/工作号码/门禁.md"
+                "file": "6TASK/工作号码/报表导出整理.md"
               }
             }
           },
@@ -93,7 +100,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#task",
+                "query": "tag:#pekall",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,26 +132,78 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "2c50744aa799a995",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "6TASK/工作号码/报表导出整理.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "59ca65e2ccac86bb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "6TASK/工作号码/报表导出整理.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8c66ede26e0a7bb1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "f50626b1193362dc",
+            "type": "leaf",
+            "state": {
+              "type": "hackernews-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "af1d358110795e75",
+            "type": "leaf",
+            "state": {
+              "type": "RSS_FEED",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 616,
-    "collapsed": true
+    "width": 616
   },
-  "active": "5be9aafa292a27dd",
+  "active": "47b82e46d090a9f8",
   "lastOpenFiles": [
-    "6TASK/工作号码/门禁.md",
-    "6TASK/工作号码/工作号码ER图.md",
+    "6TASK/工作号码/集中管控.md",
+    "6TASK/工作号码/报表导出整理.md",
+    "6TASK/工作号码/插入表格.md",
     "6TASK/工作号码/download数据库合并.md",
-    "6TASK/工作号码/门禁管理.md",
-    "6TASK/权限管理/权限管理ER图.md",
-    "6TASK/权限管理/权限管理类图.md",
-    "1附件/电话白名单.md",
-    "1附件/联通环境download文件清理.md",
-    "1附件/新需求.md",
-    "1附件/1871636515282_.pic_hd.jpg"
+    "6TASK/工作号码/APN设计.md",
+    "6TASK/工作号码/ABM.md",
+    "6TASK/工作号码/门禁.md",
+    "6TASK/公司相关信息/思考.md",
+    "6TASK/公司相关信息/原型位置.md",
+    "6TASK/公司相关信息/网络信息.md"
   ]
 }
