@@ -2,15 +2,23 @@
   "recentFiles": [
     {
       "basename": "门禁",
-      "path": "6TASK/工作号码/门禁.md"
+      "path": "6TASK/概要设计/门禁.md"
+    },
+    {
+      "basename": "报表导出整理",
+      "path": "6TASK/概要设计/报表导出整理.md"
+    },
+    {
+      "basename": "Drawing 2022-08-05 09.23.31.excalidraw",
+      "path": "Excalidraw/Drawing 2022-08-05 09.23.31.excalidraw.md"
     },
     {
       "basename": "工作号码ER图",
-      "path": "6TASK/工作号码/工作号码ER图.md"
+      "path": "6TASK/概要设计/工作号码ER图.md"
     },
     {
       "basename": "download数据库合并",
-      "path": "6TASK/工作号码/download数据库合并.md"
+      "path": "6TASK/概要设计/download数据库合并.md"
     },
     {
       "basename": "门禁管理",
@@ -182,7 +190,7 @@
     },
     {
       "basename": "铁路网关问题列表",
-      "path": "铁路网关问题列表.md"
+      "path": "6TASK/CB同步管理/铁路网关问题列表.md"
     },
     {
       "basename": "new",
@@ -191,14 +199,6 @@
     {
       "basename": "Mysql-SSL总结",
       "path": "6TASK/联通版本/Mysql-SSL总结.md"
-    },
-    {
-      "basename": "Mag类图",
-      "path": "6TASK/联通版本/Mag类图.md"
-    },
-    {
-      "basename": "Envoy学习",
-      "path": "6TASK/联通版本/Envoy学习.md"
     }
   ],
   "omittedPaths": [],
