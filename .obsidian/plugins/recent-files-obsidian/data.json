@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "通配符替换",
+      "path": "6TASK/概要设计/通配符替换.md"
+    },
+    {
       "basename": "报表导出整理",
       "path": "6TASK/概要设计/报表导出整理.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "new",
       "path": "6TASK/联通版本/new.md"
-    },
-    {
-      "basename": "Mysql-SSL总结",
-      "path": "6TASK/联通版本/Mysql-SSL总结.md"
     }
   ],
   "omittedPaths": [],
