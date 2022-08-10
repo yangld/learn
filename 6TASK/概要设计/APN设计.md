@@ -67,3 +67,9 @@ erDiagram
 		1. hibernate.cfg.xml
 		2. applicationContext.xml
 		3. pom.xml
+
+1. 153环境
+	1. 重启uas，mdm服务
+	2. 修改/apps/pekall/config/目录下的audit.properties.example为audit.properties
+	3. 修改字段mdm_application_info中的id，mdm_application_relation中的app_id, mdm_application_staus中的app_id, 函数remove_application中的_app_id 为200
+	4. https://192.168.11.153:4432  pekall/pekall1234
