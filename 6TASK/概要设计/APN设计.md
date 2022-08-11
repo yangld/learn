@@ -73,3 +73,10 @@ erDiagram
 	2. 修改/apps/pekall/config/目录下的audit.properties.example为audit.properties
 	3. 修改字段mdm_application_info中的id，mdm_application_relation中的app_id, mdm_application_staus中的app_id, 函数remove_application中的_app_id 为200
 	4. https://192.168.11.153:4432  pekall/pekall1234
+2. APN新增功能，9个接口
+	1. 新增用户APN配置，每个用户可以配置独立的APN，账户，密码
+		1. 支持增删改，批量导入，导出未设置的用户，查询列表，查询详情
+	2. 在推送命令时，可以在机构和设备列表中，选择推送APN配置，还是用户APN配置，
+		1. 选择用户APN配置，不用选择，只是个开关
+		2. 在获取命令时，如果使用了用户APN配置，则获取用户的配置后，填充到命令中返回
+	3. APN配置中展示MCC，MNC， web端修改
