@@ -123,6 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "6TASK/概要设计/集中管控.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,6 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "6TASK/概要设计/集中管控.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
