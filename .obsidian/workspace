@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "6TASK/概要设计/集中管控.md",
-            "mode": "source",
+            "mode": "preview",
             "source": false
           }
         }
@@ -157,14 +157,14 @@
   "active": "59d4e0ad4c1718e4",
   "lastOpenFiles": [
     "6TASK/概要设计/APN设计.md",
+    "6TASK/概要设计/集中管控.md",
+    "6TASK/概要设计/download数据库合并.md",
     "6TASK/概要设计/门禁.md",
     "6TASK/概要设计/联通骨干云升级.md",
     "6TASK/概要设计/门禁问题列表.md",
     "6TASK/概要设计/通配符替换.md",
     "6TASK/概要设计/报表导出整理.md",
     "Excalidraw/Drawing 2022-08-05 09.23.31.excalidraw.md",
-    "6TASK/概要设计/集中管控.md",
-    "6TASK/工作号码/插入表格.md",
-    "6TASK/概要设计/download数据库合并.md"
+    "6TASK/工作号码/插入表格.md"
   ]
 }
