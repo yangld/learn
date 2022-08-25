@@ -92,7 +92,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#task",
+                "query": "集中管控",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -147,14 +147,14 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 616,
     "collapsed": true
   },
-  "active": "59d4e0ad4c1718e4",
+  "active": "479f1ac54f6e31fe",
   "lastOpenFiles": [
     "6TASK/概要设计/APN设计.md",
     "6TASK/概要设计/集中管控.md",
