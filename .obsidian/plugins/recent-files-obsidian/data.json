@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "nginx斜杠",
+      "path": "2TODO/nginx斜杠.md"
+    },
+    {
       "basename": "集中管控审计设计",
       "path": "1附件/集中管控审计设计.md"
     },
@@ -155,10 +159,6 @@
     {
       "basename": "Task测试数据",
       "path": "2TODO/Task测试数据.md"
-    },
-    {
-      "basename": "nginx斜杠",
-      "path": "2TODO/nginx斜杠.md"
     },
     {
       "basename": "未命名",

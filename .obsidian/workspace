@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1附件/集中管控审计设计.md",
-            "mode": "source",
+            "file": "2TODO/nginx斜杠.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -82,7 +82,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1附件/集中管控审计设计.md"
+                "file": "2TODO/nginx斜杠.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1附件/集中管控审计设计.md",
+                "file": "2TODO/nginx斜杠.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1附件/集中管控审计设计.md",
+                "file": "2TODO/nginx斜杠.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,6 +156,7 @@
   },
   "active": "59d4e0ad4c1718e4",
   "lastOpenFiles": [
+    "1附件/集中管控审计设计.md",
     "1附件/未命名 1.md",
     "1附件/Mysql 字符串截取.md",
     "6TASK/概要设计/未命名.md",
@@ -164,7 +165,6 @@
     "6TASK/概要设计/download数据库合并.md",
     "6TASK/概要设计/门禁.md",
     "6TASK/概要设计/联通骨干云升级.md",
-    "6TASK/概要设计/门禁问题列表.md",
-    "6TASK/概要设计/通配符替换.md"
+    "6TASK/概要设计/门禁问题列表.md"
   ]
 }
