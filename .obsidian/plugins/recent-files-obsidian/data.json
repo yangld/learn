@@ -1,36 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "nginx斜杠",
-      "path": "2TODO/nginx斜杠.md"
-    },
-    {
-      "basename": "集中管控审计设计",
-      "path": "1附件/集中管控审计设计.md"
-    },
-    {
-      "basename": "未命名 1",
-      "path": "1附件/未命名 1.md"
-    },
-    {
-      "basename": "Mysql 字符串截取",
-      "path": "1附件/Mysql 字符串截取.md"
-    },
-    {
       "basename": "未命名",
-      "path": "6TASK/概要设计/未命名.md"
+      "path": "2TODO/未命名.md"
     },
     {
-      "basename": "集中管控",
-      "path": "6TASK/概要设计/集中管控.md"
+      "basename": "new",
+      "path": "6TASK/联通版本/new.md"
+    },
+    {
+      "basename": "问题列表",
+      "path": "6TASK/联通版本/问题列表.md"
+    },
+    {
+      "basename": "新老应用发布合并",
+      "path": "6TASK/联通版本/新老应用发布合并.md"
+    },
+    {
+      "basename": "铁路公安服务网关开发计划",
+      "path": "6TASK/联通版本/铁路公安服务网关开发计划.md"
+    },
+    {
+      "basename": "download数据库合并",
+      "path": "6TASK/概要设计/download数据库合并.md"
     },
     {
       "basename": "APN设计",
       "path": "6TASK/概要设计/APN设计.md"
     },
     {
-      "basename": "download数据库合并",
-      "path": "6TASK/概要设计/download数据库合并.md"
+      "basename": "ABM",
+      "path": "6TASK/概要设计/ABM.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "6TASK/概要设计/未命名.md"
+    },
+    {
+      "basename": "通配符替换",
+      "path": "6TASK/概要设计/通配符替换.md"
+    },
+    {
+      "basename": "门禁问题列表",
+      "path": "6TASK/概要设计/门禁问题列表.md"
     },
     {
       "basename": "门禁",
@@ -41,12 +53,32 @@
       "path": "6TASK/概要设计/联通骨干云升级.md"
     },
     {
-      "basename": "门禁问题列表",
-      "path": "6TASK/概要设计/门禁问题列表.md"
+      "basename": "集中管控",
+      "path": "6TASK/概要设计/集中管控.md"
     },
     {
-      "basename": "通配符替换",
-      "path": "6TASK/概要设计/通配符替换.md"
+      "basename": "服务网关",
+      "path": "6TASK/服务网关/服务网关.md"
+    },
+    {
+      "basename": "新需求",
+      "path": "1附件/新需求.md"
+    },
+    {
+      "basename": "未命名 1",
+      "path": "1附件/未命名 1.md"
+    },
+    {
+      "basename": "集中管控审计设计",
+      "path": "1附件/集中管控审计设计.md"
+    },
+    {
+      "basename": "nginx斜杠",
+      "path": "2TODO/nginx斜杠.md"
+    },
+    {
+      "basename": "Mysql 字符串截取",
+      "path": "1附件/Mysql 字符串截取.md"
     },
     {
       "basename": "报表导出整理",
@@ -79,10 +111,6 @@
     {
       "basename": "联通环境download文件清理",
       "path": "1附件/联通环境download文件清理.md"
-    },
-    {
-      "basename": "新需求",
-      "path": "1附件/新需求.md"
     },
     {
       "basename": "1871636515282_.pic_hd",
@@ -161,10 +189,6 @@
       "path": "2TODO/Task测试数据.md"
     },
     {
-      "basename": "未命名",
-      "path": "2TODO/未命名.md"
-    },
-    {
       "basename": "权限管理",
       "path": "2TODO/权限管理.md"
     },
@@ -175,30 +199,6 @@
     {
       "basename": "联通二期验收报告",
       "path": "1附件/联通二期验收报告.md"
-    },
-    {
-      "basename": "2022-05-23",
-      "path": "1附件/2022-05-23.md"
-    },
-    {
-      "basename": "mysqlbinlog",
-      "path": "1附件/mysqlbinlog.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "1附件/未命名.md"
-    },
-    {
-      "basename": "铁路公安机构人员同步接口文档 V1.2",
-      "path": "1附件/铁路公安机构人员同步接口文档 V1.2.md"
-    },
-    {
-      "basename": "入园须知",
-      "path": "1附件/入园须知.md"
-    },
-    {
-      "basename": "CB对接设计",
-      "path": "1附件/CB对接设计.pdf"
     }
   ],
   "omittedPaths": [],
