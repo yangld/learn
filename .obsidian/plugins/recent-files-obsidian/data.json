@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Day Planner-20220922",
+      "path": "Day Planners/Day Planner-20220922.md"
+    },
+    {
+      "basename": "3工作日志",
+      "path": "3工作日志/3工作日志.md"
+    },
+    {
+      "basename": "工作内容",
+      "path": "3工作日志/工作内容/工作内容.md"
+    },
+    {
       "basename": "未命名",
       "path": "2TODO/未命名.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Task测试数据",
       "path": "2TODO/Task测试数据.md"
-    },
-    {
-      "basename": "权限管理",
-      "path": "2TODO/权限管理.md"
-    },
-    {
-      "basename": "elasticdump安装导入导出",
-      "path": "1附件/elasticdump安装导入导出.md"
-    },
-    {
-      "basename": "联通二期验收报告",
-      "path": "1附件/联通二期验收报告.md"
     }
   ],
   "omittedPaths": [],
