@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Day Planner-20220921",
+      "path": "Day Planners/Day Planner-20220921.md"
+    },
+    {
+      "basename": "Day Planner-20220920",
+      "path": "Day Planners/Day Planner-20220920.md"
+    },
+    {
       "basename": "Day Planner-20220922",
       "path": "Day Planners/Day Planner-20220922.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "新需求",
       "path": "2TODO/新需求.md"
-    },
-    {
-      "basename": "城市无障碍",
-      "path": "2TODO/城市无障碍.md"
-    },
-    {
-      "basename": "未命名 1",
-      "path": "2TODO/未命名 1.md"
     }
   ],
   "omittedPaths": [],
