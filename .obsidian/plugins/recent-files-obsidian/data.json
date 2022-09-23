@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Day Planner-20220921",
-      "path": "Day Planners/Day Planner-20220921.md"
+      "basename": "Day Planner-20220923",
+      "path": "Day Planners/Day Planner-20220923.md"
+    },
+    {
+      "basename": "邮件资料",
+      "path": "10资料/邮件资料.md"
+    },
+    {
+      "basename": "任务列表",
+      "path": "11任务/任务列表.md"
+    },
+    {
+      "basename": "Day Planner-20220919",
+      "path": "Day Planners/Day Planner-20220919.md"
     },
     {
       "basename": "Day Planner-20220920",
@@ -11,6 +23,10 @@
     {
       "basename": "Day Planner-20220922",
       "path": "Day Planners/Day Planner-20220922.md"
+    },
+    {
+      "basename": "Day Planner-20220921",
+      "path": "Day Planners/Day Planner-20220921.md"
     },
     {
       "basename": "131性能图",
@@ -183,22 +199,6 @@
     {
       "basename": "Pasted image 20211126171743",
       "path": "1附件/Pasted image 20211126171743.png"
-    },
-    {
-      "basename": "Pasted image 20220107152523",
-      "path": "1附件/Pasted image 20220107152523.png"
-    },
-    {
-      "basename": "WechatIMG169",
-      "path": "1附件/WechatIMG169.png"
-    },
-    {
-      "basename": "监狱需求",
-      "path": "2TODO/监狱需求.md"
-    },
-    {
-      "basename": "新需求",
-      "path": "2TODO/新需求.md"
     }
   ],
   "omittedPaths": [],
