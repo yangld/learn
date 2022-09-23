@@ -24,6 +24,7 @@ gantt
 ## 下午安排
 - [ ] 13:30 联调省集中管控，maxwell，convert，国家集中管控
 - [x] 14:00 接入网络联调convert和国家和cmc的数据库
+- [x] 15:00 check_cmc_id
 - [x] 15:30 OTG开发
 - [x] 19:00 END
 
