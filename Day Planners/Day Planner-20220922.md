@@ -16,11 +16,11 @@ gantt
 
 ## 上午安排
 - [x] 09:30 国家集中管控性能问题[[131性能图]]
-- [ ] 10:00 convert部署，maxwell部署
+- [x] 10:00 convert部署，maxwell部署
 - [x] 11:00 bug修改
 - [x] 12:00 BREAK
 
 ## 下午安排
-- [ ] 13:30 联调省集中管控，maxwell，convert，国家集中管控
+- [x] 13:30 联调省集中管控，maxwell，convert，国家集中管控
 - [x] 15:30 比对convert服务的表和字段
 - [x] 19:00 END
