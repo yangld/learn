@@ -155,14 +155,13 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 616,
-    "collapsed": true
+    "width": 616
   },
-  "active": "59d4e0ad4c1718e4",
+  "active": "bb9fe73ef35857a1",
   "lastOpenFiles": [
     "Day Planners/Day Planner-20220926.md",
     "Day Planners/Day Planner-20220923.md",
