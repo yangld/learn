@@ -9,10 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Day Planners/Day Planner-20220927.md",
+            "file": "Day Planners/Day Planner-20220928.md",
             "mode": "source",
             "source": false
           }
+        }
+      },
+      {
+        "id": "bafe266b9fa1daf5",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -81,9 +89,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Day Planners/Day Planner-20220927.md"
-              }
+              "state": {}
             }
           },
           {
@@ -123,7 +129,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/Day Planner-20220927.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +145,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/Day Planner-20220927.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,12 +165,12 @@
     "direction": "horizontal",
     "width": 616
   },
-  "active": "59d4e0ad4c1718e4",
+  "active": "bafe266b9fa1daf5",
   "lastOpenFiles": [
     "Day Planners/Day Planner-20220928.md",
+    "Day Planners/Day Planner-20220927.md",
     "10资料/邮件资料.md",
     "Day Planners/Day Planner-20220926.md",
-    "Day Planners/Day Planner-20220927.md",
     "Day Planners/Day Planner-20220923.md",
     "Day Planners/Day Planner-20220922.md",
     "Day Planners/Day Planner-20220921.md",
