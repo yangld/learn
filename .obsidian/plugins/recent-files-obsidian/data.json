@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "131性能图",
+      "path": "11任务/131性能图.md"
+    },
+    {
+      "basename": "Day Planner-20220930",
+      "path": "Day Planners/Day Planner-20220930.md"
+    },
+    {
       "basename": "Day Planner-20220929",
       "path": "Day Planners/Day Planner-20220929.md"
     },
@@ -43,10 +51,6 @@
     {
       "basename": "任务列表",
       "path": "11任务/任务列表.md"
-    },
-    {
-      "basename": "131性能图",
-      "path": "Day Planners/131性能图.md"
     },
     {
       "basename": "3工作日志",
@@ -195,10 +199,6 @@
     {
       "basename": "Chart Fri Nov 26 2021",
       "path": "1附件/Chart Fri Nov 26 2021.jpeg"
-    },
-    {
-      "basename": "Chart Fri Nov 26 2021",
-      "path": "1附件/Chart Fri Nov 26 2021.png"
     }
   ],
   "omittedPaths": [],
