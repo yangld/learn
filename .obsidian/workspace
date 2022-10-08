@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Day Planners/Day Planner-20221008.md",
-            "mode": "preview",
+            "mode": "source",
             "source": false
           }
         }
@@ -159,7 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 616
+    "width": 471
   },
   "active": "902ef6e69a10e622",
   "lastOpenFiles": [
