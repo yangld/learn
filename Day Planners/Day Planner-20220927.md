@@ -1,4 +1,4 @@
-r## Day Planner
+## Day Planner
 ```mermaid
 gantt
     dateFormat  HH-mm
