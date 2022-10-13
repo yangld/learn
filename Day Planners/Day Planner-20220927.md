@@ -42,6 +42,8 @@ gantt
 设备 134万           设备5.5秒
 机构 36万            机构2秒
 安全事件 400万  事件超过50秒
+security_event_info, user_info, terminal_info , terminal_status_info
+--ignore-table 
 
 机构优化的逻辑： 
 	1. 查询各省用户数（有缓存）
