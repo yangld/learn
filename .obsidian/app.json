@@ -1,5 +1,5 @@
 {
-  "promptDelete": false,
+  "promptDelete": true,
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "attachmentFolderPath": "1附件",
@@ -18,5 +18,7 @@
   "communityPluginSortOrder": "releaseReverse",
   "defaultViewMode": "preview",
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": false,
+  "strictLineBreaks": true,
+  "showFrontmatter": true
 }
