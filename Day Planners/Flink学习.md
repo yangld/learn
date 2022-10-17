@@ -1,16 +1,47 @@
-flink  流式计算框架   类似的有spark等
-数据集类型
-	无穷数据集
-	有界数据集
+spark
 
-数据运算模型
-	流式
-	批处理
+无穷数据集
+有界数据集
 
-flink都支持上面的数据集和数据运算模型
+流式
+批处理
 
 基石
 checkpoint
 state
 time
 window
+
+sql/table api
+stream api
+function
+
+Source  --> Transformation --> Sink
+
+Source
+	基于本地集合的source
+	基于文件的source
+	基于网络套接字的source
+	自定义的source
+		Apache kafka
+		Amazon Kinesis Streams
+		RabbitMQ
+		Twitter Streaming API
+		Apache NiFi
+		自己定义
+Transformation
+	Map / FlatMap / Filter / KeyBy / Reduce / Fold / Aggregations / Window / WindowAll / Union / Window join / Split / Select / Project
+Sink
+	写入文件
+	打印出来
+	写入Socket
+	自定义的Sink
+		Apacke kafka
+		Rabbit MQ
+		MySQL
+		ElasticSearch
+		Apache Cassandra
+		Hadoop FileSystem
+		自己定义
+
+保证状态化计算强一致性
