@@ -1,0 +1,35 @@
+{
+  "showGettingStartedBanner": true,
+  "hasMigratedDailyNoteSettings": true,
+  "hasMigratedWeeklyNoteSettings": false,
+  "daily": {
+    "format": "[Day Planner-]YYYYMMDD",
+    "folder": "Day Planners",
+    "template": "知识管理/Template/日记模板-DayPlanner",
+    "enabled": true
+  },
+  "weekly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": true
+  },
+  "quarterly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": true
+  },
+  "yearly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": true
+  }
+}

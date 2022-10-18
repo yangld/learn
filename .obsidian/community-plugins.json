@@ -43,5 +43,8 @@
   "obsidian-mind-map",
   "obsidian-better-command-palette",
   "obsidian-tasks-plugin",
-  "obsidian-annotator"
+  "obsidian-annotator",
+  "code-block-copy",
+  "periodic-notes",
+  "slated-obsidian"
 ]

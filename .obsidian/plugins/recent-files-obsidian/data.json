@@ -1,6 +1,54 @@
 {
   "recentFiles": [
     {
+      "basename": "Day Planner-20221017",
+      "path": "Day Planners/Day Planner-20221017.md"
+    },
+    {
+      "basename": "Day Planner-20221018",
+      "path": "Day Planners/Day Planner-20221018.md"
+    },
+    {
+      "basename": "annotator-test",
+      "path": "annotator-test.md"
+    },
+    {
+      "basename": "CB对接设计",
+      "path": "1附件/CB对接设计.pdf"
+    },
+    {
+      "basename": "架构师必备，带你弄清混乱的JAVA日志体系！(1)",
+      "path": "1附件/架构师必备，带你弄清混乱的JAVA日志体系！(1).pdf"
+    },
+    {
+      "basename": "2022-10-17",
+      "path": "2022-10-17.md"
+    },
+    {
+      "basename": "2022-10-18",
+      "path": "2022-10-18.md"
+    },
+    {
+      "basename": "2022",
+      "path": "2022.md"
+    },
+    {
+      "basename": "2022-Q4",
+      "path": "2022-Q4.md"
+    },
+    {
+      "basename": "2022-10",
+      "path": "2022-10.md"
+    },
+    {
+      "basename": "2022-W42",
+      "path": "2022-W42.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "Day Planners/未命名.md"
+    },
+    {
       "basename": "Flink学习",
       "path": "Day Planners/Flink学习.md"
     },
@@ -19,10 +67,6 @@
     {
       "basename": "202210170950",
       "path": "202210170950.md"
-    },
-    {
-      "basename": "Day Planner-20221017",
-      "path": "Day Planners/Day Planner-20221017.md"
     },
     {
       "basename": "download支持文件内容,验证文件格式",
@@ -155,50 +199,6 @@
     {
       "basename": "APN设计",
       "path": "6TASK/概要设计/APN设计.md"
-    },
-    {
-      "basename": "ABM",
-      "path": "6TASK/概要设计/ABM.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "6TASK/概要设计/未命名.md"
-    },
-    {
-      "basename": "通配符替换",
-      "path": "6TASK/概要设计/通配符替换.md"
-    },
-    {
-      "basename": "门禁问题列表",
-      "path": "6TASK/概要设计/门禁问题列表.md"
-    },
-    {
-      "basename": "门禁",
-      "path": "6TASK/概要设计/门禁.md"
-    },
-    {
-      "basename": "联通骨干云升级",
-      "path": "6TASK/概要设计/联通骨干云升级.md"
-    },
-    {
-      "basename": "集中管控",
-      "path": "6TASK/概要设计/集中管控.md"
-    },
-    {
-      "basename": "服务网关",
-      "path": "6TASK/服务网关/服务网关.md"
-    },
-    {
-      "basename": "新需求",
-      "path": "1附件/新需求.md"
-    },
-    {
-      "basename": "未命名 1",
-      "path": "1附件/未命名 1.md"
-    },
-    {
-      "basename": "集中管控审计设计",
-      "path": "1附件/集中管控审计设计.md"
     }
   ],
   "omittedPaths": [],
