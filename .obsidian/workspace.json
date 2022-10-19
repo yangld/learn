@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day Planners/Day Planner-20221017.md",
+                "file": "Day Planners/Day Planner-20221019.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
             }
+          },
+          {
+            "id": "c60d8587162aa6bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Day Planners/Day Planner-20221019.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -91,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day Planners/Day Planner-20221017.md"
+                "file": "Day Planners/Day Planner-20221019.md"
               }
             }
           },
@@ -124,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/Day Planner-20221017.md",
+                "file": "Day Planners/Day Planner-20221019.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/Day Planner-20221017.md",
+                "file": "Day Planners/Day Planner-20221019.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,23 +182,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292,
-    "collapsed": true
+    "width": 292
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "8c66ede26e0a7bb1",
+  "active": "c60d8587162aa6bb",
   "lastOpenFiles": [
+    "Day Planners/Day Planner-20221021.md",
+    "Day Planners/Day Planner-20221020.md",
+    "Day Planners/Day Planner-20221019.md",
+    "2022-10-17.md",
+    "AdmotionTest.md",
+    "Day Planners/Day Planner-20221017.md",
     "Day Planners/Day Planner-20221018.md",
     "annotator-test.md",
-    "Day Planners/Day Planner-20221017.md",
     "1附件/CB对接设计.pdf",
-    "1附件/架构师必备，带你弄清混乱的JAVA日志体系！(1).pdf",
-    "2022-10-17.md",
-    "2022-10-18.md",
-    "2022.md",
-    "8知识管理/InBox/evernote/参考/_resources/百度一下，你就知道.resources/7082.png",
-    "2022-Q4.md"
+    "1附件/架构师必备，带你弄清混乱的JAVA日志体系！(1).pdf"
   ]
 }

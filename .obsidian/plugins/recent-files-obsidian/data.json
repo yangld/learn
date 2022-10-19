@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Day Planner-20221019",
+      "path": "Day Planners/Day Planner-20221019.md"
+    },
+    {
+      "basename": "Day Planner-20221021",
+      "path": "Day Planners/Day Planner-20221021.md"
+    },
+    {
+      "basename": "Day Planner-20221020",
+      "path": "Day Planners/Day Planner-20221020.md"
+    },
+    {
+      "basename": "2022-10-17",
+      "path": "2022-10-17.md"
+    },
+    {
+      "basename": "AdmotionTest",
+      "path": "AdmotionTest.md"
+    },
+    {
       "basename": "Day Planner-20221017",
       "path": "Day Planners/Day Planner-20221017.md"
     },
@@ -19,10 +39,6 @@
     {
       "basename": "架构师必备，带你弄清混乱的JAVA日志体系！(1)",
       "path": "1附件/架构师必备，带你弄清混乱的JAVA日志体系！(1).pdf"
-    },
-    {
-      "basename": "2022-10-17",
-      "path": "2022-10-17.md"
     },
     {
       "basename": "2022-10-18",
@@ -183,22 +199,6 @@
     {
       "basename": "问题列表",
       "path": "6TASK/联通版本/问题列表.md"
-    },
-    {
-      "basename": "新老应用发布合并",
-      "path": "6TASK/联通版本/新老应用发布合并.md"
-    },
-    {
-      "basename": "铁路公安服务网关开发计划",
-      "path": "6TASK/联通版本/铁路公安服务网关开发计划.md"
-    },
-    {
-      "basename": "download数据库合并",
-      "path": "6TASK/概要设计/download数据库合并.md"
-    },
-    {
-      "basename": "APN设计",
-      "path": "6TASK/概要设计/APN设计.md"
     }
   ],
   "omittedPaths": [],
