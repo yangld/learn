@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "去重逻辑",
+      "path": "Day Planners/去重逻辑.md"
+    },
+    {
       "basename": "Day Planner-20221024",
       "path": "Day Planners/Day Planner-20221024.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "虚拟机安装",
       "path": "Day Planners/虚拟机安装.md"
-    },
-    {
-      "basename": "邮件资料",
-      "path": "10资料/邮件资料.md"
     }
   ],
   "omittedPaths": [],
