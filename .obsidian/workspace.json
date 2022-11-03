@@ -58,9 +58,19 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "ca75bcde433e63ff",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.0.3"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -210,10 +220,7 @@
     "direction": "horizontal",
     "width": 292
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "fe41fca013cfc2c6",
+  "active": "ca75bcde433e63ff",
   "lastOpenFiles": [
     "Day Planners/去重逻辑.md",
     "Day Planners/Day Planner-20221024.md",
