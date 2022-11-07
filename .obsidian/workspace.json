@@ -63,9 +63,12 @@
             "id": "ca75bcde433e63ff",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.0.3"
+                "file": "Day Planners/Day Planner-20221028.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
               }
             }
           }
@@ -141,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day Planners/convert逻辑.md"
+                "file": "Day Planners/Day Planner-20221028.md"
               }
             }
           },
@@ -174,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/convert逻辑.md",
+                "file": "Day Planners/Day Planner-20221028.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +194,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/convert逻辑.md",
+                "file": "Day Planners/Day Planner-20221028.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,17 +223,17 @@
     "direction": "horizontal",
     "width": 292
   },
-  "active": "ca75bcde433e63ff",
+  "active": "e6e0436766609b88",
   "lastOpenFiles": [
-    "Day Planners/去重逻辑.md",
-    "Day Planners/Day Planner-20221024.md",
+    "Day Planners/Day Planner-20221027.md",
     "Day Planners/Day Planner-20221026.md",
     "Day Planners/Day Planner-20221025.md",
-    "Day Planners/Day Planner-20221020.md",
+    "Day Planners/Day Planner-20221024.md",
+    "Day Planners/Day Planner-20221021.md",
     "Day Planners/Day Planner-20221019.md",
     "Day Planners/Day Planner-20221018.md",
     "Day Planners/Day Planner-20221017.md",
-    "Day Planners/Day Planner-20221031.md",
-    "Day Planners/Day Planner-20221028.md"
+    "Day Planners/Day Planner-20221014.md",
+    "Day Planners/Day Planner-20221013.md"
   ]
 }
