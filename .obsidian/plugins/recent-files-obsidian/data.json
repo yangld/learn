@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Day Planner-20221020",
+      "path": "Day Planners/Day Planner-20221020.md"
+    },
+    {
+      "basename": "Day Planner-20221019",
+      "path": "Day Planners/Day Planner-20221019.md"
+    },
+    {
+      "basename": "去重逻辑",
+      "path": "Day Planners/去重逻辑.md"
+    },
+    {
       "basename": "国家集中管控升级",
       "path": "Day Planners/国家集中管控升级.md"
+    },
+    {
+      "basename": "Day Planner-20221108",
+      "path": "Day Planners/Day Planner-20221108.md"
+    },
+    {
+      "basename": "vmware相关",
+      "path": "Day Planners/vmware相关.md"
     },
     {
       "basename": "convert逻辑",
@@ -35,10 +55,6 @@
     {
       "basename": "Day Planner-20221021",
       "path": "Day Planners/Day Planner-20221021.md"
-    },
-    {
-      "basename": "Day Planner-20221019",
-      "path": "Day Planners/Day Planner-20221019.md"
     },
     {
       "basename": "Day Planner-20221018",
@@ -79,14 +95,6 @@
     {
       "basename": "Day Planner-20221031",
       "path": "Day Planners/Day Planner-20221031.md"
-    },
-    {
-      "basename": "去重逻辑",
-      "path": "Day Planners/去重逻辑.md"
-    },
-    {
-      "basename": "Day Planner-20221020",
-      "path": "Day Planners/Day Planner-20221020.md"
     },
     {
       "basename": "联通云平台需求内容",
@@ -191,14 +199,6 @@
     {
       "basename": "Day Planner-20220922",
       "path": "Day Planners/Day Planner-20220922.md"
-    },
-    {
-      "basename": "Day Planner-20220921",
-      "path": "Day Planners/Day Planner-20220921.md"
-    },
-    {
-      "basename": "Day Planner-20220920",
-      "path": "Day Planners/Day Planner-20220920.md"
     }
   ],
   "omittedPaths": [],
