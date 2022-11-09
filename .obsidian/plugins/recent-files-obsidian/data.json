@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "mysql5.7多源复制",
+      "path": "1附件/mysql5.7多源复制.md"
+    },
+    {
       "basename": "活跃统计增加和修改的页面",
       "path": "1附件/活跃统计增加和修改的页面.pdf"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Day Planner-20220927",
       "path": "Day Planners/Day Planner-20220927.md"
-    },
-    {
-      "basename": "Day Planner-20220926",
-      "path": "Day Planners/Day Planner-20220926.md"
     }
   ],
   "omittedPaths": [],
