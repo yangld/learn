@@ -1,3 +1,19 @@
+	卸载
+		https://blog.csdn.net/u012329294/article/details/80561532
+		yum remove  mysql mysql-server mysql-libs mysql-server
+		find / -name mysql 
+		rpm -qa|grep mysql
+		rm /etc/my.cnf
+	
+	下载
+	安装
+	启动
+	配置
+	主服务配置
+	从服务配置
+	统计需要修改的数据库及配置文件
+
+
 	下载
 		wget https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.40-linux-glibc2.12-x86_64.tar.gz
 	安装
@@ -27,3 +43,6 @@
 
 	主服务
 		my.cnf
+		server-id=991
+		binlog_do_db=uni_auth
+		
