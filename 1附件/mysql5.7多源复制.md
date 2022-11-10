@@ -7,9 +7,41 @@
 		rm -f /etc/my.cnf
 		rpm -qa|grep mysql
 	下载
+		wget https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.40-1.el7.x86_64.rpm-bundle.tar
 	安装
+		rpm  -ivh mysql-community-common-5.7.40-1.el7.x86_64.rpm
+		rpm -ivh mysql-community-libs-5.7.40-1.el7.x86_64.rpm
+		rpm -ivh mysql-community-client-5.7.40-1.el7.x86_64.rpm
+		rpm -ivh mysql-community-server-5.7.40-1.el7.x86_64.rpm
+		systemctl start mysqld.service
+		systemctl status mysqld.service
+		grep 'temporary password' /var/log/mysqld.log 
+		mysql_secure_installation 
+		mysql -uroot -p'Pekall12#$' -e "GRANT ALL PRIVILEGES ON *.* TO 'pekall'@'127.0.0.1' IDENTIFIED BY 'Apple12#$' WITH GRANT OPTION;"
+	    mysql -uroot -p'Pekall12#$' -e "GRANT ALL PRIVILEGES ON *.* TO 'pekall'@'localhost' IDENTIFIED BY 'Apple12#$' WITH GRANT OPTION;"
+	    mysql -uroot -p'Pekall12#$' -e "GRANT ALL PRIVILEGES ON *.* TO 'pekall'@'%' IDENTIFIED BY 'Apple12#$' WITH GRANT OPTION;"
+	    mysql -uroot -p'Pekall12#$' -e "GRANT ALL PRIVILEGES ON *.* TO 'pekall'@'mdm' IDENTIFIED BY 'Apple12#$' WITH GRANT OPTION;"
+	    mysql -uroot -p'Pekall12#$' -e "GRANT ALL PRIVILEGES ON *.* TO 'pekall'@'uas' IDENTIFIED BY 'Apple12#$' WITH GRANT OPTION;"
+	    mysql -uroot -p'Pekall12#$' -e "GRANT ALL PRIVILEGES ON *.* TO 'pekall'@'unilog' IDENTIFIED BY 'Apple12#$' WITH GRANT OPTION;"
+	    systemctl enable mysqld.service
 	启动
+		systemctl start mysqld.service
+		systemctl status mysqld.service
+		systemctl enable mysqld.service
+		systemctl stop mysqld.service
 	配置
+		 show variables like '%validate_password%';    
+		 show variables like '%timeout%';
+		 SET wait_timeout = 14400;
+		 show variables like '%connection%control%';
+		 INSTALL PLUGIN connection_control SONAME 'connection_control.so';
+		 SET GLOBAL connection_control_max_connection_delay = 86400;
+		 show variables like '%have_ssl%';   
+		 select user,host from mysql.user;           
+		 update mysql.user set host=192.168.11.37 where user='pekall' and host='%';
+		 interactive_timeout=14400
+		 wait_timeout=14400
+		 connection_control_max_connection_delay=86400000
 	主服务配置
 	从服务配置
 	统计需要修改的数据库及配置文件
