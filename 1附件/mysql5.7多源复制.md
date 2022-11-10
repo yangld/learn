@@ -1,10 +1,11 @@
 	卸载
 		https://blog.csdn.net/u012329294/article/details/80561532
 		yum remove  mysql mysql-server mysql-libs mysql-server
-		find / -name mysql 
+		rpm -ev mysql-community-embedded-5.7.40-1.el7.x86_64
+		rpm -ev mysql-community-embedded-compat-5.7.40-1.el7.x86_64
+		rpm -ev mysql-community-common-5.7.40-1.el7.x86_64
+		rm -f /etc/my.cnf
 		rpm -qa|grep mysql
-		rm /etc/my.cnf
-	
 	下载
 	安装
 	启动
