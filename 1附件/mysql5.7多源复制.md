@@ -68,6 +68,7 @@
 				 rpm -ivh rsync-3.1.2-4.el7.x86_64.rpm
 			配置
 			启动
+				rsync -av root@192.168.11.111:/apps /opt/backup
 		配置文件
 		 mkdir -p /opt/config_bakcup/uni_auth
 		 cp -rf /apps/uni_auth/config/ /opt/config_backup/uni_auth/
