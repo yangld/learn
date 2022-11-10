@@ -9,6 +9,9 @@
 	下载
 		wget https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.40-1.el7.x86_64.rpm-bundle.tar
 	安装
+		rm -rf /var/run/mysqld
+	    mkdir /var/run/mysqld
+	    chmod 777 /var/run/mysqld
 		rpm  -ivh mysql-community-common-5.7.40-1.el7.x86_64.rpm
 		rpm -ivh mysql-community-libs-5.7.40-1.el7.x86_64.rpm
 		rpm -ivh mysql-community-client-5.7.40-1.el7.x86_64.rpm
@@ -32,50 +35,52 @@
 	配置
 		 show variables like '%validate_password%';    
 		 show variables like '%timeout%';
-		 SET wait_timeout = 14400;
+		 ## SET wait_timeout = 14400;
 		 show variables like '%connection%control%';
 		 INSTALL PLUGIN connection_control SONAME 'connection_control.so';
-		 SET GLOBAL connection_control_max_connection_delay = 86400;
+		 ## SET GLOBAL connection_control_max_connection_delay = 86400;
 		 show variables like '%have_ssl%';   
 		 select user,host from mysql.user;           
 		 update mysql.user set host=192.168.11.37 where user='pekall' and host='%';
+		 
 		 interactive_timeout=14400
 		 wait_timeout=14400
 		 connection_control_max_connection_delay=86400000
-	主服务配置
-	从服务配置
-	统计需要修改的数据库及配置文件
-
-
-	下载
-		wget https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.40-linux-glibc2.12-x86_64.tar.gz
-	安装
-		
-	配置
-		从主服务器导出数据库
-		 mysqldump -uroot -ppekall1234 --master-data=2 --single-transaction --databases  --add-drop-database  uni_auth  >uni_auth.sql
-		 在从数据库中导入数据
-		  mysql -uroot -pPekall12#$ < ~/uni_auth.sql
-		  创建复制账号
-		  grant replication slave on *.* to 'repl'@'192.168.10.130' identified by '123456';
-		  配置从服务
-		  my.cnf
-		  master_info_repository=TABLE
-		  relay_log_info_repository=TABLE
-		  找到binlog位置
-		  [root@Slave mysql]# cat xuanzhi.sql |grep " CHANGE MASTER"
--- CHANGE MASTER TO MASTER_LOG_FILE='Master_1-bin.000001', MASTER_LOG_POS=1539;
-[root@Slave mysql]# cat xuanzhi_2.sql |grep " CHANGE MASTER"
--- CHANGE MASTER TO MASTER_LOG_FILE='Master_2-bin.000003', MASTER_LOG_POS=630;
-[root@Slave mysql]# 
-		  启动从服务,可配置多个
-		  CHANGE MASTER TO MASTER_HOST='192.168.11.153',MASTER_USER='root', MASTER_PASSWORD='pekall1234',MASTER_LOG_FILE='mysql-bin.000480',MASTER_LOG_POS=3069 FOR CHANNEL 'Master_153’;
-		  查看从服务
-		  SHOW SLAVE STATUS FOR CHANNEL 'Master_1'\G
-		  SELECT * FROM performance_schema.replication_connection_status; 
-
+		 server_id=1000
+		 master_info_repository=TABLE
+		 relay_log_info_repository=TABLE
+		 binlog-do-db=mdm_reactor1
+		 binlog-do-db=mdm_reactor2
 	主服务
-		my.cnf
-		server-id=991
-		binlog_do_db=uni_auth
-		
+		导出数据
+		mysqldump -uroot -ppekall1234 --master-data=2 --single-transaction --databases  --add-drop-database  uni_auth  > uni_auth.sql
+	从服务
+		mysql -uroot -pPekall12#$ < ~/uni_auth.sql
+		cat uni_auth.sql |grep " CHANGE MASTER"
+			-- CHANGE MASTER TO MASTER_LOG_FILE='mysql-bin.000481', MASTER_LOG_POS=120;
+		CHANGE MASTER TO MASTER_HOST='192.168.11.153',MASTER_USER='root', MASTER_PASSWORD='pekall1234',MASTER_LOG_FILE='mysql-bin.000481',MASTER_LOG_POS=120 FOR CHANNEL 'Master_153';
+		start slave for channel 'master_153';
+		show slave status for channel 'master_153'\G
+		SELECT * FROM performance_schema.replication_connection_status;
+	统计需要修改的数据库及配置文件
+		配置文件
+		 mkdir -p /opt/config_bakcup/uni_auth
+		 cp -rf /apps/uni_auth/config/ /opt/config_backup/uni_auth/
+		 cp -rf /apps/uni_auth/cert /opt/config_backup/uni_auth/
+		 mkdir -p /opt/config_backup/mdm
+		 cp -rf /apps/pekall/config /opt/config_backup/mdm/
+		 cp -rf /apps/pekall/cert /opt/config_backup/mdm/
+		 mkdir -p /opt/config_backup/web/admin
+		 cp /apps/web/admin/js/deploy-config.js /opt/config_backup/web/admin
+		mkdir -p /opt/config_backup/web/uni_auth
+		 cp /apps/web/uni_auth/web/js/deploy-config.js /opt/config_backup/web/uni_auth/
+		  mkdir -p /opt/config_backup/service/ana
+		 cp -rf /apps/pekall/service/appRunMonitorAnalyse/config/ /opt/config_backup/service/coll
+		  mkdir -p /opt/config_backup/service/coll
+		 cp -rf /apps/pekall/service/appRunMonitorCollection/config/ /opt/config_backup/service/run
+		  mkdir -p /opt/config_backup/service/run
+		 cp -rf /apps/pekall/service/runtime_diagram/config/ /opt/config_backup/service/run
+		  mkdir -p /opt/config_backup/service/unilog
+		 cp -rf /apps/pekall/service/unilog/config/ /opt/config_backup/service/unilog
+	问题列表
+		数据库同名的问题,修改数据库名
