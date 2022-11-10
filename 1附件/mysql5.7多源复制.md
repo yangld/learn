@@ -67,8 +67,16 @@
 			安装
 				 rpm -ivh rsync-3.1.2-4.el7.x86_64.rpm
 			配置
+				vim /etc/rsyncd.conf
+				vim  /etc/rsyncd.password
+				chmod 600 /etc/rsyncd.password
+				cat /etc/services  | grep rsync
+				netstat -anp | grep 873
+				cat /etc/services  | grep rsync
+				lsof -i tcp:873
 			启动
 				rsync -av root@192.168.11.111:/apps /opt/backup
+				rsync --daemon --config=/etc/rsyncd.conf
 		配置文件
 		 mkdir -p /opt/config_bakcup/uni_auth
 		 cp -rf /apps/uni_auth/config/ /opt/config_backup/uni_auth/
