@@ -63,6 +63,10 @@
 		show slave status for channel 'master_153'\G
 		SELECT * FROM performance_schema.replication_connection_status;
 	统计需要修改的数据库及配置文件
+		rsync同步
+			安装
+			配置
+			启动
 		配置文件
 		 mkdir -p /opt/config_bakcup/uni_auth
 		 cp -rf /apps/uni_auth/config/ /opt/config_backup/uni_auth/
@@ -82,5 +86,9 @@
 		 cp -rf /apps/pekall/service/runtime_diagram/config/ /opt/config_backup/service/run
 		  mkdir -p /opt/config_backup/service/unilog
 		 cp -rf /apps/pekall/service/unilog/config/ /opt/config_backup/service/unilog
+		   mkdir -p /opt/config_backup/nginx
+		  cp -rf /etc/nginx/conf.d /opt/config_backup/nginx/
+		  cp -rf /etc/nginx/mdm /opt/config_backup/nginx/
+		  cp -rf /etc/nginx/nginx.conf /opt/config_backup/nginx/
 	问题列表
 		数据库同名的问题,修改数据库名
