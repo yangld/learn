@@ -36,7 +36,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1附件/mysql5.7多源复制.md",
+                "file": "Day Planners/国家集中管控升级.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1附件/mysql5.7多源复制.md"
+                "file": "Day Planners/国家集中管控升级.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1附件/mysql5.7多源复制.md",
+                "file": "Day Planners/国家集中管控升级.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1附件/mysql5.7多源复制.md",
+                "file": "Day Planners/国家集中管控升级.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,6 +197,7 @@
   },
   "active": "60ab56830a853c69",
   "lastOpenFiles": [
+    "1附件/mysql5.7多源复制.md",
     "1附件/活跃统计增加和修改的页面.pdf",
     "Day Planners/vmware相关.md",
     "Day Planners/convert逻辑.md",
@@ -205,7 +206,6 @@
     "Day Planners/未命名.md",
     "Day Planners/去重逻辑.md",
     "Day Planners/国家集中管控升级.md",
-    "Day Planners/Day Planner-20221020.md",
-    "Day Planners/Day Planner-20221019.md"
+    "Day Planners/Day Planner-20221020.md"
   ]
 }
