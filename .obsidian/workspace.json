@@ -45,9 +45,21 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "cae7c030841ae456",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未完成.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "have_ssl.md"
+                "file": "1附件/mysql5.7多源复制.md"
               }
             }
           },
@@ -151,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "have_ssl.md",
+                "file": "1附件/mysql5.7多源复制.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "have_ssl.md",
+                "file": "1附件/mysql5.7多源复制.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,17 +210,17 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "b3a6b8c94d86662b",
+  "active": "60ab56830a853c69",
   "lastOpenFiles": [
-    "1附件/mysql5.7多源复制.md",
-    "have_ssl.md",
     "rsync配置手册.md",
+    "have_ssl.md",
+    "未完成.md",
+    "1附件/mysql5.7多源复制.md",
     "Day Planners/国家集中管控升级.md",
     "1附件/活跃统计增加和修改的页面.pdf",
     "Day Planners/vmware相关.md",
     "Day Planners/convert逻辑.md",
     "Day Planners/虚拟机安装.md",
-    "Day Planners/文档.md",
-    "Day Planners/未命名.md"
+    "Day Planners/文档.md"
   ]
 }
