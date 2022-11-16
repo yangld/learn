@@ -8,6 +8,10 @@
 		ssl-ca=/etc/mysql/cacert.crt
 		ssl-cert=/etc/mysql/server.crt
 		ssl-key=/etc/mysql/server.key
+	3. client
+		ssl-ca=/etc/mysql/cacert.crt
+		ssl-cert=/etc/mysql/client.crt
+		ssl-key=/etc/mysql/client.key
 3. 创建测试用户ssl_test
 	1. grant all on *.* to 'ssl_test'@'%' identified by 'Pekall12#$' require SSL;
 4. 登录
