@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "mysql5.7多源复制",
-      "path": "1附件/mysql5.7多源复制.md"
-    },
-    {
       "basename": "have_ssl",
       "path": "have_ssl.md"
+    },
+    {
+      "basename": "mysql5.7多源复制",
+      "path": "1附件/mysql5.7多源复制.md"
     },
     {
       "basename": "rsync配置手册",
