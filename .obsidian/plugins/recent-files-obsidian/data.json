@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "rsync配置手册",
+      "path": "rsync配置手册.md"
+    },
+    {
       "basename": "mysql5.7多源复制",
       "path": "1附件/mysql5.7多源复制.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Day Planner-20220928",
       "path": "Day Planners/Day Planner-20220928.md"
-    },
-    {
-      "basename": "Day Planner-20220927",
-      "path": "Day Planners/Day Planner-20220927.md"
     }
   ],
   "omittedPaths": [],
