@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "rsync配置手册",
-      "path": "rsync配置手册.md"
+      "basename": "have_ssl",
+      "path": "have_ssl.md"
     },
     {
       "basename": "mysql5.7多源复制",
       "path": "1附件/mysql5.7多源复制.md"
+    },
+    {
+      "basename": "rsync配置手册",
+      "path": "rsync配置手册.md"
     },
     {
       "basename": "国家集中管控升级",
@@ -195,10 +199,6 @@
     {
       "basename": "Day Planner-20220929",
       "path": "Day Planners/Day Planner-20220929.md"
-    },
-    {
-      "basename": "Day Planner-20220928",
-      "path": "Day Planners/Day Planner-20220928.md"
     }
   ],
   "omittedPaths": [],

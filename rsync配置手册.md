@@ -2,6 +2,7 @@
 		rpm -qa |grep rsync
 		rpm -ev rsync-3.0.6-9.el6_4.1.x86_64 --nodeps
 		rpm -ivh rsync-3.0.6-12.el6.x86_64.rpm
+		主备服务器的rsync必须相同,密码都是主服务器的密码
 	主服务配置和启动
 		rsyncd.conf
 ```
@@ -63,4 +64,10 @@ root:pekall12#$
 */5 * * * *  rsync -avH --port 5873 --delete root@192.168.11.153::sync_uas2 /data/153/nginx --password-file=/opt/rsync.password
 ```
 		service  crond   restart
-		
+	其他
+		rsync -av root@192.168.11.111:/apps /opt/backup
+		rsync --daemon --config=/etc/rsyncd.conf
+		cat /etc/services  | grep rsync
+			netstat -anp | grep 873
+			cat /etc/services  | grep rsync
+			lsof -i tcp:873

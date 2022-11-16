@@ -42,6 +42,8 @@
 		 show variables like '%have_ssl%';   
 		 select user,host from mysql.user;           
 		 update mysql.user set host=192.168.11.37 where user='pekall' and host='%';
+		 create user 'root'@'192.168.11.153' identified 'Pekall12#$';
+		 grant all *.* on 'root'@'192.168.11.153';
 		 
 		 interactive_timeout=14400
 		 wait_timeout=14400
@@ -62,49 +64,11 @@
 		start slave for channel 'master_153';
 		show slave status for channel 'master_153'\G
 		SELECT * FROM performance_schema.replication_connection_status;
-	统计需要修改的数据库及配置文件
-		rsync同步
-			安装
-				 rpm -ivh rsync-3.1.2-4.el7.x86_64.rpm
-			配置
-				vim /etc/rsyncd.conf
-				vim  /etc/rsyncd.password
-				chmod 600 /etc/rsyncd.password
-				cat /etc/services  | grep rsync
-				netstat -anp | grep 873
-				cat /etc/services  | grep rsync
-				lsof -i tcp:873
-			启动
-				rsync -av root@192.168.11.111:/apps /opt/backup
-				rsync --daemon --config=/etc/rsyncd.conf
-		配置文件
-		 mkdir -p /opt/config_bakcup/uni_auth
-		 cp -rf /apps/uni_auth/config/ /opt/config_backup/uni_auth/
-		 cp -rf /apps/uni_auth/cert /opt/config_backup/uni_auth/
-		 mkdir -p /opt/config_backup/mdm
-		 cp -rf /apps/pekall/config /opt/config_backup/mdm/
-		 cp -rf /apps/pekall/cert /opt/config_backup/mdm/
-		 mkdir -p /opt/config_backup/web/admin
-		 cp /apps/web/admin/js/deploy-config.js /opt/config_backup/web/admin
-		mkdir -p /opt/config_backup/web/uni_auth
-		 cp /apps/web/uni_auth/web/js/deploy-config.js /opt/config_backup/web/uni_auth/
-		  mkdir -p /opt/config_backup/service/ana
-		 cp -rf /apps/pekall/service/appRunMonitorAnalyse/config/ /opt/config_backup/service/coll
-		  mkdir -p /opt/config_backup/service/coll
-		 cp -rf /apps/pekall/service/appRunMonitorCollection/config/ /opt/config_backup/service/run
-		  mkdir -p /opt/config_backup/service/run
-		 cp -rf /apps/pekall/service/runtime_diagram/config/ /opt/config_backup/service/run
-		  mkdir -p /opt/config_backup/service/unilog
-		 cp -rf /apps/pekall/service/unilog/config/ /opt/config_backup/service/unilog
-		   mkdir -p /opt/config_backup/nginx
-		  cp -rf /etc/nginx/conf.d /opt/config_backup/nginx/
-		  cp -rf /etc/nginx/mdm /opt/config_backup/nginx/
-		  cp -rf /etc/nginx/nginx.conf /opt/config_backup/nginx/
 	问题列表
 		数据库同名的问题,修改数据库名
-
 		mdm需要对存储过程和视图,修改%访问
 		国家集中管控和北京市局对接
 		应用管理服务器,暂时无法ssh,李勇限制了102的访问,还未同步
 		端口问题, 10.2.120.207 ABCabc123Liyong 需要访问192.168.100.98,151,124,102的mysql的端口
+		cmc的uas重启失败,原因是hosts文件中没有了对应的host信息
 		
