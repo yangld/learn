@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "会议纪要",
+      "path": "会议纪要.md"
+    },
+    {
+      "basename": "未完成",
+      "path": "未完成.md"
+    },
+    {
+      "basename": "活跃统计增加和修改的页面",
+      "path": "1附件/活跃统计增加和修改的页面.pdf"
+    },
+    {
+      "basename": "去重逻辑",
+      "path": "Day Planners/去重逻辑.md"
+    },
+    {
       "basename": "mysql5.7多源复制",
       "path": "1附件/mysql5.7多源复制.md"
+    },
+    {
+      "basename": "集中管控web",
+      "path": "1附件/集中管控web.md"
     },
     {
       "basename": "rsync配置手册",
@@ -13,16 +33,8 @@
       "path": "have_ssl.md"
     },
     {
-      "basename": "未完成",
-      "path": "未完成.md"
-    },
-    {
       "basename": "国家集中管控升级",
       "path": "Day Planners/国家集中管控升级.md"
-    },
-    {
-      "basename": "活跃统计增加和修改的页面",
-      "path": "1附件/活跃统计增加和修改的页面.pdf"
     },
     {
       "basename": "vmware相关",
@@ -43,10 +55,6 @@
     {
       "basename": "未命名",
       "path": "Day Planners/未命名.md"
-    },
-    {
-      "basename": "去重逻辑",
-      "path": "Day Planners/去重逻辑.md"
     },
     {
       "basename": "Day Planner-20221020",
@@ -191,14 +199,6 @@
     {
       "basename": "天津广电代理商自服务系统.6",
       "path": "8知识管理/InBox/evernote/参考/天津广电代理商自服务系统.6.md"
-    },
-    {
-      "basename": "深入理解Linux修改hostname - 潇湘隐者 - 博客园",
-      "path": "8知识管理/InBox/evernote/参考/深入理解Linux修改hostname - 潇湘隐者 - 博客园.md"
-    },
-    {
-      "basename": "Day Planner-20220930",
-      "path": "Day Planners/Day Planner-20220930.md"
     }
   ],
   "omittedPaths": [],

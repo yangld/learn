@@ -10,6 +10,7 @@
           {
             "id": "60ab56830a853c69",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -17,12 +18,14 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": true
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "6d7d1e1e4b3e9652",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -30,12 +33,14 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": true
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "b3a6b8c94d86662b",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -43,23 +48,40 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": true
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "cae7c030841ae456",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "未完成.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "ed7060457bfa7f97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "会议纪要.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -114,7 +136,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407
+    "width": 407,
+    "collapsed": true
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -130,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1附件/mysql5.7多源复制.md"
+                "file": "会议纪要.md"
               }
             }
           },
@@ -163,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1附件/mysql5.7多源复制.md",
+                "file": "会议纪要.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +203,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1附件/mysql5.7多源复制.md",
+                "file": "会议纪要.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,17 +233,17 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "60ab56830a853c69",
+  "active": "ed7060457bfa7f97",
   "lastOpenFiles": [
+    "未完成.md",
+    "1附件/活跃统计增加和修改的页面.pdf",
+    "Day Planners/去重逻辑.md",
+    "1附件/mysql5.7多源复制.md",
+    "1附件/集中管控web.md",
     "rsync配置手册.md",
     "have_ssl.md",
-    "未完成.md",
-    "1附件/mysql5.7多源复制.md",
     "Day Planners/国家集中管控升级.md",
-    "1附件/活跃统计增加和修改的页面.pdf",
     "Day Planners/vmware相关.md",
-    "Day Planners/convert逻辑.md",
-    "Day Planners/虚拟机安装.md",
-    "Day Planners/文档.md"
+    "Day Planners/convert逻辑.md"
   ]
 }
