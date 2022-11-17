@@ -79,9 +79,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "9496018f3392a8e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -153,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "会议纪要.md"
+                "file": "未命名.md"
               }
             }
           },
@@ -186,7 +199,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "会议纪要.md",
+                "file": "未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,7 +216,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "会议纪要.md",
+                "file": "未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -233,8 +246,9 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "ed7060457bfa7f97",
+  "active": "9496018f3392a8e2",
   "lastOpenFiles": [
+    "会议纪要.md",
     "未完成.md",
     "1附件/活跃统计增加和修改的页面.pdf",
     "Day Planners/去重逻辑.md",
@@ -243,7 +257,6 @@
     "rsync配置手册.md",
     "have_ssl.md",
     "Day Planners/国家集中管控升级.md",
-    "Day Planners/vmware相关.md",
-    "Day Planners/convert逻辑.md"
+    "Day Planners/vmware相关.md"
   ]
 }

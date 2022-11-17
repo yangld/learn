@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "未命名",
+      "path": "未命名.md"
+    },
+    {
       "basename": "会议纪要",
       "path": "会议纪要.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "download支持文件内容,验证文件格式",
       "path": "3工作日志/download支持文件内容,验证文件格式.md"
-    },
-    {
-      "basename": "天津广电代理商自服务系统.6",
-      "path": "8知识管理/InBox/evernote/参考/天津广电代理商自服务系统.6.md"
     }
   ],
   "omittedPaths": [],
