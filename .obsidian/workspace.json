@@ -85,11 +85,13 @@
           {
             "id": "653c66c03fcd5874",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "pdf",
               "state": {
                 "file": "1附件/活跃统计增加和修改的页面.pdf"
-              }
+              },
+              "pinned": true
             }
           }
         ],
@@ -247,11 +249,11 @@
   },
   "active": "653c66c03fcd5874",
   "lastOpenFiles": [
+    "部平台问题处理.md",
+    "1附件/活跃统计增加和修改的页面.pdf",
     "未完成.md",
     "会议纪要.md",
-    "部平台问题处理.md",
     "1附件/mysql5.7多源复制.md",
-    "1附件/活跃统计增加和修改的页面.pdf",
     "Day Planners/去重逻辑.md",
     "1附件/集中管控web.md",
     "rsync配置手册.md",

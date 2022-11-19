@@ -5,16 +5,16 @@
       "path": "1附件/活跃统计增加和修改的页面.pdf"
     },
     {
+      "basename": "部平台问题处理",
+      "path": "部平台问题处理.md"
+    },
+    {
       "basename": "未完成",
       "path": "未完成.md"
     },
     {
       "basename": "会议纪要",
       "path": "会议纪要.md"
-    },
-    {
-      "basename": "部平台问题处理",
-      "path": "部平台问题处理.md"
     },
     {
       "basename": "mysql5.7多源复制",
