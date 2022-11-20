@@ -60,7 +60,7 @@
               "type": "markdown",
               "state": {
                 "file": "未完成.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               },
@@ -93,9 +93,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "d997680168556978",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "活跃统计未完成功能.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -167,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1附件/活跃统计增加和修改的页面.pdf"
+                "file": "活跃统计未完成功能.md"
               }
             }
           },
@@ -200,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1附件/活跃统计增加和修改的页面.pdf",
+                "file": "活跃统计未完成功能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +230,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1附件/活跃统计增加和修改的页面.pdf",
+                "file": "活跃统计未完成功能.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -247,17 +260,17 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "653c66c03fcd5874",
+  "active": "d997680168556978",
   "lastOpenFiles": [
-    "部平台问题处理.md",
     "1附件/活跃统计增加和修改的页面.pdf",
+    "活跃统计未完成功能.md",
     "未完成.md",
+    "部平台问题处理.md",
+    "202211201324.md",
     "会议纪要.md",
     "1附件/mysql5.7多源复制.md",
     "Day Planners/去重逻辑.md",
     "1附件/集中管控web.md",
-    "rsync配置手册.md",
-    "have_ssl.md",
-    "Day Planners/国家集中管控升级.md"
+    "rsync配置手册.md"
   ]
 }
