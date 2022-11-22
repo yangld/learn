@@ -142,7 +142,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -214,7 +214,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "联通bug处理.md"
+                "file": "未完成工作任务1121.md"
               }
             }
           },
@@ -247,7 +247,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "联通bug处理.md",
+                "file": "未完成工作任务1121.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -264,7 +264,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "联通bug处理.md",
+                "file": "未完成工作任务1121.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -294,8 +294,9 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "a9f874e32111c66a",
+  "active": "2e8a840b8e818a6d",
   "lastOpenFiles": [
+    "联通bug处理.md",
     "未完成.md",
     "未完成工作任务1121.md",
     "活跃统计未完成功能.md",
@@ -304,7 +305,6 @@
     "202211201324.md",
     "会议纪要.md",
     "1附件/mysql5.7多源复制.md",
-    "Day Planners/去重逻辑.md",
-    "1附件/集中管控web.md"
+    "Day Planners/去重逻辑.md"
   ]
 }
