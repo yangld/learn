@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "联通bug处理",
+      "path": "联通bug处理.md"
+    },
+    {
       "basename": "未完成",
       "path": "未完成.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "2022-W42",
       "path": "2022-W42.md"
-    },
-    {
-      "basename": "Flink学习",
-      "path": "Day Planners/Flink学习.md"
     }
   ],
   "omittedPaths": [],
