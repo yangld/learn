@@ -119,27 +119,6 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "e7b7d278918dfa6c",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "a9f874e32111c66a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "联通bug处理.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
           }
         ],
         "currentTab": 7
@@ -297,8 +276,8 @@
   "active": "2e8a840b8e818a6d",
   "lastOpenFiles": [
     "联通bug处理.md",
-    "未完成.md",
     "未完成工作任务1121.md",
+    "未完成.md",
     "活跃统计未完成功能.md",
     "1附件/活跃统计增加和修改的页面.pdf",
     "部平台问题处理.md",
