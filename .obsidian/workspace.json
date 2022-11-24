@@ -135,8 +135,7 @@
               "pinned": true
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -208,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未完成工作任务1121.md"
+                "file": "1附件/mysql5.7多源复制.md"
               }
             }
           },
@@ -241,7 +240,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未完成工作任务1121.md",
+                "file": "1附件/mysql5.7多源复制.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -258,7 +257,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未完成工作任务1121.md",
+                "file": "1附件/mysql5.7多源复制.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -288,17 +287,17 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "728d8fc83cf2e200",
+  "active": "60ab56830a853c69",
   "lastOpenFiles": [
-    "202211241516.md",
+    "have_ssl.md",
+    "1附件/mysql5.7多源复制.md",
     "未完成工作任务1121.md",
+    "202211241516.md",
     "未完成.md",
     "活跃统计未完成功能.md",
     "部平台问题处理.md",
     "202211241308.md",
     "1附件/活跃统计增加和修改的页面.pdf",
-    "省集中管控活跃统计web问题列表.md",
-    "联通bug处理.md",
-    "202211201324.md"
+    "省集中管控活跃统计web问题列表.md"
   ]
 }

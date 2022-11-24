@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "mysql5.7多源复制",
+      "path": "1附件/mysql5.7多源复制.md"
+    },
+    {
+      "basename": "have_ssl",
+      "path": "have_ssl.md"
+    },
+    {
       "basename": "未完成工作任务1121",
       "path": "未完成工作任务1121.md"
     },
@@ -45,10 +53,6 @@
       "path": "会议纪要.md"
     },
     {
-      "basename": "mysql5.7多源复制",
-      "path": "1附件/mysql5.7多源复制.md"
-    },
-    {
       "basename": "去重逻辑",
       "path": "Day Planners/去重逻辑.md"
     },
@@ -59,10 +63,6 @@
     {
       "basename": "rsync配置手册",
       "path": "rsync配置手册.md"
-    },
-    {
-      "basename": "have_ssl",
-      "path": "have_ssl.md"
     },
     {
       "basename": "国家集中管控升级",
