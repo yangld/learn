@@ -5,6 +5,14 @@
       "path": "未完成工作任务1121.md"
     },
     {
+      "basename": "202211241308",
+      "path": "202211241308.md"
+    },
+    {
+      "basename": "省集中管控活跃统计web问题列表",
+      "path": "省集中管控活跃统计web问题列表.md"
+    },
+    {
       "basename": "联通bug处理",
       "path": "联通bug处理.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "2022-Q4",
       "path": "2022-Q4.md"
-    },
-    {
-      "basename": "2022-10",
-      "path": "2022-10.md"
-    },
-    {
-      "basename": "2022-W42",
-      "path": "2022-W42.md"
     }
   ],
   "omittedPaths": [],
