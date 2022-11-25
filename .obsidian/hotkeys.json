@@ -7,5 +7,14 @@
       ],
       "key": "T"
     }
+  ],
+  "zk-prefixer": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "T"
+    }
   ]
 }
