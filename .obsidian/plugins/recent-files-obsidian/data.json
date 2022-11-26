@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "202211261050",
+      "path": "202211261050.md"
+    },
+    {
+      "basename": "工作号码ER图",
+      "path": "6TASK/概要设计/工作号码ER图.md"
+    },
+    {
       "basename": "202211250909",
       "path": "202211250909.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "CB对接设计",
       "path": "1附件/CB对接设计.pdf"
-    },
-    {
-      "basename": "架构师必备，带你弄清混乱的JAVA日志体系！(1)",
-      "path": "1附件/架构师必备，带你弄清混乱的JAVA日志体系！(1).pdf"
-    },
-    {
-      "basename": "2022-10-18",
-      "path": "2022-10-18.md"
     }
   ],
   "omittedPaths": [],
