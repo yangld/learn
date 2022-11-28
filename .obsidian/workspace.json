@@ -125,14 +125,16 @@
           {
             "id": "ff47dd2f5d8863bb",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202211281602.md",
+                "file": "202211281714.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
-              }
+              },
+              "pinned": true
             }
           }
         ],
@@ -191,7 +193,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407
+    "width": 407,
+    "collapsed": true
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -207,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202211281602.md"
+                "file": "202211281714.md"
               }
             }
           },
@@ -240,7 +243,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202211281602.md",
+                "file": "202211281714.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -257,7 +260,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "202211281602.md",
+                "file": "202211281714.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -289,6 +292,7 @@
   },
   "active": "ff47dd2f5d8863bb",
   "lastOpenFiles": [
+    "202211281602.md",
     "202211281046.md",
     "202211241516.md",
     "未完成工作任务1121.md",
@@ -297,7 +301,6 @@
     "未命名 1.md",
     "未命名.md",
     "202211281124.md",
-    "202211280859.md",
-    "6TASK/概要设计/工作号码ER图.md"
+    "202211280859.md"
   ]
 }
