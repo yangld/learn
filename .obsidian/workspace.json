@@ -121,9 +121,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "ff47dd2f5d8863bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "202211281046.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -178,8 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407,
-    "collapsed": true
+    "width": 407
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -195,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未完成工作任务1121.md"
+                "file": "202211281046.md"
               }
             }
           },
@@ -228,7 +240,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未完成工作任务1121.md",
+                "file": "202211281046.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -245,7 +257,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未完成工作任务1121.md",
+                "file": "202211281046.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -275,17 +287,17 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "728d8fc83cf2e200",
+  "active": "ff47dd2f5d8863bb",
   "lastOpenFiles": [
-    "未命名 1.md",
-    "202211261050.md",
+    "202211241516.md",
     "未完成工作任务1121.md",
+    "202211261050.md",
+    "1附件/活跃统计增加和修改的页面.pdf",
+    "未命名 1.md",
     "未命名.md",
     "202211281124.md",
     "202211281046.md",
     "202211280859.md",
-    "202211241516.md",
-    "6TASK/概要设计/工作号码ER图.md",
-    "202211250909.md"
+    "6TASK/概要设计/工作号码ER图.md"
   ]
 }
