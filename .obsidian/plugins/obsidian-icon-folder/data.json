@@ -17,6 +17,12 @@
     "iconPacksPath": "plugins/obsidian-icon-folder/icons",
     "recentlyUsedIcons": [],
     "recentlyUsedIconsSize": 5,
-    "rules": []
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    }
   }
 }

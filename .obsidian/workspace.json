@@ -113,7 +113,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202211280859.md",
+                "file": "202211281124.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -136,7 +136,21 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
+      },
+      {
+        "id": "c4df027836c11b88",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c03ec806145fe444",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,7 +201,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -208,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未完成工作任务1121.md"
+                "file": "202211281124.md"
               }
             }
           },
@@ -241,7 +255,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未完成工作任务1121.md",
+                "file": "202211281124.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -258,7 +272,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未完成工作任务1121.md",
+                "file": "202211281124.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -288,17 +302,17 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "728d8fc83cf2e200",
+  "active": "2e8a840b8e818a6d",
   "lastOpenFiles": [
+    "202211281046.md",
+    "未完成工作任务1121.md",
     "202211280859.md",
     "202211241516.md",
-    "未完成工作任务1121.md",
     "202211261050.md",
     "6TASK/概要设计/工作号码ER图.md",
     "202211250909.md",
     "活跃统计未完成功能.md",
     "1附件/mysql5.7多源复制.md",
-    "have_ssl.md",
-    "未完成.md"
+    "have_ssl.md"
   ]
 }

@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "202211281124",
+      "path": "202211281124.md"
+    },
+    {
+      "basename": "202211281046",
+      "path": "202211281046.md"
+    },
+    {
       "basename": "未完成工作任务1121",
       "path": "未完成工作任务1121.md"
     },
@@ -191,16 +199,9 @@
     {
       "basename": "2022-10-17",
       "path": "2022-10-17.md"
-    },
-    {
-      "basename": "AdmotionTest",
-      "path": "AdmotionTest.md"
-    },
-    {
-      "basename": "annotator-test",
-      "path": "annotator-test.md"
     }
   ],
   "omittedPaths": [],
-  "maxLength": null
+  "maxLength": null,
+  "openType": "tab"
 }
