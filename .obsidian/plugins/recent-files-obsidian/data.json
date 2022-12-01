@@ -5,6 +5,10 @@
       "path": "工作看板.md"
     },
     {
+      "basename": "未命名 3",
+      "path": "未命名 3.md"
+    },
+    {
       "basename": "未完成工作任务1121",
       "path": "未完成工作任务1121.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Day Planner-20221013",
       "path": "Day Planners/Day Planner-20221013.md"
-    },
-    {
-      "basename": "Day Planner-20221012",
-      "path": "Day Planners/Day Planner-20221012.md"
     }
   ],
   "omittedPaths": [],
