@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "阅读文档-声纹认证",
+      "path": "阅读文档-声纹认证.md"
+    },
+    {
       "basename": "工作看板",
       "path": "工作看板.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Day Planner-20221014",
       "path": "Day Planners/Day Planner-20221014.md"
-    },
-    {
-      "basename": "Day Planner-20221013",
-      "path": "Day Planners/Day Planner-20221013.md"
     }
   ],
   "omittedPaths": [],
