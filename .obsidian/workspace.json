@@ -165,7 +165,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -237,7 +237,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "阅读文档-声纹认证.md"
+                "file": "工作看板.md"
               }
             }
           },
@@ -270,7 +270,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "阅读文档-声纹认证.md",
+                "file": "工作看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -287,7 +287,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "阅读文档-声纹认证.md",
+                "file": "工作看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -317,8 +317,9 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "c9eb53e898bd4ccd",
+  "active": "25e0d4289430ec05",
   "lastOpenFiles": [
+    "阅读文档-声纹认证.md",
     "工作看板.md",
     "未命名 3.md",
     "未完成工作任务1121.md",
@@ -327,7 +328,6 @@
     "202211301625.md",
     "202211281602.md",
     "202211281046.md",
-    "202211241516.md",
-    "202211261050.md"
+    "202211241516.md"
   ]
 }
