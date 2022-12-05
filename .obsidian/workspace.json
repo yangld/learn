@@ -157,7 +157,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "阅读文档-声纹认证.md",
+                "file": "6TASK/概要设计/工作号码ER图.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -165,7 +165,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -220,8 +220,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407,
-    "collapsed": true
+    "width": 407
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -237,7 +236,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作看板.md"
+                "file": "6TASK/概要设计/工作号码ER图.md"
               }
             }
           },
@@ -270,7 +269,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作看板.md",
+                "file": "6TASK/概要设计/工作号码ER图.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -287,7 +286,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作看板.md",
+                "file": "6TASK/概要设计/工作号码ER图.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -317,17 +316,17 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "25e0d4289430ec05",
+  "active": "c9eb53e898bd4ccd",
   "lastOpenFiles": [
     "阅读文档-声纹认证.md",
     "工作看板.md",
-    "未命名 3.md",
-    "未完成工作任务1121.md",
-    "202211281714.md",
-    "未命名 2.md",
+    "1附件/mysql5.7多源复制.md",
+    "rsync配置手册.md",
+    "have_ssl.md",
+    "未完成.md",
+    "部平台问题处理.md",
+    "1附件/活跃统计增加和修改的页面.pdf",
     "202211301625.md",
-    "202211281602.md",
-    "202211281046.md",
-    "202211241516.md"
+    "未完成工作任务1121.md"
   ]
 }
