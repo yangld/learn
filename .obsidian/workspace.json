@@ -152,6 +152,19 @@
             }
           },
           {
+            "id": "3b63cacb14926294",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "查看耀辉的代码,确定问题列表.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "c9eb53e898bd4ccd",
             "type": "leaf",
             "state": {
@@ -162,6 +175,14 @@
                 "backlinks": true,
                 "source": true
               }
+            }
+          },
+          {
+            "id": "b38bdd6198d1fdb0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -236,7 +257,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6TASK/概要设计/工作号码ER图.md"
+                "file": "查看耀辉的代码,确定问题列表.md"
               }
             }
           },
@@ -269,7 +290,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6TASK/概要设计/工作号码ER图.md",
+                "file": "查看耀辉的代码,确定问题列表.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -286,7 +307,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6TASK/概要设计/工作号码ER图.md",
+                "file": "查看耀辉的代码,确定问题列表.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -316,17 +337,17 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "c9eb53e898bd4ccd",
+  "active": "3b63cacb14926294",
   "lastOpenFiles": [
-    "阅读文档-声纹认证.md",
     "工作看板.md",
+    "6TASK/概要设计/工作号码ER图.md",
+    "阅读文档-声纹认证.md",
     "1附件/mysql5.7多源复制.md",
     "rsync配置手册.md",
     "have_ssl.md",
     "未完成.md",
     "部平台问题处理.md",
     "1附件/活跃统计增加和修改的页面.pdf",
-    "202211301625.md",
-    "未完成工作任务1121.md"
+    "202211301625.md"
   ]
 }
