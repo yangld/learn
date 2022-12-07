@@ -154,6 +154,7 @@
           {
             "id": "c9562661908bba49",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -161,11 +162,12 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": true
-              }
+              },
+              "pinned": true
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -236,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "关联分析设计整理.md"
+                "file": "工作看板.md"
               }
             }
           },
@@ -269,7 +271,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "关联分析设计整理.md",
+                "file": "工作看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -286,7 +288,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "关联分析设计整理.md",
+                "file": "工作看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -316,10 +318,10 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "c9562661908bba49",
+  "active": "25e0d4289430ec05",
   "lastOpenFiles": [
-    "1附件/associ_analysis_rule_202212071724.md",
     "关联分析设计整理.md",
+    "1附件/associ_analysis_rule_202212071724.md",
     "3工作日志/日志/2022-12-07.md",
     "工作看板.md",
     "1附件/data_type_mapping_202212071722.md",
