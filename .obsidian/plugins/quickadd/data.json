@@ -1,0 +1,48 @@
+{
+  "choices": [
+    {
+      "id": "babac56d-e6b1-4ad0-88a4-7da1c060cc02",
+      "name": "闪念",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "4思考/日记/{{DATE:YYYY-MM-DD_dddd}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "\\n- {{DATE:YYYY-MM-DD HH:mm}} {{value}}"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "## 闪念",
+        "insertAtEnd": false,
+        "createIfNotFound": true,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    }
+  ],
+  "macros": [
+    {
+      "name": "macro-test",
+      "id": "41f9e105-8e00-42a1-821b-5242a730c5d6",
+      "commands": [],
+      "runOnStartup": true
+    }
+  ],
+  "inputPrompt": "multi-line",
+  "devMode": false
+}
