@@ -5,12 +5,20 @@
       "path": "关联分析设计整理.md"
     },
     {
+      "basename": "associ_analysis_rule_202212071724",
+      "path": "1附件/associ_analysis_rule_202212071724.md"
+    },
+    {
       "basename": "2022-12-07",
       "path": "3工作日志/日志/2022-12-07.md"
     },
     {
       "basename": "工作看板",
       "path": "工作看板.md"
+    },
+    {
+      "basename": "data_type_mapping_202212071722",
+      "path": "1附件/data_type_mapping_202212071722.md"
     },
     {
       "basename": "202211281714",
@@ -191,14 +199,6 @@
     {
       "basename": "Day Planner-20221107",
       "path": "Day Planners/Day Planner-20221107.md"
-    },
-    {
-      "basename": "Day Planner-20221028",
-      "path": "Day Planners/Day Planner-20221028.md"
-    },
-    {
-      "basename": "Day Planner-20221027",
-      "path": "Day Planners/Day Planner-20221027.md"
     }
   ],
   "omittedPaths": [],
