@@ -165,7 +165,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -236,7 +236,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202211281714.md"
+                "file": "工作看板.md"
               }
             }
           },
@@ -269,7 +269,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202211281714.md",
+                "file": "工作看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -286,7 +286,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "202211281714.md",
+                "file": "工作看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -316,8 +316,9 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "ff47dd2f5d8863bb",
+  "active": "25e0d4289430ec05",
   "lastOpenFiles": [
+    "202211281714.md",
     "工作看板.md",
     "3工作日志/日志/2022-12-07.md",
     "3工作日志/3工作日志.md",
@@ -326,7 +327,6 @@
     "4思考/日记/2022-12-07_星期三.md",
     "查看耀辉的代码,确定问题列表.md",
     "6TASK/概要设计/工作号码ER图.md",
-    "阅读文档-声纹认证.md",
-    "1附件/mysql5.7多源复制.md"
+    "阅读文档-声纹认证.md"
   ]
 }
