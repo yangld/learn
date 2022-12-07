@@ -1,38 +1,114 @@
 {
   "choices": [
     {
-      "id": "babac56d-e6b1-4ad0-88a4-7da1c060cc02",
-      "name": "闪念",
-      "type": "Capture",
-      "command": false,
-      "appendLink": false,
-      "captureTo": "4思考/日记/{{DATE:YYYY-MM-DD_dddd}}",
-      "captureToActiveFile": false,
-      "createFileIfItDoesntExist": {
-        "enabled": true,
-        "createWithTemplate": false,
-        "template": ""
-      },
-      "format": {
-        "enabled": true,
-        "format": "\\n- {{DATE:YYYY-MM-DD HH:mm}} {{value}}"
-      },
-      "insertAfter": {
-        "enabled": true,
-        "after": "## 闪念",
-        "insertAtEnd": false,
-        "createIfNotFound": true,
-        "createIfNotFoundLocation": "top"
-      },
-      "prepend": false,
-      "task": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default"
+      "id": "1358907b-99ad-44df-801d-822f65196be3",
+      "name": "捕捉",
+      "type": "Multi",
+      "command": true,
+      "choices": [
+        {
+          "id": "7ed18cf3-2e94-4539-b99e-1e04c146c0d5",
+          "name": "1任务",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "3工作日志/日志/{{DATE:YYYY-MM-DD}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": true,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "\\n- [ ]  {{DATE:YYYY-MM-DD HH:mm}} {{value}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## 任务",
+            "insertAtEnd": true,
+            "createIfNotFound": true,
+            "createIfNotFoundLocation": "top"
+          },
+          "prepend": true,
+          "task": false,
+          "openFileInNewTab": {
+            "enabled": true,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": true,
+          "openFileInMode": "default"
+        },
+        {
+          "id": "6222f726-8149-463b-87b7-a8d5c5b32fa2",
+          "name": "2闪念",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "3工作日志/日志/{{DATE:YYYY-MM-DD}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": true,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "\\n-  {{DATE:YYYY-MM-DD HH:mm}} {{value}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## 闪念",
+            "insertAtEnd": true,
+            "createIfNotFound": true,
+            "createIfNotFoundLocation": "top"
+          },
+          "prepend": true,
+          "task": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": true,
+          "openFileInMode": "default"
+        },
+        {
+          "id": "e9f21480-8ae3-4aff-ab82-0fa242fe259e",
+          "name": "3看板列",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "测试看板.md",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": true,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": false,
+            "format": ""
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## Inbox",
+            "insertAtEnd": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "bottom"
+          },
+          "prepend": true,
+          "task": true,
+          "openFileInNewTab": {
+            "enabled": true,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": false,
+          "openFileInMode": "default"
+        }
+      ]
     }
   ],
   "macros": [
