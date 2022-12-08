@@ -1,20 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "工作看板",
-      "path": "工作看板.md"
+      "basename": "2022-12-08 集中管控页面401",
+      "path": "3工作日志/日志/2022-12-08 集中管控页面401.md"
     },
     {
       "basename": "关联分析设计整理",
       "path": "关联分析设计整理.md"
     },
     {
-      "basename": "associ_analysis_rule_202212071724",
-      "path": "1附件/associ_analysis_rule_202212071724.md"
-    },
-    {
       "basename": "2022-12-07",
       "path": "3工作日志/日志/2022-12-07.md"
+    },
+    {
+      "basename": "task-template",
+      "path": "3工作日志/模版/task-template.md"
+    },
+    {
+      "basename": "3工作日志",
+      "path": "3工作日志/3工作日志.md"
+    },
+    {
+      "basename": "工作内容",
+      "path": "3工作日志/工作内容/工作内容.md"
+    },
+    {
+      "basename": "2022-12-07_星期三",
+      "path": "4思考/日记/2022-12-07_星期三.md"
+    },
+    {
+      "basename": "工作看板",
+      "path": "工作看板.md"
+    },
+    {
+      "basename": "2021-10",
+      "path": "3工作日志/2021-10.md"
+    },
+    {
+      "basename": "44 周- 2021",
+      "path": "3工作日志/44 周- 2021.md"
+    },
+    {
+      "basename": "associ_analysis_rule_202212071724",
+      "path": "1附件/associ_analysis_rule_202212071724.md"
     },
     {
       "basename": "data_type_mapping_202212071722",
@@ -25,20 +53,12 @@
       "path": "202211281714.md"
     },
     {
-      "basename": "3工作日志",
-      "path": "3工作日志/3工作日志.md"
-    },
-    {
       "basename": "202212071025",
       "path": "202212071025.md"
     },
     {
       "basename": "测试看板",
       "path": "测试看板.md"
-    },
-    {
-      "basename": "2022-12-07_星期三",
-      "path": "4思考/日记/2022-12-07_星期三.md"
     },
     {
       "basename": "查看耀辉的代码,确定问题列表",
@@ -167,38 +187,6 @@
     {
       "basename": "vmware相关",
       "path": "Day Planners/vmware相关.md"
-    },
-    {
-      "basename": "convert逻辑",
-      "path": "Day Planners/convert逻辑.md"
-    },
-    {
-      "basename": "虚拟机安装",
-      "path": "Day Planners/虚拟机安装.md"
-    },
-    {
-      "basename": "文档",
-      "path": "Day Planners/文档.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "Day Planners/未命名.md"
-    },
-    {
-      "basename": "Day Planner-20221020",
-      "path": "Day Planners/Day Planner-20221020.md"
-    },
-    {
-      "basename": "Day Planner-20221019",
-      "path": "Day Planners/Day Planner-20221019.md"
-    },
-    {
-      "basename": "Day Planner-20221108",
-      "path": "Day Planners/Day Planner-20221108.md"
-    },
-    {
-      "basename": "Day Planner-20221107",
-      "path": "Day Planners/Day Planner-20221107.md"
     }
   ],
   "omittedPaths": [],

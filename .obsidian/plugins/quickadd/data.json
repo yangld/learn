@@ -108,7 +108,46 @@
           "openFile": false,
           "openFileInMode": "default"
         }
-      ]
+      ],
+      "collapsed": false
+    },
+    {
+      "id": "cfb7653c-4d06-4d78-ac3a-f3a2a73f15fa",
+      "name": "模版",
+      "type": "Multi",
+      "command": true,
+      "choices": [
+        {
+          "id": "5ce5e1d3-7f0d-4d78-9413-594fa614d2a5",
+          "name": "task-template",
+          "type": "Template",
+          "command": false,
+          "templatePath": "3工作日志/模版/task-template.md",
+          "fileNameFormat": {
+            "enabled": true,
+            "format": "{{DATE:YYYY-MM-DD}} {{name}}"
+          },
+          "folder": {
+            "enabled": true,
+            "folders": [
+              "3工作日志/日志",
+              "3工作日志/工作内容"
+            ],
+            "chooseWhenCreatingNote": false,
+            "createInSameFolderAsActiveFile": false
+          },
+          "appendLink": false,
+          "incrementFileName": false,
+          "openFileInNewTab": {
+            "enabled": true,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": true,
+          "openFileInMode": "default"
+        }
+      ],
+      "collapsed": false
     }
   ],
   "macros": [

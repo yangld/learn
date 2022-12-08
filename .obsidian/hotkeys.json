@@ -25,5 +25,14 @@
       ],
       "key": "T"
     }
+  ],
+  "quickadd:choice:cfb7653c-4d06-4d78-ac3a-f3a2a73f15fa": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "B"
+    }
   ]
 }
