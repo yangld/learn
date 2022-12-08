@@ -55,7 +55,7 @@
           },
           "format": {
             "enabled": true,
-            "format": "\\n-  {{DATE:YYYY-MM-DD HH:mm}} {{value}}"
+            "format": "\\n#  {{DATE:YYYY-MM-DD HH:mm}} \\n\\n{{value}}"
           },
           "insertAfter": {
             "enabled": true,
@@ -125,7 +125,7 @@
           "templatePath": "3工作日志/模版/task-template.md",
           "fileNameFormat": {
             "enabled": true,
-            "format": "{{DATE:YYYY-MM-DD}} {{name}}"
+            "format": "{{DATE:YYYY-MM-DD HH-mm}} {{name}}"
           },
           "folder": {
             "enabled": true,

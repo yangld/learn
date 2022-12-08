@@ -6,30 +6,30 @@
     "format": "[Day Planner-]YYYYMMDD",
     "folder": "Day Planners",
     "template": "知识管理/Template/日记模板-DayPlanner",
-    "enabled": true
+    "enabled": false
   },
   "weekly": {
     "format": "",
     "template": "",
     "folder": "",
-    "enabled": true
+    "enabled": false
   },
   "monthly": {
     "format": "",
     "template": "",
     "folder": "",
-    "enabled": true
+    "enabled": false
   },
   "quarterly": {
     "format": "",
     "template": "",
     "folder": "",
-    "enabled": true
+    "enabled": false
   },
   "yearly": {
     "format": "",
     "template": "",
     "folder": "",
-    "enabled": true
+    "enabled": false
   }
 }

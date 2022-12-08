@@ -1,20 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "2022-12-08 集中管控页面401",
-      "path": "3工作日志/日志/2022-12-08 集中管控页面401.md"
+      "basename": "2022-12-08 10-32 关联分析事件响应规则",
+      "path": "3工作日志/日志/2022-12-08 10-32 关联分析事件响应规则.md"
+    },
+    {
+      "basename": "task-template",
+      "path": "3工作日志/模版/task-template.md"
     },
     {
       "basename": "关联分析设计整理",
       "path": "关联分析设计整理.md"
     },
     {
-      "basename": "2022-12-07",
-      "path": "3工作日志/日志/2022-12-07.md"
+      "basename": "2022-12-08",
+      "path": "3工作日志/日志/2022-12-08.md"
     },
     {
-      "basename": "task-template",
-      "path": "3工作日志/模版/task-template.md"
+      "basename": "2022-12-08 10-10 集中管控页面401",
+      "path": "3工作日志/日志/2022-12-08 10-10 集中管控页面401.md"
+    },
+    {
+      "basename": "2022-12-10",
+      "path": "3工作日志/日志/2022-12-10.md"
+    },
+    {
+      "basename": "Day Planner-20221209",
+      "path": "Day Planners/Day Planner-20221209.md"
+    },
+    {
+      "basename": "Day Planner-20221208",
+      "path": "Day Planners/Day Planner-20221208.md"
+    },
+    {
+      "basename": "2022-12-07",
+      "path": "3工作日志/日志/2022-12-07.md"
     },
     {
       "basename": "3工作日志",
@@ -179,14 +199,6 @@
     {
       "basename": "集中管控web",
       "path": "1附件/集中管控web.md"
-    },
-    {
-      "basename": "国家集中管控升级",
-      "path": "Day Planners/国家集中管控升级.md"
-    },
-    {
-      "basename": "vmware相关",
-      "path": "Day Planners/vmware相关.md"
     }
   ],
   "omittedPaths": [],
