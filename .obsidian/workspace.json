@@ -202,7 +202,46 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "关联分析设计整理.md",
+                "file": "3工作日志/日志/2022-12-09.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "fa9d14365e2a96bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3工作日志/模版/daily-template.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "011e62cfc0443205",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3工作日志/日志/2022-12-09.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "37aec26529f14317",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3工作日志/日志/2022-12-09.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -210,7 +249,7 @@
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 16
       }
     ],
     "direction": "vertical"
@@ -261,7 +300,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -281,7 +320,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "关联分析设计整理.md"
+                "file": "3工作日志/日志/2022-12-09.md"
               }
             }
           },
@@ -314,7 +353,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "关联分析设计整理.md",
+                "file": "3工作日志/日志/2022-12-09.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -331,7 +370,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "关联分析设计整理.md",
+                "file": "3工作日志/日志/2022-12-09.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -358,20 +397,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292,
-    "collapsed": true
+    "width": 292
   },
-  "active": "a5db144dd836d246",
+  "active": "37aec26529f14317",
   "lastOpenFiles": [
-    "3工作日志/日志/2022-12-08 10-32 关联分析事件响应规则.md",
-    "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md",
+    "3工作日志/日志/2022-12-09 09-10 邮件列表-杨毅.md",
+    "3工作日志/日志/2022-12-09.md",
+    "3工作日志/日志/2022-12-09 09-10 邮件列表-徐钰.md",
+    "3工作日志/模版/daily-template.md",
     "3工作日志/日志/2022-12-08.md",
     "关联分析设计整理.md",
+    "3工作日志/日志/2022-12-08 10-32 关联分析事件响应规则.md",
+    "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md",
     "6TASK/概要设计/工作号码ER图.md",
-    "3工作日志/模版/task-template.md",
-    "3工作日志/日志/2022-12-08 10-10 集中管控页面401.md",
-    "3工作日志/日志/2022-12-08 10-17 test.md",
-    "3工作日志/日志/2022-12-10.md",
-    "Day Planners/Day Planner-20221209.md"
+    "3工作日志/模版/task-template.md"
   ]
 }

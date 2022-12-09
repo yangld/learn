@@ -1,6 +1,6 @@
 {
   "folder": "3工作日志/日志",
   "autorun": true,
-  "template": "",
+  "template": "3工作日志/模版/daily-template",
   "format": "YYYY-MM-DD"
 }
