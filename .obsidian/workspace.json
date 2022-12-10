@@ -202,7 +202,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2022-12-09.md",
+                "file": "3工作日志/日志/2022-12-10 17-26 bug修改.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -212,18 +212,20 @@
           {
             "id": "f99d348a1f52afa1",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md",
+                "file": "3工作日志/日志/2022-12-10.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
-              }
+              },
+              "pinned": true
             }
           }
         ],
-        "currentTab": 14
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -294,7 +296,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md"
+                "file": "3工作日志/日志/2022-12-10 17-26 bug修改.md"
               }
             }
           },
@@ -327,7 +329,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md",
+                "file": "3工作日志/日志/2022-12-10 17-26 bug修改.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -344,7 +346,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md",
+                "file": "3工作日志/日志/2022-12-10 17-26 bug修改.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -367,23 +369,23 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 292
   },
-  "active": "f99d348a1f52afa1",
+  "active": "5bed35fd1ac15503",
   "lastOpenFiles": [
-    "3工作日志/日志/2022-12-09 14-19 tmux整理会话,窗口,面板等命令.md",
-    "3工作日志/日志/2022-12-09.md",
-    "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md",
     "3工作日志/日志/todo.md",
-    "3工作日志/日志/2022-12-08 10-32 关联分析事件响应规则.md",
+    "3工作日志/日志/2022-12-10 17-26 bug修改.md",
+    "3工作日志/日志/2022-12-09 14-19 tmux整理会话,窗口,面板等命令.md",
     "3工作日志/日志/2022-12-09 09-10 邮件列表-杨毅.md",
     "3工作日志/日志/2022-12-09 09-10 邮件列表-徐钰.md",
-    "3工作日志/模版/daily-template.md",
-    "3工作日志/日志/2022-12-08.md",
-    "关联分析设计整理.md"
+    "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md",
+    "3工作日志/日志/2022-12-08 10-32 关联分析事件响应规则.md",
+    "3工作日志/日志/2022-12-08 10-10 集中管控页面401.md",
+    "3工作日志/日志/2022-12-09.md",
+    "3工作日志/日志/2022-12-10.md"
   ]
 }
