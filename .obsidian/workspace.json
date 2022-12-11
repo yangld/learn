@@ -202,7 +202,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2022-12-10 17-26 bug修改.md",
+                "file": "3工作日志/日志/todo.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -296,7 +296,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3工作日志/日志/2022-12-10 17-26 bug修改.md"
+                "file": "3工作日志/日志/todo.md"
               }
             }
           },
@@ -329,7 +329,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/2022-12-10 17-26 bug修改.md",
+                "file": "3工作日志/日志/todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -346,7 +346,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/2022-12-10 17-26 bug修改.md",
+                "file": "3工作日志/日志/todo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -373,12 +373,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292
+    "width": 292,
+    "collapsed": true
   },
   "active": "5bed35fd1ac15503",
   "lastOpenFiles": [
-    "3工作日志/日志/todo.md",
     "3工作日志/日志/2022-12-10 17-26 bug修改.md",
+    "3工作日志/日志/todo.md",
     "3工作日志/日志/2022-12-09 14-19 tmux整理会话,窗口,面板等命令.md",
     "3工作日志/日志/2022-12-09 09-10 邮件列表-杨毅.md",
     "3工作日志/日志/2022-12-09 09-10 邮件列表-徐钰.md",
