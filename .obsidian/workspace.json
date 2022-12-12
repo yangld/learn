@@ -217,7 +217,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2022.md",
+                "file": "3工作日志/日志/2022-12-12.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -296,7 +296,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022.md"
+                "file": "3工作日志/日志/2022-12-12.md"
               }
             }
           },
@@ -329,7 +329,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022.md",
+                "file": "3工作日志/日志/2022-12-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -346,7 +346,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022.md",
+                "file": "3工作日志/日志/2022-12-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
