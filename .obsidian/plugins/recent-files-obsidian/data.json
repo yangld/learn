@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "2022",
+      "path": "2022.md"
+    },
+    {
       "basename": "2022-12-12 09-26 obsidian学习",
       "path": "3工作日志/日志/2022-12-12 09-26 obsidian学习.md"
+    },
+    {
+      "basename": "3工作日志",
+      "path": "3工作日志/3工作日志.md"
+    },
+    {
+      "basename": "2022-12-10",
+      "path": "3工作日志/日志/2022-12-10.md"
+    },
+    {
+      "basename": "服务网关",
+      "path": "6TASK/服务网关/服务网关.md"
     },
     {
       "basename": "2022-12-08",
@@ -69,10 +85,6 @@
       "path": "3工作日志/日志/2022-12-08 10-10 集中管控页面401.md"
     },
     {
-      "basename": "2022-12-10",
-      "path": "3工作日志/日志/2022-12-10.md"
-    },
-    {
       "basename": "daily-template",
       "path": "3工作日志/模版/daily-template.md"
     },
@@ -91,10 +103,6 @@
     {
       "basename": "Day Planner-20221208",
       "path": "Day Planners/Day Planner-20221208.md"
-    },
-    {
-      "basename": "3工作日志",
-      "path": "3工作日志/3工作日志.md"
     },
     {
       "basename": "工作内容",
@@ -191,14 +199,6 @@
     {
       "basename": "202211281046",
       "path": "202211281046.md"
-    },
-    {
-      "basename": "202211241516",
-      "path": "202211241516.md"
-    },
-    {
-      "basename": "202211261050",
-      "path": "202211261050.md"
     }
   ],
   "omittedPaths": [],
