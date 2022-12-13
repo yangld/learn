@@ -230,8 +230,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2022-12-13.md",
-                "mode": "source",
+                "file": "3工作日志/日志/todo.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
@@ -309,7 +309,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3工作日志/日志/2022-12-13.md"
+                "file": "3工作日志/日志/todo.md"
               }
             }
           },
@@ -342,7 +342,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/2022-12-13.md",
+                "file": "3工作日志/日志/todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -359,7 +359,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/2022-12-13.md",
+                "file": "3工作日志/日志/todo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -391,9 +391,9 @@
   },
   "active": "686f74b0623dd8ee",
   "lastOpenFiles": [
+    "3工作日志/日志/2022-12-13.md",
     "3工作日志/日志/2022-12-12 09-26 obsidian学习.md",
     "3工作日志/日志/2022-12-13 09-16 bug列表\n.md",
-    "3工作日志/日志/2022-12-13.md",
     "3工作日志/日志/2022-12-12.md",
     "3工作日志/3工作日志.md",
     "3工作日志/日志/2022-12-10.md",

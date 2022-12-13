@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "todo",
+      "path": "3工作日志/日志/todo.md"
+    },
+    {
       "basename": "2022-12-13",
       "path": "3工作日志/日志/2022-12-13.md"
     },
@@ -59,10 +63,6 @@
     {
       "basename": "关联分析设计整理",
       "path": "关联分析设计整理.md"
-    },
-    {
-      "basename": "todo",
-      "path": "3工作日志/日志/todo.md"
     },
     {
       "basename": "2022-12-10 17-26 bug修改",
