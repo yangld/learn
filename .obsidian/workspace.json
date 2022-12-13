@@ -217,7 +217,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2022-12-12.md",
+                "file": "3工作日志/日志/2022-12-13 09-16 bug列表\n.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -296,7 +296,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3工作日志/日志/2022-12-12.md"
+                "file": "3工作日志/日志/2022-12-13 09-16 bug列表\n.md"
               }
             }
           },
@@ -329,7 +329,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/2022-12-12.md",
+                "file": "3工作日志/日志/2022-12-13 09-16 bug列表\n.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -346,7 +346,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/2022-12-12.md",
+                "file": "3工作日志/日志/2022-12-13 09-16 bug列表\n.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -378,15 +378,15 @@
   },
   "active": "b4115c689ff8f739",
   "lastOpenFiles": [
+    "3工作日志/日志/2022-12-13.md",
+    "3工作日志/日志/2022-12-13 09-16 bug列表\n.md",
+    "3工作日志/日志/2022-12-12.md",
     "3工作日志/日志/2022-12-12 09-26 obsidian学习.md",
     "3工作日志/3工作日志.md",
     "3工作日志/日志/2022-12-10.md",
     "6TASK/服务网关/服务网关.md",
     "2022.md",
     "3工作日志/日志/2022-12-08.md",
-    "3工作日志/日志/2022-12-09.md",
-    "3工作日志/日志/2022-12-07.md",
-    "3工作日志/太古可乐需求.md",
-    "8知识管理/Template/tag/template.md"
+    "3工作日志/日志/2022-12-09.md"
   ]
 }
