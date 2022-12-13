@@ -230,7 +230,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/todo.md",
+                "file": "关联分析设计整理.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -289,7 +289,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -309,7 +309,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3工作日志/日志/todo.md"
+                "file": "关联分析设计整理.md"
               }
             }
           },
@@ -342,7 +342,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/todo.md",
+                "file": "关联分析设计整理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -359,7 +359,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/todo.md",
+                "file": "关联分析设计整理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -391,15 +391,15 @@
   },
   "active": "686f74b0623dd8ee",
   "lastOpenFiles": [
+    "查看耀辉的代码,确定问题列表.md",
+    "3工作日志/模版/daily-template.md",
+    "3工作日志/日志/todo.md",
     "3工作日志/日志/2022-12-13.md",
     "3工作日志/日志/2022-12-12 09-26 obsidian学习.md",
     "3工作日志/日志/2022-12-13 09-16 bug列表\n.md",
     "3工作日志/日志/2022-12-12.md",
     "3工作日志/3工作日志.md",
     "3工作日志/日志/2022-12-10.md",
-    "6TASK/服务网关/服务网关.md",
-    "2022.md",
-    "3工作日志/日志/2022-12-08.md",
-    "3工作日志/日志/2022-12-09.md"
+    "6TASK/服务网关/服务网关.md"
   ]
 }
