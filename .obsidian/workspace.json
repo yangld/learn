@@ -212,26 +212,28 @@
             }
           },
           {
-            "id": "b4115c689ff8f739",
+            "id": "686f74b0623dd8ee",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2022-12-12 09-26 obsidian学习.md",
-                "mode": "source",
+                "file": "3工作日志/日志/2022-12-14.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "686f74b0623dd8ee",
+            "id": "bc02af84306b9082",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "关联分析设计整理.md",
-                "mode": "preview",
+                "file": "3工作日志/日志/2022-12-14 08-57 科来统一认证演讲.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               }
@@ -309,7 +311,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "关联分析设计整理.md"
+                "file": "3工作日志/日志/2022-12-14 08-57 科来统一认证演讲.md"
               }
             }
           },
@@ -342,7 +344,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "关联分析设计整理.md",
+                "file": "3工作日志/日志/2022-12-14 08-57 科来统一认证演讲.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -359,7 +361,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "关联分析设计整理.md",
+                "file": "3工作日志/日志/2022-12-14 08-57 科来统一认证演讲.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -389,17 +391,17 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "686f74b0623dd8ee",
+  "active": "bc02af84306b9082",
   "lastOpenFiles": [
+    "3工作日志/日志/2022-12-14.md",
+    "3工作日志/日志/2022-12-10.md",
+    "3工作日志/日志/2022-12-12 09-26 obsidian学习.md",
+    "3工作日志/日志/2022-12-14 08-55 bug处理.md",
+    "3工作日志/日志/2022-12-14 08-57 科来统一认证演讲.md",
+    "关联分析设计整理.md",
     "查看耀辉的代码,确定问题列表.md",
     "3工作日志/模版/daily-template.md",
     "3工作日志/日志/todo.md",
-    "3工作日志/日志/2022-12-13.md",
-    "3工作日志/日志/2022-12-12 09-26 obsidian学习.md",
-    "3工作日志/日志/2022-12-13 09-16 bug列表\n.md",
-    "3工作日志/日志/2022-12-12.md",
-    "3工作日志/3工作日志.md",
-    "3工作日志/日志/2022-12-10.md",
-    "6TASK/服务网关/服务网关.md"
+    "3工作日志/日志/2022-12-13.md"
   ]
 }
