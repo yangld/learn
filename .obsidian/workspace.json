@@ -225,9 +225,35 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "a19e6018f6f86062",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3工作日志/日志/2022-12-15.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "d73b31498550ef1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3工作日志/日志/2022-12-15 09-06 国家集中管控,-web端展示新需求.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 14
+        "currentTab": 16
       }
     ],
     "direction": "vertical"
@@ -278,12 +304,11 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 407,
-    "collapsed": true
+    "width": 407
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -299,7 +324,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3工作日志/日志/2022-12-14.md"
+                "file": "3工作日志/日志/2022-12-15 09-06 国家集中管控,-web端展示新需求.md"
               }
             }
           },
@@ -332,7 +357,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/2022-12-14.md",
+                "file": "3工作日志/日志/2022-12-15 09-06 国家集中管控,-web端展示新需求.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -349,7 +374,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/2022-12-14.md",
+                "file": "3工作日志/日志/2022-12-15 09-06 国家集中管控,-web端展示新需求.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -379,17 +404,17 @@
     "width": 292,
     "collapsed": true
   },
-  "active": "686f74b0623dd8ee",
+  "active": "d73b31498550ef1d",
   "lastOpenFiles": [
-    "3工作日志/日志/2022-12-14 08-57 科来统一认证演讲.md",
+    "3工作日志/日志/2022-12-15 09-05 bug处理.md",
+    "3工作日志/日志/2022-12-15.md",
     "3工作日志/日志/2022-12-14.md",
+    "3工作日志/日志/2022-12-14 08-55 bug处理.md",
+    "3工作日志/日志/2022-12-15 09-06 国家集中管控,-web端展示新需求.md",
+    "3工作日志/日志/2022-12-14 08-57 科来统一认证演讲.md",
     "3工作日志/日志/2022-12-10.md",
     "3工作日志/日志/2022-12-12 09-26 obsidian学习.md",
-    "3工作日志/日志/2022-12-14 08-55 bug处理.md",
     "关联分析设计整理.md",
-    "查看耀辉的代码,确定问题列表.md",
-    "3工作日志/模版/daily-template.md",
-    "3工作日志/日志/todo.md",
-    "3工作日志/日志/2022-12-13.md"
+    "查看耀辉的代码,确定问题列表.md"
   ]
 }
