@@ -1,16 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "Day Planner-20221107",
+      "path": "Day Planners/Day Planner-20221107.md"
+    },
+    {
+      "basename": "202211201324",
+      "path": "202211201324.md"
+    },
+    {
+      "basename": "2021-11-15",
+      "path": "3工作日志/2021-11-15.md"
+    },
+    {
+      "basename": "2021-11-18",
+      "path": "3工作日志/2021-11-18.md"
+    },
+    {
+      "basename": "2021-11-16",
+      "path": "3工作日志/2021-11-16.md"
+    },
+    {
+      "basename": "2022-12-15",
+      "path": "3工作日志/日志/2022-12-15.md"
+    },
+    {
+      "basename": "2022-12-19",
+      "path": "3工作日志/日志/2022-12-19.md"
+    },
+    {
       "basename": "2022-12-15 09-06 国家集中管控,-web端展示新需求",
       "path": "3工作日志/日志/2022-12-15 09-06 国家集中管控,-web端展示新需求.md"
     },
     {
       "basename": "2022-12-15 10-11 学习 espanso ",
       "path": "3工作日志/日志/2022-12-15 10-11 学习 espanso .md"
-    },
-    {
-      "basename": "2022-12-15",
-      "path": "3工作日志/日志/2022-12-15.md"
     },
     {
       "basename": "2022-12-15 09-05 bug处理",
@@ -175,30 +199,6 @@
     {
       "basename": "202211281714",
       "path": "202211281714.md"
-    },
-    {
-      "basename": "202212071025",
-      "path": "202212071025.md"
-    },
-    {
-      "basename": "测试看板",
-      "path": "测试看板.md"
-    },
-    {
-      "basename": "阅读文档-声纹认证",
-      "path": "阅读文档-声纹认证.md"
-    },
-    {
-      "basename": "mysql5.7多源复制",
-      "path": "1附件/mysql5.7多源复制.md"
-    },
-    {
-      "basename": "rsync配置手册",
-      "path": "rsync配置手册.md"
-    },
-    {
-      "basename": "have_ssl",
-      "path": "have_ssl.md"
     }
   ],
   "omittedPaths": [],
