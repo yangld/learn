@@ -271,7 +271,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2022-12-24.md",
+                "file": "未完成工作任务1121.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -334,7 +334,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407
+    "width": 407,
+    "collapsed": true
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -350,7 +351,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3工作日志/日志/2022-12-24.md"
+                "file": "未完成工作任务1121.md"
               }
             }
           },
@@ -360,7 +361,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#规范/省集中管控接口文档",
+                "query": "景鸿",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -383,7 +384,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/2022-12-24.md",
+                "file": "未完成工作任务1121.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -400,7 +401,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/2022-12-24.md",
+                "file": "未完成工作任务1121.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -423,7 +424,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -447,15 +448,15 @@
   },
   "active": "2dca2c81ab13026a",
   "lastOpenFiles": [
+    "工作看板.md",
+    "202211301625.md",
+    "3工作日志/日志/2022-12-24.md",
     "202211201324.md",
     "3工作日志/2021-11-15.md",
     "3工作日志/2021-11-18.md",
     "3工作日志/2021-11-16.md",
     "3工作日志/日志/2022-12-15.md",
     "3工作日志/日志/2022-12-19.md",
-    "3工作日志/日志/2022-12-15 09-06 国家集中管控,-web端展示新需求.md",
-    "3工作日志/日志/2022-12-15 10-11 学习 espanso .md",
-    "3工作日志/日志/2022-12-15 09-05 bug处理.md",
-    "3工作日志/日志/2022-12-14.md"
+    "3工作日志/日志/2022-12-15 09-06 国家集中管控,-web端展示新需求.md"
   ]
 }
