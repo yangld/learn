@@ -454,7 +454,7 @@
             }
           },
           {
-            "id": "a6be4e0d83530b75",
+            "id": "8ced22342d2f7637",
             "type": "leaf",
             "state": {
               "type": "todo",
@@ -462,7 +462,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -471,7 +471,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -481,10 +480,11 @@
       "command-palette:打开命令面板": false,
       "zk-prefixer:创建时间戳笔记": false,
       "workspaces:管理工作区布局": false,
-      "publish:发布更改": false
+      "publish:发布更改": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "53e36039590d864e",
+  "active": "8ced22342d2f7637",
   "lastOpenFiles": [
     "3工作日志/日志/2022-12-24 16-34 景鸿逻辑修改\n.md",
     "3工作日志/日志/2022-12-26.md",
