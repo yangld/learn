@@ -5,6 +5,14 @@
       "path": "3工作日志/日志/2022-12-26.md"
     },
     {
+      "basename": "2022-12-27",
+      "path": "3工作日志/日志/2022-12-27.md"
+    },
+    {
+      "basename": "mysql5.7多源复制",
+      "path": "1附件/mysql5.7多源复制.md"
+    },
+    {
       "basename": "2022-12-26 10-11 景鸿逻辑修改",
       "path": "3工作日志/日志/2022-12-26 10-11 景鸿逻辑修改.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Day Planner-20221209",
       "path": "Day Planners/Day Planner-20221209.md"
-    },
-    {
-      "basename": "Day Planner-20221208",
-      "path": "Day Planners/Day Planner-20221208.md"
-    },
-    {
-      "basename": "工作内容",
-      "path": "3工作日志/工作内容/工作内容.md"
     }
   ],
   "omittedPaths": [],
