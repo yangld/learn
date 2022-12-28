@@ -6,6 +6,7 @@
       {
         "id": "6140b794598f0345",
         "type": "tabs",
+        "dimension": 24.19908466819222,
         "children": [
           {
             "id": "60ab56830a853c69",
@@ -219,7 +220,7 @@
               "type": "markdown",
               "state": {
                 "file": "3工作日志/日志/2022-12-14.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               },
@@ -227,52 +228,13 @@
             }
           },
           {
-            "id": "a19e6018f6f86062",
+            "id": "12c69caa8af97ebc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2022-12-27.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "d73b31498550ef1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3工作日志/日志/2022-12-15.md",
+                "file": "3工作日志/日志/2022-12-28.md",
                 "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "b5bba66be0659437",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Day Planners/Day Planner-20221107.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "2dca2c81ab13026a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3工作日志/日志/2022-12-26.md",
-                "mode": "source",
                 "backlinks": true,
                 "source": true
               }
@@ -282,35 +244,17 @@
         "currentTab": 15
       },
       {
-        "id": "e28391b6dea3b286",
+        "id": "5097a8648cdf2ee5",
         "type": "tabs",
+        "dimension": 75.80091533180779,
         "children": [
           {
-            "id": "7a3539d0d31fd1ba",
+            "id": "c728f26323bf4efa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2022-12-24 16-34 景鸿逻辑修改\n.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "83d470fd2422b445",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "53e36039590d864e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3工作日志/日志/2022-12-26.md",
+                "file": "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -389,7 +333,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3工作日志/日志/2022-12-26.md"
+                "file": "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md"
               }
             }
           },
@@ -422,7 +366,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/2022-12-26.md",
+                "file": "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -439,7 +383,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/2022-12-26.md",
+                "file": "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -462,7 +406,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -484,17 +428,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "53e36039590d864e",
+  "active": "c728f26323bf4efa",
   "lastOpenFiles": [
+    "3工作日志/日志/2022-12-14.md",
     "3工作日志/日志/2022-12-24 16-34 景鸿逻辑修改\n.md",
-    "3工作日志/日志/2022-12-27.md",
+    "3工作日志/日志/2022-12-15.md",
+    "Day Planners/Day Planner-20221107.md",
     "3工作日志/日志/2022-12-26.md",
+    "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md",
+    "3工作日志/日志/2022-12-28.md",
+    "3工作日志/日志/2022-12-27.md",
     "1附件/mysql5.7多源复制.md",
-    "未完成工作任务1121.md",
-    "工作看板.md",
-    "202211301625.md",
-    "3工作日志/日志/2022-12-24.md",
-    "202211201324.md",
-    "3工作日志/2021-11-15.md"
+    "未完成工作任务1121.md"
   ]
 }
