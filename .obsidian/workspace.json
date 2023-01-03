@@ -6,7 +6,7 @@
       {
         "id": "6140b794598f0345",
         "type": "tabs",
-        "dimension": 24.19908466819222,
+        "dimension": 38.96821741133118,
         "children": [
           {
             "id": "60ab56830a853c69",
@@ -226,35 +226,22 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "12c69caa8af97ebc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3工作日志/日志/2022-12-28.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
           }
         ],
-        "currentTab": 15
+        "currentTab": 14
       },
       {
-        "id": "5097a8648cdf2ee5",
+        "id": "6c3b2346460fe08d",
         "type": "tabs",
-        "dimension": 75.80091533180779,
+        "dimension": 61.03178258866881,
         "children": [
           {
-            "id": "c728f26323bf4efa",
+            "id": "703cb87c6bb6b7be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md",
+                "file": "3工作日志/日志/2023-01-03 09-11 工作日志\n.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -333,7 +320,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md"
+                "file": "3工作日志/日志/2023-01-03 09-11 工作日志\n.md"
               }
             }
           },
@@ -366,7 +353,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md",
+                "file": "3工作日志/日志/2023-01-03 09-11 工作日志\n.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -383,7 +370,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md",
+                "file": "3工作日志/日志/2023-01-03 09-11 工作日志\n.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -428,17 +415,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c728f26323bf4efa",
+  "active": "703cb87c6bb6b7be",
   "lastOpenFiles": [
-    "3工作日志/日志/未命名.md",
-    "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md",
     "3工作日志/日志/2022-12-14.md",
+    "3工作日志/日志/2023-01-03 09-11 工作日志\n.md",
+    "3工作日志/日志/2023-01-03.md",
+    "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md",
+    "3工作日志/日志/未命名.md",
     "3工作日志/日志/2022-12-24 16-34 景鸿逻辑修改\n.md",
     "3工作日志/日志/2022-12-15.md",
     "Day Planners/Day Planner-20221107.md",
     "3工作日志/日志/2022-12-26.md",
-    "3工作日志/日志/2022-12-28.md",
-    "3工作日志/日志/2022-12-27.md",
-    "1附件/mysql5.7多源复制.md"
+    "3工作日志/日志/2022-12-28.md"
   ]
 }
