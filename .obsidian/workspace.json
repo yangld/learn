@@ -241,7 +241,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2023-01-03 09-11 工作日志\n.md",
+                "file": "3工作日志/日志/2022-12-09 14-19 tmux整理会话,窗口,面板等命令.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -303,8 +303,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407,
-    "collapsed": true
+    "width": 407
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -320,7 +319,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3工作日志/日志/2023-01-03 09-11 工作日志\n.md"
+                "file": "3工作日志/日志/2022-12-09 14-19 tmux整理会话,窗口,面板等命令.md"
               }
             }
           },
@@ -353,7 +352,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/2023-01-03 09-11 工作日志\n.md",
+                "file": "3工作日志/日志/2022-12-09 14-19 tmux整理会话,窗口,面板等命令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -370,7 +369,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/2023-01-03 09-11 工作日志\n.md",
+                "file": "3工作日志/日志/2022-12-09 14-19 tmux整理会话,窗口,面板等命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -417,9 +416,9 @@
   },
   "active": "703cb87c6bb6b7be",
   "lastOpenFiles": [
+    "3工作日志/日志/2023-01-03 09-11 工作日志\n.md",
     "3工作日志/日志/2023-01-03.md",
     "3工作日志/日志/2022-12-14.md",
-    "3工作日志/日志/2023-01-03 09-11 工作日志\n.md",
     "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md",
     "3工作日志/日志/未命名.md",
     "3工作日志/日志/2022-12-24 16-34 景鸿逻辑修改\n.md",
