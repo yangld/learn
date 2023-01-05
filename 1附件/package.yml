@@ -1,0 +1,111 @@
+name: markdown-shortcuts
+parent: default
+
+matches:
+  - triggers: [":block:", ":mb:"]
+    replace: |-
+        ```$|$
+        ```
+    force_clipboard: true
+
+  - triggers: [":code:", ":mc:"]
+    replace: |-
+        `$|$`
+    force_clipboard: true
+
+  - trigger: ":h1:"
+    replace: "#"
+
+  - trigger: ";---;"
+    replace: "System.out.println(\"-----------\");\n"
+
+  - trigger: ";mvni"
+    replace: "mvn clean install -Dmaven.test.skip=true\n"
+
+  - trigger: ";p0"
+    replace: "pekall1234\n"
+
+  - trigger: ";p1"
+    replace: "pekall12#$\n"
+
+  - trigger: ";p2"
+    replace: "Pekall12#$\n"
+
+  - trigger: ";;;"
+    replace: "\n\n"
+
+  - trigger: ";rrr"
+    replace: "history | fzf \n"
+
+  - trigger: ";gl"
+    replace: "git pull \n"
+
+  - trigger: ";gp"
+    replace: "git push \n"
+
+  - trigger: ";gst"
+    replace: "git status \n"
+
+  - trigger: ";cat"
+    replace: "bat "
+
+  - trigger: ";du"
+    replace: "ncdu "
+
+
+  - trigger: ";stop-cen"
+    replace: " /apps/init.d/center_runtimeService stop\n"
+
+  - trigger: ";start-cen"
+    replace: " /apps/init.d/center_runtimeService start\n"
+
+  - trigger: ";cl"
+    replace: "clear\n"
+
+  - trigger: ":h2:"
+    replace: "##"
+
+  - trigger: ":h3:"
+    replace: "###"
+
+  - trigger: ":h4:"
+    replace: "####"
+
+  - trigger: ":h5:"
+    replace: "#####"
+
+  - trigger: ":h6:"
+    replace: "######"
+
+  - trigger: ":bold:"
+    replace: "**$|$**"
+
+  - trigger: ":italic:"
+    replace: "*$|$*"
+
+  - trigger: ":strike:"
+    replace: "~~$|$~~"
+
+  - trigger: ":url:"
+    replace: "[$|$]()"
+
+  - triggers: [":image:", ":img:"]
+    replace: "![]($|$)"
+
+  - triggers: [":horizontal:", ":mh:"]
+    replace: "___"
+
+  - triggers: [":task:", ":mt:"]
+    replace: "- [ ] "
+
+  - triggers: [":taskdone:", ":mtd:"]
+    replace: "- [x] "
+
+  - triggers: [":collapse:", ":mcol:"]
+    replace: |-
+        <details>
+        <summary></summary>
+
+        $|$
+        </details>
+    force_clipboard: true
