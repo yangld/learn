@@ -241,7 +241,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3工作日志/日志/2023-01-05 09-29 todo.md",
+                "file": "Day Planners/国家集中管控升级.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -320,7 +320,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3工作日志/日志/2023-01-05 09-29 todo.md"
+                "file": "Day Planners/国家集中管控升级.md"
               }
             }
           },
@@ -353,7 +353,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/2023-01-05 09-29 todo.md",
+                "file": "Day Planners/国家集中管控升级.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -370,7 +370,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/2023-01-05 09-29 todo.md",
+                "file": "Day Planners/国家集中管控升级.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -415,8 +415,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e6e0436766609b88",
+  "active": "7b20d031e8d21e8f",
   "lastOpenFiles": [
+    "3工作日志/日志/2023-01-05 09-29 todo.md",
     "3工作日志/日志/2023-01-04 14-41 flink-convert.md",
     "3工作日志/日志/2022-12-14.md",
     "3工作日志/日志/2022-12-09 14-19 tmux整理会话,窗口,面板等命令.md",
@@ -425,7 +426,6 @@
     "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md",
     "3工作日志/日志/未命名.md",
     "3工作日志/日志/2022-12-24 16-34 景鸿逻辑修改\n.md",
-    "3工作日志/日志/2022-12-15.md",
-    "Day Planners/Day Planner-20221107.md"
+    "3工作日志/日志/2022-12-15.md"
   ]
 }
