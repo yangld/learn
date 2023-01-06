@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "阅读接口文档",
+      "path": "阅读接口文档.md"
+    },
+    {
+      "basename": "工作看板",
+      "path": "工作看板.md"
+    },
+    {
+      "basename": "mysql5.7多源复制",
+      "path": "1附件/mysql5.7多源复制.md"
+    },
+    {
+      "basename": "rsync配置手册",
+      "path": "rsync配置手册.md"
+    },
+    {
+      "basename": "have_ssl",
+      "path": "have_ssl.md"
+    },
+    {
+      "basename": "202211281714",
+      "path": "202211281714.md"
+    },
+    {
       "basename": "国家集中管控升级",
       "path": "Day Planners/国家集中管控升级.md"
     },
@@ -61,20 +85,12 @@
       "path": "3工作日志/日志/2022-12-27.md"
     },
     {
-      "basename": "mysql5.7多源复制",
-      "path": "1附件/mysql5.7多源复制.md"
-    },
-    {
       "basename": "2022-12-26 10-11 景鸿逻辑修改",
       "path": "3工作日志/日志/2022-12-26 10-11 景鸿逻辑修改.md"
     },
     {
       "basename": "未完成工作任务1121",
       "path": "未完成工作任务1121.md"
-    },
-    {
-      "basename": "工作看板",
-      "path": "工作看板.md"
     },
     {
       "basename": "202211301625",
@@ -183,22 +199,6 @@
     {
       "basename": "2022-12-07",
       "path": "3工作日志/日志/2022-12-07.md"
-    },
-    {
-      "basename": "太古可乐需求",
-      "path": "3工作日志/太古可乐需求.md"
-    },
-    {
-      "basename": "template",
-      "path": "8知识管理/Template/tag/template.md"
-    },
-    {
-      "basename": "2021-11-10",
-      "path": "3工作日志/2021-11-10.md"
-    },
-    {
-      "basename": "2022-12-10 17-26 bug修改",
-      "path": "3工作日志/日志/2022-12-10 17-26 bug修改.md"
     }
   ],
   "omittedPaths": [],
