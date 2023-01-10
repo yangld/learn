@@ -20,6 +20,19 @@
             }
           },
           {
+            "id": "87d1b615f54d4820",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "607文档编写.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "fbaf1c091ded8ca3",
             "type": "leaf",
             "pinned": true,
@@ -58,7 +71,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -129,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "706新项目.md"
+                "file": "607文档编写.md"
               }
             }
           },
@@ -162,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "706新项目.md",
+                "file": "607文档编写.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "706新项目.md",
+                "file": "607文档编写.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -224,17 +237,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2e965fab692b3ae7",
+  "active": "87d1b615f54d4820",
   "lastOpenFiles": [
-    "阅读接口文档.md",
     "工作看板.md",
+    "706新项目.md",
+    "阅读接口文档.md",
     "1附件/WechatIMG639.png",
     "添加应用时,支持手动选择设备类型, 端和边.md",
     "3工作日志/日志/2022-12-24 16-34 景鸿逻辑修改\n.md",
     "Day Planners/国家集中管控升级.md",
     "202211281714.md",
     "rsync配置手册.md",
-    "1附件/mysql5.7多源复制.md",
-    "证书声纹双认证计划.md"
+    "1附件/mysql5.7多源复制.md"
   ]
 }
