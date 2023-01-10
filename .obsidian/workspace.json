@@ -20,6 +20,19 @@
             }
           },
           {
+            "id": "3f29b6a7270e1d5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "607文档编写.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "87d1b615f54d4820",
             "type": "leaf",
             "state": {
@@ -60,7 +73,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -115,7 +129,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 486
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -131,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作看板.md"
+                "file": "607文档编写.md"
               }
             }
           },
@@ -164,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作看板.md",
+                "file": "607文档编写.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作看板.md",
+                "file": "607文档编写.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,10 +241,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4d4ef17ceb207811",
+  "active": "3f29b6a7270e1d5b",
   "lastOpenFiles": [
-    "607文档编写.md",
     "工作看板.md",
+    "607文档编写.md",
     "阅读接口文档.md",
     "1附件/WechatIMG639.png",
     "706新项目.md",
