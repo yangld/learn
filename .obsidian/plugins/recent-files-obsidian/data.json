@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "607文档编写",
-      "path": "607文档编写.md"
+      "basename": "bug列表",
+      "path": "bug列表.md"
     },
     {
       "basename": "工作看板",
       "path": "工作看板.md"
+    },
+    {
+      "basename": "一所,jjj级联不显示应用最新版本, 星火查询到最新的版本了",
+      "path": "一所,jjj级联不显示应用最新版本, 星火查询到最新的版本了.md"
+    },
+    {
+      "basename": "607文档编写",
+      "path": "607文档编写.md"
     },
     {
       "basename": "阅读接口文档",
@@ -191,14 +199,6 @@
     {
       "basename": "2022-12-13 09-16 bug列表\n",
       "path": "3工作日志/日志/2022-12-13 09-16 bug列表\n.md"
-    },
-    {
-      "basename": "2022-12-12",
-      "path": "3工作日志/日志/2022-12-12.md"
-    },
-    {
-      "basename": "2022",
-      "path": "2022.md"
     }
   ],
   "omittedPaths": [],
