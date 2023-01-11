@@ -20,6 +20,19 @@
             }
           },
           {
+            "id": "1c8a0eff2c3ac1ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "bug列表,待部署.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "1b465947fd020919",
             "type": "leaf",
             "state": {
@@ -99,7 +112,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -171,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作看板.md"
+                "file": "607文档编写.md"
               }
             }
           },
@@ -204,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作看板.md",
+                "file": "607文档编写.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -221,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作看板.md",
+                "file": "607文档编写.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,7 +280,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4d4ef17ceb207811",
+  "active": "87d1b615f54d4820",
   "lastOpenFiles": [
     "bug列表,待部署.md",
     "工作看板.md",
