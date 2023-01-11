@@ -3101,6 +3101,441 @@ function derived(stores, fn, initial_value) {
     });
 }
 
+function projectFolderPath(draft, vault) {
+    return vault.getAbstractFileByPath(draft.vaultPath).parent.path;
+}
+function sceneFolderPath(draft, vault) {
+    const root = vault.getAbstractFileByPath(draft.vaultPath).parent.path;
+    return obsidian.normalizePath(`${root}/${draft.sceneFolder}`);
+}
+function scenePathForFolder(sceneName, folderPath) {
+    return obsidian.normalizePath(`${folderPath}/${sceneName}.md`);
+}
+function scenePath(sceneName, draft, vault) {
+    const sceneFolder = sceneFolderPath(draft, vault);
+    return scenePathForFolder(sceneName, sceneFolder);
+}
+function findScene(path, drafts) {
+    for (const draft of drafts) {
+        if (draft.format === "scenes") {
+            const parentPath = draft.vaultPath.split("/").slice(0, -1).join("/");
+            if (parentPath !== "" && !parentPath) {
+                continue;
+            }
+            const index = draft.scenes.findIndex((s) => obsidian.normalizePath(`${parentPath}/${draft.sceneFolder}/${s.title}.md`) ===
+                path);
+            if (index >= 0) {
+                return { draft, index, currentIndent: draft.scenes[index].indent };
+            }
+        }
+    }
+    return null;
+}
+function draftForPath(path, drafts) {
+    for (const draft of drafts) {
+        if (draft.vaultPath === path) {
+            return draft;
+        }
+        else {
+            const found = findScene(path, drafts);
+            if (found) {
+                return found.draft;
+            }
+        }
+    }
+    return null;
+}
+function scenePathForLocation(location, path, drafts, vault) {
+    for (const draft of drafts) {
+        if (draft.format === "scenes") {
+            const root = vault.getAbstractFileByPath(draft.vaultPath).parent.path;
+            const index = draft.scenes.findIndex((s) => obsidian.normalizePath(`${root}/${draft.sceneFolder}/${s.title}.md`) === path);
+            if (index >= 0) {
+                if (location.position === "next" && index < draft.scenes.length - 1) {
+                    if (!location.maintainIndent) {
+                        const nextScene = draft.scenes[index + 1];
+                        return obsidian.normalizePath(`${root}/${draft.sceneFolder}/${nextScene.title}.md`);
+                    }
+                    else {
+                        const indent = draft.scenes[index].indent;
+                        const nextSceneAtIndent = draft.scenes
+                            .slice(index + 1)
+                            .find((s) => s.indent === indent);
+                        if (nextSceneAtIndent) {
+                            return obsidian.normalizePath(`${root}/${draft.sceneFolder}/${nextSceneAtIndent.title}.md`);
+                        }
+                    }
+                }
+                else if (location.position === "previous" && index > 0) {
+                    if (!location.maintainIndent) {
+                        const previousScene = draft.scenes[index - 1];
+                        return obsidian.normalizePath(`${root}/${draft.sceneFolder}/${previousScene.title}.md`);
+                    }
+                    else {
+                        const indent = draft.scenes[index].indent;
+                        const previousSceneAtIndent = draft.scenes
+                            .slice(0, index)
+                            .find((s) => s.indent === indent);
+                        if (previousSceneAtIndent) {
+                            return obsidian.normalizePath(`${root}/${draft.sceneFolder}/${previousSceneAtIndent.title}.md`);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return null;
+}
+
+function draftTitle(draft) {
+    var _a;
+    return (_a = draft.draftTitle) !== null && _a !== void 0 ? _a : draft.vaultPath;
+}
+function insertScene(draftsStore, draft, sceneName, vault, location, createNoteCallback) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const newScenePath = scenePath(sceneName, draft, vault);
+        if (!newScenePath || !draft || draft.format !== "scenes") {
+            return;
+        }
+        draftsStore.update((allDrafts) => {
+            return allDrafts.map((d) => {
+                if (d.vaultPath === draft.vaultPath && d.format === "scenes") {
+                    if (location.at === "end") {
+                        d.scenes = [...d.scenes, { title: sceneName, indent: 0 }];
+                    }
+                    else {
+                        const relativeScene = d.scenes[location.relativeTo];
+                        const index = location.at === "before"
+                            ? location.relativeTo
+                            : location.relativeTo + 1;
+                        d.scenes.splice(index, 0, {
+                            title: sceneName,
+                            indent: relativeScene.indent,
+                        });
+                    }
+                }
+                return d;
+            });
+        });
+        yield createNoteCallback(newScenePath);
+    });
+}
+function setDraftOnFrontmatterObject(obj, draft) {
+    obj["longform"] = {};
+    obj["longform"]["format"] = draft.format;
+    if (draft.titleInFrontmatter) {
+        obj["longform"]["title"] = draft.title;
+    }
+    if (draft.draftTitle) {
+        obj["longform"]["draftTitle"] = draft.draftTitle;
+    }
+    if (draft.workflow) {
+        obj["longform"]["workflow"] = draft.workflow;
+    }
+    if (draft.format === "scenes") {
+        obj["longform"]["sceneFolder"] = draft.sceneFolder;
+        obj["longform"]["scenes"] = indentedScenesToArrays(draft.scenes);
+        obj["longform"]["ignoredFiles"] = draft.ignoredFiles;
+    }
+}
+function indentedScenesToArrays(indented) {
+    const result = [];
+    // track our current indentation level
+    let currentIndent = 0;
+    // array for the current indentation level
+    let currentNesting = result;
+    // memoized arrays so that later, lesser indents can use earlier-created array
+    const nestingAt = {};
+    nestingAt[0] = currentNesting;
+    indented.forEach(({ title, indent }) => {
+        if (indent > currentIndent) {
+            // we're at a deeper indentation level than current,
+            // so build up a nest and memoize it
+            while (currentIndent < indent) {
+                currentIndent = currentIndent + 1;
+                const newNesting = [];
+                currentNesting.push(newNesting);
+                nestingAt[currentIndent] = newNesting;
+                currentNesting = newNesting;
+            }
+        }
+        else if (indent < currentIndent) {
+            // we're at a lesser indentation level than current,
+            // so drop back to previously memoized nesting
+            currentNesting = nestingAt[indent];
+            currentIndent = indent;
+        }
+        // actually insert the value
+        currentNesting.push(title);
+    });
+    return result;
+}
+function arraysToIndentedScenes(arr, result = [], currentIndent = -1) {
+    if (arr instanceof Array) {
+        if (arr.length === 0) {
+            return result;
+        }
+        const next = arr.shift();
+        const inner = arraysToIndentedScenes(next, [], currentIndent + 1);
+        return arraysToIndentedScenes(arr, [...result, ...inner], currentIndent);
+    }
+    else {
+        return [
+            {
+                title: arr,
+                indent: currentIndent,
+            },
+        ];
+    }
+}
+function numberScenes(scenes) {
+    const numbering = [0];
+    let lastNumberedIndent = 0;
+    return scenes.map((scene) => {
+        const { indent } = scene;
+        if (indent > lastNumberedIndent) {
+            let fill = lastNumberedIndent + 1;
+            while (fill <= indent) {
+                numbering[fill] = 1;
+                fill = fill + 1;
+            }
+            numbering[indent] = 0;
+        }
+        else if (indent < lastNumberedIndent) {
+            const start = indent + 1;
+            numbering.splice(start, numbering.length - start);
+        }
+        lastNumberedIndent = indent;
+        numbering[indent] = numbering[indent] + 1;
+        return Object.assign(Object.assign({}, scene), { numbering: [...numbering] });
+    });
+}
+function formatSceneNumber(numbering) {
+    return numbering.join(".");
+}
+function insertDraftIntoFrontmatter(path, draft) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const exists = yield app.vault.adapter.exists(path);
+        if (!exists) {
+            yield app.vault.create(path, "");
+        }
+        const file = app.vault.getAbstractFileByPath(path);
+        if (!(file instanceof obsidian.TFile)) {
+            // TODO: error?
+            return;
+        }
+        try {
+            yield app.fileManager.processFrontMatter(file, (fm) => {
+                setDraftOnFrontmatterObject(fm, draft);
+            });
+        }
+        catch (error) {
+            console.error("[Longform] insertDraftIntoFrontmatter: processFrontMatter error:", error);
+        }
+    });
+}
+
+var CompileStepKind;
+(function (CompileStepKind) {
+    /** Takes an array of scene files, processes them in some way, and outputs an array of scene files. */
+    CompileStepKind["Scene"] = "Scene";
+    /** Takes an array of scene files and processes them such that the output is a single manuscript file. */
+    CompileStepKind["Join"] = "Join";
+    /** Takes a single manuscript file, processes it in some way, and outputs a single manuscript file. */
+    CompileStepKind["Manuscript"] = "Manuscript";
+})(CompileStepKind || (CompileStepKind = {}));
+function formatStepKind(k) {
+    switch (k) {
+        case CompileStepKind.Scene:
+            return "Scene";
+        case CompileStepKind.Join:
+            return "Join";
+        case CompileStepKind.Manuscript:
+            return "Manuscript";
+    }
+}
+function explainStepKind(k) {
+    switch (k) {
+        case CompileStepKind.Scene:
+            return "Runs on every scene in your manuscript and outputs the resulting scenes.";
+        case CompileStepKind.Join:
+            return "Accepts all scenes as input and outputs a single manuscript.";
+        case CompileStepKind.Manuscript:
+            return "Runs once on your compiled manuscript.";
+    }
+}
+/** The type of an option’s value. Determines the type of input in the compile UI. */
+var CompileStepOptionType;
+(function (CompileStepOptionType) {
+    /** A checkbox corresponding to either true or false. */
+    CompileStepOptionType[CompileStepOptionType["Boolean"] = 0] = "Boolean";
+    /** A single-line freeform text entry. */
+    CompileStepOptionType[CompileStepOptionType["Text"] = 1] = "Text";
+})(CompileStepOptionType || (CompileStepOptionType = {}));
+function makeBuiltinStep(v, isScript = false) {
+    return Object.assign(Object.assign({}, v), { description: Object.assign(Object.assign({}, v.description), { canonicalID: v.id, isScript: isScript }), optionValues: v.description.options.reduce((agg, opt) => {
+            return Object.assign(Object.assign({}, agg), { [opt.id]: opt.default });
+        }, {}) });
+}
+function typeMismatchError(expected, got, context) {
+    return new Error(`[Longform] A compile step received a type it did not expect. It expected "${expected}", but got "${got}" with step kind "${context.kind}"`);
+}
+const PLACEHOLDER_MISSING_STEP = {
+    id: "placeholder-missing-step",
+    description: {
+        canonicalID: "placeholder-missing-step",
+        name: "",
+        description: "",
+        isScript: false,
+        availableKinds: [],
+        options: [],
+    },
+    optionValues: {},
+    compile: (a) => a,
+};
+
+function formatOptionValues(values) {
+    const formattedOptions = {};
+    for (const key of Object.keys(values)) {
+        let v = values[key];
+        if (typeof v === "string") {
+            v = v.split("\\n").join("\n");
+        }
+        formattedOptions[key] = v;
+    }
+    return formattedOptions;
+}
+function compile(app, draft, workflow, kinds, statusCallback) {
+    return __awaiter(this, void 0, void 0, function* () {
+        let currentInput;
+        if (draft.format === "single") {
+            const path = draft.vaultPath;
+            const contents = yield app.vault.adapter.read(path);
+            const metadata = app.metadataCache.getCache(path);
+            currentInput = [
+                {
+                    path,
+                    name: draft.title,
+                    contents,
+                    metadata,
+                },
+            ];
+        }
+        else {
+            const folderPath = sceneFolderPath(draft, app.vault);
+            currentInput = [];
+            // Build initial inputs
+            for (const scene of numberScenes(draft.scenes)) {
+                const path = scenePathForFolder(scene.title, folderPath);
+                const contents = yield app.vault.adapter.read(path);
+                const metadata = app.metadataCache.getCache(path);
+                currentInput.push({
+                    path,
+                    name: scene.title,
+                    contents,
+                    metadata,
+                    indentationLevel: scene.indent,
+                    numbering: scene.numbering,
+                });
+            }
+        }
+        for (let index = 0; index < workflow.steps.length; index++) {
+            const step = workflow.steps[index];
+            const kind = index < kinds.length ? kinds[index] : null;
+            if (kind === null) {
+                const error = `No step kind data for step at position ${index}.`;
+                console.error(`[Longform] ${error}`);
+                statusCallback({
+                    kind: "CompileStatusError",
+                    error,
+                });
+                return;
+            }
+            const context = {
+                kind,
+                optionValues: formatOptionValues(step.optionValues),
+                projectPath: projectFolderPath(draft, app.vault),
+                draft,
+                app,
+                utilities: {
+                    normalizePath: obsidian.normalizePath,
+                },
+            };
+            console.log(`[Longform] Running compile step ${step.description.name} with context:`, context);
+            statusCallback({
+                kind: "CompileStatusStep",
+                stepIndex: index,
+                totalSteps: workflow.steps.length,
+                stepKind: kind,
+            });
+            // TODO: how to enforce typings here?
+            try {
+                // handle the case where we're going scene -> manuscript -> scene
+                if (draft.format === "single" && kind === CompileStepKind.Manuscript) {
+                    const result = yield step.compile({
+                        contents: currentInput[0].contents,
+                    }, context);
+                    currentInput[0].contents = result;
+                }
+                else {
+                    currentInput = yield step.compile(currentInput, context);
+                }
+            }
+            catch (error) {
+                console.error("[Longform]", error);
+                statusCallback({
+                    kind: "CompileStatusError",
+                    error: `${error}`,
+                });
+                return;
+            }
+        }
+        console.log(`[Longform] Compile workflow "${workflow.name}" finished with final result:`, currentInput);
+        statusCallback({
+            kind: "CompileStatusSuccess",
+        });
+    });
+}
+const DEFAULT_WORKFLOWS = {
+    "Default Workflow": {
+        name: "Default Workflow",
+        description: "A starter workflow. Feel free to edit, rename, or delete it and create your own.",
+        steps: [
+            {
+                id: "strip-frontmatter",
+                optionValues: {},
+            },
+            {
+                id: "remove-links",
+                optionValues: {
+                    "remove-wikilinks": true,
+                    "remove-external-links": true,
+                },
+            },
+            {
+                id: "prepend-title",
+                optionValues: {
+                    format: "$3{#} $1",
+                    separator: "\n\n",
+                },
+            },
+            {
+                id: "concatenate-text",
+                optionValues: {
+                    separator: "\\n\\n---\\n\\n",
+                },
+            },
+            {
+                id: "write-to-note",
+                optionValues: {
+                    target: "manuscript.md",
+                    "open-after": true,
+                },
+            },
+        ],
+    },
+};
+
 var lodash = {exports: {}};
 
 /**
@@ -20302,511 +20737,6 @@ var lodash = {exports: {}};
 	}.call(commonjsGlobal));
 } (lodash, lodash.exports));
 
-const FRONTMATTER_REGEX = /^---\n(?<yaml>(?:.*?\n)*?)---/m;
-function stripFrontmatter(contents) {
-    return contents.replace(FRONTMATTER_REGEX, "");
-}
-function replaceFrontmatter(contents, newFrontmatter) {
-    return contents.replace(FRONTMATTER_REGEX, newFrontmatter);
-}
-function fileNameFromPath(path) {
-    return lodash.exports.last(path.split("/")).split(".md")[0];
-}
-function statsForScene(activeFile, draft, drafts, counts) {
-    const count = counts[draft.vaultPath];
-    if (!count) {
-        return null;
-    }
-    const totalForDraft = (vaultPath, counts) => {
-        const count = counts[vaultPath];
-        if (typeof count === "number") {
-            return count;
-        }
-        else if (typeof count === "object") {
-            return lodash.exports.sum(Object.values(count));
-        }
-        else {
-            return 0;
-        }
-    };
-    const totalForProject = (title, drafts, counts) => {
-        const draftsForProject = drafts.filter((d) => d.title === title);
-        return lodash.exports.sum(draftsForProject.map((d) => totalForDraft(d.vaultPath, counts)));
-    };
-    const draftTotal = totalForDraft(draft.vaultPath, counts);
-    const projectTotal = totalForProject(draft.title, drafts, counts);
-    if (draft.format === "single") {
-        return {
-            scene: draftTotal,
-            draft: draftTotal,
-            project: totalForProject(draft.title, drafts, counts),
-        };
-    }
-    else {
-        const sceneName = activeFile ? fileNameFromPath(activeFile.path) : null;
-        const sceneTotal = sceneName && typeof count !== "number" ? count[sceneName] : 0;
-        return {
-            scene: sceneTotal,
-            draft: draftTotal,
-            project: projectTotal,
-        };
-    }
-}
-
-function projectFolderPath(draft, vault) {
-    return vault.getAbstractFileByPath(draft.vaultPath).parent.path;
-}
-function sceneFolderPath(draft, vault) {
-    const root = vault.getAbstractFileByPath(draft.vaultPath).parent.path;
-    return obsidian.normalizePath(`${root}/${draft.sceneFolder}`);
-}
-function scenePathForFolder(sceneName, folderPath) {
-    return obsidian.normalizePath(`${folderPath}/${sceneName}.md`);
-}
-function scenePath(sceneName, draft, vault) {
-    const sceneFolder = sceneFolderPath(draft, vault);
-    return scenePathForFolder(sceneName, sceneFolder);
-}
-function findScene(path, drafts) {
-    for (const draft of drafts) {
-        if (draft.format === "scenes") {
-            const parentPath = draft.vaultPath.split("/").slice(0, -1).join("/");
-            if (parentPath !== "" && !parentPath) {
-                continue;
-            }
-            const index = draft.scenes.findIndex((s) => obsidian.normalizePath(`${parentPath}/${draft.sceneFolder}/${s.title}.md`) ===
-                path);
-            if (index >= 0) {
-                return { draft, index, currentIndent: draft.scenes[index].indent };
-            }
-        }
-    }
-    return null;
-}
-function draftForPath(path, drafts) {
-    for (const draft of drafts) {
-        if (draft.vaultPath === path) {
-            return draft;
-        }
-        else {
-            const found = findScene(path, drafts);
-            if (found) {
-                return found.draft;
-            }
-        }
-    }
-    return null;
-}
-function scenePathForLocation(location, path, drafts, vault) {
-    for (const draft of drafts) {
-        if (draft.format === "scenes") {
-            const root = vault.getAbstractFileByPath(draft.vaultPath).parent.path;
-            const index = draft.scenes.findIndex((s) => obsidian.normalizePath(`${root}/${draft.sceneFolder}/${s.title}.md`) === path);
-            if (index >= 0) {
-                if (location.position === "next" && index < draft.scenes.length - 1) {
-                    if (!location.maintainIndent) {
-                        const nextScene = draft.scenes[index + 1];
-                        return obsidian.normalizePath(`${root}/${draft.sceneFolder}/${nextScene.title}.md`);
-                    }
-                    else {
-                        const indent = draft.scenes[index].indent;
-                        const nextSceneAtIndent = draft.scenes
-                            .slice(index + 1)
-                            .find((s) => s.indent === indent);
-                        if (nextSceneAtIndent) {
-                            return obsidian.normalizePath(`${root}/${draft.sceneFolder}/${nextSceneAtIndent.title}.md`);
-                        }
-                    }
-                }
-                else if (location.position === "previous" && index > 0) {
-                    if (!location.maintainIndent) {
-                        const previousScene = draft.scenes[index - 1];
-                        return obsidian.normalizePath(`${root}/${draft.sceneFolder}/${previousScene.title}.md`);
-                    }
-                    else {
-                        const indent = draft.scenes[index].indent;
-                        const previousSceneAtIndent = draft.scenes
-                            .slice(0, index)
-                            .find((s) => s.indent === indent);
-                        if (previousSceneAtIndent) {
-                            return obsidian.normalizePath(`${root}/${draft.sceneFolder}/${previousSceneAtIndent.title}.md`);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    return null;
-}
-
-function draftTitle(draft) {
-    var _a;
-    return (_a = draft.draftTitle) !== null && _a !== void 0 ? _a : draft.vaultPath;
-}
-function insertScene(draftsStore, draft, sceneName, vault, location, createNoteCallback) {
-    return __awaiter(this, void 0, void 0, function* () {
-        const newScenePath = scenePath(sceneName, draft, vault);
-        if (!newScenePath || !draft || draft.format !== "scenes") {
-            return;
-        }
-        yield createNoteCallback(newScenePath);
-        draftsStore.update((allDrafts) => {
-            return allDrafts.map((d) => {
-                if (d.vaultPath === draft.vaultPath && d.format === "scenes") {
-                    if (location.at === "end") {
-                        d.scenes = [...d.scenes, { title: sceneName, indent: 0 }];
-                    }
-                    else {
-                        const relativeScene = d.scenes[location.relativeTo];
-                        const index = location.at === "before"
-                            ? location.relativeTo
-                            : location.relativeTo + 1;
-                        d.scenes.splice(index, 0, {
-                            title: sceneName,
-                            indent: relativeScene.indent,
-                        });
-                    }
-                }
-                return d;
-            });
-        });
-    });
-}
-function draftToYAML(draft) {
-    let longformEntry = {};
-    longformEntry["format"] = draft.format;
-    if (draft.titleInFrontmatter) {
-        longformEntry["title"] = draft.title;
-    }
-    if (draft.draftTitle) {
-        longformEntry["draftTitle"] = draft.draftTitle;
-    }
-    if (draft.workflow) {
-        longformEntry["workflow"] = draft.workflow;
-    }
-    if (draft.format === "scenes") {
-        longformEntry = Object.assign(longformEntry, {
-            sceneFolder: draft.sceneFolder,
-            scenes: indentedScenesToArrays(draft.scenes),
-            ignoredFiles: draft.ignoredFiles,
-        });
-    }
-    const obj = {
-        longform: longformEntry,
-    };
-    return obsidian.stringifyYaml(obj).trim();
-}
-function indentedScenesToArrays(indented) {
-    const result = [];
-    // track our current indentation level
-    let currentIndent = 0;
-    // array for the current indentation level
-    let currentNesting = result;
-    // memoized arrays so that later, lesser indents can use earlier-created array
-    const nestingAt = {};
-    nestingAt[0] = currentNesting;
-    indented.forEach(({ title, indent }) => {
-        if (indent > currentIndent) {
-            // we're at a deeper indentation level than current,
-            // so build up a nest and memoize it
-            while (currentIndent < indent) {
-                currentIndent = currentIndent + 1;
-                const newNesting = [];
-                currentNesting.push(newNesting);
-                nestingAt[currentIndent] = newNesting;
-                currentNesting = newNesting;
-            }
-        }
-        else if (indent < currentIndent) {
-            // we're at a lesser indentation level than current,
-            // so drop back to previously memoized nesting
-            currentNesting = nestingAt[indent];
-            currentIndent = indent;
-        }
-        // actually insert the value
-        currentNesting.push(title);
-    });
-    return result;
-}
-function arraysToIndentedScenes(arr, result = [], currentIndent = -1) {
-    if (arr instanceof Array) {
-        if (arr.length === 0) {
-            return result;
-        }
-        const next = arr.shift();
-        const inner = arraysToIndentedScenes(next, [], currentIndent + 1);
-        return arraysToIndentedScenes(arr, [...result, ...inner], currentIndent);
-    }
-    else {
-        return [
-            {
-                title: arr,
-                indent: currentIndent,
-            },
-        ];
-    }
-}
-function numberScenes(scenes) {
-    const numbering = [0];
-    let lastNumberedIndent = 0;
-    return scenes.map((scene) => {
-        const { indent } = scene;
-        if (indent > lastNumberedIndent) {
-            let fill = lastNumberedIndent + 1;
-            while (fill <= indent) {
-                numbering[fill] = 1;
-                fill = fill + 1;
-            }
-            numbering[indent] = 0;
-        }
-        else if (indent < lastNumberedIndent) {
-            const start = indent + 1;
-            numbering.splice(start, numbering.length - start);
-        }
-        lastNumberedIndent = indent;
-        numbering[indent] = numbering[indent] + 1;
-        return Object.assign(Object.assign({}, scene), { numbering: [...numbering] });
-    });
-}
-function formatSceneNumber(numbering) {
-    return numbering.join(".");
-}
-function manuallyParseFrontmatter(path, vault) {
-    return __awaiter(this, void 0, void 0, function* () {
-        const contents = yield vault.adapter.read(path);
-        const result = contents.match(FRONTMATTER_REGEX);
-        if (!result || !result.groups || !result.groups["yaml"]) {
-            return null;
-        }
-        const yaml = result.groups["yaml"];
-        return obsidian.parseYaml(yaml);
-    });
-}
-function insertDraftIntoFrontmatter(path, draft) {
-    return __awaiter(this, void 0, void 0, function* () {
-        const metadata = app.metadataCache.getCache(path);
-        let formatted = "";
-        if (metadata) {
-            const fm = lodash.exports.omit(metadata.frontmatter, ["position", "longform"]);
-            formatted =
-                Object.keys(fm).length > 0 ? `${obsidian.stringifyYaml(fm).trim()}\n` : "";
-        }
-        const newFm = `---\n${draftToYAML(draft)}\n${formatted}---`;
-        const exists = yield app.vault.adapter.exists(path);
-        let contents = "";
-        if (exists) {
-            const fileContents = yield app.vault.adapter.read(path);
-            contents = stripFrontmatter(fileContents);
-            contents = newFm + contents;
-        }
-        else {
-            contents = newFm;
-        }
-        yield app.vault.adapter.write(path, contents);
-    });
-}
-
-var CompileStepKind;
-(function (CompileStepKind) {
-    /** Takes an array of scene files, processes them in some way, and outputs an array of scene files. */
-    CompileStepKind["Scene"] = "Scene";
-    /** Takes an array of scene files and processes them such that the output is a single manuscript file. */
-    CompileStepKind["Join"] = "Join";
-    /** Takes a single manuscript file, processes it in some way, and outputs a single manuscript file. */
-    CompileStepKind["Manuscript"] = "Manuscript";
-})(CompileStepKind || (CompileStepKind = {}));
-function formatStepKind(k) {
-    switch (k) {
-        case CompileStepKind.Scene:
-            return "Scene";
-        case CompileStepKind.Join:
-            return "Join";
-        case CompileStepKind.Manuscript:
-            return "Manuscript";
-    }
-}
-function explainStepKind(k) {
-    switch (k) {
-        case CompileStepKind.Scene:
-            return "Runs on every scene in your manuscript and outputs the resulting scenes.";
-        case CompileStepKind.Join:
-            return "Accepts all scenes as input and outputs a single manuscript.";
-        case CompileStepKind.Manuscript:
-            return "Runs once on your compiled manuscript.";
-    }
-}
-/** The type of an option’s value. Determines the type of input in the compile UI. */
-var CompileStepOptionType;
-(function (CompileStepOptionType) {
-    /** A checkbox corresponding to either true or false. */
-    CompileStepOptionType[CompileStepOptionType["Boolean"] = 0] = "Boolean";
-    /** A single-line freeform text entry. */
-    CompileStepOptionType[CompileStepOptionType["Text"] = 1] = "Text";
-})(CompileStepOptionType || (CompileStepOptionType = {}));
-function makeBuiltinStep(v, isScript = false) {
-    return Object.assign(Object.assign({}, v), { description: Object.assign(Object.assign({}, v.description), { canonicalID: v.id, isScript: isScript }), optionValues: v.description.options.reduce((agg, opt) => {
-            return Object.assign(Object.assign({}, agg), { [opt.id]: opt.default });
-        }, {}) });
-}
-function typeMismatchError(expected, got, context) {
-    return new Error(`[Longform] A compile step received a type it did not expect. It expected "${expected}", but got "${got}" with step kind "${context.kind}"`);
-}
-const PLACEHOLDER_MISSING_STEP = {
-    id: "placeholder-missing-step",
-    description: {
-        canonicalID: "placeholder-missing-step",
-        name: "",
-        description: "",
-        isScript: false,
-        availableKinds: [],
-        options: [],
-    },
-    optionValues: {},
-    compile: (a) => a,
-};
-
-function formatOptionValues(values) {
-    const formattedOptions = {};
-    for (const key of Object.keys(values)) {
-        let v = values[key];
-        if (typeof v === "string") {
-            v = v.split("\\n").join("\n");
-        }
-        formattedOptions[key] = v;
-    }
-    return formattedOptions;
-}
-function compile(app, draft, workflow, kinds, statusCallback) {
-    return __awaiter(this, void 0, void 0, function* () {
-        let currentInput;
-        if (draft.format === "single") {
-            const path = draft.vaultPath;
-            const contents = yield app.vault.adapter.read(path);
-            const metadata = app.metadataCache.getCache(path);
-            currentInput = [
-                {
-                    path,
-                    name: draft.title,
-                    contents,
-                    metadata,
-                },
-            ];
-        }
-        else {
-            const folderPath = sceneFolderPath(draft, app.vault);
-            currentInput = [];
-            // Build initial inputs
-            for (const scene of numberScenes(draft.scenes)) {
-                const path = scenePathForFolder(scene.title, folderPath);
-                const contents = yield app.vault.adapter.read(path);
-                const metadata = app.metadataCache.getCache(path);
-                currentInput.push({
-                    path,
-                    name: scene.title,
-                    contents,
-                    metadata,
-                    indentationLevel: scene.indent,
-                    numbering: scene.numbering,
-                });
-            }
-        }
-        for (let index = 0; index < workflow.steps.length; index++) {
-            const step = workflow.steps[index];
-            const kind = index < kinds.length ? kinds[index] : null;
-            if (kind === null) {
-                const error = `No step kind data for step at position ${index}.`;
-                console.error(`[Longform] ${error}`);
-                statusCallback({
-                    kind: "CompileStatusError",
-                    error,
-                });
-                return;
-            }
-            const context = {
-                kind,
-                optionValues: formatOptionValues(step.optionValues),
-                projectPath: projectFolderPath(draft, app.vault),
-                draft,
-                app,
-                utilities: {
-                    normalizePath: obsidian.normalizePath,
-                },
-            };
-            console.log(`[Longform] Running compile step ${step.description.name} with context:`, context);
-            statusCallback({
-                kind: "CompileStatusStep",
-                stepIndex: index,
-                totalSteps: workflow.steps.length,
-                stepKind: kind,
-            });
-            // TODO: how to enforce typings here?
-            try {
-                // handle the case where we're going scene -> manuscript -> scene
-                if (draft.format === "single" && kind === CompileStepKind.Manuscript) {
-                    const result = yield step.compile({
-                        contents: currentInput[0].contents,
-                    }, context);
-                    currentInput[0].contents = result;
-                }
-                else {
-                    currentInput = yield step.compile(currentInput, context);
-                }
-            }
-            catch (error) {
-                console.error("[Longform]", error);
-                statusCallback({
-                    kind: "CompileStatusError",
-                    error: `${error}`,
-                });
-                return;
-            }
-        }
-        console.log(`[Longform] Compile workflow "${workflow.name}" finished with final result:`, currentInput);
-        statusCallback({
-            kind: "CompileStatusSuccess",
-        });
-    });
-}
-const DEFAULT_WORKFLOWS = {
-    "Default Workflow": {
-        name: "Default Workflow",
-        description: "A starter workflow. Feel free to edit, rename, or delete it and create your own.",
-        steps: [
-            {
-                id: "strip-frontmatter",
-                optionValues: {},
-            },
-            {
-                id: "remove-links",
-                optionValues: {
-                    "remove-wikilinks": true,
-                    "remove-external-links": true,
-                },
-            },
-            {
-                id: "prepend-title",
-                optionValues: {
-                    format: "$3{#} $1",
-                    separator: "\n\n",
-                },
-            },
-            {
-                id: "concatenate-text",
-                optionValues: {
-                    separator: "\\n\\n---\\n\\n",
-                },
-            },
-            {
-                id: "write-to-note",
-                optionValues: {
-                    target: "manuscript.md",
-                    "open-after": true,
-                },
-            },
-        ],
-    },
-};
-
 // WRITEABLE STORES
 /**
  * Writeable store of whether the plugin has been initialized or not.
@@ -21095,6 +21025,10 @@ const RemoveStrikethroughsStep = makeBuiltinStep({
     },
 });
 
+const FRONTMATTER_REGEX = /^---\n(?<yaml>(?:.*?\n)*?)---/m;
+function stripFrontmatter(contents) {
+    return contents.replace(FRONTMATTER_REGEX, "");
+}
 const StripFrontmatterStep = makeBuiltinStep({
     id: "strip-frontmatter",
     description: {
@@ -28649,6 +28583,50 @@ class CompileView extends SvelteComponent {
 	}
 }
 
+function fileNameFromPath(path) {
+    return lodash.exports.last(path.split("/")).split(".md")[0];
+}
+function statsForScene(activeFile, draft, drafts, counts) {
+    const count = counts[draft.vaultPath];
+    if (!count) {
+        return null;
+    }
+    const totalForDraft = (vaultPath, counts) => {
+        const count = counts[vaultPath];
+        if (typeof count === "number") {
+            return count;
+        }
+        else if (typeof count === "object") {
+            return lodash.exports.sum(Object.values(count));
+        }
+        else {
+            return 0;
+        }
+    };
+    const totalForProject = (title, drafts, counts) => {
+        const draftsForProject = drafts.filter((d) => d.title === title);
+        return lodash.exports.sum(draftsForProject.map((d) => totalForDraft(d.vaultPath, counts)));
+    };
+    const draftTotal = totalForDraft(draft.vaultPath, counts);
+    const projectTotal = totalForProject(draft.title, drafts, counts);
+    if (draft.format === "single") {
+        return {
+            scene: draftTotal,
+            draft: draftTotal,
+            project: totalForProject(draft.title, drafts, counts),
+        };
+    }
+    else {
+        const sceneName = activeFile ? fileNameFromPath(activeFile.path) : null;
+        const sceneTotal = sceneName && typeof count !== "number" ? count[sceneName] : 0;
+        return {
+            scene: sceneTotal,
+            draft: draftTotal,
+            project: projectTotal,
+        };
+    }
+}
+
 // Writable stores
 const activeFile = writable(null);
 const selectedTab = writable("Project");
@@ -28968,7 +28946,10 @@ function create_if_block$7(ctx) {
 				each_blocks[i].m(select, null);
 			}
 
-			select_option(select, /*$selectedDraft*/ ctx[2] && /*$selectedDraft*/ ctx[2].title);
+			select_option(select, /*$selectedDraft*/ ctx[2]
+			? /*$selectedDraft*/ ctx[2].title
+			: /*projectOptions*/ ctx[0][0]);
+
 			append(div1, t0);
 			if (if_block0) if_block0.m(div1, null);
 			insert(target, t1, anchor);
@@ -29004,8 +28985,12 @@ function create_if_block$7(ctx) {
 				each_blocks.length = each_value_1.length;
 			}
 
-			if (dirty & /*$selectedDraft, projectOptions*/ 5 && select_value_value !== (select_value_value = /*$selectedDraft*/ ctx[2] && /*$selectedDraft*/ ctx[2].title)) {
-				select_option(select, /*$selectedDraft*/ ctx[2] && /*$selectedDraft*/ ctx[2].title);
+			if (dirty & /*$selectedDraft, projectOptions*/ 5 && select_value_value !== (select_value_value = /*$selectedDraft*/ ctx[2]
+			? /*$selectedDraft*/ ctx[2].title
+			: /*projectOptions*/ ctx[0][0])) {
+				select_option(select, /*$selectedDraft*/ ctx[2]
+				? /*$selectedDraft*/ ctx[2].title
+				: /*projectOptions*/ ctx[0][0]);
 			}
 
 			if (/*$selectedProjectHasMultipleDrafts*/ ctx[4]) {
@@ -29471,22 +29456,22 @@ function add_css$7(target) {
 
 function get_each_context$1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[35] = list[i];
+	child_ctx[38] = list[i];
 	return child_ctx;
 }
 
-// (265:8) {#if item.collapsible}
+// (287:8) {#if item.collapsible}
 function create_if_block_2$2(ctx) {
 	let disclosure;
 	let current;
 
 	function click_handler() {
-		return /*click_handler*/ ctx[19](/*item*/ ctx[38]);
+		return /*click_handler*/ ctx[20](/*item*/ ctx[41]);
 	}
 
 	disclosure = new Disclosure({
 			props: {
-				collapsed: /*collapsedItems*/ ctx[0].contains(/*item*/ ctx[38].id)
+				collapsed: /*collapsedItems*/ ctx[0].contains(/*item*/ ctx[41].id)
 			}
 		});
 
@@ -29503,7 +29488,7 @@ function create_if_block_2$2(ctx) {
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
 			const disclosure_changes = {};
-			if (dirty[0] & /*collapsedItems*/ 1 | dirty[1] & /*item*/ 128) disclosure_changes.collapsed = /*collapsedItems*/ ctx[0].contains(/*item*/ ctx[38].id);
+			if (dirty[0] & /*collapsedItems*/ 1 | dirty[1] & /*item*/ 1024) disclosure_changes.collapsed = /*collapsedItems*/ ctx[0].contains(/*item*/ ctx[41].id);
 			disclosure.$set(disclosure_changes);
 		},
 		i(local) {
@@ -29521,10 +29506,10 @@ function create_if_block_2$2(ctx) {
 	};
 }
 
-// (280:10) {#if $pluginSettings.numberScenes}
+// (302:10) {#if $pluginSettings.numberScenes}
 function create_if_block_1$4(ctx) {
 	let span;
-	let t_value = /*numberLabel*/ ctx[17](/*item*/ ctx[38]) + "";
+	let t_value = /*numberLabel*/ ctx[18](/*item*/ ctx[41]) + "";
 	let t;
 
 	return {
@@ -29538,7 +29523,7 @@ function create_if_block_1$4(ctx) {
 			append(span, t);
 		},
 		p(ctx, dirty) {
-			if (dirty[1] & /*item*/ 128 && t_value !== (t_value = /*numberLabel*/ ctx[17](/*item*/ ctx[38]) + "")) set_data(t, t_value);
+			if (dirty[1] & /*item*/ 1024 && t_value !== (t_value = /*numberLabel*/ ctx[18](/*item*/ ctx[41]) + "")) set_data(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) detach(span);
@@ -29546,14 +29531,14 @@ function create_if_block_1$4(ctx) {
 	};
 }
 
-// (246:4) <SortableList       trackIndents       bind:items       let:item       on:orderChanged={itemOrderChanged}       on:indentChanged={itemIndentChanged}       {sortableOptions}       class="sortable-scene-list"     >
+// (268:4) <SortableList       trackIndents       bind:items       let:item       on:orderChanged={itemOrderChanged}       on:indentChanged={itemIndentChanged}       {sortableOptions}       class="sortable-scene-list"     >
 function create_default_slot(ctx) {
 	let div2;
 	let t0;
 	let div1;
 	let t1;
 	let div0;
-	let t2_value = /*item*/ ctx[38].name + "";
+	let t2_value = /*item*/ ctx[41].name + "";
 	let t2;
 	let div0_id_value;
 	let div0_contenteditable_value;
@@ -29565,11 +29550,11 @@ function create_default_slot(ctx) {
 	let current;
 	let mounted;
 	let dispose;
-	let if_block0 = /*item*/ ctx[38].collapsible && create_if_block_2$2(ctx);
+	let if_block0 = /*item*/ ctx[41].collapsible && create_if_block_2$2(ctx);
 	let if_block1 = /*$pluginSettings*/ ctx[7].numberScenes && create_if_block_1$4(ctx);
 
 	function click_handler_1(...args) {
-		return /*click_handler_1*/ ctx[20](/*item*/ ctx[38], ...args);
+		return /*click_handler_1*/ ctx[21](/*item*/ ctx[41], ...args);
 	}
 
 	return {
@@ -29582,19 +29567,19 @@ function create_default_slot(ctx) {
 			t1 = space();
 			div0 = element("div");
 			t2 = text(t2_value);
-			attr(div0, "id", div0_id_value = `longform-scene-${/*item*/ ctx[38].name}`);
+			attr(div0, "id", div0_id_value = `longform-scene-${/*item*/ ctx[41].name}`);
 			set_style(div0, "display", "inline");
-			attr(div0, "contenteditable", div0_contenteditable_value = /*item*/ ctx[38].name === /*editingName*/ ctx[5]);
+			attr(div0, "contenteditable", div0_contenteditable_value = /*item*/ ctx[41].name === /*editingName*/ ctx[5]);
 			attr(div0, "class", "svelte-1w588hn");
 			set_style(div1, "width", "100%");
-			attr(div1, "data-scene-path", div1_data_scene_path_value = /*item*/ ctx[38].path);
+			attr(div1, "data-scene-path", div1_data_scene_path_value = /*item*/ ctx[41].path);
 			attr(div1, "class", "svelte-1w588hn");
 			attr(div2, "class", "scene-container svelte-1w588hn");
-			attr(div2, "style", div2_style_value = "margin-left: " + /*item*/ ctx[38].indent * 32 + "px; " + (/*item*/ ctx[38].hidden && 'display: none;'));
-			attr(div2, "data-scene-path", div2_data_scene_path_value = /*item*/ ctx[38].path);
-			attr(div2, "data-scene-indent", div2_data_scene_indent_value = /*item*/ ctx[38].indent);
-			attr(div2, "data-scene-name", div2_data_scene_name_value = /*item*/ ctx[38].name);
-			toggle_class(div2, "selected", /*$activeFile*/ ctx[6] && /*$activeFile*/ ctx[6].path === /*item*/ ctx[38].path);
+			attr(div2, "style", div2_style_value = "margin-left: " + /*item*/ ctx[41].indent * 32 + "px; " + (/*item*/ ctx[41].hidden && 'display: none;'));
+			attr(div2, "data-scene-path", div2_data_scene_path_value = /*item*/ ctx[41].path);
+			attr(div2, "data-scene-indent", div2_data_scene_indent_value = /*item*/ ctx[41].indent);
+			attr(div2, "data-scene-name", div2_data_scene_name_value = /*item*/ ctx[41].name);
+			toggle_class(div2, "selected", /*$activeFile*/ ctx[6] && /*$activeFile*/ ctx[6].path === /*item*/ ctx[41].path);
 		},
 		m(target, anchor) {
 			insert(target, div2, anchor);
@@ -29610,16 +29595,16 @@ function create_default_slot(ctx) {
 			if (!mounted) {
 				dispose = [
 					listen(div0, "keydown", function () {
-						if (is_function(/*item*/ ctx[38].name === /*editingName*/ ctx[5]
+						if (is_function(/*item*/ ctx[41].name === /*editingName*/ ctx[5]
 						? /*onKeydown*/ ctx[14]
-						: null)) (/*item*/ ctx[38].name === /*editingName*/ ctx[5]
+						: null)) (/*item*/ ctx[41].name === /*editingName*/ ctx[5]
 						? /*onKeydown*/ ctx[14]
 						: null).apply(this, arguments);
 					}),
 					listen(div0, "blur", function () {
-						if (is_function(/*item*/ ctx[38].name === /*editingName*/ ctx[5]
+						if (is_function(/*item*/ ctx[41].name === /*editingName*/ ctx[5]
 						? /*onBlur*/ ctx[15]
-						: null)) (/*item*/ ctx[38].name === /*editingName*/ ctx[5]
+						: null)) (/*item*/ ctx[41].name === /*editingName*/ ctx[5]
 						? /*onBlur*/ ctx[15]
 						: null).apply(this, arguments);
 					}),
@@ -29633,11 +29618,11 @@ function create_default_slot(ctx) {
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
 
-			if (/*item*/ ctx[38].collapsible) {
+			if (/*item*/ ctx[41].collapsible) {
 				if (if_block0) {
 					if_block0.p(ctx, dirty);
 
-					if (dirty[1] & /*item*/ 128) {
+					if (dirty[1] & /*item*/ 1024) {
 						transition_in(if_block0, 1);
 					}
 				} else {
@@ -29669,38 +29654,38 @@ function create_default_slot(ctx) {
 				if_block1 = null;
 			}
 
-			if ((!current || dirty[1] & /*item*/ 128) && t2_value !== (t2_value = /*item*/ ctx[38].name + "")) set_data(t2, t2_value);
+			if ((!current || dirty[1] & /*item*/ 1024) && t2_value !== (t2_value = /*item*/ ctx[41].name + "")) set_data(t2, t2_value);
 
-			if (!current || dirty[1] & /*item*/ 128 && div0_id_value !== (div0_id_value = `longform-scene-${/*item*/ ctx[38].name}`)) {
+			if (!current || dirty[1] & /*item*/ 1024 && div0_id_value !== (div0_id_value = `longform-scene-${/*item*/ ctx[41].name}`)) {
 				attr(div0, "id", div0_id_value);
 			}
 
-			if (!current || dirty[0] & /*editingName*/ 32 | dirty[1] & /*item*/ 128 && div0_contenteditable_value !== (div0_contenteditable_value = /*item*/ ctx[38].name === /*editingName*/ ctx[5])) {
+			if (!current || dirty[0] & /*editingName*/ 32 | dirty[1] & /*item*/ 1024 && div0_contenteditable_value !== (div0_contenteditable_value = /*item*/ ctx[41].name === /*editingName*/ ctx[5])) {
 				attr(div0, "contenteditable", div0_contenteditable_value);
 			}
 
-			if (!current || dirty[1] & /*item*/ 128 && div1_data_scene_path_value !== (div1_data_scene_path_value = /*item*/ ctx[38].path)) {
+			if (!current || dirty[1] & /*item*/ 1024 && div1_data_scene_path_value !== (div1_data_scene_path_value = /*item*/ ctx[41].path)) {
 				attr(div1, "data-scene-path", div1_data_scene_path_value);
 			}
 
-			if (!current || dirty[1] & /*item*/ 128 && div2_style_value !== (div2_style_value = "margin-left: " + /*item*/ ctx[38].indent * 32 + "px; " + (/*item*/ ctx[38].hidden && 'display: none;'))) {
+			if (!current || dirty[1] & /*item*/ 1024 && div2_style_value !== (div2_style_value = "margin-left: " + /*item*/ ctx[41].indent * 32 + "px; " + (/*item*/ ctx[41].hidden && 'display: none;'))) {
 				attr(div2, "style", div2_style_value);
 			}
 
-			if (!current || dirty[1] & /*item*/ 128 && div2_data_scene_path_value !== (div2_data_scene_path_value = /*item*/ ctx[38].path)) {
+			if (!current || dirty[1] & /*item*/ 1024 && div2_data_scene_path_value !== (div2_data_scene_path_value = /*item*/ ctx[41].path)) {
 				attr(div2, "data-scene-path", div2_data_scene_path_value);
 			}
 
-			if (!current || dirty[1] & /*item*/ 128 && div2_data_scene_indent_value !== (div2_data_scene_indent_value = /*item*/ ctx[38].indent)) {
+			if (!current || dirty[1] & /*item*/ 1024 && div2_data_scene_indent_value !== (div2_data_scene_indent_value = /*item*/ ctx[41].indent)) {
 				attr(div2, "data-scene-indent", div2_data_scene_indent_value);
 			}
 
-			if (!current || dirty[1] & /*item*/ 128 && div2_data_scene_name_value !== (div2_data_scene_name_value = /*item*/ ctx[38].name)) {
+			if (!current || dirty[1] & /*item*/ 1024 && div2_data_scene_name_value !== (div2_data_scene_name_value = /*item*/ ctx[41].name)) {
 				attr(div2, "data-scene-name", div2_data_scene_name_value);
 			}
 
-			if (dirty[0] & /*$activeFile*/ 64 | dirty[1] & /*item*/ 128) {
-				toggle_class(div2, "selected", /*$activeFile*/ ctx[6] && /*$activeFile*/ ctx[6].path === /*item*/ ctx[38].path);
+			if (dirty[0] & /*$activeFile*/ 64 | dirty[1] & /*item*/ 1024) {
+				toggle_class(div2, "selected", /*$activeFile*/ ctx[6] && /*$activeFile*/ ctx[6].path === /*item*/ ctx[41].path);
 			}
 		},
 		i(local) {
@@ -29722,10 +29707,10 @@ function create_default_slot(ctx) {
 	};
 }
 
-// (296:2) {#if $selectedDraft.format === "scenes" && $selectedDraft.unknownFiles.length > 0}
+// (318:2) {#if $selectedDraft.format === "scenes" && $selectedDraft.unknownFiles.length > 0}
 function create_if_block$6(ctx) {
+	let div2;
 	let div1;
-	let div0;
 	let p;
 	let t0;
 	let t1_value = /*$selectedDraft*/ ctx[1].unknownFiles.length + "";
@@ -29739,7 +29724,14 @@ function create_if_block$6(ctx) {
 	let t3;
 	let t4;
 	let t5;
+	let div0;
+	let button0;
+	let t7;
+	let button1;
+	let t9;
 	let ul;
+	let mounted;
+	let dispose;
 	let each_value = /*$selectedDraft*/ ctx[1].unknownFiles;
 	let each_blocks = [];
 
@@ -29749,8 +29741,8 @@ function create_if_block$6(ctx) {
 
 	return {
 		c() {
+			div2 = element("div");
 			div1 = element("div");
-			div0 = element("div");
 			p = element("p");
 			t0 = text("Longform has found ");
 			t1 = text(t1_value);
@@ -29758,6 +29750,13 @@ function create_if_block$6(ctx) {
 			t3 = text(t3_value);
 			t4 = text(" in your scenes folder.");
 			t5 = space();
+			div0 = element("div");
+			button0 = element("button");
+			button0.textContent = "Add all";
+			t7 = space();
+			button1 = element("button");
+			button1.textContent = "Ignore all";
+			t9 = space();
 			ul = element("ul");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -29765,25 +29764,41 @@ function create_if_block$6(ctx) {
 			}
 
 			attr(p, "class", "longform-unknown-explanation svelte-1w588hn");
+			attr(button0, "class", "longform-unknown-add svelte-1w588hn");
+			attr(button1, "class", "longform-unknown-ignore svelte-1w588hn");
 			attr(ul, "class", "svelte-1w588hn");
-			attr(div0, "class", "longform-unknown-inner svelte-1w588hn");
-			attr(div1, "id", "longform-unknown-files-wizard");
-			attr(div1, "class", "svelte-1w588hn");
+			attr(div1, "class", "longform-unknown-inner svelte-1w588hn");
+			attr(div2, "id", "longform-unknown-files-wizard");
+			attr(div2, "class", "svelte-1w588hn");
 		},
 		m(target, anchor) {
-			insert(target, div1, anchor);
-			append(div1, div0);
-			append(div0, p);
+			insert(target, div2, anchor);
+			append(div2, div1);
+			append(div1, p);
 			append(p, t0);
 			append(p, t1);
 			append(p, t2);
 			append(p, t3);
 			append(p, t4);
-			append(div0, t5);
-			append(div0, ul);
+			append(div1, t5);
+			append(div1, div0);
+			append(div0, button0);
+			append(div0, t7);
+			append(div0, button1);
+			append(div1, t9);
+			append(div1, ul);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				each_blocks[i].m(ul, null);
+			}
+
+			if (!mounted) {
+				dispose = [
+					listen(button0, "click", /*click_handler_2*/ ctx[23]),
+					listen(button1, "click", /*click_handler_3*/ ctx[24])
+				];
+
+				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
@@ -29817,18 +29832,20 @@ function create_if_block$6(ctx) {
 			}
 		},
 		d(detaching) {
-			if (detaching) detach(div1);
+			if (detaching) detach(div2);
 			destroy_each(each_blocks, detaching);
+			mounted = false;
+			run_all(dispose);
 		}
 	};
 }
 
-// (306:10) {#each $selectedDraft.unknownFiles as fileName}
+// (337:10) {#each $selectedDraft.unknownFiles as fileName}
 function create_each_block$1(ctx) {
 	let li;
 	let div1;
 	let span;
-	let t0_value = /*fileName*/ ctx[35] + "";
+	let t0_value = /*fileName*/ ctx[38] + "";
 	let t0;
 	let t1;
 	let div0;
@@ -29839,12 +29856,12 @@ function create_each_block$1(ctx) {
 	let mounted;
 	let dispose;
 
-	function click_handler_2() {
-		return /*click_handler_2*/ ctx[22](/*fileName*/ ctx[35]);
+	function click_handler_4() {
+		return /*click_handler_4*/ ctx[25](/*fileName*/ ctx[38]);
 	}
 
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[23](/*fileName*/ ctx[35]);
+	function click_handler_5() {
+		return /*click_handler_5*/ ctx[26](/*fileName*/ ctx[38]);
 	}
 
 	return {
@@ -29879,8 +29896,8 @@ function create_each_block$1(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					listen(button0, "click", click_handler_2),
-					listen(button1, "click", click_handler_3)
+					listen(button0, "click", click_handler_4),
+					listen(button1, "click", click_handler_5)
 				];
 
 				mounted = true;
@@ -29888,7 +29905,7 @@ function create_each_block$1(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty[0] & /*$selectedDraft*/ 2 && t0_value !== (t0_value = /*fileName*/ ctx[35] + "")) set_data(t0, t0_value);
+			if (dirty[0] & /*$selectedDraft*/ 2 && t0_value !== (t0_value = /*fileName*/ ctx[38] + "")) set_data(t0, t0_value);
 		},
 		d(detaching) {
 			if (detaching) detach(li);
@@ -29907,7 +29924,7 @@ function create_fragment$7(ctx) {
 	let current;
 
 	function sortablelist_items_binding(value) {
-		/*sortablelist_items_binding*/ ctx[21](value);
+		/*sortablelist_items_binding*/ ctx[22](value);
 	}
 
 	let sortablelist_props = {
@@ -29917,8 +29934,8 @@ function create_fragment$7(ctx) {
 		$$slots: {
 			default: [
 				create_default_slot,
-				({ item }) => ({ 38: item }),
-				({ item }) => [0, item ? 128 : 0]
+				({ item }) => ({ 41: item }),
+				({ item }) => [0, item ? 1024 : 0]
 			]
 		},
 		$$scope: { ctx }
@@ -29958,7 +29975,7 @@ function create_fragment$7(ctx) {
 		p(ctx, dirty) {
 			const sortablelist_changes = {};
 
-			if (dirty[0] & /*$activeFile, editingName, $pluginSettings, collapsedItems*/ 225 | dirty[1] & /*$$scope, item*/ 384) {
+			if (dirty[0] & /*$activeFile, editingName, $pluginSettings, collapsedItems*/ 225 | dirty[1] & /*$$scope, item*/ 3072) {
 				sortablelist_changes.$$scope = { dirty, ctx };
 			}
 
@@ -30013,7 +30030,7 @@ function instance$7($$self, $$props, $$invalidate) {
 	let $selectedDraft;
 	let $activeFile;
 	let $pluginSettings;
-	component_subscribe($$self, drafts, $$value => $$invalidate(18, $drafts = $$value));
+	component_subscribe($$self, drafts, $$value => $$invalidate(19, $drafts = $$value));
 	component_subscribe($$self, selectedDraft, $$value => $$invalidate(1, $selectedDraft = $$value));
 	component_subscribe($$self, activeFile, $$value => $$invalidate(6, $activeFile = $$value));
 	component_subscribe($$self, pluginSettings, $$value => $$invalidate(7, $pluginSettings = $$value));
@@ -30212,6 +30229,28 @@ function instance$7($$self, $$props, $$invalidate) {
 		}
 	}
 
+	function doWithAll(action) {
+		const currentDraftIndex = $drafts.findIndex(d => d.vaultPath === $selectedDraft.vaultPath);
+
+		if (currentDraftIndex >= 0 && $selectedDraft.format === "scenes") {
+			drafts.update(d => {
+				const targetDraft = d[currentDraftIndex];
+
+				if (action === "add") {
+					d[currentDraftIndex].scenes = [
+						...targetDraft.scenes,
+						...targetDraft.unknownFiles.map(f => ({ title: f, indent: 0 }))
+					];
+				} else {
+					d[currentDraftIndex].ignoredFiles = [...targetDraft.ignoredFiles, ...targetDraft.unknownFiles];
+				}
+
+				d[currentDraftIndex].unknownFiles = [];
+				return d;
+			});
+		}
+	}
+
 	function numberLabel(item) {
 		return formatSceneNumber(item.numbering);
 	}
@@ -30283,11 +30322,13 @@ function instance$7($$self, $$props, $$invalidate) {
 		(($$invalidate(2, items), $$invalidate(1, $selectedDraft)), $$invalidate(0, collapsedItems));
 	}
 
-	const click_handler_2 = fileName => doWithUnknown(fileName, "add");
-	const click_handler_3 = fileName => doWithUnknown(fileName, "ignore");
+	const click_handler_2 = () => doWithAll("add");
+	const click_handler_3 = () => doWithAll("ignore");
+	const click_handler_4 = fileName => doWithUnknown(fileName, "add");
+	const click_handler_5 = fileName => doWithUnknown(fileName, "ignore");
 
 	$$self.$$.update = () => {
-		if ($$self.$$.dirty[0] & /*$drafts, $selectedDraft*/ 262146) {
+		if ($$self.$$.dirty[0] & /*$drafts, $selectedDraft*/ 524290) {
 			{
 				currentDraftIndex = $drafts.findIndex(d => d.vaultPath === $selectedDraft.vaultPath);
 			}
@@ -30320,13 +30361,16 @@ function instance$7($$self, $$props, $$invalidate) {
 		onKeydown,
 		onBlur,
 		doWithUnknown,
+		doWithAll,
 		numberLabel,
 		$drafts,
 		click_handler,
 		click_handler_1,
 		sortablelist_items_binding,
 		click_handler_2,
-		click_handler_3
+		click_handler_3,
+		click_handler_4,
+		click_handler_5
 	];
 }
 
@@ -34976,8 +35020,8 @@ class ExplorerPane extends obsidian.ItemView {
             // Create a fully-qualified path to a scene from its name.
             context.set("makeScenePath", (draft, sceneName) => scenePath(sceneName, draft, this.app.vault));
             // Context function for opening scene notes on click
-            context.set("onSceneClick", (path, newLeaf) => {
-                this.app.workspace.openLinkText(path, "/", newLeaf);
+            context.set("onSceneClick", (path, paneType) => {
+                this.app.workspace.openLinkText(path, "/", paneType);
             });
             // Context function for creating new scene notes given a path
             context.set("onNewScene", (name) => __awaiter(this, void 0, void 0, function* () {
@@ -35378,6 +35422,9 @@ class UserScriptObserver {
                 s.userScriptFolder === this.userScriptFolder) {
                 return;
             }
+            if (s.userScriptFolder == null) {
+                return;
+            }
             const valid = yield this.vault.adapter.exists(s.userScriptFolder);
             if (!valid) {
                 return;
@@ -35557,6 +35604,38 @@ class StoreVaultSync {
             }
         });
     }
+    fileCreated(file) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const drafts$1 = get_store_value(drafts);
+            // check if a new scene has been moved into this folder
+            const scenePath = file.parent.path;
+            const memberOfDraft = drafts$1.find((d) => {
+                if (d.format !== "scenes") {
+                    return false;
+                }
+                const parentPath = this.vault.getAbstractFileByPath(d.vaultPath).parent
+                    .path;
+                const targetPath = obsidian.normalizePath(`${parentPath}/${d.sceneFolder}`);
+                return (
+                // file is in the scene folder
+                targetPath === scenePath &&
+                    // file isn't already a scene
+                    !d.scenes.map((s) => s.title).contains(file.basename));
+            });
+            if (memberOfDraft) {
+                drafts.update((allDrafts) => {
+                    return allDrafts.map((d) => {
+                        if (d.vaultPath === memberOfDraft.vaultPath &&
+                            d.format === "scenes" &&
+                            !d.unknownFiles.contains(file.basename)) {
+                            d.unknownFiles.push(file.basename);
+                        }
+                        return d;
+                    });
+                });
+            }
+        });
+    }
     fileDeleted(file) {
         return __awaiter(this, void 0, void 0, function* () {
             const drafts$1 = get_store_value(drafts);
@@ -35629,36 +35708,53 @@ class StoreVaultSync {
             else {
                 // scene renamed
                 const newTitle = fileNameFromPath(file.path);
-                const found = findScene(oldPath, drafts$1);
-                if (found) {
+                const foundOld = findScene(oldPath, drafts$1);
+                // possibilities here:
+                // 1. note was renamed in-place: rename the scene in the associated draft
+                // 2. note was moved out of a draft: remove it from the old draft
+                // 3. note was moved into a draft: add it to the new draft
+                // (2) and (3) can occur for the same note.
+                // in-place
+                const oldParent = oldPath.split("/").slice(0, -1).join("/");
+                if (foundOld && oldParent === file.parent.path) {
                     drafts.update((_drafts) => {
                         return _drafts.map((d) => {
-                            if (d.vaultPath === found.draft.vaultPath &&
+                            if (d.vaultPath === foundOld.draft.vaultPath &&
                                 d.format === "scenes") {
-                                d.scenes[found.index].title = newTitle;
+                                d.scenes[foundOld.index].title = newTitle;
                             }
                             return d;
                         });
                     });
                 }
                 else {
-                    // check if a new scene has been moved into this folder
-                    const scenePath = file.parent.path;
-                    const memberOfDraft = drafts$1.find((d) => {
-                        if (d.format !== "scenes") {
-                            return false;
-                        }
-                        const parentPath = this.vault.getAbstractFileByPath(d.vaultPath)
-                            .parent.path;
-                        const targetPath = obsidian.normalizePath(`${parentPath}/${d.sceneFolder}`);
-                        return targetPath === scenePath;
+                    //in and/or out
+                    // moved out of a draft
+                    const oldDraft = drafts$1.find((d) => {
+                        return (d.format === "scenes" &&
+                            sceneFolderPath(d, this.vault) === oldParent);
                     });
-                    if (memberOfDraft) {
-                        drafts.update((allDrafts) => {
-                            return allDrafts.map((d) => {
-                                if (d.vaultPath === memberOfDraft.vaultPath &&
-                                    d.format === "scenes") {
-                                    d.unknownFiles.push(newTitle);
+                    if (oldDraft) {
+                        drafts.update((_drafts) => {
+                            return _drafts.map((d) => {
+                                if (d.vaultPath === oldDraft.vaultPath && d.format === "scenes") {
+                                    d.scenes = d.scenes.filter((s) => s.title !== file.basename);
+                                    d.unknownFiles = d.unknownFiles.filter((f) => f !== file.basename);
+                                }
+                                return d;
+                            });
+                        });
+                    }
+                    // moved into a draft
+                    const newDraft = drafts$1.find((d) => {
+                        return (d.format === "scenes" &&
+                            sceneFolderPath(d, this.vault) === file.parent.path);
+                    });
+                    if (newDraft) {
+                        drafts.update((_drafts) => {
+                            return _drafts.map((d) => {
+                                if (d.vaultPath === newDraft.vaultPath && d.format === "scenes") {
+                                    d.unknownFiles.push(file.basename);
                                 }
                                 return d;
                             });
@@ -35721,7 +35817,17 @@ class StoreVaultSync {
                     // in this case, it reports the array as empty when it's not,
                     // so we will parse out the yaml directly from the file contents, just in case.
                     // discord discussion: https://discord.com/channels/686053708261228577/840286264964022302/994589562082951219
-                    const fm = yield manuallyParseFrontmatter(fileWithMetadata.file.path, this.vault);
+                    // 2023-01-03: Confirmed this issue is still present; using new processFrontMatter function
+                    // seems to read correctly, though!
+                    let fm = null;
+                    try {
+                        yield app.fileManager.processFrontMatter(fileWithMetadata.file, (_fm) => {
+                            fm = _fm;
+                        });
+                    }
+                    catch (error) {
+                        console.error("[Longform] error manually loading frontmatter:", error);
+                    }
                     if (fm) {
                         rawScenes = fm["longform"]["scenes"];
                     }
@@ -35779,32 +35885,13 @@ class StoreVaultSync {
     }
     writeDraftFrontmatter(draft) {
         return __awaiter(this, void 0, void 0, function* () {
-            // Get index file frontmatter
-            const metadata = this.metadataCache.getCache(draft.vaultPath);
-            if (!metadata) {
+            const file = app.vault.getAbstractFileByPath(draft.vaultPath);
+            if (!file || !(file instanceof obsidian.TFile)) {
                 return;
             }
-            const exists = yield this.vault.adapter.exists(draft.vaultPath);
-            if (!exists) {
-                return;
-            }
-            let frontmatter = metadata.frontmatter;
-            if (frontmatter && draft.format === "scenes") {
-                // WORKAROUND: See https://github.com/kevboh/longform/issues/86 for details
-                // In the case where this draft is multi-scene, manually fetch and parse frontmatter
-                // to prevent possible data loss, similar to initial load above.
-                frontmatter = yield manuallyParseFrontmatter(draft.vaultPath, this.vault);
-            }
-            if (!frontmatter) {
-                console.error(`[Longform] Error parsing frontmatter for draft sync at ${draft.vaultPath}, aborting edit.`);
-                return;
-            }
-            const fm = frontmatter ? lodash.exports.omit(frontmatter, ["position", "longform"]) : {};
-            const formatted = Object.keys(fm).length > 0 ? `${obsidian.stringifyYaml(fm).trim()}\n` : "";
-            const newFm = `---\n${draftToYAML(draft)}\n${formatted}---`;
-            const contents = yield this.vault.adapter.read(draft.vaultPath);
-            const newContents = replaceFrontmatter(contents, newFm);
-            yield this.vault.adapter.write(draft.vaultPath, newContents);
+            yield app.fileManager.processFrontMatter(file, (fm) => {
+                setDraftOnFrontmatterObject(fm, draft);
+            });
         });
     }
 }
@@ -36032,10 +36119,10 @@ const jumpToScene = (plugin) => ({
                 command: "esc",
                 purpose: "to dismiss",
             },
-        ], (scene, isModEvent) => {
+        ], (scene, modEvent) => {
             const path = scenePath(scene, currentDraft, plugin.app.vault);
             if (path) {
-                plugin.app.workspace.openLinkText(path, "/", isModEvent);
+                plugin.app.workspace.openLinkText(path, "/", modEvent);
             }
         }).open();
     },
@@ -37216,6 +37303,7 @@ class LongformPlugin extends obsidian.Plugin {
         // STORE-VAULT SYNC
         this.storeVaultSync.discoverDrafts();
         this.registerEvent(this.app.metadataCache.on("changed", this.storeVaultSync.fileMetadataChanged.bind(this.storeVaultSync)));
+        this.registerEvent(this.app.vault.on("create", this.storeVaultSync.fileCreated.bind(this.storeVaultSync)));
         this.registerEvent(this.app.vault.on("delete", this.storeVaultSync.fileDeleted.bind(this.storeVaultSync)));
         this.registerEvent(this.app.vault.on("rename", this.storeVaultSync.fileRenamed.bind(this.storeVaultSync)));
         // WORD COUNTS
