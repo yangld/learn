@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "工作看板",
+      "path": "工作看板.md"
+    },
+    {
+      "basename": "flink的8081端口修改为8181",
+      "path": "flink的8081端口修改为8181.md"
+    },
+    {
       "basename": "607文档编写",
       "path": "607文档编写.md"
     },
     {
       "basename": "bug列表,待部署",
       "path": "bug列表,待部署.md"
-    },
-    {
-      "basename": "工作看板",
-      "path": "工作看板.md"
     },
     {
       "basename": "bug列表, 待部署",
@@ -195,10 +199,6 @@
     {
       "basename": "todo",
       "path": "3工作日志/日志/todo.md"
-    },
-    {
-      "basename": "2022-12-13",
-      "path": "3工作日志/日志/2022-12-13.md"
     }
   ],
   "omittedPaths": [],

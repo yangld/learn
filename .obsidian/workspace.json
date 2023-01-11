@@ -112,8 +112,7 @@
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "607文档编写.md"
+                "file": "工作看板.md"
               }
             }
           },
@@ -218,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "607文档编写.md",
+                "file": "工作看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +234,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "607文档编写.md",
+                "file": "工作看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -280,17 +279,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "87d1b615f54d4820",
+  "active": "4d4ef17ceb207811",
   "lastOpenFiles": [
-    "bug列表,待部署.md",
+    "flink的8081端口修改为8181.md",
     "工作看板.md",
+    "607文档编写.md",
+    "bug列表,待部署.md",
     "bug列表, 待部署.md",
     "一所,jjj级联不显示应用最新版本, 星火查询到最新的版本了.md",
-    "607文档编写.md",
     "阅读接口文档.md",
     "1附件/WechatIMG639.png",
     "706新项目.md",
-    "添加应用时,支持手动选择设备类型, 端和边.md",
-    "3工作日志/日志/2022-12-24 16-34 景鸿逻辑修改\n.md"
+    "添加应用时,支持手动选择设备类型, 端和边.md"
   ]
 }
