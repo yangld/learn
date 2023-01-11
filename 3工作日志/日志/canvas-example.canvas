@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"b73472cc1251f3a1","x":-659,"y":-337,"width":250,"height":60,"type":"text","text":"test\n"},
+		{"id":"600a6eecf4123790","x":-284,"y":-387,"width":400,"height":220,"type":"file","file":"1附件/WechatIMG639.png"},
+		{"id":"5bf3a4341bff49a3","x":282,"y":-429,"width":400,"height":400,"type":"file","file":"flink的8081端口修改为8181.md"},
+		{"id":"8a17c9915f0e5da9","x":-125,"y":-30,"width":250,"height":60,"color":"1","type":"text","text":"1111"}
+	],
+	"edges":[]
+}
