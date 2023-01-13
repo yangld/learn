@@ -5,6 +5,14 @@
       "path": "工作看板.md"
     },
     {
+      "basename": "交互图和ER图编写",
+      "path": "交互图和ER图编写.md"
+    },
+    {
+      "basename": "bug列表,待部署",
+      "path": "bug列表,待部署.md"
+    },
+    {
       "basename": "2023-01-13",
       "path": "3工作日志/日志/2023-01-13.md"
     },
@@ -71,10 +79,6 @@
     {
       "basename": "202301111551",
       "path": "202301111551.md"
-    },
-    {
-      "basename": "bug列表,待部署",
-      "path": "bug列表,待部署.md"
     },
     {
       "basename": "canvas-example",
@@ -195,10 +199,6 @@
     {
       "basename": "未完成工作任务1121",
       "path": "未完成工作任务1121.md"
-    },
-    {
-      "basename": "202211301625",
-      "path": "202211301625.md"
     }
   ],
   "omittedPaths": [],
