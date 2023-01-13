@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "云南省集中管控,mdm与cmc同步问题",
-      "path": "云南省集中管控,mdm与cmc同步问题.md"
-    },
-    {
       "basename": "工作看板",
       "path": "工作看板.md"
+    },
+    {
+      "basename": "航天二院部署问题处理",
+      "path": "航天二院部署问题处理.md"
+    },
+    {
+      "basename": "云南省集中管控,mdm与cmc同步问题",
+      "path": "云南省集中管控,mdm与cmc同步问题.md"
     },
     {
       "basename": "BindingResult模型",
@@ -195,10 +199,6 @@
     {
       "basename": "2022-12-27",
       "path": "3工作日志/日志/2022-12-27.md"
-    },
-    {
-      "basename": "2022-12-26 10-11 景鸿逻辑修改",
-      "path": "3工作日志/日志/2022-12-26 10-11 景鸿逻辑修改.md"
     }
   ],
   "omittedPaths": [],

@@ -20,7 +20,6 @@
   "tag-wrangler",
   "tag-page-preview",
   "obsidian-style-settings",
-  "sliding-panes-obsidian",
   "recent-files-obsidian",
   "readwise-official",
   "quick-explorer",
@@ -53,5 +52,6 @@
   "editing-toolbar",
   "obsidian-rollover-daily-todos",
   "media-extended",
-  "mx-bili-plugin"
+  "mx-bili-plugin",
+  "leader-hotkeys-obsidian"
 ]
