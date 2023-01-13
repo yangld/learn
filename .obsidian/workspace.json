@@ -164,7 +164,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -235,7 +236,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作看板.md"
+                "file": "交互图和ER图编写.md"
               }
             }
           },
@@ -268,7 +269,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作看板.md",
+                "file": "交互图和ER图编写.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -285,7 +286,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作看板.md",
+                "file": "交互图和ER图编写.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -329,10 +330,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4d4ef17ceb207811",
+  "active": "5066e0044b2fb186",
   "lastOpenFiles": [
-    "交互图和ER图编写.md",
     "工作看板.md",
+    "交互图和ER图编写.md",
     "bug列表,待部署.md",
     "3工作日志/日志/2023-01-13.md",
     "607文档编写.md",
