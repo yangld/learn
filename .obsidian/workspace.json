@@ -190,7 +190,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -261,7 +262,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作看板.md"
+                "file": "航天二院部署问题处理.md"
               }
             }
           },
@@ -294,7 +295,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作看板.md",
+                "file": "航天二院部署问题处理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -311,7 +312,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作看板.md",
+                "file": "航天二院部署问题处理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -355,10 +356,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4d4ef17ceb207811",
+  "active": "080c15601981fca9",
   "lastOpenFiles": [
-    "航天二院部署问题处理.md",
     "工作看板.md",
+    "航天二院部署问题处理.md",
     "云南省集中管控,mdm与cmc同步问题.md",
     "BindingResult模型.md",
     "交互图和ER图编写.md",
