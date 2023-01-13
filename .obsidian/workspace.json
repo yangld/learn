@@ -20,6 +20,19 @@
             }
           },
           {
+            "id": "080c15601981fca9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "云南省集中管控,mdm与cmc同步问题.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "7192b4f7e5e39378",
             "type": "leaf",
             "state": {
@@ -249,7 +262,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BindingResult模型.md"
+                "file": "云南省集中管控,mdm与cmc同步问题.md"
               }
             }
           },
@@ -282,7 +295,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BindingResult模型.md",
+                "file": "云南省集中管控,mdm与cmc同步问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -299,7 +312,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BindingResult模型.md",
+                "file": "云南省集中管控,mdm与cmc同步问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -343,9 +356,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7192b4f7e5e39378",
+  "active": "080c15601981fca9",
   "lastOpenFiles": [
     "工作看板.md",
+    "BindingResult模型.md",
     "交互图和ER图编写.md",
     "bug列表,待部署.md",
     "3工作日志/日志/2023-01-13.md",
@@ -353,7 +367,6 @@
     "云南省集中管控,mdm与cmc同步问题.md",
     "3工作日志/2023-01-12 132332.md",
     "3工作日志/日志/2023-01-12.md",
-    "202301121321.md",
-    "3工作日志/日志/2023-01-16.md"
+    "202301121321.md"
   ]
 }
