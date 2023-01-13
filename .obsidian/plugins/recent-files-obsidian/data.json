@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "交互图和ER图编写",
-      "path": "交互图和ER图编写.md"
+      "basename": "BindingResult模型",
+      "path": "BindingResult模型.md"
     },
     {
       "basename": "工作看板",
       "path": "工作看板.md"
+    },
+    {
+      "basename": "交互图和ER图编写",
+      "path": "交互图和ER图编写.md"
     },
     {
       "basename": "bug列表,待部署",
@@ -195,10 +199,6 @@
     {
       "basename": "2022-12-26 10-11 景鸿逻辑修改",
       "path": "3工作日志/日志/2022-12-26 10-11 景鸿逻辑修改.md"
-    },
-    {
-      "basename": "未完成工作任务1121",
-      "path": "未完成工作任务1121.md"
     }
   ],
   "omittedPaths": [],
