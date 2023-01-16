@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "航天二院部署问题处理.md",
+                "file": "0看板/111.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -241,12 +241,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 329.5
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -262,7 +262,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "航天二院部署问题处理.md"
+                "file": "0看板/111.md"
               }
             }
           },
@@ -295,7 +295,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "航天二院部署问题处理.md",
+                "file": "0看板/111.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -312,7 +312,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "航天二院部署问题处理.md",
+                "file": "0看板/111.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -339,7 +339,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292
+    "width": 292,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -358,15 +359,15 @@
   },
   "active": "080c15601981fca9",
   "lastOpenFiles": [
-    "工作看板.md",
+    "3工作日志/日志/2023-01-14.md",
     "航天二院部署问题处理.md",
+    "工作看板.md",
     "云南省集中管控,mdm与cmc同步问题.md",
     "BindingResult模型.md",
     "交互图和ER图编写.md",
     "bug列表,待部署.md",
     "3工作日志/日志/2023-01-13.md",
     "607文档编写.md",
-    "3工作日志/2023-01-12 132332.md",
-    "3工作日志/日志/2023-01-12.md"
+    "3工作日志/2023-01-12 132332.md"
   ]
 }
