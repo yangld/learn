@@ -1,0 +1,970 @@
+2023-01-13 16:25:07,552 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - --------------------------------------------------------------------------------
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Preconfiguration: 
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - 
+
+
+RESOURCE_PARAMS extraction logs:
+jvm_params: -Xmx2051014652 -Xms2051014652 -XX:MaxMetaspaceSize=268435456
+dynamic_configs: -D jobmanager.memory.off-heap.size=134217728b -D jobmanager.memory.jvm-overhead.min=272629764b -D jobmanager.memory.jvm-metaspace.size=268435456b -D jobmanager.memory.heap.size=2051014652b -D jobmanager.memory.jvm-overhead.max=272629764b
+logs: INFO  [] - Loading configuration property: jobmanager.rpc.address, localhost
+INFO  [] - Loading configuration property: jobmanager.rpc.port, 6123
+INFO  [] - Loading configuration property: jobmanager.bind-host, localhost
+INFO  [] - Loading configuration property: jobmanager.memory.process.size, 2600m
+INFO  [] - Loading configuration property: taskmanager.bind-host, localhost
+INFO  [] - Loading configuration property: taskmanager.host, localhost
+INFO  [] - Loading configuration property: taskmanager.memory.process.size, 2728m
+INFO  [] - Loading configuration property: taskmanager.numberOfTaskSlots, 40
+INFO  [] - Loading configuration property: parallelism.default, 1
+INFO  [] - Loading configuration property: jobmanager.execution.failover-strategy, region
+INFO  [] - Loading configuration property: rest.port, 8181
+INFO  [] - Loading configuration property: rest.address, localhost
+INFO  [] - Loading configuration property: rest.bind-address, 0.0.0.0
+INFO  [] - Final Master Memory configuration:
+INFO  [] -   Total Process Memory: 2.539gb (2726297600 bytes)
+INFO  [] -     Total Flink Memory: 2.035gb (2185232380 bytes)
+INFO  [] -       JVM Heap:         1.910gb (2051014652 bytes)
+INFO  [] -       Off-heap:         128.000mb (134217728 bytes)
+INFO  [] -     JVM Metaspace:      256.000mb (268435456 bytes)
+INFO  [] -     JVM Overhead:       260.000mb (272629764 bytes)
+
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - --------------------------------------------------------------------------------
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Starting StandaloneSessionClusterEntrypoint (Version: 1.15.2, Scala: 2.12, Rev:69e8126, Date:2022-08-17T14:58:06+02:00)
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  OS current user: emmjava
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Current Hadoop/Kerberos user: <no hadoop dependency found>
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  JVM: Java HotSpot(TM) 64-Bit Server VM - Oracle Corporation - 1.8/25.301-b09
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Arch: amd64
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Maximum heap size: 1874 MiBytes
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  JAVA_HOME: /usr/java/jdk
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  No Hadoop Dependency available
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  JVM Options:
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Xmx2051014652
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Xms2051014652
+2023-01-13 16:25:07,554 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -XX:MaxMetaspaceSize=268435456
+2023-01-13 16:25:07,555 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlog.file=/apps/flink-1.15.2/log/flink-emmjava-standalonesession-1-uas.log
+2023-01-13 16:25:07,555 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlog4j.configuration=file:/apps/flink-1.15.2/conf/log4j.properties
+2023-01-13 16:25:07,555 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlog4j.configurationFile=file:/apps/flink-1.15.2/conf/log4j.properties
+2023-01-13 16:25:07,555 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -Dlogback.configurationFile=file:/apps/flink-1.15.2/conf/logback.xml
+2023-01-13 16:25:07,555 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Program Arguments:
+2023-01-13 16:25:07,556 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     --configDir
+2023-01-13 16:25:07,556 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     /apps/flink-1.15.2/conf
+2023-01-13 16:25:07,556 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     --executionMode
+2023-01-13 16:25:07,556 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     cluster
+2023-01-13 16:25:07,556 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2023-01-13 16:25:07,556 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.off-heap.size=134217728b
+2023-01-13 16:25:07,556 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2023-01-13 16:25:07,556 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.jvm-overhead.min=272629764b
+2023-01-13 16:25:07,556 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2023-01-13 16:25:07,557 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.jvm-metaspace.size=268435456b
+2023-01-13 16:25:07,557 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2023-01-13 16:25:07,557 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.heap.size=2051014652b
+2023-01-13 16:25:07,557 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     -D
+2023-01-13 16:25:07,557 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -     jobmanager.memory.jvm-overhead.max=272629764b
+2023-01-13 16:25:07,557 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] -  Classpath: /apps/flink-1.15.2/lib/flink-cep-1.15.2.jar:/apps/flink-1.15.2/lib/flink-connector-files-1.15.2.jar:/apps/flink-1.15.2/lib/flink-csv-1.15.2.jar:/apps/flink-1.15.2/lib/flink-json-1.15.2.jar:/apps/flink-1.15.2/lib/flink-scala_2.12-1.15.2.jar:/apps/flink-1.15.2/lib/flink-shaded-zookeeper-3.5.9.jar:/apps/flink-1.15.2/lib/flink-table-api-java-uber-1.15.2.jar:/apps/flink-1.15.2/lib/flink-table-planner-loader-1.15.2.jar:/apps/flink-1.15.2/lib/flink-table-runtime-1.15.2.jar:/apps/flink-1.15.2/lib/log4j-1.2-api-2.17.1.jar:/apps/flink-1.15.2/lib/log4j-api-2.17.1.jar:/apps/flink-1.15.2/lib/log4j-core-2.17.1.jar:/apps/flink-1.15.2/lib/log4j-slf4j-impl-2.17.1.jar:/apps/flink-1.15.2/lib/flink-dist-1.15.2.jar:::
+2023-01-13 16:25:07,557 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - --------------------------------------------------------------------------------
+2023-01-13 16:25:07,558 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Registered UNIX signal handlers for [TERM, HUP, INT]
+2023-01-13 16:25:07,567 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.rpc.address, localhost
+2023-01-13 16:25:07,567 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.rpc.port, 6123
+2023-01-13 16:25:07,567 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.bind-host, localhost
+2023-01-13 16:25:07,567 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.memory.process.size, 2600m
+2023-01-13 16:25:07,567 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.bind-host, localhost
+2023-01-13 16:25:07,567 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.host, localhost
+2023-01-13 16:25:07,568 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.memory.process.size, 2728m
+2023-01-13 16:25:07,568 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.numberOfTaskSlots, 40
+2023-01-13 16:25:07,568 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: parallelism.default, 1
+2023-01-13 16:25:07,568 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.execution.failover-strategy, region
+2023-01-13 16:25:07,568 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: rest.port, 8181
+2023-01-13 16:25:07,568 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: rest.address, localhost
+2023-01-13 16:25:07,569 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: rest.bind-address, 0.0.0.0
+2023-01-13 16:25:07,589 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Starting StandaloneSessionClusterEntrypoint.
+2023-01-13 16:25:07,910 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Install default filesystem.
+2023-01-13 16:25:07,934 INFO  org.apache.flink.core.fs.FileSystem                          [] - Hadoop is not in the classpath/dependencies. The extended set of supported File Systems via Hadoop is not available.
+2023-01-13 16:25:08,646 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Install security context.
+2023-01-13 16:25:08,691 INFO  org.apache.flink.runtime.security.modules.HadoopModuleFactory [] - Cannot create Hadoop Security Module because Hadoop cannot be found in the Classpath.
+2023-01-13 16:25:08,697 INFO  org.apache.flink.runtime.security.modules.JaasModule         [] - Jaas file will be created as /tmp/jaas-6349010487200935205.conf.
+2023-01-13 16:25:08,704 INFO  org.apache.flink.runtime.security.contexts.HadoopSecurityContextFactory [] - Cannot install HadoopSecurityContext because Hadoop cannot be found in the Classpath.
+2023-01-13 16:25:08,706 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Initializing cluster services.
+2023-01-13 16:25:08,713 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Using working directory: WorkingDirectory(/tmp/jm_50b94615aa2e08bb9145717d0c381334).
+2023-01-13 16:25:10,635 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Trying to start actor system, external address localhost:6123, bind address localhost:6123.
+2023-01-13 16:25:11,471 INFO  akka.event.slf4j.Slf4jLogger                                 [] - Slf4jLogger started
+2023-01-13 16:25:11,510 INFO  akka.remote.RemoteActorRefProvider                           [] - Akka Cluster not in use - enabling unsafe features anyway because `akka.remote.use-unsafe-remote-features-outside-cluster` has been enabled.
+2023-01-13 16:25:11,511 INFO  akka.remote.Remoting                                         [] - Starting remoting
+2023-01-13 16:25:11,713 INFO  akka.remote.Remoting                                         [] - Remoting started; listening on addresses :[akka.tcp://flink@localhost:6123]
+2023-01-13 16:25:11,877 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Actor system started at akka.tcp://flink@localhost:6123
+2023-01-13 16:25:11,930 INFO  org.apache.flink.runtime.blob.BlobServer                     [] - Created BLOB server storage directory /tmp/jm_50b94615aa2e08bb9145717d0c381334/blobStorage
+2023-01-13 16:25:11,934 INFO  org.apache.flink.runtime.blob.BlobServer                     [] - Started BLOB server at 127.0.0.1:46691 - max concurrent requests: 50 - max backlog: 1000
+2023-01-13 16:25:12,003 INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl          [] - No metrics reporter configured, no metrics will be exposed/reported.
+2023-01-13 16:25:12,037 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Trying to start actor system, external address localhost:0, bind address localhost:0.
+2023-01-13 16:25:12,064 INFO  akka.event.slf4j.Slf4jLogger                                 [] - Slf4jLogger started
+2023-01-13 16:25:12,070 INFO  akka.remote.RemoteActorRefProvider                           [] - Akka Cluster not in use - enabling unsafe features anyway because `akka.remote.use-unsafe-remote-features-outside-cluster` has been enabled.
+2023-01-13 16:25:12,070 INFO  akka.remote.Remoting                                         [] - Starting remoting
+2023-01-13 16:25:12,090 INFO  akka.remote.Remoting                                         [] - Remoting started; listening on addresses :[akka.tcp://flink-metrics@localhost:43362]
+2023-01-13 16:25:12,110 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils        [] - Actor system started at akka.tcp://flink-metrics@localhost:43362
+2023-01-13 16:25:12,189 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.metrics.dump.MetricQueryService at akka://flink-metrics/user/rpc/MetricQueryService .
+2023-01-13 16:25:12,281 INFO  org.apache.flink.runtime.dispatcher.FileExecutionGraphInfoStore [] - Initializing FileExecutionGraphInfoStore: Storage directory /tmp/executionGraphStore-6c3e613a-b074-4608-91ae-8dac38f167cc, expiration time 3600000, maximum cache size 52428800 bytes.
+2023-01-13 16:25:12,746 INFO  org.apache.flink.configuration.Configuration                 [] - Config uses fallback configuration key 'rest.port' instead of key 'rest.bind-port'
+2023-01-13 16:25:12,747 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Upload directory /tmp/flink-web-a803967a-f4d4-4296-a018-12e89e22bd5a/flink-web-upload does not exist. 
+2023-01-13 16:25:12,748 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Created directory /tmp/flink-web-a803967a-f4d4-4296-a018-12e89e22bd5a/flink-web-upload for file uploads.
+2023-01-13 16:25:12,751 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Starting rest endpoint.
+2023-01-13 16:25:13,941 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils          [] - Determined location of main cluster component log file: /apps/flink-1.15.2/log/flink-emmjava-standalonesession-1-uas.log
+2023-01-13 16:25:13,942 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils          [] - Determined location of main cluster component stdout file: /apps/flink-1.15.2/log/flink-emmjava-standalonesession-1-uas.out
+2023-01-13 16:25:14,244 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Rest endpoint listening at localhost:8181
+2023-01-13 16:25:14,246 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - http://localhost:8181 was granted leadership with leaderSessionID=00000000-0000-0000-0000-000000000000
+2023-01-13 16:25:14,247 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Web frontend listening at http://localhost:8181.
+2023-01-13 16:25:14,309 INFO  org.apache.flink.runtime.dispatcher.runner.DefaultDispatcherRunner [] - DefaultDispatcherRunner was granted leadership with leader id 00000000-0000-0000-0000-000000000000. Creating new DispatcherLeaderProcess.
+2023-01-13 16:25:14,313 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Start SessionDispatcherLeaderProcess.
+2023-01-13 16:25:14,315 INFO  org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl [] - Starting resource manager service.
+2023-01-13 16:25:14,316 INFO  org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl [] - Resource manager service is granted leadership with session id 00000000-0000-0000-0000-000000000000.
+2023-01-13 16:25:14,321 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Recover all persisted job graphs that are not finished, yet.
+2023-01-13 16:25:14,322 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Successfully recovered 0 persisted job graphs.
+2023-01-13 16:25:14,396 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.StandaloneResourceManager at akka://flink/user/rpc/resourcemanager_0 .
+2023-01-13 16:25:14,398 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.dispatcher.StandaloneDispatcher at akka://flink/user/rpc/dispatcher_1 .
+2023-01-13 16:25:14,498 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Starting the resource manager.
+2023-01-13 16:25:24,593 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering TaskManager with ResourceID localhost:45074-408161 (akka.tcp://flink@localhost:45074/user/rpc/taskmanager_0) at ResourceManager
+2023-01-16 10:02:55,906 WARN  org.apache.flink.runtime.webmonitor.handlers.JarRunHandler   [] - Configuring the job submission via query parameters is deprecated. Please migrate to submitting a JSON request instead.
+2023-01-16 10:02:55,966 INFO  org.apache.flink.client.ClientUtils                          [] - Starting program (detached: true)
+2023-01-16 10:02:56,381 WARN  org.apache.flink.connector.kafka.sink.KafkaSinkBuilder       [] - Property [transaction.timeout.ms] not specified. Setting it to PT1H
+2023-01-16 10:02:56,601 INFO  org.apache.flink.client.deployment.application.executors.EmbeddedExecutor [] - Job 05a4fdc10d323170309135cba6b8dedd is submitted.
+2023-01-16 10:02:56,602 INFO  org.apache.flink.client.deployment.application.executors.EmbeddedExecutor [] - Submitting Job with JobId=05a4fdc10d323170309135cba6b8dedd.
+2023-01-16 10:02:57,064 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'cmc-association-analysis-job' (05a4fdc10d323170309135cba6b8dedd).
+2023-01-16 10:02:57,064 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'cmc-association-analysis-job' (05a4fdc10d323170309135cba6b8dedd).
+2023-01-16 10:02:57,135 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_2 .
+2023-01-16 10:02:57,150 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'cmc-association-analysis-job' (05a4fdc10d323170309135cba6b8dedd).
+2023-01-16 10:02:57,176 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy FixedDelayRestartBackoffTimeStrategy(maxNumberRestartAttempts=100, backoffTimeMS=60000) for cmc-association-analysis-job (05a4fdc10d323170309135cba6b8dedd).
+2023-01-16 10:02:57,244 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job cmc-association-analysis-job (05a4fdc10d323170309135cba6b8dedd).
+2023-01-16 10:02:57,244 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2023-01-16 10:02:57,297 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 4 new pipelined regions in 3 ms, total 4 pipelined regions currently.
+2023-01-16 10:02:57,306 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@5622c532
+2023-01-16 10:02:57,306 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2023-01-16 10:02:57,308 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2023-01-16 10:02:57,396 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2023-01-16 10:02:57,406 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@11af8429 for cmc-association-analysis-job (05a4fdc10d323170309135cba6b8dedd).
+2023-01-16 10:02:57,420 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'cmc-association-analysis-job' (05a4fdc10d323170309135cba6b8dedd) under job master id 00000000000000000000000000000000.
+2023-01-16 10:02:57,426 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Starting split enumerator for source Source: Kafka Source.
+2023-01-16 10:02:57,434 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2023-01-16 10:02:57,434 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job cmc-association-analysis-job (05a4fdc10d323170309135cba6b8dedd) switched from state CREATED to RUNNING.
+2023-01-16 10:02:57,617 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (ca00d3a4dc0472713b6486d076334455) switched from CREATED to SCHEDULED.
+2023-01-16 10:02:57,631 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (f51b3e2afd67fc915e30718aa3a881e8) switched from CREATED to SCHEDULED.
+2023-01-16 10:02:57,631 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (e43813a7d310d6815202c127e8e791b9) switched from CREATED to SCHEDULED.
+2023-01-16 10:02:57,632 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (c017b4b593d22168e55e9278c4bc18cf) switched from CREATED to SCHEDULED.
+2023-01-16 10:02:57,632 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@localhost:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2023-01-16 10:02:57,636 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2023-01-16 10:02:57,639 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@localhost:6123/user/rpc/jobmanager_2 for job 05a4fdc10d323170309135cba6b8dedd.
+2023-01-16 10:02:57,641 INFO  org.apache.kafka.clients.admin.AdminClientConfig             [] - AdminClientConfig values: 
+	bootstrap.servers = [kafka.pekall.com:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = aa_group-enumerator-admin-client
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-01-16 10:02:57,652 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@localhost:6123/user/rpc/jobmanager_2 for job 05a4fdc10d323170309135cba6b8dedd.
+2023-01-16 10:02:57,655 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2023-01-16 10:02:57,657 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=4}]
+2023-01-16 10:02:57,719 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'key.deserializer' was supplied but isn't a known config.
+2023-01-16 10:02:57,719 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'value.deserializer' was supplied but isn't a known config.
+2023-01-16 10:02:57,719 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'enable.auto.commit' was supplied but isn't a known config.
+2023-01-16 10:02:57,719 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'group.id' was supplied but isn't a known config.
+2023-01-16 10:02:57,719 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'client.id.prefix' was supplied but isn't a known config.
+2023-01-16 10:02:57,719 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'partition.discovery.interval.ms' was supplied but isn't a known config.
+2023-01-16 10:02:57,719 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'auto.offset.reset' was supplied but isn't a known config.
+2023-01-16 10:02:57,720 INFO  org.apache.kafka.common.utils.AppInfoParser                  [] - Kafka version: 2.8.1
+2023-01-16 10:02:57,720 INFO  org.apache.kafka.common.utils.AppInfoParser                  [] - Kafka commitId: 839b886f9b732b15
+2023-01-16 10:02:57,720 INFO  org.apache.kafka.common.utils.AppInfoParser                  [] - Kafka startTimeMs: 1673834577719
+2023-01-16 10:02:57,721 INFO  org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator [] - Starting the KafkaSourceEnumerator for consumer group aa_group without periodic partition discovery.
+2023-01-16 10:02:57,784 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (ca00d3a4dc0472713b6486d076334455) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:02:57,785 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (attempt #0) with attempt id ca00d3a4dc0472713b6486d076334455 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id ae0e84ebc7792f9db263657d23b8eb7e
+2023-01-16 10:02:57,793 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (f51b3e2afd67fc915e30718aa3a881e8) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:02:57,793 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (attempt #0) with attempt id f51b3e2afd67fc915e30718aa3a881e8 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 82d5ad9e73f9b82d7d5f97cab1ce3cae
+2023-01-16 10:02:57,793 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (e43813a7d310d6815202c127e8e791b9) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:02:57,793 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (attempt #0) with attempt id e43813a7d310d6815202c127e8e791b9 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 07b1e0dc861f8d630fb22ff0d994b8fc
+2023-01-16 10:02:57,794 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (c017b4b593d22168e55e9278c4bc18cf) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:02:57,794 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (attempt #0) with attempt id c017b4b593d22168e55e9278c4bc18cf and vertex id cbc357ccb763df2852fee8c4fc7d55f2_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 3a674757369b66ed305301c5176567f8
+2023-01-16 10:02:57,977 ERROR org.apache.flink.runtime.source.coordinator.SourceCoordinatorContext [] - Exception while handling result from async call in SourceCoordinator-Source: Kafka Source. Triggering job failover.
+org.apache.flink.util.FlinkRuntimeException: Failed to list subscribed topic partitions due to 
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.checkPartitionChanges(KafkaSourceEnumerator.java:234) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$null$1(ExecutorNotifier.java:83) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.util.ThrowableCatchingRunnable.run(ThrowableCatchingRunnable.java:40) [flink-dist-1.15.2.jar:1.15.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_301]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_301]
+Caused by: java.lang.RuntimeException: Failed to get metadata for topics [associ-analysis-cmc-user-login-log, associ-analysis-cmc-res-visit-log, associ-analysis-cmc-device-register-log, associ-analysis-cmc-app-use-log].
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:47) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+	at org.apache.kafka.common.internals.KafkaFutureImpl.wrapAndThrow(KafkaFutureImpl.java:45) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.access$000(KafkaFutureImpl.java:32) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:89) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:260) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:44) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+2023-01-16 10:02:58,004 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Trying to recover from a global failure.
+org.apache.flink.util.FlinkException: Global failure triggered by OperatorCoordinator for 'Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer' (operator cbc357ccb763df2852fee8c4fc7d55f2).
+	at org.apache.flink.runtime.operators.coordination.OperatorCoordinatorHolder$LazyInitializedCoordinatorContext.failJob(OperatorCoordinatorHolder.java:556) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.runtime.operators.coordination.RecreateOnResetOperatorCoordinator$QuiesceableContext.failJob(RecreateOnResetOperatorCoordinator.java:231) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinatorContext.failJob(SourceCoordinatorContext.java:316) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinatorContext.handleUncaughtExceptionFromAsyncCall(SourceCoordinatorContext.java:329) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.util.ThrowableCatchingRunnable.run(ThrowableCatchingRunnable.java:42) ~[flink-dist-1.15.2.jar:1.15.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_301]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_301]
+Caused by: org.apache.flink.util.FlinkRuntimeException: Failed to list subscribed topic partitions due to 
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.checkPartitionChanges(KafkaSourceEnumerator.java:234) ~[?:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$null$1(ExecutorNotifier.java:83) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.util.ThrowableCatchingRunnable.run(ThrowableCatchingRunnable.java:40) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: java.lang.RuntimeException: Failed to get metadata for topics [associ-analysis-cmc-user-login-log, associ-analysis-cmc-res-visit-log, associ-analysis-cmc-device-register-log, associ-analysis-cmc-app-use-log].
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:47) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[?:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+	at org.apache.kafka.common.internals.KafkaFutureImpl.wrapAndThrow(KafkaFutureImpl.java:45) ~[?:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.access$000(KafkaFutureImpl.java:32) ~[?:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:89) ~[?:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:260) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:44) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[?:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+2023-01-16 10:02:58,010 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job cmc-association-analysis-job (05a4fdc10d323170309135cba6b8dedd) switched from state RUNNING to RESTARTING.
+2023-01-16 10:02:58,013 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (c017b4b593d22168e55e9278c4bc18cf) switched from DEPLOYING to CANCELING.
+2023-01-16 10:02:58,013 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 3 of source Source: Kafka Source.
+2023-01-16 10:02:58,016 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (e43813a7d310d6815202c127e8e791b9) switched from DEPLOYING to CANCELING.
+2023-01-16 10:02:58,016 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 2 of source Source: Kafka Source.
+2023-01-16 10:02:58,016 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (f51b3e2afd67fc915e30718aa3a881e8) switched from DEPLOYING to CANCELING.
+2023-01-16 10:02:58,016 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 1 of source Source: Kafka Source.
+2023-01-16 10:02:58,016 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (ca00d3a4dc0472713b6486d076334455) switched from DEPLOYING to CANCELING.
+2023-01-16 10:02:58,016 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 0 of source Source: Kafka Source.
+2023-01-16 10:02:58,401 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (e43813a7d310d6815202c127e8e791b9) switched from CANCELING to CANCELED.
+2023-01-16 10:02:58,406 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2023-01-16 10:02:58,408 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (f51b3e2afd67fc915e30718aa3a881e8) switched from CANCELING to CANCELED.
+2023-01-16 10:02:58,409 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2023-01-16 10:02:58,410 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (c017b4b593d22168e55e9278c4bc18cf) switched from CANCELING to CANCELED.
+2023-01-16 10:02:58,411 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2023-01-16 10:02:58,411 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (ca00d3a4dc0472713b6486d076334455) switched from CANCELING to CANCELED.
+2023-01-16 10:02:58,412 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job 05a4fdc10d323170309135cba6b8dedd
+2023-01-16 10:03:03,640 WARN  org.apache.flink.runtime.webmonitor.handlers.JarRunHandler   [] - Configuring the job submission via query parameters is deprecated. Please migrate to submitting a JSON request instead.
+2023-01-16 10:03:03,722 INFO  org.apache.flink.client.ClientUtils                          [] - Starting program (detached: true)
+2023-01-16 10:03:03,771 WARN  org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase [] - Ignoring configured key DeSerializer (key.deserializer)
+2023-01-16 10:03:03,771 WARN  org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase [] - Ignoring configured value DeSerializer (value.deserializer)
+2023-01-16 10:03:03,828 WARN  org.apache.flink.connector.kafka.sink.KafkaSinkBuilder       [] - Property [transaction.timeout.ms] not specified. Setting it to PT1H
+2023-01-16 10:03:03,833 WARN  org.apache.flink.connector.kafka.sink.KafkaSinkBuilder       [] - Property [transaction.timeout.ms] not specified. Setting it to PT1H
+2023-01-16 10:03:03,833 WARN  org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase [] - Ignoring configured key DeSerializer (key.deserializer)
+2023-01-16 10:03:03,833 WARN  org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase [] - Ignoring configured value DeSerializer (value.deserializer)
+2023-01-16 10:03:03,839 WARN  org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase [] - Ignoring configured key DeSerializer (key.deserializer)
+2023-01-16 10:03:03,839 WARN  org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase [] - Ignoring configured value DeSerializer (value.deserializer)
+2023-01-16 10:03:03,851 WARN  org.apache.flink.connector.kafka.sink.KafkaSinkBuilder       [] - Property [transaction.timeout.ms] not specified. Setting it to PT1H
+2023-01-16 10:03:03,851 WARN  org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase [] - Ignoring configured key DeSerializer (key.deserializer)
+2023-01-16 10:03:03,851 WARN  org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase [] - Ignoring configured value DeSerializer (value.deserializer)
+2023-01-16 10:03:03,855 WARN  org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase [] - Ignoring configured key DeSerializer (key.deserializer)
+2023-01-16 10:03:03,855 WARN  org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase [] - Ignoring configured value DeSerializer (value.deserializer)
+2023-01-16 10:03:03,897 INFO  org.apache.flink.client.deployment.application.executors.EmbeddedExecutor [] - Job 68400323329a6b7eb5377ce243caa837 is submitted.
+2023-01-16 10:03:03,897 INFO  org.apache.flink.client.deployment.application.executors.EmbeddedExecutor [] - Submitting Job with JobId=68400323329a6b7eb5377ce243caa837.
+2023-01-16 10:03:04,713 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'write to elasticsearch' (68400323329a6b7eb5377ce243caa837).
+2023-01-16 10:03:04,713 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'write to elasticsearch' (68400323329a6b7eb5377ce243caa837).
+2023-01-16 10:03:04,717 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_3 .
+2023-01-16 10:03:04,718 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'write to elasticsearch' (68400323329a6b7eb5377ce243caa837).
+2023-01-16 10:03:04,720 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy FixedDelayRestartBackoffTimeStrategy(maxNumberRestartAttempts=100, backoffTimeMS=60000) for write to elasticsearch (68400323329a6b7eb5377ce243caa837).
+2023-01-16 10:03:04,726 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job write to elasticsearch (68400323329a6b7eb5377ce243caa837).
+2023-01-16 10:03:04,726 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2023-01-16 10:03:04,739 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 5 new pipelined regions in 0 ms, total 5 pipelined regions currently.
+2023-01-16 10:03:04,740 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@7fd63322
+2023-01-16 10:03:04,740 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2023-01-16 10:03:04,740 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2023-01-16 10:03:04,740 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2023-01-16 10:03:04,741 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@50c644dd for write to elasticsearch (68400323329a6b7eb5377ce243caa837).
+2023-01-16 10:03:04,742 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'write to elasticsearch' (68400323329a6b7eb5377ce243caa837) under job master id 00000000000000000000000000000000.
+2023-01-16 10:03:04,744 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2023-01-16 10:03:04,744 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job write to elasticsearch (68400323329a6b7eb5377ce243caa837) switched from state CREATED to RUNNING.
+2023-01-16 10:03:04,745 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (1/4) (7e2e2a127985586373d6c1eb52c8c9ba) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,745 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (2/4) (af8224c411882df9fdaf31640140b67e) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,745 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (3/4) (87f076d81db9f6e336e41b5e3c3bb5ce) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,745 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (4/4) (b7a2a80cdfd489e5ae4131a9145df740) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,745 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (1/4) (4e7f6e4f993727b5158d6555a3896adb) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,745 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (2/4) (1461c3fc0edc697300cccec0d249aa93) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,746 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (3/4) (cbe8f40e5dcd20cf0cd490295dfb476f) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,746 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (4/4) (b346b128b8e3260d7556e54bc1d218ee) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,746 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (1/4) (befc6864c940599499d9f9430bd6c256) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,746 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (2/4) (7c6a4e3244fbf907a665180a66d15feb) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,746 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (3/4) (6647d5752ea7b195eb10f4404a15535e) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,746 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (4/4) (6b09f4f6a16303905030052a56d8e384) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,753 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (ea485145e41eced5db1283a409ca80a3) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,753 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (dd76e46b93fbb2b54dbc62bb55ce1230) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,753 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (bf638e933d6bc904ea4e8b2f9ed799ff) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,754 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (0e56985b73f72e50861a951de2bfeabc) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,754 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (1/4) (369ddeff7988cb3c0c9040fcae3aa347) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,754 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (2/4) (2e250f3bfe6c02e9c3a7b75bc6c1d3e1) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,754 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (3/4) (4fc9d2e8db561244fe91d01f4b463646) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,754 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (4/4) (1091af2ab64a3ee914db3254dafeffe1) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,755 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (1/4) (408549bbdf37123bdd76978c123fe683) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,755 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (2/4) (38dbb7ce5377c87835150f4ec0667798) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,755 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (3/4) (8a51572965151d07a1c076eeb8e92e9b) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,755 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (4/4) (d9b095960c560814343f2986169cfecb) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,756 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (1/4) (4d49e89808ba80107b51f1bab549a99a) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,756 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (2/4) (851a8d3577aafdb03b2ff8dd31dda786) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,756 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (3/4) (bdcf6e556cd326ec4c78cabf6f1719a0) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,756 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (4/4) (cef58fba5e8a6b60315e0a03d3f664e6) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,757 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (1/4) (08154a806a26415e9ab42c37d85d441e) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,757 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (2/4) (81d986d683e19c4f055f5abc708d4f76) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,757 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (3/4) (14a4ff375270914caa955819a4aa0212) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,757 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (4/4) (d90674490093884e0a3f47b512952c46) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,758 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (2b34846a6ebfbf606166b1fb48c87132) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,758 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (9843f88f2e982a055a078d22fc3bb766) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,759 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (3395759e2a1fa087076e0ff1e6fb7ee5) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,759 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (3393c4bb8edbc2d2b6d79bd1a0bcfe44) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,759 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (1/4) (1090bd689bffb8b177ae928bf5aba36e) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,759 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (2/4) (bceb598893c9b24b5a913cbba1524320) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,759 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (3/4) (b0e0aa5381c6e3c039978f4958b54da0) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,759 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (4/4) (e0723d94dd50b21533241a1d2738df98) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,760 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (1/4) (529dc8da1968f582866b524e89d06b08) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,760 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (2/4) (c503bb542fe8ef8b39f850a8b25e6d7b) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,760 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (3/4) (694a8a00e4610e5187e07464029cd57a) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,760 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (4/4) (24281a0bdce111254c47ee34cf21cb45) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,761 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (a78b935be4f54d52f0eb6e6ab0315341) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,761 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (13673e2bd8a65412152dc126af0a85f3) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,761 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (52a1e630f5e89b042c06dcf243710b43) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,761 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (3d7434300c409fa2fb412640a42a7a9a) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,761 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (1/4) (00aced72a245625d4c75778c441bd0c0) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,762 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (2/4) (a602f5ea561fba6b5bd3ba1a4f9b6cab) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,762 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (3/4) (348c31ff6f1e602a7d232b941fefd516) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,762 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (4/4) (0f6b787da7369a7b790761b722ff4d13) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:04,763 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@localhost:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2023-01-16 10:03:04,764 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2023-01-16 10:03:04,765 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@localhost:6123/user/rpc/jobmanager_3 for job 68400323329a6b7eb5377ce243caa837.
+2023-01-16 10:03:04,768 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@localhost:6123/user/rpc/jobmanager_3 for job 68400323329a6b7eb5377ce243caa837.
+2023-01-16 10:03:04,773 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2023-01-16 10:03:04,774 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 68400323329a6b7eb5377ce243caa837: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=4}]
+2023-01-16 10:03:04,810 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (1/4) (7e2e2a127985586373d6c1eb52c8c9ba) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,810 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (1/4) (attempt #0) with attempt id 7e2e2a127985586373d6c1eb52c8c9ba and vertex id d618a97df21bbd4bb61c79cdeca965b4_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,811 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (2/4) (af8224c411882df9fdaf31640140b67e) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,812 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (2/4) (attempt #0) with attempt id af8224c411882df9fdaf31640140b67e and vertex id d618a97df21bbd4bb61c79cdeca965b4_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,813 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (3/4) (87f076d81db9f6e336e41b5e3c3bb5ce) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,813 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (3/4) (attempt #0) with attempt id 87f076d81db9f6e336e41b5e3c3bb5ce and vertex id d618a97df21bbd4bb61c79cdeca965b4_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,813 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (4/4) (b7a2a80cdfd489e5ae4131a9145df740) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,813 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (4/4) (attempt #0) with attempt id b7a2a80cdfd489e5ae4131a9145df740 and vertex id d618a97df21bbd4bb61c79cdeca965b4_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,814 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (1/4) (4e7f6e4f993727b5158d6555a3896adb) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,814 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (1/4) (attempt #0) with attempt id 4e7f6e4f993727b5158d6555a3896adb and vertex id 3551091182cdb187b8a6ae04879b94a2_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,826 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (2/4) (1461c3fc0edc697300cccec0d249aa93) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,826 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (2/4) (attempt #0) with attempt id 1461c3fc0edc697300cccec0d249aa93 and vertex id 3551091182cdb187b8a6ae04879b94a2_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,827 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (3/4) (cbe8f40e5dcd20cf0cd490295dfb476f) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,827 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (3/4) (attempt #0) with attempt id cbe8f40e5dcd20cf0cd490295dfb476f and vertex id 3551091182cdb187b8a6ae04879b94a2_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,827 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (4/4) (b346b128b8e3260d7556e54bc1d218ee) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,827 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (4/4) (attempt #0) with attempt id b346b128b8e3260d7556e54bc1d218ee and vertex id 3551091182cdb187b8a6ae04879b94a2_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,828 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (1/4) (befc6864c940599499d9f9430bd6c256) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,828 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (1/4) (attempt #0) with attempt id befc6864c940599499d9f9430bd6c256 and vertex id bf0d0e8432ee28a0792b8b12cbbd82d1_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,832 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (2/4) (7c6a4e3244fbf907a665180a66d15feb) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,832 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (2/4) (attempt #0) with attempt id 7c6a4e3244fbf907a665180a66d15feb and vertex id bf0d0e8432ee28a0792b8b12cbbd82d1_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,833 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (3/4) (6647d5752ea7b195eb10f4404a15535e) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,833 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (3/4) (attempt #0) with attempt id 6647d5752ea7b195eb10f4404a15535e and vertex id bf0d0e8432ee28a0792b8b12cbbd82d1_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,833 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (4/4) (6b09f4f6a16303905030052a56d8e384) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,833 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (4/4) (attempt #0) with attempt id 6b09f4f6a16303905030052a56d8e384 and vertex id bf0d0e8432ee28a0792b8b12cbbd82d1_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,834 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (ea485145e41eced5db1283a409ca80a3) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,834 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (1/4) (attempt #0) with attempt id ea485145e41eced5db1283a409ca80a3 and vertex id feca28aff5a3958840bee985ee7de4d3_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,835 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (dd76e46b93fbb2b54dbc62bb55ce1230) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,835 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (2/4) (attempt #0) with attempt id dd76e46b93fbb2b54dbc62bb55ce1230 and vertex id feca28aff5a3958840bee985ee7de4d3_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,835 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (bf638e933d6bc904ea4e8b2f9ed799ff) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,836 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (3/4) (attempt #0) with attempt id bf638e933d6bc904ea4e8b2f9ed799ff and vertex id feca28aff5a3958840bee985ee7de4d3_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,836 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (0e56985b73f72e50861a951de2bfeabc) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,836 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (4/4) (attempt #0) with attempt id 0e56985b73f72e50861a951de2bfeabc and vertex id feca28aff5a3958840bee985ee7de4d3_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,836 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (1/4) (369ddeff7988cb3c0c9040fcae3aa347) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,837 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: app_day_to_db (1/4) (attempt #0) with attempt id 369ddeff7988cb3c0c9040fcae3aa347 and vertex id 68afe4921437f753c092ff0ecf7e180e_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,839 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (2/4) (2e250f3bfe6c02e9c3a7b75bc6c1d3e1) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,839 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: app_day_to_db (2/4) (attempt #0) with attempt id 2e250f3bfe6c02e9c3a7b75bc6c1d3e1 and vertex id 68afe4921437f753c092ff0ecf7e180e_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,839 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (3/4) (4fc9d2e8db561244fe91d01f4b463646) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,840 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: app_day_to_db (3/4) (attempt #0) with attempt id 4fc9d2e8db561244fe91d01f4b463646 and vertex id 68afe4921437f753c092ff0ecf7e180e_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,840 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (4/4) (1091af2ab64a3ee914db3254dafeffe1) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,840 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: app_day_to_db (4/4) (attempt #0) with attempt id 1091af2ab64a3ee914db3254dafeffe1 and vertex id 68afe4921437f753c092ff0ecf7e180e_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,841 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (1/4) (408549bbdf37123bdd76978c123fe683) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,841 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (1/4) (attempt #0) with attempt id 408549bbdf37123bdd76978c123fe683 and vertex id d472c0d23b2708145dddebbb267d28e8_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,843 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (2/4) (38dbb7ce5377c87835150f4ec0667798) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,843 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (2/4) (attempt #0) with attempt id 38dbb7ce5377c87835150f4ec0667798 and vertex id d472c0d23b2708145dddebbb267d28e8_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,843 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (3/4) (8a51572965151d07a1c076eeb8e92e9b) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,843 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (3/4) (attempt #0) with attempt id 8a51572965151d07a1c076eeb8e92e9b and vertex id d472c0d23b2708145dddebbb267d28e8_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,844 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (4/4) (d9b095960c560814343f2986169cfecb) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,844 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (4/4) (attempt #0) with attempt id d9b095960c560814343f2986169cfecb and vertex id d472c0d23b2708145dddebbb267d28e8_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,844 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (1/4) (4d49e89808ba80107b51f1bab549a99a) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,845 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (1/4) (attempt #0) with attempt id 4d49e89808ba80107b51f1bab549a99a and vertex id 04555834deeaddf58fa912b0c73b195f_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,845 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (2/4) (851a8d3577aafdb03b2ff8dd31dda786) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,845 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (2/4) (attempt #0) with attempt id 851a8d3577aafdb03b2ff8dd31dda786 and vertex id 04555834deeaddf58fa912b0c73b195f_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,846 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (3/4) (bdcf6e556cd326ec4c78cabf6f1719a0) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,846 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (3/4) (attempt #0) with attempt id bdcf6e556cd326ec4c78cabf6f1719a0 and vertex id 04555834deeaddf58fa912b0c73b195f_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,846 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (4/4) (cef58fba5e8a6b60315e0a03d3f664e6) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,847 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (4/4) (attempt #0) with attempt id cef58fba5e8a6b60315e0a03d3f664e6 and vertex id 04555834deeaddf58fa912b0c73b195f_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,847 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (1/4) (08154a806a26415e9ab42c37d85d441e) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,847 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (1/4) (attempt #0) with attempt id 08154a806a26415e9ab42c37d85d441e and vertex id d198ef2ca19177bf73f8273ac34a6022_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,849 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (2/4) (81d986d683e19c4f055f5abc708d4f76) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,849 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (2/4) (attempt #0) with attempt id 81d986d683e19c4f055f5abc708d4f76 and vertex id d198ef2ca19177bf73f8273ac34a6022_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,850 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (3/4) (14a4ff375270914caa955819a4aa0212) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,850 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (3/4) (attempt #0) with attempt id 14a4ff375270914caa955819a4aa0212 and vertex id d198ef2ca19177bf73f8273ac34a6022_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,850 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (4/4) (d90674490093884e0a3f47b512952c46) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,850 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (4/4) (attempt #0) with attempt id d90674490093884e0a3f47b512952c46 and vertex id d198ef2ca19177bf73f8273ac34a6022_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,852 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (2b34846a6ebfbf606166b1fb48c87132) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,852 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (1/4) (attempt #0) with attempt id 2b34846a6ebfbf606166b1fb48c87132 and vertex id 3ba1d27b7fde4848a86e865c6c402dfa_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,852 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (9843f88f2e982a055a078d22fc3bb766) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,852 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (2/4) (attempt #0) with attempt id 9843f88f2e982a055a078d22fc3bb766 and vertex id 3ba1d27b7fde4848a86e865c6c402dfa_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,854 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (3395759e2a1fa087076e0ff1e6fb7ee5) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,854 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (3/4) (attempt #0) with attempt id 3395759e2a1fa087076e0ff1e6fb7ee5 and vertex id 3ba1d27b7fde4848a86e865c6c402dfa_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,854 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (3393c4bb8edbc2d2b6d79bd1a0bcfe44) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,854 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (4/4) (attempt #0) with attempt id 3393c4bb8edbc2d2b6d79bd1a0bcfe44 and vertex id 3ba1d27b7fde4848a86e865c6c402dfa_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,855 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (1/4) (1090bd689bffb8b177ae928bf5aba36e) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,855 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: res_day_to_db (1/4) (attempt #0) with attempt id 1090bd689bffb8b177ae928bf5aba36e and vertex id 7d247ce98c7d105f5feb81b6df274bd2_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,858 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (2/4) (bceb598893c9b24b5a913cbba1524320) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,858 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: res_day_to_db (2/4) (attempt #0) with attempt id bceb598893c9b24b5a913cbba1524320 and vertex id 7d247ce98c7d105f5feb81b6df274bd2_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,859 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (3/4) (b0e0aa5381c6e3c039978f4958b54da0) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,859 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: res_day_to_db (3/4) (attempt #0) with attempt id b0e0aa5381c6e3c039978f4958b54da0 and vertex id 7d247ce98c7d105f5feb81b6df274bd2_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,859 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (4/4) (e0723d94dd50b21533241a1d2738df98) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,859 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: res_day_to_db (4/4) (attempt #0) with attempt id e0723d94dd50b21533241a1d2738df98 and vertex id 7d247ce98c7d105f5feb81b6df274bd2_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,860 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (1/4) (529dc8da1968f582866b524e89d06b08) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,860 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (1/4) (attempt #0) with attempt id 529dc8da1968f582866b524e89d06b08 and vertex id 262752ff133693fa50173a0072ea6c4b_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,862 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (2/4) (c503bb542fe8ef8b39f850a8b25e6d7b) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,862 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (2/4) (attempt #0) with attempt id c503bb542fe8ef8b39f850a8b25e6d7b and vertex id 262752ff133693fa50173a0072ea6c4b_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,862 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (3/4) (694a8a00e4610e5187e07464029cd57a) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,863 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (3/4) (attempt #0) with attempt id 694a8a00e4610e5187e07464029cd57a and vertex id 262752ff133693fa50173a0072ea6c4b_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,863 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (4/4) (24281a0bdce111254c47ee34cf21cb45) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,863 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (4/4) (attempt #0) with attempt id 24281a0bdce111254c47ee34cf21cb45 and vertex id 262752ff133693fa50173a0072ea6c4b_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,865 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (a78b935be4f54d52f0eb6e6ab0315341) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,865 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (1/4) (attempt #0) with attempt id a78b935be4f54d52f0eb6e6ab0315341 and vertex id f05783c945e9c31c8a9c42083615d38b_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,866 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (13673e2bd8a65412152dc126af0a85f3) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,866 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (2/4) (attempt #0) with attempt id 13673e2bd8a65412152dc126af0a85f3 and vertex id f05783c945e9c31c8a9c42083615d38b_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,866 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (52a1e630f5e89b042c06dcf243710b43) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,866 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (3/4) (attempt #0) with attempt id 52a1e630f5e89b042c06dcf243710b43 and vertex id f05783c945e9c31c8a9c42083615d38b_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,867 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (3d7434300c409fa2fb412640a42a7a9a) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,867 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Custom Source (4/4) (attempt #0) with attempt id 3d7434300c409fa2fb412640a42a7a9a and vertex id f05783c945e9c31c8a9c42083615d38b_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:04,868 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (1/4) (00aced72a245625d4c75778c441bd0c0) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,868 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: user_day_to_db (1/4) (attempt #0) with attempt id 00aced72a245625d4c75778c441bd0c0 and vertex id eaab6154709b530af3e03d31dc294de8_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 9c8d96d913949877cd92e9a5d094d01b
+2023-01-16 10:03:04,869 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (2/4) (a602f5ea561fba6b5bd3ba1a4f9b6cab) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: user_day_to_db (2/4) (attempt #0) with attempt id a602f5ea561fba6b5bd3ba1a4f9b6cab and vertex id eaab6154709b530af3e03d31dc294de8_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 0253bf07960208893948d04e4d42139f
+2023-01-16 10:03:04,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (3/4) (348c31ff6f1e602a7d232b941fefd516) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: user_day_to_db (3/4) (attempt #0) with attempt id 348c31ff6f1e602a7d232b941fefd516 and vertex id eaab6154709b530af3e03d31dc294de8_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 7d708d70d6f9a6b3507c9b6a23ca098d
+2023-01-16 10:03:04,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (4/4) (0f6b787da7369a7b790761b722ff4d13) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:04,870 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying TumblingProcessingTimeWindows -> Sink: user_day_to_db (4/4) (attempt #0) with attempt id 0f6b787da7369a7b790761b722ff4d13 and vertex id eaab6154709b530af3e03d31dc294de8_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 900b0e04aaecefb51166bbbbf15eebbb
+2023-01-16 10:03:05,768 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (1/4) (1090bd689bffb8b177ae928bf5aba36e) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,769 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (1/4) (4e7f6e4f993727b5158d6555a3896adb) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,769 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (2/4) (38dbb7ce5377c87835150f4ec0667798) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,769 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (2/4) (c503bb542fe8ef8b39f850a8b25e6d7b) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,770 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (3/4) (cbe8f40e5dcd20cf0cd490295dfb476f) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,773 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (1/4) (408549bbdf37123bdd76978c123fe683) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,773 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (4/4) (b346b128b8e3260d7556e54bc1d218ee) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,774 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (2/4) (bceb598893c9b24b5a913cbba1524320) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,775 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (2/4) (1461c3fc0edc697300cccec0d249aa93) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,777 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (3/4) (348c31ff6f1e602a7d232b941fefd516) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,778 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (1/4) (529dc8da1968f582866b524e89d06b08) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,778 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (2/4) (81d986d683e19c4f055f5abc708d4f76) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,778 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (2/4) (2e250f3bfe6c02e9c3a7b75bc6c1d3e1) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,779 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (4/4) (6b09f4f6a16303905030052a56d8e384) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,779 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (4/4) (d90674490093884e0a3f47b512952c46) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,779 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (2/4) (7c6a4e3244fbf907a665180a66d15feb) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,780 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (1/4) (369ddeff7988cb3c0c9040fcae3aa347) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,780 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (4/4) (24281a0bdce111254c47ee34cf21cb45) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,780 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (1/4) (08154a806a26415e9ab42c37d85d441e) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,780 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (3/4) (6647d5752ea7b195eb10f4404a15535e) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,781 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (3/4) (b0e0aa5381c6e3c039978f4958b54da0) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,781 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (3/4) (4fc9d2e8db561244fe91d01f4b463646) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,783 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (4/4) (d9b095960c560814343f2986169cfecb) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,784 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (3/4) (8a51572965151d07a1c076eeb8e92e9b) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,785 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (3/4) (694a8a00e4610e5187e07464029cd57a) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,785 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (1/4) (00aced72a245625d4c75778c441bd0c0) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,786 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (2/4) (a602f5ea561fba6b5bd3ba1a4f9b6cab) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,787 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (4/4) (1091af2ab64a3ee914db3254dafeffe1) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,788 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (4/4) (0f6b787da7369a7b790761b722ff4d13) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,788 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (4/4) (e0723d94dd50b21533241a1d2738df98) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,790 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (3/4) (14a4ff375270914caa955819a4aa0212) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,790 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (1/4) (befc6864c940599499d9f9430bd6c256) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,791 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (3d7434300c409fa2fb412640a42a7a9a) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,792 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (3393c4bb8edbc2d2b6d79bd1a0bcfe44) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,792 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (9843f88f2e982a055a078d22fc3bb766) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,793 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (4/4) (cef58fba5e8a6b60315e0a03d3f664e6) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,795 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (13673e2bd8a65412152dc126af0a85f3) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,797 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (3/4) (bdcf6e556cd326ec4c78cabf6f1719a0) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,798 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (a78b935be4f54d52f0eb6e6ab0315341) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,798 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (52a1e630f5e89b042c06dcf243710b43) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,798 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (1/4) (4d49e89808ba80107b51f1bab549a99a) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,799 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (2b34846a6ebfbf606166b1fb48c87132) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,799 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (3395759e2a1fa087076e0ff1e6fb7ee5) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,799 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (2/4) (851a8d3577aafdb03b2ff8dd31dda786) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,799 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (1/4) (7e2e2a127985586373d6c1eb52c8c9ba) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,800 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (4/4) (b7a2a80cdfd489e5ae4131a9145df740) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,800 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (2/4) (af8224c411882df9fdaf31640140b67e) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,800 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (3/4) (87f076d81db9f6e336e41b5e3c3bb5ce) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,800 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (bf638e933d6bc904ea4e8b2f9ed799ff) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,801 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (0e56985b73f72e50861a951de2bfeabc) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,801 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (ea485145e41eced5db1283a409ca80a3) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:05,801 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (dd76e46b93fbb2b54dbc62bb55ce1230) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:07,086 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (1/4) (7e2e2a127985586373d6c1eb52c8c9ba) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,087 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (ea485145e41eced5db1283a409ca80a3) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,087 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (4/4) (b7a2a80cdfd489e5ae4131a9145df740) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,087 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (1/4) (4d49e89808ba80107b51f1bab549a99a) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,087 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (9843f88f2e982a055a078d22fc3bb766) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,087 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (4/4) (cef58fba5e8a6b60315e0a03d3f664e6) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,087 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (2/4) (851a8d3577aafdb03b2ff8dd31dda786) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,088 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, res_hour_generated) (3/4) (bdcf6e556cd326ec4c78cabf6f1719a0) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,088 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (0e56985b73f72e50861a951de2bfeabc) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,088 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (a78b935be4f54d52f0eb6e6ab0315341) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,088 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (2/4) (af8224c411882df9fdaf31640140b67e) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,088 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (13673e2bd8a65412152dc126af0a85f3) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,088 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (3395759e2a1fa087076e0ff1e6fb7ee5) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,089 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (3393c4bb8edbc2d2b6d79bd1a0bcfe44) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,089 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (1/4) (2b34846a6ebfbf606166b1fb48c87132) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,089 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (4/4) (3d7434300c409fa2fb412640a42a7a9a) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,090 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (bf638e933d6bc904ea4e8b2f9ed799ff) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,090 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (2/4) (dd76e46b93fbb2b54dbc62bb55ce1230) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,090 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source (3/4) (52a1e630f5e89b042c06dcf243710b43) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,097 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Custom Source -> (Sink: Print to Std. Out, app_hour_generated, user_hour_generated) (3/4) (87f076d81db9f6e336e41b5e3c3bb5ce) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,476 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (4/4) (0f6b787da7369a7b790761b722ff4d13) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,476 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (4/4) (1091af2ab64a3ee914db3254dafeffe1) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,477 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (3/4) (4fc9d2e8db561244fe91d01f4b463646) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,477 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (2/4) (38dbb7ce5377c87835150f4ec0667798) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,477 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (4/4) (d9b095960c560814343f2986169cfecb) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,477 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (2/4) (2e250f3bfe6c02e9c3a7b75bc6c1d3e1) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,477 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (1/4) (1090bd689bffb8b177ae928bf5aba36e) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,477 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (3/4) (348c31ff6f1e602a7d232b941fefd516) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,477 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (4/4) (e0723d94dd50b21533241a1d2738df98) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,477 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (3/4) (694a8a00e4610e5187e07464029cd57a) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,478 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (1/4) (408549bbdf37123bdd76978c123fe683) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,479 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (4/4) (24281a0bdce111254c47ee34cf21cb45) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,479 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: app_day_to_db (1/4) (369ddeff7988cb3c0c9040fcae3aa347) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,479 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (3/4) (b0e0aa5381c6e3c039978f4958b54da0) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,479 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (2/4) (c503bb542fe8ef8b39f850a8b25e6d7b) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,479 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_total_day_to_db (1/4) (529dc8da1968f582866b524e89d06b08) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,479 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (2/4) (a602f5ea561fba6b5bd3ba1a4f9b6cab) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,479 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: user_day_to_db (1/4) (00aced72a245625d4c75778c441bd0c0) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,479 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_total_generated -> (Sink: app_total_to_db, Sink: app_category_total_to_db) (3/4) (8a51572965151d07a1c076eeb8e92e9b) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,479 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - TumblingProcessingTimeWindows -> Sink: res_day_to_db (2/4) (bceb598893c9b24b5a913cbba1524320) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,541 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (1/4) (08154a806a26415e9ab42c37d85d441e) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,541 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (3/4) (6647d5752ea7b195eb10f4404a15535e) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,541 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (1/4) (4e7f6e4f993727b5158d6555a3896adb) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,543 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (2/4) (7c6a4e3244fbf907a665180a66d15feb) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,543 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (2/4) (81d986d683e19c4f055f5abc708d4f76) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,543 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (4/4) (d90674490093884e0a3f47b512952c46) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,549 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (1/4) (befc6864c940599499d9f9430bd6c256) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,550 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - user_hour_stat -> (Sink: user_hour_to_db, user_hour_to_kafka: Writer -> user_hour_to_kafka: Committer) (4/4) (6b09f4f6a16303905030052a56d8e384) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,552 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (2/4) (1461c3fc0edc697300cccec0d249aa93) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,552 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - res_hour_stat -> (Sink: res_hour_to_db, res_hour_to_kafka: Writer -> res_hour_to_kafka: Committer) (3/4) (14a4ff375270914caa955819a4aa0212) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,553 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (3/4) (cbe8f40e5dcd20cf0cd490295dfb476f) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:07,553 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - app_hour_summary -> (Sink: app_hour_to_db, app_hour_to_kafka: Writer -> app_hour_to_kafka: Committer) (4/4) (b346b128b8e3260d7556e54bc1d218ee) switched from INITIALIZING to RUNNING.
+2023-01-16 10:03:58,030 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job cmc-association-analysis-job (05a4fdc10d323170309135cba6b8dedd) switched from state RESTARTING to RUNNING.
+2023-01-16 10:03:58,037 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2023-01-16 10:03:58,037 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Resetting the Operator Coordinators to an empty state.
+2023-01-16 10:03:58,037 INFO  org.apache.flink.runtime.operators.coordination.RecreateOnResetOperatorCoordinator [] - Resetting coordinator to checkpoint.
+2023-01-16 10:03:58,040 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Closing SourceCoordinator for source Source: Kafka Source.
+2023-01-16 10:03:58,050 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (884c48342b1118ade8da10b3e473e41c) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:58,051 INFO  org.apache.kafka.common.utils.AppInfoParser                  [] - App info kafka.admin.client for aa_group-enumerator-admin-client unregistered
+2023-01-16 10:03:58,052 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2023-01-16 10:03:58,053 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (884c48342b1118ade8da10b3e473e41c) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:58,053 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (attempt #1) with attempt id 884c48342b1118ade8da10b3e473e41c and vertex id cbc357ccb763df2852fee8c4fc7d55f2_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id ae0e84ebc7792f9db263657d23b8eb7e
+2023-01-16 10:03:58,053 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (7d44a504be5479060b82f5bad3337764) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:58,054 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (7d44a504be5479060b82f5bad3337764) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:58,054 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (attempt #1) with attempt id 7d44a504be5479060b82f5bad3337764 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 82d5ad9e73f9b82d7d5f97cab1ce3cae
+2023-01-16 10:03:58,054 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2023-01-16 10:03:58,054 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (f6423020b1ebdabc5f5d20b3eec4bc53) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:58,055 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (f6423020b1ebdabc5f5d20b3eec4bc53) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:58,055 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2023-01-16 10:03:58,055 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (attempt #1) with attempt id f6423020b1ebdabc5f5d20b3eec4bc53 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 07b1e0dc861f8d630fb22ff0d994b8fc
+2023-01-16 10:03:58,056 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (efae06abb8e27422fdb369513558a887) switched from CREATED to SCHEDULED.
+2023-01-16 10:03:58,056 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=4}]
+2023-01-16 10:03:58,056 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (efae06abb8e27422fdb369513558a887) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:03:58,056 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (attempt #1) with attempt id efae06abb8e27422fdb369513558a887 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 3a674757369b66ed305301c5176567f8
+2023-01-16 10:03:58,067 INFO  org.apache.kafka.common.metrics.Metrics                      [] - Metrics scheduler closed
+2023-01-16 10:03:58,067 INFO  org.apache.kafka.common.metrics.Metrics                      [] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-01-16 10:03:58,067 INFO  org.apache.kafka.common.metrics.Metrics                      [] - Metrics reporters closed
+2023-01-16 10:03:58,067 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Source coordinator for source Source: Kafka Source closed.
+2023-01-16 10:03:58,068 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Starting split enumerator for source Source: Kafka Source.
+2023-01-16 10:03:58,071 INFO  org.apache.kafka.clients.admin.AdminClientConfig             [] - AdminClientConfig values: 
+	bootstrap.servers = [kafka.pekall.com:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = aa_group-enumerator-admin-client
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-01-16 10:03:58,073 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (884c48342b1118ade8da10b3e473e41c) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:58,076 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (efae06abb8e27422fdb369513558a887) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:58,076 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (7d44a504be5479060b82f5bad3337764) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:58,076 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (f6423020b1ebdabc5f5d20b3eec4bc53) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:03:58,080 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'key.deserializer' was supplied but isn't a known config.
+2023-01-16 10:03:58,080 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'value.deserializer' was supplied but isn't a known config.
+2023-01-16 10:03:58,080 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'enable.auto.commit' was supplied but isn't a known config.
+2023-01-16 10:03:58,080 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'group.id' was supplied but isn't a known config.
+2023-01-16 10:03:58,080 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'client.id.prefix' was supplied but isn't a known config.
+2023-01-16 10:03:58,080 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'partition.discovery.interval.ms' was supplied but isn't a known config.
+2023-01-16 10:03:58,080 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'auto.offset.reset' was supplied but isn't a known config.
+2023-01-16 10:03:58,080 INFO  org.apache.kafka.common.utils.AppInfoParser                  [] - Kafka version: 2.8.1
+2023-01-16 10:03:58,080 INFO  org.apache.kafka.common.utils.AppInfoParser                  [] - Kafka commitId: 839b886f9b732b15
+2023-01-16 10:03:58,080 INFO  org.apache.kafka.common.utils.AppInfoParser                  [] - Kafka startTimeMs: 1673834638080
+2023-01-16 10:03:58,081 INFO  org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator [] - Starting the KafkaSourceEnumerator for consumer group aa_group without periodic partition discovery.
+2023-01-16 10:03:58,110 ERROR org.apache.flink.runtime.source.coordinator.SourceCoordinatorContext [] - Exception while handling result from async call in SourceCoordinator-Source: Kafka Source. Triggering job failover.
+org.apache.flink.util.FlinkRuntimeException: Failed to list subscribed topic partitions due to 
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.checkPartitionChanges(KafkaSourceEnumerator.java:234) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$null$1(ExecutorNotifier.java:83) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.util.ThrowableCatchingRunnable.run(ThrowableCatchingRunnable.java:40) [flink-dist-1.15.2.jar:1.15.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_301]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_301]
+Caused by: java.lang.RuntimeException: Failed to get metadata for topics [associ-analysis-cmc-user-login-log, associ-analysis-cmc-res-visit-log, associ-analysis-cmc-device-register-log, associ-analysis-cmc-app-use-log].
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:47) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+	at org.apache.kafka.common.internals.KafkaFutureImpl.wrapAndThrow(KafkaFutureImpl.java:45) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.access$000(KafkaFutureImpl.java:32) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:89) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:260) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:44) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+2023-01-16 10:03:58,116 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Trying to recover from a global failure.
+org.apache.flink.util.FlinkException: Global failure triggered by OperatorCoordinator for 'Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer' (operator cbc357ccb763df2852fee8c4fc7d55f2).
+	at org.apache.flink.runtime.operators.coordination.OperatorCoordinatorHolder$LazyInitializedCoordinatorContext.failJob(OperatorCoordinatorHolder.java:556) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.runtime.operators.coordination.RecreateOnResetOperatorCoordinator$QuiesceableContext.failJob(RecreateOnResetOperatorCoordinator.java:231) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinatorContext.failJob(SourceCoordinatorContext.java:316) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinatorContext.handleUncaughtExceptionFromAsyncCall(SourceCoordinatorContext.java:329) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.util.ThrowableCatchingRunnable.run(ThrowableCatchingRunnable.java:42) ~[flink-dist-1.15.2.jar:1.15.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_301]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_301]
+Caused by: org.apache.flink.util.FlinkRuntimeException: Failed to list subscribed topic partitions due to 
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.checkPartitionChanges(KafkaSourceEnumerator.java:234) ~[?:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$null$1(ExecutorNotifier.java:83) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.util.ThrowableCatchingRunnable.run(ThrowableCatchingRunnable.java:40) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: java.lang.RuntimeException: Failed to get metadata for topics [associ-analysis-cmc-user-login-log, associ-analysis-cmc-res-visit-log, associ-analysis-cmc-device-register-log, associ-analysis-cmc-app-use-log].
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:47) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[?:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+	at org.apache.kafka.common.internals.KafkaFutureImpl.wrapAndThrow(KafkaFutureImpl.java:45) ~[?:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.access$000(KafkaFutureImpl.java:32) ~[?:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:89) ~[?:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:260) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:44) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[?:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+2023-01-16 10:03:58,120 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job cmc-association-analysis-job (05a4fdc10d323170309135cba6b8dedd) switched from state RUNNING to RESTARTING.
+2023-01-16 10:03:58,120 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (efae06abb8e27422fdb369513558a887) switched from INITIALIZING to CANCELING.
+2023-01-16 10:03:58,120 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 3 of source Source: Kafka Source.
+2023-01-16 10:03:58,121 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (f6423020b1ebdabc5f5d20b3eec4bc53) switched from INITIALIZING to CANCELING.
+2023-01-16 10:03:58,121 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 2 of source Source: Kafka Source.
+2023-01-16 10:03:58,121 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (7d44a504be5479060b82f5bad3337764) switched from INITIALIZING to CANCELING.
+2023-01-16 10:03:58,121 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 1 of source Source: Kafka Source.
+2023-01-16 10:03:58,121 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (884c48342b1118ade8da10b3e473e41c) switched from INITIALIZING to CANCELING.
+2023-01-16 10:03:58,121 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 0 of source Source: Kafka Source.
+2023-01-16 10:03:58,198 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (7d44a504be5479060b82f5bad3337764) switched from CANCELING to CANCELED.
+2023-01-16 10:03:58,199 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2023-01-16 10:03:58,199 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (884c48342b1118ade8da10b3e473e41c) switched from CANCELING to CANCELED.
+2023-01-16 10:03:58,200 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2023-01-16 10:03:58,200 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (f6423020b1ebdabc5f5d20b3eec4bc53) switched from CANCELING to CANCELED.
+2023-01-16 10:03:58,201 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2023-01-16 10:03:58,201 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (efae06abb8e27422fdb369513558a887) switched from CANCELING to CANCELED.
+2023-01-16 10:03:58,202 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job 05a4fdc10d323170309135cba6b8dedd
+2023-01-16 10:04:58,131 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job cmc-association-analysis-job (05a4fdc10d323170309135cba6b8dedd) switched from state RESTARTING to RUNNING.
+2023-01-16 10:04:58,135 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2023-01-16 10:04:58,135 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Resetting the Operator Coordinators to an empty state.
+2023-01-16 10:04:58,135 INFO  org.apache.flink.runtime.operators.coordination.RecreateOnResetOperatorCoordinator [] - Resetting coordinator to checkpoint.
+2023-01-16 10:04:58,137 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Closing SourceCoordinator for source Source: Kafka Source.
+2023-01-16 10:04:58,138 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (9c1d13e4739d3640dff354bac0992aa8) switched from CREATED to SCHEDULED.
+2023-01-16 10:04:58,142 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2023-01-16 10:04:58,143 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (9c1d13e4739d3640dff354bac0992aa8) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:04:58,143 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (attempt #2) with attempt id 9c1d13e4739d3640dff354bac0992aa8 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_0 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id ae0e84ebc7792f9db263657d23b8eb7e
+2023-01-16 10:04:58,144 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (2854715032a8b7173ef065e96e905ea2) switched from CREATED to SCHEDULED.
+2023-01-16 10:04:58,144 INFO  org.apache.kafka.common.utils.AppInfoParser                  [] - App info kafka.admin.client for aa_group-enumerator-admin-client unregistered
+2023-01-16 10:04:58,145 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (2854715032a8b7173ef065e96e905ea2) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:04:58,145 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (attempt #2) with attempt id 2854715032a8b7173ef065e96e905ea2 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_1 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 82d5ad9e73f9b82d7d5f97cab1ce3cae
+2023-01-16 10:04:58,146 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2023-01-16 10:04:58,146 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (81ea5dc3291bbc8cfae0c417ca649e11) switched from CREATED to SCHEDULED.
+2023-01-16 10:04:58,147 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2023-01-16 10:04:58,147 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (81ea5dc3291bbc8cfae0c417ca649e11) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:04:58,147 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (attempt #2) with attempt id 81ea5dc3291bbc8cfae0c417ca649e11 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_2 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 07b1e0dc861f8d630fb22ff0d994b8fc
+2023-01-16 10:04:58,148 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (b82677fe9dedbac99a4292607df6b694) switched from CREATED to SCHEDULED.
+2023-01-16 10:04:58,148 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=4}]
+2023-01-16 10:04:58,149 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (b82677fe9dedbac99a4292607df6b694) switched from SCHEDULED to DEPLOYING.
+2023-01-16 10:04:58,149 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (attempt #2) with attempt id b82677fe9dedbac99a4292607df6b694 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_3 to localhost:45074-408161 @ localhost (dataPort=36784) with allocation id 3a674757369b66ed305301c5176567f8
+2023-01-16 10:04:58,149 INFO  org.apache.kafka.common.metrics.Metrics                      [] - Metrics scheduler closed
+2023-01-16 10:04:58,149 INFO  org.apache.kafka.common.metrics.Metrics                      [] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-01-16 10:04:58,150 INFO  org.apache.kafka.common.metrics.Metrics                      [] - Metrics reporters closed
+2023-01-16 10:04:58,150 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Source coordinator for source Source: Kafka Source closed.
+2023-01-16 10:04:58,151 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Starting split enumerator for source Source: Kafka Source.
+2023-01-16 10:04:58,154 INFO  org.apache.kafka.clients.admin.AdminClientConfig             [] - AdminClientConfig values: 
+	bootstrap.servers = [kafka.pekall.com:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = aa_group-enumerator-admin-client
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-01-16 10:04:58,156 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (9c1d13e4739d3640dff354bac0992aa8) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:04:58,158 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (81ea5dc3291bbc8cfae0c417ca649e11) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:04:58,158 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (b82677fe9dedbac99a4292607df6b694) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:04:58,158 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (2854715032a8b7173ef065e96e905ea2) switched from DEPLOYING to INITIALIZING.
+2023-01-16 10:04:58,163 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'key.deserializer' was supplied but isn't a known config.
+2023-01-16 10:04:58,163 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'value.deserializer' was supplied but isn't a known config.
+2023-01-16 10:04:58,163 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'enable.auto.commit' was supplied but isn't a known config.
+2023-01-16 10:04:58,163 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'group.id' was supplied but isn't a known config.
+2023-01-16 10:04:58,163 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'client.id.prefix' was supplied but isn't a known config.
+2023-01-16 10:04:58,163 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'partition.discovery.interval.ms' was supplied but isn't a known config.
+2023-01-16 10:04:58,163 WARN  org.apache.kafka.clients.admin.AdminClientConfig             [] - The configuration 'auto.offset.reset' was supplied but isn't a known config.
+2023-01-16 10:04:58,163 INFO  org.apache.kafka.common.utils.AppInfoParser                  [] - Kafka version: 2.8.1
+2023-01-16 10:04:58,163 INFO  org.apache.kafka.common.utils.AppInfoParser                  [] - Kafka commitId: 839b886f9b732b15
+2023-01-16 10:04:58,163 INFO  org.apache.kafka.common.utils.AppInfoParser                  [] - Kafka startTimeMs: 1673834698163
+2023-01-16 10:04:58,163 INFO  org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator [] - Starting the KafkaSourceEnumerator for consumer group aa_group without periodic partition discovery.
+2023-01-16 10:04:58,186 ERROR org.apache.flink.runtime.source.coordinator.SourceCoordinatorContext [] - Exception while handling result from async call in SourceCoordinator-Source: Kafka Source. Triggering job failover.
+org.apache.flink.util.FlinkRuntimeException: Failed to list subscribed topic partitions due to 
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.checkPartitionChanges(KafkaSourceEnumerator.java:234) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$null$1(ExecutorNotifier.java:83) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.util.ThrowableCatchingRunnable.run(ThrowableCatchingRunnable.java:40) [flink-dist-1.15.2.jar:1.15.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_301]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_301]
+Caused by: java.lang.RuntimeException: Failed to get metadata for topics [associ-analysis-cmc-user-login-log, associ-analysis-cmc-res-visit-log, associ-analysis-cmc-device-register-log, associ-analysis-cmc-app-use-log].
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:47) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+	at org.apache.kafka.common.internals.KafkaFutureImpl.wrapAndThrow(KafkaFutureImpl.java:45) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.access$000(KafkaFutureImpl.java:32) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:89) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:260) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:44) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[blob_p-f5f362227755ef0c167e915d8b0297aa081f24e4-661d3c002ee4fb458ff7586cc21edf8e:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+2023-01-16 10:04:58,192 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Trying to recover from a global failure.
+org.apache.flink.util.FlinkException: Global failure triggered by OperatorCoordinator for 'Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer' (operator cbc357ccb763df2852fee8c4fc7d55f2).
+	at org.apache.flink.runtime.operators.coordination.OperatorCoordinatorHolder$LazyInitializedCoordinatorContext.failJob(OperatorCoordinatorHolder.java:556) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.runtime.operators.coordination.RecreateOnResetOperatorCoordinator$QuiesceableContext.failJob(RecreateOnResetOperatorCoordinator.java:231) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinatorContext.failJob(SourceCoordinatorContext.java:316) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinatorContext.handleUncaughtExceptionFromAsyncCall(SourceCoordinatorContext.java:329) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.util.ThrowableCatchingRunnable.run(ThrowableCatchingRunnable.java:42) ~[flink-dist-1.15.2.jar:1.15.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_301]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[?:1.8.0_301]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_301]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_301]
+Caused by: org.apache.flink.util.FlinkRuntimeException: Failed to list subscribed topic partitions due to 
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.checkPartitionChanges(KafkaSourceEnumerator.java:234) ~[?:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$null$1(ExecutorNotifier.java:83) ~[flink-dist-1.15.2.jar:1.15.2]
+	at org.apache.flink.util.ThrowableCatchingRunnable.run(ThrowableCatchingRunnable.java:40) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: java.lang.RuntimeException: Failed to get metadata for topics [associ-analysis-cmc-user-login-log, associ-analysis-cmc-res-visit-log, associ-analysis-cmc-device-register-log, associ-analysis-cmc-app-use-log].
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:47) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[?:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+	at org.apache.kafka.common.internals.KafkaFutureImpl.wrapAndThrow(KafkaFutureImpl.java:45) ~[?:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.access$000(KafkaFutureImpl.java:32) ~[?:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:89) ~[?:?]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:260) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.KafkaSubscriberUtils.getTopicMetadata(KafkaSubscriberUtils.java:44) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.subscriber.TopicListSubscriber.getSubscribedTopicPartitions(TopicListSubscriber.java:52) ~[?:?]
+	at org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator.getSubscribedTopicPartitions(KafkaSourceEnumerator.java:219) ~[?:?]
+	at org.apache.flink.runtime.source.coordinator.ExecutorNotifier.lambda$notifyReadyAsync$2(ExecutorNotifier.java:80) ~[flink-dist-1.15.2.jar:1.15.2]
+	... 7 more
+Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: Topic associ-analysis-cmc-res-visit-log not found.
+2023-01-16 10:04:58,195 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job cmc-association-analysis-job (05a4fdc10d323170309135cba6b8dedd) switched from state RUNNING to RESTARTING.
+2023-01-16 10:04:58,196 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 3 of source Source: Kafka Source.
+2023-01-16 10:04:58,196 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (b82677fe9dedbac99a4292607df6b694) switched from INITIALIZING to CANCELING.
+2023-01-16 10:04:58,196 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (81ea5dc3291bbc8cfae0c417ca649e11) switched from INITIALIZING to CANCELING.
+2023-01-16 10:04:58,196 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 2 of source Source: Kafka Source.
+2023-01-16 10:04:58,196 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 1 of source Source: Kafka Source.
+2023-01-16 10:04:58,196 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (2854715032a8b7173ef065e96e905ea2) switched from INITIALIZING to CANCELING.
+2023-01-16 10:04:58,197 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 0 of source Source: Kafka Source.
+2023-01-16 10:04:58,197 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (9c1d13e4739d3640dff354bac0992aa8) switched from INITIALIZING to CANCELING.
+2023-01-16 10:04:58,490 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (2/4) (2854715032a8b7173ef065e96e905ea2) switched from CANCELING to CANCELED.
+2023-01-16 10:04:58,491 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=3}]
+2023-01-16 10:04:58,491 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (4/4) (b82677fe9dedbac99a4292607df6b694) switched from CANCELING to CANCELED.
+2023-01-16 10:04:58,492 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=2}]
+2023-01-16 10:04:58,492 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (1/4) (9c1d13e4739d3640dff354bac0992aa8) switched from CANCELING to CANCELED.
+2023-01-16 10:04:58,492 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 05a4fdc10d323170309135cba6b8dedd: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2023-01-16 10:04:58,493 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: Kafka Source -> Preprocess Stream -> Association Analyze Stream -> Map -> Sink: Writer -> Sink: Committer (3/4) (81ea5dc3291bbc8cfae0c417ca649e11) switched from CANCELING to CANCELED.
+2023-01-16 10:04:58,493 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job 05a4fdc10d323170309135cba6b8dedd
