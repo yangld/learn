@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "交互图和ER图编写",
-      "path": "交互图和ER图编写.md"
+      "basename": "双因素登录(声纹+证书)",
+      "path": "双因素登录(声纹+证书).md"
+    },
+    {
+      "basename": "未命名 4",
+      "path": "未命名 4.md"
     },
     {
       "basename": "工作看板",
@@ -195,10 +199,6 @@
     {
       "basename": "2022-12-15",
       "path": "3工作日志/日志/2022-12-15.md"
-    },
-    {
-      "basename": "Day Planner-20221107",
-      "path": "Day Planners/Day Planner-20221107.md"
     }
   ],
   "omittedPaths": [],
