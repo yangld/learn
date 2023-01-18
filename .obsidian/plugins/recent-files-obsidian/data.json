@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "工作看板",
+      "path": "工作看板.md"
+    },
+    {
+      "basename": "Annotated Tasks",
+      "path": "obsidian-dataview/test-vault/tasks/Annotated Tasks.md"
+    },
+    {
+      "basename": "Dice Roller",
+      "path": "Dice Roller.md"
+    },
+    {
+      "basename": "pbj",
+      "path": "obsidian-dataview/test-vault/recipes/pbj.md"
+    },
+    {
+      "basename": "checklist",
+      "path": "obsidian-dataview/test-vault/tasks/checklist.md"
+    },
+    {
       "basename": "Tasks in a specific section",
       "path": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md"
     },
@@ -11,10 +31,6 @@
     {
       "basename": "20220101",
       "path": "obsidian-dataview/test-vault/tasks/20220101.md"
-    },
-    {
-      "basename": "checklist",
-      "path": "obsidian-dataview/test-vault/tasks/checklist.md"
     },
     {
       "basename": "Uncompleted Tasks",
@@ -37,16 +53,8 @@
       "path": "obsidian-dataview/test-vault/tasks/Tasks Completed on specific Date.md"
     },
     {
-      "basename": "pbj",
-      "path": "obsidian-dataview/test-vault/recipes/pbj.md"
-    },
-    {
       "basename": "Completed Tasks",
       "path": "obsidian-dataview/test-vault/tasks/Completed Tasks.md"
-    },
-    {
-      "basename": "Annotated Tasks",
-      "path": "obsidian-dataview/test-vault/tasks/Annotated Tasks.md"
     },
     {
       "basename": "Day Planner-20221018",
@@ -63,10 +71,6 @@
     {
       "basename": "README",
       "path": "obsidian-dataview/README.md"
-    },
-    {
-      "basename": "工作看板",
-      "path": "工作看板.md"
     },
     {
       "basename": "dataview",
@@ -195,10 +199,6 @@
     {
       "basename": "2023-01-18",
       "path": "3工作日志/日志/2023-01-18.md"
-    },
-    {
-      "basename": "2023-01-19",
-      "path": "3工作日志/日志/2023-01-19.md"
     }
   ],
   "omittedPaths": [],

@@ -18,89 +18,8 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "3d1d6ca7ca997899",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-dataview/test-vault/tasks/Annotated Tasks.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "d333bdf650a14bff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "a0fe093366c7e766",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-dataview/test-vault/tasks/checklist.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "3766281cfc4762b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-dataview/test-vault/tasks/20220101.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "5f381f949b4e59ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "cf34300144a20371",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-dataview/test-vault/tasks/checklist.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md"
+                "file": "工作看板.md"
               }
             }
           },
@@ -204,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
+                "file": "工作看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -221,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
+                "file": "工作看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -240,6 +159,14 @@
             "type": "leaf",
             "state": {
               "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "f878f75b5b0fa60e",
+            "type": "leaf",
+            "state": {
+              "type": "DICE_ROLLER_VIEW",
               "state": {}
             }
           }
@@ -266,17 +193,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5f381f949b4e59ac",
+  "active": "4d4ef17ceb207811",
   "lastOpenFiles": [
+    "obsidian-dataview/test-vault/tasks/Annotated Tasks.md",
+    "Dice Roller.md",
+    "obsidian-dataview/test-vault/recipes/pbj.md",
+    "obsidian-dataview/test-vault/tasks/checklist.md",
+    "工作看板.md",
+    "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
     "obsidian-dataview/test-vault/tasks/20220102.md",
     "obsidian-dataview/test-vault/tasks/20220101.md",
-    "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
-    "obsidian-dataview/test-vault/tasks/checklist.md",
     "obsidian-dataview/test-vault/tasks/Uncompleted Tasks.md",
-    "obsidian-dataview/test-vault/tasks/example tasks.md",
-    "obsidian-dataview/test-vault/tasks/Grouped Sorted Tasks.md",
-    "obsidian-dataview/test-vault/tasks/Sorted Tasks.md",
-    "obsidian-dataview/test-vault/tasks/Tasks Completed on specific Date.md",
-    "obsidian-dataview/test-vault/recipes/pbj.md"
+    "obsidian-dataview/test-vault/tasks/example tasks.md"
   ]
 }
