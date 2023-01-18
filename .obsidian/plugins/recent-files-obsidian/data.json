@@ -1,12 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "Day Planner-20221018",
-      "path": "Day Planners/Day Planner-20221018.md"
+      "basename": "Tasks in a specific section",
+      "path": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md"
+    },
+    {
+      "basename": "20220102",
+      "path": "obsidian-dataview/test-vault/tasks/20220102.md"
+    },
+    {
+      "basename": "20220101",
+      "path": "obsidian-dataview/test-vault/tasks/20220101.md"
+    },
+    {
+      "basename": "checklist",
+      "path": "obsidian-dataview/test-vault/tasks/checklist.md"
+    },
+    {
+      "basename": "Uncompleted Tasks",
+      "path": "obsidian-dataview/test-vault/tasks/Uncompleted Tasks.md"
+    },
+    {
+      "basename": "example tasks",
+      "path": "obsidian-dataview/test-vault/tasks/example tasks.md"
+    },
+    {
+      "basename": "Grouped Sorted Tasks",
+      "path": "obsidian-dataview/test-vault/tasks/Grouped Sorted Tasks.md"
+    },
+    {
+      "basename": "Sorted Tasks",
+      "path": "obsidian-dataview/test-vault/tasks/Sorted Tasks.md"
+    },
+    {
+      "basename": "Tasks Completed on specific Date",
+      "path": "obsidian-dataview/test-vault/tasks/Tasks Completed on specific Date.md"
+    },
+    {
+      "basename": "pbj",
+      "path": "obsidian-dataview/test-vault/recipes/pbj.md"
+    },
+    {
+      "basename": "Completed Tasks",
+      "path": "obsidian-dataview/test-vault/tasks/Completed Tasks.md"
     },
     {
       "basename": "Annotated Tasks",
       "path": "obsidian-dataview/test-vault/tasks/Annotated Tasks.md"
+    },
+    {
+      "basename": "Day Planner-20221018",
+      "path": "Day Planners/Day Planner-20221018.md"
+    },
+    {
+      "basename": "query-types",
+      "path": "obsidian-dataview/docs/docs/queries/query-types.md"
     },
     {
       "basename": "2022-12-08 17-02 redis占用内存大",
@@ -29,28 +77,8 @@
       "path": "obsidian-dataview/test-vault/Books.md"
     },
     {
-      "basename": "Uncompleted Tasks",
-      "path": "obsidian-dataview/test-vault/tasks/Uncompleted Tasks.md"
-    },
-    {
-      "basename": "example tasks",
-      "path": "obsidian-dataview/test-vault/tasks/example tasks.md"
-    },
-    {
-      "basename": "Completed Tasks",
-      "path": "obsidian-dataview/test-vault/tasks/Completed Tasks.md"
-    },
-    {
-      "basename": "checklist",
-      "path": "obsidian-dataview/test-vault/tasks/checklist.md"
-    },
-    {
       "basename": "toast",
       "path": "obsidian-dataview/test-vault/recipes/toast.md"
-    },
-    {
-      "basename": "pbj",
-      "path": "obsidian-dataview/test-vault/recipes/pbj.md"
     },
     {
       "basename": "The Great Gatsby",
@@ -171,34 +199,6 @@
     {
       "basename": "2023-01-19",
       "path": "3工作日志/日志/2023-01-19.md"
-    },
-    {
-      "basename": "2023-01-20",
-      "path": "3工作日志/日志/2023-01-20.md"
-    },
-    {
-      "basename": "2023-01-28",
-      "path": "3工作日志/日志/2023-01-28.md"
-    },
-    {
-      "basename": "2023-01-29",
-      "path": "3工作日志/日志/2023-01-29.md"
-    },
-    {
-      "basename": "2023-01-30",
-      "path": "3工作日志/日志/2023-01-30.md"
-    },
-    {
-      "basename": "2023-01-31",
-      "path": "3工作日志/日志/2023-01-31.md"
-    },
-    {
-      "basename": "一所,jjj级联不显示应用最新版本, 星火查询到最新的版本了",
-      "path": "一所,jjj级联不显示应用最新版本, 星火查询到最新的版本了.md"
-    },
-    {
-      "basename": "202301111551",
-      "path": "202301111551.md"
     }
   ],
   "omittedPaths": [],

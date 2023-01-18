@@ -27,11 +27,63 @@
               "type": "markdown",
               "state": {
                 "file": "obsidian-dataview/test-vault/tasks/Annotated Tasks.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               },
               "pinned": true
+            }
+          },
+          {
+            "id": "d333bdf650a14bff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a0fe093366c7e766",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-dataview/test-vault/tasks/checklist.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "3766281cfc4762b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-dataview/test-vault/tasks/20220101.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "5f381f949b4e59ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
             }
           },
           {
@@ -40,7 +92,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day Planners/Day Planner-20221018.md",
+                "file": "obsidian-dataview/test-vault/tasks/checklist.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -48,7 +100,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -119,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day Planners/Day Planner-20221018.md"
+                "file": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md"
               }
             }
           },
@@ -152,7 +204,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day Planners/Day Planner-20221018.md",
+                "file": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +221,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day Planners/Day Planner-20221018.md",
+                "file": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,17 +266,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cf34300144a20371",
+  "active": "5f381f949b4e59ac",
   "lastOpenFiles": [
-    "obsidian-dataview/test-vault/tasks/Annotated Tasks.md",
-    "Day Planners/Day Planner-20221018.md",
-    "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md",
-    "obsidian-dataview/README.md",
-    "工作看板.md",
-    "dataview.md",
-    "obsidian-dataview/test-vault/Books.md",
+    "obsidian-dataview/test-vault/tasks/20220102.md",
+    "obsidian-dataview/test-vault/tasks/20220101.md",
+    "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
+    "obsidian-dataview/test-vault/tasks/checklist.md",
     "obsidian-dataview/test-vault/tasks/Uncompleted Tasks.md",
     "obsidian-dataview/test-vault/tasks/example tasks.md",
-    "obsidian-dataview/test-vault/tasks/Completed Tasks.md"
+    "obsidian-dataview/test-vault/tasks/Grouped Sorted Tasks.md",
+    "obsidian-dataview/test-vault/tasks/Sorted Tasks.md",
+    "obsidian-dataview/test-vault/tasks/Tasks Completed on specific Date.md",
+    "obsidian-dataview/test-vault/recipes/pbj.md"
   ]
 }
