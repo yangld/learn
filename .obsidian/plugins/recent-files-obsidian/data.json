@@ -1,8 +1,92 @@
 {
   "recentFiles": [
     {
+      "basename": "Day Planner-20221018",
+      "path": "Day Planners/Day Planner-20221018.md"
+    },
+    {
+      "basename": "Annotated Tasks",
+      "path": "obsidian-dataview/test-vault/tasks/Annotated Tasks.md"
+    },
+    {
+      "basename": "2022-12-08 17-02 redis占用内存大",
+      "path": "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md"
+    },
+    {
+      "basename": "README",
+      "path": "obsidian-dataview/README.md"
+    },
+    {
+      "basename": "工作看板",
+      "path": "工作看板.md"
+    },
+    {
       "basename": "dataview",
       "path": "dataview.md"
+    },
+    {
+      "basename": "Books",
+      "path": "obsidian-dataview/test-vault/Books.md"
+    },
+    {
+      "basename": "Uncompleted Tasks",
+      "path": "obsidian-dataview/test-vault/tasks/Uncompleted Tasks.md"
+    },
+    {
+      "basename": "example tasks",
+      "path": "obsidian-dataview/test-vault/tasks/example tasks.md"
+    },
+    {
+      "basename": "Completed Tasks",
+      "path": "obsidian-dataview/test-vault/tasks/Completed Tasks.md"
+    },
+    {
+      "basename": "checklist",
+      "path": "obsidian-dataview/test-vault/tasks/checklist.md"
+    },
+    {
+      "basename": "toast",
+      "path": "obsidian-dataview/test-vault/recipes/toast.md"
+    },
+    {
+      "basename": "pbj",
+      "path": "obsidian-dataview/test-vault/recipes/pbj.md"
+    },
+    {
+      "basename": "The Great Gatsby",
+      "path": "obsidian-dataview/test-vault/books/The Great Gatsby.md"
+    },
+    {
+      "basename": "Origin of Species",
+      "path": "obsidian-dataview/test-vault/books/Origin of Species.md"
+    },
+    {
+      "basename": "Catcher in the Rye",
+      "path": "obsidian-dataview/test-vault/books/Catcher in the Rye.md"
+    },
+    {
+      "basename": "2021-08-08-a-post",
+      "path": "obsidian-dataview/test-vault/blog/2021-08-08-a-post.md"
+    },
+    {
+      "basename": "2020-08-08-an-earlier-post",
+      "path": "obsidian-dataview/test-vault/blog/2020-08-08-an-earlier-post.md"
+    },
+    {
+      "basename": "Home",
+      "path": "obsidian-dataview/test-vault/Home.md"
+    },
+    {
+      "basename": "example tables",
+      "path": "obsidian-dataview/test-vault/example tables.md"
+    },
+    {
+      "basename": "example lists",
+      "path": "obsidian-dataview/test-vault/example lists.md"
+    },
+    {
+      "basename": "example calendars",
+      "path": "obsidian-dataview/test-vault/example calendars.md"
     },
     {
       "basename": "11",
@@ -19,10 +103,6 @@
     {
       "basename": "607文档编写",
       "path": "607文档编写.md"
-    },
-    {
-      "basename": "工作看板",
-      "path": "工作看板.md"
     },
     {
       "basename": "双因素登录(声纹+证书)",
@@ -119,86 +199,6 @@
     {
       "basename": "202301111551",
       "path": "202301111551.md"
-    },
-    {
-      "basename": "canvas-example",
-      "path": "3工作日志/日志/canvas-example.canvas"
-    },
-    {
-      "basename": "2023-01-11",
-      "path": "3工作日志/日志/2023-01-11.md"
-    },
-    {
-      "basename": "flink的8081端口修改为8181",
-      "path": "flink的8081端口修改为8181.md"
-    },
-    {
-      "basename": "WechatIMG639",
-      "path": "1附件/WechatIMG639.png"
-    },
-    {
-      "basename": "阅读接口文档",
-      "path": "阅读接口文档.md"
-    },
-    {
-      "basename": "bug列表, 待部署",
-      "path": "bug列表, 待部署.md"
-    },
-    {
-      "basename": "706新项目",
-      "path": "706新项目.md"
-    },
-    {
-      "basename": "添加应用时,支持手动选择设备类型, 端和边",
-      "path": "添加应用时,支持手动选择设备类型, 端和边.md"
-    },
-    {
-      "basename": "2022-12-24 16-34 景鸿逻辑修改\n",
-      "path": "3工作日志/日志/2022-12-24 16-34 景鸿逻辑修改\n.md"
-    },
-    {
-      "basename": "国家集中管控升级",
-      "path": "Day Planners/国家集中管控升级.md"
-    },
-    {
-      "basename": "202211281714",
-      "path": "202211281714.md"
-    },
-    {
-      "basename": "rsync配置手册",
-      "path": "rsync配置手册.md"
-    },
-    {
-      "basename": "mysql5.7多源复制",
-      "path": "1附件/mysql5.7多源复制.md"
-    },
-    {
-      "basename": "证书声纹双认证计划",
-      "path": "证书声纹双认证计划.md"
-    },
-    {
-      "basename": "have_ssl",
-      "path": "have_ssl.md"
-    },
-    {
-      "basename": "2023-01-05 09-29 todo",
-      "path": "3工作日志/日志/2023-01-05 09-29 todo.md"
-    },
-    {
-      "basename": "2023-01-04 14-41 flink-convert",
-      "path": "3工作日志/日志/2023-01-04 14-41 flink-convert.md"
-    },
-    {
-      "basename": "2022-12-14",
-      "path": "3工作日志/日志/2022-12-14.md"
-    },
-    {
-      "basename": "2022-12-09 14-19 tmux整理会话,窗口,面板等命令",
-      "path": "3工作日志/日志/2022-12-09 14-19 tmux整理会话,窗口,面板等命令.md"
-    },
-    {
-      "basename": "2023-01-03 09-11 工作日志\n",
-      "path": "3工作日志/日志/2023-01-03 09-11 工作日志\n.md"
     }
   ],
   "omittedPaths": [],

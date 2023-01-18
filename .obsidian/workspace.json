@@ -20,14 +20,14 @@
             }
           },
           {
-            "id": "781db2f2ef5f99d2",
+            "id": "3d1d6ca7ca997899",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dataview.md",
-                "mode": "source",
+                "file": "obsidian-dataview/test-vault/tasks/Annotated Tasks.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
               },
@@ -35,12 +35,12 @@
             }
           },
           {
-            "id": "7e2974445b538bca",
+            "id": "cf34300144a20371",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "games/11.md",
+                "file": "Day Planners/Day Planner-20221018.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -48,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dataview.md"
+                "file": "Day Planners/Day Planner-20221018.md"
               }
             }
           },
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dataview.md",
+                "file": "Day Planners/Day Planner-20221018.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dataview.md",
+                "file": "Day Planners/Day Planner-20221018.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,17 +214,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "781db2f2ef5f99d2",
+  "active": "cf34300144a20371",
   "lastOpenFiles": [
-    "games/11.md",
-    "games/22.md",
-    "dataview.md",
-    "3工作日志/2021-10-27.md",
-    "607文档编写.md",
+    "obsidian-dataview/test-vault/tasks/Annotated Tasks.md",
+    "Day Planners/Day Planner-20221018.md",
+    "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md",
+    "obsidian-dataview/README.md",
     "工作看板.md",
-    "双因素登录(声纹+证书).md",
-    "未命名 4.md",
-    "Table-Test.md",
-    "云南省集中管控,mdm与cmc同步问题.md"
+    "dataview.md",
+    "obsidian-dataview/test-vault/Books.md",
+    "obsidian-dataview/test-vault/tasks/Uncompleted Tasks.md",
+    "obsidian-dataview/test-vault/tasks/example tasks.md",
+    "obsidian-dataview/test-vault/tasks/Completed Tasks.md"
   ]
 }
