@@ -1,16 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "dataview",
+      "path": "dataview.md"
+    },
+    {
+      "basename": "11",
+      "path": "games/11.md"
+    },
+    {
+      "basename": "22",
+      "path": "games/22.md"
+    },
+    {
+      "basename": "2021-10-27",
+      "path": "3工作日志/2021-10-27.md"
+    },
+    {
+      "basename": "607文档编写",
+      "path": "607文档编写.md"
+    },
+    {
+      "basename": "工作看板",
+      "path": "工作看板.md"
+    },
+    {
       "basename": "双因素登录(声纹+证书)",
       "path": "双因素登录(声纹+证书).md"
     },
     {
       "basename": "未命名 4",
       "path": "未命名 4.md"
-    },
-    {
-      "basename": "工作看板",
-      "path": "工作看板.md"
     },
     {
       "basename": "Table-Test",
@@ -51,10 +71,6 @@
     {
       "basename": "2023-01-13",
       "path": "3工作日志/日志/2023-01-13.md"
-    },
-    {
-      "basename": "607文档编写",
-      "path": "607文档编写.md"
     },
     {
       "basename": "2023-01-12 132332",
@@ -183,22 +199,6 @@
     {
       "basename": "2023-01-03 09-11 工作日志\n",
       "path": "3工作日志/日志/2023-01-03 09-11 工作日志\n.md"
-    },
-    {
-      "basename": "2023-01-03",
-      "path": "3工作日志/日志/2023-01-03.md"
-    },
-    {
-      "basename": "2022-12-28 09-28 鸿蒙信息",
-      "path": "3工作日志/日志/2022-12-28 09-28 鸿蒙信息.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "3工作日志/日志/未命名.md"
-    },
-    {
-      "basename": "2022-12-15",
-      "path": "3工作日志/日志/2022-12-15.md"
     }
   ],
   "omittedPaths": [],
