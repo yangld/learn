@@ -25,15 +25,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dataview.md",
+                "file": "双因素登录(声纹+证书).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
               }
             }
+          },
+          {
+            "id": "06f617dd6cbb9428",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "双因素登录-功能变更文档.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "080a9a5ed9a8b33f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -104,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dataview.md"
+                "file": "双因素登录-功能变更文档.md"
               }
             }
           },
@@ -137,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dataview.md",
+                "file": "双因素登录-功能变更文档.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dataview.md",
+                "file": "双因素登录-功能变更文档.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,17 +228,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "feafe4773c7a2b63",
+  "active": "06f617dd6cbb9428",
   "lastOpenFiles": [
-    "工作看板.md",
     "双因素登录(声纹+证书).md",
+    "双因素登录-功能变更文档.md",
+    "工作看板.md",
+    "流程图.md",
+    "dataview.md",
     "obsidian-dataview/test-vault/tasks/Annotated Tasks.md",
     "Dice Roller.md",
     "obsidian-dataview/test-vault/recipes/pbj.md",
     "obsidian-dataview/test-vault/tasks/checklist.md",
-    "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
-    "obsidian-dataview/test-vault/tasks/20220102.md",
-    "obsidian-dataview/test-vault/tasks/20220101.md",
-    "obsidian-dataview/test-vault/tasks/Uncompleted Tasks.md"
+    "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md"
   ]
 }

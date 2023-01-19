@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "dataview",
-      "path": "dataview.md"
+      "basename": "双因素登录-功能变更文档",
+      "path": "双因素登录-功能变更文档.md"
+    },
+    {
+      "basename": "双因素登录(声纹+证书)",
+      "path": "双因素登录(声纹+证书).md"
     },
     {
       "basename": "工作看板",
       "path": "工作看板.md"
     },
     {
-      "basename": "双因素登录(声纹+证书)",
-      "path": "双因素登录(声纹+证书).md"
+      "basename": "流程图",
+      "path": "流程图.md"
+    },
+    {
+      "basename": "dataview",
+      "path": "dataview.md"
     },
     {
       "basename": "Annotated Tasks",
@@ -191,14 +199,6 @@
     {
       "basename": "2023-01-12",
       "path": "3工作日志/日志/2023-01-12.md"
-    },
-    {
-      "basename": "202301121321",
-      "path": "202301121321.md"
-    },
-    {
-      "basename": "2023-01-18",
-      "path": "3工作日志/日志/2023-01-18.md"
     }
   ],
   "omittedPaths": [],
