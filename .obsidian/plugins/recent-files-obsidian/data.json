@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "双因素登录(声纹+证书)",
-      "path": "双因素登录(声纹+证书).md"
+      "basename": "dataview",
+      "path": "dataview.md"
     },
     {
       "basename": "工作看板",
       "path": "工作看板.md"
+    },
+    {
+      "basename": "双因素登录(声纹+证书)",
+      "path": "双因素登录(声纹+证书).md"
     },
     {
       "basename": "Annotated Tasks",
@@ -75,10 +79,6 @@
     {
       "basename": "README",
       "path": "obsidian-dataview/README.md"
-    },
-    {
-      "basename": "dataview",
-      "path": "dataview.md"
     },
     {
       "basename": "Books",

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "双因素登录(声纹+证书).md",
+                "file": "dataview.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "双因素登录(声纹+证书).md"
+                "file": "dataview.md"
               }
             }
           },
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "双因素登录(声纹+证书).md",
+                "file": "dataview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "双因素登录(声纹+证书).md",
+                "file": "dataview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,6 +210,7 @@
   "active": "feafe4773c7a2b63",
   "lastOpenFiles": [
     "工作看板.md",
+    "双因素登录(声纹+证书).md",
     "obsidian-dataview/test-vault/tasks/Annotated Tasks.md",
     "Dice Roller.md",
     "obsidian-dataview/test-vault/recipes/pbj.md",
@@ -217,7 +218,6 @@
     "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md",
     "obsidian-dataview/test-vault/tasks/20220102.md",
     "obsidian-dataview/test-vault/tasks/20220101.md",
-    "obsidian-dataview/test-vault/tasks/Uncompleted Tasks.md",
-    "obsidian-dataview/test-vault/tasks/example tasks.md"
+    "obsidian-dataview/test-vault/tasks/Uncompleted Tasks.md"
   ]
 }
