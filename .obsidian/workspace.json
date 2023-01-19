@@ -23,13 +23,8 @@
             "id": "702cf1900f787964",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3工作日志/日志/2023-01-03-09-11-工作日志.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -103,9 +98,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "3工作日志/日志/2023-01-03-09-11-工作日志.md"
-              }
+              "state": {}
             }
           },
           {
@@ -137,7 +130,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3工作日志/日志/2023-01-03-09-11-工作日志.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +146,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3工作日志/日志/2023-01-03-09-11-工作日志.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,17 +198,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "702cf1900f787964",
+  "active": "e6e0436766609b88",
   "lastOpenFiles": [
+    "Dice_Roller.md",
+    "edqls.md",
+    "3工作日志/日志/2023-01-03-09-11-工作日志.md",
     "3工作日志/3工作日志.md",
     "Excalidraw/Drawing2022-08-05-09.23.31.excalidraw.md",
     "3工作日志/日志/2022-12-13-09-16bug列表.md",
     "2TODO/未命名 1.md",
     "3工作日志/日志/2023-01-05_09-29_todo.md",
-    "3工作日志/日志/2023-01-03-09-11-工作日志.md",
     "3工作日志/日志/2023-01-03.md",
-    "3工作日志/日志/2022-12-24-16-34-景鸿逻辑修改.md",
-    "3工作日志/日志/2022-12-14_08-55_bug处理.md",
-    "3工作日志/日志/2022-12-15_10-11_学习_espanso_.md"
+    "3工作日志/日志/2022-12-24-16-34-景鸿逻辑修改.md"
   ]
 }
