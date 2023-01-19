@@ -5,6 +5,14 @@
       "path": "games/11.md"
     },
     {
+      "basename": "22",
+      "path": "games/22.md"
+    },
+    {
+      "basename": "工作看板",
+      "path": "工作看板.md"
+    },
+    {
       "basename": "Dice_Roller",
       "path": "Dice_Roller.md"
     },
@@ -49,10 +57,6 @@
       "path": "3工作日志/bug23642.md"
     },
     {
-      "basename": "工作看板",
-      "path": "工作看板.md"
-    },
-    {
       "basename": "双因素登录-功能变更文档",
       "path": "双因素登录-功能变更文档.md"
     },
@@ -71,10 +75,6 @@
     {
       "basename": "dataview",
       "path": "dataview.md"
-    },
-    {
-      "basename": "22",
-      "path": "games/22.md"
     },
     {
       "basename": "2021-10-27",
