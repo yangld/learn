@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "11",
+      "path": "games/11.md"
+    },
+    {
       "basename": "Dice_Roller",
       "path": "Dice_Roller.md"
     },
@@ -43,10 +47,6 @@
     {
       "basename": "bug23642",
       "path": "3工作日志/bug23642.md"
-    },
-    {
-      "basename": "11",
-      "path": "games/11.md"
     },
     {
       "basename": "工作看板",
