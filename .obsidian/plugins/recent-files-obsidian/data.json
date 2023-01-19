@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "11",
+      "path": "games/11.md"
+    },
+    {
       "basename": "工作看板",
       "path": "工作看板.md"
     },
@@ -135,10 +139,6 @@
     {
       "basename": "example calendars",
       "path": "obsidian-dataview/test-vault/example calendars.md"
-    },
-    {
-      "basename": "11",
-      "path": "games/11.md"
     },
     {
       "basename": "22",
