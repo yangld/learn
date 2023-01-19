@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-01-03-09-11-工作日志",
+      "path": "3工作日志/日志/2023-01-03-09-11-工作日志.md"
+    },
+    {
+      "basename": "3工作日志",
+      "path": "3工作日志/3工作日志.md"
+    },
+    {
+      "basename": "Drawing2022-08-05-09.23.31.excalidraw",
+      "path": "Excalidraw/Drawing2022-08-05-09.23.31.excalidraw.md"
+    },
+    {
+      "basename": "2022-12-13-09-16bug列表",
+      "path": "3工作日志/日志/2022-12-13-09-16bug列表.md"
+    },
+    {
+      "basename": "2023-01-05_09-29_todo",
+      "path": "3工作日志/日志/2023-01-05_09-29_todo.md"
+    },
+    {
+      "basename": "2023-01-03",
+      "path": "3工作日志/日志/2023-01-03.md"
+    },
+    {
+      "basename": "2022-12-24-16-34-景鸿逻辑修改",
+      "path": "3工作日志/日志/2022-12-24-16-34-景鸿逻辑修改.md"
+    },
+    {
+      "basename": "2022-12-14_08-55_bug处理",
+      "path": "3工作日志/日志/2022-12-14_08-55_bug处理.md"
+    },
+    {
+      "basename": "2022-12-15_10-11_学习_espanso_",
+      "path": "3工作日志/日志/2022-12-15_10-11_学习_espanso_.md"
+    },
+    {
+      "basename": "bug23642",
+      "path": "3工作日志/bug23642.md"
+    },
+    {
       "basename": "11",
       "path": "games/11.md"
     },
@@ -29,118 +69,6 @@
       "path": "dataview.md"
     },
     {
-      "basename": "Annotated Tasks",
-      "path": "obsidian-dataview/test-vault/tasks/Annotated Tasks.md"
-    },
-    {
-      "basename": "Dice Roller",
-      "path": "Dice Roller.md"
-    },
-    {
-      "basename": "pbj",
-      "path": "obsidian-dataview/test-vault/recipes/pbj.md"
-    },
-    {
-      "basename": "checklist",
-      "path": "obsidian-dataview/test-vault/tasks/checklist.md"
-    },
-    {
-      "basename": "Tasks in a specific section",
-      "path": "obsidian-dataview/test-vault/tasks/Tasks in a specific section.md"
-    },
-    {
-      "basename": "20220102",
-      "path": "obsidian-dataview/test-vault/tasks/20220102.md"
-    },
-    {
-      "basename": "20220101",
-      "path": "obsidian-dataview/test-vault/tasks/20220101.md"
-    },
-    {
-      "basename": "Uncompleted Tasks",
-      "path": "obsidian-dataview/test-vault/tasks/Uncompleted Tasks.md"
-    },
-    {
-      "basename": "example tasks",
-      "path": "obsidian-dataview/test-vault/tasks/example tasks.md"
-    },
-    {
-      "basename": "Grouped Sorted Tasks",
-      "path": "obsidian-dataview/test-vault/tasks/Grouped Sorted Tasks.md"
-    },
-    {
-      "basename": "Sorted Tasks",
-      "path": "obsidian-dataview/test-vault/tasks/Sorted Tasks.md"
-    },
-    {
-      "basename": "Tasks Completed on specific Date",
-      "path": "obsidian-dataview/test-vault/tasks/Tasks Completed on specific Date.md"
-    },
-    {
-      "basename": "Completed Tasks",
-      "path": "obsidian-dataview/test-vault/tasks/Completed Tasks.md"
-    },
-    {
-      "basename": "Day Planner-20221018",
-      "path": "Day Planners/Day Planner-20221018.md"
-    },
-    {
-      "basename": "query-types",
-      "path": "obsidian-dataview/docs/docs/queries/query-types.md"
-    },
-    {
-      "basename": "2022-12-08 17-02 redis占用内存大",
-      "path": "3工作日志/日志/2022-12-08 17-02 redis占用内存大.md"
-    },
-    {
-      "basename": "README",
-      "path": "obsidian-dataview/README.md"
-    },
-    {
-      "basename": "Books",
-      "path": "obsidian-dataview/test-vault/Books.md"
-    },
-    {
-      "basename": "toast",
-      "path": "obsidian-dataview/test-vault/recipes/toast.md"
-    },
-    {
-      "basename": "The Great Gatsby",
-      "path": "obsidian-dataview/test-vault/books/The Great Gatsby.md"
-    },
-    {
-      "basename": "Origin of Species",
-      "path": "obsidian-dataview/test-vault/books/Origin of Species.md"
-    },
-    {
-      "basename": "Catcher in the Rye",
-      "path": "obsidian-dataview/test-vault/books/Catcher in the Rye.md"
-    },
-    {
-      "basename": "2021-08-08-a-post",
-      "path": "obsidian-dataview/test-vault/blog/2021-08-08-a-post.md"
-    },
-    {
-      "basename": "2020-08-08-an-earlier-post",
-      "path": "obsidian-dataview/test-vault/blog/2020-08-08-an-earlier-post.md"
-    },
-    {
-      "basename": "Home",
-      "path": "obsidian-dataview/test-vault/Home.md"
-    },
-    {
-      "basename": "example tables",
-      "path": "obsidian-dataview/test-vault/example tables.md"
-    },
-    {
-      "basename": "example lists",
-      "path": "obsidian-dataview/test-vault/example lists.md"
-    },
-    {
-      "basename": "example calendars",
-      "path": "obsidian-dataview/test-vault/example calendars.md"
-    },
-    {
       "basename": "22",
       "path": "games/22.md"
     },
@@ -151,10 +79,6 @@
     {
       "basename": "607文档编写",
       "path": "607文档编写.md"
-    },
-    {
-      "basename": "未命名 4",
-      "path": "未命名 4.md"
     },
     {
       "basename": "Table-Test",
@@ -195,10 +119,6 @@
     {
       "basename": "2023-01-13",
       "path": "3工作日志/日志/2023-01-13.md"
-    },
-    {
-      "basename": "2023-01-12 132332",
-      "path": "3工作日志/2023-01-12 132332.md"
     }
   ],
   "omittedPaths": [],
