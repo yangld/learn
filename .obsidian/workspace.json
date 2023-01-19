@@ -18,43 +18,8 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "feafe4773c7a2b63",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "双因素登录(声纹+证书).md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "06f617dd6cbb9428",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "双因素登录-功能变更文档.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "080a9a5ed9a8b33f",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 329.5,
+    "collapsed": true
   },
   "right": {
     "id": "78a86d7ecd781271",
@@ -125,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "双因素登录-功能变更文档.md"
+                "file": "工作看板.md"
               }
             }
           },
@@ -158,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "双因素登录-功能变更文档.md",
+                "file": "工作看板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "双因素登录-功能变更文档.md",
+                "file": "工作看板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +194,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "06f617dd6cbb9428",
+  "active": "4d4ef17ceb207811",
   "lastOpenFiles": [
     "双因素登录(声纹+证书).md",
     "双因素登录-功能变更文档.md",
