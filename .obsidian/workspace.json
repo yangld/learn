@@ -20,13 +20,13 @@
             }
           },
           {
-            "id": "d5d856b19a1727a5",
+            "id": "ce39ffc8e52537a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "games/11.md",
-                "mode": "source",
+                "file": "双因素登录接口定义.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "games/11.md"
+                "file": "双因素登录接口定义.md"
               }
             }
           },
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "games/11.md",
+                "file": "双因素登录接口定义.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "games/11.md",
+                "file": "双因素登录接口定义.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -207,17 +207,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d5d856b19a1727a5",
+  "active": "e6e0436766609b88",
   "lastOpenFiles": [
-    "games/22.md",
     "工作看板.md",
+    "dataview.md",
+    "双因素登录接口定义.md",
+    "3工作日志/日志/2023-01-25.md",
     "games/11.md",
+    "games/22.md",
     "edqls.md",
     "Dice_Roller.md",
     "3工作日志/日志/2023-01-03-09-11-工作日志.md",
-    "3工作日志/3工作日志.md",
-    "Excalidraw/Drawing2022-08-05-09.23.31.excalidraw.md",
-    "3工作日志/日志/2022-12-13-09-16bug列表.md",
-    "2TODO/未命名 1.md"
+    "3工作日志/3工作日志.md"
   ]
 }
