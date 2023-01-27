@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "ce39ffc8e52537a2",
+            "id": "ca3d5a2d495f405d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -208,17 +208,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ce39ffc8e52537a2",
+  "active": "ca3d5a2d495f405d",
   "lastOpenFiles": [
     "双因素登录接口定义.md",
     "工作看板.md",
+    "3工作日志/日志/2023-01-27.md",
+    "1附件/证书声纹双因素登录__客户端接口文档.md",
     "dataview.md",
     "3工作日志/日志/2023-01-25.md",
     "games/11.md",
     "games/22.md",
     "edqls.md",
-    "Dice_Roller.md",
-    "3工作日志/日志/2023-01-03-09-11-工作日志.md",
-    "3工作日志/3工作日志.md"
+    "Dice_Roller.md"
   ]
 }
