@@ -9,6 +9,14 @@
       "path": "工作看板.md"
     },
     {
+      "basename": "证书声纹双因素登录__客户端接口文档",
+      "path": "1附件/证书声纹双因素登录__客户端接口文档.md"
+    },
+    {
+      "basename": "双因素登录接口定义",
+      "path": "双因素登录接口定义.md"
+    },
+    {
       "basename": "espanso",
       "path": "espanso.md"
     },
@@ -19,14 +27,6 @@
     {
       "basename": "postman",
       "path": "postman.md"
-    },
-    {
-      "basename": "证书声纹双因素登录__客户端接口文档",
-      "path": "1附件/证书声纹双因素登录__客户端接口文档.md"
-    },
-    {
-      "basename": "双因素登录接口定义",
-      "path": "双因素登录接口定义.md"
     },
     {
       "basename": "2023-01-29",
