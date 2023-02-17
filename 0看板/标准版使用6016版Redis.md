@@ -31,6 +31,11 @@
 		1. /usr/local/bin/redis-server /etc/redis.conf
 	3. 测试
 		1. redis-cli -a Pekallrds12#$
+5. 修改配置
+	1. 修改host，去掉sensential
+	2. 重新部署uas
+	3. 重新部署mdm
+	4. 重新部署ios， 三权分立，基础服务，扩展服务，运行收集服务， 应用市场
 
 ## 问题
 1. 
