@@ -1,12 +1,3 @@
-	任务: 
-	项目: 
-	阶段: 
-	输入: 
-	输出: 
-	日期: 2023-02-17
-	时间: 11:38
-	截止日期: 
-
 ## 目标
 目标版本： 6.0.16
 现在版本： 3.2.12
@@ -35,13 +26,15 @@
 	1. 修改host，去掉sensential
 	2. 重新部署uas
 	3. 重新部署mdm
-	4. 重新部署ios， 三权分立，基础服务，扩展服务，运行收集服务， 应用市场
+	4. 重新部署统一日志系统
+	5. 重新部署新基础应用
+	6. 重新部署三权分立
+	7. 手动部署ios， 扩展服务，
+	8. 手动部署应用市场
 
 ## 问题
-1. 
-2. 
+
 
 ## 参考
 1. https://blog.csdn.net/cplvfx/article/details/116278895
 2. https://redis.io/docs/getting-started/installation/install-redis-from-source/
-3. 
