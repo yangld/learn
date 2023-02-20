@@ -1,0 +1,290 @@
+
+<html>
+<head>
+<title>文档</title>
+<style>
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,th {
+    padding: 0;
+}
+
+.pure-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #DCDFE6;
+}
+
+.pure-table caption {
+    color: #000;
+    font: italic 85%/1 arial,sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.pure-table td,.pure-table th {
+    border-left: 1px solid #DCDFE6;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: .5em 1em;
+}
+
+.pure-table th {
+    border-bottom: 1px solid #DCDFE6;
+}
+
+.pure-table thead {
+    background-color: #f3f3f3;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.pure-table td {
+    background-color: transparent;
+}
+
+.pure-table-bordered td {
+    border-bottom: 1px solid #DCDFE6;
+}
+
+.pure-table-bordered tbody>tr:last-child>td {
+    border-bottom-width: 0;
+}
+
+.code-block { font-size: 14px;color: #606266;font-weight: normal; background-color: #fafafa; padding: 5px;}
+</style>
+</head>
+<body>
+<h1>文档</h1><h2>级联应用Web查询接口</h2><div class="doc-item"><h3 id="wXPpPqXn"><a class="link" href="#wXPpPqXn">&nbsp;获取省份列表</a></h3><p><strong>URL</strong></p><ul><li>测试环境11.44: GET https://192.168.11.44:4432/jjj/app/v1/org</li></ul><p><strong>描述：</strong>获取省份列表</p><p><strong>ContentType：</strong>application/x-www-form-urlencoded;charset=UTF-8</p><h4>请求参数</h4><h4>响应参数</h4><table class="pure-table pure-table-bordered"><thead><tr><th>名称</th><th>类型</th><th>必填</th><th>最大长度</th><th>描述</th><th>示例值</th><tr></thead><tbody><tr><td>id</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>171</td><tr>
+<tr><td>parentCode</td><td>string</td><td>否</td><td>-</td><td>上级平台组织机构代码</td><td>72746</td><tr>
+<tr><td>name</td><td>string</td><td>否</td><td>-</td><td>平台组织机构名称</td><td>sharmaine.mosciski</td><tr>
+<tr><td>code</td><td>string</td><td>否</td><td>-</td><td>平台组织机构代码</td><td>72746</td><tr>
+<tr><td>level</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>jwdjcq</td><tr>
+<tr><td>status</td><td>string</td><td>否</td><td>-</td><td>行政区划状态： 1 启用； 0 禁用</td><td>0hczix</td><tr>
+<tr><td>createTime</td><td>string</td><td>否</td><td>-</td><td>创建时间戳</td><td>2023-02-20 17:47:26</td><tr>
+<tr><td>lastUpdateTime</td><td>string</td><td>否</td><td>-</td><td>上次更新时间戳</td><td>2023-02-20 17:47:26</td><tr></tbody></table><h4>响应示例</h4>
+<pre class="code-block">
+{
+    "id": 171,
+    "parentCode": "72746",
+    "name": "sharmaine.mosciski",
+    "code": "72746",
+    "level": "jwdjcq",
+    "status": "0hczix",
+    "createTime": "2023-02-20 17:47:26",
+    "lastUpdateTime": "2023-02-20 17:47:26"
+}
+</pre>
+<h4>错误码</h4>无</div><div class="doc-item"><h3 id="7zLvjj8Q"><a class="link" href="#7zLvjj8Q">&nbsp;级联应用列表</a></h3><p><strong>URL</strong></p><ul><li>测试环境11.44: GET https://192.168.11.44:4432/jjj/app/v1/page</li></ul><p><strong>描述：</strong>级联应用列表</p><p><strong>ContentType：</strong>application/x-www-form-urlencoded;charset=UTF-8</p><h4>请求参数</h4><h5>Query Parameter</h5><table class="pure-table pure-table-bordered"><thead><tr><th>名称</th><th>类型</th><th>必填</th><th>最大长度</th><th>描述</th><th>示例值</th><tr></thead><tbody><tr><td>pageNum</td><td>int32</td><td>否</td><td>-</td><td>No comments found.</td><td>1</td><tr>
+<tr><td>pageSize</td><td>int32</td><td>否</td><td>-</td><td>No comments found.</td><td></td><tr>
+<tr><td>sortKey</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>updateTime</td><tr>
+<tr><td>sortValue</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>desc</td><tr>
+<tr><td>areaCode</td><td>string</td><td>否</td><td>-</td><td>  所属省份编码</td><td></td><tr>
+<tr><td>filterText</td><td>string</td><td>否</td><td>-</td><td>模糊搜索应用名称,AppId</td><td>zh81oe</td><tr></tbody></table><h4>响应参数</h4><table class="pure-table pure-table-bordered"><thead><tr><th>名称</th><th>类型</th><th>必填</th><th>最大长度</th><th>描述</th><th>示例值</th><tr></thead><tbody><tr><td>limit</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>608</td><tr>
+<tr><td>offset</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>1</td><tr>
+<tr><td>total</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>400</td><tr>
+<tr><td>results</td><td>array</td><td>否</td><td></td><td>No comments found.</td><td></td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ id</td><td>string</td><td>否</td><td>-</td><td>定义id为appId+areaCodes的前四位</td><td>40</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appId</td><td>string</td><td>否</td><td>-</td><td>AppId</td><td>40</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appCategory</td><td>string</td><td>否</td><td>-</td><td>应用类型</td><td>9k9wkf</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ areaCodes</td><td>string</td><td>否</td><td>-</td><td>省份</td><td>u1rccc</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appName</td><td>string</td><td>否</td><td>-</td><td>应用名称</td><td>sharmaine.mosciski</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ versionName</td><td>string</td><td>否</td><td>-</td><td>版本号</td><td>sharmaine.mosciski</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ versionCode</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>985</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ icon</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>aew22p</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appLogoUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ simpleDesc</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>ufjyqy</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appType</td><td>string</td><td>否</td><td>-</td><td>应用类型,1：安卓，2：H5</td><td>5up6qy</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ fileUuid</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>57d83157-534c-442e-af80-d001c4b0fc9d</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ packageName</td><td>string</td><td>否</td><td>-</td><td>应用包名</td><td>sharmaine.mosciski</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appFileMD5</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>71p5kx</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ fileSize</td><td>int64</td><td>否</td><td>-</td><td>应用大小，单位B</td><td>283</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ updateLog</td><td>string</td><td>否</td><td>-</td><td>应用升级说明</td><td>ptrmqs</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ screenShot</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>qbtw3b</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appPictures</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>pcgu1r</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appVideoUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appVideoSyncUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appVideoImage</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>c1lrsn</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appVideoImageSyncUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ createTime</td><td>int64</td><td>否</td><td>-</td><td>创建时间</td><td>1676886446954</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ updateTime</td><td>int64</td><td>否</td><td>-</td><td>更新时间</td><td>1676886446954</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ powerType</td><td>int32</td><td>否</td><td>-</td><td>授权方式, 10-全公开，21-需由使用地授权，22-需由归属地授权，23-需由两地授权，31需向使用地申请，32需向归属地申请，33需向两地申请</td><td>857</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ orgName</td><td>string</td><td>否</td><td>-</td><td>省份名称</td><td>sharmaine.mosciski</td><tr></tbody></table><h4>响应示例</h4>
+<pre class="code-block">
+{
+    "limit": 608,
+    "offset": 1,
+    "total": 400,
+    "results": [
+        {
+            "id": "40",
+            "appId": "40",
+            "appCategory": "9k9wkf",
+            "areaCodes": "u1rccc",
+            "appName": "sharmaine.mosciski",
+            "versionName": "sharmaine.mosciski",
+            "versionCode": 985,
+            "icon": "aew22p",
+            "appLogoUrl": "www.brad-windler.co",
+            "simpleDesc": "ufjyqy",
+            "appType": "5up6qy",
+            "fileUuid": "57d83157-534c-442e-af80-d001c4b0fc9d",
+            "appUrl": "www.brad-windler.co",
+            "packageName": "sharmaine.mosciski",
+            "appFileMD5": "71p5kx",
+            "fileSize": 283,
+            "updateLog": "ptrmqs",
+            "screenShot": "qbtw3b",
+            "appPictures": "pcgu1r",
+            "appVideoUrl": "www.brad-windler.co",
+            "appVideoSyncUrl": "www.brad-windler.co",
+            "appVideoImage": "c1lrsn",
+            "appVideoImageSyncUrl": "www.brad-windler.co",
+            "createTime": 1676886446954,
+            "updateTime": 1676886446954,
+            "powerType": 857,
+            "orgName": "sharmaine.mosciski"
+        }
+    ]
+}
+</pre>
+<h4>错误码</h4>无</div><div class="doc-item"><h3 id="P81RnaXq"><a class="link" href="#P81RnaXq">&nbsp;级联应用详情</a></h3><p><strong>URL</strong></p><ul><li>测试环境11.44: GET https://192.168.11.44:4432/jjj/app/v1/detail/{id}</li></ul><p><strong>描述：</strong>级联应用详情</p><p><strong>ContentType：</strong>application/x-www-form-urlencoded;charset=UTF-8</p><h4>Path参数</h4><table class="pure-table pure-table-bordered"><thead><tr><th>名称</th><th>必填</th><th>描述</th><th>示例值</th><tr></thead><tbody><tr><td>id</td><td>是</td><td>应用ID</td><td>40</td><tr></tbody></table><h4>请求参数</h4><h4>响应参数</h4><table class="pure-table pure-table-bordered"><thead><tr><th>名称</th><th>类型</th><th>必填</th><th>最大长度</th><th>描述</th><th>示例值</th><tr></thead><tbody><tr><td>id</td><td>string</td><td>否</td><td>-</td><td>定义id为appId+areaCodes的前四位</td><td>40</td><tr>
+<tr><td>appId</td><td>string</td><td>否</td><td>-</td><td>AppId</td><td>40</td><tr>
+<tr><td>appCategory</td><td>string</td><td>否</td><td>-</td><td>应用类型</td><td>rtt3wn</td><tr>
+<tr><td>areaCodes</td><td>string</td><td>否</td><td>-</td><td>省份</td><td>bd4eyb</td><tr>
+<tr><td>appName</td><td>string</td><td>否</td><td>-</td><td>应用名称</td><td>sharmaine.mosciski</td><tr>
+<tr><td>versionName</td><td>string</td><td>否</td><td>-</td><td>版本号</td><td>sharmaine.mosciski</td><tr>
+<tr><td>versionCode</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>121</td><tr>
+<tr><td>icon</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>nvjlc2</td><tr>
+<tr><td>appLogoUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>simpleDesc</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>qz6sf3</td><tr>
+<tr><td>appType</td><td>string</td><td>否</td><td>-</td><td>应用类型,1：安卓，2：H5</td><td>ts3ikt</td><tr>
+<tr><td>fileUuid</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>57d83157-534c-442e-af80-d001c4b0fc9d</td><tr>
+<tr><td>appUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>packageName</td><td>string</td><td>否</td><td>-</td><td>应用包名</td><td>sharmaine.mosciski</td><tr>
+<tr><td>appFileMD5</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>zs3qb9</td><tr>
+<tr><td>fileSize</td><td>int64</td><td>否</td><td>-</td><td>应用大小，单位B</td><td>460</td><tr>
+<tr><td>updateLog</td><td>string</td><td>否</td><td>-</td><td>应用升级说明</td><td>bbjn43</td><tr>
+<tr><td>screenShot</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>rjkox5</td><tr>
+<tr><td>appPictures</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>gi0w87</td><tr>
+<tr><td>appVideoUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>appVideoSyncUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>appVideoImage</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>a4j2jx</td><tr>
+<tr><td>appVideoImageSyncUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>createTime</td><td>int64</td><td>否</td><td>-</td><td>创建时间</td><td>1676886446954</td><tr>
+<tr><td>updateTime</td><td>int64</td><td>否</td><td>-</td><td>更新时间</td><td>1676886446954</td><tr>
+<tr><td>powerType</td><td>int32</td><td>否</td><td>-</td><td>授权方式, 10-全公开，21-需由使用地授权，22-需由归属地授权，23-需由两地授权，31需向使用地申请，32需向归属地申请，33需向两地申请</td><td>204</td><tr>
+<tr><td>orgName</td><td>string</td><td>否</td><td>-</td><td>省份名称</td><td>sharmaine.mosciski</td><tr></tbody></table><h4>响应示例</h4>
+<pre class="code-block">
+{
+    "id": "40",
+    "appId": "40",
+    "appCategory": "rtt3wn",
+    "areaCodes": "bd4eyb",
+    "appName": "sharmaine.mosciski",
+    "versionName": "sharmaine.mosciski",
+    "versionCode": 121,
+    "icon": "nvjlc2",
+    "appLogoUrl": "www.brad-windler.co",
+    "simpleDesc": "qz6sf3",
+    "appType": "ts3ikt",
+    "fileUuid": "57d83157-534c-442e-af80-d001c4b0fc9d",
+    "appUrl": "www.brad-windler.co",
+    "packageName": "sharmaine.mosciski",
+    "appFileMD5": "zs3qb9",
+    "fileSize": 460,
+    "updateLog": "bbjn43",
+    "screenShot": "rjkox5",
+    "appPictures": "gi0w87",
+    "appVideoUrl": "www.brad-windler.co",
+    "appVideoSyncUrl": "www.brad-windler.co",
+    "appVideoImage": "a4j2jx",
+    "appVideoImageSyncUrl": "www.brad-windler.co",
+    "createTime": 1676886446954,
+    "updateTime": 1676886446954,
+    "powerType": 204,
+    "orgName": "sharmaine.mosciski"
+}
+</pre>
+<h4>错误码</h4>无</div><div class="doc-item"><h3 id="58pE3bX3"><a class="link" href="#58pE3bX3">&nbsp;级联应用同步日志</a></h3><p><strong>URL</strong></p><ul><li>测试环境11.44: GET https://192.168.11.44:4432/jjj/app/v1/log/page</li></ul><p><strong>描述：</strong>级联应用同步日志</p><p><strong>ContentType：</strong>application/x-www-form-urlencoded;charset=UTF-8</p><h4>请求参数</h4><h5>Query Parameter</h5><table class="pure-table pure-table-bordered"><thead><tr><th>名称</th><th>类型</th><th>必填</th><th>最大长度</th><th>描述</th><th>示例值</th><tr></thead><tbody><tr><td>pageNum</td><td>int32</td><td>否</td><td>-</td><td>No comments found.</td><td>1</td><tr>
+<tr><td>pageSize</td><td>int32</td><td>否</td><td>-</td><td>No comments found.</td><td></td><tr>
+<tr><td>sortKey</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>updateTime</td><tr>
+<tr><td>sortValue</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>desc</td><tr>
+<tr><td>areaCode</td><td>string</td><td>否</td><td>-</td><td>  所属省份编码</td><td></td><tr>
+<tr><td>status</td><td>boolean</td><td>否</td><td>-</td><td>No comments found.</td><td>true</td><tr>
+<tr><td>filterText</td><td>string</td><td>否</td><td>-</td><td>模糊搜索应用名称,AppId</td><td>derqeo</td><tr></tbody></table><h4>响应参数</h4><table class="pure-table pure-table-bordered"><thead><tr><th>名称</th><th>类型</th><th>必填</th><th>最大长度</th><th>描述</th><th>示例值</th><tr></thead><tbody><tr><td>limit</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>572</td><tr>
+<tr><td>offset</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>1</td><tr>
+<tr><td>total</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>990</td><tr>
+<tr><td>results</td><td>array</td><td>否</td><td></td><td>No comments found.</td><td></td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ id</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>40</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appId</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>40</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ networkAreaCode</td><td>string</td><td>否</td><td>-</td><td>应用类型,  1：I类 2：II类 3：III类</td><td>72746</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appRegionalismCode</td><td>string</td><td>否</td><td>-</td><td>省份编码</td><td>72746</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appName</td><td>string</td><td>否</td><td>-</td><td>应用名称</td><td>sharmaine.mosciski</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appVersion</td><td>string</td><td>否</td><td>-</td><td>版本号</td><td>8.5</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ versionCode</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>985</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appLogoUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appDescription</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>ysidh3</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appType</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>byr2ol</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appPackage</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>r5ghc0</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appFileMD5</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>booawo</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appFileSize</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>729</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ updateNote</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>8yxri6</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appPictures</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>yixzys</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appVideoUrl</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>www.brad-windler.co</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ appVideoImage</td><td>string</td><td>否</td><td>-</td><td>No comments found.</td><td>g3fw1m</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ createTime</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>1676886446954</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ updateTime</td><td>int64</td><td>否</td><td>-</td><td>No comments found.</td><td>1676886446954</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ powerType</td><td>int64</td><td>否</td><td>-</td><td>授权方式</td><td>559</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ changeTime</td><td>int64</td><td>否</td><td>-</td><td>同步时间</td><td>1676886446954</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ operateType</td><td>string</td><td>否</td><td>-</td><td>操作类型, create/update/delete</td><td>yg65rp</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ uploadState</td><td>boolean</td><td>否</td><td>-</td><td>同步状态: true:成功, false:失败</td><td>true</td><tr>
+<tr><td>&nbsp;&nbsp;&nbsp;└ orgName</td><td>string</td><td>否</td><td>-</td><td>省份名称</td><td>sharmaine.mosciski</td><tr></tbody></table><h4>响应示例</h4>
+<pre class="code-block">
+{
+    "limit": 572,
+    "offset": 1,
+    "total": 990,
+    "results": [
+        {
+            "id": "40",
+            "appId": "40",
+            "networkAreaCode": "72746",
+            "appRegionalismCode": "72746",
+            "appName": "sharmaine.mosciski",
+            "appVersion": "8.5",
+            "versionCode": 985,
+            "appLogoUrl": "www.brad-windler.co",
+            "appDescription": "ysidh3",
+            "appType": "byr2ol",
+            "appUrl": "www.brad-windler.co",
+            "appPackage": "r5ghc0",
+            "appFileMD5": "booawo",
+            "appFileSize": 729,
+            "updateNote": "8yxri6",
+            "appPictures": "yixzys",
+            "appVideoUrl": "www.brad-windler.co",
+            "appVideoImage": "g3fw1m",
+            "createTime": 1676886446954,
+            "updateTime": 1676886446954,
+            "powerType": 559,
+            "changeTime": 1676886446954,
+            "operateType": "yg65rp",
+            "uploadState": true,
+            "orgName": "sharmaine.mosciski"
+        }
+    ]
+}
+</pre>
+<h4>错误码</h4>无</div>
+</body>
+</html>
