@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"38bbf29d6f4414fb","x":-460,"y":-340,"width":960,"height":440,"type":"group","label":"33"},
+		{"id":"74e18e14648f776d","x":-460,"y":-800,"width":500,"height":417,"type":"group","label":"11"},
+		{"id":"8e3c7ceac6b2870a","x":100,"y":-791,"width":400,"height":400,"type":"group","label":"22"},
+		{"id":"4266416e5afd6dce","x":-440,"y":-760,"width":160,"height":121,"type":"file","file":"1附件/Pasted image 20230314121145.png"},
+		{"id":"78a63ef4e6c014cc","x":-440,"y":-300,"width":200,"height":160,"type":"file","file":"1附件/应用容器需求.pptx"},
+		{"id":"ee5cb8e90380e84d","x":-180,"y":-295,"width":180,"height":155,"type":"file","file":"1附件/移动应用发布管理.docx"},
+		{"id":"ad7ff7e903dc9bd8","x":160,"y":-280,"width":179,"height":377,"type":"file","file":"1附件/1608024671231461.mp4"}
+	],
+	"edges":[]
+}
