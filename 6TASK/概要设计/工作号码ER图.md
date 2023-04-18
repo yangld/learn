@@ -2,8 +2,7 @@
 ![[Sequence Diagram1.jpg]]
 
 ## ER图
-```mermaid
-erDiagram
+```mermaider Diagram
 	MdmPolicyTemplate		||--|{ 	MdmDeviceInfo	: one-to-many
 	MdmDeviceInfo			||--|{ 	MdmUser			: many-to-one
 	MdmUser					||--|{ 	FamTelWhiteInfo	: one-to-many
